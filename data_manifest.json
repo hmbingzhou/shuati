@@ -1,14 +1,14 @@
 {
   "format": 1,
-  "generated_at": "2026-09-09 22:31:35",
+  "generated_at": "2026-09-09 23:00:38",
   "note": "题库同步清单。由「python sync_bank.py build-manifest」自动生成，请随题库一起提交到 GitHub。",
   "files": {
     "data/C语言.json": "d80da5d3c5cf7c180df47279b5ac56878255a6f80be6b75b0e1556cb81f94664",
-    "data/Java.json": "d48480aaef857a9bcc935d5fe8b1686f65e074abe7a30730609be97550acf60c",
+    "data/Java.json": "3cd50aaf55ae4b33940f3d07432584f5c41397d90993d4f3c1f0c91d9fa70a9a",
     "data/Python.json": "96e985790030efd11ed176173c36d4705254d09a540fed845b7132390878f78b",
     "data/中国近现代史纲要.json": "0cf849eff40e24388a1f425411465b33fab9b30fbe4928bb00b4c4edce4fea86",
     "data/思想道德与法治.json": "fb9985b514d0d591a342dee65ac965ea96f3fd66887afb53d2aa31c5ab52b217",
-    "data/数据结构.json": "8f9a13b924b822c64a867facd9f11d7e26f15d15ce436698754eca8a7cf37b4b",
+    "data/数据结构.json": "ef3e84ff7a262fbad777335b4e3bb200e39270d40ded575c317f90aecf1000d7",
     "data/毛泽东思想和中国特色理论体系概论.json": "5361f49ff12d6244f549d5d221eb38f2121cbe6340e07c60d7ecb7191e4a92e4",
     "data/计算机组成原理.json": "93786ae7025ad2d2c322849e376451ad76f84f44e8371d8325394c78f2db5db9",
     "data/计算机网络技术.json": "30fbc5f0769b159a2f72fb5174ee107eac79d09dcfa8d8ad0400624d5fa66757",

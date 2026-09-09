@@ -85,13 +85,18 @@ check("计算 数值/文本判分", c.check_answer("42.0") and c.check_answer("4
 c2 = CalculationQuestion("计算文本", "public", subject="Java")
 check("计算 文本严格", c2.check_answer("public") and not c2.check_answer("Public"))
 
-# ---- 图片收集与 images 字段 ----
+# ---- 图片收集与 images(题后配图) 字段 ----
 img_q = SingleChoiceQuestion(
     "看右图\n1.png 然后回答",
     [["A", "选项图 5a.png"], ["B", "纯文本"]], "A", subject="Java")
 d = img_q.to_dict()
-check("图片收集去重有序", d["images"] == ["1.png", "5a.png"], d["images"])
+toks = collect_image_tokens(img_q.text, *([t for _, t in img_q.options]))
+check("images字段=题后图(缺省空), 收集含题干与选项token",
+      d["images"] == [] and toks == ["1.png", "5a.png"], (d["images"], toks))
 check("collect_image_tokens", collect_image_tokens("见 2.png 与 2.png", "x.png") == ["2.png", "x.png"])
+img_b = Question.from_dict({"type": "填空题", "text": "看下表：[数据结构/3.png] 求值", "answer": {"items": []}, "subject": "X"})
+check("方括号标记收集", collect_image_tokens(img_b.text) == ["数据结构/3.png"])
+check("display 屏蔽图片名", "3.png" not in img_b.display() and "（图）" in img_b.display())
 
 # ---- v1 旧格式读取 ----
 v1s = {"type": "选择题", "choice_type": "single", "text": "旧单选，图 9.png", "answer": "B",
@@ -132,11 +137,12 @@ import convert_judge0 as _cj  # noqa: E402
 
 qs_f = _cj.parse("运行结果如下：\n1.png\n\nHello")
 check("judge0 填空题干图片保真", len(qs_f) == 1 and "1.png" in qs_f[0].text
-      and "1.png" in qs_f[0].to_dict().get("images", []), [q.text for q in qs_f])
+      and "1.png" in collect_image_tokens(qs_f[0].text), [q.text for q in qs_f])
 qs_c = _cj.parse("看下图选择\n\n5a.png\n不是\n\nB")
 check("judge0 选择题选项图片保真", len(qs_c) == 1 and isinstance(qs_c[0], (ChoiceQuestion, SingleChoiceQuestion))
       and qs_c[0].choice_type == "single"
-      and "5a.png" in qs_c[0].to_dict().get("images", []), [q.text for q in qs_c])
+      and "5a.png" in collect_image_tokens(qs_c[0].text, *([t for _, t in (qs_c[0].options or [])])),
+      [q.text for q in qs_c])
 
 
 print("\n" + ("全部通过 ✔" if not fails else f"失败 {len(fails)} 项: {fails}"))

@@ -33,11 +33,12 @@ function shuffle(arr) {
   return a;
 }
 
-/* 富文本渲染：转义 HTML、识别图片文件名、整行下划线转填空提示框 */
+/* 富文本渲染：转义 HTML、识别图片标记（[路径] 或裸路径）、整行下划线转填空提示框 */
 function renderRichText(text) {
   const lines = String(text == null ? "" : text).split("\n");
   const out = [];
-  const re = /([A-Za-z0-9_\u4e00-\u9fa5./-]+\.(?:png|jpe?g|gif|bmp|webp))/gi;
+  /* 方括号 [数据结构/3.png] 优先，其次旧式裸路径 token */
+  const re = /(?:\[([A-Za-z0-9_\u4e00-\u9fa5./-]+\.(?:png|jpe?g|gif|bmp|webp))\])|([A-Za-z0-9_\u4e00-\u9fa5./-]+\.(?:png|jpe?g|gif|bmp|webp))/gi;
   for (const line of lines) {
     if (/^_{2,}\s*$/.test(line)) {
       out.push('<div class="blank-line">＿＿＿＿＿＿＿＿</div>');
@@ -49,7 +50,7 @@ function renderRichText(text) {
     re.lastIndex = 0;
     while ((m = re.exec(line)) !== null) {
       html += esc(line.slice(last, m.index));
-      const token = m[1];
+      const token = m[1] || m[2];
       html += `<img class="inline-img" src="pictures/${encodeURI(token)}" alt="${esc(token)}" loading="lazy" onerror="this.remove()">`;
       last = m.index + m[0].length;
     }
@@ -732,10 +733,18 @@ function blankTagHtml(text) {
   return String(text == null ? "" : text).replace(/(【\s*\d+\s*】)/g, (m) => `<span class="blank-tag">${esc(m)}</span>`);
 }
 
+function stemImagesHtml(images) {
+  /* 题后配图：题干文字之后逐张显示 */
+  if (!Array.isArray(images) || !images.length) return "";
+  return `<div class="stem-imgs">${images.map((n) =>
+    `<img class="stem-img" src="pictures/${encodeURI(n)}" alt="" loading="lazy" onerror="this.remove()">`).join("")}</div>`;
+}
+
 function questionBodyHtml(q) {
-  /* 题干渲染：填空题把空位标记显示为占位标签 */
+  /* 题干渲染：行内/方括号图 + 题后 images 配图；填空题空位显示为占位标签 */
   const html = renderRichText(q.text);
-  return q.type === "填空题" ? blankTagHtml(html) : html;
+  const body = q.type === "填空题" ? blankTagHtml(html) : html;
+  return body + stemImagesHtml(q.images);
 }
 
 function buildAnswerArea(view, p, q) {
@@ -1484,7 +1493,7 @@ function dupDetailHtml(it, tag) {
     : "";
   return `
     <div style="margin-bottom:6px"><span class="badge badge-${esc(it.label)}">${esc(it.label)}</span> ${tag}#${it.index + 1}</div>
-    <div class="q-text" style="font-size:14.5px">${renderRichText(it.text)}</div>
+    <div class="q-text" style="font-size:14.5px">${questionBodyHtml(it)}</div>
     ${optsHtml}
     <div class="small" style="margin-top:4px">答案：<b>${esc(ansShow(it, it.answer))}</b></div>`;
 }
@@ -1663,7 +1672,7 @@ function openQuestionDetail(item) {
       <div style="margin-bottom:12px;display:flex;gap:8px;align-items:center">
         ${badgeHtml(item.label)} <span class="muted small">${esc(item.subject)}</span>
       </div>
-      <div class="q-text">${renderRichText(item.text)}</div>
+      <div class="q-text">${questionBodyHtml(item)}</div>
       ${optsHtml}
       <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--line)">
         <div class="small"><b>正确答案：</b><span style="color:var(--green);font-weight:700">${esc(ansShow(item, item.answer))}</span></div>
@@ -1815,10 +1824,15 @@ async function openQuestionEditor(item, onSaved) {
         <label>题干</label>
         <div style="margin-bottom:6px;display:flex;gap:6px;flex-wrap:wrap">
           <button type="button" class="btn btn-ghost q-tool-btn" data-tool="blank">＋ 插入空位</button>
-          <button type="button" class="btn btn-ghost q-tool-btn" data-tool="img">🖼 插入图片</button>
+          <button type="button" class="btn btn-ghost q-tool-btn" data-tool="img">🖼 在光标处插入图片</button>
+          <button type="button" class="btn btn-ghost q-tool-btn" data-tool="stemimg">🖼 ＋ 添加到题后配图</button>
         </div>
-        <textarea class="answer-input" id="q-text" rows="5" placeholder="支持多行；填空请用【＋插入空位】插入编号空位；图片文件名写在文本中即可自动显示">${isEdit ? esc(item.text) : ""}</textarea>
+        <textarea class="answer-input" id="q-text" rows="5" placeholder="支持多行；填空用【＋插入空位】；行内图以 [科目/图片名.png] 形式写在句中即可，也可放到下方题后配图">${isEdit ? esc(item.text) : ""}</textarea>
         <div class="hint" id="q-text-hint"></div>
+        <div class="form-group" id="q-stem-imgs-group" style="margin-top:8px">
+          <label>题后配图（显示在题干下方，不写入题干文字）</label>
+          <div id="q-stem-imgs"></div>
+        </div>
       </div>
       <div class="form-group" id="q-options-group" style="display:none">
         <label>选项（每行一个选项，自动编号 A/B/C…；选项文本可含图片名）</label>
@@ -1868,6 +1882,30 @@ async function openQuestionEditor(item, onSaved) {
 
   /* 填空编辑器（随题干空位数刷新） */
   let blankItems = [];
+  /* ---- 题后配图（images 列表）---- */
+  let stemImgs = isEdit && Array.isArray(item.images) ? item.images.slice() : [];
+  function refreshStemImgs() {
+    const box = $("#q-stem-imgs", m.mask);
+    const curSubject = String((isEdit ? item.subject : "") || (($("#q-subject", m.mask) || {}).value || "")).trim();
+    if (!box) return;
+    box.innerHTML = stemImgs.length
+      ? stemImgs.map((p, idx) => `
+        <div class="fill-editor-img">
+          <span class="img-tag" title="${esc(p)}">🖼 ${esc(p)}</span>
+          <button type="button" class="btn btn-ghost btn-sm" data-rem-img="${idx}">✕ 移除</button>
+        </div>`).join("")
+        + `<div style="margin-top:6px"><button type="button" class="btn btn-ghost q-tool-btn" data-tool="stemimg">＋ 添加题后配图</button>
+           <span class="small muted">${curSubject ? `当前科目 ${esc(curSubject)}` : "先选科目再添加"}</span></div>`
+      : `<div class="small muted">还没有题后配图。</div>
+         <div style="margin-top:6px"><button type="button" class="btn btn-ghost q-tool-btn" data-tool="stemimg">＋ 添加题后配图</button>
+         <span class="small muted">${curSubject ? `当前科目 ${esc(curSubject)}` : "先选科目再添加"}</span></div>`;
+  }
+  const openStemPick = () => {
+    const cs = String((isEdit ? item.subject : "") || (($("#q-subject", m.mask) || {}).value || "")).trim();
+    openImagePicker((name) => { if (!stemImgs.includes(name)) stemImgs.push(name); refreshStemImgs(); }, cs);
+  };
+  refreshStemImgs();
+
   function refreshBlankRows() {
     const t = typeSel.value;
     if (t !== "填空题") return;
@@ -1889,12 +1927,26 @@ async function openQuestionEditor(item, onSaved) {
     const tool = b.dataset.tool;
     const curSubject = String((isEdit ? item.subject : "") || (($("#q-subject", m.mask) || {}).value || "")).trim();
     if (tool === "blank") insertBlank();
-    else if (tool === "img") openImagePicker((name) => insertAtCursor(textTa, name), curSubject);
+    else if (tool === "img") openImagePicker((name) => insertAtCursor(textTa, `[${name}]`), curSubject);
     else if (tool === "optimg") openImagePicker((name) => {
-      optTa.value = optTa.value ? optTa.value.replace(/\s*$/, "") + "\n" + name : name;
+      optTa.value = optTa.value ? optTa.value.replace(/\s*$/, "") + "\n" + `[${name}]` : `[${name}]`;
       refreshAnswerUI();
     }, curSubject);
+    else if (tool === "stemimg") openImagePicker((name) => {
+      if (!stemImgs.includes(name)) stemImgs.push(name);
+      refreshStemImgs();
+    }, curSubject);
   }));
+  m.mask.addEventListener("click", (e) => {
+    const rm = e.target && e.target.closest && e.target.closest("[data-rem-img]");
+    if (rm) {
+      stemImgs.splice(Number(rm.dataset.remImg), 1);
+      refreshStemImgs();
+      return;
+    }
+    const addBtn = e.target && e.target.closest && e.target.closest('[data-tool="stemimg"]');
+    if (addBtn) openStemPick();
+  });
 
   function refreshAnswerUI() {
     const t = typeSel.value;
@@ -2030,6 +2082,7 @@ async function openQuestionEditor(item, onSaved) {
   async function doSave() {
     let payload;
     try { payload = buildPayload(); } catch (e) { toast(e.message, "err"); return false; }
+    payload.question.images = stemImgs.slice();
     if (isEdit) {
       payload.question.flag_star = !!item.flag_star;
       payload.question.flag_cross = !!item.flag_cross;
@@ -2049,6 +2102,8 @@ async function openQuestionEditor(item, onSaved) {
         textTa.value = "";
         optTa.value = "";
         blankItems = [];
+        stemImgs = [];
+        refreshStemImgs();
         refreshAnswerUI();
         toast("已保存，继续录入下一题", "ok");
       }
@@ -2953,7 +3008,7 @@ function renderHelp(view) {
       </div>
       <div class="help-block">
         <h3>🖼 图片题目</h3>
-        <p>图片按科目存放在 <code>pictures/科目/</code>（共用图在 <code>_shared/</code>）；题干/选项里写相对文件名（如 <code>数据结构/3.png</code>）即可自动显示，编辑器“插入图片”会自动插入带科目前缀的引用。</p>
+        <p>图片按科目存放在 <code>pictures/科目/</code>（共用图在 <code>_shared/</code>）。两种用法：① 行内精确插图——在题干/选项文本里写 <code>[数据结构/3.png]</code>（编辑器“插入图片”生成）；② 题后配图——添加到编辑器的“题后配图”列表，显示在题干下方。旧式不带括号的 <code>数据结构/3.png</code> 也能识别显示。</p>
       </div>
     </div>`;
 }

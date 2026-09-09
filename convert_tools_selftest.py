@@ -99,8 +99,9 @@ check("PTA选择：逐题参考答案", len(c_ok) == 2 and [q.answer for q in c_
 
 # ---- 图片保真仍有效（judge0 + 题干行内 token 直通）----
 img = conv0.parse("运行结果如下：\n1.png\n\nHello")
+from models.question import collect_image_tokens as _cit  # noqa: E402
 check("convert_judge0 图片保真", len(img) == 1 and "1.png" in img[0].text
-      and "1.png" in img[0].to_dict().get("images", []))
+      and "1.png" in _cit(img[0].text))
 
 print("\n" + ("convert_tools 自检全部通过 ✔" if not fails else f"失败 {len(fails)} 项: {fails}"))
 sys.exit(1 if fails else 0)

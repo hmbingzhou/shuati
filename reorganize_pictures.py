@@ -434,6 +434,9 @@ def check():
             total_q += 1
             extra = [t for _, t in (getattr(q, "options", None) or [])]
             toks = list(dict.fromkeys(collect_image_tokens(q.text or "", *extra)))
+            for p in (getattr(q, "images", None) or []):  # 题后配图也校验
+                toks.append(p)
+            toks = list(dict.fromkeys(toks))
             total_img += len(toks)
             for tok in toks:
                 p = os.path.join(PICTURES_DIR, tok.replace("/", os.sep))

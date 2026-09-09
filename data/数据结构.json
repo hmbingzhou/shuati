@@ -1567,7 +1567,7 @@
   },
   {
     "type": "单选题",
-    "text": "已知表头元素为c的单链表在内存中的存储状态如下表所示：数据结构/3.png\n现将f存放于1014H处，并插入到单链表中，若f在逻辑上位于a和e之间，则a、e、f的“链接地址”依次\n是：",
+    "text": "已知表头元素为c的单链表在内存中的存储状态如下表所示：[数据结构/3.png]\n现将f存放于1014H处，并插入到单链表中，若f在逻辑上位于a和e之间，则a、e、f的“链接地址”依次\n是：",
     "answer": "D",
     "subject": "数据结构",
     "options": [
@@ -1588,9 +1588,7 @@
         "1014H, 1004H, 1010H"
       ]
     ],
-    "images": [
-      "数据结构/3.png"
-    ]
+    "images": []
   },
   {
     "type": "单选题",
@@ -3730,7 +3728,7 @@
   },
   {
     "type": "单选题",
-    "text": "给定二叉树如下图所示。设N代表二叉树的根，L代表根结点的左子树，R代表根结点的右子树。若遍历后的结点序列为3、1、7、5、6、2、4，则其遍历方式是：\n数据结构/4.png",
+    "text": "给定二叉树如下图所示。设N代表二叉树的根，L代表根结点的左子树，R代表根结点的右子树。若遍历后的结点序列为3、1、7、5、6、2、4，则其遍历方式是：\n",
     "answer": "B",
     "subject": "数据结构",
     "options": [
@@ -4065,7 +4063,7 @@
   },
   {
     "type": "单选题",
-    "text": "已知一棵二叉树的树形如下图所示，若其后序遍历序列为 f, d, b, e, c, a，则其先（前）序遍历序列是：\n数据结构/8.png",
+    "text": "已知一棵二叉树的树形如下图所示，若其后序遍历序列为 f, d, b, e, c, a，则其先（前）序遍历序列是：\n",
     "answer": "A",
     "subject": "数据结构",
     "options": [
@@ -4098,27 +4096,22 @@
     "options": [
       [
         "A",
-        "数据结构/5a.png"
+        "[数据结构/5a.png]"
       ],
       [
         "B",
-        "数据结构/5b.png"
+        "[数据结构/5b.png]"
       ],
       [
         "C",
-        "数据结构/5c.png"
+        "[数据结构/5c.png]"
       ],
       [
         "D",
-        "数据结构/5d.png"
+        "[数据结构/5d.png]"
       ]
     ],
-    "images": [
-      "数据结构/5a.png",
-      "数据结构/5b.png",
-      "数据结构/5c.png",
-      "数据结构/5d.png"
-    ]
+    "images": []
   },
   {
     "type": "单选题",
@@ -4266,7 +4259,7 @@
   },
   {
     "type": "单选题",
-    "text": "已知一棵二叉树的树形如下图所示，其后序序列为{ e, a, c, b, d, g, f }。树中与结点a同层的结点是：\n数据结构/6.png",
+    "text": "已知一棵二叉树的树形如下图所示，其后序序列为{ e, a, c, b, d, g, f }。树中与结点a同层的结点是：\n",
     "answer": "B",
     "subject": "数据结构",
     "options": [
@@ -4845,7 +4838,7 @@
   },
   {
     "type": "单选题",
-    "text": "先序遍历图示二叉树的结果为\n数据结构/7.png",
+    "text": "先序遍历图示二叉树的结果为\n",
     "answer": "B",
     "subject": "数据结构",
     "options": [
@@ -4902,27 +4895,22 @@
     "options": [
       [
         "A",
-        "数据结构/10a.png"
+        "[数据结构/10a.png]"
       ],
       [
         "B",
-        "数据结构/10b.png"
+        "[数据结构/10b.png]"
       ],
       [
         "C",
-        "数据结构/10c.png"
+        "[数据结构/10c.png]"
       ],
       [
         "D",
-        "数据结构/10d.png"
+        "[数据结构/10d.png]"
       ]
     ],
-    "images": [
-      "数据结构/10a.png",
-      "数据结构/10b.png",
-      "数据结构/10c.png",
-      "数据结构/10d.png"
-    ]
+    "images": []
   },
   {
     "type": "单选题",
@@ -4974,7 +4962,7 @@
   },
   {
     "type": "单选题",
-    "text": "在图中自a点开始进行深度优先遍历算法可能得到的结果为：\n数据结构/11.png",
+    "text": "在图中自a点开始进行深度优先遍历算法可能得到的结果为：\n",
     "answer": "D",
     "subject": "数据结构",
     "options": [
@@ -5001,7 +4989,7 @@
   },
   {
     "type": "单选题",
-    "text": "在图中自d点开始进行深度优先遍历算法可能得到的结果为：\n数据结构/12.png",
+    "text": "在图中自d点开始进行深度优先遍历算法可能得到的结果为：\n",
     "answer": "C",
     "subject": "数据结构",
     "options": [
@@ -5052,7 +5040,7 @@
   },
   {
     "type": "单选题",
-    "text": "已知一个图的邻接矩阵如下，则从顶点V1出发按深度优先搜索法进行遍历，可能得到的一种顶点序列为：\n（感谢湘潭大学朱江老师斧正）\n数据结构/13.png",
+    "text": "已知一个图的邻接矩阵如下，则从顶点V1出发按深度优先搜索法进行遍历，可能得到的一种顶点序列为：\n（感谢湘潭大学朱江老师斧正）\n",
     "answer": "B",
     "subject": "数据结构",
     "options": [
@@ -5079,7 +5067,7 @@
   },
   {
     "type": "单选题",
-    "text": "给定一有向图的邻接表如下。从顶点V1出发按深度优先搜索法进行遍历，则得到的一种顶点序列为：\n数据结构/14.png",
+    "text": "给定一有向图的邻接表如下。从顶点V1出发按深度优先搜索法进行遍历，则得到的一种顶点序列为：\n",
     "answer": "C",
     "subject": "数据结构",
     "options": [
@@ -5106,7 +5094,7 @@
   },
   {
     "type": "单选题",
-    "text": "下列选项中，不是下图深度优先搜索序列的是：\n数据结构/15.png",
+    "text": "下列选项中，不是下图深度优先搜索序列的是：\n",
     "answer": "D",
     "subject": "数据结构",
     "options": [
@@ -5157,7 +5145,7 @@
   },
   {
     "type": "单选题",
-    "text": "下面给出的有向图中，各个顶点的入度和出度分别是：\n数据结构/16.png",
+    "text": "下面给出的有向图中，各个顶点的入度和出度分别是：\n",
     "answer": "A",
     "subject": "数据结构",
     "options": [
@@ -5184,7 +5172,7 @@
   },
   {
     "type": "单选题",
-    "text": "给定有向图的邻接矩阵如下：\n数据结构/17.png\n顶点2（编号从0开始）的出度和入度分别是：",
+    "text": "给定有向图的邻接矩阵如下：\n\n顶点2（编号从0开始）的出度和入度分别是：",
     "answer": "C",
     "subject": "数据结构",
     "options": [
@@ -5235,64 +5223,56 @@
   },
   {
     "type": "单选题",
-    "text": "对于给定的有向图如下，其邻接矩阵为：\n数据结构/18.png",
+    "text": "对于给定的有向图如下，其邻接矩阵为：\n",
     "answer": "D",
     "subject": "数据结构",
     "options": [
       [
         "A",
-        "数据结构/18a.png"
+        "[数据结构/18a.png]"
       ],
       [
         "B",
-        "数据结构/18b.png"
+        "[数据结构/18b.png]"
       ],
       [
         "C",
-        "数据结构/18c.png"
+        "[数据结构/18c.png]"
       ],
       [
         "D",
-        "数据结构/18d.png"
+        "[数据结构/18d.png]"
       ]
     ],
     "images": [
-      "数据结构/18.png",
-      "数据结构/18a.png",
-      "数据结构/18b.png",
-      "数据结构/18c.png",
-      "数据结构/18d.png"
+      "数据结构/18.png"
     ]
   },
   {
     "type": "单选题",
-    "text": "对于给定的有向图如下，其逆邻接表为：\n数据结构/19.png",
+    "text": "对于给定的有向图如下，其逆邻接表为：\n",
     "answer": "D",
     "subject": "数据结构",
     "options": [
       [
         "A",
-        "数据结构/19a.png"
+        "[数据结构/19a.png]"
       ],
       [
         "B",
-        "数据结构/19b.png"
+        "[数据结构/19b.png]"
       ],
       [
         "C",
-        "数据结构/19c.png"
+        "[数据结构/19c.png]"
       ],
       [
         "D",
-        "数据结构/19d.png"
+        "[数据结构/19d.png]"
       ]
     ],
     "images": [
-      "数据结构/19.png",
-      "数据结构/19a.png",
-      "数据结构/19b.png",
-      "数据结构/19c.png",
-      "数据结构/19d.png"
+      "数据结构/19.png"
     ]
   },
   {
@@ -5321,33 +5301,29 @@
   },
   {
     "type": "单选题",
-    "text": "以下哪个是给定无向带权图的邻接矩阵？\n数据结构/20.png",
+    "text": "以下哪个是给定无向带权图的邻接矩阵？\n",
     "answer": "B",
     "subject": "数据结构",
     "options": [
       [
         "A",
-        "数据结构/20a.png"
+        "[数据结构/20a.png]"
       ],
       [
         "B",
-        "数据结构/20b.png"
+        "[数据结构/20b.png]"
       ],
       [
         "C",
-        "数据结构/20c.png"
+        "[数据结构/20c.png]"
       ],
       [
         "D",
-        "数据结构/20d.png"
+        "[数据结构/20d.png]"
       ]
     ],
     "images": [
-      "数据结构/20.png",
-      "数据结构/20a.png",
-      "数据结构/20b.png",
-      "数据结构/20c.png",
-      "数据结构/20d.png"
+      "数据结构/20.png"
     ]
   },
   {
@@ -5448,7 +5424,7 @@
   },
   {
     "type": "单选题",
-    "text": "给定一有向图的邻接表如下。从顶点V1出发按广度优先搜索法进行遍历，则得到的一种顶点序列为：\n数据结构/21.png",
+    "text": "给定一有向图的邻接表如下。从顶点V1出发按广度优先搜索法进行遍历，则得到的一种顶点序列为：\n",
     "answer": "C",
     "subject": "数据结构",
     "options": [
@@ -5475,7 +5451,7 @@
   },
   {
     "type": "单选题",
-    "text": "在图中自c点开始进行广度优先遍历算法可能得到的结果为：\n数据结构/22.png",
+    "text": "在图中自c点开始进行广度优先遍历算法可能得到的结果为：\n",
     "answer": "C",
     "subject": "数据结构",
     "options": [
@@ -5574,7 +5550,7 @@
   },
   {
     "type": "单选题",
-    "text": "下图为一个AOV网，其可能的拓扑有序序列为：\n数据结构/23.png",
+    "text": "下图为一个AOV网，其可能的拓扑有序序列为：\n",
     "answer": "D",
     "subject": "数据结构",
     "options": [
@@ -5625,7 +5601,7 @@
   },
   {
     "type": "单选题",
-    "text": "求如图所示的AOE-网的关键路径。\n数据结构/24.png",
+    "text": "求如图所示的AOE-网的关键路径。\n",
     "answer": "B",
     "subject": "数据结构",
     "options": [
@@ -5700,7 +5676,7 @@
   },
   {
     "type": "单选题",
-    "text": "有向图的邻接链表如下，则顶点C的入度为\n数据结构/25.png",
+    "text": "有向图的邻接链表如下，则顶点C的入度为\n",
     "answer": "A",
     "subject": "数据结构",
     "options": [
@@ -5829,62 +5805,53 @@
     "options": [
       [
         "A",
-        "数据结构/27a.png"
+        "[数据结构/27a.png]"
       ],
       [
         "B",
-        "数据结构/27b.png"
+        "[数据结构/27b.png]"
       ],
       [
         "C",
-        "数据结构/27c.png"
+        "[数据结构/27c.png]"
       ],
       [
         "D",
-        "数据结构/27d.png"
+        "[数据结构/27d.png]"
       ]
     ],
-    "images": [
-      "数据结构/27a.png",
-      "数据结构/27b.png",
-      "数据结构/27c.png",
-      "数据结构/27d.png"
-    ]
+    "images": []
   },
   {
     "type": "单选题",
-    "text": "对有向图\n数据结构/28.png\n以下哪个是其正确的逆邻接表？",
+    "text": "对有向图\n\n以下哪个是其正确的逆邻接表？",
     "answer": "B",
     "subject": "数据结构",
     "options": [
       [
         "A",
-        "数据结构/28a.png"
+        "[数据结构/28a.png]"
       ],
       [
         "B",
-        "数据结构/28b.png"
+        "[数据结构/28b.png]"
       ],
       [
         "C",
-        "数据结构/28c.png"
+        "[数据结构/28c.png]"
       ],
       [
         "D",
-        "数据结构/28d.png"
+        "[数据结构/28d.png]"
       ]
     ],
     "images": [
-      "数据结构/28.png",
-      "数据结构/28a.png",
-      "数据结构/28b.png",
-      "数据结构/28c.png",
-      "数据结构/28d.png"
+      "数据结构/28.png"
     ]
   },
   {
     "type": "单选题",
-    "text": "给定有权无向图如下。关于其最小生成树，下列哪句是对的？\n数据结构/9.png",
+    "text": "给定有权无向图如下。关于其最小生成树，下列哪句是对的？\n",
     "answer": "A",
     "subject": "数据结构",
     "options": [
@@ -5911,7 +5878,7 @@
   },
   {
     "type": "单选题",
-    "text": "图G的逆邻接表如下所示，\n数据结构/26.png\n则 顶点6 的度为：",
+    "text": "图G的逆邻接表如下所示，\n\n则 顶点6 的度为：",
     "answer": "E",
     "subject": "数据结构",
     "options": [
@@ -6286,7 +6253,7 @@
   },
   {
     "type": "单选题",
-    "text": "已知二叉排序树如下图所示，元素之间应满足的大小关系是：\n数据结构/29.png",
+    "text": "已知二叉排序树如下图所示，元素之间应满足的大小关系是：\n",
     "answer": "C",
     "subject": "数据结构",
     "options": [
@@ -7859,7 +7826,7 @@
   },
   {
     "type": "填空题",
-    "text": "本题要求实现折半查找的递归查找操作。 例如对于下图的有序表：\n数据结构/有序表.png\n输入样例：\n2\n21 70\n输出样例：\n21 is found\n70 is not found\n###程序如下：\n#include <stdio.h>\n#include <stdlib.h>\ntypedef int KeyType;\ntypedef struct {\n          KeyType   *data; /*表基址*/\n          int     length;      /*表长*/\n}SSTable;\nvoid  CreatSSTable(SSTable *ST);/*有序表创建，由裁判实现，细节不表*/\nint  BiSearch(SSTable ST,KeyType e,int low,int high);\nint main()\n{\n   SSTable  ST;\n   int n,result,i;\n   KeyType e;\n   CreatSSTable(&ST);\n   scanf(\"%d\",&n);\n   for( i=0;i<n;i++)\n   {\n    scanf(\"%d\",&e);\n    result = BiSearch(ST,e,1,ST.length);\n    if(result) printf(\"%d is found\\n\",e);\n    else printf(\"%d is not found\\n\",e);\n    }\n    return 0;\n}\nint  BiSearch(SSTable ST,KeyType e,int low,int high)\n{\n   int mid;\n   if(__________________________) return 0;\n   mid=(low+high)/2;\n   if(ST.data[mid]==e) return  mid;\n   if(e<ST.data[mid]) return __________________________;\n   else __________________________;\n}",
+    "text": "本题要求实现折半查找的递归查找操作。 例如对于下图的有序表：\n\n输入样例：\n2\n21 70\n输出样例：\n21 is found\n70 is not found\n###程序如下：\n#include <stdio.h>\n#include <stdlib.h>\ntypedef int KeyType;\ntypedef struct {\n          KeyType   *data; /*表基址*/\n          int     length;      /*表长*/\n}SSTable;\nvoid  CreatSSTable(SSTable *ST);/*有序表创建，由裁判实现，细节不表*/\nint  BiSearch(SSTable ST,KeyType e,int low,int high);\nint main()\n{\n   SSTable  ST;\n   int n,result,i;\n   KeyType e;\n   CreatSSTable(&ST);\n   scanf(\"%d\",&n);\n   for( i=0;i<n;i++)\n   {\n    scanf(\"%d\",&e);\n    result = BiSearch(ST,e,1,ST.length);\n    if(result) printf(\"%d is found\\n\",e);\n    else printf(\"%d is not found\\n\",e);\n    }\n    return 0;\n}\nint  BiSearch(SSTable ST,KeyType e,int low,int high)\n{\n   int mid;\n   if(__________________________) return 0;\n   mid=(low+high)/2;\n   if(ST.data[mid]==e) return  mid;\n   if(e<ST.data[mid]) return __________________________;\n   else __________________________;\n}",
     "answer": {
       "whole": true,
       "items": [

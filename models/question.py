@@ -28,27 +28,50 @@ from utils.helpers import yellow
 TYPE_ORDER = ("单选题", "多选题", "判断题", "填空题", "简答题", "计算题")
 AUTO_GRADED_TYPES = ("单选题", "多选题", "判断题", "填空题", "计算题")
 
-# 题干里图片文件名 token（png/jpg 等），显示与 images 收集共用。
-# 支持科目前缀相对路径：数据结构/3.png、_shared/5a.png，或扁平短名 1.png
+# 题干里图片文件名 token（png/jpg 等）。
+# - 支持科目前缀相对路径：数据结构/3.png、_shared/5a.png，或扁平短名 1.png
+# - 行内精确插图用方括号标记：[数据结构/3.png]（旧数据也允许无括号裸路径）
 _IMG_TOKEN_RE = re.compile(
     r"[A-Za-z0-9_\u4e00-\u9fff./-]+\.(?:png|jpe?g|gif|bmp|webp)", re.IGNORECASE)
+BRACKET_IMG_RE = re.compile(
+    r"\[([A-Za-z0-9_\u4e00-\u9fff./-]+\.(?:png|jpe?g|gif|bmp|webp))\]", re.IGNORECASE)
 
 # 填空空位编号标记：【1】【12】……
 BLANK_MARK_RE = re.compile(r"【\s*(\d+)\s*】")
 
 
+def _mask_bracketed(s):
+    """把 [图片路径] 片段替换为等长空格（避免裸路径正则二次命中）"""
+    return BRACKET_IMG_RE.sub(lambda m: " " * (m.end() - m.start()), s)
+
+
 def collect_image_tokens(*texts) -> list:
-    """从若干文本里收集图片文件名（按出现顺序、去重）"""
+    """从若干文本里收集图片路径（支持 [路径] 与旧裸路径；按出现顺序去重）"""
     seen, out = set(), []
     for t in texts:
         if not t:
             continue
-        for m in _IMG_TOKEN_RE.finditer(str(t)):
+        t = str(t)
+        for m in BRACKET_IMG_RE.finditer(t):
+            token = m.group(1)
+            if token not in seen:
+                seen.add(token)
+                out.append(token)
+        masked = _mask_bracketed(t)
+        for m in _IMG_TOKEN_RE.finditer(masked):
             token = m.group(0)
             if token not in seen:
                 seen.add(token)
                 out.append(token)
     return out
+
+
+def mask_image_tokens(text: str) -> str:
+    """把文本里的行内图片标记统一替换为 （图），供终端/纯文本预览使用（不暴露文件名）"""
+    t = str(text or "")
+    t = BRACKET_IMG_RE.sub("（图）", t)
+    t = _IMG_TOKEN_RE.sub("（图）", t)
+    return t
 
 
 def normalize_user_text(s: str) -> str:
@@ -67,6 +90,7 @@ class Question(ABC):
         self.subject = subject
         self.flag_star = False   # 网页版标记：黄色星星
         self.flag_cross = False  # 网页版标记：红色叉
+        self.images = []         # “题后配图”：显示在题干文字之后的图片相对路径列表（行内图用 [路径] 写在 text 里）
 
     # ---- 类型 ----
     @abstractmethod
@@ -99,14 +123,12 @@ class Question(ABC):
 
     # ---- 序列化 ----
     def to_dict(self) -> dict:
-        images = list(dict.fromkeys(
-            collect_image_tokens(self.text, *self._extra_image_texts())))
         d = {
             "type": self.get_type_name(),
             "text": self.text,
             "answer": self._answer_to_json(),
             "subject": self.subject,
-            "images": images,
+            "images": [str(x) for x in (self.images or [])],
             "flag_star": bool(self.flag_star),
             "flag_cross": bool(self.flag_cross),
         }
@@ -116,7 +138,7 @@ class Question(ABC):
         return self.answer
 
     def _extra_image_texts(self) -> list:
-        """子类额外的图片来源文本（如选项文本）"""
+        """子类额外的图片来源文本（如选项文本，供收集/迁移用）"""
         return []
 
     @staticmethod
@@ -134,6 +156,8 @@ class Question(ABC):
             q = klass.from_dict(data)
         q.flag_star = bool(data.get("flag_star", False))
         q.flag_cross = bool(data.get("flag_cross", False))
+        imgs = data.get("images")
+        q.images = [str(x) for x in (imgs if isinstance(imgs, list) else [])]
         return q
 
 
@@ -182,9 +206,9 @@ class ChoiceQuestion(Question):
         return "多选题" if self.choice_type == "multiple" else "单选题"
 
     def display(self) -> str:
-        lines = [f"{yellow(f'[{self.get_type_label()}]')} {self.text}"]
+        lines = [f"{yellow(f'[{self.get_type_label()}]')} {mask_image_tokens(self.text)}"]
         for label_opt, option_text in self.options:
-            lines.append(f"  {label_opt}. {option_text}")
+            lines.append(f"  {label_opt}. {mask_image_tokens(option_text)}")
         return "\n".join(lines)
 
     def to_dict(self) -> dict:
@@ -269,7 +293,7 @@ class TrueFalseQuestion(Question):
         return "判断题"
 
     def display(self) -> str:
-        return f"{yellow('[判断题]')} {self.text}\n  请选择：正确 / 错误"
+        return f"{yellow('[判断题]')} {mask_image_tokens(self.text)}\n  请选择：正确 / 错误"
 
     def check_answer(self, user_answer) -> bool:
         return self._normalize(user_answer) == self.answer
@@ -302,7 +326,11 @@ class FillBlankQuestion(Question):
             self.answer = self._from_legacy_string(self.answer)
         elif isinstance(self.answer, dict):
             self.whole_string = bool(self.answer.get("whole", False))
-            self.answer = self.answer.get("items") or self.answer
+            _items = self.answer.get("items")
+            if isinstance(_items, list):  # 兼容空列表
+                self.answer = _items
+            else:
+                self.answer = self.answer
         self.answer = [dict(x) for x in (self.answer or [])]
 
     # ---- 空位 ----
@@ -351,7 +379,7 @@ class FillBlankQuestion(Question):
         shown = self.text or ""
         if not self.whole_string:
             shown = BLANK_MARK_RE.sub(lambda m: "＿＿＿＿", shown)
-        return f"{yellow('[填空题]')} {shown}"
+        return f"{yellow('[填空题]')} {mask_image_tokens(shown)}"
 
     def answer_text(self) -> str:
         if self.whole_string:
@@ -434,7 +462,7 @@ class EssayQuestion(Question):
         return False
 
     def display(self) -> str:
-        return f"{yellow('[简答题]')} {self.text}"
+        return f"{yellow('[简答题]')} {mask_image_tokens(self.text)}"
 
     def check_answer(self, user_answer) -> bool:
         return False  # 不自动判分；由界面走自评流程
@@ -459,7 +487,7 @@ class CalculationQuestion(Question):
         return "计算题"
 
     def display(self) -> str:
-        return f"{yellow('[计算题]')} {self.text}"
+        return f"{yellow('[计算题]')} {mask_image_tokens(self.text)}"
 
     def answer_text(self) -> str:
         return str(self.answer or "")

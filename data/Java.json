@@ -1771,7 +1771,7 @@
   },
   {
     "type": "单选题",
-    "text": "在Java中，以下程序段的输出结果是 （）。Java/1.png",
+    "text": "在Java中，以下程序段的输出结果是 （）。",
     "answer": "D",
     "subject": "Java",
     "options": [
@@ -1822,7 +1822,7 @@
   },
   {
     "type": "单选题",
-    "text": "在Java中，下列程序的运行结果是（  ）。Java/2.png",
+    "text": "在Java中，下列程序的运行结果是（  ）。",
     "answer": "C",
     "subject": "Java",
     "options": [

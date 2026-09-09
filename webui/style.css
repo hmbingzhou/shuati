@@ -538,3 +538,9 @@ select.answer-input { width: auto; }
   .nav { flex: 1 1 100%; order: 3; }
   .practice-bar { flex-direction: column; align-items: stretch; }
 }
+
+/* ---------- v2 题后配图与编辑器图片 ---------- */
+.stem-imgs { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 10px; }
+.stem-img { max-width: 100%; max-height: 420px; object-fit: contain; border-radius: 6px; background: #fafafa; }
+.fill-editor-img { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.fill-editor-img .img-tag { font-size: 12px; color: #0f62fe; background: #eef4ff; padding: 2px 8px; border-radius: 6px; word-break: break-all; flex: 1; }
