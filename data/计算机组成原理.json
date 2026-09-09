@@ -1,0 +1,7432 @@
+[
+  {
+    "type": "选择题",
+    "text": "目前我们所说的个人计算机属于（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "巨型机"
+      ],
+      [
+        "B",
+        "中型机"
+      ],
+      [
+        "C",
+        "小型机"
+      ],
+      [
+        "D",
+        "微型机"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "（ ）对计算机的软、硬件资源进行管理。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "操作系统"
+      ],
+      [
+        "B",
+        "数据库管理系统"
+      ],
+      [
+        "C",
+        "语言处理系统"
+      ],
+      [
+        "D",
+        "用户程序"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "32位微机是指该计算机所用CPU（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "有32位寄存器"
+      ],
+      [
+        "B",
+        "同时处理32位二进制数"
+      ],
+      [
+        "C",
+        "有32个寄存器"
+      ],
+      [
+        "D",
+        "能处理32个字符"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列语言中，执行速度最快的语言是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "汇编语言"
+      ],
+      [
+        "B",
+        "COBOL"
+      ],
+      [
+        "C",
+        "机器语言"
+      ],
+      [
+        "D",
+        "C语言"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对计算机的产生有重要影响的人物是（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "牛顿、维纳、图灵"
+      ],
+      [
+        "B",
+        "莱布尼兹、布尔、图灵"
+      ],
+      [
+        "C",
+        "巴贝奇、维纳、麦克斯韦"
+      ],
+      [
+        "D",
+        "莱布尼兹、布尔、克雷"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "到目前为止，计算机中所有信息仍以二进制形式表示的原因是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "节约元器件"
+      ],
+      [
+        "B",
+        "运算速度快"
+      ],
+      [
+        "C",
+        "由物理器件的性能决定"
+      ],
+      [
+        "D",
+        "信息处理方便"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "完整的计算机系统应包括（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "运算器、存储器、控制器"
+      ],
+      [
+        "B",
+        "外设和主机"
+      ],
+      [
+        "C",
+        "主机和实用程序"
+      ],
+      [
+        "D",
+        "配套的硬件设备和软件系统"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列（ ）属于应用软件。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "操作系统"
+      ],
+      [
+        "B",
+        "编译系统"
+      ],
+      [
+        "C",
+        "连接程序"
+      ],
+      [
+        "D",
+        "文本处理程序"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "微型计算机的发展以（ ）技术为标志。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "操作系统"
+      ],
+      [
+        "B",
+        "微处理器"
+      ],
+      [
+        "C",
+        "磁盘"
+      ],
+      [
+        "D",
+        "软件"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以其空管为主要器件的是（ ）",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "第一代计算机"
+      ],
+      [
+        "B",
+        "第二代计算机"
+      ],
+      [
+        "C",
+        "第三代计算机"
+      ],
+      [
+        "D",
+        "第四代计算机"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "第二代计算机是以（ ）为主要器件。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "超大规模集成电路"
+      ],
+      [
+        "B",
+        "集成电路"
+      ],
+      [
+        "C",
+        "晶体管"
+      ],
+      [
+        "D",
+        "电子管"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "第三代计算机以（ ）为主要器件。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "晶体管"
+      ],
+      [
+        "B",
+        "电子管"
+      ],
+      [
+        "C",
+        "集成电路"
+      ],
+      [
+        "D",
+        "超大规模集成电路"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "第四代计算机以（ ）为主要器件。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "集成电路"
+      ],
+      [
+        "B",
+        "电子管"
+      ],
+      [
+        "C",
+        "晶体管"
+      ],
+      [
+        "D",
+        "大规模和超大规模集成电路"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "ENIAC所用的主要元件是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "集成电路"
+      ],
+      [
+        "B",
+        "晶体管"
+      ],
+      [
+        "C",
+        "电子管"
+      ],
+      [
+        "D",
+        "以上各项都不对"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "超大规模集成电路(VLSI)是指-片IC芯片上能容纳（ ）元件。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "数十个"
+      ],
+      [
+        "B",
+        "数百个"
+      ],
+      [
+        "C",
+        "数千个"
+      ],
+      [
+        "D",
+        "数万个以上"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "通常计算机的更新划代以（ ）为依据。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "电子器件"
+      ],
+      [
+        "B",
+        "电子管"
+      ],
+      [
+        "C",
+        "半导体"
+      ],
+      [
+        "D",
+        "延迟线"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对有关数据加以分类、统计、分析，这属于计算机在（ ）方面的应用。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "数值计算"
+      ],
+      [
+        "B",
+        "辅助设计"
+      ],
+      [
+        "C",
+        "数据处理"
+      ],
+      [
+        "D",
+        "实时控制"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "邮局对信件进行自动分拣,使用的计算机技术是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "机器翻译"
+      ],
+      [
+        "B",
+        "自然语咅理解"
+      ],
+      [
+        "C",
+        "模式识别"
+      ],
+      [
+        "D",
+        "网络通信"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "冯▪诺依曼结构计算机中数据采用二进制编码表示，其主要原因是（ ）。\nI． 二进制运算规则简单\nII． 制造两个稳态的物理器件较为容易\nIII． 便于逻辑门电路实现算术运算",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "仅I、II"
+      ],
+      [
+        "B",
+        "仅I、III"
+      ],
+      [
+        "C",
+        "仅II、III"
+      ],
+      [
+        "D",
+        "I、II、III"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列关于冯▪诺依曼结构计算机基本思想的叙述中，错误的是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "程序的功能都通过中央处理器执行指令实现"
+      ],
+      [
+        "B",
+        "指令和数据都用二进制表示，形式上无差别"
+      ],
+      [
+        "C",
+        "指令按地址访问，数据都在指令中直接给出"
+      ],
+      [
+        "D",
+        "程序执行前，指令和数据需预先存放在存储器中"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "把高级语言源程序转换为机器级目标代码文件的程序称为（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "汇编程序"
+      ],
+      [
+        "B",
+        "链接程序"
+      ],
+      [
+        "C",
+        "编译程序"
+      ],
+      [
+        "D",
+        "解释程序"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "计算机硬件能够直接执行的是（ ）。\nI．机器语言程序 II．汇编语言程序 III．硬件描述语言程序",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "仅I"
+      ],
+      [
+        "B",
+        "仅I、II"
+      ],
+      [
+        "C",
+        "仅I、III"
+      ],
+      [
+        "D",
+        "I、II、III"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列选项中，描述浮点数操作速度指标的是（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "MIPS"
+      ],
+      [
+        "B",
+        "CPI"
+      ],
+      [
+        "C",
+        "IPC"
+      ],
+      [
+        "D",
+        "MFLOPS"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列选项中，能缩短程序执行时间的措施是（ ）。\nI．提高CPU时钟频率\nII．优化数据通过结构\nIII．对程序进行编译优化",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "仅I和II"
+      ],
+      [
+        "B",
+        "仅I和III"
+      ],
+      [
+        "C",
+        "仅II和III"
+      ],
+      [
+        "D",
+        "I、II、III"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某计算机主频为1.2GHz，其指令分为4类，它们在基准程序中所占比例及CPI如下表所示\n指令类型\n所占比例\nCPI\n指令类型\n所占比例\nCPI\nA\n50%\n2\nC\n10%\n4\nB\n20%\n3\nD\n20%\n5\n该机的MIPS数是_______。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "100"
+      ],
+      [
+        "B",
+        "200"
+      ],
+      [
+        "C",
+        "400"
+      ],
+      [
+        "D",
+        "600"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假定基准程序 A 在某计算机上的运行时间为100秒，其中90秒为 CPU时间，其余为I/O时间。若 CPU 速度提高 50%，I/O 速度不变，则运行基准程序 A 所耗费的时间是（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "55 秒"
+      ],
+      [
+        "B",
+        "60 秒"
+      ],
+      [
+        "C",
+        "65 秒"
+      ],
+      [
+        "D",
+        "70 秒"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "程序P在机器M上的执行时间是20秒，编译优化后，P执行的指令数减少到原来的70%，而CPI增加到原来的1.2倍，则P在M上的执行时间是（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "8.4秒"
+      ],
+      [
+        "B",
+        "11.7秒"
+      ],
+      [
+        "C",
+        "14.0秒"
+      ],
+      [
+        "D",
+        "16.8秒"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假定计算机M1和M2具有相同的指令集体系结构（ISA），主频分别为1.5GHz和1.2GHz。在M1和M2上运行某基准程序P，平均CPI分别为2和1，则程序P在M1和M2上运行时间的比值是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0.4"
+      ],
+      [
+        "B",
+        "0.625"
+      ],
+      [
+        "C",
+        "1.6"
+      ],
+      [
+        "D",
+        "2.5"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "判断题",
+    "text": "存储程序的基本含义是将编好的程序和原始数据事先存入主存中。",
+    "answer": "正确",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "一个字节为8位二进制数，则机器字长为16位二进制数。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "某计算机的字长为64位，则该机一个字节的长度为16位。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "选择题",
+    "text": "某计算机的I/O设备采用异步串行传送方式传送字符信息，字符信息的格式为：1位起始位，7位数据位，1位校验位，1位停止位。若每秒传送480各个字符，则该设备的数据传输率为（ ）bps。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1200"
+      ],
+      [
+        "B",
+        "4800"
+      ],
+      [
+        "C",
+        "9600"
+      ],
+      [
+        "D",
+        "480"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "采用串行接口进行七位ASCⅡ码传送，带有一位奇偶校验位为1位起始位和1位停止位，当波特率为9600波特时，字符传送速率为（ ）字符/秒。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "960"
+      ],
+      [
+        "B",
+        "873"
+      ],
+      [
+        "C",
+        "1371"
+      ],
+      [
+        "D",
+        "480"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "不同信号在同一条信号线上分时传输的方式称为（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "总线复用方式"
+      ],
+      [
+        "B",
+        "串并行传输方式"
+      ],
+      [
+        "C",
+        "并行传输方式"
+      ],
+      [
+        "D",
+        "串行传输方式"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "不同的信号共用一组信号线，分时传送，这种总线传输方式是（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "猝发"
+      ],
+      [
+        "B",
+        "并行"
+      ],
+      [
+        "C",
+        "串行"
+      ],
+      [
+        "D",
+        "复用"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "连接计算机与计算机之间的总线属于（ ）总线。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "内"
+      ],
+      [
+        "B",
+        "系统"
+      ],
+      [
+        "C",
+        "通信"
+      ],
+      [
+        "D",
+        "数据"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若一个8位组成的字符至少需10位来传送，这是（ ）传送。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "同步"
+      ],
+      [
+        "B",
+        "异步"
+      ],
+      [
+        "C",
+        "并联"
+      ],
+      [
+        "D",
+        "混合"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "计算机使用总线结构的主要优点是便于实现积木化，同时（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "减少了信息传输量"
+      ],
+      [
+        "B",
+        "提高了信息传输的速度"
+      ],
+      [
+        "C",
+        "减少了信息传输线的条数"
+      ],
+      [
+        "D",
+        "加重了CPU的工作量"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "同步控制是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "只适用于CPU控制的方式"
+      ],
+      [
+        "B",
+        "只适用于外围设备控制的方式"
+      ],
+      [
+        "C",
+        "由统一时序信号控制的方式"
+      ],
+      [
+        "D",
+        "所有指令执行时间都相同的方式"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "描述 PCI 总线中基本概念不正确的句子是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "PCI 总线是一个与处理器无关的高速外围设备"
+      ],
+      [
+        "B",
+        "PCI基本传输机制是猝发或传送"
+      ],
+      [
+        "C",
+        "PCI 设备一定是主设备"
+      ],
+      [
+        "D",
+        "系统中允许有多条PCI总线"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "系统总线中控制线的功能是（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "提供主存、I / O接口设备的控制信号响应信号"
+      ],
+      [
+        "B",
+        "提供数据信息"
+      ],
+      [
+        "C",
+        "提供时序信号"
+      ],
+      [
+        "D",
+        "提供主存、I / O接口设备的响应信号"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "系统总线地址的功能是（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "选择主存单元地址"
+      ],
+      [
+        "B",
+        "选择进行信息传输的设备"
+      ],
+      [
+        "C",
+        "选择外存地址"
+      ],
+      [
+        "D",
+        "指定主存和I / O设备接口电路的地址"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "多总线结构的计算机系统，采用（ ）方法，对提高系统的吞吐率最有效。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "多口存贮器"
+      ],
+      [
+        "B",
+        "提高主存的速度"
+      ],
+      [
+        "C",
+        "交叉编址多模块存贮器"
+      ],
+      [
+        "D",
+        "高速缓冲存贮器"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "同步传输之所以比异步传输具有较高的传输频率是因为同步传输（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "不需要应答信号"
+      ],
+      [
+        "B",
+        "总线长度较短"
+      ],
+      [
+        "C",
+        "用一个公共时钟信号进行同步"
+      ],
+      [
+        "D",
+        "各部件存取时间较为接近"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "判断题",
+    "text": "总线的数据通道宽度是指该总线的寻址空间大小。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在各种异步通信方式中，不互锁速度最快。",
+    "answer": "正确",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "选择题",
+    "text": "计算机的外围设备是指（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "输入输出设备"
+      ],
+      [
+        "B",
+        "外存储器"
+      ],
+      [
+        "C",
+        "输入输出设备和外存储器"
+      ],
+      [
+        "D",
+        "电源"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "CD—ROM光盘是（ ）型光盘，可用做计算机的（ ）存储器和数字化多媒体设备。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "重写， 内"
+      ],
+      [
+        "B",
+        "只读， 外"
+      ],
+      [
+        "C",
+        "一次， 外"
+      ],
+      [
+        "D",
+        "多次， 内"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "DMA方式是在（ ）之间建立一条直接数据通道。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "I/O设备与主存"
+      ],
+      [
+        "B",
+        "两个I/O设备"
+      ],
+      [
+        "C",
+        "I/O设备与CPU"
+      ],
+      [
+        "D",
+        "CUP与主存"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "DMA方式中，周期窃取是窃取一个（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "存取周期"
+      ],
+      [
+        "B",
+        "指令周期"
+      ],
+      [
+        "C",
+        "CPU周期"
+      ],
+      [
+        "D",
+        "总线周期"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "中断向量是（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "子程序入口地址"
+      ],
+      [
+        "B",
+        "中断服务程序入口地址"
+      ],
+      [
+        "C",
+        "中断服务程序入口地址的地址"
+      ],
+      [
+        "D",
+        "中断返回地址"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "计算机系统的I/O接口是（ ）之间的交接界面。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "CPU与存储器"
+      ],
+      [
+        "B",
+        "主机与外设"
+      ],
+      [
+        "C",
+        "存储器与外设"
+      ],
+      [
+        "D",
+        "CPU与系统总线"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在以下情况下，可能不发生中断请求的是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "机器出现故障"
+      ],
+      [
+        "B",
+        "执行“软中断‘指令"
+      ],
+      [
+        "C",
+        "一条指令执行结束"
+      ],
+      [
+        "D",
+        "DMA操作结束"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "利用DMA方式传送数据时，每传送一个数据要占用（ ）的时间。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "一个指令周期"
+      ],
+      [
+        "B",
+        "一个机器周期"
+      ],
+      [
+        "C",
+        "一个存取周期"
+      ],
+      [
+        "D",
+        "一个时钟周期"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "中断服务程序的最后一条指令是（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "转移指令"
+      ],
+      [
+        "B",
+        "中断返回指令"
+      ],
+      [
+        "C",
+        "出栈指令"
+      ],
+      [
+        "D",
+        "隐指令"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "CRT的分辨率为1024×1024像素，像素的颜色数为256，刷新存储器的容量为（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "512KB"
+      ],
+      [
+        "B",
+        "1MB"
+      ],
+      [
+        "C",
+        "256KB"
+      ],
+      [
+        "D",
+        "2MB"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "CPU响应中断时，进入“中断周期”，采用硬件方法保护并更新程序计数器PC内容，而不是由软件完成，主要是为了（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "能进入中断处理程序，并能正确返回源程序"
+      ],
+      [
+        "B",
+        "节省主存空间"
+      ],
+      [
+        "C",
+        "提高处理机速度"
+      ],
+      [
+        "D",
+        "易于编制中断处理程序"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "周期挪用方式常用于（ ）方式的输入/输出中。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "DMA"
+      ],
+      [
+        "B",
+        "中断"
+      ],
+      [
+        "C",
+        "程序传送"
+      ],
+      [
+        "D",
+        "通道"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "CPU输出数据的速度远高于打印机的打印速度，为解决这一矛盾，可采用（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "并行技术"
+      ],
+      [
+        "B",
+        "DMA技术"
+      ],
+      [
+        "C",
+        "缓冲技术"
+      ],
+      [
+        "D",
+        "虚存技术"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "主机、外设不能并行工作的方式是（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "程序查询方式"
+      ],
+      [
+        "B",
+        "中断方式"
+      ],
+      [
+        "C",
+        "DMA方式"
+      ],
+      [
+        "D",
+        "通道方式"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "主机与高速硬盘进行数据交换一般用（ ）方式。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "程序中断"
+      ],
+      [
+        "B",
+        "程序查询"
+      ],
+      [
+        "C",
+        "通道"
+      ],
+      [
+        "D",
+        "DMA"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "判断题",
+    "text": "中断请求的响应时间，必须安排在每个指令执行的结束时刻。",
+    "answer": "正确",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "通道程序是由通道处理机执行的。",
+    "answer": "正确",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "中断向量就是中断服务程序的入口地址。",
+    "answer": "正确",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "一个外设接口中一般包括三个或三个以上的端口。",
+    "answer": "正确",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "通道是实现外设与主存之间直接交换数据的控制器。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "选择题",
+    "text": "计算机的存储系统是指（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "RAM"
+      ],
+      [
+        "B",
+        "ROM"
+      ],
+      [
+        "C",
+        "主存储器"
+      ],
+      [
+        "D",
+        "CACHE、主存储器和辅助存储器"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "EPROM是指（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "读/写存储器"
+      ],
+      [
+        "B",
+        "只读存储器"
+      ],
+      [
+        "C",
+        "可编程的只读存储器"
+      ],
+      [
+        "D",
+        "光擦除的PROM"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某一RAM芯片，其容量为1024*8位，其数据线和地址线分别为（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "3、10"
+      ],
+      [
+        "B",
+        "10、3"
+      ],
+      [
+        "C",
+        "8、10"
+      ],
+      [
+        "D",
+        "10、8"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "动态DRAM的刷新是以（ ）为单位进行的。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "存储单元"
+      ],
+      [
+        "B",
+        "行"
+      ],
+      [
+        "C",
+        "列"
+      ],
+      [
+        "D",
+        "存储位"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "采用虚拟存储器的目的（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "提高主存的速度"
+      ],
+      [
+        "B",
+        "扩大辅存的存取空间"
+      ],
+      [
+        "C",
+        "扩大主存的存取空间"
+      ],
+      [
+        "D",
+        "扩大存储器的寻址空间"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "存储器进行一次完整的读写操作所需的全部时间称为（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "存取时间"
+      ],
+      [
+        "B",
+        "存取周期"
+      ],
+      [
+        "C",
+        "CPU周期"
+      ],
+      [
+        "D",
+        "机器周期"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下哪种类型的存储器速度最快（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "DRAM"
+      ],
+      [
+        "B",
+        "ROM"
+      ],
+      [
+        "C",
+        "EPROM"
+      ],
+      [
+        "D",
+        "SRAM"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "存取周期是指（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "存储器的写入时间"
+      ],
+      [
+        "B",
+        "存储器进行连续写操作允许的最短时间间隔"
+      ],
+      [
+        "C",
+        "存储器的读出时间"
+      ],
+      [
+        "D",
+        "存储器连续读或写操作所允许的最短时间间隔"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Cache的地址映射中，若主存中的任一块均可映射到Cache内的任一块的位置上，称作（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "直接映射"
+      ],
+      [
+        "B",
+        "全相联映射"
+      ],
+      [
+        "C",
+        "组相联映射"
+      ],
+      [
+        "D",
+        "以上均是"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列存储设备，速度最快的是（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "内存"
+      ],
+      [
+        "B",
+        "U盘"
+      ],
+      [
+        "C",
+        "硬盘"
+      ],
+      [
+        "D",
+        "Cache"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列因素中，与Cache的命中率无关的是（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "主存的存取时间"
+      ],
+      [
+        "B",
+        "块的大小"
+      ],
+      [
+        "C",
+        "Cache的组织方式"
+      ],
+      [
+        "D",
+        "Cache的容量"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "一个存储器其地址为14位，每个存储单元长度为8位，若用1K*4位SRAM芯片来组成该存储器，则需要（ ）芯片，选择存储单元时需要（ ）位地址。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "32、14"
+      ],
+      [
+        "B",
+        "16、10"
+      ],
+      [
+        "C",
+        "16、14"
+      ],
+      [
+        "D",
+        "32、10"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某计算机的CACHE共有16块，采用2路组相联映射方式，每个主存块大小为32字节，按字节编址，主存129号单元所在主存块应装入到CACHE的组号是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "1"
+      ],
+      [
+        "C",
+        "4"
+      ],
+      [
+        "D",
+        "6"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "主存和CPU之间增加高速缓冲存储器的目的是（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "解决CPU和主存之间的速度匹配问题"
+      ],
+      [
+        "B",
+        "扩大主存容量"
+      ],
+      [
+        "C",
+        "既扩大主存容量，又提高主存速度"
+      ],
+      [
+        "D",
+        "扩大存储器的寻址空间"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "为提高存储器存取效率，在安排磁盘上信息分布时，通常是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "存满一面，再存另一面"
+      ],
+      [
+        "B",
+        "尽量将同一文件存放在同一扇区或相邻扇区的磁道上"
+      ],
+      [
+        "C",
+        "尽量将同一文件存放在不同面的同一磁道上"
+      ],
+      [
+        "D",
+        "上述方法均有效"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "CPU与Cache交换信息的单位是（ ），CPU与主存交换信息的单位是（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "字，块"
+      ],
+      [
+        "B",
+        "字，字"
+      ],
+      [
+        "C",
+        "块，字"
+      ],
+      [
+        "D",
+        "块，块"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在虚拟存储器中，当程序正在执行时，（ ）完成地址映射。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "程序员"
+      ],
+      [
+        "B",
+        "编译器"
+      ],
+      [
+        "C",
+        "装入程序"
+      ],
+      [
+        "D",
+        "操作系统"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "交叉存储器实质上是一种（ ）存储器，它能（ ）执行（ ）独立的读写操作。",
+    "answer": "BA",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "模块式,并行,多个"
+      ],
+      [
+        "B",
+        "模块式,串行,多个"
+      ],
+      [
+        "C",
+        "整体式,并行,一个"
+      ],
+      [
+        "D",
+        "整体式,串行,多个"
+      ]
+    ],
+    "choice_type": "multiple",
+    "multiple_answers": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "type": "选择题",
+    "text": "某计算机字长是16位，它的存储容量是64KB，按字编址，它的寻址范围是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "64K"
+      ],
+      [
+        "B",
+        "32KB"
+      ],
+      [
+        "C",
+        "32K"
+      ],
+      [
+        "D",
+        "1MB"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "ROM芯片为2M×8bit则该芯片引脚中地址线和数据线的数目之和是（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "29"
+      ],
+      [
+        "B",
+        "21"
+      ],
+      [
+        "C",
+        "18"
+      ],
+      [
+        "D",
+        "不可估计"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某一RAM芯片，其容量为512×8位，该芯片引出线的最小数目应是（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "23"
+      ],
+      [
+        "B",
+        "25"
+      ],
+      [
+        "C",
+        "50"
+      ],
+      [
+        "D",
+        "19"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "计算一个存储器芯片容量的公式为（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "编址单元数*数据线位数"
+      ],
+      [
+        "B",
+        "编址单元数*字节"
+      ],
+      [
+        "C",
+        "编址单元数*字"
+      ],
+      [
+        "D",
+        "数据线位数*字长"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对EPROM进行读操作，仅当（ ）信号同时有效才行。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "/OE,/RD"
+      ],
+      [
+        "B",
+        "/OE,/CE"
+      ],
+      [
+        "C",
+        "/CE,/WE"
+      ],
+      [
+        "D",
+        "/OE,/WE"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "一个16K*32位的存储器，其地址线和数据线的总和是（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "48"
+      ],
+      [
+        "B",
+        "46"
+      ],
+      [
+        "C",
+        "36"
+      ],
+      [
+        "D",
+        "22"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "已知存储芯片的容量为4K×16，则该芯片内的地址寄存器的位 数为（ ）位。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "14"
+      ],
+      [
+        "B",
+        "12"
+      ],
+      [
+        "C",
+        "16"
+      ],
+      [
+        "D",
+        "28"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "RAM存储器中的信息是（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "可以读/写的"
+      ],
+      [
+        "B",
+        "不会变动的"
+      ],
+      [
+        "C",
+        "可永久保留的"
+      ],
+      [
+        "D",
+        "便于携带的"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "用6116（2k*8）组成一个64KB的存储器，可以用来产生片选信号的地址线是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "A0---A10"
+      ],
+      [
+        "B",
+        "A0---A1"
+      ],
+      [
+        "C",
+        "A11---A15"
+      ],
+      [
+        "D",
+        "A4---A19"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若一台计算机的字长是4个字节,这表明该计算机( )。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "能够处理的数值最大为4位十进制数"
+      ],
+      [
+        "B",
+        "能够处理的数值最多由4位二进制数组成"
+      ],
+      [
+        "C",
+        "在CPU中能够作为一个整体加以传送处理的二进制代码为32位"
+      ],
+      [
+        "D",
+        "在CPU中运算的结果最大为2的32次方"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面叙述中错误的是( )。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "RAM是可读可写存储器,ROM是只读存储器"
+      ],
+      [
+        "B",
+        "ROM和RAM的访问方式相同,都采用随机访问方式进行读写"
+      ],
+      [
+        "C",
+        "系统的主存由RAM和ROM组成"
+      ],
+      [
+        "D",
+        "系统的主存都是用DRAM芯片实现的"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "静态半导体存储器SRAM( )。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "在工作过程中,存储内容保持不变"
+      ],
+      [
+        "B",
+        "在断电后信息仍能维持不变"
+      ],
+      [
+        "C",
+        "不需要动态刷新"
+      ],
+      [
+        "D",
+        "芯片内部有自动刷新逻辑"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "与静态RAM相比,动态RAM具有( )优点。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "容量能随应用任务的需要动态变化"
+      ],
+      [
+        "B",
+        "成本低、功耗低"
+      ],
+      [
+        "C",
+        "掉电后内容不会丢失"
+      ],
+      [
+        "D",
+        "内容不需要再生"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "机器字长32位，其存储容量为4MB，若按字编址，它的寻址范围是（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0—1M-1"
+      ],
+      [
+        "B",
+        "0—1M"
+      ],
+      [
+        "C",
+        "0—2M-1"
+      ],
+      [
+        "D",
+        "0—2M"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "磁盘的盘面上有很多半径不同的同心圆组成，这些同心圆称为（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "扇区"
+      ],
+      [
+        "B",
+        "磁道"
+      ],
+      [
+        "C",
+        "柱面"
+      ],
+      [
+        "D",
+        "磁表面"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某SRAM芯片，存储容量为64K × 16位，该芯片地址线和数据线数目分别为（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "64，16"
+      ],
+      [
+        "B",
+        "16，64"
+      ],
+      [
+        "C",
+        "64，8"
+      ],
+      [
+        "D",
+        "16，16"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "存储器是计算机系统中的记忆设备，它主要用来（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "存放数据"
+      ],
+      [
+        "B",
+        "存放程序"
+      ],
+      [
+        "C",
+        "存放程序和数据"
+      ],
+      [
+        "D",
+        "存放微程序"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "CACHE采用的存储器是（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "SRAM"
+      ],
+      [
+        "B",
+        "ROM"
+      ],
+      [
+        "C",
+        "EPROM"
+      ],
+      [
+        "D",
+        "DRAM"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "存储单元是指（ ）。 acc",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "存放一个二进制信息位的存储元"
+      ],
+      [
+        "B",
+        "存放一个机器字的所有存储元集合"
+      ],
+      [
+        "C",
+        "存放一个字节的所有存贮元集合"
+      ],
+      [
+        "D",
+        "存放两个字节的所有存储元集合"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "双端口存储器所以能高速进行读 / 写，是因为采用（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "高速芯片"
+      ],
+      [
+        "B",
+        "两套相互独立的读写电路"
+      ],
+      [
+        "C",
+        "流水技术"
+      ],
+      [
+        "D",
+        "新型器件"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "用于笔记本电脑的外存储器是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "软磁盘"
+      ],
+      [
+        "B",
+        "硬磁盘"
+      ],
+      [
+        "C",
+        "固态盘"
+      ],
+      [
+        "D",
+        "光盘"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在多级存储体系中，“cache—主存”结构的作用是解决（ ）的问题。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "主存容量不足"
+      ],
+      [
+        "B",
+        "主存与辅存速度不匹配"
+      ],
+      [
+        "C",
+        "辅存与CPU速度不匹配"
+      ],
+      [
+        "D",
+        "主存与CPU速度不匹配"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若用1K*4的芯片组成2K*8的RAM需要（ ）片。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "2片"
+      ],
+      [
+        "B",
+        "16片"
+      ],
+      [
+        "C",
+        "4片"
+      ],
+      [
+        "D",
+        "8片"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某计算机的字长为32位，它的存储容量是64K字节，若按字编址，寻址范围是（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "16K"
+      ],
+      [
+        "B",
+        "16KB"
+      ],
+      [
+        "C",
+        "32K"
+      ],
+      [
+        "D",
+        "64K"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "主存储器通常是由( )构成。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "半导体存储器"
+      ],
+      [
+        "B",
+        "软磁盘"
+      ],
+      [
+        "C",
+        "硬盘"
+      ],
+      [
+        "D",
+        "光盘"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在计算机中信息存储的最小单位是( )。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "二进制位"
+      ],
+      [
+        "B",
+        "字节"
+      ],
+      [
+        "C",
+        "字"
+      ],
+      [
+        "D",
+        "字长"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "存储字是指( )。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "存放在一个存储单元中的二进制代码组合"
+      ],
+      [
+        "B",
+        "存放在一个存储单元中的二进制代码位数"
+      ],
+      [
+        "C",
+        "存储单元的个数"
+      ],
+      [
+        "D",
+        "机器指令的位数"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "存储字长是指( )。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "存放在一个存储单元中的二进制代码组合"
+      ],
+      [
+        "B",
+        "存放在一个存储单元中的二进制代码位数"
+      ],
+      [
+        "C",
+        "存储单元的个数"
+      ],
+      [
+        "D",
+        "机器指令的位数"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "存储器的随机访问方式是指( )。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "可随意访问存储器"
+      ],
+      [
+        "B",
+        "按随机文件访问存储器"
+      ],
+      [
+        "C",
+        "可对存储器进行读出与写入"
+      ],
+      [
+        "D",
+        "可按地址访问存储器任一编址单元,其访问时间相同且与地址无关"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若数据在存储器中采用以低字节地址为字地址的存放方式,则十六进制数12345678H的存储字节顺序按地址由小到大依次是( )。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "12345678"
+      ],
+      [
+        "B",
+        "78563412"
+      ],
+      [
+        "C",
+        "87654321"
+      ],
+      [
+        "D",
+        "34127856"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某计算机字长为32位,存储器容量为16MB,CPU按半字寻址,其可寻址的单元数是( )。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "16M"
+      ],
+      [
+        "B",
+        "8M"
+      ],
+      [
+        "C",
+        "4M"
+      ],
+      [
+        "D",
+        "2M"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某计算机字长为16位,存储器容量为64KB,CPU按字寻址,其可寻址的单元数是( )。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "64K"
+      ],
+      [
+        "B",
+        "32KB"
+      ],
+      [
+        "C",
+        "32K"
+      ],
+      [
+        "D",
+        "64KB"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下4种类型的半导体存储器中,以传输同样多的字为比较条件,则读出数据传输率最高的是( )。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "DRAM"
+      ],
+      [
+        "B",
+        "SRAM"
+      ],
+      [
+        "C",
+        "FLASH"
+      ],
+      [
+        "D",
+        "EZPROM"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "动态RAM的特点是( )。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "工作中存储内容动态地变化"
+      ],
+      [
+        "B",
+        "工作中需要动态地改变访存地址"
+      ],
+      [
+        "C",
+        "每隔一定时间刷新一遍"
+      ],
+      [
+        "D",
+        "每次读出后需要根据原存内容全部刷新一遍"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某主存容量为32KB，由16片16K×1位（内部采用128×128存储阵列）的DRAM芯片采用字和位同时扩展构成。若采用集中式刷新方式，且刷新周期为2ms，那么所有存储元刷新一遍需要（ ）个存储周期。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "128"
+      ],
+      [
+        "B",
+        "256"
+      ],
+      [
+        "C",
+        "1024"
+      ],
+      [
+        "D",
+        "16384"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若RAM中每个存储单元为16位，则下面所述正确的是（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "地址线也是16位"
+      ],
+      [
+        "B",
+        "地址线与16无关"
+      ],
+      [
+        "C",
+        "地址线与16有关"
+      ],
+      [
+        "D",
+        "地址线不得少于16位"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某容量为 256MB 的存储器由若干 4M×8 位的 DRAM 芯片构成，该 DRAM 芯片的地址 引脚和数据引脚总数是（）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "19"
+      ],
+      [
+        "B",
+        "22"
+      ],
+      [
+        "C",
+        "30"
+      ],
+      [
+        "D",
+        "36"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某计算机主存容量为 64KB，其中 ROM 区为 4KB，其余为 RAM 区，按字节编址。现要 用 2KB×8 位的 ROM 芯片和 4KB×4 位的 RAM 芯片来设计该存储器，则需要上述规格的 ROM 芯片数和 RAM 芯片数分别是（）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1，15"
+      ],
+      [
+        "B",
+        "2，15"
+      ],
+      [
+        "C",
+        "1，30"
+      ],
+      [
+        "D",
+        "2，30"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假定用若干个 2KB×4 位的芯片组成一个 8K×8 位的存储器，则地址 0B1FH 所在芯片的 最小地址是（）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0000H"
+      ],
+      [
+        "B",
+        "0600H"
+      ],
+      [
+        "C",
+        "0700H"
+      ],
+      [
+        "D",
+        "0800H"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假设某计算机按字编址，cache 有 4 行，cache 和主存之间交换的块大小为 1 个字。若 cache 的内容初始为空，采用 2 路组相联映射方式和 LRU 替换策略。访问的主存地址依次为 0、4、8、2、0、 6、8、6、4、8 时，命中 cache 的次数是（）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1"
+      ],
+      [
+        "B",
+        "2"
+      ],
+      [
+        "C",
+        "3"
+      ],
+      [
+        "D",
+        "4"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "判断题",
+    "text": "一个字节为8位二进制数，则字长为16位二进制数。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "存储器地址寄存器MAR对用户而言是不“透明”的。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "某计算机的字长为64位，则该机一个字节的长度为16位。某计算机的字长为64位，则该机一个字节的长度为16位。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在主机内，CPU对主存的访问必须通过内总线进行。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在硬盘中，通常将一个较长文件存放在同一盘面的相邻磁道上。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "磁盘存储器的等待时间通常是指磁盘旋转一周所需的时间。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在常用磁盘中，外圈容量比内圈容量大。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "虚拟存储系统对系统程序员和应用程序员均是“透明”的。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "通常，磁盘存储器每条磁道的存储容量是相同的。",
+    "answer": "正确",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "静态随机存储器需要定时地进行刷新。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "断电后，EEPROM中的数据不会丢失。",
+    "answer": "正确",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "磁带和磁盘都是直接存储设备。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "选择题",
+    "text": "浮点数的尾数用补码表示，下列是规格化的形式为（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1.1xxxxxx"
+      ],
+      [
+        "B",
+        "0.1xxxxxx"
+      ],
+      [
+        "C",
+        "0.xxxxxxx"
+      ],
+      [
+        "D",
+        "1.xxxxxxxx"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "定点16位字长的字，采用2的补码形式表示时,一个字所能表示的整数范围是（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "-215 ~ +（215 -1）"
+      ],
+      [
+        "B",
+        "-（215 –1）~ +（215 –1）"
+      ],
+      [
+        "C",
+        "-（215 + 1）~ +215"
+      ],
+      [
+        "D",
+        "-215 ~ +215"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "算术右移指令执行的操作是（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "符号位填0，并顺次右移1位，最低位移至进位标志位"
+      ],
+      [
+        "B",
+        "符号位不变，并顺次右移1位，最低位移出"
+      ],
+      [
+        "C",
+        "进位标志位移至符号位，顺次右移1位，最低位移至进位标志位"
+      ],
+      [
+        "D",
+        "符号位填1，并顺次右移1位，最低位移至进位标志位"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "定点计算器用来进行（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "十进制数加法运算"
+      ],
+      [
+        "B",
+        "定点数运算"
+      ],
+      [
+        "C",
+        "浮点数运算"
+      ],
+      [
+        "D",
+        "既进行定点数运算也进行浮点数运算"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "用16位字长（其中一位符号位）表示定点小数时，所能表示的数值范围是（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0≤│N│≤1-2-（16+1）"
+      ],
+      [
+        "B",
+        "0≤│N│≤1-2-16"
+      ],
+      [
+        "C",
+        "0≤│N│≤1-2-（16-1）"
+      ],
+      [
+        "D",
+        "0≤│N│≤1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如果浮点数用补码表示，则判断下列哪一项的运算结果是规格化数（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1.11000"
+      ],
+      [
+        "B",
+        "0.01110"
+      ],
+      [
+        "C",
+        "1.00010"
+      ],
+      [
+        "D",
+        "0.01010"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在定点二进制运算器中，减法运算一般通过（ ）来实现。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "原码运算的二进制减法器"
+      ],
+      [
+        "B",
+        "补码运算的二进制减法器"
+      ],
+      [
+        "C",
+        "补码运算的十进制加法器"
+      ],
+      [
+        "D",
+        "补码运算的二进制加法器"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "定点运算中，无论采用双符号位还是单符号位，必须有（ ），一般用（ ）来实现。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "译码电路；与非门"
+      ],
+      [
+        "B",
+        "编码电路；或非门"
+      ],
+      [
+        "C",
+        "溢出判断电路；异或门"
+      ],
+      [
+        "D",
+        "移位电路；与或非门"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下溢指的是（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "运算结果的绝对值小于机器所能表示的最小绝对值"
+      ],
+      [
+        "B",
+        "运算的结果小于机器所能表示的最小负数"
+      ],
+      [
+        "C",
+        "运算的结果小于机器所能表示的最小正数"
+      ],
+      [
+        "D",
+        "运算结果的最低有效位产生的错误"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "考虑低位向本位有进位的加法器是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "半加器"
+      ],
+      [
+        "B",
+        "ALU"
+      ],
+      [
+        "C",
+        "全加器"
+      ],
+      [
+        "D",
+        "异或门"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "浮点数加减运算过程一般包括对阶、尾数运算、规格化、舍入和判断溢出等步骤。设浮点数的阶码和尾数均采用补码表示,且位数分别为5位和7位(均含2位符号位)。若有两个数X= 29/32,Y= 5/8,则用浮点加法计算X+Y的最终结果是( )。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "001111100010"
+      ],
+      [
+        "B",
+        "001110100010"
+      ],
+      [
+        "C",
+        "010000010001"
+      ],
+      [
+        "D",
+        "发生溢出"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列有关浮点数加减运算的叙述中,正确的是( )。 Ⅰ.对阶操作不会引起阶码上溢或下溢 已经存在的阶不可能溢出，引起溢出的不是对阶。 Ⅱ.右规和尾数舍入都可能引起阶码上溢 舍入：+1后可能溢出 Ⅲ.左规时可能引起阶码下溢 Ⅳ.尾数溢出时结果不一定溢出 只有阶码决定溢出。 *没有I,II,III.",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "仅Ⅱ、Ⅲ"
+      ],
+      [
+        "B",
+        "仅Ⅰ、Ⅱ、Ⅳ"
+      ],
+      [
+        "C",
+        "仅Ⅰ、Ⅲ、Ⅳ"
+      ],
+      [
+        "D",
+        "Ⅰ、Ⅱ、Ⅲ、Ⅳ"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "判断题",
+    "text": "浮点数对阶的原则是：大阶向小阶看齐。 反过来。因为是右移阶数变大。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "串行加法器是指串行进位的加法器。 只使用一个加法器随CP串行。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "先行进位是指高位的进位不必等低位的进位产生后再形成，高位的进位与低位的进位同时产生。 本质是用额外硬件开销强行提前算出来的。",
+    "answer": "正确",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "不设置浮点运算指令的计算机，就不能用于科学计算。 只算整数也可以",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "选择题",
+    "text": "下列寻址方式中取得操作数速度最慢的是（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "相对寻址"
+      ],
+      [
+        "B",
+        "基址寻址"
+      ],
+      [
+        "C",
+        "寄存器寻址"
+      ],
+      [
+        "D",
+        "存储器间接寻址"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "程序控制类指令（转移、循环等）的功能是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "进行主存和CPU之间的数据传送 mov movs"
+      ],
+      [
+        "B",
+        "进行CPU和外设之间的数据传送 i/o"
+      ],
+      [
+        "C",
+        "改变程序执行的顺序 goto, loop, return, tex"
+      ],
+      [
+        "D",
+        "控制进、出栈操作 被结构化"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "变址寻址方式中，操作数的有效地址等于（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "基值寄存器内容加上形式地址（位移量）"
+      ],
+      [
+        "B",
+        "堆栈指示器内容加上形式地址（位移量）"
+      ],
+      [
+        "C",
+        "变址寄存器内容加上形式地址（位移量）"
+      ],
+      [
+        "D",
+        "程序记数器内容加上形式地址（位移量）"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "就取得操作数的速度而言，下列寻址方式中速度最快的是（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "直接寻址"
+      ],
+      [
+        "B",
+        "立即寻址"
+      ],
+      [
+        "C",
+        "寄存器间接寻址"
+      ],
+      [
+        "D",
+        "寄存器寻址"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设变址寄存器为X,形式地址为D,某机具有先间址后变址的寻址方式,则这种寻址方式 的有效地址为 。2019-2020-2",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "EA = (X) +D"
+      ],
+      [
+        "B",
+        "EA = (X) +(D)"
+      ],
+      [
+        "C",
+        "EA = ((X) + D)"
+      ],
+      [
+        "D",
+        "EA = X + （D）"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "L指令系统中采用不同寻址方式的目的主要是 B",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "可降低指令译码难度"
+      ],
+      [
+        "B",
+        "缩短指令字长,扩大寻址空间,提高编程灵活性"
+      ],
+      [
+        "C",
+        "实现程序控制"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "操作数在寄存器中的寻址方式称为 寻址。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "直接"
+      ],
+      [
+        "B",
+        "寄存器直接"
+      ],
+      [
+        "C",
+        "寄存器间接"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "寄存器间接寻址方式中,操作数在 中。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "通用寄存器"
+      ],
+      [
+        "B",
+        "堆栈"
+      ],
+      [
+        "C",
+        "主存单元"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "堆栈寻址方式中,设A为累加器,SP为堆栈指示器,M$p为SP指示的栈顶单元,如果进 栈操作的动作顺序是(SP・1)t汎(A)-Mg那么出栈楝作的动作顺序应为 。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "(M$p)—A,(SP)十 1—SP"
+      ],
+      [
+        "B",
+        "(SP) +1tSP,(M$p)tA"
+      ],
+      [
+        "C",
+        "(SP)"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设变址寄存器为x,形式地址为D,某机具有先变址再间址的寻址方式,则这种寻址方式 的有效地址为 。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "EA = (X) +D"
+      ],
+      [
+        "B",
+        "EA = (X) +(D)"
+      ],
+      [
+        "C",
+        "EA = ((X) +D)"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设变址寄存器为X,形式地址为D,某机具有先间址后变址的寻址方式,则这种寻址方式 的有效地址为 。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "EA = (X) +D"
+      ],
+      [
+        "B",
+        "EA = (X) +(D)"
+      ],
+      [
+        "C",
+        "EA = ((X) + D)"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "IBM PC机中釆用了段寻址方式,在寻访一个主存具体单元时,由一个基地址加上某寄 存器提供的16位偏移量来形成20位物理地址。这个基地址由____来提供。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "指令中的直接地址(16位)自动左移4位"
+      ],
+      [
+        "B",
+        "CPU中的四个16位段寄存器之一自动左移4位"
+      ],
+      [
+        "C",
+        "CPU中的累加器(16位)自动左移4位"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "运算型指令的寻址和转移型指令的寻址不同点在于___。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "前者取操作数,后者决定程序转移地址"
+      ],
+      [
+        "B",
+        "前者是短指令.后者是长指令"
+      ],
+      [
+        "C",
+        "后者是短指令,前者是长指令"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "指令的寻址方式有顺序和跳跃两种,采用跳跃寻址方式可以实现 。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "程序浮动"
+      ],
+      [
+        "B",
+        "程序的无条件转移和浮动"
+      ],
+      [
+        "C",
+        "程序的条件转移和无条件转移"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "程序控制类指令（转移、循环等）的功能是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "进行主存和CPU之间的数据传送"
+      ],
+      [
+        "B",
+        "进行CPU和外设之间的数据传送"
+      ],
+      [
+        "C",
+        "改变程序执行的顺序"
+      ],
+      [
+        "D",
+        "控制进、出栈操作"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设变址寄存器为X，形式地址为D，某机具有先变址后间址的寻址方式，则这种寻址方式的有效地址为（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "EA=（X）+D"
+      ],
+      [
+        "B",
+        "EA=(X)+(D)"
+      ],
+      [
+        "C",
+        "EA=((X)+D)"
+      ],
+      [
+        "D",
+        "EA=(X+(D))"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在指令设计格式中，采用扩展操作码的目的是（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "增加指令长度"
+      ],
+      [
+        "B",
+        "增加寻址空间"
+      ],
+      [
+        "C",
+        "增加操作码位数"
+      ],
+      [
+        "D",
+        "增加指令数量"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对某个寄存器中操作数的寻址方式称为（ ）寻址。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "直接"
+      ],
+      [
+        "B",
+        "间接"
+      ],
+      [
+        "C",
+        "寄存器"
+      ],
+      [
+        "D",
+        "寄存器间接"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "寄存器间接寻址方式中，操作数处在（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "通用寄存器"
+      ],
+      [
+        "B",
+        "主存单元"
+      ],
+      [
+        "C",
+        "程序计数器"
+      ],
+      [
+        "D",
+        "堆栈"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某指令系统指令字长为8位，每一地址码长为3位，用扩展操作码技术，若指令系统具有2条二地址指令,10条零地址指令，则最多有（ ）条一地址指令。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "20"
+      ],
+      [
+        "B",
+        "6"
+      ],
+      [
+        "C",
+        "10"
+      ],
+      [
+        "D",
+        "14"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "操作数的地址存放在寄存器的寻址方式叫（ ）寻址方式。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "变址"
+      ],
+      [
+        "B",
+        "直接"
+      ],
+      [
+        "C",
+        "寄存器"
+      ],
+      [
+        "D",
+        "寄存器间接"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "固定长度操作码为5位，则最多可表示（ ）条指令。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "32"
+      ],
+      [
+        "B",
+        "10"
+      ],
+      [
+        "C",
+        "31"
+      ],
+      [
+        "D",
+        "2"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "基址寻址方式中，操作数的有效地址等于（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "基值寄存器内容加上形式地址（位移量）"
+      ],
+      [
+        "B",
+        "堆栈指示器内容加上形式地址（位移量）"
+      ],
+      [
+        "C",
+        "变址寄存器内容加上形式地址（位移量）"
+      ],
+      [
+        "D",
+        "程序记数器内容加上形式地址（位移量）"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "单地址指令中为了完成两个数的算术运算，除地址码指明的一个操作数外，另一个常需采用（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "堆栈寻址方式"
+      ],
+      [
+        "B",
+        "立即寻址方式"
+      ],
+      [
+        "C",
+        "隐含寻址方式"
+      ],
+      [
+        "D",
+        "间接寻址方式"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某寄存器中的值有时是地址，因此只有计算机的（ ）才能识别它。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "译码器"
+      ],
+      [
+        "B",
+        "判断程序"
+      ],
+      [
+        "C",
+        "指令"
+      ],
+      [
+        "D",
+        "时序信号"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "指令的寻址方式有顺序和跳跃两种方式，采用跳跃寻址方式，可以实现（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "堆栈寻址"
+      ],
+      [
+        "B",
+        "程序的条件转移"
+      ],
+      [
+        "C",
+        "程序的无条件转移"
+      ],
+      [
+        "D",
+        "程序的条件转移或无条件转移"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "二地址指令中，操作数的物理位置不可安排在（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "栈顶和次栈顶"
+      ],
+      [
+        "B",
+        "两个主存单元"
+      ],
+      [
+        "C",
+        "一个主存单元和一个寄存器"
+      ],
+      [
+        "D",
+        "两个寄存器"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "指令系统中采用不同寻址方式的目的主要是（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "实现存贮程序和程序控制"
+      ],
+      [
+        "B",
+        "缩短指令长度，扩大寻址空间，提高编程灵活性"
+      ],
+      [
+        "C",
+        "可以直接访问外存"
+      ],
+      [
+        "D",
+        "提供扩展操作码的可能并降低指令译码难度"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下四种类型指令中，执行时间最长的是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "RR型指令"
+      ],
+      [
+        "B",
+        "RS型指令"
+      ],
+      [
+        "C",
+        "SS型指令"
+      ],
+      [
+        "D",
+        "程序控制指令"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在指令的地址字段中，直接指出操作数本身的寻址方式，称为（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "隐含地址"
+      ],
+      [
+        "B",
+        "立即寻址"
+      ],
+      [
+        "C",
+        "寄存器寻址"
+      ],
+      [
+        "D",
+        "直接寻址"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "就取得操作数的速度而言，下列寻址方式中速度最慢的是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "直接寻址"
+      ],
+      [
+        "B",
+        "立即寻址"
+      ],
+      [
+        "C",
+        "寄存器间接寻址"
+      ],
+      [
+        "D",
+        "寄存器寻址"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列寻址方式中取得操作数速度最快的是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "相对寻址"
+      ],
+      [
+        "B",
+        "基址寻址"
+      ],
+      [
+        "C",
+        "寄存器寻址"
+      ],
+      [
+        "D",
+        "存储器间接寻址"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某种格式的指令的操作码有4位，能表示的指令有（ ）条。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "4"
+      ],
+      [
+        "B",
+        "8"
+      ],
+      [
+        "C",
+        "16"
+      ],
+      [
+        "D",
+        "32"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "用某个寄存器值作为操作数的寻址方式是（ ）寻址。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "直接"
+      ],
+      [
+        "B",
+        "间接"
+      ],
+      [
+        "C",
+        "寄存器"
+      ],
+      [
+        "D",
+        "寄存器间接"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "RISC思想主要基于的是（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "减少指令的平均执行周期数"
+      ],
+      [
+        "B",
+        "便于编译器的编写"
+      ],
+      [
+        "C",
+        "减少硬件的复杂程序"
+      ],
+      [
+        "D",
+        "减少指令的复杂程度"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "判断题",
+    "text": "在指令系统的可扩充性方面，微程序控制器优于组合逻辑控制。",
+    "answer": "正确",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "大多数个人计算机中可配置的最大主存容量受指令地址码位数的限制。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "寄存器间接寻址方式所形成的有效地址为主存地址。",
+    "answer": "正确",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "计算机指令系统中采用不同寻址方式的目的主要是为了降低指令的译码难度。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在二地址指令中指令地址码字段存放的一定是操作数的地址。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在一条机器指令中可能出现不止一种寻址方式。",
+    "answer": "正确",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "选择题",
+    "text": "CPU响应中断的时间是（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "一条指令结束"
+      ],
+      [
+        "B",
+        "外设提出中断"
+      ],
+      [
+        "C",
+        "取指周期结束"
+      ],
+      [
+        "D",
+        "任一机器周期结束"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "电源故障中断属于（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "不可屏蔽中断"
+      ],
+      [
+        "B",
+        "控制台中断"
+      ],
+      [
+        "C",
+        "I/O设备中断"
+      ],
+      [
+        "D",
+        "可屏蔽中断"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在以下情况下，接受中断请求的是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "机器出现故障"
+      ],
+      [
+        "B",
+        "执行“软中断‘指令"
+      ],
+      [
+        "C",
+        "一条指令执行过程中"
+      ],
+      [
+        "D",
+        "DMA操作结束"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "一条指令从主存取出到执行完成所需的CPU周期至少（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "一个"
+      ],
+      [
+        "B",
+        "二个"
+      ],
+      [
+        "C",
+        "三个"
+      ],
+      [
+        "D",
+        "四个"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "由编译程序将多条指令组合成一条指令，这种技术称做（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "超标量技术"
+      ],
+      [
+        "B",
+        "超流水线技术"
+      ],
+      [
+        "C",
+        "超长指令字技术"
+      ],
+      [
+        "D",
+        "流水线技术"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "指令周期是指（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "CPU从主存取出一条指令的时间"
+      ],
+      [
+        "B",
+        "CPU执行一条指令的时间"
+      ],
+      [
+        "C",
+        "CPU从主存取出一条指令加上CPU执行这条指令的时间"
+      ],
+      [
+        "D",
+        "时钟周期时间"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "运算器的主要功能是进行（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "算术运算"
+      ],
+      [
+        "B",
+        "逻辑运算"
+      ],
+      [
+        "C",
+        "算术逻辑运算"
+      ],
+      [
+        "D",
+        "初等函数运算"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "CPU的组成中不包含（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "存储器"
+      ],
+      [
+        "B",
+        "寄存器"
+      ],
+      [
+        "C",
+        "控制器"
+      ],
+      [
+        "D",
+        "运算器"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "指令译码器是对（ ）进行译码。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "整条指令"
+      ],
+      [
+        "B",
+        "指令的操作码字段"
+      ],
+      [
+        "C",
+        "指令的地址"
+      ],
+      [
+        "D",
+        "指令的操作数字段"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "为了便于实现多级中断，保存现场信息最有效的办法是采用（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "通用寄存器"
+      ],
+      [
+        "B",
+        "堆栈"
+      ],
+      [
+        "C",
+        "存储器"
+      ],
+      [
+        "D",
+        "外存"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "CPU读/写控制信号的作用是（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "决定数据总线上的数据流方向"
+      ],
+      [
+        "B",
+        "控制存储器操作（R/W）的类型"
+      ],
+      [
+        "C",
+        "控制流入、流出存储器信息的方向"
+      ],
+      [
+        "D",
+        "以上都是"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "当前设计高性能计算机的重要技术是（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "提高CPU主频"
+      ],
+      [
+        "B",
+        "扩大主存容量"
+      ],
+      [
+        "C",
+        "采用非冯诺依曼"
+      ],
+      [
+        "D",
+        "采用并行处理技术"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列关于CPU存取速度 的比较中,正确的是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "Cache>内存>寄存器"
+      ],
+      [
+        "B",
+        "Cache >寄存器>内存"
+      ],
+      [
+        "C",
+        "寄存器>Cache>内存"
+      ],
+      [
+        "D",
+        "寄存器>内存> Cache"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在取指令操作之后，程序计数器中存放的是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "当前指令的地址"
+      ],
+      [
+        "B",
+        "程序中指令的数量"
+      ],
+      [
+        "C",
+        "下一条指令的地址"
+      ],
+      [
+        "D",
+        "转移地址"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在CPU中跟踪指令后继地址的寄存器是（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "主存地址寄存器"
+      ],
+      [
+        "B",
+        "程序计数器"
+      ],
+      [
+        "C",
+        "指令寄存器"
+      ],
+      [
+        "D",
+        "状态条件寄存器"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "中央处理器（CPU）是指（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "运算器"
+      ],
+      [
+        "B",
+        "控制器"
+      ],
+      [
+        "C",
+        "运算器、控制器和cache"
+      ],
+      [
+        "D",
+        "运算器、控制器和主存储器"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "计算机中（ ）负责指令译码。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "算术逻辑单元"
+      ],
+      [
+        "B",
+        "控制单元"
+      ],
+      [
+        "C",
+        "存储器译码电路"
+      ],
+      [
+        "D",
+        "输入输出译码电路"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "存放欲执行指令的寄存器是（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "MAR"
+      ],
+      [
+        "B",
+        "PC"
+      ],
+      [
+        "C",
+        "MDR"
+      ],
+      [
+        "D",
+        "IR"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "一条机器指令的功能一般对应于（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "一段微程序"
+      ],
+      [
+        "B",
+        "一条微指令"
+      ],
+      [
+        "C",
+        "一条微命令"
+      ],
+      [
+        "D",
+        "一个微操作"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "计算机操作的最小单位时间是（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "时钟周期"
+      ],
+      [
+        "B",
+        "机器周期"
+      ],
+      [
+        "C",
+        "CPU周期"
+      ],
+      [
+        "D",
+        "指令周期"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "一个节拍信号的宽度是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "指令周期"
+      ],
+      [
+        "B",
+        "机器周期"
+      ],
+      [
+        "C",
+        "时钟周期"
+      ],
+      [
+        "D",
+        "存储周期"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "（ ）不是常用三级时序系统中的一级。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "定时脉冲"
+      ],
+      [
+        "B",
+        "工作周期"
+      ],
+      [
+        "C",
+        "时钟周期"
+      ],
+      [
+        "D",
+        "指令周期"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列说法中（ ）正确的。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "指令周期等于机器周期"
+      ],
+      [
+        "B",
+        "指令周期小于机器周期"
+      ],
+      [
+        "C",
+        "指令周期大于机器周期"
+      ],
+      [
+        "D",
+        "指令周期是机器周期的两倍"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "由于CPU内部的操作速度较快，而CPU访问一次主存所花的时间较长，因此机器周期通常用（ ）来规定。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "主存中读取一个指令字的最短时间"
+      ],
+      [
+        "B",
+        "主存中读取一个数据字的最长时间"
+      ],
+      [
+        "C",
+        "主存中写入一个数据字的平均时间"
+      ],
+      [
+        "D",
+        "主存中读取一个数据字的平均时间"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "微程序控制中，控制部件向执行部件发出的某个控制信号称为（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "微程序"
+      ],
+      [
+        "B",
+        "微指令"
+      ],
+      [
+        "C",
+        "微操作"
+      ],
+      [
+        "D",
+        "微命令"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "微程序控制中，控制部件向执行部件发出的某个控制信号称为（ ）。",
+    "answer": "AD",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "微程序"
+      ],
+      [
+        "B",
+        "微指令"
+      ],
+      [
+        "C",
+        "微操作"
+      ],
+      [
+        "D",
+        "微命令"
+      ]
+    ],
+    "choice_type": "multiple",
+    "multiple_answers": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "type": "选择题",
+    "text": "在微指令控制器中，机器指令与微指令的关系是（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "每一条机器指令由一条微指令来执行"
+      ],
+      [
+        "B",
+        "每一条机器指令由若干条微指令组成"
+      ],
+      [
+        "C",
+        "每一条机器指令对应一个微程序"
+      ],
+      [
+        "D",
+        "每一条微指令对应一个微命令"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "微程序放在（ ）中。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "存储器控制器"
+      ],
+      [
+        "B",
+        "控制存储器"
+      ],
+      [
+        "C",
+        "主存储器"
+      ],
+      [
+        "D",
+        "Cache"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "微地址是微指令（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "在主存的存储位置"
+      ],
+      [
+        "B",
+        "在控制存储器的存储位置"
+      ],
+      [
+        "C",
+        "在磁盘的存储位置"
+      ],
+      [
+        "D",
+        "在堆栈的存储位置"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在组合逻辑控制器中，微操作控制信号的形成主要与（ ）信号有关。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "指令操作码和地址码"
+      ],
+      [
+        "B",
+        "指令译码器和时钟"
+      ],
+      [
+        "C",
+        "操作码和条件码"
+      ],
+      [
+        "D",
+        "状态信息和条件"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "判断题",
+    "text": "指令周期又成为CPU周期。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "超标量流水技术是在每个时钟周期内同时执行多条指令。",
+    "answer": "正确",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "计算机主频的周期是指时钟周期。",
+    "answer": "正确",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "指令周期是指CPU从主存中读出一条指令的时间。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "同步控制方式的基本特征是所有指令的执行时间相同。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在微程序控制方式中，一条机器指令用一条微指令解释执行。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在微程序控制器中，微指令寄存器用来存放微程序。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在用分段直接编译法为微指令编码时，应将相容微命令归为一组，而将互斥微命令归于不同的组。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在微程序控制器中，控制部件向执行部件发出的某个控制信号称为微操作。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "选择题",
+    "text": "某字长为8位的计算机中，已知整型变量X,Y的机器数分别为[x]补=1111 0100，[Y]补=1011 0000.若整型变量Z=2*X+y/2,则Z的机器数为（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "11000000"
+      ],
+      [
+        "B",
+        "00100010"
+      ],
+      [
+        "C",
+        "10101010"
+      ],
+      [
+        "D",
+        "溢出"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假定有4个整数用8位补码表示为r1=FEH,r2=F2H,r3=90H,r4=F8H.若将运算结果存放在一个8位寄存器中，则下列运算会发生溢出的是（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "r1*r2"
+      ],
+      [
+        "B",
+        "r2*r3"
+      ],
+      [
+        "C",
+        "r1*r4"
+      ],
+      [
+        "D",
+        "r2*r4"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "一个C语言程序在一台32位机器上运行。程序中定义了3个变量x，y和Z，其中x和z为int型，y为short型。当x=127，y=-9时，执行赋值语句z=x+y后，x、y和z的值分别是（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "x=0000 007FH，y=FFF9H，z=0000 0076H"
+      ],
+      [
+        "B",
+        "x=0000 007FH，y=FFF9H，z=FFFF 0076H"
+      ],
+      [
+        "C",
+        "x=0000 007FH，y=FFF7H，z=FFFF 0076H"
+      ],
+      [
+        "D",
+        "x=0000 007FH，y=FFF7H，z=0000 0076H"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在定点补码运算器中，若采用双符号位，当（ ）时表示结果溢出。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "双符号位相同"
+      ],
+      [
+        "B",
+        "两个正数相加"
+      ],
+      [
+        "C",
+        "双符号位不同"
+      ],
+      [
+        "D",
+        "两个负数相加"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "根据标准规定，每个汉字在计算机内占用（ ）存储。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "二个字节"
+      ],
+      [
+        "B",
+        "一个字节"
+      ],
+      [
+        "C",
+        "三个字节"
+      ],
+      [
+        "D",
+        "四个字节"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假定下列字符码中有奇偶校验位，但没有数据错误，采用奇校验的数据编码是（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "11000011"
+      ],
+      [
+        "B",
+        "11010110"
+      ],
+      [
+        "C",
+        "11000000"
+      ],
+      [
+        "D",
+        "11001001"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "（ ）表示法主要用于表示浮点数中的阶码。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "原码"
+      ],
+      [
+        "B",
+        "补码"
+      ],
+      [
+        "C",
+        "移码"
+      ],
+      [
+        "D",
+        "反码"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设[X]补=1.X1X2X3X4，当满足（ ）时，X>-1/2成立。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "X1=1，X2—X4至少有一个为1"
+      ],
+      [
+        "B",
+        "X1=1，X2—X4任意"
+      ],
+      [
+        "C",
+        "X1=0，X2—X4至少有一个为1"
+      ],
+      [
+        "D",
+        "X1=0，X2—X4任意"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在二进制浮点数中，为保持真值不变，小数点向右移2位，阶码要（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "加1"
+      ],
+      [
+        "B",
+        "减1"
+      ],
+      [
+        "C",
+        "加2"
+      ],
+      [
+        "D",
+        "减2"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某数在计算机中用8421码表示为0111 1000 1001，其真值为（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "789"
+      ],
+      [
+        "B",
+        "789H"
+      ],
+      [
+        "C",
+        "1929"
+      ],
+      [
+        "D",
+        "11110001001B"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某机字长8位，采用补码形式，则机器数能表示的范围是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "-127—+127"
+      ],
+      [
+        "B",
+        "-128—+128"
+      ],
+      [
+        "C",
+        "-128—+127"
+      ],
+      [
+        "D",
+        "-127—+128"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "[X]补=1.000…0，它代表的真值是（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "-0"
+      ],
+      [
+        "B",
+        "-1"
+      ],
+      [
+        "C",
+        "1"
+      ],
+      [
+        "D",
+        "-（1-2-n）"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在浮点机中，判断原码规格化形式的原则是（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "尾数的符号位与第一数位不同"
+      ],
+      [
+        "B",
+        "尾数的第一数位为1，数符任意"
+      ],
+      [
+        "C",
+        "尾数的符号位与第一数位相同"
+      ],
+      [
+        "D",
+        "阶符与数符不同"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某机字长32位，其中1位符号位，31位表示尾数。若用定点小数表示，则最大正小数为（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "+（1 – 2-32）"
+      ],
+      [
+        "B",
+        "+（1 – 2-31）"
+      ],
+      [
+        "C",
+        "2-32"
+      ],
+      [
+        "D",
+        "2-31"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "IEEE754标准规定的32位浮点数中，符号位为1位，阶码为8位，则它所能表示的最大规格化正数为（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "+（2 – ）×2+127"
+      ],
+      [
+        "B",
+        "+（1 – 223）×2+127"
+      ],
+      [
+        "C",
+        "+（2 – 223）×2+255"
+      ],
+      [
+        "D",
+        "2+127 + 227"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "一个8位的二进制整数，若采用补码表示，且由3个“1”和5个“0”组成，则最小值为（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "-127"
+      ],
+      [
+        "B",
+        "-32"
+      ],
+      [
+        "C",
+        "-125"
+      ],
+      [
+        "D",
+        "-3"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设X= —0.1011，则[X]补为（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1.1011"
+      ],
+      [
+        "B",
+        "1.0100"
+      ],
+      [
+        "C",
+        "1.0101"
+      ],
+      [
+        "D",
+        "1.1001"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若采用双符号位，则发生正溢出的特征是：双符号位为（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "00"
+      ],
+      [
+        "B",
+        "01"
+      ],
+      [
+        "C",
+        "10"
+      ],
+      [
+        "D",
+        "11"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设机器字长为16位（含1位符号位），若用补码表示定点小数，则最大正数为（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1-215"
+      ],
+      [
+        "B",
+        "1-2-15"
+      ],
+      [
+        "C",
+        "215-1"
+      ],
+      [
+        "D",
+        "215"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设寄存器内容为11111111，若它等于-127，则为（ ）。",
+    "answer": "B",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "补码"
+      ],
+      [
+        "B",
+        "原码"
+      ],
+      [
+        "C",
+        "移码"
+      ],
+      [
+        "D",
+        "反码"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "浮点数的表示范围和精度取决于（ ）。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "阶码位数和尾数编码"
+      ],
+      [
+        "B",
+        "阶码采用的编码和尾数的位数"
+      ],
+      [
+        "C",
+        "阶码采用的编码和尾数采用的编码"
+      ],
+      [
+        "D",
+        "阶码的位数和尾数的位数"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "计算机中表示地址时使用（ ）。",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "无符号数"
+      ],
+      [
+        "B",
+        "原码"
+      ],
+      [
+        "C",
+        "反码"
+      ],
+      [
+        "D",
+        "补码"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "字长12位，用定点补码规格化小数表示时，所能表示的正数范围是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "2-12 ~（1- 2-12 ）"
+      ],
+      [
+        "B",
+        "2-11 ~（1- 2-11 ）"
+      ],
+      [
+        "C",
+        "1/2 ~ （1- 2-11 ）"
+      ],
+      [
+        "D",
+        "- （1/2 + 2-11 ）~ （1- 2-11 ）"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在浮点数编码表示中（ ）在机器数中不出现，是隐含的。",
+    "answer": "D",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "阶码"
+      ],
+      [
+        "B",
+        "符号"
+      ],
+      [
+        "C",
+        "尾数"
+      ],
+      [
+        "D",
+        "基数"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "浮点减法运算的第二步骤是（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "规格化"
+      ],
+      [
+        "B",
+        "舍入"
+      ],
+      [
+        "C",
+        "求差"
+      ],
+      [
+        "D",
+        "对阶"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对于二进制数，若小数点左移1位则数值（ ），若小数点 右移1位则数值（ ）。",
+    "answer": "C",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "扩大一倍、扩大一倍"
+      ],
+      [
+        "B",
+        "扩大一倍、缩小一半"
+      ],
+      [
+        "C",
+        "缩小一半、扩大一倍"
+      ],
+      [
+        "D",
+        "缩小一半、缩小一半"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "判断题",
+    "text": "若[X]补>[Y]补，则∣X∣>∣Y∣。",
+    "answer": "错误",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "浮点数的取值范围由 阶码的位数决定，而浮点数的精度由尾数的位数决定。",
+    "answer": "正确",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "计算机术语中，将运算器和控制器合在一起称为（ ），而将（ ）和存储器合在一起称为（ ）。",
+    "answer": "中央处理器 中央处理器 主机",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "计算机系统的软件可分为（ ）和（ ）。",
+    "answer": "系统软件 应用软件",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "存储程序并按（ ）顺序执行，这是（ ）型计算机的工作原理。",
+    "answer": "地址 冯诺依曼",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "计算机中的低级语言是面向机器的语言，包括（ ）和（ ）两种。",
+    "answer": "机器语言 汇编语言",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "计算机将存储、算术逻辑运算和控制三个部分合称为（ ），再加上（ ）和（ ）就组成了计算机硬件系统。",
+    "answer": "主机 输入设备 输出设备",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "MIPS是用来表示计算机（ ）的单位，其含义是（ ）。",
+    "answer": "运算速度 每秒执行多少百万条指令",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "现代计算机是以（ ）为中心。",
+    "answer": "存储器",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "为了解决多个主设备同时竞争总线，（ ）必须具有（ ）部件。",
+    "answer": "控制权 总线仲裁",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "按总线连接部件不同，总线通常可分为（ ）、（ ）和通信总线。",
+    "answer": "片内总线 系统总线",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "衡量总线的重要指标是（ ），为总线本身所能达到的最高（ ）。",
+    "answer": "总线带宽 传输速率",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "按数据传送方式不同，总线可分为（ ）和（ ）。",
+    "answer": "串行传输总线 并行传输总线",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "总线的判优控制可分为（ ）式和（ ）式两种。",
+    "answer": "集中 分散",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "在总线的异步通信方式中，通信的双方可以通过不互锁、（ ）和（ ）三种方式。",
+    "answer": "半互锁 全互锁",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "总线是构成计算机系统的（ ），是多个（ ）部件之间进行数据传送的公共通道。",
+    "answer": "互连机构 系统功能",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "7微型计算机的标准总线从16位的（ ）总线发展到32位的（ ）总线，又进一步发展到64位的（ ）总线。",
+    "answer": "ISA EISA PCI",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "在异步串行传送系统中，字符格式为：1个起始位、8个数据位、1个校验位、2个终止位。若要求每秒传送120个字符，试求传送的波特率?",
+    "answer": "1440bps",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "DMA的数据传送可分为（ ）、数据块传送和（ ）三个阶段。",
+    "answer": "预处理 中断",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "内部中断是由（ ）引起的，外部中断是由（ ）引起的。",
+    "answer": "指令 硬件设备",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "按数据传送宽度来分，I/O接口类型可以分成（ ）和（ ）两种。",
+    "answer": "串行 并行",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "CPU在（ ）时刻采样中断请求信号（在开中断情况下），而在（ ）时刻采样DMA的总线请求信号。",
+    "answer": "指令执行周期结束 存取周期结束",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "CPU响应中断时要保护现场，包括对（ ）和（ ）的保护。",
+    "answer": "PC内容 寄存器内容",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "激光打印机采用了（ ）技术和（ ）技术。",
+    "answer": "激光 照相",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "DMA技术的出现使得外围设备可通过（ ）直接访问（ ）。",
+    "answer": "DMA控制器 内存",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "I/O的编址方式可分为（ ）和（ ）两大类。",
+    "answer": "统一编址 独立编址",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "如果CPU处于开中断状态，一旦接受了中断请求，CPU就会自动（ ），防止再次接受中断，同时为了返回主程序断点，CPU需将（ ）内容保存起来。",
+    "answer": "关中断 程序断点",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "各种外围设备均需通过（ ）电路，才能挂到总线上。",
+    "answer": "接口",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "DMA 控制器按其组成结构，分为（ ）型和（ ）型两种。",
+    "answer": "选择 多路",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "中断处理过程可以（ ）进行，（ ）的设备可以中断（ ）的中断服务程序。",
+    "answer": "嵌套 优先级高 优先级低",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "不同的CRT显示标准所支持的最大（ ）和（ ）数目是不同的。",
+    "answer": "分辨率 颜色",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "中断处理要求有中断（ ），中断（ ）产生，中断（ ）等硬件支持。",
+    "answer": "优先级仲裁 向量 控制逻辑",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "显示适配器作为CRT和CPU的接口由（______）存储器（______）控制器（______）三部分组成。",
+    "answer": "刷新 显示 ROM_BIOS",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "CPU能直接访问（ ）和（ ），但不能直接访问磁盘和光盘。",
+    "answer": "主存 I/O设备",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "对于 32KB 容量的存储器，若按 16 位字编址，其地址寄存器应是多少位？数据寄存器是多少位？",
+    "answer": "14 16",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "半导体SRAM靠（ ）存储信息，半导体DRAM靠（ ）存储信息。",
+    "answer": "触发器 电容",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "动态半导体存储器的刷新一般有（ ）、（ ） 和（ ）。",
+    "answer": "集中刷新 分散刷新 异步刷新",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "欲组成64K*16位的存储器，若选用32K*8位的存储芯片，共需（ ）片，若选用16K*1位的存储芯片，则需（ ）片。",
+    "answer": "4 64",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "用1k*1位的存储芯片组成容量为16k*8位的存储器共需（ ）片，若将这些芯片分装在几块板上，设每块板的容量为4k*8位则该存储器所需的地址码总位数是（ ），其中（ ）位用于选板，（ ）位用于选片，（ ）位用于存储芯片的片内地址。",
+    "answer": "128 14 2 2 10",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "广泛使用的（ ）和（ ）都是半导体随机读写存储器。前者的速度比后者快。",
+    "answer": "SRAM DRAM",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "在16位微机系统中，一个存储字占用两个连续的8位字节单元，字的低8位存放在（ ），高8位存放在（ ）。",
+    "answer": "低地址 高地址",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "半导体存储器的主要技术指标有（ ），（ ）和存储器带宽。",
+    "answer": "存储器容量 存储速度",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "SRAM芯片6116（2k*8位）有（ ）位地址线、（ ）位数据线。",
+    "answer": "11 8",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "对存储器进行读/写时，地址线被分为高位和低位两部分，它们分别用以产生（ ）和（ ）信号。",
+    "answer": "片选 存储单元",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "Cache是一种（ ）存储器，是为了解决CPU和主存之间（ ）不匹配而采用的一项重要的硬件技术。",
+    "answer": "高速缓冲 速度",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "主存与Cache的地址映射有全相联、（ ）和（ ）方式。",
+    "answer": "直接 组相联",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "计算机系统中的存储器分为（ ）和（ ），在CPU执行程序时， 必须将指令存放在（ ）。",
+    "answer": "内存储器 外存储器 内存储器",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "存储器可分为主存和（ ），程序必须存于（ ）内，CPU才能执行其中的指令。",
+    "answer": "辅存 主存",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "主存、高速缓冲存储器、通用寄存器、磁盘、磁带都可用来存储信息，按存取时间由快 到慢的顺序是（ ）。",
+    "answer": "通用寄存器 高速缓冲存储器 主存 磁盘 磁带",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "缓存是在主存和CPU之间的一种存储器，其速度与（ ）匹配，其容量与（ ）有关。",
+    "answer": "CPU 主存",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "动态RAM依据（ ）的原理存储信息，因此一般在（ ）时间内必须刷新一次。",
+    "answer": "电容存储电荷 2ms",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "存储系统的CACHE—主存和主存—辅存都用到了（ ）原理。",
+    "answer": "程序访问的局部性",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "相联存储器不按地址而是按（ ）访问的存储器，在cache中用来存放（ ），在虚拟存储器中用来存放（ ）。",
+    "answer": "内容 行地址表 页表和快表",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "对存储器的要求是（ ），（ ），成本低。为了解决这三方面的矛盾计算机采用多级存储体系结构。",
+    "answer": "容量大 速度快",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "模4交叉存储器是一种（ ）存储器，它有（ ）个存储模块，每个模块有它自己的地址寄存器和（ ）寄存器。",
+    "answer": "多体交叉并行 4 数据",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "某四模块交叉存储器，每个模块的容量为128K×64位，存储周期为200ns，则数据总线的宽度为（ ）位。总线传送周期的最大值为（ ）ns。若总线传送周期取该最大值，则CPU连续读取4个字所需要的时间为（ ）ns。",
+    "answer": "64 50 350",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "内存一般采用（）存储器件,和外存相比,它的速度 （）、成本（）。",
+    "answer": "半导体 快 高",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "存储器中用（）区分不同的存储单元。",
+    "answer": "地址",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "存储器的读操作是将（）中的数据传送到（）中,该存储器位置中的原数据内容（）。",
+    "answer": "存储器 运算器 保持不变",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "存储器的写操作是将（）中的数据传送到（）中,该存储器位置中的原数据内容（）。",
+    "answer": "运算器 存储器的某个存储单元 被替代",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "有些计算机将一部分软件永恒地存于只读存储器中,称之为（）。",
+    "answer": "固件",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "当浮点数的阶码大于最大正阶码时为溢出，此时需（ ）处理；当阶码小于最小负阶码时，按（ ）处理。",
+    "answer": "中断 机器零",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "在补码加减法除法中，被除数和除数的补码同号时，需（ ），被除数和除数的补码异号时，需（ ）。",
+    "answer": "做减法 做加法",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "采用双符号位运算，当运算结果的尾数部分不是（ ）的形式时，则应进行规格化处理。当尾数符号位为（ ）时，需要右规。当运算结果的符号位和最高有效位为（ ）时，需要左规。",
+    "answer": "规格化 10或01 00或11",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "向右规格化的规则为，尾数（ ），阶码（ ）。",
+    "answer": "右移1位 加1",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "影响并行加法器速度的关键因素是（ ）的传递问题。",
+    "answer": "进位",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "已知某数的补码为11110101，算术左移1位后得（ ），算术右移1位后得（ ）。",
+    "answer": "11101010 11111010",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "移码表示法主要用于表示（ ）数的阶码E，以利于比较两个（ ）数的大小和（ ）操作。",
+    "answer": "浮点 浮点 对阶",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "已知x和y,用变形补码计算x+y,并判断结果是否溢出（正溢出、负溢出、未溢出）。 x=0.11010,y=0.101110。",
+    "answer": "正溢出",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "已知x和y,用变形补码计算x+y,并判断结果是否溢出（正溢出、负溢出、未溢出）。 x=0.11101,y=-0.10100。",
+    "answer": "未溢出",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "334. 已知x和y,用变形补码计算x+y,并判断结果是否溢出（正溢出、负溢出、未溢出）。 x=-0.10111,y=-0.11000。",
+    "answer": "负溢出",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "已知x和y,用变形补码计算x-y,并判断结果是否溢出（正溢出、负溢出、未溢出）。 x=0.11011,y=0.11101。",
+    "answer": "未溢出",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "已知x和y,用变形补码计算x-y,并判断结果是否溢出（正溢出、负溢出、未溢出）。 x=0.11111,y=-0.11001。",
+    "answer": "未溢出",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "已知x和y,用变形补码计算x-y,并判断结果是否溢出（正溢出、负溢出、未溢出）。 x=0.10111,y=0.11110。",
+    "answer": "未溢出",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "采用IEEE754单精度浮点数格式计算下列表达式的值。 0.625+(-12.25)",
+    "answer": "C13A0000",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "采用IEEE754单精度浮点数格式计算下列表达式的值。 0.625-(-12.25)",
+    "answer": "414E0000",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "某机指令字长24位，共能完成130种操作，采用单地址格式可直接寻址的范围是（ ），采用二地址格式指令，可直接寻址的范围是（ ）。",
+    "answer": "216 28",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "设D为指令中的形式地址，I为基址寄存器，PC为程序计数器。若有效地址E = （PC） + D，则为（ ）寻址方式；若E = （I）+ D ，则为（ ）；若为相对间接寻址方式，则有效地址为（ ）。",
+    "answer": "相对 基址 ((PC) + D)",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "变址寻址方式中操作数的有效地址是（ ），基址寻址方式中，操作数的有效地址是（ ）。",
+    "answer": "[变址寄存器]+形式地址 [变址寄存器]+位移量",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "从操作数的物理位置来说，可将指令归结为三种类型：存储器-存储器、（ ）和（ ）。",
+    "answer": "寄存器-存储器 寄存器-寄存器",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "RISC的中文含义是（ ），CISC的中文含义是（ ）。",
+    "answer": "精简指令集计算机 复杂指令集计算机",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "指令字长度有（ ），（ ）和多字长三种。",
+    "answer": "单字长 双字长",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "形成操作数地址的方式，称为（ ）。",
+    "answer": "操作数寻址方式",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "设指令字长等于存储字长，均为24位，可完成108种操作，操作码长度固定，且具有直接、间接等6种寻址方式，则在保证最大范围内直接寻址的前提下，指令字中操作码占（ ）位，寻址特征占3位，一次间址的范围是（ ）。",
+    "answer": "7 224",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "设形式地址为X，则相对寻址方式中，操作数的有效地址为（ ）；间接寻址方式中，操作数的有效地址为（ ）。",
+    "answer": "(pc)+x (x)",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "机器指令格式通常由（ ）和（ ）组成。",
+    "answer": "操作数 操作码",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "不需要计算主存地址的寻址方式有（ ）和（ ）。",
+    "answer": "立即寻址 寄存器寻址",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "指令格式多使用（ ）和（ ）型,前者比后者执行速度快。",
+    "answer": "RR RS",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "一个较完善的指令系统应包含（ ）类指令，（ ）类指令，逻辑运算类指令，程序控制类指令，I/O类指令，字符串类指令，系统控制类指令。",
+    "answer": "数据传送 算术运算",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "形式指令地址的方式，称为（ ）方式，有（ ）寻址和（ ）寻址。",
+    "answer": "指令寻址 顺序寻址 跳跃寻址",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "RISC指令系统的最大特点是：（ ），（ ）指令格式和寻址方式种类少。只有取数 / 存数指令访问存储器。",
+    "answer": "指令条数 指令长度",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "堆栈是一种特殊的（ ）寻址方式,它采用（ ）原理.",
+    "answer": "数据 先进后出",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "一台计算机中的（ ）的集合，称为这台计算机的指令系统；指令格式通常由（ ）字段和地址码字段组成。",
+    "answer": "机器指令 操作码",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "寄存器间接寻址，操作数在（ ）中；寄存器寻址，操作数在（ ）中。",
+    "answer": "内存单元 寄存器",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "堆栈是内存中的一块特殊的存储区域，堆栈中数据的存取特点是（ ），堆栈寻址方式按结构不同分为（ ）堆栈和（ ）堆栈。",
+    "answer": "先进后出 串联 存储器",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "某机器指令码长度16位，地址码长度都为6位，包含单地址指令，双地址指令和零地址指令，请问单地址指令最多能有多少条，此时双地址指令和零地址指令各位多少条？",
+    "answer": "959 1 64",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "保存当前正在执行的指令的寄存器称为（ ），保存当前正在执行的指令的后继地址的寄存器称为（ ）。",
+    "answer": "指令寄存器 程序计数器",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "在中断服务中，开中断的目的是允许（ ），一个中断向量对应一个（ ）。",
+    "answer": "多重中断 中断服务程序的入口地址",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "中断屏蔽的作用有二个，即（ ）和（ ）。",
+    "answer": "多重中断 改变中断处理次序",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "运算器的两个主要功能是实现（ ）和（ ）。",
+    "answer": "算术运算 逻辑运算",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "操作控制器的功能是根据指令操作码和（ ），产生各种操作控制信号，从而完成（ ）和执行指令的控制。",
+    "answer": "时序信号 取指令",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "最基本的指令周期包括（ ）和（ ）。",
+    "answer": "取指周期 执行周期",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "完整的指令周期包括取址周期、间址周期、（ ）周期和（ ）周期。",
+    "answer": "执行 中断",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "流水CPU是以（ ）为原理构造的处理器，是一种非常（ ）的并行技术。",
+    "answer": "时间并行性 经济适用",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "CPU的控制器使用（ ）和（ ）组成多级时序系统。",
+    "answer": "机器周期 节拍",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "CPU周期也称为（ ），一个CPU周期包含若干个（ ）。",
+    "answer": "机器周期 时钟周期",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "组合逻辑控制是（ ）信号和（ ）信号的逻辑函数。",
+    "answer": "微操作 时序控制",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "微程序控制器主要由（ ），（ ）和地址转移逻辑三大部分组成。",
+    "answer": "控制存储器 微指令寄存器",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "利用数据的数值最高位进位C和符号位进位Cf来判断溢出，表达式为（ ）；采用双符号位的方法进行溢出检测是，两个符号位（ ），则表明有溢出。",
+    "answer": "C^Cf 不同",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "移码表示法主要用于表示两个浮点数的（ ）和（ ）操作。",
+    "answer": "阶码 溢出",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "浮点运算结果的补码尾数应进行规格化处理，当尾数符号位为（ ）和（ ）时，需要右规。",
+    "answer": "01 10",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "定点数有（ ）和（ ）两种表示方法。",
+    "answer": "定点整数 定点小数",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "补码定点小数所能表示的绝对值最大的负数为（ ）。",
+    "answer": "-1",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "向左规格化得规则为：尾数（ ），阶码（ ）。",
+    "answer": "左移1位 减1",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "设X=-69，N=8（含符号位），则X的原码为（ ），X的补码为（ ）。",
+    "answer": "11000101 10111011",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "设寄存器内容为FFH，若其表示-127，则为（ ）码，若其表示-1，则为（ ）码。",
+    "answer": "原 补",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "在浮点加减法运算时，要完成（ ）、尾数求和、（ ）、舍入处理和溢出等步骤。",
+    "answer": "对阶 规格化",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "数的真值变成机器码可采用（ ）、反码、（ ）和移码。",
+    "answer": "原码 补码",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "若[ x1 ]补 = 11001100， [x2 ]原 = 1.0110 ，则数x1 和x2的十进制数真值分别是（ ）和（ ）。",
+    "answer": "-52 -0.375",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "设机器字长为8位，-1的补码在整数定点机中表示为（ ），在小数定点机中表示为（ ）。",
+    "answer": "11111111 10000000",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "对于一个浮点数，（ ）确定了小数点的位置，当其尾数左移时，欲使其值不变，必须使（ ）。",
+    "answer": "阶码的大小 阶码减小",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "若[X]补=010100，则[0.25X]补=（ ）。",
+    "answer": "000101",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "若[X]补=01010，则[X/2]补=（ ）。",
+    "answer": "00101",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "若移码的符号位为1，该数为（ ）数，若符号为0，该数为（ ）。",
+    "answer": "正 负",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "8位定点小数表示中，机器数1 0 0 0 0 0 0 0，当它分别是原码、补码、反码形式时，其对应值分别为（ ）、（ ）和（ ）。",
+    "answer": "-0.0 -1.0 -127/128",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "浮点数的表示范围取决（ ）的位数，而精度取决于（ ）的位数。",
+    "answer": "阶码 尾数",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "按IEEE754标准，一个浮点数由（ ），阶码E ，尾数m 三部分组成。其中阶码E的值等于指数的基值加上一个固定（ ）。",
+    "answer": "符号位 偏移量",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "将十进制数-0.625转换为IEEE754标准的短浮点格式数（即32位二进制，最终一定要转换成8位十六进制，切记）。",
+    "answer": "BF200000H",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "填空题",
+    "text": "已知[x]补=1.1100，求[x]原和x。",
+    "answer": "1.0100 -0.0100。",
+    "subject": "计算机组成原理",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "选择题",
+    "text": "元神角色你最喜欢谁",
+    "answer": "A",
+    "subject": "计算机组成原理",
+    "flag_star": true,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "颗粒"
+      ],
+      [
+        "B",
+        "胡桃"
+      ],
+      [
+        "C",
+        "温蒂"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  }
+]

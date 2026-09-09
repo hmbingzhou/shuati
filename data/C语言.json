@@ -1,0 +1,6926 @@
+[
+  {
+    "type": "判断题",
+    "text": "语句printf(\"%.2f\",1.0/3);输出为0.33。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "执行以下程序段，输入20，输出20.00。\ndouble x;\nscanf(\"%f\", &x);\nprintf(\"%.2f\", x);",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "执行以下程序段，输入30，输出30.00。\ndouble x;\nscanf(\"x=%lf\", &x);\nprintf(\"%.2f\", x);",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "设变量已正确定义，执行以下程序段，顺序输入三个字符'k'，则输出k。\nscanf(\"%c%c%c\", &ch1, &ch2, &ch3);\nprintf(\"%c\", ch2);",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "执行以下程序段后，输出 i = 10, j = 20。\nint i, j;\ni = 10;\nj = 20;\nprintf(\"i = %d, j = %d\", j, i);",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "下面这段代码，用%d格式打印输出double型变量，将会进行取整，输出为3。\n#include <stdio.h>\nint main(){\n    double pi = 3.14159;\n    printf(\"%d\", pi);\n    return 0;\n}",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "执行以下程序段，输入1001  3  0.025，输出1001#3#0.025。\nint money, year;\ndouble rate;\nscanf(\"%d %lf %d \", &money, &year, &rate);\nprintf(\"%d#%d#%.3f\", money, year, rate);",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "下面这段代码，用%.2f格式打印输出int型变量，将会输出2019.00。\n#include <stdio.h>\nint main(){\n    int k=2019;\n    printf(\"%.2f\", k);\n    return 0;\n}",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "执行以下程序段，输入10，输出10.00。\ndouble x;\nscanf(\"%d\", &x);\nprintf(\"%.2f\", x);",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "执行语句putchar('S');后，在屏幕上显示的输出结果是'S'。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "C语言中不能用printf函数输出字符。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "下面这段代码，打印输出变量e的值，将会进行取整，输出为2。\n#include <stdio.h>\nint main(){\n    double e = 2.71828;\n    printf(\"%d\", e);\n    return 0;\n}",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "下面这段程序，若scanf输入k的值为50，则程序将循环有限次，在打印输出有限行之后，程序将正常结束。\n#include <stdio.h>\nint main(){\n    int k;\n    scanf(\"%d\", &k);\n    int i=100;\n    while(i > k){\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "下面这段程序中的循环将是无限循环，程序将始终运行、无法结束（假设运行该程序的计算机系统永远不会发生意外情况而崩溃或断电）。\n#include \"stdio.h\"\nint main(){\n    for(long num=1; num>0; num++)\n        printf(\"%ld\\n\", num);\n    return 0;\n}",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "阅读以下两段代码：\n1\n▾\n▾\n    int i;\n    for(i=0; i<100; i++){\n        /**\n         此处省略代码若干行\n         **/\n    }\n2\n▾\n▾\n    int i=0;\n    while(i<100){\n        /**\n         此处省略代码若干行\n         **/\n        i++;\n    }\n第一段用for语句实现的循环，一定等价于第二段用while语句实现的循环（两个循环中省略的代码相同）。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "若变量已正确定义，执行以下while语句将陷入死循环。\ni = 1;\nwhile (i <= 10) ;\n    i++;",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在以下程序段中，若变量已正确赋值，当条件i <= limit不满足（即i > limit）或者条件m % i == 0满足时，循环结束。\nint i, limit, m;\nfor(i = 2; i <= limit; i++){\n    if(m % i == 0){\n        break;\n    }\n}",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "执行以下程序段，将出现死循环。\nfor(i = 11; i <= 20; i++){\n    for(i = 1; i <= 10; i++){\n        printf( \"%4d\", i );\n    }\n    printf(\"\\n\");\n}",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "if-else语句的一般形式如下，若表达式的值为“真”，则执行语句1；否则，就执行语句2。\nif (表达式)\n    语句1\nelse\n    语句2",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "省略else的if语句的一般形式如下，若表达式的值为“真”，则执行语句1；否则，就什么也不做。\nif (表达式)\n   语句1",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "以下程序段的功能是：将变量a、b的最大值赋给max。\nmax = a;\nif ( max < b ){\n    max = b;\n}",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在if语句的三种形式中，如果要想在满足条件时执行一组(多个)语句，则必须把这一组语句用{}括起来组成一个复合语句。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "if(a=5) 是允许的。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "执行以下程序段后，y的值为-1。\nx = -1;\nif (x < 0){\n    y = -1;\n}\ny = 0;",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "如果变量已经正确定义，则执行以下程序段后，x的值不变。\nif (x == 10) {\n    y = 1;\n} else {\n   y = 0;\n}",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "对于如下的switch语句（使用break）的一般形式，其执行流程是：首先求解表达式，如果表达式的值与某个常量表达式的值相等，则执行该常量表达式后的相应语句段；如果表达式的值与任何一个常量表达式的值都不相等，则执行 default 后的语句段，最后执行break语句，跳出switch语句。\nswitch (表达式) {\n    case 常量表达式1: 语句段1; break;\n    case 常量表达式2: 语句段2; break;\n              …\n    case 常量表达式n: 语句段n; break;\n    default:         语句段n+1; break;\n}",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "对于如下switch语句（不使用break）的一般形式，其执行流程是：首先求解表达式，如果表达式的值与某个常量表达式的值相等，则执行该常量表达式后的所有语句段，如果表达式的值与任何一个常量表达式的值都不相等，则执行 default 后的所有语句段。\nswitch (表达式) {\n    case 常量表达式1: 语句段1;\n    case 常量表达式2: 语句段2;\n      …\n    case 常量表达式n: 语句段n;\n    default:语句段n+1;\n}",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "设变量已正确定义，以下是合法的switch语句。\nswitch(choice){\n    case choice == 1: price = 3.0; break;\n    case choice == 2: price = 2.5; break;\n    case choice == 3: price = 4.0; break;\n    case choice == 4: price = 3.5; break;\n    default: price = 0.0; break;\n}",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在switch语句中，每一个的case常量表达式的值可以相同。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在switch语句中，可以根据需要使用或不使用break语句。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "switch语句中break语句是必须的。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "switch语句中default语句是必须的。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "以下程序段中，当i大于10或者s大于20时，循环结束。\ns = 0;\ni = 1;\nwhile(i <= 10){\n    s = s + i;\n    if(s > 20){\n        break;\n    }\n    i++;\n}",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在循环中使用break语句或者continue语句，其作用是相同的。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在嵌套循环（多层循环）中, 每一层循环都应该使用自己的循环变量，以免互相干扰。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在C语言中，for、while、do-while三种循环可以互相嵌套。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在C语言的嵌套循环结构中，任何一层循环中的brea语句都可以结束整个嵌套循环的执行。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "for语句的一般形式如下，其中的表达式1只执行一次。\nfor (表达式1; 表达式2; 表达式3)\n    循环体语句",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "for语句的一般形式如下，若表达式2的值为“真”，则先执行循环体语句，再计算表达式3，然后继续循环。\nfor (表达式1; 表达式2; 表达式3)\n   循环体语句",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "执行以下程序段，sum的值是55。\nint i, sum;\nfor (i = 1; i <= 10; i++){\n    sum = sum + i;\n}",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "以下程序段的功能是计算20的阶乘。\nint i;\ndouble product;\nproduct = 0;\nfor (i = 1; i <= 20; i++){\n   product = product * i;\n}",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "若有定义float a[6]={1,2,3};，则数组中含有3个元素。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "以下定义了一个二维数组tab，该数组可以存放7个整型数据。\nint tab[3][4];",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "一维数组初始化的一般形式如下，即在定义数组时，对数组元素赋初值。其中初值表中依次放着数组元素的初值。\n类型名 数组名[数组长度] = {初值表}；",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "一维数组定义的一般形式如下：\n类型名 数组名[数组长度]；\n数组元素引用的一般形式如下：\n数组名[下标]\n在引用数组元素时，下标的合理取值范围是[0，数组长度-1]，下标不能越界。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "数组定义后，数组名的值是一个地址，可以被修改。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "数组定义后，数组名表示该数组所分配连续内存空间中第一个单元的地址，即首地址。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在定义数组之后，根据数组中元素的类型及个数，在内存中分配一段连续存储单元用于存放数组中的各个元素。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "一维数组定义的一般形式如下，其中的数组长度是一个整型常量表达式，给定数组的大小。\n类型名 数组名[数组长度]；",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "数组定义中，数组名后是用方括号括起来的常量表达式，不能用圆括号。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在对数组全部元素赋初值时，不可以省略行数，但能省略列数。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "同一个数组中的每个元素都具有相同的数据类型，有统一的标识符即数组名，用不同的序号即下标来区分数组中的各元素。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "字符串常量就是用一对双引号括起来的字符序列，它有一个结束标志 '\\0'。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "\"a\" 和 'a'是等价的。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "二维数组的元素在内存中按行/列方式存放，即先存放第0行的元素，再存放第1行的元素……其中每一行的元素再按照列的顺序存放。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "若字符数组s1和s2中均已正确存储字符串，则可以使用 if(s1>s2) 进行两字符串大小的比较。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "函数strcmp从头至尾顺序地将其对应字符比较，遇到两个字符不等时，两个字符相减得到一个int型值，两个字符串完全相同时，则返回0。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "当用户要求输入的字符串中含有空格时,应使用的输入函数是 gets()。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "在C语言中能逐个地使用下标变量，也能一次引用整个数组。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "如果strcmp(s1,s2)返回的结果为0，表示字符串s1和s2不相同。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "调用strcmp函数比较字符串大小时，通常较长的字符串会较大。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "如果函数定义出现在函数调用之前，可以不必加函数原型声明。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "函数返回值的类型是由在定义函数时所指定的函数类型。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "函数的形参都属于全局变量。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "实参向形参进行数值传递时，数值传递的方向是单向的，即形参变量值的改变不影响实参变量的值。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "按照C语言的规定，在参数传递过程中，既可以将实参的值传递给形参，也可以将形参的值传递给实参，这种参数传递是双向的。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "全局变量与局部变量的作用范围相同，不允许它们同名。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "函数调用得到的值，可以作为另一次函数调用时的参数。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "sizeof(int)可计算整型所占的内存字节数，但是sizeof( )并不是一个函数，而是一个运算符（操作符，operator）。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "函数可以嵌套调用但不能嵌套定义。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "c语言每个函数的返回值都是int型的。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "执行语句int *p = 1000;后，指针变量p指向地址为1000的变量。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "执行语句int *p; 后，指针变量p只能指向int类型的变量。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "对于定义int a[5],*p=a;后，*(p+1)和*(a+1)的值是相同的。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "语句int *p; *p = 50;执行时，不会有任何错误。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "直接访问就是直接利用变量的地址直接进行访问。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "变量定义：int *p, q; 中，p和q都是指针。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "语句int *p, q, r; 定义了3个指针变量。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "指针变量中保存的肯定是一个地址。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "可以将一个整型数据赋给一个指针变量，如p=3000。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "对于定义int a[10],*p=a; 语句p=a+1;和a=a+1;都是合法的。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "要通过函数调用来改变主调函数中某个变量的值，可以把指针作为函数的参数。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "数组的基地址是在内存中存储数组的起始位置，数组名本身就是一个地址即指针值。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "两个任意类型的指针可以使用关系运算符比较大小。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "字符串常量在内存中的存放位置由系统自动安排。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "字符串常量实质上是一个指向该字符串首字符的指针常量。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "调用printf函数，%s的格式输出字符串时，字符数组名、字符指针和字符串常量都可以作为输出参数。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "语句int *p;和printf(\"%d\",*p);中的*p含义相同。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "若有定义char* p=\"computer\"；则表示p的值是字符串\" computer \"。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "char *s=\"C Language\";表示s是一个指向字符串的指针变量，把字符串的首地址赋予s。",
+    "answer": "正确",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "判断题",
+    "text": "不同类型的指针变量是可以直接相互赋值的。",
+    "answer": "错误",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false
+  },
+  {
+    "type": "选择题",
+    "text": "以下选项中，非法的字符常量是____。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "'t'"
+      ],
+      [
+        "B",
+        "'\\65'"
+      ],
+      [
+        "C",
+        "\"n\""
+      ],
+      [
+        "D",
+        "'\\t'"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "C语言中最简单的数据类型包括____。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "整型、实型、逻辑型"
+      ],
+      [
+        "B",
+        "整型、实型、字符型"
+      ],
+      [
+        "C",
+        "整型、字符型、逻辑型"
+      ],
+      [
+        "D",
+        "整型、实型、逻辑型、字符型"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在C语言中,要求运算数必须是整型的运算符是（ ）。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "%"
+      ],
+      [
+        "B",
+        "/"
+      ],
+      [
+        "C",
+        "<"
+      ],
+      [
+        "D",
+        "!"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在C语言中（以32位PC机为例），5种基本数据类型的存储空间长度的排列顺序为（    ）",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "char < int = long int <= float < double"
+      ],
+      [
+        "B",
+        "char = int < long int <= float < double"
+      ],
+      [
+        "C",
+        "char < int < long int = float = double"
+      ],
+      [
+        "D",
+        "char = int = long int <= float < double"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下选项中合法的用户标识符是",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "long"
+      ],
+      [
+        "B",
+        "_2Test"
+      ],
+      [
+        "C",
+        "3Dmax"
+      ],
+      [
+        "D",
+        ""
+      ],
+      [
+        "E",
+        "dat"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列不合法的用户标识符是",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "j2_KEY"
+      ],
+      [
+        "B",
+        "Double"
+      ],
+      [
+        "C",
+        "4d_a"
+      ],
+      [
+        "D",
+        "_8_"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列叙述中错误的是",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "用户所定义的标识符允许使用关键字"
+      ],
+      [
+        "B",
+        "用户所定义的标识符应尽量做到“见名知意”"
+      ],
+      [
+        "C",
+        "用户所定义的标识符必须以字母或下划线开头"
+      ],
+      [
+        "D",
+        "用户定义的标识符中，大、小写字母代表不同标识"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "C语言中的标识符只能由字母、数字和下划线三种字符组成，且第一个字符（  ）",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "必须为字母"
+      ],
+      [
+        "B",
+        "必须为下划线"
+      ],
+      [
+        "C",
+        "必须为字母或下划线"
+      ],
+      [
+        "D",
+        "可以是字母、数字和下划线中任一种字符"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若有定义“char a; int b; float c; double d;”，则表达式“a*b+d-c”值的类型为____。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "float"
+      ],
+      [
+        "B",
+        "int"
+      ],
+      [
+        "C",
+        "char"
+      ],
+      [
+        "D",
+        "double"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列四个叙述中，正确的是？",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "C程序中的所有字母都必须小写"
+      ],
+      [
+        "B",
+        "C程序中的关键字必须小写，其他标示符不区分大小写"
+      ],
+      [
+        "C",
+        "C语言中的所有关键字必须小写"
+      ],
+      [
+        "D",
+        "C程序中的所有字母都不区分大小写"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若有char w; int x; float y; double z; 则表达式w*x+z-y值的数据类型为（ ）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "float"
+      ],
+      [
+        "B",
+        "char"
+      ],
+      [
+        "C",
+        "int"
+      ],
+      [
+        "D",
+        "double"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下标识符中，不合法的是（ ）。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "4d"
+      ],
+      [
+        "B",
+        "_8_d"
+      ],
+      [
+        "C",
+        "Int"
+      ],
+      [
+        "D",
+        "key"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对于变量定义：int a, b = 0;下列叙述中正确的是( )  。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "a的初始值是0，b的初始值不确定。"
+      ],
+      [
+        "B",
+        "a的初始值不确定，b的初始值是0。"
+      ],
+      [
+        "C",
+        "a和b的初始值都是0。"
+      ],
+      [
+        "D",
+        "a和b的初始值都不确定。"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "按照标识符的要求，（ ）不能组成标识符。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "连接符"
+      ],
+      [
+        "B",
+        "下划线"
+      ],
+      [
+        "C",
+        "大小写字母"
+      ],
+      [
+        "D",
+        "数字字符"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "C 语言程序中可以对程序进行注释，注释部分必须用什么符号括起来？",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "'{' 和‘}'"
+      ],
+      [
+        "B",
+        "'[' 和 ']'"
+      ],
+      [
+        "C",
+        "'/*' 和 '*/'"
+      ],
+      [
+        "D",
+        "'*/' 和 '/*'"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "一个C的 程序的执行是从",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "本程序的main函数开始，到main函数结束"
+      ],
+      [
+        "B",
+        "本程序的第一个函数开始，到本程序文件的最后一个函数结束"
+      ],
+      [
+        "C",
+        "本程序的main函数开始，到本程序文件的最后一个函数结束"
+      ],
+      [
+        "D",
+        "本程序的第一个函数开始，到main函数结束"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "定义 char a;  则以下赋值语句不恰当的是：",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "a = 65;"
+      ],
+      [
+        "B",
+        "a = \"A\";"
+      ],
+      [
+        "C",
+        "a = '\\65';"
+      ],
+      [
+        "D",
+        "a = 6 + 'A';"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下选项中不正确的整型常量是（ ）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "12L"
+      ],
+      [
+        "B",
+        "-10"
+      ],
+      [
+        "C",
+        "012"
+      ],
+      [
+        "D",
+        "2,900"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在C语言中，数字029是一个（     ）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "八进制数"
+      ],
+      [
+        "B",
+        "十进制数"
+      ],
+      [
+        "C",
+        "十六进制数"
+      ],
+      [
+        "D",
+        "非法数"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面四个选项中，均是合法整形常量的选项是（  ）",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "160  、 -0xffff 、  011"
+      ],
+      [
+        "B",
+        "-0xcdf 、 01a   、  0xe"
+      ],
+      [
+        "C",
+        "-01  、   986,012  、 0668"
+      ],
+      [
+        "D",
+        "-0x48a 、  2e5   、   0x"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对于变量定义double a,b,c;，则表达式(    )与a/b/c不等价。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "a/(b*c)"
+      ],
+      [
+        "B",
+        "a/c/b"
+      ],
+      [
+        "C",
+        "a/(b/c)"
+      ],
+      [
+        "D",
+        "(a/b)/c"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "定义double   i=3.5,j =5.5;则表达式(int)i+j的值是（    ）",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "9.0"
+      ],
+      [
+        "B",
+        "8.5"
+      ],
+      [
+        "C",
+        "8"
+      ],
+      [
+        "D",
+        "8.0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设变量n为float型，m为int类型，则以下能实现将n中的数值保留小数点后两位，第三位进行四舍五入运算的表达式是（  ）",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "n=(n*100+0.5)/100.0"
+      ],
+      [
+        "B",
+        "m=n*100+0.5,n=m/100.0"
+      ],
+      [
+        "C",
+        "n=n*100+0.5/100.0"
+      ],
+      [
+        "D",
+        "n=(n/100+0.5)*100.0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假设有定义：float x=16/5/2.0, y=16/5.0/2; 则 x 和 y 的值分别为______。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1.5 1.6"
+      ],
+      [
+        "B",
+        "1.6 1.6"
+      ],
+      [
+        "C",
+        "1.5 1.5"
+      ],
+      [
+        "D",
+        "1.6 1.5"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "执行下列程序段的输出结果是（）。\ndouble x = 2.5, y = 4.7;\nint a = 7;\nprintf(\"%.1f\", x + a%3 * (int)(x+y) % 2 / 4);",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "2.5"
+      ],
+      [
+        "B",
+        "2.8"
+      ],
+      [
+        "C",
+        "3.5"
+      ],
+      [
+        "D",
+        "3.8"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设x 、y均为f1oat型变量,则以下不合法的赋值语句是 (   )。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "y=1+x;"
+      ],
+      [
+        "B",
+        "y=(x%2)/10;"
+      ],
+      [
+        "C",
+        "x*=y+8;"
+      ],
+      [
+        "D",
+        "x=y=0;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "表达式17%4 /8的值为：",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "1"
+      ],
+      [
+        "C",
+        "2"
+      ],
+      [
+        "D",
+        "3"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若有以下定义语句char c1=’b’, c2=’e’;  printf(“%d,%c\\n”,c2-c1,c2-‘a’+’A’);  则输出结果是。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "2，M"
+      ],
+      [
+        "B",
+        "3，E"
+      ],
+      [
+        "C",
+        "C、2，E"
+      ],
+      [
+        "D",
+        "输出项与相应的格式控制不一致，输出结果不确定"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "已知字母A的ASCII码为十进制数65，且ch为字符型变量，则执行语句ch='A'+'6'-'3';后，ch中的值为__。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "D"
+      ],
+      [
+        "B",
+        "68"
+      ],
+      [
+        "C",
+        "C"
+      ],
+      [
+        "D",
+        "不确定"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若x为浮点型，则表达式x=10/4为（  ）。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "2.5"
+      ],
+      [
+        "B",
+        "2.0"
+      ],
+      [
+        "C",
+        "2"
+      ],
+      [
+        "D",
+        "3"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "表达式\n下面的程序段将输出 ▁▁▁▁▁。\ndouble pi = 22 / 7, r = 2, g;\ng = 2 * pi * r;\nprintf(\"%.2f\\n\", g);",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0.00"
+      ],
+      [
+        "B",
+        "12.00"
+      ],
+      [
+        "C",
+        "12.57"
+      ],
+      [
+        "D",
+        "13.00"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "表达式\n下面的程序段将输出 ▁▁▁▁▁。\ndouble r = 2, s;\ns = 90 / 360 * 3.14 * r * r;\nprintf(\"%.2f\\n\", s);",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0.00"
+      ],
+      [
+        "B",
+        "0.02"
+      ],
+      [
+        "C",
+        "0.32"
+      ],
+      [
+        "D",
+        "3.14"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假定x和y为 double型，则表达式x=2,y=x+3/2的值是（       ）。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "3.500000"
+      ],
+      [
+        "B",
+        "3"
+      ],
+      [
+        "C",
+        "3.000000"
+      ],
+      [
+        "D",
+        "2.000000"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "表达式\n下面的程序段将输出 ▁▁▁▁▁。\ndouble g = 10, t = 2, s;\ns = 1 / 2 * g * t * t;\nprintf(\"%g\\n\", s);",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "0.0125"
+      ],
+      [
+        "C",
+        "0.2"
+      ],
+      [
+        "D",
+        "20"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若有定义int x=3, y=2和float a=2.5, b=3.5，则表达式：(x+y)%2+(int)a/(int)b的值是（ ）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "2"
+      ],
+      [
+        "C",
+        "1.5"
+      ],
+      [
+        "D",
+        "1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "表达式\n下面的程序段将输出 ▁▁▁▁▁ 。\nint n = 4, s;\ns = 1 / 2 * n * (n + 1);\nprintf(\"%d\\n\", s);",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "0.025"
+      ],
+      [
+        "C",
+        "0.625"
+      ],
+      [
+        "D",
+        "10"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若\" int n; float f=13.8; \"，则执行\"n=(int)f%3\"后，n的值是（ ）。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1"
+      ],
+      [
+        "B",
+        "4"
+      ],
+      [
+        "C",
+        "4.333333"
+      ],
+      [
+        "D",
+        "4.6"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "表达式______的值是0。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "3%5"
+      ],
+      [
+        "B",
+        "3/5.0"
+      ],
+      [
+        "C",
+        "3/5"
+      ],
+      [
+        "D",
+        "3<5"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设整型变量a=2，则执行下列语句后，浮点型变量b的值不为0.5的是（ ）。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "b=1.0/a;"
+      ],
+      [
+        "B",
+        "b=(float) (1/a);"
+      ],
+      [
+        "C",
+        "b=1/(float)a;"
+      ],
+      [
+        "D",
+        "b=1/(a*1.0);"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "判断char型变量ch是否为大写字母的正确表达式是（ ）。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "'A'<=ch<='Z’"
+      ],
+      [
+        "B",
+        "(ch>='A’)&(ch<='Z’)"
+      ],
+      [
+        "C",
+        "(ch>='A’) && (ch<='Z’)"
+      ],
+      [
+        "D",
+        "(‘A’<= ch)AND(‘Z’>= ch)"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "语句printf(“%d”,(a=2)&&(b= -2));的输出结果是：",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "无输出"
+      ],
+      [
+        "B",
+        "结果不确定"
+      ],
+      [
+        "C",
+        "-1"
+      ],
+      [
+        "D",
+        "1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "表示关系1<=x<=100的c语言表达式为（ ）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "x>=1 & x<=100"
+      ],
+      [
+        "B",
+        "x>=1 and x<=100"
+      ],
+      [
+        "C",
+        "1<=x<=100"
+      ],
+      [
+        "D",
+        "x>=1 && x<=100"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列只有当整数x为奇数时，其值为“真”的表达式是：",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "x%2==0"
+      ],
+      [
+        "B",
+        "!(x%2==0)"
+      ],
+      [
+        "C",
+        "(x-x/2*2)==0"
+      ],
+      [
+        "D",
+        "!(x%2)"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "定义int score = 75; 则表达式 80 > score > 70 的值是：",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1"
+      ],
+      [
+        "B",
+        "0"
+      ],
+      [
+        "C",
+        "true"
+      ],
+      [
+        "D",
+        "false"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "表达式8>6>3值是（     ）。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "1"
+      ],
+      [
+        "C",
+        "3"
+      ],
+      [
+        "D",
+        "表达式语法错"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "定义变量int a,b;，则表达式a = (b = 3, 4), 5;执行过后，a、b的值分别是：",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "5， 4"
+      ],
+      [
+        "B",
+        "4， 4"
+      ],
+      [
+        "C",
+        "4， 3"
+      ],
+      [
+        "D",
+        "3， 3"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "为表示关系x≥y≥z，应使用C语言表达式（ ）。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "(x>=y)&&(y>=z)"
+      ],
+      [
+        "B",
+        "(x>=y)AND(y>=z)"
+      ],
+      [
+        "C",
+        "(x>=y>=z)"
+      ],
+      [
+        "D",
+        "(x>=y)&(y>=z)"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设a=1,b=2,c=3,d=4，则表达式：a<b?a:c<d?a:d 的结果为（       ）。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1"
+      ],
+      [
+        "B",
+        "2"
+      ],
+      [
+        "C",
+        "3"
+      ],
+      [
+        "D",
+        "4"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列选项中用于判断ch是否是字符的表达式是（  ）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "( 'a' <= ch <= 'z' ) || ( 'A' <= ch <= 'Z' )"
+      ],
+      [
+        "B",
+        "( 'a' <= ch <= 'z' ) && ( 'A' <= ch <= 'Z' )"
+      ],
+      [
+        "C",
+        "( ch >= 'a' && ch <= 'z' ) && ( ch >= 'A' && ch <= 'Z' )"
+      ],
+      [
+        "D",
+        "( ch >= 'a' && ch <= 'z' ) || ( ch >= 'A' && ch <= 'Z' )"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设 int x=1, y=1; 表达式(!x||y--)的值是（         ）。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "2"
+      ],
+      [
+        "C",
+        "1"
+      ],
+      [
+        "D",
+        "-1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "表达式5>3>1值是__.",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "1"
+      ],
+      [
+        "C",
+        "3"
+      ],
+      [
+        "D",
+        "表达式语法错误"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "与语句“y = (x > 0 ? 1 : x < 0 ? -1 : 0);”功能相同的if语句是____。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "if (x > 0)y = 1; else if (x < 0)y = -1; else y = 0;"
+      ],
+      [
+        "B",
+        "if (x)     if (x > 0)y = 1; else if (x < 0)y = -1;     else y = 0;"
+      ],
+      [
+        "C",
+        "y = -1; if (x)     if (x > 0)y = 1;     else if (x == 0)y = 0; else y = -1;"
+      ],
+      [
+        "D",
+        "y = 0; if (x >= 0)     if (x > 0)y = 1;         else y = -1;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在以下一组运算符中，优先级最高的运算符是____。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "<="
+      ],
+      [
+        "B",
+        "="
+      ],
+      [
+        "C",
+        "%"
+      ],
+      [
+        "D",
+        "&&"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设有定义：\nint a = 1, b = 2, c = 3, d = 4, m = 2, n = 2;\n则执行表达式\n(m = a > b) && (n = c > d);\n后，n的值为____。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1"
+      ],
+      [
+        "B",
+        "2"
+      ],
+      [
+        "C",
+        "3"
+      ],
+      [
+        "D",
+        "0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "定义变量 int a;，则表达式 a = 3, 5; 执行过后，a的值和表达式的值分别是：",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "3 , 5"
+      ],
+      [
+        "B",
+        "5 , 3"
+      ],
+      [
+        "C",
+        "3 , 3"
+      ],
+      [
+        "D",
+        "5 , 5"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假设所有变量均为整型，则表达式（a = 2, b = 5, b++, a+b）的值是（    ）",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "7"
+      ],
+      [
+        "B",
+        "8"
+      ],
+      [
+        "C",
+        "6"
+      ],
+      [
+        "D",
+        "2"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "为表示“a和b都不等于0”，应使用的C语言表达式是（）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "(a!=0) || (b!=0)"
+      ],
+      [
+        "B",
+        "a || b"
+      ],
+      [
+        "C",
+        "!(a=0)&&(b!=0)"
+      ],
+      [
+        "D",
+        "a && b"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若变量已经被正确定义，为表示“变量x和y都能被3整除”，应使用的C表达式是（ ）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "(x%3 != 0) || (y%3 != 0)"
+      ],
+      [
+        "B",
+        "(x%3 != 0) && (y%3 != 0)"
+      ],
+      [
+        "C",
+        "(x%3 == 0) || (y%3 == 0)"
+      ],
+      [
+        "D",
+        "(x%3 == 0) && (y%3 == 0)"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "表达式(x%3)等价于表达式(    )。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "x%3 == 2"
+      ],
+      [
+        "B",
+        "x%3 != 0"
+      ],
+      [
+        "C",
+        "x%3 == 1"
+      ],
+      [
+        "D",
+        "x%3 == 0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设有定义“int a = 2, b = 3, c = 4;”，则下列选项中值为0的表达式是____。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "(!a == 1) && (!b == 0)"
+      ],
+      [
+        "B",
+        "(a < b) && !c || 1"
+      ],
+      [
+        "C",
+        "a && b"
+      ],
+      [
+        "D",
+        "a || (b + b) && (c - a)"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "变量pi为double型，以下判断pi的值等于3.14写法最恰当的是：",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "pi = 3.14"
+      ],
+      [
+        "B",
+        "pi ==3.14"
+      ],
+      [
+        "C",
+        "pi - 3.14 = 0"
+      ],
+      [
+        "D",
+        "(pi-3.14 <= 1e-6) &&( pi-3.14 >= -1e-6)"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序的输出结果是____。\n▾\n#include <stdio.h>\nint main()\n{\n    int k = 11;\n    printf(\"k = %d, k = %o, k = %x\\n\", k, k, k);\n    return 0;\n}",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "k = 11, k = 12, k = 11"
+      ],
+      [
+        "B",
+        "k = 11, k = 13, k = 13"
+      ],
+      [
+        "C",
+        "k = 11, k = 013, k = 0xb"
+      ],
+      [
+        "D",
+        "k = 11, k = 13, k = b"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设有定义“int k = 0;”，下列选项的4个表达式中与其他3个表达式的值不相同的是____。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "k++"
+      ],
+      [
+        "B",
+        "k+=1"
+      ],
+      [
+        "C",
+        "++k"
+      ],
+      [
+        "D",
+        "k+1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "已知字符“A”的ASCII代码值是65，字符变量c1的值是“A”，c2的值是“D”, 执行语句“printf(\"%d, %d\" , c1, c2-2);”后，输出结果是____。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "A, B"
+      ],
+      [
+        "B",
+        "A, 68"
+      ],
+      [
+        "C",
+        "65, 66"
+      ],
+      [
+        "D",
+        "65, 68"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假设字符变量ch中存放有大写英文字母，将其转换为相应的小写英文字母的表达式是 (    )。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "ch = ch-'a'-'A'"
+      ],
+      [
+        "B",
+        "ch = ch-32"
+      ],
+      [
+        "C",
+        "toupper(ch)"
+      ],
+      [
+        "D",
+        "ch += 'a'-'A'"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "运算符（  ）的优先级最高。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "[ ]"
+      ],
+      [
+        "B",
+        "+="
+      ],
+      [
+        "C",
+        "? :"
+      ],
+      [
+        "D",
+        "++"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序段输出结果为 ____。\nint x=1, y=012;\n    printf(“%d”,y*x++);",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "12"
+      ],
+      [
+        "B",
+        "10"
+      ],
+      [
+        "C",
+        "20"
+      ],
+      [
+        "D",
+        "24"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若变量已正确定义，表达式 (j=3, j++) 的值是____。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "3"
+      ],
+      [
+        "B",
+        "4"
+      ],
+      [
+        "C",
+        "5"
+      ],
+      [
+        "D",
+        "6"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设 x、y、t均为int型变量，则执行语句：x=y=3; t= ++x || ++y; 后，y的值为____。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "不定值"
+      ],
+      [
+        "B",
+        "3"
+      ],
+      [
+        "C",
+        "4"
+      ],
+      [
+        "D",
+        "1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列运算符中优先级最低的是__.",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "II"
+      ],
+      [
+        "B",
+        ">="
+      ],
+      [
+        "C",
+        "!="
+      ],
+      [
+        "D",
+        "~"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列运算符中，优先级最低的是____。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "*"
+      ],
+      [
+        "B",
+        "!="
+      ],
+      [
+        "C",
+        "+"
+      ],
+      [
+        "D",
+        "="
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "已知int i, a; 执行语句i=(a=2*3,a*5),a+6;后，变量i的值是（ ）。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "6"
+      ],
+      [
+        "B",
+        "12"
+      ],
+      [
+        "C",
+        "30"
+      ],
+      [
+        "D",
+        "36"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "已知字符 'a' 的ASCII码为 97，执行下列语句的输出是____。\nprintf (\"%d, %c\", 'b', 'b'+1 ) ;",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "98, b"
+      ],
+      [
+        "B",
+        "语法不合法"
+      ],
+      [
+        "C",
+        "98, 99"
+      ],
+      [
+        "D",
+        "98, c"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "逻辑运算符两侧运算对象的数据类型（ ）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "只能是 0 或 1"
+      ],
+      [
+        "B",
+        "只能是 0 或非 0 正数"
+      ],
+      [
+        "C",
+        "只能是整型或字符型的数据"
+      ],
+      [
+        "D",
+        "可以是任何类型的数据"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若a是基本整型变量，c是单精度实型变量，则输入语句（ ）是错误的。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "scanf(\"%d,%f\", &a, &c);"
+      ],
+      [
+        "B",
+        "scanf(\"d=%d, c=%f\", &a, &c);"
+      ],
+      [
+        "C",
+        "scanf(\"%d%f\", &a, &c);"
+      ],
+      [
+        "D",
+        "scanf(\"%d%f\", a, c);"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列能正确表示a≥10或a≤0的关系表达式是：",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "a>=10 or a<=0"
+      ],
+      [
+        "B",
+        "a<=10 || a>=0"
+      ],
+      [
+        "C",
+        "a>=10 || a<=0"
+      ],
+      [
+        "D",
+        "a>=10 && a<=0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若变量已正确定义并赋值，表达式 -k++ 等价于（ ）。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "-(k++)"
+      ],
+      [
+        "B",
+        "-(k+1)"
+      ],
+      [
+        "C",
+        "-(++k)"
+      ],
+      [
+        "D",
+        "(-k)++"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设x和y均为int型变量，则以下语句：x+=y; y=x-y; x-=y; 的功能是____。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "把x和y按从大到小排列"
+      ],
+      [
+        "B",
+        "把x和y按从小到大排列"
+      ],
+      [
+        "C",
+        "无确定结果"
+      ],
+      [
+        "D",
+        "交换x和y中 的值"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若a为int类型，且其值为3，则执行完表达式a+= a-= a*a后，a的值是__。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "-3"
+      ],
+      [
+        "B",
+        "9"
+      ],
+      [
+        "C",
+        "-12"
+      ],
+      [
+        "D",
+        "6"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如果变量 x、y 已经正确定义，下列哪个选项的语句不能正确将x、y的值进行交换？",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "x=x+y, y=x-y, x=x-y;"
+      ],
+      [
+        "B",
+        "t=x, x=y; y=t;"
+      ],
+      [
+        "C",
+        "t=y, y=x, x=t;"
+      ],
+      [
+        "D",
+        "x=t, t=y, y=x;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "与x * = y + z等价的赋值表达式是：",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "x = y + z"
+      ],
+      [
+        "B",
+        "x = x * y + z"
+      ],
+      [
+        "C",
+        "x = x * (y + z)"
+      ],
+      [
+        "D",
+        "x = x + y * z"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列选项中，与i=j++完全等价的表达式是（   ）。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "j=j+1,i=j"
+      ],
+      [
+        "B",
+        "i=++j"
+      ],
+      [
+        "C",
+        "i=j, j=j+1"
+      ],
+      [
+        "D",
+        "j+=i"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下能正确地定义整型变量a，b和c并为它们赋初值5的语句是",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "int a = b = c = 5;"
+      ],
+      [
+        "B",
+        "int a, b, c = 5;"
+      ],
+      [
+        "C",
+        "a = 5, b = 5, c = 5;"
+      ],
+      [
+        "D",
+        "int a = 5, b = 5, c = 5;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列选项中，值为1的表达式是____。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1-'0'"
+      ],
+      [
+        "B",
+        "1-'\\0'"
+      ],
+      [
+        "C",
+        "'1'-0"
+      ],
+      [
+        "D",
+        "'\\0'-'0'"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "已知int x=10,y=20,z=30;以下语句：if(x>y) z=x; x=y; y=z;执行后x,y,z的值是（ ）。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "x=10, y=20, z=30"
+      ],
+      [
+        "B",
+        "x=20, y=30, z=30"
+      ],
+      [
+        "C",
+        "x=20, y=10, z=10"
+      ],
+      [
+        "D",
+        "x=20, y=30, z=10"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列条件语句中，功能与其他语句不同的是",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "if (a)printf(\" %d\\n\", x); else printf(\" %d\\n\", y);"
+      ],
+      [
+        "B",
+        "if (a == 0)printf(\" %d\\n\", y); else printf(\" %d\\n\", x);"
+      ],
+      [
+        "C",
+        "if (a != 0)printf(\" %d\\n\", x); else printf(\" %d\\n\", y);"
+      ],
+      [
+        "D",
+        "if (a == 0)printf(\" %d\\n\", x); else printf(\" %d\\n\", y);"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "能正确表示逻辑关系\"a≥10 或 a≤0\"的C语言表达式是（）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "a>=10 or a<=0"
+      ],
+      [
+        "B",
+        "a>=0 | a<=10"
+      ],
+      [
+        "C",
+        "a>=10 && a<=0"
+      ],
+      [
+        "D",
+        "a>=10 || a<=0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在嵌套使用if语句时，C语言规定else总是（）。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "和之前与其具有相同缩进位置的if配对"
+      ],
+      [
+        "B",
+        "和之前与其最近的if配对"
+      ],
+      [
+        "C",
+        "和之前与其最近的且不带else的if配对"
+      ],
+      [
+        "D",
+        "和之前的第一个if配对"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设ch是char型变量，其值为G，且有表达式ch=(ch>='A'&&ch<='Z')?(ch+32):ch，表达式的值是______。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "A"
+      ],
+      [
+        "B",
+        "a"
+      ],
+      [
+        "C",
+        "G"
+      ],
+      [
+        "D",
+        "g"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对于以下代码：\nint i = 6;\nif ( i <= 6 ) printf(\"hello\\n\");;\nelse printf(\"bye-bye\\n\");;",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "打印出\"hello\""
+      ],
+      [
+        "B",
+        "打印出\"hello bye-bye\""
+      ],
+      [
+        "C",
+        "不能通过编译"
+      ],
+      [
+        "D",
+        "打印出\"bye-bye\""
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序运行时输入“2.0<回车>”，则输出结果是\n▾\n#include <stdio.h>\nint main(void)\n{\n    float x, y;\n    scanf(\"%f\", &x);\n    if (x < 0.0)y = 0.0;\n    else if ((x < 5.0) && (x != 2.0))y = 1.0 / (x + 2.0);\n    else if (x < 10.0)y = 1.0 / x;\n    else y = 10.0;\n    printf(\"%f\\n\", y);\n    return 0;\n}",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0.000000"
+      ],
+      [
+        "B",
+        "0.250000"
+      ],
+      [
+        "C",
+        "0.500000"
+      ],
+      [
+        "D",
+        "1.000000"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有定义语句“int a=1,b=2,c=3,x;”，则以下各程序段执行后，x的值不为3的是",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "if(c<a)x=1; else if(b<a)x=2; else x=3;"
+      ],
+      [
+        "B",
+        "if(a<3)x=3; else if(a<2)x=2; else x=1;"
+      ],
+      [
+        "C",
+        "if(a<3)x=3; if(a<2)x=2; if(a<1)x=1;"
+      ],
+      [
+        "D",
+        "if(a<b)x=b; if(b<c)x=c; if(c<a)x=a;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序段输出结果为 ____。\nint x = -3, y = 2;\nif(x>y);\n    x = -x;\nif(x<y)\n    y = -y;\nprintf(\"x=%d,y=%d\\n\", x, y);",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "x=3,y=-2"
+      ],
+      [
+        "B",
+        "x=3,y=2"
+      ],
+      [
+        "C",
+        "x=-3,y=2"
+      ],
+      [
+        "D",
+        "x=-3,y=-2"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序段的输出结果是（）。\nint main(void)\n{\n      int  a = 2, b = -1, c = 2;\n      if(a < b)\n            if(b < 0)\n                  c = 0;\n      else  c++;\n      printf(\"%d\\n\",c);\n      return 0;\n}",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "1"
+      ],
+      [
+        "C",
+        "2"
+      ],
+      [
+        "D",
+        "3"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序段的输出结果是 （）。\nint main(void)\n{\n      int x = 1, a = 0, b = 0;\n      switch(x)\n      {\n            case 0:   b++;\n            case 1:   a++;\n            case 2:   a++; b++;\n      }\n      printf(\"a=%d,b=%d\\n\",a,b);\n      return 0;\n}",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "a=2,b=1"
+      ],
+      [
+        "B",
+        "a=1,b=1"
+      ],
+      [
+        "C",
+        "a=1,b=0"
+      ],
+      [
+        "D",
+        "a=2,b=2"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若a、b、c1、c2、x、y均是整型变量，以下正确的switch语句是",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "▾ switch(a+b); {    case 1: y=a+b; break;      case 0:y=a-b; break;}"
+      ],
+      [
+        "B",
+        "▾ switch(a*a+b*b) { case 3: case 1: y=a+b; break; case 3: y=b-a, break;}"
+      ],
+      [
+        "C",
+        "▾ switch a {    case c1: y=a-b; break; case c2: x=a*b; break; default: x=a+b; }"
+      ],
+      [
+        "D",
+        "▾ switch(a-b) {    default: y=a*b; break; case 3: case 4: x=a+b; break; case 10: case 11: y=a-b; break; }"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设变量已正确定义，以下（ ）与其它switch语句不等价。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "switch(choice){     case 1: price = 3.0; break;     case 2: price = 2.5; break;     case 3: price = 4.0; break;     case 4: price = 3.5; break;     default: price = 0.0; break; }"
+      ],
+      [
+        "B",
+        "switch(choice){     default: price = 0.0; break;     case 4: price = 3.5; break;     case 3: price = 4.0; break;     case 2: price = 2.5; break;     case 1: price = 3.0; break; }"
+      ],
+      [
+        "C",
+        "switch(choice){     case 1: price = 3.0; break;     case 2: price = 2.5; break;     case 3: price = 4.0; break;     case 4: price = 3.5; break; }"
+      ],
+      [
+        "D",
+        "price = 0.0; switch(choice){     case 1: price = 3.0; break;     case 2: price = 2.5; break;     case 3: price = 4.0; break;     case 4: price = 3.5; break; }"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设变量已正确定义，以下（ ）与其它switch语句不等价。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "switch(op){      case '+': printf(\"%d\\n\", value1 + value2); break;      case '-': printf(\"%d\\n\", value1 - value2); break;      case '*': printf(\"%d\\n\", value1 * value2); break;      default: printf(\"Error\\n\"); break; }"
+      ],
+      [
+        "B",
+        "switch(op){      default: printf(\"Error\\n\"); break;      case '*': printf(\"%d\\n\", value1 * value2); break;      case '-': printf(\"%d\\n\", value1 - value2); break;      case '+': printf(\"%d\\n\", value1 + value2); break; }"
+      ],
+      [
+        "C",
+        "if(op != '+' && op != '-' && op != '*'){      printf(\"Error\\n\"); }else{      switch(op){          case '+': printf(\"%d\\n\", value1 + value2); break;          case '-': printf(\"%d\\n\", value1 - value2); break;          case '*': printf(\"%d\\n\", value1 * value2); break;      } }"
+      ],
+      [
+        "D",
+        "switch(op){      case '+': printf(\"%d\\n\", value1 + value2); break;      case '-': printf(\"%d\\n\", value1 - value2); break;      case '*': printf(\"%d\\n\", value1 * value2); break; }"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若有int x=67;，执行下列程序段后，变量x的正确结果是 (  )。\nswitch (x/10)\n{\n    case 7:\n    case 6: printf(\"A\");\n    case 5: printf(\"B\");break;\n    default: printf(\"C\");\n}",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "ABC"
+      ],
+      [
+        "B",
+        "A"
+      ],
+      [
+        "C",
+        "AB"
+      ],
+      [
+        "D",
+        "C"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "请读程序:\n#include<stdio.h>\nint main()\n{   int x=1, y=0, a=0, b=0;\n    switch(x)\n    {   case 1:\n                switch(y)\n                {     case 0: a++;break;\n                      case 1: b++;break;\n                }\n         case 2:\n                 a++; b++; break;\n     }\n     printf(\"a=%d, b=%d\\n\",a,b);\n     return 0;\n}\n上面程序的输出结果是：",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "a=2, b=1"
+      ],
+      [
+        "B",
+        "a=1, b=1"
+      ],
+      [
+        "C",
+        "a=1, b=0"
+      ],
+      [
+        "D",
+        "a=2, b=2"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若有int x=1;，执行下列程序段后，变量x的正确结果是：\n▾\nswitch (x*10)\n{\n    case 9: x+=1; break;\n    case 10: x+=1;\n    case 11: x+=1;\n    default: x+=1;\n}",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1"
+      ],
+      [
+        "B",
+        "2"
+      ],
+      [
+        "C",
+        "3"
+      ],
+      [
+        "D",
+        "4"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "执行下面程序段后,s的值是().\nint s=6;\nswitch(++s)\n{ case 6:\n  case 7:s+=2;\n  case 8:\n  case 9:s+=2;\n}",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "11"
+      ],
+      [
+        "B",
+        "10"
+      ],
+      [
+        "C",
+        "8"
+      ],
+      [
+        "D",
+        "9"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列叙述中正确的是（）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "break语句只能用于switch语句"
+      ],
+      [
+        "B",
+        "在switch语句中必须使用default"
+      ],
+      [
+        "C",
+        "break语句必须与switch语句中的case配对使用"
+      ],
+      [
+        "D",
+        "在switch语句中，不一定使用break语句"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设有程序段\nint m=20; while (m=0) m=m++;\n则下面描述中正确的是（ ）。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "while 循环执行 10 次"
+      ],
+      [
+        "B",
+        "循环是无限循环"
+      ],
+      [
+        "C",
+        "循环体语句一次也不执行"
+      ],
+      [
+        "D",
+        "循环体语句执行一次"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对于循环while(!e) 语句，!e等价于____。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "e==0"
+      ],
+      [
+        "B",
+        "e！=0"
+      ],
+      [
+        "C",
+        "e==1"
+      ],
+      [
+        "D",
+        "e！=1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "C语言中下列叙述正确的是______。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "不能使用do-while语句构成循环"
+      ],
+      [
+        "B",
+        "do-while语句构成的循环，必须用break语句才能退出"
+      ],
+      [
+        "C",
+        "do-while语句构成的循环，当while语句中的表达式值为非零时结束循环"
+      ],
+      [
+        "D",
+        "do-while语句构成的循环，当while语句中的表达式值为零时结束循环"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "C语言中while和do-while循环的主要区别是（）。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "do-while的循环体至少无条件执行一次"
+      ],
+      [
+        "B",
+        "while的循环控制条件比do-while的循环控制条件严格"
+      ],
+      [
+        "C",
+        "do-while允许从外部转到循环体内"
+      ],
+      [
+        "D",
+        "do-while的循环体不能是复合语句"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "要求通过while循环不断读入字符，当读入字母N时结束循环。若变量已正确定义，下列程序段正确的是",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "while ((ch = getchar()) != 'N')printf(\"%c\", ch);"
+      ],
+      [
+        "B",
+        "while (ch = getchar() != 'N')printf(\"%c\", ch);"
+      ],
+      [
+        "C",
+        "while (ch = getchar() == 'N')printf(\"%c\", ch);"
+      ],
+      [
+        "D",
+        "while ((ch = getchar()) == 'N')printf(\"%c\", ch);"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下程序段的输出结果是\n▾\nint i, j;\nfor (i = 1; i < 4; i++) {\n    for (j = i; j < 4; j++)\n        printf(\"%d * %d = %d  \", i, j, i * j);\n    printf(\"\\n\");\n}",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1 * 1 = 1  1 * 2 = 2  1 * 3 = 3 2 * 1 = 2  2 * 2 = 4 3 * 1 = 3"
+      ],
+      [
+        "B",
+        "1 * 1 = 1  1 * 2 = 2  1 * 3 = 3 2 * 2 = 4  2 * 3 = 6 3 * 3 = 9"
+      ],
+      [
+        "C",
+        "1 * 1 = 1 1 * 2 = 2  2 * 2 = 4 1 * 3 = 3  2 * 3 = 6  3 * 3 = 9"
+      ],
+      [
+        "D",
+        "1 * 1 = 1 2 * 1 = 2  2 * 2 = 4 3 * 1 = 3  3 * 2 = 6  3 * 3 = 9"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序段输出结果为 ____。\nint a=1,b=2,c=2,t;\nwhile(a<b<c) {    t=a; a=b; b=t; c--;    }\nprintf( \"%d,%d,%d\", a, b, c);",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1,2,0"
+      ],
+      [
+        "B",
+        "2,1,0"
+      ],
+      [
+        "C",
+        "1,2,1"
+      ],
+      [
+        "D",
+        "2,1,1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若变量已正确定义，对以下while循环结束条件的准确描述是（）。\nflag = 1;\ndenominator = 1;\nitem = 1.0;\npi = 0;\nwhile(fabs(item) >= 0.0001){\n     item = flag * 1.0 / denominator;\n     pi = pi + item;\n     flag = -flag;\n     denominator = denominator + 2;\n}",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "item的绝对值小于0.0001"
+      ],
+      [
+        "B",
+        "item的绝对值大于0.0001"
+      ],
+      [
+        "C",
+        "item的绝对值等于0.0001"
+      ],
+      [
+        "D",
+        "item的绝对值不等于0.0001"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序段执行后s值为__。\nint i=5, s=0;\nwhile(i--)\n    if (i%2) continue;\n    else s+=i;",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "15"
+      ],
+      [
+        "B",
+        "10"
+      ],
+      [
+        "C",
+        "9"
+      ],
+      [
+        "D",
+        "6"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "运行以下程序后，如果从键盘上输入65  14<回车>，则输出结果为（）。\nint main(void)\n{\n      int  m, n;\n      printf(\"Enter m,n;\");\n      scanf(\"%d%d\", &m,&n);\n      while (m != n)\n      {   while (m > n)       m = m - n;\n          while (n > m)       n = n - m;\n      }\n      printf(\"m=%d\\n\",m);\n      return 0;\n}",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "m=3"
+      ],
+      [
+        "B",
+        "m=2"
+      ],
+      [
+        "C",
+        "m=1"
+      ],
+      [
+        "D",
+        "m=0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序段的输出结果是\n▾\n▾\n▾\n#include <stdio.h>\nint main(void)\n{\n    int i, j, x = 0;\n    for (i = 0; i < 2; i++) {\n        x++;\n        for (j = 0; j <= 3; j++) {\n            if (j % 2)\n                continue;\n            x++;\n        }\n        x++;\n    }\n    printf(\"x=%d\\n\", x);\n    return 0;\n}",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "x=4"
+      ],
+      [
+        "B",
+        "x=8"
+      ],
+      [
+        "C",
+        "x=6"
+      ],
+      [
+        "D",
+        "x=12"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序段的输出结果是（）。\n#include<stdio.h>\nint main()\n{\n      for(int i = 1; i < 7; i ++) {\n            if( i % 3 != 0) {\n                  printf(\"#\");\n                  continue;\n            }\n            printf(\"*\");\n      }\n      return 0;\n}",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "#*#*#*"
+      ],
+      [
+        "B",
+        "######"
+      ],
+      [
+        "C",
+        "******"
+      ],
+      [
+        "D",
+        "##*##*"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "执行下面的程序后变量a的值是\n▾\n▾\n▾\n#include <stdio.h>\nint main(void)\n{\n    int a, b;\n    for (a = 1, b = 1; a <= 100; a++) {\n        if (b > 10)break;\n        if (b % 3 == 1) {\n            b += 3;\n            continue;\n        }\n        b -= 3;\n    }\n    printf(\"%d\\n\", a);\n    return 0;\n}",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "5"
+      ],
+      [
+        "B",
+        "6"
+      ],
+      [
+        "C",
+        "7"
+      ],
+      [
+        "D",
+        "8"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下能正确定义数组并正确赋初值的语句是（）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "int N=5, b[N][N];"
+      ],
+      [
+        "B",
+        "int a[1][2]={{1}, {3}};"
+      ],
+      [
+        "C",
+        "int c[2][ ]={{1, 2}, {3, 4}};"
+      ],
+      [
+        "D",
+        "int d[3][2]={{1, 2}, {34}};"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "合法的数组定义语句是(　　)。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "int a[]=\"string\";"
+      ],
+      [
+        "B",
+        "int a[5]={0,1,2,3,4,5};"
+      ],
+      [
+        "C",
+        "char a=\"string\";"
+      ],
+      [
+        "D",
+        "char a[]=\"string\";"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下能正确定义二维数组的语句是（ ）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "int a[][];"
+      ],
+      [
+        "B",
+        "int a[][3];"
+      ],
+      [
+        "C",
+        "int a[2][];"
+      ],
+      [
+        "D",
+        "int a[2][3];"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有以下定义：char x[ ]=\"abcdefg\"; char y[ ]={'a', 'b', 'c', 'd', 'e', 'f', 'g'}; 则正确的叙述为（）。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "数组x和数组y等价"
+      ],
+      [
+        "B",
+        "数组x和数组y的长度相同"
+      ],
+      [
+        "C",
+        "数组x的长度大于数组y的长度"
+      ],
+      [
+        "D",
+        "数组x的长度小于数组y的长度"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下述对C语言字符数组的描述中错误的是（）。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "字符数组可以存放字符串"
+      ],
+      [
+        "B",
+        "字符数组中的字符串可以整体输入、输出"
+      ],
+      [
+        "C",
+        "可以在赋值语句中通过赋值运算符\"=\"对字符数组整体赋值"
+      ],
+      [
+        "D",
+        "不可以用关系运算符对字符数组中的字符串进行比较"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设有数组定义：char array [ ]=\"China\"; 则数组 array所占的空间为（）。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "4个字节"
+      ],
+      [
+        "B",
+        "5个字节"
+      ],
+      [
+        "C",
+        "6个字节"
+      ],
+      [
+        "D",
+        "7个字节"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下定义语句中不正确的是__。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "double x[5]={2.0, 4.0, 6.0, 8.0, 10.0};"
+      ],
+      [
+        "B",
+        "char c2[]={'\\x10', '\\xa', '\\x8'};"
+      ],
+      [
+        "C",
+        "char c1[]={'1', '2', '3', '4', '5'};"
+      ],
+      [
+        "D",
+        "int y[5]={0,1,3,5,7,9};"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下对二维数组a的正确说明是(    )。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "int a[3][];"
+      ],
+      [
+        "B",
+        "floatf a(3,4);"
+      ],
+      [
+        "C",
+        "double a[1][4];"
+      ],
+      [
+        "D",
+        "float a(3)(4);"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下不正确的赋值或赋初值的方式是(       )。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "char str[]=\"string\";"
+      ],
+      [
+        "B",
+        "char str[7]={'s', 't', 'r', 'i', 'n', 'g'};"
+      ],
+      [
+        "C",
+        "char str[10]；str=\"string\";"
+      ],
+      [
+        "D",
+        "char str[7]={'s', 't', 'r', 'i', 'n', 'g', ’\\0’};"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下能对一维数组a进行正确初始化的语句是(          )。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "int a[10]=(0,0,0,0,0)"
+      ],
+      [
+        "B",
+        "int  a[2]={0,1,2}"
+      ],
+      [
+        "C",
+        "int  a[]={0}"
+      ],
+      [
+        "D",
+        "int a[]={{}}"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "数组定义为 int a[3][2]={1, 2, 3, 4, 5, 6}，数组元素____的值为6。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "a[3][2]"
+      ],
+      [
+        "B",
+        "a[2][1]"
+      ],
+      [
+        "C",
+        "a[1][2]"
+      ],
+      [
+        "D",
+        "a[2][3]"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若有定义，int a[10];,则对数组a元素的正确引用是（  ）",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "a[10]"
+      ],
+      [
+        "B",
+        "a[3.5]"
+      ],
+      [
+        "C",
+        "a(5)"
+      ],
+      [
+        "D",
+        "a[10-10]"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在int a[ ][3] = { {1,4}, {3,2}, {4,5,6}, {0} };中，a[2][1]的值是（ ）。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "5"
+      ],
+      [
+        "B",
+        "0"
+      ],
+      [
+        "C",
+        "6"
+      ],
+      [
+        "D",
+        "2"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假定int类型变量占用两个字节，其有定义：int  x[10]={0, 2, 4}; 则数组x在内存中所占字节数是（）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "3"
+      ],
+      [
+        "B",
+        "6"
+      ],
+      [
+        "C",
+        "10"
+      ],
+      [
+        "D",
+        "20"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假定char类型变量占用1个字节，且数组定义如下，则数组str在内存中所占字节数是（ ）。\nchar  str[81];",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "10"
+      ],
+      [
+        "C",
+        "80"
+      ],
+      [
+        "D",
+        "81"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假定double类型变量占用8个字节，且数组定义如下，则数组length在内存中所占字节数是（ ）。\ndouble  length [10];",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "10"
+      ],
+      [
+        "C",
+        "80"
+      ],
+      [
+        "D",
+        "160"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假定char类型变量占用1个字节，且数组定义如下，则数组tab_str在内存中所占字节数是（ ）。\nchar  tab_str [10][81];",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "810"
+      ],
+      [
+        "B",
+        "10"
+      ],
+      [
+        "C",
+        "81"
+      ],
+      [
+        "D",
+        "0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假定double类型变量占用8个字节，且数组定义如下，则数组point在内存中所占字节数是（ ）。\ndouble  point [10][10];",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "800"
+      ],
+      [
+        "C",
+        "10"
+      ],
+      [
+        "D",
+        "20"
+      ],
+      [
+        "E",
+        "100"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若有定义语句：int a[3][6];，按在内存中的存放顺序，a数组的第10个元素是______。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "a[0][4]"
+      ],
+      [
+        "B",
+        "a[1][3]"
+      ],
+      [
+        "C",
+        "a[0][3]"
+      ],
+      [
+        "D",
+        "a[1][4]"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若有定义：int a[5]={1,2,3,4,5};则语句a[1]=a[3]+a[2+2]-a[3-1];运行后a[1]的值为(  ）。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "6"
+      ],
+      [
+        "B",
+        "5"
+      ],
+      [
+        "C",
+        "1"
+      ],
+      [
+        "D",
+        "2"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下数组定义中错误的是（ ）。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "int x[][3]={0};"
+      ],
+      [
+        "B",
+        "int x[2][3]={{1,2},{3,4},{5,6}};"
+      ],
+      [
+        "C",
+        "int x[][3]={{1,2,3},{4,5,6}};"
+      ],
+      [
+        "D",
+        "int x[2][3]={1,2,3,4,5,6};"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下程序的输出结果是（）。\nint main(void)\n{\n      int  m[ ][3] = { 1, 4, 7, 2, 5, 8, 3, 6, 9 };\n      int  i, j, k=2;\n      for (i=0; i<3; i++)\n            printf (\"%d \", m[k][i]);\n      return 0;\n}",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "4 5 6"
+      ],
+      [
+        "B",
+        "2 5 8"
+      ],
+      [
+        "C",
+        "3 6 9"
+      ],
+      [
+        "D",
+        "7 8 9"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对于定义 char str[] = \"abc\\000def\\n\"（注：其中0为数字零），求字符串str的长度len和数组str的大小size，len和size分别是：",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "12 ，13"
+      ],
+      [
+        "B",
+        "3 ，11"
+      ],
+      [
+        "C",
+        "3 ，9"
+      ],
+      [
+        "D",
+        "3 ，4"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有说明语句int  a[4][5]; ，则a[2]+3表示__。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "a数组行下标为2、列下标为3的元素的地址"
+      ],
+      [
+        "B",
+        "a数组行下标为2、列下标为3的元素的值"
+      ],
+      [
+        "C",
+        "a数组第2行的首地址"
+      ],
+      [
+        "D",
+        "a数组第3行的首地址"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下程序的输出结果是（）。\nint main(void)\n{\n      int aa[4][4]={ {1, 2, 3, 4}, {5, 6, 7, 8}, {3, 9, 10, 2}, {4, 2, 9, 6} };\n      int i, s=0;\n      for(i=0; i<4; i++)\n            s += aa[i][1];\n      printf(\"%d\\n\", s);\n     return 0;\n}",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "11"
+      ],
+      [
+        "B",
+        "19"
+      ],
+      [
+        "C",
+        "13"
+      ],
+      [
+        "D",
+        "20"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面描述正确的是",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "两个字符串所包含的字符个数相同时才能比较字符串"
+      ],
+      [
+        "B",
+        "字符个数多的字符串比字符个数少的字符串大"
+      ],
+      [
+        "C",
+        "字符串“  STOP”和“STOP”相等"
+      ],
+      [
+        "D",
+        "字符串“That”小于字符串“The”"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下描述错误的 是",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "字符串数组中可以存放ASCII字符集中的任何字符"
+      ],
+      [
+        "B",
+        "字符串数组的字符可以整体输入输出"
+      ],
+      [
+        "C",
+        "字符串数组中只能存放键盘上可以找到的字符"
+      ],
+      [
+        "D",
+        "不可以用关系运算符对数组中的字符串进行比较"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有两个字符数组a,b，则以下正确的输入语句是（）",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "gets(a,b);"
+      ],
+      [
+        "B",
+        "scanf(\"%s%s\",a,b);"
+      ],
+      [
+        "C",
+        "scanf(\"%s%s\",&a,&b);"
+      ],
+      [
+        "D",
+        "gets(\"a\"),gets(\"b\");"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下关于二维数组初始化的说法，正确说法的个数是（   ）\n（1）语句int a[2][3]={0}; 能将int型数组a中的每个元素全部初始化为0。\n（2）语句int a[2][3]=0; 能将int型数组a中的每个元素全部初始化为0。\n（3）语句int a[2][3]; 能将int型数组中a的每个元素全部初始化为0。\n（4）语句int a[2][3]={{1,2},{3,4},{5,6}};能将int型数组元素a[0][0],a[0][1],a[0][2],a[1][0],a[1][1],a[1][2]依次初始化为1,2,3,4,5,6。\n（5） 语句int a[][3]={1,2,3,4,5,6};能将int型数组元素a[0][0],a[0][1],a[0][2],a[1][0],a[1][1],a[1][2]依次初始化为1,2,3,4,5,6。\n（6）语句int a[][3]={{1,2,3},{4,5,6}};能将int型数组元素a[0][0],a[0][1],a[0][2],a[1][0],a[1][1],a[1][2]依次初始化为1,2,3,4,5,6。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1"
+      ],
+      [
+        "B",
+        "2"
+      ],
+      [
+        "C",
+        "3"
+      ],
+      [
+        "D",
+        "4"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "不能把字符串Hello!赋给数组b的语句是：",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "char b[10]={'H','e','l','l','o','!'};"
+      ],
+      [
+        "B",
+        "char b[10];b=\"Hello! \";"
+      ],
+      [
+        "C",
+        "char b[10];strcpy(b,\"Hello!\");"
+      ],
+      [
+        "D",
+        "char b[10]=\"Hello!\";"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "判断字符串 a 和 b 是否相等，应当使用（）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "if (a==b)"
+      ],
+      [
+        "B",
+        "if (a=b)"
+      ],
+      [
+        "C",
+        "if (strcpy(a,b))"
+      ],
+      [
+        "D",
+        "if (strcmp(a,b)==0)"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下程序的运行结果是______。\n#include<stdio.h>\nint main()\n{\nint a[5]={1,2,3,4,5},b[5]={0,2,1,3,0},i,s=0;\nfor(i=1;i<3;i++)\n   s=s+a[b[i]];\nprintf(\"%d\\n\",s);\nreturn 0;\n}",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "5"
+      ],
+      [
+        "B",
+        "10"
+      ],
+      [
+        "C",
+        "11"
+      ],
+      [
+        "D",
+        "15"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下程序的输出结果是_______。\n#include <stdio.h>\nint func(int a, int b)\n{\n  return(a+b);\n}\nint main()\n{\n   int  x=2,y=5,z=8,r;\n   r=func(func(x,y),z);\n   printf(\"%d\\n\",r);\n   return 0;\n}",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "12"
+      ],
+      [
+        "B",
+        "13"
+      ],
+      [
+        "C",
+        "14"
+      ],
+      [
+        "D",
+        "15"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下正确的函数声明形式是（         ）。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "int func(int x , int y)"
+      ],
+      [
+        "B",
+        "int func(int , int);"
+      ],
+      [
+        "C",
+        "int func(int x ; int y);"
+      ],
+      [
+        "D",
+        "int func(int x , y);"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "C语言中函数返回值的类型是由（ ）决定的。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "return语句中的表达式类型"
+      ],
+      [
+        "B",
+        "调用该函数的主调函数的类型"
+      ],
+      [
+        "C",
+        "调用函数时临时决定"
+      ],
+      [
+        "D",
+        "定义函数时所指定的函数类型"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在一个被调用函数中，关于 return 语句使用的描述，错误的是（ ）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "被调用函数中可以不用 return 语句"
+      ],
+      [
+        "B",
+        "被调用函数中可以使用多个 return 语句"
+      ],
+      [
+        "C",
+        "被调用函数中，如果有返回值，就一定要有 return 语句"
+      ],
+      [
+        "D",
+        "被调用函数中，一个 return 语句可以返回多个值给调用函数"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面程序a，b值为（）\n#include <stdio.h>\nint main (void)\n{\n    int a;\n    a = 1;\n    {\n        int b = 2;\n        b = a + b;\n        a = a + b;\n    }\n      printf (\"%d,%d\",a,b);\n      return 0;\n}",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1,2"
+      ],
+      [
+        "B",
+        "1,0"
+      ],
+      [
+        "C",
+        "1，不认识b"
+      ],
+      [
+        "D",
+        "4，不认识b"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "C语言规定，简单变量做实参时，它和对应形参之间的数据传递方式是（ ）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "地址传递"
+      ],
+      [
+        "B",
+        "由用户指定传递方式"
+      ],
+      [
+        "C",
+        "双向值传递"
+      ],
+      [
+        "D",
+        "单向值传递：实参的值传给形参"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "函数调用结束后，形式参数（ ）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "继续占用相同大小的内存"
+      ],
+      [
+        "B",
+        "不确定"
+      ],
+      [
+        "C",
+        "占用内存减小"
+      ],
+      [
+        "D",
+        "释放内存"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若函数定义如下，int fun(float a)\n{float b=a+3;\nreturn b;\n}  假设将常数3.6传给a，则函数的返回值是（）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "3"
+      ],
+      [
+        "B",
+        "6.6"
+      ],
+      [
+        "C",
+        "5"
+      ],
+      [
+        "D",
+        "6"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有以下函数定义：\nvoid fun(int n, double x){......}\n下列选项中的变量都已正确定义并赋值，则对函数fun的正确调用语句是（  ）。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "fun(int y, double m);"
+      ],
+      [
+        "B",
+        "k=fun(10,12.5);"
+      ],
+      [
+        "C",
+        "fun(x,n);"
+      ],
+      [
+        "D",
+        "void fun(x,n);"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列计算三角形面积函数的声明中，（  ）是正确的。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "double area(double a, double b, double c);"
+      ],
+      [
+        "B",
+        "double area(int a, b, c);"
+      ],
+      [
+        "C",
+        "int area(double a, double b, double c)"
+      ],
+      [
+        "D",
+        "double area(double a, b, c)"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下对C语言中函数的有关描述正确的是",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "调用函数时只能把实参的值传送给形参，形参的值不能传送给实参。"
+      ],
+      [
+        "B",
+        "C函数既可以嵌套定义又可以递归调用。"
+      ],
+      [
+        "C",
+        "函数必须有返回值，否则不能使用函数。"
+      ],
+      [
+        "D",
+        "C程序中有调用关系的所有函数必须放在同一个源程序文件中。"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下描述错误的是（ ）。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "实参数可以与形参个数不一致。"
+      ],
+      [
+        "B",
+        "C程序中，函数可以直接或间接地调用自己。"
+      ],
+      [
+        "C",
+        "函数调用时，函数名必须与所调用的函数名字完全一致。"
+      ],
+      [
+        "D",
+        "函数声明语句中的类型必须与函数返回值得类型一致。"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下函数调用中，实参的个数为（  ）。\nfunc((exp1,exp2),(exp3,exp4,exp5));",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1"
+      ],
+      [
+        "B",
+        "2"
+      ],
+      [
+        "C",
+        "4"
+      ],
+      [
+        "D",
+        "5"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下正确的说法是（）。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "实参与其对应的形参共同占用一个存储单元"
+      ],
+      [
+        "B",
+        "实参与其对应的形参各占用独立的存储单元"
+      ],
+      [
+        "C",
+        "只有当实参与其对应的形参同名时才占用一个共同的存储单元"
+      ],
+      [
+        "D",
+        "形参是虚拟的，不占用内存单元"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如果一个变量在整个程序运行期间都存在，但是仅在说明它的函数内是可见的，这个变量的存储类型应该被说明为(   )。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "静态变量"
+      ],
+      [
+        "B",
+        "动态变量"
+      ],
+      [
+        "C",
+        "外部变量"
+      ],
+      [
+        "D",
+        "内部变量"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如果所有的变量按照下面的程序进行定义和声明，那么在main()函数中所有可用的变量为 （）。\nvoid fun(int x)\n{\n    static int y;\n    ……\n    return;\n}\nint z;\nvoid main( )\n{\n    int a,b;\n    fun(a);\n    ……\n}",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "x,y"
+      ],
+      [
+        "B",
+        "x,y,z"
+      ],
+      [
+        "C",
+        "a,b,z"
+      ],
+      [
+        "D",
+        "a,b,x,y,z"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在一个Ｃ源程序文件中，如要定义一个只允许本源文件中所有函数使用的全局变量，则该变量需要使用的存储类别是( )。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "extern"
+      ],
+      [
+        "B",
+        "register"
+      ],
+      [
+        "C",
+        "auto"
+      ],
+      [
+        "D",
+        "static"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "C语言中静态变量和外部变量的初始化是在___阶段完成的。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "程序执行过程中"
+      ],
+      [
+        "B",
+        "编译"
+      ],
+      [
+        "C",
+        "运行"
+      ],
+      [
+        "D",
+        "程序外部"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "文件中定义的全局变量的作用域为（）。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "本程序全部范围"
+      ],
+      [
+        "B",
+        "本文件全部范围"
+      ],
+      [
+        "C",
+        "函数内全部范围"
+      ],
+      [
+        "D",
+        "从定义该变量的位置开始到本文件结束"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "凡是函数中未指定存储类别的局部变量，其隐含的存储类别为（ ）。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "静态（static）"
+      ],
+      [
+        "B",
+        "自动（auto）"
+      ],
+      [
+        "C",
+        "外部（extern）"
+      ],
+      [
+        "D",
+        "寄存器（register）"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如果在一个函数中的复合语句中定义了一个变量，则该变量（ ）。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "在该函数中有效"
+      ],
+      [
+        "B",
+        "只在该复合语句中有效"
+      ],
+      [
+        "C",
+        "在该程序范围内均有效"
+      ],
+      [
+        "D",
+        "为非法变量"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若有数组名作为函数调用的实参，传递给形参的是（ ）。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "数组的首地址"
+      ],
+      [
+        "B",
+        "数组第一个元素的值"
+      ],
+      [
+        "C",
+        "数组中全部元素的值"
+      ],
+      [
+        "D",
+        "数组元素的个数"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "能把函数处理结果的两个数据返回给主调函数，下面的方法中不正确的是（           ）",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "return 数组的首址"
+      ],
+      [
+        "B",
+        "形参用数组"
+      ],
+      [
+        "C",
+        "用两个全局变量"
+      ],
+      [
+        "D",
+        "return 两个数"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下关于局部变量和全局变量的叙述错误的是（ ）。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "main函数中定义的变量是局部变量。"
+      ],
+      [
+        "B",
+        "局部变量可以与全局变量重名。"
+      ],
+      [
+        "C",
+        "形式参数不是局部变量。"
+      ],
+      [
+        "D",
+        "在所有函数外定义的变量是全局变量。"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对于以下递归函数f，调用函数f(27)的输出结果是（  ）。\nvoid f(int n)\n{\n    if (n < 5){\n        printf(\"%d\", n);\n    }else{\n        printf(\"%d\", n%5);\n        f(n/5);\n   }\n}",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "102"
+      ],
+      [
+        "B",
+        "201"
+      ],
+      [
+        "C",
+        "21"
+      ],
+      [
+        "D",
+        "20"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序的输出结果是\nvoid f(int v,int w)\n{ int t;\n  t=v; v=w; w=t;\n}\nint main(void)\n{ int x=1, y=3, z=2;\n  if(x>y)  f(x,y);\n  else if(y>z)  f(y,z);\n  else f(x,z);\n  printf(\"%d,%d,%d\\n\", x, y, z);\n  return 0;\n}",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "1,2,3"
+      ],
+      [
+        "B",
+        "3,1,2"
+      ],
+      [
+        "C",
+        "1,3,2"
+      ],
+      [
+        "D",
+        "2,3,1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对于以下递归函数f，调用f(4)，其返回值为（） 。\nint f(int n)\n{    if (n)  return f(n - 1) + n;\n     else return n;\n}",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "10"
+      ],
+      [
+        "B",
+        "4"
+      ],
+      [
+        "C",
+        "0"
+      ],
+      [
+        "D",
+        "以上均不是"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有函数int func(int i)的实现为:\nint func(int i)\n{\n    if (i > 1)\n        return i * func(i - 1);\n    else\n        return 1;\n}\n请问函数调用func(5)的返回值是多少?",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "5"
+      ],
+      [
+        "B",
+        "15"
+      ],
+      [
+        "C",
+        "20"
+      ],
+      [
+        "D",
+        "120"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "执行下面程序，正确的输出是（）。\nint x = 5, y = 7;\nvoid swap ( )\n{\n      int z ;\n      z = x ;  x = y ;  y = z ;\n}\nint main(void)\n{\n      int x = 3, y = 8;\n      swap ( ) ;\n      printf (\"%d,%d \\n\", x , y ) ;\n      return 0 ;\n}",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "3,8"
+      ],
+      [
+        "B",
+        "8,3"
+      ],
+      [
+        "C",
+        "5,7"
+      ],
+      [
+        "D",
+        "7,5"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "一个递归算法必须包括（）。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "递归部分"
+      ],
+      [
+        "B",
+        "终止条件和递归部分"
+      ],
+      [
+        "C",
+        "循环部分"
+      ],
+      [
+        "D",
+        "终止条件和循环部分"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "5-5. 下列程序的输出结果是\n▾\n▾\n#include <stdio.h>\nint fun3(int x) {\n  static int a = 3;\n  a += x;\n  return (a);\n}\nint main()\n{\n  int k = 2, m = 1, n;\n  n = fun3(k); n = fun3(m);\n  printf(\"%d\\n\", n);\n  return 0;\n}",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "3"
+      ],
+      [
+        "B",
+        "4"
+      ],
+      [
+        "C",
+        "6"
+      ],
+      [
+        "D",
+        "9"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对于如下变量定义及初始化，与m = n等价的表达式是（ ）。\nint m, n = 5, *p = &m;",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "m = *p"
+      ],
+      [
+        "B",
+        "*p = n"
+      ],
+      [
+        "C",
+        "m = &n"
+      ],
+      [
+        "D",
+        "*p = m"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列语句定义px为指向int类型变量x的指针，正确的是（）。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "int x, *px = x;"
+      ],
+      [
+        "B",
+        "int x, *px = &x;"
+      ],
+      [
+        "C",
+        "int *px = &x, x;"
+      ],
+      [
+        "D",
+        "int x, px = x;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若有说明： int *p1, *p2, m=5, n; ，以下均是正确赋值语句的选项是",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "p1=&m; p2=&p1;"
+      ],
+      [
+        "B",
+        "p1=&m; *p2=*p1;"
+      ],
+      [
+        "C",
+        "p1=&m; p2=p1;"
+      ],
+      [
+        "D",
+        "p1=&m; *p1=*p2;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下叙述中正确的是",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "指针定义后，可以指向同类型的任何变量。"
+      ],
+      [
+        "B",
+        "指针定义后，可以指向任何类型变量。"
+      ],
+      [
+        "C",
+        "指针定义后，可以用整型数据为指针初始化。"
+      ],
+      [
+        "D",
+        "指针定义后，只能指向一个变量。"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在C语言中，对变量的访问方式是",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "能直接访问，能间接访问"
+      ],
+      [
+        "B",
+        "能直接访问，不能间接访问"
+      ],
+      [
+        "C",
+        "不能直接访问，能间接访问"
+      ],
+      [
+        "D",
+        "不能直接访问，不能间接访问"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如果有定义：int m, n = 5, *p = &m; 与m = n 等价的语句是 （） 。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "m = *p;"
+      ],
+      [
+        "B",
+        "*p = *&n;"
+      ],
+      [
+        "C",
+        "m = &n;"
+      ],
+      [
+        "D",
+        "m = **p;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "int *p 的含义是",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "p是一个指针, 用来存放一个整型数"
+      ],
+      [
+        "B",
+        "p是一个指针, 用来存放一个整型数据在内存中的地址"
+      ],
+      [
+        "C",
+        "p是一个整型变量"
+      ],
+      [
+        "D",
+        "以上都不对"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在基类型相同的两个指针变量之间，不能进行的运算是（ ）。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "<"
+      ],
+      [
+        "B",
+        "="
+      ],
+      [
+        "C",
+        "+"
+      ],
+      [
+        "D",
+        "–"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若定义pf为指向float类型变量f的指针，下列语句中__是正确的。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "float  f, *pf = f;"
+      ],
+      [
+        "B",
+        "float  f, *pf = &f;"
+      ],
+      [
+        "C",
+        "float  *pf = &f, f;"
+      ],
+      [
+        "D",
+        "float  f, *pf =0.0;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "根据声明int a[10], *p=a; ，下列表达式错误的是（    ）。",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "a[9]"
+      ],
+      [
+        "B",
+        "p[5]"
+      ],
+      [
+        "C",
+        "a++"
+      ],
+      [
+        "D",
+        "*p++"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对于如下说明，语法和语义都正确的赋值是_____。\nint c, *s, a[]={1, 3, 5};",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "c=*s;"
+      ],
+      [
+        "B",
+        "s[0]=a[0];"
+      ],
+      [
+        "C",
+        "s=&a[1];"
+      ],
+      [
+        "D",
+        "c=a;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若有说明int a[10], *p=a;，则对数组元素引用不正确的是",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "p + 2"
+      ],
+      [
+        "B",
+        "*(p + 2)"
+      ],
+      [
+        "C",
+        "p[2]"
+      ],
+      [
+        "D",
+        "*(a + 2)"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若有以下说明，且0<=i<10，则对数组元素的错误引用是（）。\nint a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}, *p = a, i;",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "*(a+i)"
+      ],
+      [
+        "B",
+        "a[p-a+i]"
+      ],
+      [
+        "C",
+        "p+i"
+      ],
+      [
+        "D",
+        "*(&a[i])"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有说明int  a[10] = {1,2,3,4,5,6,7,8,9,10},p = a;则数值为9的表达式是_____。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "*p+9"
+      ],
+      [
+        "B",
+        "*(p+8)"
+      ],
+      [
+        "C",
+        "*p+=9"
+      ],
+      [
+        "D",
+        "p+8"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对于以下程序段，则叙述正确的是（  ）。\nchar s[ ]=\"china\";\nchar *p;\np = s;",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "s和p完全相同"
+      ],
+      [
+        "B",
+        "数组s中的内容和指针变量p中的内容相等"
+      ],
+      [
+        "C",
+        "数组s的长度和p所指向的字符串长度相等"
+      ],
+      [
+        "D",
+        "*p与s[0]相等"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设变量定义为 int a[2]={1,3}, *p=&a[0]+1;，则*p的值是(       )。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "2"
+      ],
+      [
+        "B",
+        "3"
+      ],
+      [
+        "C",
+        "4"
+      ],
+      [
+        "D",
+        "&a[0]+1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若p1、p2都是整型指针，p1已经指向变量x，要使p2也指向x, (     )是正确的。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "p2 = p1;"
+      ],
+      [
+        "B",
+        "p2 = **p1;"
+      ],
+      [
+        "C",
+        "p2 = &p1;"
+      ],
+      [
+        "D",
+        "p2 = *p1;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Which one is completely correct among the following program fragments?",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "int *p;  scanf(\"%d\", &p);"
+      ],
+      [
+        "B",
+        "int *p;  scanf(\"%d\", p);"
+      ],
+      [
+        "C",
+        "int k, *p=&k;  scanf(\"%d\", p);"
+      ],
+      [
+        "D",
+        "int k, *p;  *p= &k;   scanf(\"%d\", p);"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "即使两个指针变量的类型相同，它们也不能",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "相减"
+      ],
+      [
+        "B",
+        "相加"
+      ],
+      [
+        "C",
+        "比较"
+      ],
+      [
+        "D",
+        "指向同一地址"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如果已经定义int x, *pointer;，则下面赋值语句正确的是",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "pointer = &x;"
+      ],
+      [
+        "B",
+        "pointer = x;"
+      ],
+      [
+        "C",
+        "*pointer = &x;"
+      ],
+      [
+        "D",
+        "*pointer =*x;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假设scanf语句执行时输入ABCDE<回车>，能使puts(s)语句正确输出ABCDE字符串的程序段是__。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "char s[5]={\"ABCDE\"}; puts(s);"
+      ],
+      [
+        "B",
+        "char s[5]={'A', 'B', 'C', 'D', 'E'}; puts(s);"
+      ],
+      [
+        "C",
+        "char *s; scanf(\"%s\", s); puts(s);"
+      ],
+      [
+        "D",
+        "char *s; s=\"ABCDE\"; puts(s);"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "存在定义int a[10], x, *pa; , 若pa=&a[0], 下列的哪个选项和其他3个选项不是等价的?",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "x=*pa;"
+      ],
+      [
+        "B",
+        "x=*(a+1);"
+      ],
+      [
+        "C",
+        "x=*(pa+1);"
+      ],
+      [
+        "D",
+        "x=a[1];"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对a数组元素不正确的引用是\nint a [ ]={ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9}, * p=a, i;\n其中0≤i≤9。",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "a[p-a]"
+      ],
+      [
+        "B",
+        "*(&a[i])"
+      ],
+      [
+        "C",
+        "p[i]"
+      ],
+      [
+        "D",
+        "a[10]"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若有如下定义，则（ ）的值是34。\nint a[] = {5, 15, 34, 54, 14, 2, 52, 72};\nint *p = &a[1];",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "p[1]"
+      ],
+      [
+        "B",
+        "p[2]"
+      ],
+      [
+        "C",
+        "p[0]"
+      ],
+      [
+        "D",
+        "p[3]"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若有以下定义:\nchar s[20]=\"programming\",*ps=s;\n则不能代表字符o的表达式是",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "ps+2"
+      ],
+      [
+        "B",
+        "s[2]"
+      ],
+      [
+        "C",
+        "ps[2]"
+      ],
+      [
+        "D",
+        "ps+=2,*ps"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "当调用函数时，实参是一个数组名，则向函数传送的是_____ 。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "数组的长度"
+      ],
+      [
+        "B",
+        "数组的首地址"
+      ],
+      [
+        "C",
+        "数组每一个元素的地址"
+      ],
+      [
+        "D",
+        "数组每个元素中的值"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设p1和p2是指向同一个字符串的指针变量，c为字符变量，则以下不能正确\n执行的赋值语句是（ ）。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "c=*p1;"
+      ],
+      [
+        "B",
+        "p2=c;"
+      ],
+      [
+        "C",
+        "p1=p2;"
+      ],
+      [
+        "D",
+        "p1+=2;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列选项正确的语句组是（ ）。",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "char *s;s=\"hello!\";"
+      ],
+      [
+        "B",
+        "char *s;s=[\"hello!\"];"
+      ],
+      [
+        "C",
+        "char s[8];s=\"hello!\";"
+      ],
+      [
+        "D",
+        "char s[8];s={\"hello\"};"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设有如下程序段\nchar s[20]=\"Beijing\",*p;  p=s;\n则执行p=s;语句后，以下叙述正确的是",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "可以用*p表示s[0]"
+      ],
+      [
+        "B",
+        "s数组中元素个数和p所指字符串长度相等"
+      ],
+      [
+        "C",
+        "s和p都是指针变量"
+      ],
+      [
+        "D",
+        "数组s中的内容和指针变量p中的内容相同"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下程序的输出结果是(      )。\nint fun(char s[ ])\n{\n    int n = 0;\n    while ( *s <= '9' && *s >= '0'){\n         n = 10 * n + *s - '0';\n         s++;\n    }\n    return(n);\n}\nint main( )\n{\n       char s[10]={'6', '1', '*' , '4', '*', '9', '*', '0', '*'};\n       printf(\"%d\\n\", fun(s));\n       return 0;\n}",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "9"
+      ],
+      [
+        "B",
+        "61490"
+      ],
+      [
+        "C",
+        "61"
+      ],
+      [
+        "D",
+        "5"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下程序的运行结果是（  ）。\n#include <stdio.h>\nvoid sub(int x, int y, int *z)\n{\n  *z = y-x;\n}\nint main()\n{\n     int a,b,c;\n     sub(10, 5, &a);\n     sub(7, a, &b);\n     sub(a, b, &c);\n     printf(\"%d,%d,%d\\n\", a, b, c);\n     return 0;\n}",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "5,2,3"
+      ],
+      [
+        "B",
+        "-5,-12,-7"
+      ],
+      [
+        "C",
+        "-5,-12,-17"
+      ],
+      [
+        "D",
+        "5,-2,-7"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序的输出结果是\nint main( )\n {\n     char *p1, *p2, str[50]=\"xyz\";\n     p1=\"abcd\";\n     p2=\"ABCD\";\n     strcpy(str+2,strcat(p1+2,p2+1));\n     printf（\"%s\",str);\n     return 0\n }",
+    "answer": "D",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "xyabcAB"
+      ],
+      [
+        "B",
+        "abcABz"
+      ],
+      [
+        "C",
+        "ABabcz"
+      ],
+      [
+        "D",
+        "xycdBCD"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "执行如下程序段，打印输出的内容是：\n#include <stdio.h>\nvoid fun (int c, int *d) {\n    c++;\n    (*d)++;\n}\nint main ( ){\n    int a=5, b=9;\n    fun(a, &b);\n    printf(\"%d, %d\", a, b);\n    return 0;\n}",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "5, 9"
+      ],
+      [
+        "B",
+        "6, 10"
+      ],
+      [
+        "C",
+        "5, 10"
+      ],
+      [
+        "D",
+        "6, 9"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下程序的输出结果是：\n#include <stdio.h>\n#include <string.h>\nint main()\n{\n     char *s1=\"AbCdEf\",  *s2=\"aB\";\n     s1++;\n     s2++;\n     printf(\"%d\\n\",strcmp(s1,s2) );\n     return 0;\n  }",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "正数"
+      ],
+      [
+        "B",
+        "负数"
+      ],
+      [
+        "C",
+        "0"
+      ],
+      [
+        "D",
+        "不确定的数"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序的输出结果是（）。\nvoid f(int *p)\n{\n    *p = 5;\n}\nint main(void)\n{\n    int  x = 10, *px = &x;\n    f(px);\n    printf(\"%d#\", (*px)++);\n    printf(\"%d\\n\", x);\n   return 0;\n}",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "5#6"
+      ],
+      [
+        "B",
+        "6#6"
+      ],
+      [
+        "C",
+        "10#11"
+      ],
+      [
+        "D",
+        "11#11"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若变量已正确定义并且指针p已经指向某个变量x，则(*p)++相当于____。",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "p++"
+      ],
+      [
+        "B",
+        "x++"
+      ],
+      [
+        "C",
+        "*(p++)"
+      ],
+      [
+        "D",
+        "&x++"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面程序运行后的输出结果是____。\n▾\n#include<stdio.h>\nint main()\n{\n    char  s[ ]=\"159\",*p;\n    p=s;\n    printf(\"%c\",*p++);\n    printf(\"%c\",*p++);\n    return 0;\n}",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "15"
+      ],
+      [
+        "B",
+        "16"
+      ],
+      [
+        "C",
+        "12"
+      ],
+      [
+        "D",
+        "59"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对于下列程序，正确的是（） 。\nvoid f(int *p)\n{\n      *p = 5;\n}\nint main(void)\n{\n      int a, *p;\n      a = 10;\n      p = &a;\n      f(p);\n      printf(“%d”, (*p)++);\n      return 0;\n}",
+    "answer": "A",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "5"
+      ],
+      [
+        "B",
+        "6"
+      ],
+      [
+        "C",
+        "10"
+      ],
+      [
+        "D",
+        "11"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序段的输出是____。\nint c[]={1, 3, 5};\nint *k=c+1;\nprintf(\"%d\", *++k);",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "3"
+      ],
+      [
+        "B",
+        "4"
+      ],
+      [
+        "C",
+        "5"
+      ],
+      [
+        "D",
+        "6"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序的输出结果是（）。\nint main(void)\n{\n      int a[10] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }, *p = a+3;\n      printf(“%d”, *++p);\n      return 0;\n}",
+    "answer": "B",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "3"
+      ],
+      [
+        "B",
+        "4"
+      ],
+      [
+        "C",
+        "a[4]的地址"
+      ],
+      [
+        "D",
+        "非法"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面程序的输出结果是(  )。\n# include <stdio.h>\nvoid fun (int *x, int *y)\n{\n    printf(\"%d%d\", *x, *y);\n    *x = 3;\n    *y = 4;\n}\nint main(void)\n{\n    int x=1, y=2;\n    fun(&x, &y);\n    printf(\"%d%d\", x, y);\n    return 0;\n}",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "2134"
+      ],
+      [
+        "B",
+        "1212"
+      ],
+      [
+        "C",
+        "1234"
+      ],
+      [
+        "D",
+        "2112"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列程序的输出结果是(      )。\n# include <stdio.h>\nint main(void)\n{\n    int a[10] = {0,1,2,3,4,5,6,7,8,9}, *p = a+3;\n    printf(\"%d\", p[2]);\n    return 0;\n}",
+    "answer": "C",
+    "subject": "C语言",
+    "flag_star": false,
+    "flag_cross": false,
+    "options": [
+      [
+        "A",
+        "3"
+      ],
+      [
+        "B",
+        "4"
+      ],
+      [
+        "C",
+        "5"
+      ],
+      [
+        "D",
+        "非法"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  }
+]

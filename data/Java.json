@@ -1,0 +1,8048 @@
+[
+  {
+    "type": "判断题",
+    "text": "Java源程序中的字母大小写敏感，源文件名字母大小写不敏感。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "字节码文件是与平台无关的二进制码，执行时由解释器解释成本地机器码。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "在一个编辑器中编写好的Java应用程序，是扩展名为.class的文件。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "运行类路径下的HelloWorld.class文件，使用的命令是：java HelloWorld.class 。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java语言和C语言一样，是面向过程的语言。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "一个Java源文件的名称可以随便取，不受任何限制。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中，Java语言的跨平台性是通过Java虚拟机（JVM）实现的，所以JVM是跨平台的。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "如果Java源文件中包含了多个类，那么用编译器javac编译完源文件后将生成多个扩展名为.class的文件。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "java语言中不用区分字母的大写小写。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java语言中，变量名可以用汉字表示。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "一个Java源文件中可以包含多个类，编译后产生一个.class文件。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "一个Java源文件中可以有多个类，但只能有一个类是public的。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java虚拟机可以将类文件（.class）在不同的操作系统上运行，从而实现跨平台特性。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "JDK中，存放可执行程序的目录是bin。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "编译当前路径下的HelloWorld.java文件，使用的命令是：javac HelloWorld.java 。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中，由低精度的数据类型向高精度的数据类型赋值时，是自动类型转换，其数值不变。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java的字符类型采用的是ASCII编码。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "标识符可以为关键字。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "语句 System.out.println(4+8+\"Hello,world!\"); 的输出结果是12Hello,world!。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中，某个四则运算表达式中的数值有一个是double类型，则计算之后的数值一定是double类型。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "如将一个int类型的数转为byte类型，不会造成数据精度的丢失。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "在如下代码中，两个变量str和i都是基本数据类型的变量。\nString str=\"sdutcs”;\nint i =100;",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "在进行自增（++）和自减（--）运算时，如果运算符++或--放在操作数的前面，则先进行自增或自减运算，再进行其他运算。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "对于基本数据类型byte、short、int、long、float、double，它们的数据都是有符号的数值，既能存储正数，也能存储负数。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java的字符类型采用的是Unicode编码，每个Unicode码占16个比特。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "在Java中，&&、||和 &、|都表示逻辑的与、或运算，二者使用起来没有什么差异。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "在Java中：long类型占8个Byte，float类型占4个Byte，所以long类型表示的范围大于float类型。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java的各种数据类型占用固定长度，与具体的软硬件平台环境无关。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "(x > 0 || x < 10 && y < 0) 与 ((x > 0 || x < 10) && y < 0)等价。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中，boolean基本类型的变量取值为0、1，也可取值true或false。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中，通过强制类型转换实现高精度的数据类型向低精度的数据类型赋值时，其数值不变。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "break语句可以在循环语句或者switch条件语句中使用。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中的switch-case分支结构的特点是等值判断。它能用if分支结构进行改写。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "在switch语句中，每个case关键字后面必须有break。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中的switch-case分支结构中，一旦控制表达式的计算结果与某个case值匹配成功，就执行完该case对应的语句块，即结束switch-case语句。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "在JDK1.8及以后的版本中，使用如下语句是否正确？\nString str=\"*******\";\n  switch(str)\n  {\n     case \"abc\":\n       //...\n        break;\n     case \"def\":\n       //.....\n       break;\n   }",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "continue; 语句只用于循环语句中，它的作用是跳出循环。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中的while循环和do-while循环结构的区别是后者至少执行一次循环，而前者可能一次也不执行。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中break语句可用于循环结构或者switch-case结构，作用是终止当前循环或者分支语句。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中continue语句的作用是结束本次循环，开始下一次循环。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "循环嵌套是指在一个循环语句的循环体中再定义一个循环语句的语法结构。while、do…while、for循环语句都可以进行嵌套，并且它们之间也可以互相嵌套。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "有的类定义时可以不定义构造函数，所以构造函数不是必需的。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "构造方法没有返回类型，甚至连void也没有。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "构造函数名应与类名相同，返回类型为void。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "对象是类的实例（instance）。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "世界万物皆对象，从具有共同特征的对象中抽取出来静态属性和动态行为的共同特征，用类来进行描述。因此，对象是具体的，类是抽象的。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "局部变量可以与成员变量重名。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "方法体内定义的变量称局部变量，局部变量仅在所定义的代码块内（花括号对内）有效。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "有如下类的定义：\npublic class Rectangle {\n public Rectangle(int l) {  //构造方法1\n  if (l > 0) {\n   w = l;\n   h = l;\n  }\n }\n public Rectangle(int w1, int h1) {  //构造方法2\n  if (w1 > 0 && h1 > 0) {\n   w = w1;\n   h = h1;\n  }\n }\n}\n下面使用Rectangle类创建一个对象，是否正确？\nRectangle rect=new Rectangle();",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "构造方法是类的一种特殊方法，它的方法名必须与类名相同。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "在Java中，一个类可同时定义许多同名的方法，这些方法的形式参数的个数、类型或顺序各不相同，传回的值也可以不相同。这种面向对象程序的特性称为重载。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "构造方法返回值类型可以用void进行声明。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "在实例方法或构造器中，this用来引用当前对象，通过使用this可引用当前对象的任何成员。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "类中所有成员变量在所有成员方法中有效。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中类和方法都不允许嵌套定义。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "构造方法不能被重载。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "类及其属性、方法可以同时有一个以上的修饰符来修饰。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中的类是一种数据类型，可以用来声明该类类型的变量。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "定义一个类时，无论有没有显示地给出构造方法的定义，系统都会提供一个默认的、无参的构造方法。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java程序中若包含package语句,则该语句可以放在任意位置。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "一个数组可以存放不同类型的数值。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "修饰符protected主要是允许其他包中的子类来访问父类的特定属性。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "程序运行中可以改变数组的大小。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "数组中有length()这个方法，如array.length()表示数组array中元素的个数",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "数组也是对象。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中，int[] arr = new int[5]{1,2,3,4,5};语句定义数组正确。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中数组的元素只能是简单数据类型。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中数组的元素可以是简单数据类型的量，也可以是某一类的对象。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中，import导包语句必须是程序的第一条可执行语句。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "protected访问权限比默认访问权限严格。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java允许创建不规则数组，即Java多维数组中各行的列数可以不同。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中，默认修饰符修饰的类或成员是不能跨包访问的。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中，int[][] a = {{1,2},{3,4},{5,6}};中，a[0][1]和a[1][0]两个元素的内存地址是连续的。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java语言中的数组元素下标总是从0开始，下标可以是整数或整型表达式。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "在Java中，二维数组实际是由多个一维数组组成的数组。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "系统自动引入java.lang包中的所有类，因此不需要再显式地使用import语句引入该包的所有类。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "数组中的每个元素都具有相同的类型。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "制造（new）数组时，要指定数组长度，以便为数组分配内存。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "可以使用protected修饰符来防止方法和数据被不同包的非子类访问。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "java.lang包是Java的核心类库，它包含了运行Java程序必不可少的系统类。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "可以覆盖在父类中定义的私有方法。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "如果一个类的声明中没有使用extends关键字，这个类被系统默认为是继承Object类。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "如果在子类的构造方法中，没有使用关键字super调用父类的某个构造方法，那么默认有super();语句，即调用父类的不带参数的构造方法。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "子类对象不能访问父类的私有成员变量，因此也没有任何办法可以修改父类的私有成员变量。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "子类和父类必须在一个包中。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "构造方法可以调用本类中重载的构造方法和它的父类的构造方法。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "设类B是类C的父类，语句B x1=new C( );  是正确的。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "一个Java类可以有多个父类。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "覆盖只能在不同的类中完成。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "在Animal类和其子类Dog类中均定义了一个名为age的整形变量，则按照多态原理，下列程序中访问的是Dog类中的age变量。\nAnimal a=new Dog();\nSystem.out.println(a.age);",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "子类不继承父类的构造方法。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Object是Java中所有类的共同父类。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "子类如果想使用父类的构造方法，必须在子类的构造方法中使用，并且必须使用关键字super来表示，而且super必须是子类构造方法中的头一条语句。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "A wrapper is used when you want to treat a primitive like an object.",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "有两个引用变量t1和t2，如果 t1 == t2为true, 那么t1.equals(t2)也一定为true。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java基本数据类型都有对应的封装类。封装类能保留其数值，其他方面也没有太大的作用。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "abstract类中定义的方法只能是abstract方法。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "一个接口可以继承其他接口。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "抽象方法必须在抽象类中，所以抽象类中的方法都必须是抽象方法。。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "abstract可以与final同时修饰同一个类。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "对于abstract类，不能创建该类的对象。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "类在实现接口方法时必须给出方法体，并且一定要用public来修饰。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "一个Java源文件就是由类和接口组成的。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "如果一个类继承了一个抽象类，但是没有完全复写父类的所有的抽象方法那么这个类也是抽象类。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "一个非抽象类可以有选择地实现接口的部分抽象方法。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "抽象类是不能实例化的。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "接口是特殊的类型，所以接口也可以继承，子接口将继承父接口的所有常量和抽象方法。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "一个类只能有一个父类，但一个接口可以有一个以上的父接口。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "接口中的属性，都是静态常量。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "接口中的方法默认都是静态的。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "一个类可以实现多个接口。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "接口中的方法默认是public abstract方法。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "如果一个类声明实现一个接口，但没有实现接口中的所有方法，那么这个类必须是abstract类。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "类在实现接口的方法时，必须显式地使用public修饰符。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "含有抽象方法的类一定是抽象类，抽象类中一定含有抽象方法。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "为了克服单继承的缺点，Java使用了接口，一个类可以实现多个接口。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "抽象类必须有抽象方法。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "抽象类能实例化一个对象。如：\nabstract class A(){}\n可以调用如下语句创建对象a:\nA a=new A();",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "可以使用throws语句来指明方法有异常抛出。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "一个异常处理中 finally语句块可以不出现，也可以出现一次。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "当一个方法在运行过程中产生一个异常，则这个方法会终止，但是整个程序不一定终止运行。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "若异常发生时，它没有捕获，后续的程序不受任何影响，依然能正常执行。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "程序运行时所产生的系统定义的异常将自动被抛出。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java语言中的所有异常类都是java.lang.Throwable的子类。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "在异常处理中，若try中的代码可能产生多种异常则可以对应多个catch语句，若catch中的参数类型有父类子类关系，此时应该将父类放在前面，子类放在后面。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "可以使用throw语句来抛出异常。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "异常也是一个对象。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "用户可以自定义自己的异常类。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "一个try语句可以有多个catch语句与之对应。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "所有异常都必须捕获。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "设String对象s=\"Hello \"，运行语句System.out.println(s.concat(\"world!\"));后String对象s的内容为Hello world!，所以语句输出为Hello world!。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "java.lang.Math类是一个最终类。其中包含许多用来进行科学计算的类方法和常量，它们都是Math类的静态成员。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "String类的equals()方法和==的作用是一样的。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "String字符串在创建后可以被修改。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "String对象和StringBuffer对象都是字符串类型，创建后的对象都可以在原地进行修改。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "选择题",
+    "text": "在Java类的定义中，程序执行入口声明如下，哪一个是错误的程序代码？",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "public static void main(String args){ }"
+      ],
+      [
+        "B",
+        "public static void main(String args[ ]){ }"
+      ],
+      [
+        "C",
+        "public static void main(String[ ] args){ }"
+      ],
+      [
+        "D",
+        "public static void main(String message[ ]){ }"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对JDK描述错误的是（     ）。",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "JDK中包括JVM、核心类库、Java开发工具（java，javac）等"
+      ],
+      [
+        "B",
+        "JDK的全称是 Java Development Kit"
+      ],
+      [
+        "C",
+        "JDK本身也是平台无关的，不同的操作系统安装的JDK是一样的"
+      ],
+      [
+        "D",
+        "运行Java程序只要有JRE环境就可以，不一定需要全部JDK的功能"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "哪一种类型的代码被JVM解释成本地代码？",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        ".exe可执行代码"
+      ],
+      [
+        "B",
+        "源代码"
+      ],
+      [
+        "C",
+        "字节码"
+      ],
+      [
+        "D",
+        "处理器代码"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Java 语言的类型是（ ）。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "面向对象语言"
+      ],
+      [
+        "B",
+        "汇编语言"
+      ],
+      [
+        "C",
+        "形式语言"
+      ],
+      [
+        "D",
+        "面向过程语言"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "编译Java源文件和解释执行Java字节码文件的指令分别是什么？",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "java.exe和jdb.exe"
+      ],
+      [
+        "B",
+        "javac.exe和java.exe"
+      ],
+      [
+        "C",
+        "javac.exe和javadoc.exe"
+      ],
+      [
+        "D",
+        "jad.exe和java.exe"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在windows平台上安装配置JDK时，下列的说法错误的是_____。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "设置CLASSPATH的作用是指定类搜索路径"
+      ],
+      [
+        "B",
+        "设置path的作用是指定命令搜索路径"
+      ],
+      [
+        "C",
+        "假设JDK的安装位置是：c:\\java，那么应在path中加入下面的数据项：c:\\java\\bin"
+      ],
+      [
+        "D",
+        "javac的功能是编译并执行 java代码项"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有一段java 应用程序，它的主类名是a1，那么保存它的源文件名可以是（ ）.",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "a1"
+      ],
+      [
+        "B",
+        "a1.class"
+      ],
+      [
+        "C",
+        "a1.java"
+      ],
+      [
+        "D",
+        "都对"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在Java中，负责对字节代码解释执行的是（  ）。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "虚拟机"
+      ],
+      [
+        "B",
+        "垃圾回收器"
+      ],
+      [
+        "C",
+        "编译器"
+      ],
+      [
+        "D",
+        "应用服务器"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如果JDK的安装路径为d:\\jdk，若想在DOS命令窗口中任何当前路径下，都可以直接使用javac和java命令，需要将环境变量path设置为以下哪个选项？（     ）",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "d:\\jdk;"
+      ],
+      [
+        "B",
+        "d:\\jre;"
+      ],
+      [
+        "C",
+        "d:\\jre\\bin;"
+      ],
+      [
+        "D",
+        "d:\\jdk\\bin;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "编译Java源程序文件将产生相应的字节码文件，这些字节码文件的扩展名为(     )。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        ".byte"
+      ],
+      [
+        "B",
+        ".class"
+      ],
+      [
+        "C",
+        ".html"
+      ],
+      [
+        "D",
+        ".exe"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "一个计算机上安装JDK后，该计算机不包含的是（）。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "JRE"
+      ],
+      [
+        "B",
+        "JVM"
+      ],
+      [
+        "C",
+        "javac.exe"
+      ],
+      [
+        "D",
+        "Eclipse"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Java语言中的运行机制是什么？",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "编译和解释型"
+      ],
+      [
+        "B",
+        "半编译半解释型"
+      ],
+      [
+        "C",
+        "解释型"
+      ],
+      [
+        "D",
+        "编译型"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列有关Java语言的叙述中，正确的是",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "源文件名与public类型的类名必须相同"
+      ],
+      [
+        "B",
+        "源文件名的扩展名为.jar"
+      ],
+      [
+        "C",
+        "源文件中public类的数目不限"
+      ],
+      [
+        "D",
+        "Java是不区分大小写的"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Java 语言的特点不包括(  )",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "平台无关"
+      ],
+      [
+        "B",
+        "支持多线程"
+      ],
+      [
+        "C",
+        "多重继承"
+      ],
+      [
+        "D",
+        "面向对象"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Java源代码文件的扩展名为（ ）",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        ".java"
+      ],
+      [
+        "B",
+        ".class"
+      ],
+      [
+        "C",
+        ".doc"
+      ],
+      [
+        "D",
+        ".txt"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Java语言具有许多优点和特点，哪个反映了Java程序并行机制的特点？(  )",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "跨平台"
+      ],
+      [
+        "B",
+        "安全性"
+      ],
+      [
+        "C",
+        "多线性"
+      ],
+      [
+        "D",
+        "可移植"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面那种类型不属于Java的基本数据类型？",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "int"
+      ],
+      [
+        "B",
+        "String"
+      ],
+      [
+        "C",
+        "byte"
+      ],
+      [
+        "D",
+        "boolean"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有以下方法的定义，请选择该方法的返回类型（    ）。\nReturnType  method(byte x, double y)  {\n    return  (short)x/y*2;\n}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "int"
+      ],
+      [
+        "B",
+        "double"
+      ],
+      [
+        "C",
+        "short"
+      ],
+      [
+        "D",
+        "byte"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列选项中，不属于赋值运算符的是（ ）",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "-="
+      ],
+      [
+        "B",
+        "*="
+      ],
+      [
+        "C",
+        "=="
+      ],
+      [
+        "D",
+        "="
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Java中，下面哪个是short型变量的取值范围？",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "−2 7  −2 7  −1"
+      ],
+      [
+        "B",
+        "−2 31  −2 31  −1"
+      ],
+      [
+        "C",
+        "0−2 16"
+      ],
+      [
+        "D",
+        "−2 15  −2 15  −1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在Java中，为一个boolean类型变量赋值时，可以使用以下哪种方式？",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "boolean a = (9 >= 10);"
+      ],
+      [
+        "B",
+        "boolean a = = false;"
+      ],
+      [
+        "C",
+        "boolean a=\"真\";"
+      ],
+      [
+        "D",
+        "boolean = 1;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "（  ）是Java中合法的标识符。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "@number"
+      ],
+      [
+        "B",
+        "fieldname"
+      ],
+      [
+        "C",
+        "3number"
+      ],
+      [
+        "D",
+        "super"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "当编译运行下列代码时，运行结果是什么？\npublic class Demo{\n  public static void main(String args[]){\n    int i=012;\n    int j=034;\n    int k=056;\n    int l=078;\n    System.out.println(i);\n    System.out.println(j);\n    System.out.println(k);\n  }\n}",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "输出10,28和46"
+      ],
+      [
+        "B",
+        "输出24,68和112"
+      ],
+      [
+        "C",
+        "输出12,34和56"
+      ],
+      [
+        "D",
+        "编译错误"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下程序段的输出结果是\nclass Test {\n     public static void main(String[] args) {\n        System.out.println(4 + 5 + \"\" + 3 + 6);\n    }\n}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "99"
+      ],
+      [
+        "B",
+        "936"
+      ],
+      [
+        "C",
+        "4536"
+      ],
+      [
+        "D",
+        "459"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如下程序代码输出的结果是：（      ）。\npublic class Main {\n    public static void main(String[] args) {\n       int a=023;\n       int b=0x10;\n       System.out.println(a+\" \"+b);\n    }\n}",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "19 10"
+      ],
+      [
+        "B",
+        "23 16"
+      ],
+      [
+        "C",
+        "19 16"
+      ],
+      [
+        "D",
+        "23 10"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Java的引用数据类型不包括（）。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "接口"
+      ],
+      [
+        "B",
+        "数组"
+      ],
+      [
+        "C",
+        "类"
+      ],
+      [
+        "D",
+        "boolean"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Java：以下程序输出的结果是\npublic class Main{\n    public static void main(String[] args) {\n        byte b1 = 3;\n        byte b2 = 126;\n        byte b3 = b1 + b2;\n        System.out.println(b3);\n    }\n}",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "-1"
+      ],
+      [
+        "B",
+        "129"
+      ],
+      [
+        "C",
+        "程序编译错误"
+      ],
+      [
+        "D",
+        "-127"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面哪单词是Java语言的关键字（ ）。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "string"
+      ],
+      [
+        "B",
+        "this"
+      ],
+      [
+        "C",
+        "Float"
+      ],
+      [
+        "D",
+        "unsigned"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在Java中，下列文档注释正确的是？",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "//我爱北京天安门*/"
+      ],
+      [
+        "B",
+        "/*我爱北京天安门*/"
+      ],
+      [
+        "C",
+        "/*我爱北京天安门**/"
+      ],
+      [
+        "D",
+        "/**我爱北京天安门*/"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在java中下列关于自动类型转换说法正确的是？",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "基本数据类型+String 结果一定是字符串型"
+      ],
+      [
+        "B",
+        "double类型可以自动转换为int"
+      ],
+      [
+        "C",
+        "char + int + double +\"\" 结果一定是double"
+      ],
+      [
+        "D",
+        "char类型和int类型相加结果一定是字符"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面（ ）表达式可以得到x和y中的最大值。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "x==y?y:x"
+      ],
+      [
+        "B",
+        "x>y?y:x"
+      ],
+      [
+        "C",
+        "x>y?(x+y):(x-y)"
+      ],
+      [
+        "D",
+        "x<y?y:x"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设有变量定义: short a = 300; 则以下哪一条语句会导致编译错误？",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "a = (byte)(a + 3);"
+      ],
+      [
+        "B",
+        "a = (short)(a * 100);"
+      ],
+      [
+        "C",
+        "a += 3;"
+      ],
+      [
+        "D",
+        "a = (short)a + 3;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "分析下面这段Java代码，它的运行结果是\nImport java.io.*;\nPublic class B{\n    Public static void main(string [] args){\n        int i=12;\n        System.out.println(i+=i-=i*=i);\n      }\n}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "程序无法编译"
+      ],
+      [
+        "B",
+        "-120"
+      ],
+      [
+        "C",
+        "0"
+      ],
+      [
+        "D",
+        "100"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "整型数据类型中，需要内存空间最少的是（ ）.",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "int"
+      ],
+      [
+        "B",
+        "long"
+      ],
+      [
+        "C",
+        "byte"
+      ],
+      [
+        "D",
+        "short"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假设有如下程序：\npublic class Demo {\n      public static void main(String args[]) {\n            long num = 100 ;\n            int x = num + 2 ;\n            System.out.println(x) ;\n     }\n}\n最终程序的执行结果是什么？",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "程序错误"
+      ],
+      [
+        "B",
+        "100.0"
+      ],
+      [
+        "C",
+        "102.0"
+      ],
+      [
+        "D",
+        "1002.0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Java中，程序输出的结果是\npublic class Main {\n    public static void main(String[] args) {\n        int i = 1, j = 2, k = 3, m = 4;\n        boolean b;\n        b = i > j && k++ > m;\n        System.out.println(k);\n    }\n}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "true"
+      ],
+      [
+        "B",
+        "3"
+      ],
+      [
+        "C",
+        "false"
+      ],
+      [
+        "D",
+        "4"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "while循环和 do…while循环的区别是：（ ）",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "while循环比 do…while循环执行效率高"
+      ],
+      [
+        "B",
+        "while循环是先循环后判断，所以循环体至少被执行一次"
+      ],
+      [
+        "C",
+        "没有区别，这两个结构任何情况下效果一样"
+      ],
+      [
+        "D",
+        "do…while循环是先循环后判断，所以循环体至少被执行一次"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有如下程序代码，执行的结果是：\npublic class Main {\n    public static void main(String[] args) {\n        int x=10,y=20,z=30;\n        if(x<y)\n            z=x;\n        else\n            x=y;\n        y=z;\n        System.out.println(\"x=\"+x+\",y=\"+y+\",z=\"+z);\n    }\n}",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "x=20,y=30,z=20"
+      ],
+      [
+        "B",
+        "x=20,y=30,z=10"
+      ],
+      [
+        "C",
+        "x=20,y=20,z=20"
+      ],
+      [
+        "D",
+        "x=10,y=10,z=10"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面代码运行结果显示（   ）。\ndouble temperature = 50;\nif (temperature >= 100)\n   System.out.println(\"too hot\");\nelse if (temperature <= 40)\n   System.out.println(\"too cold\");\nelse\n   System.out.println(\"just right\");",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "too hot"
+      ],
+      [
+        "B",
+        "too cold"
+      ],
+      [
+        "C",
+        "too hot too cold just right"
+      ],
+      [
+        "D",
+        "just right"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面程序段的输出结果是（）。\n    public static void main(String[] args) {\n        int x=1,a=0,b=0;\n        switch(x)\n        {\n            case 0:b++;\n            case 1:a++;\n            case 2:a++; b++;\n        }\n        System.out.println(\"a=\"+a+\",b=\"+b);\n    }",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "a=2,b=2"
+      ],
+      [
+        "B",
+        "a=2,b=1"
+      ],
+      [
+        "C",
+        "a=1,b=1"
+      ],
+      [
+        "D",
+        "a=1,b=0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在Java中，以下程序段的输出结果是 （）。1.png",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "28"
+      ],
+      [
+        "B",
+        "27"
+      ],
+      [
+        "C",
+        "41"
+      ],
+      [
+        "D",
+        "42"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "编译运行以下程序后，关于输出结果的说明，正确的是（   ）。\npublic class Main {\n    public static void main(String[] args) {\n        int x = 4;\n        System.out.println(\"value is \"+((x>4)?99.9:9));\n    }\n}",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "编译错误"
+      ],
+      [
+        "B",
+        "输出结果为： value is 9"
+      ],
+      [
+        "C",
+        "输出结果为： value is 9.0"
+      ],
+      [
+        "D",
+        "输出结果为： value is 99.99"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在Java中，下列程序的运行结果是（  ）。2.png",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "a=30, b=10, c=20"
+      ],
+      [
+        "B",
+        "a=20, b=10, c=20"
+      ],
+      [
+        "C",
+        "a=30, b=10, c=30"
+      ],
+      [
+        "D",
+        "a=20, b=10, c=30"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "分析以下代码段，给布尔变量even赋值，下面选项正确的是（    ）。\n代码段1:\nif (number % 2 == 0)\n      even = true;\nelse\n      even = false;\n代码段 2:\neven = (number % 2 == 0) ? true: false;\n代码段 3:\neven = number % 2 == 0;",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "代码段2有语法错误"
+      ],
+      [
+        "B",
+        "代码段1有语法错误"
+      ],
+      [
+        "C",
+        "所有代码段都正确"
+      ],
+      [
+        "D",
+        "代码段3有语法错误"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列语句序列执行后，k 的值是(    )\nint x=6, y=10, k=5;\nswitch( x%y ){\n        case 0: k=x*y;\n      case 6: k=x/y;\n      case 12: k=x-y;\n      default: k=x*y-x;\n}",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "54"
+      ],
+      [
+        "B",
+        "5"
+      ],
+      [
+        "C",
+        "60"
+      ],
+      [
+        "D",
+        "0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面的方法，当输入为2的时候返回值是多少?（     ）\npublic int getValue(int i) {\n         int result = 0;\n         switch (i) {\n            case 1:\n                result = result + i;\n            case 2:\n                result = result + i * 2;\n            case 3:\n                result = result + i * 3;\n        }\n        return result;\n }",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "4"
+      ],
+      [
+        "B",
+        "0"
+      ],
+      [
+        "C",
+        "2"
+      ],
+      [
+        "D",
+        "10"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列关于条件语句的描述中，错误的是（ ）",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "if语句中的条件表达式是一个布尔值。"
+      ],
+      [
+        "B",
+        "switch语句中的表达式只能是布尔类型的值。"
+      ],
+      [
+        "C",
+        "switch语句只能针对某个表达式的值作出判断。"
+      ],
+      [
+        "D",
+        "选择语句分为if条件语句和switch条件语句。"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在Java中，执行下面的程序段，执行结果是？\nfor(int i=0;;){\n    System.out.println(\"这是 \"+i);\nbreak；\n}",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "输出:这是0"
+      ],
+      [
+        "B",
+        "语法错误，缺少for循环表达式2和表达式3"
+      ],
+      [
+        "C",
+        "程序什么都不输出"
+      ],
+      [
+        "D",
+        "死循环"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在Java中，以下程序段的输出结果是（  ）。\n        int n=9;\n        while(n>6){\n            n--;\n            System.out.print(n);\n        }",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "8765"
+      ],
+      [
+        "B",
+        "9876"
+      ],
+      [
+        "C",
+        "876"
+      ],
+      [
+        "D",
+        "987"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假设有如下程序：\npublic class Demo {\n      public static void main(String args[]) {\n             int sum = 0 ;\n            int x = 10 ;\n            while (x > 0) {\n                sum += x ;\n                        }\n            System.out.println(sum) ;\n       }\n}\n最终执行结果是什么？",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "55.0"
+      ],
+      [
+        "B",
+        "程序错误，死循环"
+      ],
+      [
+        "C",
+        "10.0"
+      ],
+      [
+        "D",
+        "15.0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下Java程序段的输出结果是（）。\n▾\nint i = 0;\nfor(i=4; i>0; i--) {\n     if(i==2)\n       break;\n     System.out.print(i);\n}\nSystem.out.print(i);",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "4321"
+      ],
+      [
+        "B",
+        "321"
+      ],
+      [
+        "C",
+        "432"
+      ],
+      [
+        "D",
+        "4322"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Java中，以下程序运行后，for循环执行的次数是\npublic class Main() {\n    public static void main(String[] args) {\n        int i;\n        for(i = 1; i < 189; i++) {\n            if(i == 3) break;\n            else continue;\n        }\n    }\n}",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "3"
+      ],
+      [
+        "B",
+        "188"
+      ],
+      [
+        "C",
+        "2"
+      ],
+      [
+        "D",
+        "189"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在Java中，以下表达式不可以作为循环条件的是？",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "count == i"
+      ],
+      [
+        "B",
+        "i++"
+      ],
+      [
+        "C",
+        "str.equals(\"q\")"
+      ],
+      [
+        "D",
+        "i>5"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列选项中不属于本段代码输出结果的是（      ）\npublic class Main{\n    public static void main(String args[]) {\n      one:\n      two:\n      for(int i=0; i<3; i++) {\n          three:\n          for(int j=10; j<30; j+=10) {\n             System.out.println(i+j);\n             if(i>0)\n                break one;\n          }\n      }\n    }\n}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "11"
+      ],
+      [
+        "B",
+        "21"
+      ],
+      [
+        "C",
+        "10"
+      ],
+      [
+        "D",
+        "20"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下Java程序段的输出结果是（）。\nint i, j, m=55;\nfor(i=1; i<=3; i++)\n   for(j=3; j<=i; j++)\n      m = m%j;\nSystem.out.printf(\"%d\\n\", m);",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "3"
+      ],
+      [
+        "B",
+        "0"
+      ],
+      [
+        "C",
+        "2"
+      ],
+      [
+        "D",
+        "1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在JAVA中，给定代码片段如下所示，则编译运行后，输出结果是（）。\nfor (int i = 0; i < 10; i++) {\n    if (i == 10 - i) {\n        break;\n    }\n    if (i % 3 != 0) {\n        continue;\n    }\n    System.out.print(i + \" \");\n}",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "0 3 6"
+      ],
+      [
+        "B",
+        "0"
+      ],
+      [
+        "C",
+        "0 3 6 9"
+      ],
+      [
+        "D",
+        "0 3"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "循环执行后，count的值是（    ）\nint count = 0;\ndo {\n     System.out.println(\"Welcome to Java\");\n} while (count++ < 9);\nSystem.out.println(count);",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "10"
+      ],
+      [
+        "B",
+        "9"
+      ],
+      [
+        "C",
+        "8"
+      ],
+      [
+        "D",
+        "11"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在Java中，下面程序代码段的输出结果是？\nint i=0,s=0;\ndo{\n    if (i%2 = = 0 ){\n        i++;\n        continue;\n    }\ni++;\ns = s + i;\n} while (i<7);\nSystem.out.println(s);",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "21"
+      ],
+      [
+        "B",
+        "16"
+      ],
+      [
+        "C",
+        "12"
+      ],
+      [
+        "D",
+        "28"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "当编译并运行下列程序段时，运行结果是什么？\n public class Test {\n    public static void main(String[ ] args) {\n        int i=0;\n        while (i--<0){\n             System.out.println(\"The value of i is \"+i);\n         }\n         System.out.println(\"The end\");\n     }\n}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "编译时错误"
+      ],
+      [
+        "B",
+        "The end"
+      ],
+      [
+        "C",
+        "The value of i is 0"
+      ],
+      [
+        "D",
+        "运行时错误"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假设有如下程序：\npublic class Demo {\n      public static void main(String args[]) {\n            String str = \"\" ;\n            for (int x = 0 ; x < 5 ; x ++) {\n                   str += x ;\n            }\n          System.out.println(str) ;\n      }\n}\n最终的执行结果是什么？",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "01234"
+      ],
+      [
+        "B",
+        "10.0"
+      ],
+      [
+        "C",
+        "25.0"
+      ],
+      [
+        "D",
+        "14.0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "分析下列代码的运行结果是什么？\nvoid looper(){\n    int x=0;\n    one:\n    while(x<20) {\n        two:\n            System.out.print(++x);\n            if(x>3)\n              break two;\n    }\n}",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "2"
+      ],
+      [
+        "C",
+        "1"
+      ],
+      [
+        "D",
+        "编译错误"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面代码将输出（    ）行 \"Welcome to Java\"?。\nint count = 0;\ndo {\n     System.out.println(\"Welcome to Java\");\n} while (count++ < 10);",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "11"
+      ],
+      [
+        "B",
+        "9"
+      ],
+      [
+        "C",
+        "10"
+      ],
+      [
+        "D",
+        "1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下程序的输出结果是（）。\n▾\n▾\n▾\npublic class Test {\n    public static void main(String[] args) {\n        int c = 0, k;\n        for(k=1; k<3; k++)\n            switch( k ){\n                default: c += k;\n                case 2: c++; break;\n                case 4: c += 2; break;\n            }\n        System.out.println(c);\n    }\n}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "4"
+      ],
+      [
+        "B",
+        "3"
+      ],
+      [
+        "C",
+        "2"
+      ],
+      [
+        "D",
+        "5"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在Java中，一个类可同时定义许多同名的方法，这些方法的形式参数个数、类型或顺序各不相同，传回的值也可以不相同。这种面向对象程序的特性称为（  ）。",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "隐藏"
+      ],
+      [
+        "B",
+        "覆盖"
+      ],
+      [
+        "C",
+        "重载"
+      ],
+      [
+        "D",
+        "Java不支持此特性"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "已如类A的定义如下，程序代码执行结果是：（        ）。\nclass A {\n int v = 10;\n public void print() {\n  int v = 100;\n  System.out.println(v);\n }\n}\npublic class Main {\n public static void main(String[] args) {\n  A a=new A();\n  a.print();\n }\n}",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "程序出现编译错误"
+      ],
+      [
+        "B",
+        "10"
+      ],
+      [
+        "C",
+        "程序出现运行错误"
+      ],
+      [
+        "D",
+        "100"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "一个*.java文件中可以包含多少个public类？",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "最少1个"
+      ],
+      [
+        "B",
+        "最多1个"
+      ],
+      [
+        "C",
+        "不限制"
+      ],
+      [
+        "D",
+        "只能是0个"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列方法头中哪一个不与其他方法形成重载(overload)关系?（    ）",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "void mmm(int i)"
+      ],
+      [
+        "B",
+        "int mm()"
+      ],
+      [
+        "C",
+        "void mmm(String s)"
+      ],
+      [
+        "D",
+        "void mmm()"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有一个类A，以下为其构造方法的声明，其中正确的是（）。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "a(int x){...}"
+      ],
+      [
+        "B",
+        "void a(int x){...}"
+      ],
+      [
+        "C",
+        "void A(int x){...}"
+      ],
+      [
+        "D",
+        "A(int x){...}"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "类中某方法定义如下：\ndouble fun(int a,int b){\nreturn a*1.0/b;\n}\n同一类内其它方法调用该方法的正确方式是（　）。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "int x = fun(1,2)"
+      ],
+      [
+        "B",
+        "int x = fun(1.0,2.0)"
+      ],
+      [
+        "C",
+        "double a = fun(1.0,2.0)"
+      ],
+      [
+        "D",
+        "double a = fun(1,2)"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "某个类的方法中，在成员变量和局部变量重名的情况下，（     ）变量优先使用。\n如果要使用（      ）变量，必须使用关键字（       ）进行限定。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "成员   局部    this"
+      ],
+      [
+        "B",
+        "实例   类      this"
+      ],
+      [
+        "C",
+        "类     实例    this"
+      ],
+      [
+        "D",
+        "局部   成员    this"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "已知：Student类的定义如下：\nclass Student{\n int age;\n}\n在主方法中，有如下两段程序代码A和B：\n int a;        //变量a是局部变量\n System.out.println(a);    //A段代码\n Student student=new Student();\n System.out.println(student.age);   //B段代码\n 关于A和B两段代码的合法性，说法正确的是：（      ）。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "A段不合法；B段合法，输出0"
+      ],
+      [
+        "B",
+        "都合法，将输出0和0"
+      ],
+      [
+        "C",
+        "A段合法，输出0；B段不合法"
+      ],
+      [
+        "D",
+        "都不合法"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "执行下面的程序，输出结果是（ ）。\npublic class Test {\n        int x= 12;\n         public void method(int x) {\n               x+=x;\n              System.out.println(x);\n         }\n         public static void main(String[] args){\n                 Test t = new Test();\n                 t.method(5);\n         }\n}",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "12"
+      ],
+      [
+        "B",
+        "5"
+      ],
+      [
+        "C",
+        "24"
+      ],
+      [
+        "D",
+        "10"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列哪些语句关于Java内存回收的说明是正确的? （   ）",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "内存回收程序负责释放无用内存"
+      ],
+      [
+        "B",
+        "内存回收程序允许程序员直接释放内存"
+      ],
+      [
+        "C",
+        "内存回收程序可以在指定的时间释放内存对象"
+      ],
+      [
+        "D",
+        "程序员必须创建一个线程来释放内存"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Test类的定义如下，程序的运行结果为下列哪一项？（    ）。\npublic class Test {\n  public Test() {\n    System.out.println(\"构造方法一被调用了。。\");\n  }\n  public Test(int x) {\n    System.out.println(\"构造方法二被调用了。。\");\n   }\n  public Test(boolean b) {\n    System.out.println(\"构造方法三被调用了。。\");\n   }\n     public static void main(String[] args) {\n      Test test=new Test(true);\n   }\n}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "构造方法二被调用了。。"
+      ],
+      [
+        "B",
+        "构造方法三被调用了。。"
+      ],
+      [
+        "C",
+        "构造方法一被调用了。。"
+      ],
+      [
+        "D",
+        "构造方法一被调用了。。\\n构造方法二被调用了。。\\n构造方法三被调用了。。"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面关于缺省构造方法的描述中正确的是（ ）。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "如果在一个类中定义的构造方法都声明了参数，Java编译器将为这个类创建一个缺省构造方法"
+      ],
+      [
+        "B",
+        "当类中没有定义任何构造方法时，Java编译器将为这个类创建缺省构造方法"
+      ],
+      [
+        "C",
+        "Java编译器会为所有的类创建缺省构造方法。"
+      ],
+      [
+        "D",
+        "缺省构造方法可以初始化其他方法中定义的变量"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有类Person定义如下：\npublic class Person {\n    String name = \"Peter\";\n    int age = 10 ;\n}\n以下操作的结果是：\n       Person p = new Person();\n       Person p1 = new Person();\n       p1.name = \"Alice\";\n       p1.age = 12;\n       System.out.print(p.name+\" \"+p.age+\" \");\n       System.out.println(p1.name+\" \"+p1.age+\" \");",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "Peter 10Alice 12"
+      ],
+      [
+        "B",
+        "null 0Alice 12"
+      ],
+      [
+        "C",
+        "Alice 12Alice 12"
+      ],
+      [
+        "D",
+        "Peter 10Peter 10"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "声明一个类是需要（   ）关键字。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "class"
+      ],
+      [
+        "B",
+        "private"
+      ],
+      [
+        "C",
+        "以上都是"
+      ],
+      [
+        "D",
+        "public"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对于类与对象的关系，以下说法错误的是（ ）。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "对象是创建类的模板"
+      ],
+      [
+        "B",
+        "对象由类来创建"
+      ],
+      [
+        "C",
+        "类是同类对象的抽象"
+      ],
+      [
+        "D",
+        "类是对象的类型"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "方法体内定义的变量称局部变量，下述关于局部变量的说法中错误的是（ ）。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "局部变量仅在所定义的代码块内（花括号对内）有效"
+      ],
+      [
+        "B",
+        "局部变量不能加修饰词修饰"
+      ],
+      [
+        "C",
+        "局部变量未经赋值不能使用"
+      ],
+      [
+        "D",
+        "局部变量不能与类中的成员变量同名"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面哪个函数是public void  aMethod(){...}的重载函数？（    ）",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "void  aMethod( ){...}"
+      ],
+      [
+        "B",
+        "public int  aMethod ( int m){...}"
+      ],
+      [
+        "C",
+        "public void  aMethod ( ){...}"
+      ],
+      [
+        "D",
+        "public int  aMethod(){...}"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "类ABC定义如下：\n1．public  class  ABC{\n2．   public int max( int  a, int  b) {   }\n3．\n4．}\n将以下哪个方法插入行3是不合法的。( )",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "public float max(float a, float b){  }"
+      ],
+      [
+        "B",
+        "private int max(int a, int b, int c){  }"
+      ],
+      [
+        "C",
+        "public float max(float a, float b, float c){  }"
+      ],
+      [
+        "D",
+        "public int max(int c, int d){  }"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "对于构造方法，下列叙述不正确的是（  ）。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "一般在创建新对象时，系统会自动调用构造方法"
+      ],
+      [
+        "B",
+        "构造方法是类的一种特殊方法，它的方法名必须与类名相同"
+      ],
+      [
+        "C",
+        "构造方法的主要作用是完成对类的对象的初始化工作"
+      ],
+      [
+        "D",
+        "构造方法的返回类型只能是void型，即在方法名前加void"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "构造方法中调用其他构造方法时，this(,,...)须放在代码的第（      ）行。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "无限制"
+      ],
+      [
+        "B",
+        "末"
+      ],
+      [
+        "C",
+        "可以不出现"
+      ],
+      [
+        "D",
+        "1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列关于数组的声明哪一个是错误的。",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "int[ ] a=new int[2];"
+      ],
+      [
+        "B",
+        "int[ ] a={1,2};"
+      ],
+      [
+        "C",
+        "int a[2]={1,2};"
+      ],
+      [
+        "D",
+        "int a[ ]={1,2};"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列代码的输出是（    ）。\ndouble[] myList = {1, 5, 5, 5, 5, 1};\ndouble max = myList[0];\nint indexOfMax = 0;\nfor (int i = 1; i < myList.length; i++) {\n      if (myList[i] >= max) {\n           max = myList[i];\n           indexOfMax = i;\n     }\n}\nSystem.out.println(indexOfMax);",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "5"
+      ],
+      [
+        "B",
+        "0"
+      ],
+      [
+        "C",
+        "1"
+      ],
+      [
+        "D",
+        "4"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面声明哪个顺序是正确的？( )",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "package, class, import"
+      ],
+      [
+        "B",
+        "import, package, class"
+      ],
+      [
+        "C",
+        "class, import, package"
+      ],
+      [
+        "D",
+        "package, import, class"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "已定义了一个数组：int[] scores = new int[30]; 如下访问正确的是：（   ）",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "int len = scores.length();"
+      ],
+      [
+        "B",
+        "int len = scores.size();"
+      ],
+      [
+        "C",
+        "int len = scores.length;"
+      ],
+      [
+        "D",
+        "int len = scores.size;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "定义了一维int型数组a[10]后，下面错误的引用是(　) 。",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "a[0]=5*2"
+      ],
+      [
+        "B",
+        "a[0]=1"
+      ],
+      [
+        "C",
+        "a[10]=2"
+      ],
+      [
+        "D",
+        "a[1]=a[2]*a[0]"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下语句不能通过编译的是(  )。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "int d=new int[];"
+      ],
+      [
+        "B",
+        "int b[];"
+      ],
+      [
+        "C",
+        "int[] a={1,2,3,4};"
+      ],
+      [
+        "D",
+        "int c[]=new int[3];"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "类中的一个成员方法被下面哪个修饰符修饰时，该方法只能在本类被访问 (    )。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "private"
+      ],
+      [
+        "B",
+        "default"
+      ],
+      [
+        "C",
+        "protected"
+      ],
+      [
+        "D",
+        "public"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面关于数组声明和初始化的语句那个有语法错误？（   ）",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "int[][] a4=new int[3][3];"
+      ],
+      [
+        "B",
+        "String a2[]={\"string1\",\"string1\",\"string1\"};"
+      ],
+      [
+        "C",
+        "String a3[]=new String(3);"
+      ],
+      [
+        "D",
+        "int a1[]={3,4,5};"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列语句会造成数组new int[10]越界是（ ）。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "a[9]=10;"
+      ],
+      [
+        "B",
+        "a[0] += 9;"
+      ],
+      [
+        "C",
+        "a[9]"
+      ],
+      [
+        "D",
+        "for(int i=0;i<=10;i++)  a[i]++;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "声明了一个数组 double[] list = {3.4, 2.0, 3.5, 5.5}, list[1] 是（   ）。",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "3.5"
+      ],
+      [
+        "B",
+        "3.4"
+      ],
+      [
+        "C",
+        "2.0"
+      ],
+      [
+        "D",
+        "不确定"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列代码的执行结果是（   ）。\npublic class Main {\n      public static void main(String[] args) {\n         int s = 0;\n         int myArray[] = {10,20,30,40,50,60,70,80,90,100};\n         for (int i=0; i<myArray.length;i++)\n             if (i%2==1) {\n                 s += myArray[i];\n             }\n         System.out.println(s);\n      }\n}",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "250"
+      ],
+      [
+        "B",
+        "350"
+      ],
+      [
+        "C",
+        "300"
+      ],
+      [
+        "D",
+        "200"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于被私有访问控制符private修饰的成员变量，以下说法正确的是（  ）",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "可以被两种类访问和引用：该类本身、该类的所有子类"
+      ],
+      [
+        "B",
+        "只能被同一个包中的类访问"
+      ],
+      [
+        "C",
+        "只能被该类自身所访问和修改"
+      ],
+      [
+        "D",
+        "可以被三种类所引用：该类自身、与它在同一个包中的其他类、在其他包中的该类的子类"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "声明成员变量时,如果不使用任何访问控制符(public, protected, private)，则以下哪种类型的类不能对该成员进行直接访问 （     ） .",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "同一包中的非子类"
+      ],
+      [
+        "B",
+        "同一类"
+      ],
+      [
+        "C",
+        "同一包中的子类"
+      ],
+      [
+        "D",
+        "不同包中的子类"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "当访问无效的数组下标时，会发生（ ）。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "中止程序"
+      ],
+      [
+        "B",
+        "抛出异常"
+      ],
+      [
+        "C",
+        "系统崩溃"
+      ],
+      [
+        "D",
+        "直接跳过"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于类中成员变量的作用范围，下述说法中正确的是（ ）。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "用private修饰的成员变量可以在main方法中直接使用"
+      ],
+      [
+        "B",
+        "用static修饰的成员变量只能在用static修饰的方法中使用"
+      ],
+      [
+        "C",
+        "只有用public修饰的变量才能在所有方法中使用"
+      ],
+      [
+        "D",
+        "类中所有成员变量在所有成员方法中有效"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如下代码运行后，list2的输出是（    ）。\nclass Test {\n      public static void main(String[] args) {\n      int[] list1 = {1, 2, 3};\n      int[] list2 = {1, 2, 3};\n      list2 = list1;\n      list1[0] = 0;  list1[1] = 1;  list2[2] = 2;\n      for (int i = 0; i < list2.length; i++)\n            System.out.print(list2[i] + \" \");\n      }\n}",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "0 1 3"
+      ],
+      [
+        "B",
+        "1 1 1"
+      ],
+      [
+        "C",
+        "0 1 2"
+      ],
+      [
+        "D",
+        "1 2 3"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有以下程序片段，下列哪个选项不能插入到行1。（      ）\n1)\n2) public  class  Interesting{\n3)      //do sth\n4) }",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "import java.awt.*;"
+      ],
+      [
+        "B",
+        "public class MyClass{ }"
+      ],
+      [
+        "C",
+        "class OtherClass{   }"
+      ],
+      [
+        "D",
+        "package mypackage;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面程序的运行结果是（ ）\nmain() {\n    int x=30;\n    int[] numbers=new int[x];\n    x=60;\n    System.out.println(numbers.length);\n}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "50"
+      ],
+      [
+        "B",
+        "30"
+      ],
+      [
+        "C",
+        "20"
+      ],
+      [
+        "D",
+        "60"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "定义了int型二维数组a[6][7]后，数组元素a[3][4]前的数组元素个数为( )",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "17"
+      ],
+      [
+        "B",
+        "18"
+      ],
+      [
+        "C",
+        "24"
+      ],
+      [
+        "D",
+        "25"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下数组定义正确的是（  ）。",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "int[] scores = int[30];"
+      ],
+      [
+        "B",
+        "int primes = {2,3,4,5,7,11};"
+      ],
+      [
+        "C",
+        "int[] score = new int[30];"
+      ],
+      [
+        "D",
+        "int[] primes = new{2,3,5,7,11};"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "执行完以下代码int [ ]  x = new int[10]；后，以下哪项说明是正确的（   ）",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "x[9]未定义"
+      ],
+      [
+        "B",
+        "x[9]为0"
+      ],
+      [
+        "C",
+        "x[0]为空"
+      ],
+      [
+        "D",
+        "x[10]为0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面说法正确的是（）",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "如果某文件的源代码中定义了一个public的接口，接口名和文件名可以不同"
+      ],
+      [
+        "B",
+        "如果源代码中有import语句，则该语句必须放在在代码的第一行"
+      ],
+      [
+        "C",
+        "如果源代码中有main方法，则该方法必须被放在代码的第一行"
+      ],
+      [
+        "D",
+        "如果源代码中有package语句，则该语句必须放在代码的第一行"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面声明数组的写法错误（    ）。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "int  a[ ];"
+      ],
+      [
+        "B",
+        "int[ ][3] a;"
+      ],
+      [
+        "C",
+        "int[ ][ ]  a;"
+      ],
+      [
+        "D",
+        "int[ ]  a;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Java程序默认引用的包是（     ）。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "java.lang包"
+      ],
+      [
+        "B",
+        "java.text包"
+      ],
+      [
+        "C",
+        "java.util包"
+      ],
+      [
+        "D",
+        "java.awt包"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "访问修饰符作用范围由大到小是（ ）",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "private-protected-default-public"
+      ],
+      [
+        "B",
+        "private-default-protected-public"
+      ],
+      [
+        "C",
+        "public-default-protected-private"
+      ],
+      [
+        "D",
+        "public-protected-default-private"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若int a[][]={{123,345,334},{1,2},{3,4}};  则 a[2][1]=（    ）。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "3"
+      ],
+      [
+        "B",
+        "1"
+      ],
+      [
+        "C",
+        "2"
+      ],
+      [
+        "D",
+        "4"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "给出下面代码，关于该程序以下哪个说法是正确的？（    ）\npublic class Person{\n     static int arr[] = new int[5];\n     public static void main(String a[]) {\n          System.out.println(arr[0]);\n     }\n}",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "编译时将产生错误"
+      ],
+      [
+        "B",
+        "编译时正确，运行时将产生错误"
+      ],
+      [
+        "C",
+        "输出0"
+      ],
+      [
+        "D",
+        "输出空"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面的（   ）操作符可以使其修饰的变量只能对同包中的类或子类可见",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "private"
+      ],
+      [
+        "B",
+        "protected"
+      ],
+      [
+        "C",
+        "default"
+      ],
+      [
+        "D",
+        "public"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "已定义数组：int[] scores = {100,80,50,70,60}; 以下访问不正确的是（   ）",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "int x = scores[scores.length-1];;"
+      ],
+      [
+        "B",
+        "int x = scores[0];"
+      ],
+      [
+        "C",
+        "int x = scores[1];"
+      ],
+      [
+        "D",
+        "int x = scores[5];;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有如下程序代码，执行后输出结果是：（      ）。\nint[] arr1=new int[10];\nint[] arr2=new int[arr1.length];\nSystem.out.println(arr1==arr2);",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "true"
+      ],
+      [
+        "B",
+        "false"
+      ],
+      [
+        "C",
+        "0"
+      ],
+      [
+        "D",
+        "1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下对封装的描述正确的是",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "封装的主要作用在于对外隐藏内部实现细节，增强程序的安全性"
+      ],
+      [
+        "B",
+        "封装的意义不大，因此在编码时尽量不要使用"
+      ],
+      [
+        "C",
+        "只能对一个类中的方法进行封装，不能对属性进行封装"
+      ],
+      [
+        "D",
+        "如果子类继承了父类，对于父类中进行封装的方法，子类仍然可以直接调用"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下二维数组的定义正确的是（   ）",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "int[][] a=new int[][3]"
+      ],
+      [
+        "B",
+        "int a[][]=new int[3][]"
+      ],
+      [
+        "C",
+        "int[][] a=new int[][]"
+      ],
+      [
+        "D",
+        "int a[3][2]={{1,2},{1,3},{2,3}}"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下哪句是错误的？",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "import是把要import的类的源代码插入到import语句所在的地方"
+      ],
+      [
+        "B",
+        "import是告诉编译器要import的包的信息"
+      ],
+      [
+        "C",
+        "编译器在编译的时候需要能访问得到要import的类的编译结果文件"
+      ],
+      [
+        "D",
+        "编译器会搜索要import的类的编译结果文件而不是源文件"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "将以下哪种方法插入行6是不合法的。（   ） 。\n1．public  class  Test1 {\n2．   public  float  aMethod（float a，float b） throws\n3．   IOException {      }\n4． }\n5．public  class  Test2  extends  Test1{\n6．\n7．}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "public  int  aMethod（int a，int b）throws  Exception{ }"
+      ],
+      [
+        "B",
+        "float  aMethod（float  a，float  b）{ }"
+      ],
+      [
+        "C",
+        "public  int  aMethod（int a，int  b）throws IOException{ }"
+      ],
+      [
+        "D",
+        "public  float  aMethod（float  p，float q）{ }"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面是People和Child类的定义和构造方法，每个构造方法都输出编号。在执行new Child(\"mike\")的时候都有哪些构造方法被顺序调用？请选择输出结果 (    )\nclass People {\n        String name;\n        public People() {\n               System.out.print(1);\n        }\n        public People(String name) {\n               System.out.print(2);\n               this.name = name;\n        }\n}\nclass Child extends People {\n       People father;\n       public Child(String name) {\n              System.out.print(3);\n              this.name = name;\n              father = new People(name + \":F\");\n       }\n       public Child(){\n             System.out.print(4);\n       }\n}",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "132"
+      ],
+      [
+        "B",
+        "32"
+      ],
+      [
+        "C",
+        "312"
+      ],
+      [
+        "D",
+        "432"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下对继承的描述错误的是",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "父类更具有通用性，子类更具体"
+      ],
+      [
+        "B",
+        "Java中的继承允许一个子类继承多个父类"
+      ],
+      [
+        "C",
+        "当实例化子类时会递归调用父类中的构造方法"
+      ],
+      [
+        "D",
+        "Java中的继承存在着传递性"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Java中（  ） 。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "一个子类可以有一个父类，但一个父类可以有多个子类"
+      ],
+      [
+        "B",
+        "一个子类可以有多个父类，但一个父类只可以有一个子类"
+      ],
+      [
+        "C",
+        "上述说法都不对"
+      ],
+      [
+        "D",
+        "一个子类可以有多个父类，一个父类也可以有多个子类"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下对重载描述错误的是",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "方法的返回值类型不是区分方法重载的条件"
+      ],
+      [
+        "B",
+        "重载要求方法名相同，参数列表不同"
+      ],
+      [
+        "C",
+        "方法重载只能发生在一个类的内部"
+      ],
+      [
+        "D",
+        "构造方法不能重载"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下关于继承的叙述正确的是（     ）。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "在Java中一个类只能实现一个接口"
+      ],
+      [
+        "B",
+        "在Java中类只允许单一继承"
+      ],
+      [
+        "C",
+        "在Java中一个类不能同时继承一个类和实现一个接口"
+      ],
+      [
+        "D",
+        "在Java中接口只允许单一继承"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面的概念，哪个不是关于对象的多态性的体现。",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "方法的覆盖"
+      ],
+      [
+        "B",
+        "对象的上、下转型"
+      ],
+      [
+        "C",
+        "方法的继承"
+      ],
+      [
+        "D",
+        "方法的重载"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在面向对象方法中，继承定义了超类和子类的概念，子类在维持原有父类中方法签名不变的前提下，用适合于自己要求的实现去置换父类中的相应方法的实现称为____________。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "覆盖（overriding）"
+      ],
+      [
+        "B",
+        "多态"
+      ],
+      [
+        "C",
+        "继承"
+      ],
+      [
+        "D",
+        "重载（overloading）"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下（ ）添加到ComputerBook中不会出错\nclass Book{\n    protected int getPrice(){\n        return 30;\n    }\n}\npublic class ComputerBook extends Book{\n}",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "public int getPrice(){return 10;}"
+      ],
+      [
+        "B",
+        "protected float getPrice(){}"
+      ],
+      [
+        "C",
+        "int getPrice(){}"
+      ],
+      [
+        "D",
+        "protected int getPrice(int page){}"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在使用super 和this关键字时，以下描述正确的是",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "在子类构造方法中使用super（）显示调用父类的构造方法，super（）必须写在子类构造方法的第一行，否则编译不通过"
+      ],
+      [
+        "B",
+        "super（）和this（）不一定要放在构造方法内第一行"
+      ],
+      [
+        "C",
+        "this（）和super（）可以同时出现在一个构造函数中"
+      ],
+      [
+        "D",
+        "this（）和super（）可以在static环境中使用，包括static方法和static语句块"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面说法不正确的是(     )",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "一个子类的对象可以接收父类对象能接收的消息；"
+      ],
+      [
+        "B",
+        "父类比它的子类的方法更多；"
+      ],
+      [
+        "C",
+        "当子类对象和父类对象能接收同样的消息时，它们针对消息产生的行为可能不同；"
+      ],
+      [
+        "D",
+        "子类在构造函数中可以使用super( )来调用父类的构造函数；"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下描述正确的有",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "构造方法可以重写"
+      ],
+      [
+        "B",
+        "方法的重载与返回值类型无关"
+      ],
+      [
+        "C",
+        "方法的重写应用在一个类的内部"
+      ],
+      [
+        "D",
+        "构造方法不能重载"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "一个类在重写其父类的某个方法时，在重写方法的定义中，哪个部分可以与父类被重写方法的定义不同？",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "方法名"
+      ],
+      [
+        "B",
+        "方法形参"
+      ],
+      [
+        "C",
+        "访问修饰符"
+      ],
+      [
+        "D",
+        "返回值类型"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "类Teacher和Student是类Person的子类,下面的代码中最后一句语句的运行结果是(  ).\nPerson p;\nTeacher t;\nStudent s;\n//p,t and s are all non-null.\nif(t instanceof Person)  {s=(Student)t;}",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "表达式是合法的"
+      ],
+      [
+        "B",
+        "编译时正确，但运行时错误"
+      ],
+      [
+        "C",
+        "表达式是错误的"
+      ],
+      [
+        "D",
+        "将构造一个Student对象"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下程序运行结果是\npublic class Test extends Father{\n    private String name=\"test\";\n    public static void main(String[] args){\n        Test test = new Test();\n        System.out.println(test.getName());\n    }\n}\nclass Father{\n    private String name=\"father\";\n    public String getName() {\n        return name;\n    }\n}",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "运行出错，无输出"
+      ],
+      [
+        "B",
+        "test"
+      ],
+      [
+        "C",
+        "编译出错"
+      ],
+      [
+        "D",
+        "father"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "A派生出子类B，B派生出子类C，对于如下Java源代码正确的说法是（）。\n1.    A  a0 =new  A();\n2.    A  a1 =new  B();\n3.    A  a2 =new  C();",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "只有第1行能通过编译"
+      ],
+      [
+        "B",
+        "第1、2行能通过编译，但第3行编译出错"
+      ],
+      [
+        "C",
+        "第1、2、3行能通过编译，但第2、3行运行时出错"
+      ],
+      [
+        "D",
+        "第1行、第2行和第3行的声明都是正确的"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "将以下哪种方法插入行3是不合法的。\n1．public  class  Test1{\n2．         public  float  aMethod（float  a，float  b）{   }\n3．\n4．}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "public  float  aMethod（float  a， float  b，float  c）{  }"
+      ],
+      [
+        "B",
+        "public  float  aMethod（float  c，float d）{  }"
+      ],
+      [
+        "C",
+        "private float aMethod（int a，int b，int c）{  }"
+      ],
+      [
+        "D",
+        "public  int  aMethod（int  a， int b）{  }"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设有下面Java代码段，则以下选项正确的是？\na = Integer.parseInt(“12”);\nb = Integer.valueOf(“12”).intValue();",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "a和b都是整数类对象并且值相等。"
+      ],
+      [
+        "B",
+        "a和b都是整数类型变量并且值相等。"
+      ],
+      [
+        "C",
+        "a是整数类型变量，b是整数类对象。"
+      ],
+      [
+        "D",
+        "a是整数类对象，b是整数类型变量。"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在java.lang.Integer类中，哪个方法用于获得一个整数的二进制形式的字符串？（     ）",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "toString(int i)"
+      ],
+      [
+        "B",
+        "toHexString(int i)"
+      ],
+      [
+        "C",
+        "toBinaryString(int i)"
+      ],
+      [
+        "D",
+        "toOctalString(int i)"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于基本类型的数据与其封装类对象之间的转换，下面说法错误的是(      )。",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "Integer类型的对象可以通过拆箱，可以自动转化为int基本类型的数值。"
+      ],
+      [
+        "B",
+        "long类型的数据通过装箱操作，可以自动封装为Long类型对象"
+      ],
+      [
+        "C",
+        "int类型的数值通过装箱操作，可以自动封装为Long 类型对象"
+      ],
+      [
+        "D",
+        "int类型的数据通过装箱操作，可以自动转换成Integer类型的对象。"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Java中，Float类拆箱方法是",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "floatValue()"
+      ],
+      [
+        "B",
+        "valueOf()"
+      ],
+      [
+        "C",
+        "toString()"
+      ],
+      [
+        "D",
+        "Float()"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设有下面Java程序，请阅读程序并完成选择，以下哪个表达式的值为true？\npublic class Sample{\n    long length;\n    public Sample(long l){ length = l; }\n    public static void main(String arg[]){\n        Sample s1, s2, s3;\n        s1 = new Sample(21L);\n        s2 = new Sample(21L);\n        s3 = s2;\n        long m = 21L;\n    }\n}",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "s2 == s3;"
+      ],
+      [
+        "B",
+        "m == s1;"
+      ],
+      [
+        "C",
+        "s1.equals(m);"
+      ],
+      [
+        "D",
+        "s1 == s2;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面选项中能把字符串转换成float类型的是？（  ）",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "float value = new Float(str);"
+      ],
+      [
+        "B",
+        "float value = (new Float()).parseFloat(str)"
+      ],
+      [
+        "C",
+        "float value = Float.floatValue(str);"
+      ],
+      [
+        "D",
+        "float value = Float.parseFloat(str)；"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面哪条语句可以将字符串s转换为double类型的值d?",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "d = Double.valueOf(s).doubleValue();"
+      ],
+      [
+        "B",
+        "d = (new Double(s)).doubleValue();"
+      ],
+      [
+        "C",
+        "d = Double.parseDouble(s);"
+      ],
+      [
+        "D",
+        "以上所有"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有如下程序代码，哪处出现编译错误？（     ）\nfinal class Father{           //A\n int a=100;\n}\n class Child  extends Father{  //B\n  int b=200;\n }\n public class B{              //C\n  public static void main(String[] args) {\n   Child child=new Child();   //D\n }\n }",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "C处"
+      ],
+      [
+        "B",
+        "D处"
+      ],
+      [
+        "C",
+        "B处"
+      ],
+      [
+        "D",
+        "A处"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若需要定义一个类属性或类方法，应使用哪种修饰符？（      ）",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "static"
+      ],
+      [
+        "B",
+        "private"
+      ],
+      [
+        "C",
+        "public"
+      ],
+      [
+        "D",
+        "package"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下代码的输出结果为（ ）。\npublic class Pass{\n     static int j = 20;\n     public void amethod(int x){\n         x = x*2;\n         j = j*2;\n    }\n    public static void main(String args[]){\n        int i = 10;\n        Pass p = new Pass();\n        p.amethod(i);\n        System.out.println(i+\" and \"+j);\n  }\n}",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "20 and 40"
+      ],
+      [
+        "B",
+        "10 and 20"
+      ],
+      [
+        "C",
+        "10 and 40"
+      ],
+      [
+        "D",
+        "错误:方法参数与变量不匹配"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在main方法中第二条println语句的输出是什么？\npublic class Foo {\n  int i;\n  static int s;\n  public static void main(String[] args) {\n    Foo f1 = new Foo();\n    System.out.println(\"f1.i is \" + f1.i + \" f1.s is \" + f1.s);\n    Foo f2 = new Foo();\n    System.out.println(\"f2.i is \" + f2.i + \" f2.s is \" + f2.s);\n    Foo f3 = new Foo();\n    System.out.println(\"f3.i is \" + f3.i + \" f3.s is \" + f3.s);\n  }\n  public Foo() {\n    i++;\n    s++;\n  }\n}",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "f2.i is 2 f2.s is 2"
+      ],
+      [
+        "B",
+        "f2.i is 1 f2.s is 1"
+      ],
+      [
+        "C",
+        "f2.i is 1 f2.s is 2"
+      ],
+      [
+        "D",
+        "f2.i is 2 f2.s is 1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面（  ）修饰符修饰的变量是所有同一个类生成的对象共享的。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "public"
+      ],
+      [
+        "B",
+        "static"
+      ],
+      [
+        "C",
+        "final"
+      ],
+      [
+        "D",
+        "private"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有如下程序代码，哪处出现编译错误？（     ）\nclass Father {\n int a = 100;    // A\n final public void print() { // B\n  System.out.println(a);\n }\n}\nclass Child extends Father {\n int a = 200;                // C\n public void print() {       // D\n  System.out.println(a);\n }\n}",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "A处"
+      ],
+      [
+        "B",
+        "C处"
+      ],
+      [
+        "C",
+        "D处"
+      ],
+      [
+        "D",
+        "B处"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于以下程序代码的说明正确的是（      ） 。\n1．class  HasStatic{\n2．    private  static  int  x=100；\n3．    public  static  void  main(String[  ]  args){\n4．        HasStatic  hs1=new  HasStatic(  );\n5．        hs1.x++;\n6．        HasStatic  hs2=new  HasStatic(  );\n7．        hs2.x++;\n8．        hs1=new  HasStatic( );\n9．        hs1.x++;\n10．       HasStatic.x--;\n11．       System.out.println(“x=”+x);\n12．    }\n13． }",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "程序通过编译，输出结果为：x=103"
+      ],
+      [
+        "B",
+        "程序通过编译，输出结果为：x=102"
+      ],
+      [
+        "C",
+        "10行不能通过编译，因为x是私有静态变量"
+      ],
+      [
+        "D",
+        "5行不能通过编译，因为引用了私有静态变量"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面代码的输出的结果是()。\nclass Person\n{     static String country=\"A城市\" ;\n}\npublic class Test\npublic static void main(String args[])\n    {\n        Person p1=new Person();\n        Person p2=new Person();\n        p1.country=\"B城市\";\n        p2.country=\"C城市\";\n        System.out.println(p1.country);\n        System.out.println(p2.country);\n    }\n}",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "A城市\\nC城市"
+      ],
+      [
+        "B",
+        "B城市\\nC城市"
+      ],
+      [
+        "C",
+        "B城市\\nB城市"
+      ],
+      [
+        "D",
+        "C城市\\nC城市"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "MAX_LENGTH是int型public成员变量，变量值保持为常量55，用简短语句定义这个变量（ ）。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "public final int MAX_LENGTH=55"
+      ],
+      [
+        "B",
+        "final int MAX_LENGTH=55"
+      ],
+      [
+        "C",
+        "final public int MAX_LENGTH=55"
+      ],
+      [
+        "D",
+        "public int MAX_LENGTH=55"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "声明常量时需要使用的关键字是",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "static"
+      ],
+      [
+        "B",
+        "class"
+      ],
+      [
+        "C",
+        "public"
+      ],
+      [
+        "D",
+        "final"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在Java中用什么关键字修饰的方法可以直接通过类名来调用？（     ）",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "static"
+      ],
+      [
+        "B",
+        "final"
+      ],
+      [
+        "C",
+        "void"
+      ],
+      [
+        "D",
+        "private"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "分析如下代码：\npublic class Test {\n  private int t;\n  public static void main(String[] args) {\n    int x;\n    System.out.println(t);\n  }\n}",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "t是非静态的，不能在静态的main方法中引用。"
+      ],
+      [
+        "B",
+        "变量x没有初始化，所以会引起错误。"
+      ],
+      [
+        "C",
+        "变量t是私有的，因此不能在main方法中访问。"
+      ],
+      [
+        "D",
+        "变量t没有初始化，所以会引起错误。"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "为AB类的一个无形式参数无返回值的方法method书写方法头，使得使用类名AB作为前缀就可以调用它，该方法头的形式为（ ）。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "final void method( )"
+      ],
+      [
+        "B",
+        "static void method( )"
+      ],
+      [
+        "C",
+        "abstract void method( )"
+      ],
+      [
+        "D",
+        "public void method( )"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "编译和运行下列程序会出现什么样的结果（ ）。\npublic class Ref {\n       public static void main(String[] args){\n             Ref r = new Ref();\n             r.amethod(r);\n       }\n       public void amethod(Ref r){\n             int i = 99;\n             multi(r);\n       System.out.println(i);\n       }\n       public void multi(Ref r){\n             r.i = r.i * 2;\n       }\n}",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "输出：99"
+      ],
+      [
+        "B",
+        "运行出错"
+      ],
+      [
+        "C",
+        "编译出错"
+      ],
+      [
+        "D",
+        "输出：198"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列哪个类的声明是正确的？（    ）",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "public abstract class Car{}"
+      ],
+      [
+        "B",
+        "abstract private move(){}"
+      ],
+      [
+        "C",
+        "abstract final class HI{}"
+      ],
+      [
+        "D",
+        "protected private number;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "当编译运行下列代码时，运行结果是什么？\npublic class Main{\n  int arr[]=new int[10];\n  public static void main(String args[]){\n     System.out.println(arr[1]);\n  }\n}",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "输出null"
+      ],
+      [
+        "B",
+        "输出0"
+      ],
+      [
+        "C",
+        "编译错误"
+      ],
+      [
+        "D",
+        "编译正确，但运行时出现异常"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假设类A有如下定义，且a是A类的一个实例，则必定错误的选项是（   ）。\nclass  A {\n      int  i;\n      static  String  s;\n       void  method1() {   }\n       static  void  method2()  {   }\n}",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "a.method1();"
+      ],
+      [
+        "B",
+        "A.method2() ;"
+      ],
+      [
+        "C",
+        "A.method1();"
+      ],
+      [
+        "D",
+        "System.out.println(a.i)；"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "类的实例方法表示的是什么？（ ）",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "类对象的行为"
+      ],
+      [
+        "B",
+        "类的属性"
+      ],
+      [
+        "C",
+        "类的行为"
+      ],
+      [
+        "D",
+        "父类对象的行为"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在Java中，给出如下代码:\nclass Test{\n    private int m;\n    public static void fun() {\n　　　　//some code ...\n　 }\n}\n如何修改成员变量m的定义，让m可被函数fun()直接访问，以下选项正确的是?",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "将private int m 改为 public int m"
+      ],
+      [
+        "B",
+        "将private int m 改为 static int m"
+      ],
+      [
+        "C",
+        "将private int m 改为protected int m"
+      ],
+      [
+        "D",
+        "将private int m 改为 int m"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于接口，下面的叙述错误的是（）。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "抽象类在实现接口时，必须实现该接口中声明的所有方法"
+      ],
+      [
+        "B",
+        "抽象类在实现接口时，可以不实现该接口中声明的所有方法"
+      ],
+      [
+        "C",
+        "一个接口可以多继承多个接口"
+      ],
+      [
+        "D",
+        "一个类可以实现多个接口"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列选项中，用于实现接口的关键字是 （ ）。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "interface"
+      ],
+      [
+        "B",
+        "implements"
+      ],
+      [
+        "C",
+        "abstract"
+      ],
+      [
+        "D",
+        "class"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列哪个叙述是正确的？",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "允许接口中只有一个抽象方法"
+      ],
+      [
+        "B",
+        "如果一个非抽象类实现某个接口，那么它可以只重写接口中的部分方法"
+      ],
+      [
+        "C",
+        "一个类最多可以实现两个接口"
+      ],
+      [
+        "D",
+        "如果一个抽象类实现某个接口，那么它必须要重写接口中的全部方法"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列关于抽象类的说法哪一个是错误的。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "抽象类能创建(new)实例"
+      ],
+      [
+        "B",
+        "含抽象方法的类为抽象类"
+      ],
+      [
+        "C",
+        "子类有未实现父类的抽象方法时仍为抽象类"
+      ],
+      [
+        "D",
+        "子类实现所有抽象方法时不再是抽象类"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若A1、A2为已定义的接口 ,以下接口定义中没有语法错误的是（        ） 。",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "abstract  interface  B  extends  A1,A2  { abstract  void  print(){  };}"
+      ],
+      [
+        "B",
+        "interface  B {  void print()  {  } }"
+      ],
+      [
+        "C",
+        "interface  B  {  void  print();}"
+      ],
+      [
+        "D",
+        "abstract  interface  B { void print() }"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下描述错误的有",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "abstract 可以修饰类、接口、方法"
+      ],
+      [
+        "B",
+        "abstract 可以修饰变量"
+      ],
+      [
+        "C",
+        "abstract修饰的类主要用于被继承"
+      ],
+      [
+        "D",
+        "abstract修饰的类，其子类也可以是abstract修饰的"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于接口的声明，错误的是(  ) 。",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "接口中的成员属性在声明时可以省略修订关键字"
+      ],
+      [
+        "B",
+        "接口中所有的成员属性都是public static final修订的常量"
+      ],
+      [
+        "C",
+        "接口中所有的方法都是public abstract final修订的"
+      ],
+      [
+        "D",
+        "接口中所有的方法都是public abstract修订的"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于抽象类，下面叙述错误的是（） 。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "抽象类中可以没有抽象方法"
+      ],
+      [
+        "B",
+        "抽象类可以实例化"
+      ],
+      [
+        "C",
+        "包含抽象方法的类必须是抽象类"
+      ],
+      [
+        "D",
+        "抽象方法只需要声明，不需要实现"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": " 以下代码，描述正确的有\ninterface IDemo{\n    public static final String name;1\n    void print();2\n    public void getInfo();3\n}\nabstract class Person implements IDemo{4\n    public void print(){\n    }\n}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "第3行错误，没有方法的实现"
+      ],
+      [
+        "B",
+        "第1行错误，没有给变量赋值"
+      ],
+      [
+        "C",
+        "第2行错误，方法没有修饰符"
+      ],
+      [
+        "D",
+        "第4行错误，没有实现接口的全部方法"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下对抽象类的描述正确的是",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "抽象类可以通过new关键字直接实例化"
+      ],
+      [
+        "B",
+        "有抽象方法的类一定是抽象类"
+      ],
+      [
+        "C",
+        "抽象类必须提供抽象方法"
+      ],
+      [
+        "D",
+        "抽象类没有构造方法"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "若在某一个类定义中定义有如下的方法：abstract void performDial( );该方法属于（    ）。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "抽象方法"
+      ],
+      [
+        "B",
+        "最终方法"
+      ],
+      [
+        "C",
+        "空方法"
+      ],
+      [
+        "D",
+        "接口方法"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在使用interface声明一个接口时，只可以使用（    ）修饰符修饰该接口。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "public"
+      ],
+      [
+        "B",
+        "protected"
+      ],
+      [
+        "C",
+        "private  protected"
+      ],
+      [
+        "D",
+        "private"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列选项中，用于定义接口的关键字是（ ）。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "interface"
+      ],
+      [
+        "B",
+        "implements"
+      ],
+      [
+        "C",
+        "class"
+      ],
+      [
+        "D",
+        "abstract"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在Java中，能实现多重继承效果的方式是（ ）。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "继承"
+      ],
+      [
+        "B",
+        "适配器"
+      ],
+      [
+        "C",
+        "内部类"
+      ],
+      [
+        "D",
+        "接口"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "欲构造ArrayList类的一个实例，此类继承了List接口，下列哪个方法是正确的？（    ）",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "ArrayList myList=new List（）；"
+      ],
+      [
+        "B",
+        "ArrayList myList=new Object（）；"
+      ],
+      [
+        "C",
+        "List myList=new ArrayList（）；"
+      ],
+      [
+        "D",
+        "List myList=new List（）；"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "getCustomerInfo()方法如下，try中可以捕获三种类型的异常，如果在该方法运行中产生了一个IOException，将会输出什么结果（   ）。\npublic void getCustomerInfo() {\n            try {\n              // do something that may cause an Exception\n            } catch (java.io.FileNotFoundException  ex){\n                  System.out.print(\"FileNotFoundException!\");\n            } catch (java.io.IOException  ex){\n                System.out.print(\"IOException!\");\n            } catch (java.lang.Exception  ex){\n                 System.out.print(\"Exception!\");\n            }\n}",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "IOException!Exception!"
+      ],
+      [
+        "B",
+        "FileNotFoundException!IOException!Exception!"
+      ],
+      [
+        "C",
+        "FileNotFoundException!IOException!"
+      ],
+      [
+        "D",
+        "IOException!"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "已知方法test()定义如下，在方法unsafe()运行正常的情况下哪条语句将肯定不会被输出？\npublic void test( ){\ntry {\n   unsafe();\n   System.out.println(\"Test 4\");\n} catch(SafeException e) {\n   System.out.println(\"Test 3\");\n}finally{\n   System.out.println(\"Test 2\");\n}\n   System.out.println(\"Test 1\");\n}",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "Test 4"
+      ],
+      [
+        "B",
+        "Test 1"
+      ],
+      [
+        "C",
+        "Test 2"
+      ],
+      [
+        "D",
+        "Test 3"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下描述不正确的有",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "finally块可以省略"
+      ],
+      [
+        "B",
+        "可以使用多重catch块"
+      ],
+      [
+        "C",
+        "try块不可以省略"
+      ],
+      [
+        "D",
+        "catch块和finally块可以同时省略"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如下程序会抛出（ ）类型的异常？\npublic class Test {\n  public static void main(String[] args) {\n    System.out.println(1 / 0);\n  }\n}",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "ArithmeticException"
+      ],
+      [
+        "B",
+        "StringIndexOutOfBoundsException"
+      ],
+      [
+        "C",
+        "ArrayIndexOutOfBoundsException"
+      ],
+      [
+        "D",
+        "ClassCastException"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "已知下列代码，如果方法oneMethod()运行异常，则下列哪个语句肯定不会被输出？\npublic void example(){\n   try {\n   oneMethod();\n   System.out.println(\"condition1\");\n}catch(ArrayIndexOutOfBoundsException e) {\n   System.out.println(\"condition2\");\n}catch(Exception e) {\n   System.out.println(\"condition3\");\n}finally{\n   System.out.println(\"condition4\");\n}",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "condition2"
+      ],
+      [
+        "B",
+        "condition4"
+      ],
+      [
+        "C",
+        "condition3"
+      ],
+      [
+        "D",
+        "condition1"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列哪种异常是检查型异常，需要在编写程序时声明 （     ）.",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "FileNotFoundException"
+      ],
+      [
+        "B",
+        "IndexOutOfBoundsException"
+      ],
+      [
+        "C",
+        "NullPointerException"
+      ],
+      [
+        "D",
+        "ClassCastException"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "给定一个未完成的方法 ，代码如下：\n//此处添加方法的声明\n{\n   int success=connect();\n   if(success==-1)\n      throw new TimedOutException();\n}\n已知TimedOutException不属于RuntimeException，那么在第一行注释位置上填写哪段代码能够正确完成该方法的声明？",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "public void MyMethod()"
+      ],
+      [
+        "B",
+        "public throws TimedOutException void MyMethod()"
+      ],
+      [
+        "C",
+        "public void MyMethod() throws TimedOutException"
+      ],
+      [
+        "D",
+        "public void MyMethod() throw TimeOutException"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于异常(Exception)，下列描述错误的是（   ）。",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "异常可以用try{  }catch(Exception e){  }来捕获并进行处理"
+      ],
+      [
+        "B",
+        "如果某异常继承RuntimeException，则该异常可以不处理"
+      ],
+      [
+        "C",
+        "异常必须在内部自己处理，不能抛给外层的程序进行处理"
+      ],
+      [
+        "D",
+        "自定义异常可以继承Exception类或者继承RuntimeException类"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下程序运行结果是\npublic class Test {\n    public int div(int a, int b) {\n        try {\n            return a / b;\n        }catch(Exception e){\n            System.out.println(“Exception”);\n        }catch(NullPointerException e){\n            System.out.println(“ArithmeticException”);\n        }\n        catch (ArithmeticException e) {\n            System.out.println(“ArithmeticException”);\n        } finally {\n            System.out.println(“finally”);\n        }\n        return 0;\n    }\n    public static void main(String[] args) {\n        Test demo = new Test();\n        System.out.println(“商是：” + demo.div(9, 0));\n    }\n}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "finally商是：0"
+      ],
+      [
+        "B",
+        "编译报错"
+      ],
+      [
+        "C",
+        "Exception finally 商是：0"
+      ],
+      [
+        "D",
+        "ArithmeticException finally 商是：0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如下程序会抛出（  ）类型的异常？\npublic class Test {\n  public static void main(String[] args) {\n    int[] list = new int[5];\n    System.out.println(list[5]);\n  }\n}",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "ArrayIndexOutOfBoundsException"
+      ],
+      [
+        "B",
+        "StringIndexOutOfBoundsException"
+      ],
+      [
+        "C",
+        "ArithmeticException"
+      ],
+      [
+        "D",
+        "ClassCastException"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "假设方法unsafe() 将抛出IOException, 可以填入如下代码段第1行的选项是（ ）。\n1)\n2) { if(unsafe()){//do something…}\n3)   else if(safe()){//do the other…}\n4) }",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "public void methodName()"
+      ],
+      [
+        "B",
+        "public void methodName() throw IOException"
+      ],
+      [
+        "C",
+        "public void methodName() throws IOException"
+      ],
+      [
+        "D",
+        "public IOException methodName()"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面代码运行结果是\npublic class Demo{\n    public int add(int a,int b){\n        try{\n            return a+b;\n        }catch(Exception e){\n            System.out.println(“catch 语句块”);\n        }finally{\n            System.out.println(“finally 语句块”);\n        }\n        return 0;\n    }\n    public static void main(String[] args){\n        Demo demo = new Demo();\n        System.out.println(“和是：”+demo.add(9,34));\n    }\n}",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "编译异常"
+      ],
+      [
+        "B",
+        "catch语句块 和是：43"
+      ],
+      [
+        "C",
+        "和是：43 finally语句块"
+      ],
+      [
+        "D",
+        "finally语句块 和是：43"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如下程序会抛出（   ）类型的异常？\npublic class Test {\n  public static void main(String[] args) {\n    String s = \"abc\";\n    System.out.println(s.charAt(3));\n  }\n}",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "ClassCastException"
+      ],
+      [
+        "B",
+        "ArithmeticException"
+      ],
+      [
+        "C",
+        "StringIndexOutOfBoundsException"
+      ],
+      [
+        "D",
+        "ArrayIndexOutOfBoundsException"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于字符串的方法，如下代码执行结果是（     ）。\nString fileName = \"中国China\";\nSystem.out.println(fileName.length());",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "7"
+      ],
+      [
+        "B",
+        "13"
+      ],
+      [
+        "C",
+        "11"
+      ],
+      [
+        "D",
+        "9"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于字符串的相关使用，如下代码执行结果是（     ）。\nString str1 = \"110\";\nint i=Integer.parseInt(str1,2);\nint i1=i+2;\nSystem.out.println(i1);",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "10"
+      ],
+      [
+        "B",
+        "112"
+      ],
+      [
+        "C",
+        "8"
+      ],
+      [
+        "D",
+        "110"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列哪个选项可以计算出角度为42度的余弦值？",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "double d=Math.conine(42);"
+      ],
+      [
+        "B",
+        "double d=Math.cos(42);"
+      ],
+      [
+        "C",
+        "double d=Math.cos(Math.toDegrees(42));"
+      ],
+      [
+        "D",
+        "double d=Math.cos(Math.toRadians(42));"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有如下代码，程序执行的结果是（      ）。\nint i= 110;\nString str2=\"lucky\"+i+2;\nSystem.out.println(str2);",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "112lucky"
+      ],
+      [
+        "B",
+        "lucky1102"
+      ],
+      [
+        "C",
+        "lucky112"
+      ],
+      [
+        "D",
+        "1102lucky"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在下面的代码中，程序执行的结果将是：（     ）。\npublic class Test {\n  public static void main(String[] args) {\n         String str = \"123\";\n         System.out.println(str);\n         change(str);\n         System.out.println(str);\n     }\n    public static void change(String str){\n      str = \"456\";\n    }\n}",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "123\\n456"
+      ],
+      [
+        "B",
+        "456\\n456"
+      ],
+      [
+        "C",
+        "123\\n123"
+      ],
+      [
+        "D",
+        "456\\n123"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下都是Math类的常用方法，其中用于计算绝对值的方法是哪个?（      ）",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "ceil()"
+      ],
+      [
+        "B",
+        "random()"
+      ],
+      [
+        "C",
+        "floor()"
+      ],
+      [
+        "D",
+        "abs()"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于以下程序段，正确的说法是（    ） 。\n1．  String  s1=”abc”+”def”;\n2．  String  s2=new  String（s1）；\n3．  if（s1==s2）\n4．     System.out.println(“== succeeded”);\n5．  if (s1.equals(s2))\n6．     System.out.println(“.equals()  succeeded”);",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "行6执行，行4不执行"
+      ],
+      [
+        "B",
+        "行4、行6都不执行"
+      ],
+      [
+        "C",
+        "行4执行，行6不执行"
+      ],
+      [
+        "D",
+        "行4与行6都将执行"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "To make method( -4.4 ) == -4 successful, which method of java.lang.Math should be used?",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "min()"
+      ],
+      [
+        "B",
+        "round()"
+      ],
+      [
+        "C",
+        "trunc()"
+      ],
+      [
+        "D",
+        "abs()"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "请选择下面程序正确的输出结果（    ）\npublic class Main{\n        public static void main(String args[ ]){\n            String a = new String(\"A\");\n            String b = new String(\"B\");\n            mb_operate(a,b);\n            System.out.println(a + \".\" + b);\n}\nstatic void mb_operate(String x,String y){\n    x.concat(y);\n    y=x;\n}\n}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "AB.AB"
+      ],
+      [
+        "B",
+        "A.B"
+      ],
+      [
+        "C",
+        "AB.B"
+      ],
+      [
+        "D",
+        "A.A"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "要产生[20，999]之间的随机整数使用哪个表达式？ （ ）",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "(int)Math.random()*999"
+      ],
+      [
+        "B",
+        "20+(int)(Math.random()*980)"
+      ],
+      [
+        "C",
+        "(int)(20+Math.random()*97)"
+      ],
+      [
+        "D",
+        "20+(int)Math.random()*980"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有如下程序代码，程序执行的结果是（ ）。\nint i= 110;\nString str2=i+2+\"lucky\";\nSystem.out.println(str2);",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "112lucky"
+      ],
+      [
+        "B",
+        "lucky1102"
+      ],
+      [
+        "C",
+        "lucky112"
+      ],
+      [
+        "D",
+        "1102lucky"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如下程序输出（   ）\npublic class Test {\n  public static void main(String[] args) {\n    String s = \"Java\";\n    StringBuilder buffer = new StringBuilder(s);\n    change(s);\n    System.out.println(s);\n  }\n  private static void change(String s) {\n    s = s + \" and HTML\";\n  }\n}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "and HTML"
+      ],
+      [
+        "B",
+        "Java"
+      ],
+      [
+        "C",
+        "Java and HTML"
+      ],
+      [
+        "D",
+        "什么都不显示"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于对StringBuffer类对象的操作，下面代码执行后，输出结果是（     ）。\nStringBuffer buffer=new StringBuffer();\nStringBuffer buffer2=buffer.append(\"abc\").append(\"123\");\nSystem.out.println(buffer==buffer2);",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "1"
+      ],
+      [
+        "B",
+        "false"
+      ],
+      [
+        "C",
+        "true"
+      ],
+      [
+        "D",
+        "0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于字符串的方法，如下代码执行结果是（     ）。\nString str = \"    abcd123\";\n  str.toUpperCase();\n  str.trim();\n  System.out.println(str);",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "ABCD123"
+      ],
+      [
+        "B",
+        "ABCD123"
+      ],
+      [
+        "C",
+        "abcd123"
+      ],
+      [
+        "D",
+        "abcd123"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于字符串的方法，如下代码执行结果是（     ）。\nString str=\"中国GOOD\";\nSystem.out.println(str.toCharArray().length);",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "9"
+      ],
+      [
+        "B",
+        "7"
+      ],
+      [
+        "C",
+        "6"
+      ],
+      [
+        "D",
+        "8"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有如下程序代码，程序运行的结果是（ ）。\nStringBuffer buffer=new StringBuffer();\nbuffer.append(\"abc\").append(\"123\");\nSystem.out.println(buffer);",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "abc"
+      ],
+      [
+        "B",
+        "abc123"
+      ],
+      [
+        "C",
+        "空行"
+      ],
+      [
+        "D",
+        "123"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "The result of Math.floor(-10.4) is:",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "10.4"
+      ],
+      [
+        "B",
+        "-10.0"
+      ],
+      [
+        "C",
+        "-11.0"
+      ],
+      [
+        "D",
+        "-10.4"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于字符串的方法，如下代码执行结果是（     ）。\nString str1 = \"abcd\";\nString str2=\"sdut\";\nSystem.out.println(str1.compareTo(str2)>0);",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "-1"
+      ],
+      [
+        "B",
+        "true"
+      ],
+      [
+        "C",
+        "1"
+      ],
+      [
+        "D",
+        "false"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Math.floor(3.6)的结果是（  ）。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "3"
+      ],
+      [
+        "B",
+        "4"
+      ],
+      [
+        "C",
+        "5.0"
+      ],
+      [
+        "D",
+        "3.0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于对StringBuffer对象的操作，有如下程序代码，程序运行的结果是（ ）。\n        StringBuffer buf=new StringBuffer(\"abcde\");\n        buf.reverse();\n        System.out.println(buf);",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "edcb"
+      ],
+      [
+        "B",
+        "abcde"
+      ],
+      [
+        "C",
+        "edcba"
+      ],
+      [
+        "D",
+        "abcd"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "已知: String s=\"abcdedcba”; 则 s.substring(3,4) 返回的字符串是哪个?（     ）",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "dedc"
+      ],
+      [
+        "B",
+        "d"
+      ],
+      [
+        "C",
+        "cd"
+      ],
+      [
+        "D",
+        "de"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于StringBuffer对象的操作，有如下程序代码，程序运行的结果是（ ）。\nStringBuffer buf1=new StringBuffer(\"abcd\");\nStringBuffer buf2=buf1.append(\"def\");\nSystem.out.print(buf1+\" \");\nSystem.out.print(buf2+\" \");\nSystem.out.println(buf1==buf2);",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "abcd     abcddef    false"
+      ],
+      [
+        "B",
+        "abcddef   abcddef   false"
+      ],
+      [
+        "C",
+        "abcddef    abcddef    true"
+      ],
+      [
+        "D",
+        "abcd   abcddef   true"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于对字符串缓冲区类的操作，如下代码执行结果是（     ）。\nStringBuffer buffer=new StringBuffer();\nSystem.out.println(buffer.length()+\" \"+buffer.capacity());",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "16 0"
+      ],
+      [
+        "B",
+        "16 16"
+      ],
+      [
+        "C",
+        "0 0"
+      ],
+      [
+        "D",
+        "0 16"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "执行如下两行代码之后，则内存中存在几个字符串对象?（    ）\nString str=\"abc\";\nstr+=\"def\";",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "3"
+      ],
+      [
+        "B",
+        "4"
+      ],
+      [
+        "C",
+        "1"
+      ],
+      [
+        "D",
+        "2"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "定义字符串：String s1=\"hello\"；对下面程序描述正确的是（）。\nif(s1==\"hello\"){\n      System.out.println(\"s1 = \"hello\"\");\n}else{\n      System.out.println(\"s1 !=hello\");\n}",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "产生编译错误"
+      ],
+      [
+        "B",
+        "输出 s1=\"hello\""
+      ],
+      [
+        "C",
+        "输出 s1 !=hello"
+      ],
+      [
+        "D",
+        "编译正确,运行错误"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "设有定义：String s=”World”;，下列语句错误的是（   ）。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "String str=s.append();"
+      ],
+      [
+        "B",
+        "char c=s.charAt(0);"
+      ],
+      [
+        "C",
+        "int n=s.length();"
+      ],
+      [
+        "D",
+        "int m=s.indexOf('r');"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列代码的执行结果是（    ）。\npublic class Main\n{\n    public static void main(String[] args)\n    {\n        int a=2,b=8,c=6;\n        String s = \"abc\";\n        System.out.println(a+b+s+c);\n        System.out.println();\n    }\n}",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "28abc6"
+      ],
+      [
+        "B",
+        "ababcc"
+      ],
+      [
+        "C",
+        "282866"
+      ],
+      [
+        "D",
+        "10abc6"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Which of the following will output -3.0",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "System.out.println(Math.floor(-3.7));"
+      ],
+      [
+        "B",
+        "System.out.println(Math.round(-3.7));"
+      ],
+      [
+        "C",
+        "System.out.println(Math.min(-3.7));"
+      ],
+      [
+        "D",
+        "System.out.println(Math.ceil(-3.7));"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于字符串的方法，如下代码执行结果是（     ）。\nString fileName = \"中国China\";\nSystem.out.println(fileName.indexOf(\"国\"));",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "1"
+      ],
+      [
+        "B",
+        "3"
+      ],
+      [
+        "C",
+        "0"
+      ],
+      [
+        "D",
+        "2"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列String类的（ ）方法返回指定字符串的一部分。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "substring()"
+      ],
+      [
+        "B",
+        "extractstring()"
+      ],
+      [
+        "C",
+        "Middlestring()"
+      ],
+      [
+        "D",
+        "Substring()"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于字符串对象的比较，==用于比较字符串对象的（      ）是否相同；equals()方法用于比较字符串对象的（      ）是否相同。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "存储地址   存储地址"
+      ],
+      [
+        "B",
+        "存储地址    字符序列"
+      ],
+      [
+        "C",
+        "字符序列  存储地址"
+      ],
+      [
+        "D",
+        "字符序列   字符序列"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下代码输出（   ）。\n  public static void main(String[] args) {\n    String[] tokens = \"Welcome to Java\".split(\"o\");\n    for (int i = 0; i < tokens.length; i++) {\n      System.out.print(tokens[i] + \" \");\n    }\n  }",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "Welcome t  Java"
+      ],
+      [
+        "B",
+        "Welc me to Java"
+      ],
+      [
+        "C",
+        "Welcome to Java"
+      ],
+      [
+        "D",
+        "Welc me t  Java"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于字符串的构造方法，如下代码执行结果是（     ）。\nString str=\"ABCDEFG\";\nchar[] chars=str.toCharArray();\nSystem.out.println(new String(chars,1,3));",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "BCD"
+      ],
+      [
+        "B",
+        "BC"
+      ],
+      [
+        "C",
+        "AB"
+      ],
+      [
+        "D",
+        "ABC"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列哪行代码将输出整数7？\n1: public class Main{\n2:    public static void main(String args[]){\n3:      double x=6.5;\n4:      System.out.println(Math.floor(x+1));\n5:      System.out.println(Math.ceil(x));\n6:      System.out.println(Math.round(x));\n7:    }\n8: }",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "第6行"
+      ],
+      [
+        "B",
+        "第4行"
+      ],
+      [
+        "C",
+        "第4行和第5行"
+      ],
+      [
+        "D",
+        "第4、5、6行"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于字符串的方法，如下代码执行结果是（     ）。\nString str1 = \"sdut@sdut.edu.cn\";\nSystem.out.println(str1.toUpperCase());\nSystem.out.println(str1);",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "sdut@sdut.edu.cn\\nsdut@sdut.edu.cn"
+      ],
+      [
+        "B",
+        "SDUT@SDUT.EDU.CN\\nsdut@sdut.edu.cn"
+      ],
+      [
+        "C",
+        "sdut@sdut.edu.cn\\nSDUT@SDUT.EDU.CN"
+      ],
+      [
+        "D",
+        "SDUT@SDUT.EDU.CN\\nSDUT@SDUT.EDU.CN"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下程序段输出结果的是（ ）\npublic class Test {\n     public static void main(String args[]){\n          String str=\"ABCDE\";\n          str.substring(3);\n          str.concat(\"XYZ\");\n          System.out.print(str);\n     }\n}",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "DE"
+      ],
+      [
+        "B",
+        "DEXYZ"
+      ],
+      [
+        "C",
+        "CDEXYZ"
+      ],
+      [
+        "D",
+        "ABCDE"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "StringBuffer类维护字符的容量和长度的概念。有该类的对象buf1，其容量与长度的关系是：（     ）。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "buf1.size()<buf1.=length()"
+      ],
+      [
+        "B",
+        "buf1.capacity()>=buf1.length()"
+      ],
+      [
+        "C",
+        "buf1.capacity()<=buf1.length()"
+      ],
+      [
+        "D",
+        "buf1.size()>buf1.=length()"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有如下程序代码， 程序运行的结果是（     ）。\nString s1 = \"sdut\";\nString s2 = \"I love \" + s1;\nString s3 = \"I love \" + s1;\nSystem.out.print(s2 == s3);\nSytem.out.println(\" \"+s2.equals(s3));",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "true false"
+      ],
+      [
+        "B",
+        "true true"
+      ],
+      [
+        "C",
+        "false false"
+      ],
+      [
+        "D",
+        "false true"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": " The result of Math.abs(10.4) is:",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "-10.4"
+      ],
+      [
+        "B",
+        "10"
+      ],
+      [
+        "C",
+        "10.4"
+      ],
+      [
+        "D",
+        "10.0"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "关于字符串的方法，如下代码执行结果是（     ）。\nString fileName = \"sdut@sdut.edu.cn\";\nSystem.out.println(fileName.lastIndexOf(\".\"));",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "13"
+      ],
+      [
+        "B",
+        "9"
+      ],
+      [
+        "C",
+        "10"
+      ],
+      [
+        "D",
+        "12"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有如下程序代码，程序运行的结果是（ ）。\nStringBuffer buf=new StringBuffer(\"Beijing2008\");\nbuf.insert(7, \"@\");\nSystem.out.println(buf);",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "@Beijing2008"
+      ],
+      [
+        "B",
+        "Beijing2008@"
+      ],
+      [
+        "C",
+        "Beijing@2008"
+      ],
+      [
+        "D",
+        "Beijing#2008"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "判断题",
+    "text": "System.out.println(); 语句的作用是在结尾显示一个换行符。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "InputStream类和OutputStream类是所有二进制I/O的根类。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "InputStream and OutputStream read and write 8-bit data.",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "在程序代码中，java.io.IOException异常必须被捕获或抛出，不能置之不理。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "System.out是标准输入流。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java中所有的I/O都是通过流来实现的。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "如果一个File表示的目录对象下有文件或者子目录，调用delete()方法也可以将它们删除。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "InputStream类中的close()方法是用于关闭流并且释放流所占的系统资源。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Java系统的标准输入对象是System.in，标准输出对象有两个，分别是System.out和System.err。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "通过File类可对文件属性进行修改。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "BufferedInputStream和BufferedOutputStream不是字节缓冲流。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "选择题",
+    "text": "以下选项中，哪个流使用了缓冲技术？（    ）",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "BufferedOutputStream"
+      ],
+      [
+        "B",
+        "DataOutputStream"
+      ],
+      [
+        "C",
+        "FileReader"
+      ],
+      [
+        "D",
+        "FileInputStream"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "构造BufferedInputStream类型的对象，参数可以是哪些类型的对象？（    ）",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "File"
+      ],
+      [
+        "B",
+        "FileOuterStream"
+      ],
+      [
+        "C",
+        "BufferedOutputStream"
+      ],
+      [
+        "D",
+        "FileInputStream"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如果需要从文件中读取数据，则可以在程序中创建哪一个类的对象（）。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "FileOutputStream"
+      ],
+      [
+        "B",
+        "DataOutputStream"
+      ],
+      [
+        "C",
+        "FileWriter"
+      ],
+      [
+        "D",
+        "FileInputStream"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "如果你被要求写一段代码读取一个文本文件，那么一般使用哪种Stream？",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "FileInputStream"
+      ],
+      [
+        "B",
+        "FileReader"
+      ],
+      [
+        "C",
+        "ObjectInputStream"
+      ],
+      [
+        "D",
+        "DataInputStream"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在Java中，(   )类提供定位本地文件系统，对文件或目录及其属性进行基本操作。。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "FileInputStream"
+      ],
+      [
+        "B",
+        "File"
+      ],
+      [
+        "C",
+        "FileReader"
+      ],
+      [
+        "D",
+        "FileWriter"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "要从“file.dat”文件中读出第10个字节到变量c中，下列哪个方法适合? （      ）",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "FileInputStream in=new FileInputStream(\"file.dat\"); in.skip(10); int c=in.read();"
+      ],
+      [
+        "B",
+        "RandomAccessFile in=new RandomAccessFile(\"file.dat\"); in.skip(9); int c=in.readByte();"
+      ],
+      [
+        "C",
+        "FileInputStream in=new FileInputStream(\"file.dat\"); in.skip(9); int c=in.read();"
+      ],
+      [
+        "D",
+        "FileInputStream in=new FileInputStream(\"file.dat\"); int c=in.read();"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "要创建一个新目录，可以用下面(  )类实现。",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "FileInputStream"
+      ],
+      [
+        "B",
+        "RandomAccessFile"
+      ],
+      [
+        "C",
+        "File"
+      ],
+      [
+        "D",
+        "FileOutputStream"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "字符流与字节流读写数据的区别在于（     ）。",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "前者是块读写，后者是字节读写"
+      ],
+      [
+        "B",
+        "前者带有缓冲，后者没有"
+      ],
+      [
+        "C",
+        "每次读写数据的组织单位不同"
+      ],
+      [
+        "D",
+        "二者没有区别，可以互换使用"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "File类中以字符串形式返回文件绝对路径的方法是哪一项？（    ）",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "getAbsolutePath()"
+      ],
+      [
+        "B",
+        "getParent()"
+      ],
+      [
+        "C",
+        "getPath()"
+      ],
+      [
+        "D",
+        "getName()"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "为了从文本文件中逐行读取内容，应该使用哪个处理流对象？（     ）",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "BufferedInputStream"
+      ],
+      [
+        "B",
+        "BufferedOutputStream"
+      ],
+      [
+        "C",
+        "BufferedWriter"
+      ],
+      [
+        "D",
+        "BufferedReader"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列关于File类的叙述中，错误的是（     ）。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "File类能操作文件或目录的属性"
+      ],
+      [
+        "B",
+        "File类描述的是文件或目录"
+      ],
+      [
+        "C",
+        "File类是java.io包中的一个类"
+      ],
+      [
+        "D",
+        "File类能直接读写文件内容"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在编写Java程序时，若需要使用到标准输入输出流的若干个类，导入包时宜在程序的开头写上（    ）语句。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "import java.io.*;"
+      ],
+      [
+        "B",
+        "import java.awt.* ;"
+      ],
+      [
+        "C",
+        "import java.applet.Applet;"
+      ],
+      [
+        "D",
+        "import java.awt.Graphics;"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列哪条语句可以正确创建出一个BufferedReader的数据流（     ）。",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "new BufferedReader (new DataInputStream(\"myFile.txt\"));"
+      ],
+      [
+        "B",
+        "new BufferedReader (new FileInputStream(\"myFile.txt\"));"
+      ],
+      [
+        "C",
+        "new BufferedReader (\"myFile.txt\");"
+      ],
+      [
+        "D",
+        "new BufferedReader(new FileReader(\"myFile.txt\"));"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "判断题",
+    "text": "当调用一个正在进行线程的stop()方法时，该线程便会进入休眠状态。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "一个新线程创建后会自动进入就绪状态，等待CPU的调度。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "每个Java程序最少有一个执行线程。当运行程序的时候, JVM运行负责调用main()方法的执行线程。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "如果线程死亡，它便不能运行。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "进程调度算法各种各样，如果选择不当，就会造成死锁。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "start()方法和run()方法都声明在Runnable接口中。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "调用Thread类的run()方法后，新创建的线程就会启动。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "在Java中，高优先级的可运行线程会抢占低优先级线程。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "程序开发者必须创建一个线程去管理内存的分配。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "Thread.sleep()方法执行后，在指定时间内所有线程都会暂停，进入休眠状态。",
+    "answer": "错误",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "多线程是指将CPU资源按时间片分配到多个任务上，看似并行工作，实质上在同一时刻只有一个线程在工作；在一段时间之内，是多个线程在同时工作。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "判断题",
+    "text": "用Thread.currentThread().getName()来获取当前线程的名字。",
+    "answer": "正确",
+    "subject": "Java"
+  },
+  {
+    "type": "选择题",
+    "text": "下列哪个情况可以终止当前线程的运行？(   )",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "当该线程调用sleep()方法时"
+      ],
+      [
+        "B",
+        "抛出一个异常时"
+      ],
+      [
+        "C",
+        "当创建一个新线程时"
+      ],
+      [
+        "D",
+        "当一个优先级高的线程进入就绪状态时"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "有关线程的哪些叙述是对的?",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "一旦一个线程被创建，它就立即开始运行。"
+      ],
+      [
+        "B",
+        "使用start()方法可以使一个线程成为可运行的，但是它不一定立即开始运行。"
+      ],
+      [
+        "C",
+        "当一个线程因为抢先机制而停止运行，它被放在可运行队列的前面。"
+      ],
+      [
+        "D",
+        "一个线程可能因为不同的原因停止（cease）并进入就绪状态。"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列说法中错误的一项是（ ）。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "线程是一个程序的单个执行流"
+      ],
+      [
+        "B",
+        "线程就是程序"
+      ],
+      [
+        "C",
+        "多线程用于实现并发"
+      ],
+      [
+        "D",
+        "多线程是指一个程序的多个执行流"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "Runnable接口定义了如下哪个方法？(    )。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "run( )"
+      ],
+      [
+        "B",
+        "start( )"
+      ],
+      [
+        "C",
+        "sleep( )"
+      ],
+      [
+        "D",
+        "stop( )"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "在下面程序中的括号中，如下哪些代码可以创建并启动线程?(  )\npublic class MyRunnable implements Runnable {\n      public void run()  {\n             (                           )\n      }\n }",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "new Runnable(MyRunnable).start();"
+      ],
+      [
+        "B",
+        "new Thread(MyRunnable).run();"
+      ],
+      [
+        "C",
+        "new Thread(new MyRunnable()).start();"
+      ],
+      [
+        "D",
+        "new MyRunnable().start();"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面关于Java中线程的说法不正确的是(   )。",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "线程启动后执行的代码放在其run方法中"
+      ],
+      [
+        "B",
+        "sleep()方法是Thread类的静态方法"
+      ],
+      [
+        "C",
+        "调用Thread类的sleep()方法可终止一个线程对象"
+      ],
+      [
+        "D",
+        "调用join()方法可能抛出异常InterruptedException"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "用（ ）方法可以改变线程的优先级。",
+    "answer": "C",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "run()"
+      ],
+      [
+        "B",
+        "yield()"
+      ],
+      [
+        "C",
+        "setPrority()"
+      ],
+      [
+        "D",
+        "sleep()"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "一个线程在任何时刻都处于某种线程状态（thread state）,例如运行状态、阻塞状态、就绪状态等。一个线程可以由选项中的哪种线程状态直接到达运行状态？(     )",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "就绪状态"
+      ],
+      [
+        "B",
+        "死亡状态"
+      ],
+      [
+        "C",
+        "阻塞状态（对象lock池内）"
+      ],
+      [
+        "D",
+        "阻塞状态（对象wait池内）"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面关于进程和线程的关系不正确的是？（     ）",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "线程之间不共享进程中的共享变量和部分环境。"
+      ],
+      [
+        "B",
+        "一个进程中多个线程可以并发执行。"
+      ],
+      [
+        "C",
+        "进程是系统进行资源分配和调度的单位，线程是CPU调度和分派的单位。"
+      ],
+      [
+        "D",
+        "线程可以通过相互之间协同来完成进程所要完成的任务。"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列方法中可以用来创建一个新线程的是(    )。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "实现java.lang.Runnable接口并重写start()方法"
+      ],
+      [
+        "B",
+        "实现java.lang.Runnable接口并重写run()方法"
+      ],
+      [
+        "C",
+        "实现java.lang.Thread类并重写start()方法"
+      ],
+      [
+        "D",
+        "实现java.lang.Thread类并重写run()方法"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "线程通过(    )方法可以使具有相同优先级线程获得处理器。",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "setPriority(  )"
+      ],
+      [
+        "B",
+        "yield(  )"
+      ],
+      [
+        "C",
+        "run( )"
+      ],
+      [
+        "D",
+        "sleep(  )"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下面说法正确的是（ ）    。",
+    "answer": "A",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "每个JAVA程序都至少有一个线程，即主线程"
+      ],
+      [
+        "B",
+        "JAVA中的线程不可以共享数据"
+      ],
+      [
+        "C",
+        "JAVA中线程是非抢占式的"
+      ],
+      [
+        "D",
+        "JAVA中的线程不可以共享代码"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "下列哪个叙述是正确的?",
+    "answer": "B",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "多线程需要多个CPU才可以。"
+      ],
+      [
+        "B",
+        "一个进程可以产生多线程。"
+      ],
+      [
+        "C",
+        "多线程需要多个进程来实现。"
+      ],
+      [
+        "D",
+        "线程之间无法实现数据共享。"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "选择题",
+    "text": "以下哪个方法用于定义线程的执行体？ （   ）",
+    "answer": "D",
+    "subject": "Java",
+    "options": [
+      [
+        "A",
+        "ynchronized()"
+      ],
+      [
+        "B",
+        "init()"
+      ],
+      [
+        "C",
+        "start()"
+      ],
+      [
+        "D",
+        "run()"
+      ]
+    ],
+    "choice_type": "single",
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "阅读程序，在程序的两个空白处填写正确代码\n【1】JavaApplication {     public 【2】 void main(String[] args){      System.out.println(\"Hello Word!\");     }     }\npublic class static\n在Java中，命令行模式加载和运行Hello.class文件,需要键入(     )命令。\njava Hello\n在Java中，将Hello.java文件编译生成class文件，需要键入(      )命令。\njavac Hello.java\nJava把数据类型分为(     )数据类型和引用数据类型。\n基本\nJava中，语句byte b = (byte)128;执行后b=(      )。\n-128\nJava语言的八种基本数据类型有：字节型，占一个字节。short短整型，占两个字节。(      )整型，占4个字节。long长整型，占8个字节。float单精度浮点型，占4个字节。double双精度浮点型，占8个字节。char字符型，占两个字节。(       )型，表示逻辑值，有true和false两个值，分别占一个字节。\nint boolean\nJAVA中，int数据类型占(      )个字节。\n4\nJava中的注释有三类，分别是单行注释、多行注释和(     )。\n文档注释\n写出该语句的输出结果\nSystem.out.println(\"Hello\"+1+2);\nHello12\n在Java中的跳转语句有(       )语句和continue语句。\nbreak\n阅读以下程序：\nimport java.util.Scanner;\npublic class Test {\n  public static void main(String[] args) {\n        Scanner input = new Scanner(System.in);\n        int number, max;\n        number = input.nextInt();\n        max = number;\n        while (number != 0) {\n            number = input.nextInt();\n            if (number > max)\n                 max = number;\n        }\n        System.out.println(\"max is \" + max);\n        System.out.println(\"number \" + number);\n     }\n}\n假设输入是 2 3 4 5 0，程序输出是：\nmax is (        )\nnumber (        )\n5 0\nJava中，以下程序代码输出(       )次“计算机科学与技术”。\npublic class Main {\n    public static void main(String[] args) {\n        for(int x=1; x<=10; x++) {\n            if(x%3==0) {\n                System.out.println(\"计算机科学与技术\");\n                continue;\n            }else {\n                System.out.println(\"计算机科学与技术\");\n                break;\n        }\n    }\n}\n1\n请写出以下程序运行结果：\n▾\n▾\n▾\npublic class MyFor{\n    public static void main(String argv[]){\n        int i, j;\nouter:    for (i=1;i <3;i++)\ninner:    for (j=1; j<3; j++) {\n        if (j==2)continue outer;\n        System.out.println(\"Value for i=\" + i + \" Value for j=\" +j);\n        }\n    }\n}\n(       )\n(       )\nValue for i=1 Value for j=1 Value for i=2 Value for j=1\n当编译运行下列代码时，运行结果是什么？\npublic class Main{\n    public static void main(String args[]){\n        outer:\n        for(int i=0;i<3;i++){\n            innner:\n            for(int j=0;j<3;j++){\n                if(j>1) break outer;\n                System.out.println(j+\" and \"+i);\n            }\n        }\n    }\n}\n运行结果：\n(       )\n(       )\n0 and 0 1 and 0\n请说出A类中System.out.println的输出结果。\n class B{\n    int x=100,y=200;\n    public void setX(int x){ x=x; }\n    public void setY(int y){ this.y=y; } \n    public int getXYSum(){ return x+y; } \n } \n public class A { \n    public static void main(String args[]){\n        B b=newB(); \n        b.setX(-100); \n        b.setY(-200); \n        System.out.println(\"sum=\"+b.getXYSum()); \n    } \n } \n 程序输出结果为：sum=(      )\n-100\n请写出以下程序运行结果：\n▾\n▾\n▾\nclass A\n{\n    int    x;\n    String s;\n};\nclass HelloWorld\n{\n    public static void main(String[] args) \n    {\n        A a= new A();\n        System.out.println(a.s);\n        System.out.println(a.x);\n}}\n(       )\n(       )",
+    "answer": "null 0",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "阅读程序，在程序的两个空白处填写正确代码\n【1】JavaApplication {     public 【2】 void main(String[] args){      System.out.println(\"Hello Word!\");     }     }",
+    "answer": "public class static",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "在Java中，命令行模式加载和运行Hello.class文件,需要键入(     )命令。",
+    "answer": "java Hello",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "在Java中，将Hello.java文件编译生成class文件，需要键入(      )命令。",
+    "answer": "javac Hello.java",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "Java把数据类型分为(     )数据类型和引用数据类型。",
+    "answer": "基本",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "Java中，语句byte b = (byte)128;执行后b=(      )。",
+    "answer": "-128",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "Java语言的八种基本数据类型有：字节型，占一个字节。short短整型，占两个字节。(      )整型，占4个字节。long长整型，占8个字节。float单精度浮点型，占4个字节。double双精度浮点型，占8个字节。char字符型，占两个字节。(       )型，表示逻辑值，有true和false两个值，分别占一个字节。",
+    "answer": "int boolean",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "JAVA中，int数据类型占(      )个字节。",
+    "answer": "4",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "Java中的注释有三类，分别是单行注释、多行注释和(     )。",
+    "answer": "文档注释",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "写出该语句的输出结果\nSystem.out.println(\"Hello\"+1+2);",
+    "answer": "Hello12",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "在Java中的跳转语句有(       )语句和continue语句。",
+    "answer": "break",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "阅读以下程序：\nimport java.util.Scanner;\npublic class Test {\n  public static void main(String[] args) {\n        Scanner input = new Scanner(System.in);\n        int number, max;\n        number = input.nextInt();\n        max = number;\n        while (number != 0) {\n            number = input.nextInt();\n            if (number > max)\n                 max = number;\n        }\n        System.out.println(\"max is \" + max);\n        System.out.println(\"number \" + number);\n     }\n}\n假设输入是 2 3 4 5 0，程序输出是：\nmax is (        )\nnumber (        )",
+    "answer": "5 0",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "Java中，以下程序代码输出(       )次“计算机科学与技术”。\npublic class Main {\n    public static void main(String[] args) {\n        for(int x=1; x<=10; x++) {\n            if(x%3==0) {\n                System.out.println(\"计算机科学与技术\");\n                continue;\n            }else {\n                System.out.println(\"计算机科学与技术\");\n                break;\n        }\n    }\n}",
+    "answer": "1",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "请写出以下程序运行结果：\n▾\n▾\n▾\npublic class MyFor{\n    public static void main(String argv[]){\n        int i, j;\nouter:    for (i=1;i <3;i++)\ninner:    for (j=1; j<3; j++) {\n        if (j==2)continue outer;\n        System.out.println(\"Value for i=\" + i + \" Value for j=\" +j);\n        }\n    }\n}\n(       )\n(       )",
+    "answer": "Value for i=1 Value for j=1 Value for i=2 Value for j=1",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "当编译运行下列代码时，运行结果是什么？\npublic class Main{\n    public static void main(String args[]){\n        outer:\n        for(int i=0;i<3;i++){\n            innner:\n            for(int j=0;j<3;j++){\n                if(j>1) break outer;\n                System.out.println(j+\" and \"+i);\n            }\n        }\n    }\n}\n运行结果：\n(       )\n(       )",
+    "answer": "0 and 0 1 and 0",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "请说出A类中System.out.println的输出结果。\n class B{\n    int x=100,y=200;\n    public void setX(int x){ x=x; }\n    public void setY(int y){ this.y=y; } \n    public int getXYSum(){ return x+y; } \n } \n public class A { \n    public static void main(String args[]){\n        B b=newB(); \n        b.setX(-100); \n        b.setY(-200); \n        System.out.println(\"sum=\"+b.getXYSum()); \n    } \n } \n 程序输出结果为：sum=(      )",
+    "answer": "-100",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "null 0\n面向对象的三大特征是封装、继承和(       )",
+    "answer": "多态",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "阅读以下程序，在空格内填上正确答案。\npublic class Test {\n   public static void main(String[] args) {\n       int number = 0;\n       int[] numbers = new int[1];\n     \n       m(number, numbers);\n     \n       System.out.println(\"number is \" + number+ \" and numbers[0] is \" + numbers[0]);\n   }\n  public static void m(int x, int[] y) {\n        x = 3;\n       y[0] = 3;\n   }\n}\n程序运行后，输出：number is (       ) and numbers[0] is (       )",
+    "answer": "0 3",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "给出以下代码：\n▾\n▾\n▾\npublic class Test {\n    public int t=4;\n    public static void main(String[] args) {\n        new Test().NumberPlay();\n    }\n    public void NumberPlay() {\n        int t=2;\n        t = t+5;\n        this.t = this.t-2;\n        t = t-this.t;\n        System.out.println(t+this.t+\"ok\");\n    }\n}\n程序运行后输出结果为：(     )",
+    "answer": "7ok",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "给出以下代码：\n▾\n▾\n▾\n▾\nclass Number {\n    int i;\n    public Number(int ii) { i=ii; }\n}\npublic class Main {\n    public static void main(String[] args) {\n        Number[] a = new Number[5];\n        for ( int i=0; i<a.length; i++ ) a[i] = new Number(i);\n        for ( int i=0; i<2; i++ )\n            for ( Number n : a ) {\n                System.out.print(n.i);\n                n.i = 5-n.i;\n            }\n    }\n}\n程序运行结果是：(       )",
+    "answer": "0123454321",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "定义在类中的变量被称为（    ），定义在方法中的变量被称为（    ）。",
+    "answer": "成员变量 局部变量",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "在Java中解决成员变量与局部变量名称冲突时,可以使用(      )关键字",
+    "answer": "this",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "在Java程序中，创建一个包即打包操作，应使用关键词(       ) ，该关键词引导的语句必须放在程序的第(     )行，该行前只能有空格及注释。",
+    "answer": "package 1",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "阅读分析下面这个程序，预测出该程序的输出结果为(     )\npublic class Test{\n      public static void main(String [ ] args){   \n           int s = 0 ;\n           int arr[ ] = { 99 , 80 , 70 , 66 , 50 , 40 , 30 , 20 , 10 };\n           for (int i = 0 ; i < arr.length ; i ++ )\n                if ( arr[i]%3 != 0 ) \n                       s += arr[i] ; \n                System.out.println(\"s=\" + s);\n       }\n}",
+    "answer": "s=270",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "数组是一个容器，存储到数组中的每个元素，都有自己的自动编号，最小值为(       )。",
+    "answer": "0",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "在程序中可以通过“数组名.(       )”的方式获得数组的长度。",
+    "answer": "length",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "Java提供了4种访问控制权限，分别是private、default、protected和(     )。",
+    "answer": "public",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "在Java中，不需要import语句，就会被自动引入的包是java.(      )。",
+    "answer": "lang",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "在Java程序中，想要导入不同包下面的某个类时，可以使用关键词(     )。",
+    "answer": "import",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "(       )是指一种将抽象性函数式接口的实现细节部分包装、隐藏起来的方法。",
+    "answer": "封装",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "访问父类的成员可以使用(     ) 关键词。\n访问当前对象自身可以使用(       )关键词。",
+    "answer": "super this",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "阅读下列程序：\n class Animal{\n       Animal(){ System.out.println(\"我是动物\"); }\n       void  shout(){ System.out.println(\"动物叫\"); }\n}\nclass  Dog   extends   Animal{\n         void   shout(){\n                super.shout();\n                System.out.println(\"汪汪\");\n          }\n}\nclass  Cat   extends   Animal{\n         void  shout(){ System.out.println(\"喵喵\"; }\n}\npublic   class   Test{\n          public  static   void   main(String[]args){\n                   Animal   dog=newDog();\n                   Animal   cat=newCat();\n                   dog.shout();\n                   cat.shout();\n           }\n    }\n按程序执行顺序输出结果：\n（1）(      )\n（2）(      )\n（3）(      )\n（4）(      )\n（5）(      )",
+    "answer": "我是动物 我是动物 动物叫 汪汪 喵喵",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "阅读下列程序：\npublic class Main{ \n    public static void main(String[]args){ \n        System.out.println(\"创建一个Faculty对象\"); \n        new Faculty(); \n    } \n} \nclass Faculty extends Employee { \n    public Faculty(){ \n        System.out.println(\"完成Faculty的任务\"); \n    } \n} \nclass Employee extends Person{ \n    public Employee(){ \n        this(\"调用Employee的重载构造方法\"); \n        System.out.println(\"完成Employee的任务\"); \n    } \n    public Employee(String s){ \n        System.out.println(s); \n    } \n} \nclass Person { \n    public Person() { \n        System.out.println(\"完成Person的任务\"); \n    } \n}\n从下面选项中进行选择，将相应序号（1、2、3、4、5中选其一）填入空格中：\n（1）完成Person的任务\n（2）完成Employee的任务\n（3）完成Faculty的任务\n（4）调用Employee的重载构造方法\n（5）创建一个Faculty对象\n按程序执行顺序输出结果：(       )",
+    "answer": "5 1 4 2 3",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "阅读下列程序：\nclass A{ \n    int i=7; \n    public A(){ \n        setI(20); \n        System.out.println(\"i=\"+i); \n    } \n    public void setI(int i){\n        this.i=2*i;\n    } \n}\nclass B extends A{ \n    public B(){ \n        System.out.println(\"i=\"+i); \n    } \n    public void setI(int i){\n        this.i=3*i;\n    } \n} \npublic class Main{ \n    public static void main(String[] args){ \n        new A(); \n        new B(); \n    } \n} \n程序运行后依次输出：\n(       )\n(       )\n(       )",
+    "answer": "i=40 i=60 i=60",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "阅读以下程序，写出输出结果。\npublic  class   AppleMobilePhone   extends MobilePhone{\n     public   static   void   main(String[] args){  \n           new  AppleMobilePhone(); \n     }\n     public   AppleMobilePhone(){ \n           System.out.println(\"This is a Applemobilephone\"); \n     }\n}\nclass    MobilePhone   extends   Phone{\n     public   MobilePhone(){ \n          System.out.println(\"This is a mobilephone\"); \n     }\n}\nclass   Phone{\n     public   Phone(){  \n          System.out.println(\"This is a phone\"); \n     }\n}\n程序运行后输出：\n从下列选项中选，在空格处填上相应的序号数字（1、2或3）\n（1）This is a phone\n（2）This is a Apple mobile phone\n（3）This is a mobile phone\n第一行输出：(       )\n第二行输出：(       )\n第三行输出：(       )",
+    "answer": "1 3 2",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "说出下列A类中【代码1】~【代码3】的输出结果 \nclass  Fish { int weight=1; } \nclass  Lake{ \n   Fish  fish; \n   void  setFish(Fish s) { fish=s; } \n   void  foodFish(int m){  fish.weight=fish.weight+m; } \n }\n public  class  Main {\n    public static void main(String args[]){ \n         Fish  redFish=new Fish();\n         System.out.println(redFish.weight);//【代码1】\n         Lake lake=new Lake();\n         lake.setFish(redFish); \n         lake.foodFish(120); \n         System.out.println(redFish.weight);//【代码2】 \n         System.out.println(lake.fish.weight);//【代码3】\n    }\n} \n 【代码1】(     )\n 【代码2】(     )\n 【代码3】(     )",
+    "answer": "1 121 121",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "已知代码：\nclass A{\n  String name=\"A\";\n  String getName(){\n     return name;\n  }\n  String greeting(){\n     return \"class A\"; \n  }\n}\nclass B extends A{\n  String name=\"B\";\n  String greeting(){\n     return \"class B\";\n  }\n}\npublic class Main{\n  public static void main(String args[]){\n     A a=new A();\n     A b=new B();\n     System.out.println(a.greeting()+\" has name \"+a.getName());\n     System.out.println(b.greeting()+\" has name \"+b.getName());\n  }\n}\n在下列运行结果的空格中选择填写A或B：\nclass (     ) has name (        )\nclass (     ) has name (        )",
+    "answer": "A A B A",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "阅读以下程序： \npublic class Test extends TT{ \n    public static void main(String args[]){ \n        Test t=new Test(\"Tom\"); \n    } \n    public Test(String s){ \n        super(s); \n        System.out.println(\"How do you do?\"); \n    } \n    public Test(){ \n        this(\"I am Tom\"); \n    } \n} \nclass TT { \n    public TT(){ \n        System.out.println(\"What a pleasure!\"); \n    } \n    public TT(String s){ \n        this(); \n        System.out.println(\"I am \"+s); \n    } \n} \n程序运行结果为： \n(       )\n(       )\n(       )",
+    "answer": "What a pleasure! I am Tom How do you do?",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "已知代码：\nclass MyDate{\n  int year;\n  int month;\n  int day;\n  MyDate(int year,int month,int day){\n     this.year=year;\n     this.month=month;\n     this.day=day;\n  }\n}\npublic class Main{\n  public static void main(String args[]){\n     MyDate md1=new MyDate(2009,2,10);\n     MyDate md2=new MyDate(2009,2,10);\n     if(md1==md2)\n       System.out.println(\"md1==md2\");\n     else\n       System.out.println(\"md1!=md2\");\n     if(md1.equals(md2))\n       System.out.println(\"md1 is equla to md2\");\n     else\n       System.out.println(\"md1 is not equal to md2\");\n  }\n}\n运行上述代码，写出其运行结果：\n(       )\n(       )",
+    "answer": "md1!=md2 md1 is not equal to md2",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "Java中，包装类（ Double、Float、Byte、Short、Integer 及 Long）的直接父类（父接口）是(       )",
+    "answer": "Number",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "Java中，基本数据类型char对应的包装类是(     )。",
+    "answer": "Character",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "Java中，基本数据类型int对应的包装类是(      )。",
+    "answer": "Integer",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "请写出以下程序运行结果：\n▾\n▾\n▾\n▾\nclass Letter {\n    char c;\n}\npublic class Main {\n    static void f(Letter y) {\n        y.c = 'z';\n    }\n    \n    public static void main(String[] args) {\n        Letter x = new Letter();\n        x.c = 'a';\n        f(x);\n        System.out.println(x.c);\n    }\n}\n(       )",
+    "answer": "z",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "(       )关键字可用于修饰类、变量和方法，它有“这是无法改变的”或者“最终”的含义。",
+    "answer": "final",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "下列代码的运行结果是什么？\npublic class Main{\n  static{\n     System.out.print(\"Hi here,\");\n  }\n  public void print(){\n     System.out.print(\"Hello\");\n  }\n  public static void main(String args[]){\n     Main m1=new Main();\n     m1.print();\n     Main m2=new Main();\n     m2.print();\n  }\n}\n上述代码的运行结果为：(     )",
+    "answer": "Hi here,HelloHello",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "给出以下代码：\nclass Number {\n    public int i;\n    public Number(int ii) {i=ii;};\n}\npublic class Main {\n    static void f(Number n) {\n        n.i = 9;\n    }\n    static void g(Integer n) {\n        n=9;\n    }\n    public static void main(String[] args) {\n        Number k = new Number(10);\n        f(k);\n        Integer m = new Integer(10);\n        g(m);\n        System.out.println(k.i+\":\"+m);\n    }\n}\n程序运行后输出结果是：(     )",
+    "answer": "9:10",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "用(     )关键字修饰的类不能被继承。 ",
+    "answer": "final",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "请写出以下程序运行结果：\n▾\n▾\n▾\n▾\n▾\n▾\nclass Window {\n    Window(int marker) { System.out.println(\"Window(\" + marker + \")\"); }\n}\nclass House {\n    Window w1 = new Window(1); \n    House() {\n        System.out.println(\"House()\");\n        w3 = new Window(33); \n    }\n    Window w2 = new Window(2); \n    void f() {\n        System.out.println(\"f()\");\n    }\n    static Window w3 = new Window(3); \n}\npublic class Est {\n    public static void main(String[] args) {\n        House h = new House();\n        h.f(); \n    }\n}\n(       )\n(       )\n(       )\n(       )\n(       )\n(       )",
+    "answer": "Window(3) Window(1) Window(2) House() Window(33) f()",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "静态方法必须使用(       )关键字来修饰",
+    "answer": "static",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "若要使一个方法能不依赖与该类对象而存在，则需使用的关键字(       ) 。",
+    "answer": "static",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "运行下列代码，运行结果是什么？\npublic class Main{\n  int i=2;\n  static int is;\n  static{\n    System.out.println(\"in static block\");\n    is=5;\n    System.out.println(\"static variable is=\"+is);\n  }\n  {\n    System.out.println(\"in non-static block\");\n    i=8;\n  }\n  Main(){\n    i=10;\n  }\n  public static void main(String args[]){\n    System.out.println(\"in main()\");\n    Main m1=new Main();\n    System.out.println(m1.i);\n  }\n}\n运行上述代码，则运行结果为：\n(       )\n(       )\n(       )\n(       )\n(       )",
+    "answer": "in static block static variable is=5 in main() in non-static block 10",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "接口中的方法其默认属性为(       ) 和public ",
+    "answer": "abstract",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "在Java程序中，通过类的定义只能实现单重继承，但通过(     )（填中文）的定义可以实现多重继承关系。",
+    "answer": "接口",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "接口中的方法的默认的访问权限是(     )。",
+    "answer": "public",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "一个类如果实现一个接口，那么它就需要实现接口中定义的全部（   ），否则该类就必须定义成（   ）。",
+    "answer": "方法 抽象类",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "在Java中，定义一个接口时不再使用class关键字，而是使用(      )关键字。",
+    "answer": "interface",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "在Java中, (     ) 类是所有异常和错误的顶级父类。",
+    "answer": "Throwable",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "在Java中，用户自定义异常类必须继承  (       ) 类， 用户人工抛出自定义异常使用关键词 (       )。",
+    "answer": "Exception throw",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "请写出以下程序运行结果：\n▾\n▾\n▾\n▾\n▾\n▾\n▾\npublic class X {  \n    public static void main(String [] args) {\n        try {\n            badMethod();  \n            System.out.print(\"A\");  \n        } catch (RuntimeException ex) { \n            System.out.print(\"B\"); \n        } catch (Exception ex1) { \n            System.out.print(\"C\"); \n        } finally {\n            System.out.print(\"D\"); \n        } \n        System.out.print(\"E\"); \n    } \n    public static void badMethod() { \n        throw new RuntimeException(); \n}}\n(       )",
+    "answer": "BDE",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "请写出以下程序运行结果：\n▾\n▾\n▾\n▾\n▾\n▾\n▾\n▾\n▾\nclass NoWater extends Exception {}\nclass NoDrinkableWater extends NoWater {}\npublic class FinallyWorks {\n    static int count = 0;\n    public static void main(String[] args) throws NoWater {\n        while ( true ) {\n           try {\n           count++;\n           if ( count == 1 ) { \n             System.out.println(\"OK\");\n           } else if ( count == 2 ) {\n             System.out.println(\"Exception raised: NoDrinkableWater\");\n             throw new NoDrinkableWater();\n           } else if ( count == 3 ) {\n             System.out.println(\"Exception raised: NoWater\");\n             throw new NoWater();\n           }\n            } catch (NoDrinkableWater e) {\n                System.out.println(e);\n            } finally {\n                System.out.println(\"finally\");\n                if ( count == 3 )\n                    break;\n            }\n        }\n    }\n}\n(       )\n(       )\n(       )\n(       )\n(       )\n(       )\n(       )",
+    "answer": "OK finally Exception raised: NoDrinkableWater NoDrinkableWater finally Exception raised: NoWater finally",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "Java语言认为那些可预料和不可预料的出错称为(     ) 。",
+    "answer": "异常",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "请写出以下程序运行结果：\n▾\n▾\n▾\n▾\n▾\n▾\n▾\nclass Exception1  extends Exception {}\nclass Exception2  extends Exception1  {}\npublic class Test {\n   public static void main(String[] args) \n      throws Exception {\n      try {\n         try {\n             throw new Exception2();\n         } catch ( Exception1  a ) {\n             System.out.println(\"Caught Exception1\");\n             throw a;\n         }\n      } catch ( Exception2 s ) {\n         System.out.println(\"Caught Exception2\");\n         return ;\n      } finally {\n         System.out.println(\"Hello World!\");\n}}}\n(       )\n(       )\n(       )",
+    "answer": "Caught Exception1 Caught Exception2 Hello World!",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "异常处理try-catch-finally语句中,是用(       )  语句块来捕获和处理异常。",
+    "answer": "catch",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "当编译并运行下列代码时，其运行结果时什么？\npublic class Main{\n   public static void main(String args[]){\n     String s=\"Java\";\n     StringBuffer sb=new StringBuffer(\"Java\");\n     hello(sb,s);\n     System.out.println(sb+s);\n   }\n   public static void hello(StringBuffer sb, String s){\n     sb.append(\"A\");\n     s=sb.toString();\n   }\n}\n上述代码的运行结果为：(     )",
+    "answer": "JavaAJava",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "给出以下代码：\n▾\n▾\npublic class Main {\n    int i=0;\n    Main(int ii) { i = ii; }\n    Main(String s) { this(s.length()); }\n    public String toString() { return String.format(\"%02X\",i); }\n    public static void main(String[] args) {\n        Main m = new Main(\"hello world\");\n        System.out.println(m);\n    }\n}\n程序运行输出结果是：(       )",
+    "answer": "0B",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "当编译并运行下列代码时，其运行结果是什么？\npublic class Main{\n   public static void main(String args[]){\n     String s=\"Java\";\n     StringBuffer sb=new StringBuffer(\"Java\");\n     change(s);\n     change(sb);\n     System.out.println(s+sb);\n   }\n   public static void change(String s){\n     s=s.concat(\"Hello\");\n   }\n   public static void change(StringBuffer sb){\n     sb.append(\"Hello\");\n   }\n}\n上述代码的运行结果为：(     )",
+    "answer": "JavaJavaHello",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "当编译并运行下列代码时，其运行结果是什么？\npublic class Main{\n   public static void main(String args[]){\n     certkiller(\"four\");\n     certkiller(\"tee\");\n     certkiller(\"to\");\n   }\n   public static void certkiller(String str){\n     int check=4;\n     if(check==str.length())\n       System.out.print(str.charAt(check-=1));\n     else\n       System.out.print(str.charAt(0));\n   }\n}\n上述代码的运行结果为：(     )。",
+    "answer": "rtt",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "当编译并运行下列代码时，其运行结果是什么？\npublic class Main{\n   public static void main(String args[]){\n     String s=\"Hello\";\n     methodA(s);\n     s=s.replace('e', 'a');\n     System.out.println(s);\n   }\n   public static void methodA(String str){\n     str+=\"World\";\n   }\n}\n上述代码的运行结果为：(     )。",
+    "answer": "Hallo",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "对于java.io包中的所有I/O类，根据数据流所关联的是数据源还是其他数据流，可分为节点流和(       )。",
+    "answer": "处理流",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "(       )类实现了缓存功能的InputStream。",
+    "answer": "BufferedInputStream",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "InputStreamReader类是用于将（     ）转换为（    ）。",
+    "answer": "字节流 字符流",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "数据流包括数据输入流(       )类，它们允许按Java的基本数据类型读写流中的数据。",
+    "answer": "DataInputStream",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "在java.io包内包含了处理各种流的基本类，所有的字节输出流都继承于(        ) 类，所有的字符输入流都继承于(     )类。",
+    "answer": "OutputStream Reader",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "无论采用何种方式定义线程类，线程类中均需重新定义(       )方法，该方法负责完成线程所需执行的任务。",
+    "answer": "run()",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "Java中定义多线程类的途径有两种:从Thread类的派生或实现(      )接口。",
+    "answer": "Runnable",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "Java程序中的线程被设计为一个对象，该对象具有自己的生命周期，可以利用接口Runnable和类(       )创建一个线程。",
+    "answer": "Thread",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "调用线程对象的(     )方法可以启动线程，使线程处于可运行状态。",
+    "answer": "start()",
+    "subject": "Java"
+  },
+  {
+    "type": "填空题",
+    "text": "在实现多线程的程序时有两种方式，一是通过继承（    ）类，二是通过实现（   ）接口。",
+    "answer": "Thread Runnable",
+    "subject": "Java"
+  }
+]

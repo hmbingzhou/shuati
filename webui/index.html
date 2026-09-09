@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>刷题软件 · 网页版</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ 顶部导航 ============ -->
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-icon">📚</span>
+    <span class="brand-name">刷题软件</span>
+    <span class="brand-tag">网页版</span>
+  </div>
+  <nav class="nav" id="nav">
+    <a href="#/home" data-nav="home">仪表盘</a>
+    <a href="#/practice" data-nav="practice">开始刷题</a>
+    <a href="#/wrong" data-nav="wrong">错题本</a>
+    <a href="#/recycle" data-nav="recycle">回收站</a>
+    <a href="#/library" data-nav="library">题库管理</a>
+    <a href="#/import" data-nav="import">批量导入</a>
+    <a href="#/reports" data-nav="reports">刷题报告</a>
+    <a href="#/settings" data-nav="settings">设置</a>
+    <a href="#/help" data-nav="help">使用说明</a>
+  </nav>
+  <div class="topbar-right" id="topbar-right"></div>
+</header>
+
+<!-- ============ 主内容区 ============ -->
+<main id="view" class="container">
+  <div class="loading">加载中…</div>
+</main>
+
+<!-- ============ 弹窗 ============ -->
+<div id="modal-root"></div>
+
+<!-- ============ 轻提示 ============ -->
+<div id="toast-root"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

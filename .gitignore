@@ -1,0 +1,36 @@
+# ================= 刷题软件 .gitignore =================
+# 规则：提交「程序代码 + 题库 data/*.json + 题目图片 pictures/」，
+#       忽略每位用户自己产生的数据、记录与临时文件。
+
+# ---- Python 运行产物 ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# ---- 本地个人数据（每位用户自己的，绝不提交/覆盖）----
+# 正确率刷题记录 / 错题本 / 回收站 / 考试记录 / 刷题进度
+data/records.json
+data/wrong_book.json
+data/recycle_bin.json
+data/exams.json
+data/brush_progress.json
+
+# 题库远程同步的本地状态文件（记录上次同步结果，用于检测远程下架）
+.bank_sync_state.json
+
+# 离线自检临时目录
+.sync_test_*/
+
+# ---- 本地环境 / 临时 ----
+reports/
+backups/
+*.log
+.venv/
+venv/
+dist/
+build/
+*.tmp
+.DS_Store
+Thumbs.db
