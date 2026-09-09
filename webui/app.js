@@ -37,7 +37,7 @@ function shuffle(arr) {
 function renderRichText(text) {
   const lines = String(text == null ? "" : text).split("\n");
   const out = [];
-  const re = /([A-Za-z0-9_\u4e00-\u9fa5.-]+\.(?:png|jpe?g|gif|bmp|webp))/gi;
+  const re = /([A-Za-z0-9_\u4e00-\u9fa5./-]+\.(?:png|jpe?g|gif|bmp|webp))/gi;
   for (const line of lines) {
     if (/^_{2,}\s*$/.test(line)) {
       out.push('<div class="blank-line">＿＿＿＿＿＿＿＿</div>');
@@ -1704,10 +1704,12 @@ function insertAtCursor(ta, token) {
   ta.setSelectionRange(pos, pos);
 }
 
-/* 上传本地图片到 pictures/，返回 {ok, name, overwritten}（二进制 POST） */
-async function uploadPicture(file) {
+/* 上传本地图片：dir 为科目（存到 pictures/<dir>/）或空（根目录）；返回 {name(带目录前缀), …} */
+async function uploadPicture(file, dir) {
   const buf = await file.arrayBuffer();
-  const resp = await fetch("/api/pictures/upload?name=" + encodeURIComponent(file.name), {
+  const qs = "name=" + encodeURIComponent(file.name)
+    + (dir ? "&dir=" + encodeURIComponent(dir) : "");
+  const resp = await fetch("/api/pictures/upload?" + qs, {
     method: "POST",
     headers: { "Content-Type": "application/octet-stream" },
     body: new Blob([buf]),
@@ -1720,21 +1722,23 @@ async function uploadPicture(file) {
   return j;
 }
 
-function openImagePicker(onPick) {
+function openImagePicker(onPick, dir) {
   (async () => {
     let data;
-    try { data = await api("GET", "/api/pictures"); } catch (e) { return; }
+    const qs = dir ? "?dir=" + encodeURIComponent(dir) : "";
+    try { data = await api("GET", "/api/pictures" + qs); } catch (e) { return; }
     const gridId = "pic-grid";
+    const title = dir ? `🖼 图片库 · ${esc(dir)}` : "🖼 图片库（全部）";
     const imgs = (data.items || []).map((it) => `
       <button type="button" class="pic-item" data-name="${esc(it.name)}" title="${esc(it.name)}">
         <img src="pictures/${encodeURI(it.name)}" loading="lazy" alt="">
         <span>${esc(it.name)}</span>
       </button>`).join("");
     const m = openModal(`
-      <div class="modal-head"><h3>🖼 图片库（点击插入）</h3><button class="modal-close">✕</button></div>
+      <div class="modal-head"><h3>${title}</h3><button class="modal-close">✕</button></div>
       <div class="modal-body">
         ${imgs ? `<div class="pic-grid" id="${gridId}">${imgs}</div>`
-          : `<div class="empty" id="${gridId}">pictures/ 目录还没有图片</div>`}
+          : `<div class="empty" id="${gridId}">${dir ? `pictures/${esc(dir)}/ 还没有图片` : "pictures/ 目录还没有图片"}</div>`}
         <input type="file" id="pic-upload-input" accept="image/png,image/jpeg,image/gif,image/webp,image/bmp,image/svg+xml" style="display:none">
       </div>
       <div class="modal-foot">
@@ -1749,7 +1753,7 @@ function openImagePicker(onPick) {
       fileInput.value = "";
       if (!file) return;
       try {
-        const r = await uploadPicture(file);
+        const r = await uploadPicture(file, dir);
         m.close();
         toast(`图片已上传${r.overwritten ? "（覆盖同名）" : ""}并插入`, "ok");
         onPick(r.name);
@@ -1883,12 +1887,13 @@ async function openQuestionEditor(item, onSaved) {
 
   $$(".q-tool-btn", m.mask).forEach((b) => b.addEventListener("click", () => {
     const tool = b.dataset.tool;
+    const curSubject = String((isEdit ? item.subject : "") || (($("#q-subject", m.mask) || {}).value || "")).trim();
     if (tool === "blank") insertBlank();
-    else if (tool === "img") openImagePicker((name) => insertAtCursor(textTa, name));
+    else if (tool === "img") openImagePicker((name) => insertAtCursor(textTa, name), curSubject);
     else if (tool === "optimg") openImagePicker((name) => {
       optTa.value = optTa.value ? optTa.value.replace(/\s*$/, "") + "\n" + name : name;
       refreshAnswerUI();
-    });
+    }, curSubject);
   }));
 
   function refreshAnswerUI() {
@@ -2264,7 +2269,7 @@ async function renderImport(view) {
           <button type="button" class="btn btn-ghost" id="imp-img">🖼 从图片库插入 / 上传图片</button>
         </div>
         <textarea class="answer-input" id="imp-text" rows="10" placeholder="把考试导出的原始文本粘贴到这里（如 分数/作者/单位/题干/T/F/参考答案 格式）">${esc(flow.raw)}</textarea>
-        <div class="hint">图片：文件名要写在题干/选项的<strong>同一行文本</strong>里（例如“……如下图所示。5.png”），图片本身保存在项目 <code>pictures/</code> 目录；转换后图片会随该行文字进入题目并自动显示。</div>
+        <div class="hint">图片：文件名要写在题干/选项的<strong>同一行文本</strong>里（例如“……如下图所示。5.png”），图片本身按科目放在项目 <code>pictures/科目/</code>（当前科目图可直接用按钮插入，插入的是带科目前缀的相对路径）；转换后图片随该行文字进入题目并自动显示。</div>
       </div>
       <div style="display:flex;gap:10px;flex-wrap:wrap">
         <button class="btn btn-primary" id="imp-preview" ${flow.busy || flow.judgeLoading ? "disabled" : ""}>🔎 转换并预览</button>
@@ -2276,7 +2281,7 @@ async function renderImport(view) {
   const judgeSel = $("#imp-judge", view);
   const textArea = $("#imp-text", view);
   const imgBtn = $("#imp-img", view);
-  if (imgBtn) imgBtn.addEventListener("click", () => openImagePicker((name) => insertAtCursor(textArea, name)));
+  if (imgBtn) imgBtn.addEventListener("click", () => openImagePicker((name) => insertAtCursor(textArea, name), flow.subject));
   const previewBtn = $("#imp-preview", view);
   const applyBtn = $("#imp-apply", view);
   const applyN = $("#imp-apply-n", view);
@@ -2948,7 +2953,7 @@ function renderHelp(view) {
       </div>
       <div class="help-block">
         <h3>🖼 图片题目</h3>
-        <p>题干中的 <code>1.png</code> 等文件名会自动从 <code>pictures/</code> 目录加载图片显示。</p>
+        <p>图片按科目存放在 <code>pictures/科目/</code>（共用图在 <code>_shared/</code>）；题干/选项里写相对文件名（如 <code>数据结构/3.png</code>）即可自动显示，编辑器“插入图片”会自动插入带科目前缀的引用。</p>
       </div>
     </div>`;
 }

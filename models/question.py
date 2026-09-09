@@ -28,9 +28,10 @@ from utils.helpers import yellow
 TYPE_ORDER = ("单选题", "多选题", "判断题", "填空题", "简答题", "计算题")
 AUTO_GRADED_TYPES = ("单选题", "多选题", "判断题", "填空题", "计算题")
 
-# 题干里图片文件名 token（png/jpg 等），显示与 images 收集共用
+# 题干里图片文件名 token（png/jpg 等），显示与 images 收集共用。
+# 支持科目前缀相对路径：数据结构/3.png、_shared/5a.png，或扁平短名 1.png
 _IMG_TOKEN_RE = re.compile(
-    r"[A-Za-z0-9_\u4e00-\u9fff.-]+\.(?:png|jpe?g|gif|bmp|webp)", re.IGNORECASE)
+    r"[A-Za-z0-9_\u4e00-\u9fff./-]+\.(?:png|jpe?g|gif|bmp|webp)", re.IGNORECASE)
 
 # 填空空位编号标记：【1】【12】……
 BLANK_MARK_RE = re.compile(r"【\s*(\d+)\s*】")

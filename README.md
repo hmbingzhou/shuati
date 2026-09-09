@@ -25,15 +25,24 @@
 
 ```
 data/              题库数据（每科一个 JSON：C语言.json、Python.json …）＋本地个人记录
-pictures/          题目图片（题库需要图片的题对应这里的 png）
+pictures/          题目图片（按科目子目录 pictures/<科目>/；共用图在 _shared/）
 webui/             网页版前端
 models/  utils/    题目模型与工具
 convert_tools/     批量导入用的文本转换脚本（judge 系列）
 backups/           存档 / 题库更新前自动备份（自动生成）
 reports/           刷题报告（自动生成）
 sync_bank.py       题库远程同步器（连接 GitHub，下载/更新题库）
+reorganize_pictures.py  图片按科目归类整理 + 题目↔图片一一对应检查
 data_manifest.json 题库同步清单（维护者推送题库时自动生成）
 ```
+
+图片整理与检查：
+```bash
+python reorganize_pictures.py --dry-run   # 预览分类/修复/搬移计划
+python reorganize_pictures.py             # 备份→按科目搬移→重写引用→报告
+python reorganize_pictures.py --check     # 校验每题引用图片都能找到
+```
+说明：题目里的图片引用是**相对 pictures/ 的相对路径**（如 `数据结构/3.png`，共用图 `_shared/x.png`）；逐题/批量导入的“插入图片”会按当前科目自动归入 `pictures/<科目>/`。
 
 > `data/records.json、wrong_book.json、recycle_bin.json、exams.json、brush_progress.json`
 > 是**你自己的使用数据**，已被 `.gitignore` 排除，不会上传 GitHub，也不会被远程更新覆盖。

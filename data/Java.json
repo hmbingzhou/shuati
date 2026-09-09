@@ -1771,7 +1771,7 @@
   },
   {
     "type": "单选题",
-    "text": "在Java中，以下程序段的输出结果是 （）。1.png",
+    "text": "在Java中，以下程序段的输出结果是 （）。Java/1.png",
     "answer": "D",
     "subject": "Java",
     "options": [
@@ -1791,6 +1791,9 @@
         "D",
         "42"
       ]
+    ],
+    "images": [
+      "Java/1.png"
     ]
   },
   {
@@ -1819,7 +1822,7 @@
   },
   {
     "type": "单选题",
-    "text": "在Java中，下列程序的运行结果是（  ）。2.png",
+    "text": "在Java中，下列程序的运行结果是（  ）。Java/2.png",
     "answer": "C",
     "subject": "Java",
     "options": [
@@ -1839,6 +1842,9 @@
         "D",
         "a=20, b=10, c=30"
       ]
+    ],
+    "images": [
+      "Java/2.png"
     ]
   },
   {

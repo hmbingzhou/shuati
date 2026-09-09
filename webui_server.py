@@ -520,42 +520,65 @@ def handle_answer_self(body):
     return {"ok": True, "correct": correct, "label": _question_label(q)}
 
 
-def handle_pictures_list():
-    """GET /api/pictures —— 图片库（编辑器插入图片用）"""
+def handle_pictures_list(query=None):
+    """
+    GET /api/pictures[?dir=科目] —— 图片库。
+    dir 为空列出 pictures/ 全部（含子目录，name 为相对路径如 数据结构/3.png）；
+    指定 dir 时只列该子目录。
+    """
+    want = ((query or {}).get("dir") or [""])[0].strip()
     if not os.path.isdir(PICTURES_DIR):
         return {"ok": True, "total": 0, "items": []}
     items = []
-    for name in sorted(os.listdir(PICTURES_DIR)):
-        p = os.path.join(PICTURES_DIR, name)
-        if os.path.isfile(p) and os.path.splitext(name)[1].lower() in _IMG_EXT:
-            items.append({"name": name, "size": os.path.getsize(p)})
+    base_len = len(PICTURES_DIR)
+    for dirpath, _dirnames, filenames in os.walk(PICTURES_DIR):
+        rel_dir = dirpath[base_len:].lstrip(os.sep).replace(os.sep, "/")
+        if want and rel_dir != want:
+            continue
+        for name in sorted(filenames):
+            if name.startswith("."):
+                continue
+            if os.path.splitext(name)[1].lower() not in _IMG_EXT:
+                continue
+            rel = f"{rel_dir}/{name}" if rel_dir else name
+            items.append({"name": rel, "size": os.path.getsize(os.path.join(dirpath, name))})
     return {"ok": True, "total": len(items), "items": items}
 
 
 _MAX_IMAGE_BYTES = 8 * 1024 * 1024
 _IMG_NAME_RE = re.compile(
     r"^[\w\u4e00-\u9fff][\w\u4e00-\u9fff .\-]*\.(?:png|jpe?g|gif|bmp|webp|svg)$", re.IGNORECASE)
+_DIR_NAME_RE = re.compile(r"^[\w\u4e00-\u9fff .\-]{0,40}$")
 
 
-def handle_pictures_upload_raw(name, raw: bytes):
-    """POST /api/pictures/upload?name=xxx —— 保存上传的图片字节，返回 {ok,name,size,overwritten}"""
+def handle_pictures_upload_raw(name, raw: bytes, dir_name: str = ""):
+    """POST /api/pictures/upload?name=xxx[&dir=科目] —— 保存上传的图片字节。
+    dir 为空存到 pictures/ 根目录；指定（如科目或 _shared）存到 pictures/<dir>/。
+    返回的 name 为带目录前缀的相对路径，直接可用作题干文本中的 token。
+    """
     name = (name or "").strip()
+    dir_name = (dir_name or "").strip()
     if not name or "/" in name or "\\" in name or name.startswith("."):
         raise ValueError("非法文件名")
+    if dir_name and (not _DIR_NAME_RE.match(dir_name) or ".." in dir_name
+                     or "/" in dir_name or "\\" in dir_name or dir_name.startswith(".")):
+        raise ValueError("非法目录名")
     if not _IMG_NAME_RE.match(name):
         raise ValueError("仅支持 png/jpg/gif/bmp/webp/svg，且文件名不能含路径分隔符")
     if not raw:
         raise ValueError("上传内容为空")
     if len(raw) > _MAX_IMAGE_BYTES:
         raise ValueError("图片超过 8MB 大小限制")
-    os.makedirs(PICTURES_DIR, exist_ok=True)
-    path = os.path.join(PICTURES_DIR, name)
+    target_dir = os.path.join(PICTURES_DIR, dir_name) if dir_name else PICTURES_DIR
+    os.makedirs(target_dir, exist_ok=True)
+    path = os.path.join(target_dir, name)
     overwritten = os.path.exists(path)
     tmp = path + ".upload_tmp"
     with open(tmp, "wb") as f:
         f.write(raw)
     os.replace(tmp, path)
-    return {"ok": True, "name": name, "size": len(raw), "overwritten": overwritten}
+    rel = f"{dir_name}/{name}" if dir_name else name
+    return {"ok": True, "name": rel, "size": len(raw), "overwritten": overwritten}
 
 
 
@@ -1120,7 +1143,7 @@ class ApiHandler(BaseHTTPRequestHandler):
                 elif path == "/api/bank/check":
                     self._send_json(handle_bank_check())
                 elif path == "/api/pictures":
-                    self._send_json(handle_pictures_list())
+                    self._send_json(handle_pictures_list(query))
                 elif path == "/api/questions":
                     self._send_json(handle_questions(query))
                 elif path == "/api/wrong":
@@ -1158,11 +1181,12 @@ class ApiHandler(BaseHTTPRequestHandler):
                     return
                 if path == "/api/pictures/upload":
                     name = (query.get("name") or [""])[0]
+                    dir_name = (query.get("dir") or [""])[0]
                     length = int(self.headers.get("Content-Length") or 0)
                     if length <= 0 or length > _MAX_IMAGE_BYTES:
                         raise ValueError("图片为空或超过 8MB 大小限制")
                     raw = self.rfile.read(length)
-                    self._send_json(handle_pictures_upload_raw(name, raw))
+                    self._send_json(handle_pictures_upload_raw(name, raw, dir_name))
                     return
                 body = self._read_body()
                 if path == "/api/questions":
