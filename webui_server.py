@@ -532,6 +532,32 @@ def handle_pictures_list():
     return {"ok": True, "total": len(items), "items": items}
 
 
+_MAX_IMAGE_BYTES = 8 * 1024 * 1024
+_IMG_NAME_RE = re.compile(
+    r"^[\w\u4e00-\u9fff][\w\u4e00-\u9fff .\-]*\.(?:png|jpe?g|gif|bmp|webp|svg)$", re.IGNORECASE)
+
+
+def handle_pictures_upload_raw(name, raw: bytes):
+    """POST /api/pictures/upload?name=xxx —— 保存上传的图片字节，返回 {ok,name,size,overwritten}"""
+    name = (name or "").strip()
+    if not name or "/" in name or "\\" in name or name.startswith("."):
+        raise ValueError("非法文件名")
+    if not _IMG_NAME_RE.match(name):
+        raise ValueError("仅支持 png/jpg/gif/bmp/webp/svg，且文件名不能含路径分隔符")
+    if not raw:
+        raise ValueError("上传内容为空")
+    if len(raw) > _MAX_IMAGE_BYTES:
+        raise ValueError("图片超过 8MB 大小限制")
+    os.makedirs(PICTURES_DIR, exist_ok=True)
+    path = os.path.join(PICTURES_DIR, name)
+    overwritten = os.path.exists(path)
+    tmp = path + ".upload_tmp"
+    with open(tmp, "wb") as f:
+        f.write(raw)
+    os.replace(tmp, path)
+    return {"ok": True, "name": name, "size": len(raw), "overwritten": overwritten}
+
+
 
 def handle_progress_get():
     """读取刷题进度（含 remaining 列表，用于「继续答题」）"""
@@ -1129,6 +1155,14 @@ class ApiHandler(BaseHTTPRequestHandler):
                     backup_name = archive_manager.backup_now("restore_before")
                     res = archive_manager.restore_archive(raw)
                     self._send_json({"ok": True, "backup": backup_name, **res})
+                    return
+                if path == "/api/pictures/upload":
+                    name = (query.get("name") or [""])[0]
+                    length = int(self.headers.get("Content-Length") or 0)
+                    if length <= 0 or length > _MAX_IMAGE_BYTES:
+                        raise ValueError("图片为空或超过 8MB 大小限制")
+                    raw = self.rfile.read(length)
+                    self._send_json(handle_pictures_upload_raw(name, raw))
                     return
                 body = self._read_body()
                 if path == "/api/questions":

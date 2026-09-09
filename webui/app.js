@@ -65,9 +65,12 @@ function badgeHtml(label) {
 }
 
 function ansShow(q, answer) {
-  /* 答案的人类可读形式 */
-  const ans = String(answer == null ? "" : answer);
+  /* 答案的人类可读形式：优先使用服务端 answerText（填空 items/简答/计算/整串） */
   const t = q && q.type;
+  if (q && q.answerText != null && q.answerText !== "") return q.answerText;
+  const isObj = answer != null && typeof answer === "object";
+  if (isObj) return "";
+  const ans = String(answer == null ? "" : answer);
   if (t === "判断题") return ans === "正确" ? "正确" : "错误";
   if (t === "单选题" || t === "多选题") {
     const letters = ans.toUpperCase().replace(/\s/g, "").split("").filter(Boolean);
@@ -1701,10 +1704,27 @@ function insertAtCursor(ta, token) {
   ta.setSelectionRange(pos, pos);
 }
 
-function openImagePicker(targetId, onPick) {
+/* 上传本地图片到 pictures/，返回 {ok, name, overwritten}（二进制 POST） */
+async function uploadPicture(file) {
+  const buf = await file.arrayBuffer();
+  const resp = await fetch("/api/pictures/upload?name=" + encodeURIComponent(file.name), {
+    method: "POST",
+    headers: { "Content-Type": "application/octet-stream" },
+    body: new Blob([buf]),
+  });
+  let j = null;
+  try { j = await resp.json(); } catch (e) { /* 非 JSON */ }
+  if (!resp.ok || (j && j.ok === false)) {
+    throw new Error((j && j.error) || `上传失败 (${resp.status})`);
+  }
+  return j;
+}
+
+function openImagePicker(onPick) {
   (async () => {
     let data;
     try { data = await api("GET", "/api/pictures"); } catch (e) { return; }
+    const gridId = "pic-grid";
     const imgs = (data.items || []).map((it) => `
       <button type="button" class="pic-item" data-name="${esc(it.name)}" title="${esc(it.name)}">
         <img src="pictures/${encodeURI(it.name)}" loading="lazy" alt="">
@@ -1713,17 +1733,35 @@ function openImagePicker(targetId, onPick) {
     const m = openModal(`
       <div class="modal-head"><h3>🖼 图片库（点击插入）</h3><button class="modal-close">✕</button></div>
       <div class="modal-body">
-        ${imgs ? `<div class="pic-grid">${imgs}</div>`
-          : '<div class="empty">pictures/ 目录还没有图片</div>'}
+        ${imgs ? `<div class="pic-grid" id="${gridId}">${imgs}</div>`
+          : `<div class="empty" id="${gridId}">pictures/ 目录还没有图片</div>`}
+        <input type="file" id="pic-upload-input" accept="image/png,image/jpeg,image/gif,image/webp,image/bmp,image/svg+xml" style="display:none">
       </div>
-      <div class="modal-foot"><button class="btn btn-ghost" data-act="close">关闭</button></div>`, "modal-lg");
+      <div class="modal-foot">
+        <button class="btn btn-primary" data-act="upload">⬆️ 上传新图片</button>
+        <button class="btn btn-ghost" data-act="close">关闭</button>
+      </div>`, "modal-lg");
     $(".modal-close", m.mask).addEventListener("click", () => m.close());
+    const fileInput = $("#pic-upload-input", m.mask);
+    $('[data-act="upload"]', m.mask).addEventListener("click", () => fileInput.click());
+    fileInput.addEventListener("change", async () => {
+      const file = fileInput.files && fileInput.files[0];
+      fileInput.value = "";
+      if (!file) return;
+      try {
+        const r = await uploadPicture(file);
+        m.close();
+        toast(`图片已上传${r.overwritten ? "（覆盖同名）" : ""}并插入`, "ok");
+        onPick(r.name);
+      } catch (e) {
+        toast(e.message, "err");
+      }
+    });
     m.mask.addEventListener("click", (e) => {
       const el = e.target.closest("[data-name]");
       if (el) { m.close(); onPick(el.dataset.name); }
       else if (e.target.closest('[data-act="close"]')) m.close();
     });
-    if (targetId) onPick = onPick; // 兼容旧调用
   })();
 }
 
@@ -1846,8 +1884,8 @@ async function openQuestionEditor(item, onSaved) {
   $$(".q-tool-btn", m.mask).forEach((b) => b.addEventListener("click", () => {
     const tool = b.dataset.tool;
     if (tool === "blank") insertBlank();
-    else if (tool === "img") openImagePicker(null, (name) => insertAtCursor(textTa, name));
-    else if (tool === "optimg") openImagePicker(null, (name) => {
+    else if (tool === "img") openImagePicker((name) => insertAtCursor(textTa, name));
+    else if (tool === "optimg") openImagePicker((name) => {
       optTa.value = optTa.value ? optTa.value.replace(/\s*$/, "") + "\n" + name : name;
       refreshAnswerUI();
     });
@@ -1887,7 +1925,15 @@ async function openQuestionEditor(item, onSaved) {
     }
     if (t === "填空题") {
       const wholeEl = $("#q-whole", m.mask);
-      if (wholeEl) wholeEl.value = (isEdit && item.wholeString && typeof itemAnswer === "string") ? itemAnswer : "";
+      // 整串模式的参考答案：兼容 dict 形态 answer.items[0].accept（v2）与旧字符串
+      let wholeRef = "";
+      if (itemAnswer && typeof itemAnswer === "object" && Array.isArray(itemAnswer.items)) {
+        const first = itemAnswer.items[0] || {};
+        wholeRef = (first.accept || []).join(" | ");
+      } else if (typeof itemAnswer === "string") {
+        wholeRef = itemAnswer;
+      }
+      if (wholeEl) wholeEl.value = (isEdit && item.wholeString) ? wholeRef : "";
       // 载入每空答案
       if (isEdit && !item.wholeString && itemAnswer && itemAnswer.items) {
         blankItems = (itemAnswer.items || []).map((it) => ({
@@ -1936,9 +1982,14 @@ async function openQuestionEditor(item, onSaved) {
     }
     if (t === "填空题") {
       if (isEdit && item.wholeString) {
-        const whole = ($("#q-whole", m.mask) || {}).value;
-        if (!whole.trim()) throw new Error("参考答案不能为空");
-        return { subject, question: { type: "填空题", text, answer: { whole: true, items: [{ accept: [whole.trim()] }] } } };
+        const el = $("#q-whole", m.mask) || {};
+        let whole = String(el.value || "").trim();
+        // 未修改时沿用原参考答案（dict 形态取 accept[0]）
+        if (!whole && itemAnswer && typeof itemAnswer === "object" && Array.isArray(itemAnswer.items)) {
+          whole = ((itemAnswer.items[0] || {}).accept || [""])[0] || "";
+        }
+        if (!whole) throw new Error("参考答案不能为空");
+        return { subject, question: { type: "填空题", text, answer: { whole: true, items: [{ accept: [whole] }] } } };
       }
       const n = countBlanks(text);
       if (n === 0) throw new Error("题干里没有空位：请用「＋插入空位」在题目中插入【N】");
@@ -2209,7 +2260,11 @@ async function renderImport(view) {
       </div>
       <div class="form-group">
         <label>待导入的原始文本</label>
+        <div style="margin-bottom:6px;display:flex;gap:8px;flex-wrap:wrap">
+          <button type="button" class="btn btn-ghost" id="imp-img">🖼 从图片库插入 / 上传图片</button>
+        </div>
         <textarea class="answer-input" id="imp-text" rows="10" placeholder="把考试导出的原始文本粘贴到这里（如 分数/作者/单位/题干/T/F/参考答案 格式）">${esc(flow.raw)}</textarea>
+        <div class="hint">图片：文件名要写在题干/选项的<strong>同一行文本</strong>里（例如“……如下图所示。5.png”），图片本身保存在项目 <code>pictures/</code> 目录；转换后图片会随该行文字进入题目并自动显示。</div>
       </div>
       <div style="display:flex;gap:10px;flex-wrap:wrap">
         <button class="btn btn-primary" id="imp-preview" ${flow.busy || flow.judgeLoading ? "disabled" : ""}>🔎 转换并预览</button>
@@ -2220,6 +2275,8 @@ async function renderImport(view) {
 
   const judgeSel = $("#imp-judge", view);
   const textArea = $("#imp-text", view);
+  const imgBtn = $("#imp-img", view);
+  if (imgBtn) imgBtn.addEventListener("click", () => openImagePicker((name) => insertAtCursor(textArea, name)));
   const previewBtn = $("#imp-preview", view);
   const applyBtn = $("#imp-apply", view);
   const applyN = $("#imp-apply-n", view);

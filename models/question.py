@@ -162,6 +162,16 @@ class ChoiceQuestion(Question):
             return "single"
         return self._choice_type
 
+    def check_answer(self, user_answer) -> bool:
+        """默认实现：单选逐字比较；多选集合比较（供直接构造的旧代码使用）"""
+        if self.choice_type == "multiple":
+            valid = set(self.option_letters)
+            user_set = set(re.sub(r"[^A-Za-z]", "", str(user_answer or "")).upper())
+            if not user_set or not user_set.issubset(valid):
+                return False
+            return user_set == set(self.answer)
+        return normalize_user_text(user_answer).upper() == self.answer.upper()
+
     @property
     def option_letters(self) -> list:
         return [str(o[0]).upper() for o in self.options

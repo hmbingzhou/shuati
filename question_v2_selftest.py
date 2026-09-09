@@ -5,7 +5,7 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from models.question import (  # noqa: E402
     Question, SingleChoiceQuestion, MultipleChoiceQuestion, TrueFalseQuestion,
-    FillBlankQuestion, EssayQuestion, CalculationQuestion, collect_image_tokens,
+    FillBlankQuestion, EssayQuestion, CalculationQuestion, ChoiceQuestion, collect_image_tokens,
 )
 
 fails = []
@@ -113,6 +113,31 @@ check("v1 填空 images", qf.to_dict()["images"] == [])
 v1fn = {"type": "填空题", "text": "public class 【1】 { public static 【2】 main(){} }", "answer": "A B", "subject": "旧"}
 qfn = Question.from_dict(v1fn)
 check("v1 填空【N】多空拆解", qfn.blank_count() == 2 and qfn.check_answer(["A", "B"]) and not qfn.check_answer(["A", "C"]))
+
+# ---- 填空整串模式(whole:true) 往返与判分 ----
+wraw = {"type": "填空题", "text": "写出程序输出（整串比对）", "answer": {"whole": True, "items": [{"accept": ["Hello 1"]}]}, "subject": "Java"}
+qw = Question.from_dict(wraw)
+d = qw.to_dict()
+check("whole 整串往返", isinstance(qw, FillBlankQuestion) and qw.whole_string is True
+      and d.get("answer") == {"whole": True, "items": [{"accept": ["Hello 1"]}]}, (qw.whole_string, d))
+check("whole 判分与空位", qw.blank_count() == 1 and qw.check_answer("Hello 1")
+      and not qw.check_answer("Hello 2") and not qw.check_answer(["Hello 1", "x"]))
+check("whole answer_text", "Hello 1" in qw.answer_text())
+
+# ---- convert_judge0：题干/选项中的图片文件名在解析后保留 ----
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "convert_tools"))
+import convert_judge0 as _cj  # noqa: E402
+
+qs_f = _cj.parse("运行结果如下：\n1.png\n\nHello")
+check("judge0 填空题干图片保真", len(qs_f) == 1 and "1.png" in qs_f[0].text
+      and "1.png" in qs_f[0].to_dict().get("images", []), [q.text for q in qs_f])
+qs_c = _cj.parse("看下图选择\n\n5a.png\n不是\n\nB")
+check("judge0 选择题选项图片保真", len(qs_c) == 1 and isinstance(qs_c[0], (ChoiceQuestion, SingleChoiceQuestion))
+      and qs_c[0].choice_type == "single"
+      and "5a.png" in qs_c[0].to_dict().get("images", []), [q.text for q in qs_c])
+
 
 print("\n" + ("全部通过 ✔" if not fails else f"失败 {len(fails)} 项: {fails}"))
 sys.exit(1 if fails else 0)
