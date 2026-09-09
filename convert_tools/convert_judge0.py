@@ -12,6 +12,11 @@
     答案行（判断题：T/F 或 对/错/√/×/正确/错误；选择题：单个纯字母行 A/AC）
     （答案行后紧接下一题题干，无空行）
 判断题答案归一化为"正确/错误"；选择题答案字母≥2 视为多选。
+
+⚠ 维护约定：本规则是“直通/通用识别”（含判断/选择/填空），功能与
+judge1–6（单选/多选/判断/填空/简答/计算，纯文本格式）对齐；
+当 judge1–6 的识别或题型规则更新时，需要同步审视/更新本文件的识别逻辑。
+（其输入排版与 judge1–6 的纯文本格式不同，故不共用解析代码。）
 """
 
 import os
@@ -25,7 +30,8 @@ if _ROOT not in sys.path:
 from models.question import TrueFalseQuestion, ChoiceQuestion, FillBlankQuestion  # noqa: E402
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-JUDGE_DESC = "直通：输入原样输出，识别判断题、选择题与填空题"
+JUDGE_NAME = "直通（通用识别）"
+JUDGE_DESC = "直通（通用识别）：输入原样输出，识别判断/选择/填空；与 judge1-6 规则同步维护"
 ECHO_RAW = True  # 调用方据此把"原始输入文本"作为输出，而不是 render 的结果
 
 # 判断题答案行（整行单值）；交给 TrueFalseQuestion 构造函数归一化

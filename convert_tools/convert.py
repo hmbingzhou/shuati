@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Convert text.txt quiz format to the specified format.
+"""Convert text.txt quiz format to the specified format. （已隐藏，不再出现在导入列表）
 
 通用转换：读取"题号+选项+末尾答案汇总行"风格的原始文本，解析为选择题。
+已被 PTA选择题 / judge1-2（纯文本）取代；文件保留供直接运行转换历史文本。
 
 Rules:
 1. Delete question numbers (remove leading "数字．" or "数字、")
@@ -11,7 +12,7 @@ Rules:
 5. Blank line after stem, blank line after options (before answer)
 6. No blank line between answer and next question's stem
 
-作为 convert_tools 的 judge 插件使用（文件名即 id/名字）；
+作为 convert_tools 的 judge 插件使用（文件名即 id；JUDGE_HIDDEN 使其不在列表中）；
 也可直接运行：读取本目录 text.txt，把转换结果写入本目录 text_converted.txt。
 """
 import os
@@ -25,7 +26,9 @@ if _ROOT not in sys.path:
 from models.question import ChoiceQuestion  # noqa: E402
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-JUDGE_DESC = "通用选择题：题号+选项+末尾答案汇总行"
+JUDGE_NAME = "通用选择题（旧）"
+JUDGE_HIDDEN = True  # 已由 PTA选择题 / judge1-2 取代，仅保留以防历史文本需要
+JUDGE_DESC = "通用选择题（已隐藏）：题号+选项+末尾答案汇总行"
 
 
 def is_stem_line(line):

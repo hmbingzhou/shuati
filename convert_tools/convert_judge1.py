@@ -1,128 +1,88 @@
 # -*- coding: utf-8 -*-
-"""转换判断题 v1：末尾行读取答案。
+"""judge1 · 单选题（纯文本格式，答案为一个字母）
 
-作为 convert_tools 的 judge 插件使用（文件名即 id/名字）；
-也可直接运行：读取本目录 text.txt，把转换结果写入本目录 text_converted.txt。
+可接受格式（题干 / 空行 / 选项 / 空行 / 答案字母；答案行后可直接接下一题题干）：
+    题干1
+
+    选项一
+    选项二
+    …
+
+    A
+    题干2
+    …
+
+规则：题干读到空行结束，随后选项逐行（读到空行），再往后的一行是答案。
+judge1 只接受【单个】字母答案；答案含 2 个及以上字母（多选数据）时该题跳过，
+请改用 judge2（多选题）。
+
+作为 convert_tools 的 judge 插件使用（文件名即 id）；也可直接运行。
 """
+
 import os
-import re  # noqa: F401  (保留 re，风格与旧脚本一致)
 import sys
 
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if _ROOT not in sys.path:
     sys.path.insert(0, _ROOT)
 
-from models.question import TrueFalseQuestion  # noqa: E402
+from convert_tools._plain_common import (  # noqa: E402
+    normalize_lines, read_block, skip_blank, letters_of, make_choice,
+)
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-JUDGE_DESC = "判断题：从文件末尾的 T/F 答案行读取答案"
-
-_TF2ANS = {"T": "正确", "F": "错误"}
-_ANS2TF = {"正确": "T", "错误": "F"}
-
-
-def _scan(text):
-    """复刻原转换解析，返回 [{text, raw_answer}]，raw_answer 为 'T'/'F' 或 None"""
-    lines = text.strip().split('\n')
-
-    # 找出答案汇总行（最后一行，全由 T/F/空格 组成）
-    answer_line = ''
-    for i in range(len(lines) - 1, -1, -1):
-        line = lines[i].strip()
-        if line and all(c in 'TF ' for c in line):
-            answer_line = line
-            break
-    answers = answer_line.split()
-
-    questions = []  # 题目文本列表（与答案按序对应）
-    i = 0
-    while i < len(lines):
-        line = lines[i]
-        if not line.strip():
-            i += 1
-            continue
-
-        # 检测题目块开头：分数
-        if line.strip().startswith('分数'):
-            i += 1
-            # 跳过 分数 2, 作者 xxx, 单位 xxx
-            while i < len(lines) and (lines[i].strip().startswith('作者') or lines[i].strip().startswith('单位')):
-                i += 1
-            question_lines = []
-            while i < len(lines):
-                cur = lines[i]
-                if not cur.strip():
-                    # 空行且下一行是 T → 题干结束
-                    if i + 1 < len(lines) and lines[i + 1].strip() == 'T':
-                        break
-                    i += 1
-                elif cur.strip() in ('T', 'F'):
-                    break
-                elif cur.strip() in ('评测结果', '答案正确', '答案错误', '得分') or cur.strip() in ('2 分',):
-                    break
-                else:
-                    question_lines.append(cur)
-                    i += 1
-
-            question_text = '\n'.join(q.rstrip() for q in question_lines).strip()
-            if question_text:
-                questions.append(question_text)
-
-            # 跳过 T / F / 评测结果 / 答案正确 / 得分 / 2 分
-            while i < len(lines) and lines[i].strip() in ('T', 'F'):
-                i += 1
-            while i < len(lines) and lines[i].strip() in ('评测结果', '答案正确', '答案错误', '得分', '2 分'):
-                i += 1
-            continue
-        i += 1
-
-    records = []
-    for idx, qt in enumerate(questions):
-        raw = answers[idx] if idx < len(answers) else None
-        records.append({"text": qt, "raw_answer": raw})
-    return records
+JUDGE_NAME = "单选题"
+JUDGE_ORDER = 30
+JUDGE_DESC = "单选题（纯文本）：题干/空行/选项/空行/单个字母答案行"
 
 
 def parse(text):
-    """解析为可入库的判断题对象（无有效 T/F 答案的跳过）"""
-    text = text.replace("\r\n", "\n").replace("\r", "\n")  # 兼容 Windows 换行
+    lines = normalize_lines(text)
     qs = []
-    for r in _scan(text):
-        raw = (r["raw_answer"] or "").strip().upper()
-        ans = _TF2ANS.get(raw)
-        if not r["text"].strip() or not ans:
-            continue
-        qs.append(TrueFalseQuestion(text=r["text"], answer=ans))
+    i = 0
+    n = len(lines)
+    while True:
+        stem, i = read_block(lines, i)
+        if not stem:
+            break
+        opts, i = read_block(lines, i)
+        if not opts:
+            continue  # 没有选项，可能是下一题题干被误读，直接跳过本段
+        i = skip_blank(lines, i)
+        if i >= n:
+            break
+        ans_line = lines[i].strip()
+        i += 1
+        letters = letters_of(ans_line)
+        if len(letters) != 1:
+            continue  # 非单选：跳过（多选请用 judge2）
+        q = make_choice("\n".join(stem), opts, letters)
+        if q is not None:
+            qs.append(q)
     return qs
 
 
 def render(questions):
-    """生成 text_converted 排版：题干 / 空行 / 答案(T或F)（答案后不空行）"""
     out = []
     for q in questions:
         out.append(q.text)
         out.append('')
-        out.append(_ANS2TF.get(q.answer, q.answer))
+        for _, opt in (q.options or []):
+            out.append(opt)
+        out.append('')
+        out.append(q.answer)
+    while out and out[-1] == '':
+        out.pop()
     return '\n'.join(out)
 
 
 def main():
     with open(os.path.join(BASE, 'text.txt'), 'r', encoding='utf-8') as f:
         content = f.read()
-    records = _scan(content)
-    print(f'找到 {len(records)} 个题目')
-    for idx, r in enumerate(records):
-        preview = r["text"][:60].replace('\n', '\\n')
-        print(f'  [{idx}] {preview}... -> {r["raw_answer"]}')
-    questions = parse(content)
-    print(f'可导入 {len(questions)} 道（跳过无有效答案 {len(records) - len(questions)} 道）')
-    output = render(questions)
-    with open(os.path.join(BASE, 'text_converted.txt'), 'w', encoding='utf-8') as f:
-        f.write(output)
-    print(f'\n总行数: {len(output.split(chr(10)))}')
-    print('\n--- 转换结果预览（前20行）---')
-    for li, line in enumerate(output.split('\n')[:20], 1):
-        print(f'{li:3d}| {repr(line)}')
+    qs = parse(content)
+    print(f'识别到 {len(qs)} 道单选题')
+    for idx, q in enumerate(qs):
+        print(f'  [{idx}] {q.text[:50].replace(chr(10), "\\n")}... -> {q.answer}')
 
 
 if __name__ == '__main__':
