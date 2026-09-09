@@ -11,10 +11,27 @@
 import datetime
 import json
 import os
+import re
 
 EXAMS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "exams.json")
 DEFAULT_OWNER = "default"
 MAX_SCORES = 50
+
+_BLANK_KEY_RE = re.compile(r"【\s*\d+\s*】")  # 填空空位占位，参与签名时统一为 #
+
+
+def _option_key(q) -> list:
+    """选项文本按排序拼接：选项顺序/编号变化不影响“是否已考”判定"""
+    opts = getattr(q, "options", None) or []
+    norm = [re.sub(r"\s+", " ", str(txt or "")).strip() for _, txt in opts]
+    return sorted(n for n in norm if n)
+
+
+def question_key(q) -> str:
+    """题目稳定签名（v2）：类型 + 规范化题干 + 可读答案 + 规范化选项"""
+    text = _BLANK_KEY_RE.sub("#", q.text or "")
+    parts = [q.get_type_name(), text, q.answer_text(), _option_key(q)]
+    return json.dumps(parts, ensure_ascii=False, sort_keys=True)
 
 
 def _load():
@@ -34,12 +51,6 @@ def _save(data):
     with open(EXAMS_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-
-def question_key(q) -> str:
-    """题目稳定签名（不含标记字段）"""
-    import json as _json
-    parts = [q.get_type_name(), (q.text or ""), (q.answer or ""), q.to_dict().get("options")]
-    return _json.dumps(parts, ensure_ascii=False, sort_keys=True)
 
 
 def mark_examined(owner: str, subject: str, keys: list):

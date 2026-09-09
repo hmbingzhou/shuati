@@ -86,7 +86,7 @@ def _question_label(q: Question) -> str:
 
 
 def _q_to_item(q: Question, subject: str, index: int) -> dict:
-    """把 Question 对象转成前端友好的 JSON（含 index、显示标签与标记）"""
+    """把 Question 对象转成前端友好的 JSON（含 index、显示标签、可读答案与题型信息）"""
     d = q.to_dict()
     d["subject"] = subject
     d["index"] = index
@@ -94,6 +94,12 @@ def _q_to_item(q: Question, subject: str, index: int) -> dict:
     d["options"] = d.get("options")
     d["flag_star"] = bool(q.flag_star)
     d["flag_cross"] = bool(q.flag_cross)
+    # v2 附加信息
+    d["answerText"] = q.answer_text()
+    d["autoGraded"] = bool(q.is_auto_graded())
+    d["blankCount"] = getattr(q, "blank_count", lambda: None)() if hasattr(q, "whole_string") else None
+    d["wholeString"] = bool(getattr(q, "whole_string", False))
+    d["choiceType"] = getattr(q, "choice_type", None)  # 兼容旧前端
     return d
 
 
@@ -438,21 +444,39 @@ def handle_wrong_delete(query):
     return {"ok": True, "message": "已删除该题的错题记录"}
 
 
+def _fmt_user_answer(user_answer) -> str:
+    if isinstance(user_answer, (list, tuple)):
+        return " | ".join(str(x) if str(x) else "（空）" for x in user_answer)
+    return str(user_answer or "")
+
+
+def _bookkeeping(subject: str, q, correct: bool, user_answer, mode: str, exam: bool, owner: str):
+    """判分后统一记账：错题本维护 + 平时正确率记录（与终端版一致）"""
+    is_wrong_mode = str(mode).endswith("wrong")
+    if correct:
+        if is_wrong_mode:
+            remove_wrong_record(subject, q.text)
+    else:
+        if is_wrong_mode:
+            update_wrong_record_timestamp(subject, q.text)
+        else:
+            add_wrong_record(subject, q, _fmt_user_answer(user_answer))
+    if not is_wrong_mode and not exam:
+        records.add_result(owner=owner, subject=subject,
+                           type_label=_question_label(q), correct=correct)
+
+
 def handle_answer(body):
     """
-    判定一道题的作答结果，并自动维护错题本（与终端版 brush.py 逻辑一致）。
-    body: {subject, index, answer, mode}
-      mode 以 wrong 结尾表示「错题复习」模式：
-        答对 -> 从错题本移除；答错 -> 更新该错题记录的时间戳
-      其它模式（刷所有题/按题型）：
-        答错 -> 加入错题本
-    返回: {correct, answer(正确答案), label}
+    判定一道题的作答结果（自动判分题型）。
+    body: {subject, index, answer(str|list), mode, exam, owner}
+    简答题（非自动判分）不在这里判：返回 {correct:null, auto:false, answer:参考答案}，
+    由前端展示后调 /api/answer/self 完成记账。
     """
     subject = (body.get("subject") or "").strip()
     user_answer = body.get("answer")
     if user_answer is None:
         user_answer = ""
-    user_answer = str(user_answer).strip()
     mode = body.get("mode") or "all"
     try:
         index = int(body.get("index", -1))
@@ -463,30 +487,50 @@ def handle_answer(body):
     if index < 0 or index >= len(questions):
         raise ValueError("题目序号超出范围")
     q = questions[index]
+
+    if not q.is_auto_graded():
+        return {"correct": None, "auto": False, "answer": q.answer_text(),
+                "label": _question_label(q), "type": q.get_type_name()}
+
     correct = q.check_answer(user_answer)
-    is_wrong_mode = mode.endswith("wrong")
-
-    if correct:
-        if is_wrong_mode:
-            remove_wrong_record(subject, q.text)
-    else:
-        if is_wrong_mode:
-            update_wrong_record_timestamp(subject, q.text)
-        else:
-            add_wrong_record(subject, q, user_answer)
-
-    # 平时正确率记录：仅“普通刷题”计入；错题复习/模拟考试不计（考试错题仍进错题本）
     owner = body.get("owner") or records.DEFAULT_OWNER
-    is_exam = bool(body.get("exam"))
-    if not is_wrong_mode and not is_exam:
-        records.add_result(owner=owner, subject=subject, type_label=_question_label(q), correct=correct)
+    _bookkeeping(subject, q, correct, user_answer, mode, bool(body.get("exam")), owner)
+    return {"correct": correct, "answer": q.answer_text(),
+            "label": _question_label(q), "type": q.get_type_name()}
 
-    return {
-        "correct": correct,
-        "answer": q.answer,
-        "label": _question_label(q),
-        "type": q.get_type_name(),
-    }
+
+def handle_answer_self(body):
+    """
+    简答题自评记账：body: {subject, index, selfCorrect:bool, answer, mode, exam, owner}
+    与自动判分走同一套错题本/正确率记录逻辑。
+    """
+    subject = (body.get("subject") or "").strip()
+    correct = bool(body.get("selfCorrect"))
+    try:
+        index = int(body.get("index", -1))
+    except (TypeError, ValueError):
+        raise ValueError("无效的题目序号")
+    questions = load_questions(subject)
+    if index < 0 or index >= len(questions):
+        raise ValueError("题目序号超出范围")
+    q = questions[index]
+    owner = body.get("owner") or records.DEFAULT_OWNER
+    _bookkeeping(subject, q, correct, body.get("answer") or "",
+                 body.get("mode") or "all", bool(body.get("exam")), owner)
+    return {"ok": True, "correct": correct, "label": _question_label(q)}
+
+
+def handle_pictures_list():
+    """GET /api/pictures —— 图片库（编辑器插入图片用）"""
+    if not os.path.isdir(PICTURES_DIR):
+        return {"ok": True, "total": 0, "items": []}
+    items = []
+    for name in sorted(os.listdir(PICTURES_DIR)):
+        p = os.path.join(PICTURES_DIR, name)
+        if os.path.isfile(p) and os.path.splitext(name)[1].lower() in _IMG_EXT:
+            items.append({"name": name, "size": os.path.getsize(p)})
+    return {"ok": True, "total": len(items), "items": items}
+
 
 
 def handle_progress_get():
@@ -1049,6 +1093,8 @@ class ApiHandler(BaseHTTPRequestHandler):
                     self._send_json(handle_bank_info())
                 elif path == "/api/bank/check":
                     self._send_json(handle_bank_check())
+                elif path == "/api/pictures":
+                    self._send_json(handle_pictures_list())
                 elif path == "/api/questions":
                     self._send_json(handle_questions(query))
                 elif path == "/api/wrong":
@@ -1093,6 +1139,8 @@ class ApiHandler(BaseHTTPRequestHandler):
                     self._send_json(handle_questions_batch_delete(body))
                 elif path == "/api/answer":
                     self._send_json(handle_answer(body))
+                elif path == "/api/answer/self":
+                    self._send_json(handle_answer_self(body))
                 elif path == "/api/progress":
                     self._send_json(handle_progress_save(body))
                 elif path == "/api/resolve":

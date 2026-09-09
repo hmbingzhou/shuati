@@ -1,6 +1,6 @@
 [
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "光的频分复用技术叫()。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -23,12 +23,10 @@
         "D",
         "码分复用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "10BASE-T中T是指 （ ），10是指（ ）。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -51,12 +49,10 @@
         "D",
         "光纤，10Tb/s"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "一个VLAN可以看作是一个",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -79,12 +75,10 @@
         "D",
         "阻塞域"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "数据链路层采用后退N帧（GBN）协议，发送方已经发送了编号为0~7的帧。当计时器超时时，若发送方只接收到0、2、3号帧的确认，则发送方需要重发的帧数是",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -107,12 +101,10 @@
         "D",
         "5"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "若两台主机在同一子网中，则两台主机的IP地址分别与它们的子网掩码相“与”的结果一定（ ）。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -135,12 +127,10 @@
         "D",
         "不同"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列哪种协议实现万维网上的超链接（ ）。",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -163,9 +153,7 @@
         "D",
         "无"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
     "type": "判断题",
@@ -184,7 +172,7 @@
     "flag_cross": false
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列哪项可以与术语“物理地址”互换使用?()",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -207,12 +195,10 @@
         "D",
         "网络地址"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列计算机网络上的通信面临的威胁属于主动攻击的是()。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -235,12 +221,10 @@
         "D",
         "截获"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对于基带而言，为了确保发送站点在传输时能检测到可能存在的冲突，数据帧的传输时延至少要等于信号传播时延的（）。",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -263,12 +247,10 @@
         "D",
         "2.5倍"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "通过为多个信道分配互不重叠的时间片来实现多路复用技术的是________",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -291,12 +273,10 @@
         "D",
         "波分多路复用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "CSMA/CD是IEEE802.3所定义的协议标准，它适用于（ ）。",
     "answer": "D",
     "subject": "计算机网络技术",
@@ -319,12 +299,10 @@
         "D",
         "以太网"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在分类的IP地址方案中，159.226.181.1是一个（ ）。",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -347,12 +325,10 @@
         "D",
         "D"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下关于TCP/IP协议的描述中，哪个是错误的______。",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -375,12 +351,10 @@
         "D",
         "UDP协议提供简单的无连接服务"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列电子邮件的正确格式是什么（ ）。",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -403,9 +377,7 @@
         "D",
         "没"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
     "type": "判断题",
@@ -424,7 +396,7 @@
     "flag_cross": false
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在CSMS/CD协议的定义中，“争用期”指的是（）",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -447,12 +419,10 @@
         "D",
         "从发送开始到收到应答的时间"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下端口为TCP熟知端口的是（）",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -475,12 +445,10 @@
         "D",
         "49153"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在TCP/IP中，解决计算机到计算机之间通信问题的层次是（ ）。",
     "answer": "D",
     "subject": "计算机网络技术",
@@ -503,12 +471,10 @@
         "D",
         "网际层"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "DNS的作用是（ ）。",
     "answer": "D",
     "subject": "计算机网络技术",
@@ -531,12 +497,10 @@
         "D",
         "将域名翻译为IP地址"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在物理层接口特性中，用于描述完成每种功能的时间发生顺序的是",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -559,12 +523,10 @@
         "D",
         "电气特性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "路由器工作在（）层",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -587,12 +549,10 @@
         "D",
         "数据链路层"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "网络层的功能是。",
     "answer": "BD",
     "subject": "计算机网络技术",
@@ -615,11 +575,6 @@
         "D",
         "分组转发"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "D"
     ]
   },
   {
@@ -631,7 +586,7 @@
     "flag_cross": false
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "时延包括哪几个部分？",
     "answer": "ABCD",
     "subject": "计算机网络技术",
@@ -654,17 +609,10 @@
         "D",
         "排队时延"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以太网的通信协议是()。",
     "answer": "D",
     "subject": "计算机网络技术",
@@ -687,12 +635,10 @@
         "D",
         "CSMA/CD"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "系统以通信子网为核心，通信子网处于网络的（ ），是由网络中的各种通信设备及只用作信息交换的计算机组成。",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -715,12 +661,10 @@
         "D",
         "前端"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列有关集线器的说法正确的是（ ）。",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -743,12 +687,10 @@
         "D",
         "集线器不可以扩展以太网"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "0比特插入/删除方法规定，在两个标志字段为F之间的比特序列中，如果检查出连续的（ ）个1，不管它后面的比特是0或1，都增加1个0.",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -771,12 +713,10 @@
         "D",
         "8"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下述协议中，（ ）不是链路层的标准",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -799,12 +739,10 @@
         "D",
         "SLIP"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列静态路由配置正确的是（）。",
     "answer": "D",
     "subject": "计算机网络技术",
@@ -827,9 +765,7 @@
         "D",
         "ip route 129.1.0.0 255.255.0.0 10.0.0.2"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
     "type": "判断题",
@@ -872,7 +808,7 @@
     "flag_cross": false
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "计算机网络的非性能特征的是（ ）。",
     "answer": "BCD",
     "subject": "计算机网络技术",
@@ -895,16 +831,10 @@
         "D",
         "可靠性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "用( )表示在单位时间内通过某个网络(或信道、接口)的数据量。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -927,12 +857,10 @@
         "D",
         "发送速率"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在多路复用技术中,FDM表示的是()。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -955,12 +883,10 @@
         "D",
         "统计时分多路复用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "计算机网络传输的信息单位是数据单元，对等实体间传送的数据单元是（ ）",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -983,12 +909,10 @@
         "D",
         "SDH"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "TCP/IP参考模型的网络层提供的是",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -1011,12 +935,10 @@
         "D",
         "有连接可靠的虚电路服务"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "数据能在通信双方延两个方向同时传输的通信方式为（）。",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -1039,12 +961,10 @@
         "D",
         "混合"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "PPP帧格式中标志序列（F）是（ ）。",
     "answer": "D",
     "subject": "计算机网络技术",
@@ -1067,12 +987,10 @@
         "D",
         "01111110"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "使用双绞线作为传输介质，适用于下列哪种类型的以太网",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -1095,12 +1013,10 @@
         "D",
         "10Base—2"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在TCP/IP体系结构中，网络层的数据传输单位是（ ）。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -1123,12 +1039,10 @@
         "D",
         "帧"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "HTTP报文有哪两种类型( )。",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -1151,12 +1065,10 @@
         "D",
         "没"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "以下哪是专用地址？",
     "answer": "ABC",
     "subject": "计算机网络技术",
@@ -1179,12 +1091,6 @@
         "D",
         "210.44.64.66"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
@@ -1204,7 +1110,7 @@
     "flag_cross": false
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "运输层中通信双方是（ ）。",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -1227,12 +1133,10 @@
         "D",
         "mac地址"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在Internet中，某WWW服务器提供的网页地址为http://www.microsoft.com，其中的“http”指的是（ ）。",
     "answer": "D",
     "subject": "计算机网络技术",
@@ -1255,12 +1159,10 @@
         "D",
         "访问类型为超文本传输协议"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "连接局域网中的计算机与传输介质的网络连接设备是()。",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -1283,12 +1185,10 @@
         "D",
         "路由器"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在OSI参考模型中，从下往上，会话层是第（ ）层。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -1311,12 +1211,10 @@
         "D",
         "4"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在常用的传输介质中，带宽最宽、信号传输衰减最小、抗干扰能力最强的一类传输\n介质是_________。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -1339,12 +1237,10 @@
         "D",
         "双绞线"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "HTTP协议使用的端口号为()。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -1367,12 +1263,10 @@
         "D",
         "20"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "一个IP地址包含网络地址与______。",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -1395,12 +1289,10 @@
         "D",
         "多址地址"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在数据链路层工作的网络设备是()",
     "answer": "D",
     "subject": "计算机网络技术",
@@ -1423,12 +1315,10 @@
         "D",
         "网桥"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下关于MAC的说法中错误的是（）",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -1451,12 +1341,10 @@
         "D",
         "MAC地址每次启动后都不会变化"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "计算机网络最核心的功能是（ ）。",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -1479,12 +1367,10 @@
         "D",
         "预防病毒"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下关于100BASE-T的描述中错误的是( ).",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -1507,12 +1393,10 @@
         "D",
         "支持共享式和交换式两种组网方式"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "主机甲和主机乙之间已建立了一个TCP连接，TCP最大段长度为1000字节。若主机甲的当前拥塞窗口为4000字节，在主机甲向主机乙连续发送两个最大段后，成功收到主机乙发送的对第一个段的确认段，确认段中通告的接收窗口大小为2000字节，则此时主机甲还可以向主机乙发送的最大字节数是",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -1535,9 +1419,7 @@
         "D",
         "2000"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
     "type": "判断题",
@@ -1548,7 +1430,7 @@
     "flag_cross": false
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "以下属于信道复用技术的是（ ）",
     "answer": "ABC",
     "subject": "计算机网络技术",
@@ -1571,16 +1453,10 @@
         "D",
         "XDFY"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "TCP/IP协议包括网络接口层、网际层、运输层和()。",
     "answer": "D",
     "subject": "计算机网络技术",
@@ -1603,12 +1479,10 @@
         "D",
         "应用层"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Internet的前身是：",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -1631,12 +1505,10 @@
         "D",
         "internet"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "发送时延即",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -1659,12 +1531,10 @@
         "D",
         "处理时延"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在同一个信道上的同一时刻，能够进行双向数据传送的通信方式是 （ ）。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -1687,12 +1557,10 @@
         "D",
         "全双工"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "双绞线传输介质是把两根导线绞在一起，这样可以减少（）",
     "answer": "D",
     "subject": "计算机网络技术",
@@ -1715,12 +1583,10 @@
         "D",
         "信号之间的相互串扰"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列描述不属于集线器的特点的是()",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -1743,12 +1609,10 @@
         "D",
         "采用专门的芯片，进行自适应串音回波抵消"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "IGP的作用范围是()。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -1771,12 +1635,10 @@
         "D",
         "自然子网范围内"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "计算机网络的用途包括：",
     "answer": "ABCD",
     "subject": "计算机网络技术",
@@ -1799,17 +1661,10 @@
         "D",
         "提供休闲娱乐的平台"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列属于集线器的功能是",
     "answer": "ABCD",
     "subject": "计算机网络技术",
@@ -1832,17 +1687,10 @@
         "D",
         "信号的转发"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "计算机网络的主要功能包括：",
     "answer": "AD",
     "subject": "计算机网络技术",
@@ -1865,11 +1713,6 @@
         "D",
         "共享"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D"
     ]
   },
   {
@@ -1929,7 +1772,7 @@
     "flag_cross": false
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "2.物理层定义了哪些方面的内容（ ）。",
     "answer": "ABCD",
     "subject": "计算机网络技术",
@@ -1952,17 +1795,10 @@
         "D",
         "过程特性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "网络层的功能是。",
     "answer": "AC",
     "subject": "计算机网络技术",
@@ -1985,15 +1821,10 @@
         "D",
         "IP地址分配"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列属于可靠传输的技术是（ ）。",
     "answer": "ABCD",
     "subject": "计算机网络技术",
@@ -2016,13 +1847,6 @@
         "D",
         "ARQ"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
@@ -2035,16 +1859,32 @@
   },
   {
     "type": "填空题",
-    "text": "网络由若干结点和连接这些结点的____组成。",
-    "answer": "链路",
+    "text": "网络由若干结点和连接这些结点的【1】组成。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "链路"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "以太网交换机工作在____,根据MAC帧的目的地址对接收到的数据帧进行转发和过滤。",
-    "answer": "数据链路层",
+    "text": "以太网交换机工作在【1】,根据MAC帧的目的地址对接收到的数据帧进行转发和过滤。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "数据链路层"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
@@ -2052,23 +1892,55 @@
   {
     "type": "填空题",
     "text": "按照网络的分布的地理范围，可以将计算机网络划分为 、 、 和 个人区域网PAN",
-    "answer": "广域网WAN 局域网LAN 城域网MAN",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "广域网WAN 局域网LAN 城域网MAN"
+          ]
+        }
+      ]
+    },
+    "subject": "计算机网络技术",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "传输媒体也称为传输介质，可以分为两大类，即【1】型传输媒体和【2】型传输媒体。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "导引"
+          ]
+        },
+        {
+          "accept": [
+            "非导引"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "传输媒体也称为传输介质，可以分为两大类，即（ ）型传输媒体和（ ）型传输媒体。",
-    "answer": "导引 非导引",
-    "subject": "计算机网络技术",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "802.3以太网最小传送的帧长度为（ ）个字节。",
-    "answer": "64",
+    "text": "802.3以太网最小传送的帧长度为【1】个字节。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "64"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
@@ -2076,23 +1948,55 @@
   {
     "type": "填空题",
     "text": "以太网MAC帧格式 有两种标准：（ ）和IEEE802.3标准。",
-    "answer": "DIX Ethernet V2标准",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "DIX Ethernet V2标准"
+          ]
+        }
+      ]
+    },
+    "subject": "计算机网络技术",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "整个路由器的结构可以划分为路由选择部分和【1】部分两大部分。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "分组转发"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "整个路由器的结构可以划分为路由选择部分和（ ）部分两大部分。",
-    "answer": "分组转发",
-    "subject": "计算机网络技术",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "已知IP地址是141.14.72.24，子网掩码是255.255.255.0,写出网络地址为（ ）.若子网掩码修改为255.255.128.0，其网络地址为（ ）.",
-    "answer": "141.14.72.0 141.14.0.0",
+    "text": "已知IP地址是141.14.72.24，子网掩码是255.255.255.0,写出网络地址为【1】.若子网掩码修改为255.255.128.0，其网络地址为【2】.",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "141.14.72.0"
+          ]
+        },
+        {
+          "accept": [
+            "141.14.0.0"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
@@ -2100,39 +2004,102 @@
   {
     "type": "填空题",
     "text": "模拟信号是连续的信号，数字信号是（）信号。",
-    "answer": "离散的",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "离散的"
+          ]
+        }
+      ]
+    },
+    "subject": "计算机网络技术",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "由一些局域网网段构成的与物理位置无关的逻辑组称为【1】，即VLAN。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "虚拟局域网"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "由一些局域网网段构成的与物理位置无关的逻辑组称为（ ），即VLAN。",
-    "answer": "虚拟局域网",
+    "text": "IP数据报首部长度字段占4位，最大值为【1】（二进制），最小值为0101，最常用的首部长度是【2】字节，此时的IP数据报无可变部分。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "1111"
+          ]
+        },
+        {
+          "accept": [
+            "20"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "IP数据报首部长度字段占4位，最大值为（ ）（二进制），最小值为0101，最常用的首部长度是（ ）字节，此时的IP数据报无可变部分。",
-    "answer": "1111 20",
+    "text": "TCP/IP协议自下向上包括【1】层、【2】层、【3】层和【4】层。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "网络接口"
+          ]
+        },
+        {
+          "accept": [
+            "网际"
+          ]
+        },
+        {
+          "accept": [
+            "传输"
+          ]
+        },
+        {
+          "accept": [
+            "应用"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "TCP/IP协议自下向上包括（ ）层、（ ）层、（ ）层和（ ）层。",
-    "answer": "网络接口 网际 传输 应用",
-    "subject": "计算机网络技术",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "RIP路由协议每隔30S和（ ）路由器交换路由信息。",
-    "answer": "相邻",
+    "text": "RIP路由协议每隔30S和【1】路由器交换路由信息。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "相邻"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
@@ -2140,39 +2107,92 @@
   {
     "type": "填空题",
     "text": "常用的编码方式有：（）、（）、（）和（）。",
-    "answer": "不归零制 归零制 曼彻斯特编码 差分曼彻斯特编码",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "不归零制 归零制 曼彻斯特编码 差分曼彻斯特编码"
+          ]
+        }
+      ]
+    },
+    "subject": "计算机网络技术",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "一般来说，网络的QOS是指【1】。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "网络服务质量"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "一般来说，网络的QOS是指（ ）。",
-    "answer": "网络服务质量",
+    "text": "一个C类网络地址210.45.160.0，它的子网掩码为255.255.255.192，最多能划分【1】个可用子网，每个子网可容纳【2】个可用主机数。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "2"
+          ]
+        },
+        {
+          "accept": [
+            "62"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "一个C类网络地址210.45.160.0，它的子网掩码为255.255.255.192，最多能划分（ ）个可用子网，每个子网可容纳（ ）个可用主机数。",
-    "answer": "2 62",
+    "text": "计算机网络是由负责信息传递的【1】子网和负责信息处理的【2】子网组成。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "通信"
+          ]
+        },
+        {
+          "accept": [
+            "资源"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "计算机网络是由负责信息传递的____子网和负责信息处理的____子网组成。",
-    "answer": "通信 资源",
-    "subject": "计算机网络技术",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "TCP连接建立的过程需要（ ）次握手。",
-    "answer": "3",
+    "text": "TCP连接建立的过程需要【1】次握手。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "3"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
@@ -2180,39 +2200,82 @@
   {
     "type": "填空题",
     "text": "网卡中的MAC地址是（）位的。",
-    "answer": "48",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "48"
+          ]
+        }
+      ]
+    },
+    "subject": "计算机网络技术",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "1983年【1】协议成为ARPANET上的标准协议,人们把1983年作为因特网的诞生时间。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "TCP/IP"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "1983年____协议成为ARPANET上的标准协议,人们把1983年作为因特网的诞生时间。",
-    "answer": "TCP/IP",
+    "text": "在数据通信模型中，模拟信号和数字信号之间的转换需要【1】设备。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "调制解调器"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "在数据通信模型中，模拟信号和数字信号之间的转换需要（ ）设备。",
-    "answer": "调制解调器",
+    "text": "统一资源定位符URL的一般形式:【1】。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "<协议>://<主机>:<端口>/<路径>"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "统一资源定位符URL的一般形式:____。",
-    "answer": "<协议>://<主机>:<端口>/<路径>",
-    "subject": "计算机网络技术",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "网络体系结构中物理层，数据链路层和网络层的单位分别是比特和_______和分组。",
-    "answer": "帧",
+    "text": "网络体系结构中物理层，数据链路层和网络层的单位分别是比特和【1】和分组。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "帧"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
@@ -2220,127 +2283,291 @@
   {
     "type": "填空题",
     "text": "以太网MAC帧格式有两种标准DIX Ethernet V2和 标准。",
-    "answer": "IEEE 802.3",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "IEEE 802.3"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "填空题",
     "text": "在上传输的数据帧中，插入了一个（）字节长的VLAN标记。",
-    "answer": "4",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "4"
+          ]
+        }
+      ]
+    },
+    "subject": "计算机网络技术",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "C类网络地址包含24个网络ID位和8个主机ID位，C类网络实际最多可支持【1】台计算机。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "254"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "C类网络地址包含24个网络ID位和8个主机ID位，C类网络实际最多可支持_______台计算机。",
-    "answer": "254",
+    "text": "CWND【1】ssthresh时启用慢启动算法，CWND【2】ssthresh时启用拥塞避免算法。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "<"
+          ]
+        },
+        {
+          "accept": [
+            ">="
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "CWND（ ）ssthresh时启用慢启动算法，CWND( )ssthresh时启用拥塞避免算法。",
-    "answer": "< >=",
+    "text": "计算机网络数据传输的总时延是【1】、【2】、【3】和【4】",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "发送时延"
+          ]
+        },
+        {
+          "accept": [
+            "传播时延"
+          ]
+        },
+        {
+          "accept": [
+            "处理时延"
+          ]
+        },
+        {
+          "accept": [
+            "排队时延"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "计算机网络数据传输的总时延是（ ）、（ ）、（ ）和（ ）",
-    "answer": "发送时延 传播时延 处理时延 排队时延",
+    "text": "路由器根据目的站IP地址的【1】进行路由选择。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "网络号"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "路由器根据目的站IP地址的____进行路由选择。",
-    "answer": "网络号",
+    "text": "TCP连接终止需要【1】次握手。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "4"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "TCP连接终止需要（ ）次握手。",
-    "answer": "4",
+    "text": "网际组管理协议IGMP是【1】层的协议。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "网络"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "网际组管理协议IGMP是（ ）层的协议。",
-    "answer": "网络",
+    "text": "FTP默认控制连接端口号是【1】。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "21"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "FTP默认控制连接端口号是（ ）。",
-    "answer": "21",
+    "text": "IPv6的数据报由两大部分组成,即【1】和后面的有效载荷。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "基本首部"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "IPv6的数据报由两大部分组成,即____和后面的有效载荷。",
-    "answer": "基本首部",
+    "text": "在数据链路层中传送的帧中,广泛使用的检错技术是【1】 。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "循环冗余检验"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "在数据链路层中传送的帧中,广泛使用的检错技术是____ 。",
-    "answer": "循环冗余检验",
+    "text": "通信系统中，称调制前的电信号为 【1】 信号，调制后的信号为调制信号。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "基带"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "通信系统中，称调制前的电信号为 （ ） 信号，调制后的信号为调制信号。",
-    "answer": "基带",
+    "text": "数据通信按照信号传送方向与时间关系，可分为【1】、【2】和【3】。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "单工通信"
+          ]
+        },
+        {
+          "accept": [
+            "半双工通信"
+          ]
+        },
+        {
+          "accept": [
+            "全双工通信"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "数据通信按照信号传送方向与时间关系，可分为_________、_________和_________。",
-    "answer": "单工通信 半双工通信 全双工通信",
+    "text": "以太网的帧中首部和尾部一共【1】字节。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "18"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "以太网的帧中首部和尾部一共（ ）字节。",
-    "answer": "18",
+    "text": "【1】协议可应用于在网络中建立树形拓扑，消除网络中的环路，并且可以通过一定的方法实现路径冗余。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "生成树"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "（ ）协议可应用于在网络中建立树形拓扑，消除网络中的环路，并且可以通过一定的方法实现路径冗余。",
-    "answer": "生成树",
-    "subject": "计算机网络技术",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "OSPF分组共有（ ）种类型。",
-    "answer": "5",
+    "text": "OSPF分组共有【1】种类型。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "5"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
@@ -2348,87 +2575,191 @@
   {
     "type": "填空题",
     "text": "在TCP/IP层次模型的第三层网络层中包括的协议主要有（）、（）、（）、（）。",
-    "answer": "IP ICMP IGMP ARP",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "IP ICMP IGMP ARP"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "填空题",
     "text": "运输层端口号分为（）和（）两大类。",
-    "answer": "服务器端口号 客户端端口号",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "服务器端口号 客户端端口号"
+          ]
+        }
+      ]
+    },
+    "subject": "计算机网络技术",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "HTTP协议使用的默认端口号是【1】。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "80"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "HTTP协议使用的默认端口号是（ ）。",
-    "answer": "80",
+    "text": "802.11是无线以太网的标准,它使用星形拓扑,其中心称为【1】。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "接入点"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "802.11是无线以太网的标准,它使用星形拓扑,其中心称为____。",
-    "answer": "接入点",
+    "text": "从逻辑功能上分，计算机网络可以分为【1】和【2】两个子网。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "通信"
+          ]
+        },
+        {
+          "accept": [
+            "资源"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "从逻辑功能上分，计算机网络可以分为（ ）和（ ）两个子网。",
-    "answer": "通信 资源",
+    "text": "传输媒体也称为传输介质,可以分为两大类,即【1】型传输媒体和【2】型传输媒体。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "导引"
+          ]
+        },
+        {
+          "accept": [
+            "非导引"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "传输媒体也称为传输介质,可以分为两大类,即____型传输媒体和____型传输媒体。",
-    "answer": "导引 非导引",
+    "text": "指明某条线上出现的某一电平的电压表示何种意义，这是物理层的【1】特性。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "功能"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "指明某条线上出现的某一电平的电压表示何种意义，这是物理层的（ ）特性。",
-    "answer": "功能",
+    "text": "由一些局域网网段构成的与物理位置无关的逻辑组称为【1】。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "虚拟局域网"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "由一些局域网网段构成的与物理位置无关的逻辑组称为（ ）。",
-    "answer": "虚拟局域网",
+    "text": "每台主机都有一个【1】 ，保存其所在局域网各主机和路由器的IP地址到硬件地址的映射表。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "ARP高速缓存"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "每台主机都有一个（ ） ，保存其所在局域网各主机和路由器的IP地址到硬件地址的映射表。",
-    "answer": "ARP高速缓存",
+    "text": "IPv6的数据报由两大部分组成，即【1】和后面的有效载荷。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "基本首部"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "IPv6的数据报由两大部分组成，即（ ）和后面的有效载荷。",
-    "answer": "基本首部",
-    "subject": "计算机网络技术",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "一个报文序号字段值201，收到的确认号是341，数据长度是（ ）。",
-    "answer": "140",
+    "text": "一个报文序号字段值201，收到的确认号是341，数据长度是【1】。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "140"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
@@ -2436,71 +2767,154 @@
   {
     "type": "填空题",
     "text": "www的英文全称是是指（ ）。",
-    "answer": "World Wide Web",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "World Wide Web"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "填空题",
     "text": "TCP/IP的核心思想(理念)是什么？",
-    "answer": "网络互连",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "网络互连"
+          ]
+        }
+      ]
+    },
+    "subject": "计算机网络技术",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "一般双绞线最长可传输【1】米。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "100"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "一般双绞线最长可传输（ ）米。",
-    "answer": "100",
+    "text": "172. 802.3以太网最小传送的帧长度为【1】个字节。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "64"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "172. 802.3以太网最小传送的帧长度为（ ）个字节。",
-    "answer": "64",
+    "text": "网络层提供面向连接服务的称为虚电路服务，提供无连接的服务称为【1】。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "数据报服务"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "网络层提供面向连接服务的称为虚电路服务，提供无连接的服务称为（ ）。",
-    "answer": "数据报服务",
+    "text": "标识、标志和【1】主要用于数据包的分片。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "片偏移"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "标识、标志和（ ）主要用于数据包的分片。",
-    "answer": "片偏移",
+    "text": "实体表示任何可发送或接收信息的硬件或软件进程，同一系统相邻两层的实体进行交互的地方，称为【1】。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "接口"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "实体表示任何可发送或接收信息的硬件或软件进程，同一系统相邻两层的实体进行交互的地方，称为（ ）。",
-    "answer": "接口",
+    "text": "接收方在收到【1】个重复的ACK时，会进行快重传。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "3"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "接收方在收到（ ）个重复的ACK时，会进行快重传。",
-    "answer": "3",
-    "subject": "计算机网络技术",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "根据信号中代表消息的参数的取值方式不同,信号可分为____信号和____信号两大类。",
-    "answer": "模拟 数字",
+    "text": "根据信号中代表消息的参数的取值方式不同,信号可分为【1】信号和【2】信号两大类。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "模拟"
+          ]
+        },
+        {
+          "accept": [
+            "数字"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
@@ -2508,63 +2922,142 @@
   {
     "type": "填空题",
     "text": "将数字信号调制为模拟信号有三种方式，即（）、（）和（）。",
-    "answer": "调幅 调频 调相",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "调幅 调频 调相"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "填空题",
     "text": "在数据链路层中传送的帧中，广泛使用的检错技术是",
-    "answer": "循环冗余检验",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "循环冗余检验"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "填空题",
     "text": "CSMA/CD协议包含的三个方面内容是什么？",
-    "answer": "载波监听 多点接入 碰撞检测",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "载波监听 多点接入 碰撞检测"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "填空题",
     "text": "已知IP地址210.45.160.21，子网掩码为255.255.255.0，求出该IP地址所在网络的广播地址是（）",
-    "answer": "210.45.160.255",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "210.45.160.255"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "填空题",
     "text": "已知IP地址210.45.160.221，子网掩码为255.255.255.128，求出该IP地址所在网络的网络号（网络地址）是（）",
-    "answer": "210.45.160.128",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "210.45.160.128"
+          ]
+        }
+      ]
+    },
+    "subject": "计算机网络技术",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "ACK=【1】表示该报文是一个确认报文。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "1"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "ACK=( )表示该报文是一个确认报文。",
-    "answer": "1",
+    "text": "URL的功能是【1】。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "统一资源定位符"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "URL的功能是（ ）。",
-    "answer": "统一资源定位符",
-    "subject": "计算机网络技术",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "一个数据通信系统可划分为三大部分，即源系统、（ ）、目的系统。",
-    "answer": "传输系统",
+    "text": "一个数据通信系统可划分为三大部分，即源系统、【1】、目的系统。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "传输系统"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
     "flag_cross": false
@@ -2572,26 +3065,59 @@
   {
     "type": "填空题",
     "text": "已知IP地址210.45.160.21，子网掩码为255.255.255.128，求出该IP地址所在网络的广播地址是（）",
-    "answer": "210.45.160.127",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "210.45.160.127"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "填空题",
     "text": "已知IP地址210.45.160.21，子网掩码为255.255.255.0，求出该IP地址所在网络的网络号（网络地址）是（）",
-    "answer": "210.45.160.0",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "210.45.160.0"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "填空题",
     "text": "TCP协议规定，在TCP连接建立后传送的所有报文段都必须把ACK字段值置为 。",
-    "answer": "1",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "1"
+          ]
+        }
+      ]
+    },
     "subject": "计算机网络技术",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "判断题",
@@ -2874,7 +3400,7 @@
     "flag_cross": false
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在哪个范围内的网络可称为局域网（ ）。",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -2897,12 +3423,10 @@
         "D",
         "在一个国家"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在以太网中，是根据（  ）地址来区分不同的设备的。",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -2925,12 +3449,10 @@
         "D",
         "LLC地址"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列属于二级域名的是（ ）。",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -2953,12 +3475,10 @@
         "D",
         "jp"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "如果一个C类网络用掩码255.255.255.192划分子网，那么会有（） 个可用的子网(子网号不支持全0全1)。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -2981,12 +3501,10 @@
         "D",
         "8"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "一个TCP连接总是以1KB的最大段发送TCP段，发送方有足够多的数据要发送。当拥塞窗口为16KB时发生了超时，如果接下来的4个RTT（往返时间）时间内的TCP段的传输都是成功的，那么当第4个RTT时间内发送的所有TCP段都得到肯定应答时，拥塞窗口大小是",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -3009,12 +3527,10 @@
         "D",
         "7KB"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "双绞线由两根具有绝缘保护层的铜导线按一定密度互相绞在一起组成，这样可以（ ）。",
     "answer": "D",
     "subject": "计算机网络技术",
@@ -3037,12 +3553,10 @@
         "D",
         "降低信号干扰的程度"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "802.11g的最高数据传输速率为()Mbps。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -3065,12 +3579,10 @@
         "D",
         "11"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "主机收到广播帧，是否会接受？是否会把该数据提交给上层网络协议？",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -3093,12 +3605,10 @@
         "D",
         "否，否"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "网络协议的主要要素为：",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -3121,12 +3631,10 @@
         "D",
         "编码、控制信息、同步"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "静态划分信道是用户只要分配到信道就不会和其它用户发生冲突,下列方法中不属于静态划分信道方法的是()。",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -3149,12 +3657,10 @@
         "D",
         "波分复用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列协议中,能够提供可靠传输的运输层协议是()。",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -3177,12 +3683,10 @@
         "D",
         "PPP协议"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "因特网最终发展成为多层次（ ）结构的网络。",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -3205,12 +3709,10 @@
         "D",
         "RACKSPACE"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "物理层中，指明某条线上出现的某一电平的电压表示何种意义，这是物理层与媒体的接口的是（）。",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -3233,12 +3735,10 @@
         "D",
         "过程特性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "交换机收到一个帧，但该帧的目标地址在其MAC地址表中找不到对应，交换机将（ ）。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -3261,12 +3761,10 @@
         "D",
         "转发给网关"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对于100Mbps的以太网交换机，当输出端口无排队，以直通交换方式转发一个以太网帧（不包括前导码）时，引入的转发延迟至少是",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -3289,12 +3787,10 @@
         "D",
         "121.44us"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "IP地址的子网掩码的作用是（  ）。",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -3317,12 +3813,10 @@
         "D",
         "用于掩藏子网，防止黑客攻击"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列不属于运输层的主要的功能是（ ）。",
     "answer": "D",
     "subject": "计算机网络技术",
@@ -3345,12 +3839,10 @@
         "D",
         "路径选择"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "防止盗用IP行为是利用防火墙的()功能。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -3373,12 +3865,10 @@
         "D",
         "URL过滤功能"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列计算机网络上的通信面临的威胁属于被动攻击的是()。",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -3401,12 +3891,10 @@
         "D",
         "蠕虫"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "连接在因特网上的计算机称为：",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -3429,12 +3917,10 @@
         "D",
         "电脑"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在TCP/IP体系结构中，直接为ICMP提供服务的协议是",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -3457,12 +3943,10 @@
         "D",
         "TCP"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "大多数情况下，网卡实现的是",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -3485,12 +3969,10 @@
         "D",
         "网络层协议"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "物理层中，指明某条线上出现的某一电平的电压表示何种意义，这是物理层与媒体的接口的",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -3513,12 +3995,10 @@
         "D",
         "过程特性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以太网的MAC提供的是",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -3541,12 +4021,10 @@
         "D",
         "有连接的可靠服务"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列关于IP路由器功能的描述中，正确的是\nⅠ.运行路由协议，设备路由表\nⅡ.检测到拥塞时，合理丢弃IP分组\nⅢ.对收到的IP分组头进行差错校验，确保传输的IP分组不丢失\nⅣ.根据收到的IP分组的目的IP地址，将其转发至合适的输出线路上",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -3569,12 +4047,10 @@
         "D",
         "Ⅰ， Ⅱ， Ⅲ ， Ⅳ"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "滑动窗口流控机制工作原理中，可直接传输并不需要确认的是（ ）",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -3597,12 +4073,10 @@
         "D",
         "滑动窗口收缩的数据"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "邮件发送方采用的协议是（ ）。",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -3625,12 +4099,10 @@
         "D",
         "无"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下用于域间路由选择的协议是()。",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -3653,12 +4125,10 @@
         "D",
         "OSPF"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "数据链路层协议的功能不包括()。",
     "answer": "D",
     "subject": "计算机网络技术",
@@ -3681,12 +4151,10 @@
         "D",
         "为终端结点隐蔽物理传输的细节"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "OSI参考模型中，物理层的功能是（ ）",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -3709,12 +4177,10 @@
         "D",
         "发送和接受用户数据"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在OSI参考模型中，下列功能需要由应用层的相邻层实现的是",
     "answer": "B",
     "subject": "计算机网络技术",
@@ -3737,12 +4203,10 @@
         "D",
         "可靠数据传输"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "调制解调器实现的信号转换是",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -3765,12 +4229,10 @@
         "D",
         "电信号/光信号"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "能从数据信号波形中提取同步信号的典型编码是",
     "answer": "D",
     "subject": "计算机网络技术",
@@ -3793,12 +4255,10 @@
         "D",
         "曼彻斯特编码"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以太网媒体访问控制技术CSMA/CD的机制是（ ）。",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -3821,12 +4281,10 @@
         "D",
         "按优先级分配带宽"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Ethernet采用的媒体访问控制方式为（ ）。",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -3849,12 +4307,10 @@
         "D",
         "无竞争协议"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面______命令用于测试网络是否连通。",
     "answer": "C",
     "subject": "计算机网络技术",
@@ -3877,12 +4333,10 @@
         "D",
         "ftp"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "TCP使用的流量控制协议是( )。",
     "answer": "D",
     "subject": "计算机网络技术",
@@ -3905,12 +4359,10 @@
         "D",
         "可变大小的滑动窗口协议"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "FTP可以同时使用两个连接（ ）。",
     "answer": "A",
     "subject": "计算机网络技术",
@@ -3925,8 +4377,6 @@
         "B",
         "控制连接和传输连接"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 [
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人类进入21世纪，英国广播公司(BBC)在全球范围内进行“千年思想家”网评，名列榜首的是( )",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -23,12 +23,10 @@
         "D",
         "牛顿"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思主义认为，实践的主体和客体之间的关系，从根本上说是",
     "answer": "AD",
     "subject": "马克思主义基本原理",
@@ -51,15 +49,10 @@
         "D",
         "实践关系"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义认为，人类全部社会生活的本质是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -82,12 +75,10 @@
         "D",
         "实践"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思指出，哲学家们只是用不同的方式解释世界，而问题在于改变世界的著作是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -110,12 +101,10 @@
         "D",
         "《共产党宣言》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "真理与价值统一的基础是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -138,12 +127,10 @@
         "D",
         "实践"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义认为，实践是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -166,12 +153,10 @@
         "D",
         "主客体之间相互作用的过程"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“社会一旦有技术上的需要，这种需要就会比十所大学更能把科学推向前进。”恩格斯的这段话是指",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -194,12 +179,10 @@
         "D",
         "实践是检验认识真理性的唯一标准"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思说：“人的思维是否具有客观的真理性，这不是一个理论的问题，而是一个实践的问题。人应该在实践中证明自己思维的真理性，即自己思维的现实性和力量，自己思维的此岸性。”这段话的意思是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -222,12 +205,10 @@
         "D",
         "实践是检验认识真理性的唯一标准"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "习近平指出：“我们党现阶段提出和实施的理论和路线方针政策，之所以正确，就是因为它们都是以我国现时代的社会存在为基础的。” 这段话说明",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -250,12 +231,10 @@
         "D",
         "实践是检验真理性的唯一标准"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在认识的本质上，存在的两条根本对立的认识路线是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -278,12 +257,10 @@
         "D",
         "能动的反映论和直观的反映论的对立"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“从物到感觉和思想”是关于认识本质问题上的",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -306,12 +283,10 @@
         "D",
         "唯心主义经验论的认识路线"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "感性认识和理性认识的根本区别",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -334,12 +309,10 @@
         "D",
         "感性认识反映事物的现象，理性认识反映事物的本质"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "习近平指出：“如果我们能将理论高度与实践尝试有机地结合起来，就能更好地做好领导工作。”这段话说明",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -362,12 +335,10 @@
         "D",
         "感性认识和理性认识是辩证统一关系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "习近平指出：“理论创新只能从问题开始。理论创新的过程就是发现问题、解决问题的过程。”这段话说明",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -390,12 +361,10 @@
         "D",
         "感性认识和理性认识的统一是认识过程的两个方面"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "习近平指出：“理论思维的起点决定着理论创新的结果。”这段话说明",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -418,12 +387,10 @@
         "D",
         "感性认识和理性认识是认识过程两个不可分割的方面"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "实践作为检验认识真理性的标准的确定性即绝对性，是指实践作为检验认识真理性标准的",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -446,12 +413,10 @@
         "D",
         "条件性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "习近平指出：“只要我们善于聆听时代声音，勇于坚持真理、修正错误，二十一世纪中国的马克思主义一定能够展现出更强大、更有说服力的真理力量。”这段话说明",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -474,12 +439,10 @@
         "D",
         "真理与谬误是人们认识的两种不同结果"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“没有革命的理论，就不会有革命的行动。”这一论断的含义是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -502,12 +465,10 @@
         "D",
         "革命理论最终决定革命运动的成败"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "当客体能满足主体的某种需要时，客体对于主体就有价值。而在实践中，人们往往会由于特定条件下的特殊需要而实现它的某一种或几种价值，同时却要放弃它的其他价值。这体现了价值的",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -530,12 +491,10 @@
         "D",
         "多维性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "实践基础上的理论创新，是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -558,12 +517,10 @@
         "D",
         "国家兴旺发达的不竭动力"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "承载着一个民族、一个国家的精神追求，体现着一个社会评判是非曲直的价值标准是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -586,12 +543,10 @@
         "D",
         "社会主义核心价值体系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "习近平指出：“我国正处于并将长期处于社会主义初级阶段，我们不能做超越阶段的事情，而是要根据现有条件把能做的事情做起来，积小胜为大胜。”这段话说明",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -614,12 +569,10 @@
         "D",
         "自由是随心所欲的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "从实践到认识的过程中，认识采取的方式有",
     "answer": "AC",
     "subject": "马克思主义基本原理",
@@ -642,15 +595,10 @@
         "D",
         "能动反映论"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "感性认识和理性认识密切相关，主要体现在",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -673,17 +621,10 @@
         "D",
         "感性认识和理性认识相互渗透"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "感性认识上升为理性认识所具备的条件是",
     "answer": "AD",
     "subject": "马克思主义基本原理",
@@ -706,15 +647,10 @@
         "D",
         "经过理性思考，对感性材料进行加工"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "毛泽东指出：“实践、认识、再实践、再认识，循环往复以至无穷，而实践和认识之每一循环的内容，都比较地进到了高一级的程度。”这段话说明",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -737,17 +673,10 @@
         "D",
         "认识过程是反复循环和无限发展的过程"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "习近平指出：“马克思主义就是我们共产党人的真经，真经没念好，总想着西天取经，就要贻误大事！不了解、不熟悉马克思主义基本原理，就不可能真正了解和掌握中国特色社会主义理论体系。”这段话说明",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -770,17 +699,10 @@
         "D",
         "在实践中我们必须丰富和发展马克思主义"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "价值评价是一种关于价值现象的认识活动，其特点有",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -803,16 +725,10 @@
         "D",
         "由于主体的差异，导致价值评价是一种没有任何客观标准的评价"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "习近平指出：“实践没有止境，理论创新也没有止境。世界每时每刻都在发生变化，中国也每时每刻都在发生变化，我们必须在理论上跟上时代。”这段话说明",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -835,17 +751,10 @@
         "D",
         "认识过程是一个波浪式前进和螺旋式上升的过程"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "习近平指出：“社会总是在发展的，新情况新问题总是层出不穷的，其中有一些可以凭老经验、用老办法来应对和解决，同时也有不少是老经验、老办法不能应对和解决的。如果不能及时研究、提出、运用新思想、新理念、新办法，理论就会苍白无力。”这段话说明",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -868,17 +777,10 @@
         "D",
         "创新是社会发展、实践深化、历史前进对理论的必然要求"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会历史观的基本问题是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -901,12 +803,10 @@
         "D",
         "生产力与生产关系的关系问题"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在对待社会历史发展及其规律问题上，历来存在着两种根本对立的观点。这两种对立的观点是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -929,12 +829,10 @@
         "D",
         "唯我论与不可知论"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "唯心史观的根本错误在于它片面夸大",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -957,12 +855,10 @@
         "D",
         "英雄人物的意识和意志的作用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会意识的本质特点是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -985,12 +881,10 @@
         "D",
         "社会阶级意识中带有共性的内容"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会意识对社会存在的反作用的性质取决于",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -1013,12 +907,10 @@
         "D",
         "它为之服务的经济基础的性质和它所武装的阶级社会势力的性质"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会意识相对独立性最突出的表现是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -1041,12 +933,10 @@
         "D",
         "社会意识诸形式之间的相互作用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "生产力是指人们",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -1069,12 +959,10 @@
         "D",
         "改造和影响自然的能力"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "衡量生产力发展水平的客观依据是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -1097,12 +985,10 @@
         "D",
         "科学技术水平"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人和物的要素之所以能够变成现实的生产力，是因为",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -1125,12 +1011,10 @@
         "D",
         "劳动对象范围不断扩大和生产工具的不断改进"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面关于生产力决定生产关系，理解不正确的是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -1153,12 +1037,10 @@
         "D",
         "生产关系必须完全适合生产力的发展才能存"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列各项，哪一个不属于政治上层建筑",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -1181,12 +1063,10 @@
         "D",
         "法庭"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在生产力和生产关系、经济基础和上层建筑这两对社会运动的基本矛盾中",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -1209,12 +1089,10 @@
         "D",
         "经济基础和上层建筑的矛盾起决定性作用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人口因素是构成社会物质生活条件的重要方面，它是指",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -1237,12 +1115,10 @@
         "D",
         "人口的数量、素质和结构等状况对社会发展的制约和影响作用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "地理环境在社会存在和发展中的重要作用表现在",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -1265,12 +1141,10 @@
         "D",
         "它是社会性质的决定性因素"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在社会主义条件下，上层建筑对经济基础的保护从根本上说就是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -1293,12 +1167,10 @@
         "D",
         "为了全面深化改革得以顺利推进"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国特色社会主义进入新时代的重要标志和依据是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -1321,12 +1193,10 @@
         "D",
         "经济发展进入新常态"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以习近平同志为核心的党中央提出坚持以人民为中心的思想，创造性地运用和发展了唯物史观关于（    ）的基本原理。",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -1349,12 +1219,10 @@
         "D",
         "社会意识具有相对独立性的原理"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会意识形态是指",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -1377,12 +1245,10 @@
         "D",
         "社会科学、自然科学和思维科学所构成的意识形态总和"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "阶级斗争在社会发展中的巨大作用突出表现在",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -1405,12 +1271,10 @@
         "D",
         "某个社会阶段完结以前的瞬间"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人类历史归根结底是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -1433,12 +1297,10 @@
         "D",
         "人的发展和进步的历史"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列说法中，关于“社会存在”的正确理解是",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -1461,16 +1323,10 @@
         "D",
         "地理环境和人口因素也属于社会存在的范畴"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下面关于社会意识的理解中，正确的是",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -1493,17 +1349,10 @@
         "D",
         "在阶级社会中，社会意识形态是具有阶级性的"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列命题符合唯物史观的有",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -1526,16 +1375,10 @@
         "D",
         "社会越是不发展，对地理环境的依赖性就越大"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "物质生产方式对社会发展的决定作用主要表现在",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -1558,17 +1401,10 @@
         "D",
         "它决定了社会的基本面貌"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "人类社会发展是一个“自然历史过程”，这意味着",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -1591,17 +1427,10 @@
         "D",
         "社会规律与自然规律在本质上是相同的，但表现方式不同"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会意识的相对独立性主要表现在",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -1624,17 +1453,10 @@
         "D",
         "社会意识对社会存在具有能动的反作用"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "正确解决社会存在和社会意识的关系的重大意义在于",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -1657,17 +1479,10 @@
         "D",
         "为无产阶级的革命实践提供了科学历史观和基本原则"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "文化是社会意识的重要组成部分，文化对社会发展的重要作用主要表现在",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -1690,17 +1505,10 @@
         "D",
         "文化为社会发展提供思想保证"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "人类社会是不断发展的，社会的根本性变革和进步是通过社会形态的更替实现的。社会形态的更替具有如下特征",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -1723,17 +1531,10 @@
         "D",
         "社会形态的更替是顺序性和跨越性的统一"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "生产关系一定要适合生产力发展状况的规律之所以是人类社会发展的普遍规律，其原因在于",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -1756,16 +1557,10 @@
         "D",
         "它是人类社会在历史发展中始终起作用的规律"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本原始积累过程的实质是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -1788,12 +1583,10 @@
         "D",
         "资本家利用暴力手段使生产者和生产资料相分离，货币资本迅速集中在资本"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "商品的二因素是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -1816,12 +1609,10 @@
         "D",
         "价值和价值形式"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思指出：“我们从小麦的滋味中根本无法判断它是封建农民生产的，还是资本主义制度下农业工人生产的。”这说明",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -1844,12 +1635,10 @@
         "D",
         "同一物品的使用价值并不反映生产关系的性质"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思指出：“一切商品对它们的所有者是非使用价值，对它们的非所有者是使用价值。”对这句话应该理解为",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -1872,12 +1661,10 @@
         "D",
         "商品所有者只有让渡使用价值，才能获得价值"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "商品的价值量是由",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -1900,12 +1687,10 @@
         "D",
         "剩余劳动时间决定的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "货币的本质是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -1928,12 +1713,10 @@
         "D",
         "价值的表现形式"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以货币为媒介的商品交换过程,实质上是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -1956,12 +1739,10 @@
         "D",
         "商品生产者之间互换劳动的社会过程"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思把商品转化货币称为“惊险的跳跃”。这个跳跃如果不成功，摔坏的不是商品，而是商品的所有者。这是因为只有商品变为货币",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -1984,12 +1765,10 @@
         "D",
         "私人劳动才能转化为社会劳动"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在商品经济中，价值规律的表现形式是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -2012,12 +1791,10 @@
         "D",
         "价格和价值始终一致"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "被称为“理解政治经济学枢纽”的理论是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -2040,12 +1817,10 @@
         "D",
         "资本积累理论"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本主义基本经济规律是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -2068,12 +1843,10 @@
         "D",
         "相对人口过剩规律"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "劳动力商品的价值是由",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -2096,12 +1869,10 @@
         "D",
         "劳动力自身生存和繁衍后代所需要的生活资料价值决定的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在资本主义价值增殖过程中",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -2124,12 +1895,10 @@
         "D",
         "具体劳动转移生产资料价值，抽象劳动创造出大于劳动力价值的新价值"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在资本主义商品价值c+v+m中，工人新创造的价值是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -2152,12 +1921,10 @@
         "D",
         "c+v+m"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "剩余价值率反映的是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -2180,12 +1947,10 @@
         "D",
         "资本家对工人的剥削程度"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本积累的真正来源是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -2208,12 +1973,10 @@
         "D",
         "工人创造的剩余价值"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本有机构成是指",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -2236,12 +1999,10 @@
         "D",
         "以价值构成为基础并反映其变化的资本技术构成"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本的周转速度",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -2264,12 +2025,10 @@
         "D",
         "与周转时间成反比，与周转次数成反比"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本主义生产方式的基本矛盾是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -2292,12 +2051,10 @@
         "D",
         "生产的高度社会化和产品相对过剩的矛盾"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本主义国家选举的实质是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -2320,12 +2077,10 @@
         "D",
         "协调统治阶级内部利益关系和矛盾的重要措施"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "商品经济产生和存在的条件是",
     "answer": "AB",
     "subject": "马克思主义基本原理",
@@ -2348,15 +2103,10 @@
         "D",
         "生产资料和劳动产品属于同一的所有者"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "一般来说，空气不是商品。但在雾霾污染下，新鲜空气也可以装在容器中出售。空气之所以成为商品，根本原因是",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -2379,15 +2129,10 @@
         "D",
         "新鲜空气的生产以交换为目的"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "商品价值和交换价值的关系是",
     "answer": "AC",
     "subject": "马克思主义基本原理",
@@ -2410,15 +2155,10 @@
         "D",
         "价值是交换价值的表现形式"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "人们往往将汉语中的“价”、“值”二字与金银财宝等联系起来，而这两字的偏旁却都是“人”，示意价值在“人”。马克思的劳动价值论透过商品交换的物与物的关系，揭示了商品价值的科学内涵，其主要观点有",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -2441,15 +2181,10 @@
         "D",
         "价值在本质上体现了生产者之间的社会关系"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思创立的劳动二重性理论具有重大意义，是因为",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -2472,16 +2207,10 @@
         "D",
         "它是理解资本积累、资本有机构成、资本再生产等理论的钥匙"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "资本的本质是",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -2504,17 +2233,10 @@
         "D",
         "一个历史范畴"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "二战后发达资本主义国家生产高度自动化，出现了所谓“无人工厂”，资本家获得的剩余价值也大大增加。因此，资产阶级经济学家认为科学和技术成为独立的剩余价值源泉。实际上，工人的剩余劳动是剩余价值的源泉并没有改变。这是因为",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -2537,17 +2259,10 @@
         "D",
         "生产自动化是人类社会科学进步的结晶，它的普遍采用会大幅度地提高劳动生产率，使资本家阶级获得比过去更多的剩余价值"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "美国导演迈克尔·穆尔的最新纪录片《资本主义：一个爱情故事》问世以来，一直颇受关注。“资本主义”为何与“爱情故事”联系起来？穆尔解释说，这是一种“贪欲之爱”。“喜爱财富的人不仅爱他们自己的钱，也爱你口袋中的钱……很多人不敢说出它的名字，真见鬼，就说出来吧。这就是资本主义。”对金钱的“贪欲”之所以与资本主义联为一体，是因为",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -2570,16 +2285,10 @@
         "D",
         "追逐剩余价值是资本主义生产方式的绝对规律"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“马克思一有机会就提醒读者注意，决不要把他所说的剩余价值同利润或资本赢利相混淆。”对这段话的正确理解应是",
     "answer": "BC",
     "subject": "马克思主义基本原理",
@@ -2602,15 +2311,10 @@
         "D",
         "利润是剩余价值的一种具体形式"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "2008年由美国次贷危机引发了全球性的经济危机，很多西方人感叹这一经济危机，从根本上仍未超出一百多年前马克思在《资本论》中对资本主义经济危机的精辟分析。马克思对资本主义经济危机科学分析的原创性主要是",
     "answer": "AC",
     "subject": "马克思主义基本原理",
@@ -2633,15 +2337,10 @@
         "D",
         "强调政府对经济危机的干预是摆脱经济危机的根本出路"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在垄断资本主义阶段，占统治地位的资本形式是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -2664,12 +2363,10 @@
         "D",
         "垄断资本"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "垄断代替自由竞争并占据统治地位是在",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -2692,12 +2389,10 @@
         "D",
         "20世纪30年代后"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家垄断资本主义的产生，从根本上说是由于",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -2720,12 +2415,10 @@
         "D",
         "市场经济发展的一般规律"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "为国家垄断资本主义奠定理论基础的杰出人物及著作是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -2748,12 +2441,10 @@
         "D",
         "凯恩斯的《就业、利息和货币通论》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国际垄断同盟",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -2776,12 +2467,10 @@
         "D",
         "在经济上瓜分世界"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本主义发展初期占主导地位的所有制形式是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -2804,12 +2493,10 @@
         "D",
         "国家资本所有制"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "19世纪末20世纪初的资本主义占主导地位的所有制形式是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -2832,12 +2519,10 @@
         "D",
         "国家资本所有制"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "20世纪70年代之后，为应对“滞胀”，西方国家提升经济竞争力的主要做法是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -2860,12 +2545,10 @@
         "D",
         "完善法律法规"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "垄断价格是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -2888,12 +2571,10 @@
         "D",
         "成本价格+平均利润+垄断利润"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "垄断资本主义国家实际的控制着是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -2916,12 +2597,10 @@
         "D",
         "金融资本"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "垄断利润的实现主要是通过",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -2944,12 +2623,10 @@
         "D",
         "成本价格"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "垄断资本向世界范围扩展的实现是通过",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -2972,12 +2649,10 @@
         "D",
         "国家政权"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "帝国主义的实质是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -3000,12 +2675,10 @@
         "D",
         "垄断资本凭借垄断地位，获取高额垄断利润"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "第二次世界大战后，资本主义生产资料所有制发展的新形式是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -3028,12 +2701,10 @@
         "D",
         "国际垄断资本所有制"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "面对不同国家在生产方式、发展水平、文化背景等方面的差异，要引领经济全球化发展的理念是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -3056,12 +2727,10 @@
         "D",
         "构建人类命运共同体"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "当代资本主义国家大公司经营活动的实际控制者是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -3084,12 +2753,10 @@
         "D",
         "全体股民"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "当代资本主义发生新变化的根本推动力量是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -3112,12 +2779,10 @@
         "D",
         "改良主义政党的改革"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在马克思、恩格斯看来，将为社会主义革命提供直接的物质前提，并是无产阶级社会主义革命的入口处的是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -3140,12 +2805,10 @@
         "D",
         "法人资本所有制"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "从世界范围来看，资本主义向社会主义过渡必将经历一个相当长的历史过程，其原因在于",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -3168,12 +2831,10 @@
         "D",
         "无产阶级力量比较弱小"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "第二次世界大战后西方资本主义国家政治生活中十分引人注目的现象是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -3196,12 +2857,10 @@
         "D",
         "资本家集团的变化"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "资本家追求剩余价值，必然会导致",
     "answer": "AB",
     "subject": "马克思主义基本原理",
@@ -3224,15 +2883,10 @@
         "D",
         "垄断"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "垄断条件下竞争的新特点",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -3255,16 +2909,10 @@
         "D",
         "竞争范围扩大到经济领域以外进行"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "垄断价格之所以没有否定价值规律，是因为",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -3287,16 +2935,10 @@
         "D",
         "垄断价格改变的只是价值规律作用的表现形式"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "战后国家垄断资本主义迅速发展的原因是",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -3319,16 +2961,10 @@
         "D",
         "用暴力剥夺小资产阶级的需要"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "金融寡头的统治主要是通过",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -3351,17 +2987,10 @@
         "D",
         "直接出马或者把自己的代理人送进政府和议会"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "国家垄断资本主义的实质是",
     "answer": "BCD",
     "subject": "马克思主义基本原理",
@@ -3384,16 +3013,10 @@
         "D",
         "资本主义生产关系的局部调整"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "经济全球化的表现主要有",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -3416,17 +3039,10 @@
         "D",
         "企业生产经营全球化"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "当代资本主义阶层和阶级结构发生的新变化有",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -3449,17 +3065,10 @@
         "D",
         "高级职业经理成为大公司经营活动的实际控制者"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "当代资本主义政治制度的变化表现在",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -3482,16 +3091,10 @@
         "D",
         "重视并加强法制建设"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "2008年国际金融危机以来资本主义出现的矛盾和冲突主要表现在",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -3514,16 +3117,10 @@
         "D",
         "国家治理“失序”"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "全部马克思主义学说的核心和理论结论是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -3546,12 +3143,10 @@
         "D",
         "剩余价值学说"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "科学社会主义的直接理论来源是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -3574,12 +3169,10 @@
         "D",
         "唯物史观和剩余价值学说"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义实现从空想到科学的发展的标志是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -3602,12 +3195,10 @@
         "D",
         "无产阶级革命的胜利"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "科学社会主义诞生的标志性文献是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -3630,12 +3221,10 @@
         "D",
         "《哥达纲领批判》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义由空想发展为科学是由于创立了",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -3658,12 +3247,10 @@
         "D",
         "英国古典政治经济学"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义从理论到实践的飞跃是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -3686,12 +3273,10 @@
         "D",
         "通过无产阶级革命实现的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "东欧剧变、苏联解体的教训，不包括",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -3714,12 +3299,10 @@
         "D",
         "进行社会主义体制改革"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对社会主义基本特征的理解中，最重要的是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -3742,12 +3325,10 @@
         "D",
         "公有制为主体和民主政治"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义政党的性质是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -3770,12 +3351,10 @@
         "D",
         "全民党"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义政党的组织原则是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -3798,12 +3377,10 @@
         "D",
         "松散联合制"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“资本主义必然灭亡，社会主义必然胜利”是科学社会主义的",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -3826,12 +3403,10 @@
         "D",
         "理想表述"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“两个必然”的根本依据是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -3854,12 +3429,10 @@
         "D",
         "自然发展规律"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（  ）是反抗资产阶级斗争的最高形式。",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -3882,12 +3455,10 @@
         "D",
         "共产主义革命"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "列宁也强调，“只有以（  ）为指南的党，才能实现先进战士的作用”。",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -3910,12 +3481,10 @@
         "D",
         "社会革命"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（  ）是共产党人的最高理想和不懈追求。",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -3938,12 +3507,10 @@
         "D",
         "生产力空前提高"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "空想社会主义的历史功绩是",
     "answer": "AC",
     "subject": "马克思主义基本原理",
@@ -3966,15 +3533,10 @@
         "D",
         "找到了变革社会的革命力量"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "空想社会主义与科学社会主义的根本区别在于",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -3997,16 +3559,10 @@
         "D",
         "实现理想的途径不同"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "19世纪初期的三大空想社会主义者是",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -4029,16 +3585,10 @@
         "D",
         "欧文"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "苏联社会主义模式的基本特征有",
     "answer": "BCD",
     "subject": "马克思主义基本原理",
@@ -4061,16 +3611,10 @@
         "D",
         "过度集权的党和国家领导体制"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会主义发展道路多样性的原因在于",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -4093,16 +3637,10 @@
         "D",
         "社会发展阶段不同"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "无产阶级反抗资产阶级的斗争主要有（    ）三种形式",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -4125,16 +3663,10 @@
         "D",
         "文化斗争"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "坚持以人民为中心， 始终把人民放在心中最高位置，坚持（ ）， 把人民对美好生活的向往作为奋斗目标，诚心诚意为人民谋幸福， 为民族谋复兴。",
     "answer": "AB",
     "subject": "马克思主义基本原理",
@@ -4157,15 +3689,10 @@
         "D",
         "人民共同富裕"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义产生以前曾对未来理想社会进行过详尽描述的是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -4188,12 +3715,10 @@
         "D",
         "科学社会主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义最崇高的社会理想和人类历史发展的必然趋势是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -4216,12 +3741,10 @@
         "D",
         "发展生产力"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在展望未来社会的问题上，马克思主义与空想社会主义的根本区别在于",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -4244,12 +3767,10 @@
         "D",
         "是否提出具体的变革措施"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在共产主义社会，个人消费品的分配方式是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -4272,12 +3793,10 @@
         "D",
         "按资分配"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "阶级社会不平等的重要表现和社会不和谐的重要根源是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -4300,12 +3819,10 @@
         "D",
         "私有制的存在"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义追求的根本价值目标和共产主义社会的根本特征是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -4328,12 +3845,10 @@
         "D",
         "劳动成为生活的第一需要"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我们说共产主义理想能够实现，因为这是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -4356,12 +3871,10 @@
         "D",
         "人类最伟大的事业所决定的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（    ）是人类历史发展的必然趋势，是马克思主义最崇高的社会理想。",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -4384,12 +3897,10 @@
         "D",
         "实现共产主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义社会是共产主义社会的（  ），它与共产主义社会具有根本性质上的一致性。",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -4412,12 +3923,10 @@
         "D",
         "初级阶段"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "集中体现着工业和农业之间以及脑力劳动和体力劳动的对立的是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -4440,12 +3949,10 @@
         "D",
         "人和人之间的对立"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "在共产主义社会，社会关系之所以能够实现高度和谐，是因为",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -4468,16 +3975,10 @@
         "D",
         "人与自然矛盾消除"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思主义经典作家揭示的共产主义的基本特征包括",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -4500,17 +4001,10 @@
         "D",
         "人类从必然王国向自由王国飞跃"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "实现共产主义是一个",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -4533,16 +4027,10 @@
         "D",
         "合规律性和合目的性的统一"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "我们说的共产主义，是指一种",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -4565,16 +4053,10 @@
         "D",
         "没有矛盾的社会形态"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "到共产主义社会，国家将消亡，这是指",
     "answer": "AC",
     "subject": "马克思主义基本原理",
@@ -4597,15 +4079,10 @@
         "D",
         "阶级消亡"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义是关于（    ）的科学。",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -4628,12 +4105,10 @@
         "D",
         "哲学和经济学"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义新世界观创立的关键在于马克思确立了",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -4656,12 +4131,10 @@
         "D",
         "科学的实践观"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义是科学，从根本上说在于它",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -4684,12 +4157,10 @@
         "D",
         "形成了完整的理论体系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思一生在理论上的两大发现是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -4712,12 +4183,10 @@
         "D",
         "唯物史观和剩余价值学说"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义产生的经济社会根源是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -4740,12 +4209,10 @@
         "D",
         "原始资本积累"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思恩格斯指出：“资产阶级的生产关系和交换关系，资产阶级的所有制关系，这个曾经仿佛用法术创造了如此庞大的生产资料和交换手段的现代资产阶级社会，现在像一个魔法师一样不能再支配自己用法术呼唤出来的魔鬼了。”这种现象在现实社会中具体表现为",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -4768,12 +4235,10 @@
         "D",
         "贩卖黑奴活动"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "黑格尔的哲学体系中包涵丰富的辩证法思想，他第一次试图把整个自然界，历史和精神的世界描述为是运动和发展的，并努力揭示这种运动和发展那的内在联系。马克思将这种辩证法思想称作是黑格尔哲学体系的",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -4796,12 +4261,10 @@
         "D",
         "基本内核"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "路德维希·费尔巴哈由于不了解实践活动的意义，不能正确理解人的本质，所以只能从抽象的人出发去考察历史，最终也陷入了唯心主义的泥潭。但与黑格尔不同，他的唯心主义主要表现在",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -4824,12 +4287,10 @@
         "D",
         "对技术发展规律的认识领域"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "俄国十月社会主义革命的胜利，开创了世界历史的新纪元，使科学社会主义开始",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -4852,12 +4313,10 @@
         "D",
         "从一种模式变为多种模式"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义最根本的世界观和方法论是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -4880,12 +4339,10 @@
         "D",
         "唯心主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思主义理论不可分割的三个主要组成部分是指",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -4908,16 +4365,10 @@
         "D",
         "新自由主义"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思主义的理论渊源主要有",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -4940,16 +4391,10 @@
         "D",
         "法国英国的空想社会主义"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "19世纪30－40年代，最能表现无产阶级高度政治觉悟与英勇精神，显示工人阶级在政治斗争上的威力，并标志着现代无产阶级作为独立的政治力量已经登上了历史舞台的工人运动有",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -4972,16 +4417,10 @@
         "D",
         "1871年法国巴黎公社革命"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思、恩格斯一生致力于创立和领导的国际无产阶级政党组织有",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -5004,16 +4443,10 @@
         "D",
         "第三国际"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思主义的鲜明特征是",
     "answer": "BCD",
     "subject": "马克思主义基本原理",
@@ -5036,16 +4469,10 @@
         "D",
         "革命性和实践性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义最鲜明的政治立场是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -5068,12 +4495,10 @@
         "D",
         "实现社会民主"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "世界观是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -5096,12 +4521,10 @@
         "D",
         "革命性和科学性相统一的学说"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在下列命题中，属于唯心主义的哲学观点是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -5124,12 +4547,10 @@
         "D",
         "世界是绝对精神的产物"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“除了非此即彼，又在适当的地方承认亦此亦彼”；“是就是，不是就不是，除此之外，都是鬼话。”这两种说法是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -5152,12 +4573,10 @@
         "D",
         "前者是辩证法的观点，后者是形而上学观点"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在人与世界的相互作用中，人与世界同时得到了改变，并获得日益丰富的内容，造成这一变化的基础是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -5180,12 +4599,10 @@
         "D",
         "语言的发明与使用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "实践是检验真理的唯一标准，这是由",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -5208,12 +4625,10 @@
         "D",
         "真理的本性和实践的特点所决定的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义对社会生活的理解是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -5236,12 +4651,10 @@
         "D",
         "社会生活本质上是实践的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "主观和客观的统一、理论和实践的统一是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -5264,12 +4677,10 @@
         "D",
         "具体的、历史的统一"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "制约人的行为和思想动机的根本条件是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -5292,12 +4703,10 @@
         "D",
         "政治制度"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会生产力发展水平的主要物质标志是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -5320,12 +4729,10 @@
         "D",
         "劳动对象"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "上层建筑系统的两大组成部分是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -5348,12 +4755,10 @@
         "D",
         "政治法律制度和政治法律思想"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "科学技术有时“表现为异己的、敌对的和统治的权力”，这是说",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -5376,12 +4781,10 @@
         "D",
         "科学技术是实现政治目的的重要手段"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本主义生产过程本质上是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -5404,12 +4807,10 @@
         "D",
         "劳动过程和价值增殖过程的统一"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本主义经济是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -5432,12 +4833,10 @@
         "D",
         "发达的自然经济"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "价值规律是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -5460,12 +4859,10 @@
         "D",
         "商品经济的基本经济规律"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "剩余价值率反映的是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -5488,12 +4885,10 @@
         "D",
         "资本家对工人的剥削程度"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家垄断资本主义意味着",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -5516,12 +4911,10 @@
         "D",
         "资产阶级和无产阶级的关系发生了质变"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "共产主义社会是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -5544,12 +4937,10 @@
         "D",
         "自由人的联合体"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "辩证唯物主义和历史唯物主义是马克思主义",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -5572,12 +4963,10 @@
         "D",
         "最崇高的社会理想"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义哲学最直接的来源是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -5600,12 +4989,10 @@
         "D",
         "德国古典哲学"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对思维和存在何者是第一性问题的不同回答，是划分",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -5628,12 +5015,10 @@
         "D",
         "形而上学和辩证法的标准"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "物质相对于意识的唯一特性是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -5656,12 +5041,10 @@
         "D",
         "矛盾性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "唯物辩证法的实质和核心是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -5684,12 +5067,10 @@
         "D",
         "联系和发展的观点"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "认识的本质是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -5712,12 +5093,10 @@
         "D",
         "理性认识依赖于感性认识"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "只讲真理的绝对性不讲其相对性会导致",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -5740,12 +5119,10 @@
         "D",
         "不可知论"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下对社会发展起决定作用的是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -5768,12 +5145,10 @@
         "D",
         "生产方式"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "经济基础这一概念不包括",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -5796,12 +5171,10 @@
         "D",
         "人们在生产中的地位和相互关系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会发展的最终决定力量是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -5824,12 +5197,10 @@
         "D",
         "生产力"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在阶级社会中推动社会发展的直接动力是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -5852,12 +5223,10 @@
         "D",
         "阶级斗争"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "生产关系反映的是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -5880,12 +5249,10 @@
         "D",
         "经济关系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "一辆轿车比一辆自行车的价值大，是因为",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -5908,12 +5275,10 @@
         "D",
         "轿车更安全舒适"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "货币转化为资本的前提条件是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -5936,12 +5301,10 @@
         "D",
         "货币为资本家所有"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "商品的价值与生产商品的劳动的复杂程度",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -5964,12 +5327,10 @@
         "D",
         "偶尔相关"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "生产商品的劳动二重性是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -5992,12 +5353,10 @@
         "D",
         "脑力劳动和体力劳动"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思的两个伟大理论发现是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -6020,12 +5379,10 @@
         "D",
         "唯物史观和剩余价值学说"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思剖析资本主义本质和规律最重要的著作是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -6048,12 +5405,10 @@
         "D",
         "《哥达纲领批判》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义最根本的世界观和方法论是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -6076,12 +5431,10 @@
         "D",
         "唯物主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "哲学基本问题的第一个方面是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -6104,12 +5457,10 @@
         "D",
         "思维和存在有无统一性的问题"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“古之天下，亦今之天下；今之天下，亦古之天下。”此论断是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -6132,12 +5483,10 @@
         "D",
         "决定论的观点"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "唯物辩证法所说的“扬弃”是指",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -6160,12 +5509,10 @@
         "D",
         "既克服又放弃"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义的认识论是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -6188,12 +5535,10 @@
         "D",
         "革命的能动的创造论"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下哪个属于感性认识的形式",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -6216,12 +5561,10 @@
         "D",
         "抽象"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "任何理论都不能穷尽真理，而只能在实践中不断开辟认识真理的道路。这说明",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -6244,12 +5587,10 @@
         "D",
         "真理具有主观性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "历史唯物主义对社会历史观基本问题的回答是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -6272,12 +5613,10 @@
         "D",
         "社会存在决定自然存在"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对于社会制度的性质及其更替的原因，应当从",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -6300,12 +5639,10 @@
         "D",
         "生产方式中去寻找"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列说法中属于马克思主义关于人的本质的看法是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -6328,12 +5665,10 @@
         "D",
         "自由、平等、追求幸福"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "自然经济是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -6356,12 +5691,10 @@
         "D",
         "存在于一切社会的经济形式"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以私有制为基础的商品经济的基本矛盾是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -6384,12 +5717,10 @@
         "D",
         "活劳动与物化劳动的矛盾"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "劳动力成为商品是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -6412,12 +5743,10 @@
         "D",
         "货币转化为资本的决定性条件"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "剩余价值率反映的是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -6440,12 +5769,10 @@
         "D",
         "资本家对工人的剥削程度"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "美国波音747客机的600万个零部件由美国及另外6个国家的120多家企业提供，这是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -6468,12 +5795,10 @@
         "D",
         "金融全球化的表现"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "科学社会主义之所以是科学的，乃是因为它把争取社会主义的斗争建立在",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -6496,12 +5821,10 @@
         "D",
         "资本主义自我完善的基础上"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义改革根源于",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -6524,12 +5847,10 @@
         "D",
         "文化发展水平的落后"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "各尽所能，按需分配是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -6552,12 +5873,10 @@
         "D",
         "共产主义社会的分配方式"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -6580,12 +5899,10 @@
         "D",
         "关于自然发展的一般规律的学说"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义最鲜明的政治立场是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -6608,12 +5925,10 @@
         "D",
         "实现和维护人权"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "哲学基本问题的第一个方面是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -6636,12 +5951,10 @@
         "D",
         "形而上学与辩证法的关系问题"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会存在范畴指的是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -6664,12 +5977,10 @@
         "D",
         "社会生活的文化层面"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义的认识论是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -6692,12 +6003,10 @@
         "D",
         "以科学实践观为基础的选择论"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在实际工作中既抓住主要矛盾又兼顾次要矛盾就是坚持",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -6720,12 +6029,10 @@
         "D",
         "重点论和均衡论的统一"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "如果只讲真理的相对性，不讲真理的绝对性，就会导致",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -6748,12 +6055,10 @@
         "D",
         "经验主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下哪个不属于社会意识范畴",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -6776,12 +6081,10 @@
         "D",
         "道德理想"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "判断生产关系是否先进的根本标志是看它",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -6804,12 +6107,10 @@
         "D",
         "是促进还是阻碍生产力的发展"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "把人与动物区别开来的决定性因素是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -6832,12 +6133,10 @@
         "D",
         "需要"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "商品的二因素是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -6860,12 +6159,10 @@
         "D",
         "社会价值和自我价值"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在货币和资本的关系上，正确的论断是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -6888,12 +6185,10 @@
         "D",
         "凡是用来购买生产资料的货币都是资本"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "绝对剩余价值的获得是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -6916,12 +6211,10 @@
         "D",
         "剩余劳动时间不变，缩短工作日的结果"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本主义由自由竞争阶段进入垄断阶段，最根本的标志在于",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -6944,12 +6237,10 @@
         "D",
         "银行资本在经济生活中占统治地位"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "经济全球化的本质是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -6972,12 +6263,10 @@
         "D",
         "金融的全球化"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "垄断资本主义取代自由竞争资本主义，表明资本主义生产关系",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -7000,12 +6289,10 @@
         "D",
         "有局部调整，但未改变本质"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义改革的本质是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -7028,12 +6315,10 @@
         "D",
         "社会主义的自我完善与自我发展"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义诞生的标志性著作是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -7056,12 +6341,10 @@
         "D",
         "《哥达纲领批判》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思一生的两大发现是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -7084,12 +6367,10 @@
         "D",
         "唯物史观和剩余价值学说"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义从狭义上说是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -7112,12 +6393,10 @@
         "D",
         "全人类思想文化的结晶"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义最崇高的社会理想是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -7140,12 +6419,10 @@
         "D",
         "实现人权"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "哲学的基本问题是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -7168,12 +6445,10 @@
         "D",
         "形而上学与辩证法的关系问题"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义哲学的物质范畴指的是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -7196,12 +6471,10 @@
         "D",
         "感觉材料"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "辩证的否定实质上是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -7224,12 +6497,10 @@
         "D",
         "对事物的抛弃"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在马克思主义看来，认识的本质是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -7252,12 +6523,10 @@
         "D",
         "实践基础上理性和感性的相互渗透"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下哪个不属于社会存在范畴",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -7280,12 +6549,10 @@
         "D",
         "地理环境"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对社会发展起最终决定作用的是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -7308,12 +6575,10 @@
         "D",
         "生产力"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "使社会主义由空想变成科学的是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -7336,12 +6601,10 @@
         "D",
         "唯物史观和剩余价值学说"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "哲学基本问题第二方面的内容是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -7364,12 +6627,10 @@
         "D",
         "形而上学与辩证法的关系问题"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会意识范畴指的是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -7392,12 +6653,10 @@
         "D",
         "社会生活的政治层面"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "荀子曰：“心不使焉，则黑白在前而不见，雷鼓在侧而不闻。”说的是意识具有",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -7420,12 +6679,10 @@
         "D",
         "任意性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "坚持从物到感觉和思想的路线就是坚持",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -7448,12 +6705,10 @@
         "D",
         "唯理论的认识路线"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "生产力中最活跃的因素是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -7476,12 +6731,10 @@
         "D",
         "劳动者"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人类的本质活动是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -7504,12 +6757,10 @@
         "D",
         "斗争"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“如果资本主义的灭亡是必然的，为什么还要费那么大的力气去为它安排葬礼呢？”这种说法的错误在于",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -7532,12 +6783,10 @@
         "D",
         "抹杀了英雄创造历史的决定性作用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "垄断资本主义取代自由竞争资本主义是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -7560,12 +6809,10 @@
         "D",
         "资本主义基本矛盾发展的结果"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思最重要的政治经济学著作是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -7588,12 +6835,10 @@
         "D",
         "《哥达纲领批判》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“两个必然”和“两个绝不会”是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -7616,12 +6861,10 @@
         "D",
         "内在联系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义的创始人是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -7644,12 +6887,10 @@
         "D",
         "马克思和工人领袖"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义的基本特征是实践基础上",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -7672,12 +6913,10 @@
         "D",
         "科学性和通俗性的统一"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "哲学的基本问题是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -7700,12 +6939,10 @@
         "D",
         "人和人的关系问题"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "世界的真正统一性在于它的",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -7728,12 +6965,10 @@
         "D",
         "运动性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面哪个不属于实践的基本形式",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -7756,12 +6991,10 @@
         "D",
         "艺术创作"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "印度一位教授曾对一棵树算了两笔不同的帐：一棵正常生长50年的树，按市场上的木材价格计算，最多值300多美元；但从它产生的氧气、减少大气污染、涵养水源、可以为鸟类与其他动物提供栖息环境的生态效益看，则值20万美元。这种算法强调了",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -7784,12 +7017,10 @@
         "D",
         "事物运动的规律性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "事物发展的根本规律是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -7812,12 +7043,10 @@
         "D",
         "分化与整合的规律"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "从真理具有客观性，可以推出",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -7840,12 +7069,10 @@
         "D",
         "真理与人的需要是对立的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人类社会的基本矛盾是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -7868,12 +7095,10 @@
         "D",
         "生产力与生产关系、经济基础与上层建筑之间的矛盾"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "改革指的是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -7896,12 +7121,10 @@
         "D",
         "革命阶级推翻反动阶级的斗争"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人的本质在其现实性上是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -7924,12 +7147,10 @@
         "D",
         "一切社会关系的总和"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "商品的使用价值反映的是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -7952,12 +7173,10 @@
         "D",
         "交换关系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "货币的本质是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -7980,12 +7199,10 @@
         "D",
         "价值的表现形式"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "劳动力商品与其他商品不同的最根本特征是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -8008,12 +7225,10 @@
         "D",
         "劳动力价值受历史道德因素影响"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本主义生产过程是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -8036,12 +7251,10 @@
         "D",
         "生产过程与消耗过程的统一"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本主义经济危机的实质是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -8064,12 +7277,10 @@
         "D",
         "生产相对过剩"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "垄断资本主义",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -8092,12 +7303,10 @@
         "D",
         "已经阻碍了资本主义的发展"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下哪个不是空想社会主义的代表人物",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -8120,12 +7329,10 @@
         "D",
         "傅立叶"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "当代中国人为之奋斗的共同理想是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -8148,12 +7355,10 @@
         "D",
         "发展生产力"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "第二次世界大战后，发达资本主义国家的发展进入国家垄断资本主义的新阶段，这意味着",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -8176,12 +7381,10 @@
         "D",
         "国家垄断重于私人垄断"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家垄断资本主义的产生和发展，从根本上说是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -8204,12 +7407,10 @@
         "D",
         "生产社会化和资本主义私人占有制之间矛盾发展的结果"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "当代资本主义国际垄断组织的主要形式是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -8232,12 +7433,10 @@
         "D",
         "国际康采恩"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "第二次世界大战后，发达资本主义国家和私人垄断统治的发展表现在",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -8260,12 +7459,10 @@
         "D",
         "形成跨行业跨部门的混合联合企业"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "金融资本是由",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -8288,12 +7485,10 @@
         "D",
         "垄断银行资本和银行资本融合或混合生长而成的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在垄断资本主义阶段占境治地位的资本是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -8316,12 +7511,10 @@
         "D",
         "金融资本"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在垄断资本主义的各个基本经济特征中景根本的特征是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -8344,12 +7537,10 @@
         "D",
         "瓜分世界领土，形成殖民体系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本主义由自由竞争阶段进入垄断阶段，最根本的标志在于",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -8372,12 +7563,10 @@
         "D",
         "国家垄断代替私人垄断在经济生活中占统治地位"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家垄断资本主义发展的基础是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -8400,12 +7589,10 @@
         "D",
         "资本输出"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家垄断资本主义的发展",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -8428,12 +7615,10 @@
         "D",
         "消灭了私人垄断资本主义的基础"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "金融寡头实现经济上统治的“参与制”是指金融寡头",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -8456,12 +7641,10 @@
         "D",
         "通过购买所属公司全部股票直接掌握许多大企业和大银行的经济统治方式"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家垄断资本主义是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -8484,12 +7667,10 @@
         "D",
         "带有社会主义因素的垄断资本主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "第二次世界大战后，国家垄断资本主义发展的特点是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -8512,12 +7693,10 @@
         "D",
         "时而削弱，时而发展"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家垄断资本土义的宏观管理和调节体现的是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -8540,12 +7719,10 @@
         "D",
         "国有企业的经济利益"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家垄断资本主义的形式中，最主要、最重要的形式是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -8568,12 +7745,10 @@
         "D",
         "国家自然垄断经济"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "垄断资本主义国家的“经济计划化”",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -8596,12 +7771,10 @@
         "D",
         "可以消除资本主义经济危机"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家垄断资本主义的局限性在于",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -8624,12 +7797,10 @@
         "D",
         "它只能暂时使某些矛盾缓和，但却使这些矛盾进一步加深和复杂化"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "垄断资本主义国家的金融寡头在经济上的统治主要借助于",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -8652,12 +7823,10 @@
         "D",
         "”参与制”"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "各国垄断组织从经济上瓜分世界产生了",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -8680,12 +7849,10 @@
         "D",
         "殖民地和宗主国"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "经济全球化发展趋势的现实基础是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -8708,12 +7875,10 @@
         "D",
         "国际金融的迅速发展"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "经济全球化的实质决定了它的发展必然是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -8736,12 +7901,10 @@
         "D",
         "有利于社会主义国家"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列不属于经济全球化发展趋势的选项是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -8764,12 +7927,10 @@
         "D",
         "国际经济新秩序的建立"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "经济全球化带给发达国家的好处很多，但不包括",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -8792,12 +7953,10 @@
         "D",
         "加强对国际金融市场的控制"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "经济全球化带给发展中国家的消极影响有许多，但不包括",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -8820,12 +7979,10 @@
         "D",
         "经济发展机会大大减少"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本主义发展的历史趋势是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -8848,12 +8005,10 @@
         "D",
         "社会主义公有制取代资本主义私有制"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本主义的历史地位是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -8876,12 +8031,10 @@
         "D",
         "过渡的资本主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家垄断资本主义为向社会主义过渡准备了物质条件是指",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -8904,12 +8057,10 @@
         "D",
         "市场的计划化"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "正确认识资本主义的历史过度性要",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -8932,12 +8083,10 @@
         "D",
         "借鉴并发展资本主义的经济制度"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本社会化的最高形式是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -8960,12 +8109,10 @@
         "D",
         "经营管理社会化"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家垄断资本主义对经济的干预",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -8988,12 +8135,10 @@
         "D",
         "没有改变劳动者受剥削的地位"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "私人垄断资本主义向国家垄断资本主义过渡",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -9016,16 +8161,10 @@
         "D",
         "能够从根本上解决资本主义的基本矛盾"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "垄断资本要求国家干预经济生活的原因是",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -9048,17 +8187,10 @@
         "D",
         "生产过剩问题日趋严重，需要借助国家力量以扩大国内外市场"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "国家垄断资本主义产生的具体原因是",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -9081,17 +8213,10 @@
         "D",
         "对于不能直接获利的基础理论研究只能由国家来承担"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "国家垄断资本主义的基本形式有",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -9114,16 +8239,10 @@
         "D",
         "国家调节经济"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "国家垄断资本主义对资本主义经济发展的作用",
     "answer": "AD",
     "subject": "马克思主义基本原理",
@@ -9146,15 +8265,10 @@
         "D",
         "消除了经济危机频繁的出现"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "垄断与竞争并存的原因是",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -9177,17 +8291,10 @@
         "D",
         "垄断组织不能囊括一切商品生产"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "垄断统治下竞争的特点",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -9210,17 +8317,10 @@
         "D",
         "竞争的范围除经济领域外还包括政治、军事、文化领域"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "垄断价格是",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -9243,16 +8343,10 @@
         "D",
         "成本价格加垄断利润"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "垄断利润是",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -9275,16 +8369,10 @@
         "D",
         "垄断资本所有权在经济上的实现形式"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "第二次世界大战后，垄断资本主义的特征获得了新内容和实现形式，主要有",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -9307,16 +8395,10 @@
         "D",
         "由国家出面组建的国际垄断组织的出现"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "垄断形成的原因",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -9339,17 +8421,10 @@
         "D",
         "规模经济效益促使少数大资本走向垄断"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "垄断竞争的特点",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -9372,17 +8447,10 @@
         "D",
         "垄断企业与非垄断企业的控制与反控制的竞争"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "垄断价格",
     "answer": "BC",
     "subject": "马克思主义基本原理",
@@ -9405,15 +8473,10 @@
         "D",
         "违背了价值规律"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "垄断高价和垄断低价并不否定价值规律，因为",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -9436,17 +8499,10 @@
         "D",
         "垄断高价和垄断低价不能完全离开商品的价值"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "资本主义在全世界范围被社会主义代替是一个很长的历史过程，在这个过程中两种社会制度的国家",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -9469,16 +8525,10 @@
         "D",
         "可以平等互利地发生经济联系"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "垄断利润的主要来源",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -9501,17 +8551,10 @@
         "D",
         "落后国家劳动人民创造的一部分价值、国内劳动人民必要劳动创造的一部分价值"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "垄断资本主义的发展为向社会主义过渡准备了物质条件，主要表现在",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -9534,16 +8577,10 @@
         "D",
         "资本日益社会化"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "经济全球化已成为当今世界经济发展的重要趋势．其明显表现有",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -9566,17 +8603,10 @@
         "D",
         "国际金融交易总额大大超过国际贸易总量"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "资本输出的必要性在于",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -9599,17 +8629,10 @@
         "D",
         "有利于争夺霸权地位"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "第二次世界大战后，垄断发展的新现象有",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -9632,17 +8655,10 @@
         "D",
         "跨国公司成为垄断组织的主要形式"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "第二次世界大战后．发达资本主义国家资本输出",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -9665,16 +8681,10 @@
         "D",
         "发达国家互相输出为主要流向"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "战后发达资本主义国家实行的重大体制改革和政策调整包括",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -9697,17 +8707,10 @@
         "D",
         "推行企业民主，实现劳资合作"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "以下说法中正确地说明了社会福利制度的是",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -9730,16 +8733,10 @@
         "D",
         "社会福利计划力图纠正市场初次分配中的不公平，具有一定的社会进步意义"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "发达资本主义国家主导之下的国际经济协调机制包括",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -9762,16 +8759,10 @@
         "D",
         "世界贸易组织"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "第二次世界大战后，西方国家跨国公司迅速发展是由于",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -9794,17 +8785,10 @@
         "D",
         "争夺国际垄断地位的需要"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "经济殖民地对垄断资本主义国家的重要作用是",
     "answer": "AB",
     "subject": "马克思主义基本原理",
@@ -9827,15 +8811,10 @@
         "D",
         "高新技术人才的培养地"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "资本主义无法根除的主要矛盾是",
     "answer": "BCD",
     "subject": "马克思主义基本原理",
@@ -9858,16 +8837,10 @@
         "D",
         "生产和消费的矛盾"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "资本主义制度的历史进步性主要表现在",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -9890,17 +8863,10 @@
         "D",
         "资本主义意识形态促进和完善了资本主义生产方式"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "资本主义为社会主义所代替的历史必然性表现在",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -9923,17 +8889,10 @@
         "D",
         "资本主义生产关系的调整促进了生产力的发展"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会主义代替资本主义是—个",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -9956,16 +8915,10 @@
         "D",
         "复杂的历史过程"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义理论从狭义上说是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -9988,12 +8941,10 @@
         "D",
         "关于资本主义转化为社会主义以及社会主义和共产主义发展的普遍规律的学说"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义理论从广义上说是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -10016,12 +8967,10 @@
         "D",
         "马克思和恩格斯创立的基本理论、基本观点和基本方法构成的科学体系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "作为中国共产党和社会主义事业指导思想的马克思主义是指",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -10044,12 +8993,10 @@
         "D",
         "无产阶级争取自身解放和整个人类解放的学说体系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在19世纪三大工人运动中，集中反映工人政治要求的是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -10072,12 +9019,10 @@
         "D",
         "德国西里西亚纺织工人起义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义产生的经济根源是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -10100,12 +9045,10 @@
         "D",
         "阶级斗争"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义产生的阶级基础和实践基础",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -10128,12 +9071,10 @@
         "D",
         "工人运动得到了“农民的合唱”"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "提出价值规律是“一只看不见的手”是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -10156,12 +9097,10 @@
         "D",
         "威廉•配第"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思恩格斯进一步发展和完善了英国古典经济学理论，是指",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -10184,12 +9123,10 @@
         "D",
         "剩余价值论"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思把黑格尔的辩证法称为",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -10212,12 +9149,10 @@
         "D",
         "核心"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义哲学思想最直接的理论基础是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -10240,12 +9175,10 @@
         "D",
         "英国经验论哲学"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "被马克思恩格斯称为“有史以来最伟大的讽刺家”的是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -10268,12 +9201,10 @@
         "D",
         "圣西门"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在第一次世界大战中成为东西方矛盾焦点和帝国主义政治体系最薄弱环节的国家是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -10296,12 +9227,10 @@
         "D",
         "俄国"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“哲学把无产阶级当作自己的物质武器。同样，无产阶级把哲学当作自己的精神武器”。这个论断的含义是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -10324,12 +9253,10 @@
         "D",
         "无产阶级掌握哲学就由自为阶级转变为自在阶级"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义生命力的根源在于",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -10352,12 +9279,10 @@
         "D",
         "科学性和阶级性的统一"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "无产阶级的科学世界观和方法论是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -10380,12 +9305,10 @@
         "D",
         "唯物主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义理论最根本的本质属性是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -10408,12 +9331,10 @@
         "D",
         "阶级性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义最重要的理论品质是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -10436,12 +9357,10 @@
         "D",
         "与时俱进"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义最崇高的社会理想",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -10464,12 +9383,10 @@
         "D",
         "取消按资分配，实行按劳分配"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "学习马克思主义基本原理的根本方法",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -10492,12 +9409,10 @@
         "D",
         "辩证思维"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在21世纪到来的前夕，英国广播公司（BBC）在全球范围举行过一次 “千年思想家”网上评选，结果高居榜首的是马克思。马克思主义之所以至今仍受到人们的普遍关注，充满生机和活力，是因为",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -10520,12 +9435,10 @@
         "D",
         "它对人们的各种实践活动都有具体的指导作用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "德国古典哲学是马克思主义哲学的直接理论来源。马克思恩格斯批判地吸取了黑格尔哲学的",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -10548,12 +9461,10 @@
         "D",
         "决定论思想"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义的科学性和革命性统一于它的",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -10576,12 +9487,10 @@
         "D",
         "实践性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "作为马克思恩格斯一生最重要的理论发现，使得社会主义从空想变成科学的是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -10604,12 +9513,10 @@
         "D",
         "劳动价值论和剩余价值学说"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "19世纪欧洲空想社会主义是马克思主义直接理论来源之一，其代表人物是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -10632,12 +9539,10 @@
         "D",
         "圣西门、傅立叶、欧文"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义诞生于",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -10660,12 +9565,10 @@
         "D",
         "19世纪七十年代"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思恩格斯批判地继承了前人的思想文化优秀成果，创立了历史唯物主义和剩余价值学说，从而实现了人类思想史上的",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -10688,12 +9591,10 @@
         "D",
         "伟大发明"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义形成的重要标志是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -10716,12 +9617,10 @@
         "D",
         "《共产党宣言》的公开发表"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "黑格尔、费尔巴哈是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -10744,12 +9643,10 @@
         "D",
         "法国空想社会主义的代表人物"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "坚持一切从实际出发，理论联系实际，实事求是，在实践中检验和发展真理。这是马克思主义",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -10772,12 +9669,10 @@
         "D",
         "最根本的世界观和方法论"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "促成马克思列宁主义在中国传播的重大历史事件是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -10800,12 +9695,10 @@
         "D",
         "中国共产党成立"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义中国化的第一个伟大理论成果是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -10828,12 +9721,10 @@
         "D",
         "邓小平理论"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义最鲜明的政治立场是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -10856,12 +9747,10 @@
         "D",
         "建立无产阶级专政"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义是一个博大精深的科学理论体系，其理论基础是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -10884,12 +9773,10 @@
         "D",
         "科学社会主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对待马克思主义的科学态度是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -10912,12 +9799,10 @@
         "D",
         "要记住马克思和恩格斯说过的每一句话"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "学习马克思主义的目的是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -10940,12 +9825,10 @@
         "D",
         "树立正确的世界观、人生观、价值观"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -10968,12 +9851,10 @@
         "D",
         "关于未来社会具体设想的学说"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思主义诞生于19世纪40年代，到那时，资本主义的发展已经经历过",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -10996,16 +9877,10 @@
         "D",
         "垄断资本主义"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "学习马克思主义基本原理，可以从那几个方面去把握",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -11028,16 +9903,10 @@
         "D",
         "基本方法"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "作为一个完整的科学体系，马克思主义理论体系的三个基本组成部分是",
     "answer": "BCD",
     "subject": "马克思主义基本原理",
@@ -11060,16 +9929,10 @@
         "D",
         "马克思主义哲学"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思主义的根本特性是",
     "answer": "AB",
     "subject": "马克思主义基本原理",
@@ -11092,15 +9955,10 @@
         "D",
         "人民性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "作为马克思主义产生阶级基础的19世纪三大工人起义是",
     "answer": "BCD",
     "subject": "马克思主义基本原理",
@@ -11123,16 +9981,10 @@
         "D",
         "1844年德国西里西亚纺织工人起义"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思主义产生的直接理论渊源是",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -11155,16 +10007,10 @@
         "D",
         "法国启蒙思想"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "德国古典哲学的代表性人物",
     "answer": "BC",
     "subject": "马克思主义基本原理",
@@ -11187,15 +10033,10 @@
         "D",
         "笛卡尔"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "资产阶级古典政治经济学的代表人物",
     "answer": "AB",
     "subject": "马克思主义基本原理",
@@ -11218,15 +10059,10 @@
         "D",
         "西斯蒙"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "空想社会主义的最杰出的代表是",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -11249,16 +10085,10 @@
         "D",
         "托马斯•莫尔"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思思格斯最重要的理论贡献是",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -11281,15 +10111,10 @@
         "D",
         "剩余价值学说"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "导致第一次世界大战爆发的原因有",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -11312,17 +10137,10 @@
         "D",
         "奥地利皇太子菲迪南大公在南斯拉夫遇刺身亡"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思主义科学性与革命性可以概括为",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -11345,17 +10163,10 @@
         "D",
         "实现共产主义是马克思主义最崇高的社会理想"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "中国特色社会主义理论体系包括",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -11378,15 +10189,10 @@
         "D",
         "“三个代表”重要思想和科学发展观"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思土义中国化的两次历史性飞跃理论成果是",
     "answer": "BC",
     "subject": "马克思主义基本原理",
@@ -11409,15 +10215,10 @@
         "D",
         "科学发展观"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“八荣八耻”中的“荣”包括",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -11440,17 +10241,10 @@
         "D",
         "遵纪守法、艰苦奋斗"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“八荣八耻”中的“耻”包括",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -11473,17 +10267,10 @@
         "D",
         "违法乱纪、骄膏淫逸"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "学习马克思主义理论．必须要分清",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -11506,17 +10293,10 @@
         "D",
         "哪些是必须澄清的附加在马克思主义名下的错误观点"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "党的十七大报告指出；“在当代中国，坚持中国特色社会主义理论体系，就是真正坚持马克思主义。”这说明，中国特色社会主义理论是",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -11539,16 +10319,10 @@
         "D",
         "具有中国特点、中国风格和中国气派的马克思主义"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "理论联系实际是学习马克思主义的根本方法。坚持理论联系实际必须反对的错误倾向有",
     "answer": "BC",
     "subject": "马克思主义基本原理",
@@ -11571,15 +10345,10 @@
         "D",
         "折衷主义"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "标志马克思主义公开问世的经典著作有",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -11602,15 +10371,10 @@
         "D",
         "《共产党宣言》"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "改革开放以来马克思主义中国化的理论成果有",
     "answer": "BCD",
     "subject": "马克思主义基本原理",
@@ -11633,16 +10397,10 @@
         "D",
         "科学发展观"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列科学发现中，对马克思主义哲学的形成产生巨大影响的有",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -11665,16 +10423,10 @@
         "D",
         "能量守恒和转化定律"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "哲学的基本问题是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -11697,12 +10449,10 @@
         "D",
         "思维和存在的关系问题"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义哲学首要的和基本的观点是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -11725,12 +10475,10 @@
         "D",
         "发展的观点"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "列宁对辩证唯物主义物质范畴的定义是通过",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -11753,12 +10501,10 @@
         "D",
         "一般和个别的关系界定的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义认为，世界的真正统一性在于它的",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -11781,12 +10527,10 @@
         "D",
         "客观性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“坐地日行八万里，巡天遥看一千河”，这一著名诗句包含的哲理是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -11809,12 +10553,10 @@
         "D",
         "运动的绝对性和静止的相对性的统一"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "形而上学理解的矛盾的同一性是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -11837,12 +10579,10 @@
         "D",
         "具体同一"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "唯物辩证法的总特征是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -11865,12 +10605,10 @@
         "D",
         "运动的观点和静止的观点"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人们制造飞船，发射火箭，克服地球引力，是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -11893,12 +10631,10 @@
         "D",
         "对规律的发展"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“先富——共富”和“台阶式”发展战略体现了质量互变规律中",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -11921,12 +10657,10 @@
         "D",
         "质变是量变的必然结果的原理"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“沉舟侧畔千帆过，病树前头万木春。”“芳林新叶催陈叶，流水前波让后波。”这两句诗包含的哲学道理是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -11949,12 +10683,10 @@
         "D",
         "新事物代替旧事物是事物发展的总趋势"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国古代哲学家公孙龙“白马非马”之说的错误在于割裂了“白马非马”命题的错误在于",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -11977,12 +10709,10 @@
         "D",
         "既没看到共性和个性的区别，又没有看到它们之间的联系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "辩证法的否定即“扬弃”，它的含义是指",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -12005,12 +10735,10 @@
         "D",
         "既克服又保留"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "唯物辩证法的否定之否定规律揭示了事物发展的",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -12033,12 +10761,10 @@
         "D",
         "源泉和动力"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "主观辩证法与客观辩证法的关系是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -12061,12 +10787,10 @@
         "D",
         "唯心辩证法与唯物辩证法的关系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对于同一事物，不同的人有不同的反映，这说明",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -12089,12 +10813,10 @@
         "D",
         "意识的内容是主观的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人工智能的出现对马克思主义哲学意识论的意义是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -12117,12 +10839,10 @@
         "D",
         "丰富了物质和意识相互关系内容"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“历史是逻辑的基础，逻辑是历史的修正”，这一观点是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -12145,12 +10865,10 @@
         "D",
         "割裂历史与逻辑统一的观点"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“从个别到一般，从一般到个别”的思维方法是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -12173,12 +10891,10 @@
         "D",
         "实践到认识"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "辩证思维方法从抽象上升到具体的过程是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -12201,12 +10917,10 @@
         "D",
         "在思维中形成“多种规定的统一”的过程"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "辩证法经历的基本形态有",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -12229,16 +10943,10 @@
         "D",
         "自然辩证法"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "时间空间作为“物质两种存在形式离开了物质．当然都是无，都是只在我们头脑中存在的观念抽象”，这段话说明",
     "answer": "AB",
     "subject": "马克思主义基本原理",
@@ -12261,15 +10969,10 @@
         "D",
         "时间和空间离开物质只是形式"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "我国古代哲学家王夫之认为：“动静者，乃阴阳之动静也。”“皆本物之固然。”“静者静动，非不动也。”“静即含动，动不含静。”“动、静，皆动也。”这在哲学上表达了",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -12292,16 +10995,10 @@
         "D",
         "运动是静止的总和"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思说：“社会生活在本质上是实践的。”这一命题的主要含义是",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -12324,15 +11021,10 @@
         "D",
         "实践是社会生活的本质内容"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "实践是人的生存方式，是指",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -12355,16 +11047,10 @@
         "D",
         "实践是一切生命的存在形式"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "恩格斯说：“当我们深思熟虑地考察自然界或人类历史或我们自己的精神活动的时候．首先呈现在我们眼前的，是一幅由种种联系和相互作用无穷无尽地交织起来的画面。”这段话所包含的辩证法观点有",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -12387,17 +11073,10 @@
         "D",
         "联系既是普遍的又是复杂多样的"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "矛盾的斗争性是指",
     "answer": "BCD",
     "subject": "马克思主义基本原理",
@@ -12420,16 +11099,10 @@
         "D",
         "矛盾双方相互排斥"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "某山村小镇自20世纪70年代发现矾矿以来，办了三个矾矿厂。由于没有严格的环境保护措施，每天排除大量矿烟，致使村民中大多数人患有呼吸道疾病和皮肤病。这一做法从哲学上看违背了",
     "answer": "AB",
     "subject": "马克思主义基本原理",
@@ -12452,15 +11125,10 @@
         "D",
         "事物的普遍性和特殊性关系的原理"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "矛盾同一性在事物发展中的作用表现为",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -12483,16 +11151,10 @@
         "D",
         "规定事物发展的基本趋势"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列哪些说法是对矛盾特殊性原理的具体运用",
     "answer": "AB",
     "subject": "马克思主义基本原理",
@@ -12515,15 +11177,10 @@
         "D",
         "欲擒故纵，声东击西"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列工作方法体现了矛盾的普遍性和特殊性的辩证关系原理的是",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -12546,16 +11203,10 @@
         "D",
         "“欲擒故纵”"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列思想体现了中国传统哲学矛盾观的是",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -12578,17 +11229,10 @@
         "D",
         "“君子和而不同，小人同而不和’"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列命题中属于揭示事物本质的有",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -12611,15 +11255,10 @@
         "D",
         "意识是人脑对客观世界的反映"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列格言中或成语中，体现质量互变规律的有",
     "answer": "AD",
     "subject": "马克思主义基本原理",
@@ -12642,15 +11281,10 @@
         "D",
         "千里之堤，溃于蚁穴"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "古语说：“奢靡之始，危亡之渐。”这句话是说，奢靡逐步发展会导致危亡。其中包含的哲学道理有",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -12673,15 +11307,10 @@
         "D",
         "质变是量变的必然结果"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列现象属于量变引起质变的有",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -12704,16 +11333,10 @@
         "D",
         "由遗传和变异的矛盾引起旧物种到新物种的变化"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“是就是，否就否，除此之外．都是鬼话”，这一观点的错误在于",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -12736,16 +11359,10 @@
         "D",
         "它否认了事物发展的曲折性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "辩证的否定是",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -12768,17 +11385,10 @@
         "D",
         "扬弃"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列命题蕴涵着中国传统哲学中否定之否定规律的思想是",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -12801,16 +11411,10 @@
         "D",
         "“和实生物”"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "割裂事物发展过程中的前进性和曲折性会导致",
     "answer": "BD",
     "subject": "马克思主义基本原理",
@@ -12833,15 +11437,10 @@
         "D",
         "循环论"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“脱离了整体的手是名义上的手”说明",
     "answer": "BD",
     "subject": "马克思主义基本原理",
@@ -12864,15 +11463,10 @@
         "D",
         "脱离了整体的部分就丧失原有的性质和功能"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“如果偶然性不起任何作用的话，那么世界历史就会带有非常神秘的性质。”这一观点",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -12895,15 +11489,10 @@
         "D",
         "说明事物发展是必然性和偶然性综合作用的结果"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会规律是人们自己的“社会行动的规律”，这是因为",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -12926,16 +11515,10 @@
         "D",
         "社会规律存在和实现于实践活动之中"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "把科学的实践观第一次引入认识论是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -12958,12 +11541,10 @@
         "D",
         "康德哲学的功绩"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "1633年，伽利略因宣传“日心说”被教廷判处终身监禁。1979年11月10日罗马教皇在公开集会上正式承认伽利略在340多年前受到教廷审判是不公正的，公开伽利略平反。这说明",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -12986,12 +11567,10 @@
         "D",
         "真理终将战胜谬误"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "实践作为检验认识真理性的标准具有不确定性，这种不确定性是指",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -13014,12 +11593,10 @@
         "D",
         "实践标准具有历史局限性，它对真理的检验是一个过程"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义认为，主客体之间的价值关系是指",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -13042,12 +11619,10 @@
         "D",
         "客体对于主体的有用性和效益性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“社会上一旦有技术上的需要，则这种需要会比十所大学更能把科学推向前进。”这说明",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -13070,12 +11645,10 @@
         "D",
         "科学进步是实践的目的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "恩格斯说：“人的智力是按照人如何学会改造自然界而发展的。”这说明",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -13098,12 +11671,10 @@
         "D",
         "人具有认识自然的能力"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "科学家尼葛庞蒂说：“预测未来的最好办法就是把它创造出来。”从认识和实践的关系看，这句话对我们的启示是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -13126,12 +11697,10 @@
         "D",
         "实践与认识是合一的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“纸上得来终觉浅，绝知此事要躬行”，这一名句强调的是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -13154,12 +11723,10 @@
         "D",
         "间接经验毫无用处"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "感性认识和理性认识的区别是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -13182,12 +11749,10 @@
         "D",
         "感性认识来源于直接经验，理性认识来源于间接经验"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我们通过眼、耳、鼻、舌、身各种感官感觉到一个梨子的各种属性，在意识中把它们联系起来形成了关于这个梨子的感性形象，这种反映形式是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -13210,12 +11775,10 @@
         "D",
         "分析"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对于哲学史上长期争论不休的唯理论和经验论两大派别的正确评价是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -13238,12 +11801,10 @@
         "D",
         "唯理论和经验论都是完全错误的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“真理和谬误的对立，只是在非常有限的范围内才有意义”是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -13266,12 +11827,10 @@
         "D",
         "相对主义的观点"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "真理与谬误之间的相互关系是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -13294,12 +11853,10 @@
         "D",
         "两者之间没有原则区别"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“真理是人造的供人使用的工具”的看法是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -13322,12 +11879,10 @@
         "D",
         "机械唯物主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“真理是思想形式，是人类经验的组织形式”这是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -13350,12 +11905,10 @@
         "D",
         "形而上学真理论"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“此亦一是非，彼亦一是非”的命题，其含义是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -13378,12 +11931,10 @@
         "D",
         "否认真理具有客观标准"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“对客观事物的反映即是真理”，这是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -13406,12 +11957,10 @@
         "D",
         "混淆了真理的客观性与规律客观性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“听其言必责其用，观其行必求其功。”这种观点是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -13434,12 +11983,10 @@
         "D",
         "认为实践可以脱离认识"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "承认知识的相对性",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -13462,12 +12009,10 @@
         "D",
         "可以防止认识的僵化"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“人的思维是否具有真理性，这并不是一个理论的问题，而是一个实践的问题。人应该在实践中证明自己思维的真理性，即自己思维的现实性和力量．亦即自己思维的此岸性。”这一论断说明了",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -13490,12 +12035,10 @@
         "D",
         "认识活动与实践活动具有同样的作用和力量"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "列宁提出的：“从物到感觉和思想”与“从思想和感觉到物”是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -13518,12 +12061,10 @@
         "D",
         "可知论与不可知论的对立"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "没有抽象的真理，真理总是具体的。这一命题强调",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -13546,12 +12087,10 @@
         "D",
         "真理是与人的具体利益相联系的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "列宁说：“没有革命的理论，就不会有革命的行动”．这一命题的含义是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -13574,12 +12113,10 @@
         "D",
         "革命理论最终决定革命运动的成败"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "法国科学家路易·巴斯德说：“在观察事物之际，机遇偏爱有准备的头脑。”这句话强调了",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -13602,12 +12139,10 @@
         "D",
         "人们在认识事物是要有理性的指导"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思指出：“搬运夫和哲学家之间的原始差别要比家犬和猎犬之间差别小得多．它们之间的鸿沟是分工掘成的。”这表明",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -13630,12 +12165,10 @@
         "D",
         "人的聪明才智由人的社会政治地位决定"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "真理和谬误的界限在于",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -13658,12 +12191,10 @@
         "D",
         "是否为大多数人所接受"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "真理的绝对性是指它的",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -13686,12 +12217,10 @@
         "D",
         "全面性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "真理观上的相对主义，错误在于",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -13714,12 +12243,10 @@
         "D",
         "认为关于同一对象真理性的认识只有一个"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "实践基础上的理论创新，是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -13742,12 +12269,10 @@
         "D",
         "一个国家兴旺发达的最终源泉"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "重视理论创新，必须反对",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -13770,12 +12295,10 @@
         "D",
         "教条主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "实践的中介系统包括",
     "answer": "AB",
     "subject": "马克思主义基本原理",
@@ -13798,15 +12321,10 @@
         "D",
         "在思维中把对象的某种属性、因素抽取出来的逻辑方法与操作系统"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "主体与客体相互作用的过程包括以下环节",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -13829,16 +12347,10 @@
         "D",
         "通过改造主观世界而支配客观世界的运行"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思主义认识论与唯心主义认识论的区别在于是否承认",
     "answer": "BD",
     "subject": "马克思主义基本原理",
@@ -13861,15 +12373,10 @@
         "D",
         "社会实践是认识的基础"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "实践在认识中的决定作用表现在",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -13892,17 +12399,10 @@
         "D",
         "实践是检验认识真理性的唯一标准"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "爱国斯坦1939年在获悉铀核裂变及其链式反应的发现后，曾上书美国总统罗斯福，建议研制原子弹，以防德国占先。然而，让爱因斯坦感到意外的是，第二次世界大战结束前夕，美国向日本的广岛和长崎投下两颗原子弹，悍然将原子弹用于战争。这对爱因斯坦震动很大，从此开始投身反对核战争的运动。这段材料蕴涵的哲学原理是",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -13925,15 +12425,10 @@
         "D",
         "真理和价值统一于人类的实践之中，最终由实践检验"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "能动的反映论与机械反映沦的主要区别在于",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -13956,15 +12451,10 @@
         "D",
         "是否承认认识是一个充满矛盾的辩证过程"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“批判的武器当然不能代替武器的批判，物质的力量只能用物质的力量来摧毁，理论一经群众掌握，也会变成物质力量。”这一论断的哲学思想是",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -13987,16 +12477,10 @@
         "D",
         "理论的作用可以通过实践表现出来"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列观点中包含实践对认识的决定作用原理的是",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -14019,16 +12503,10 @@
         "D",
         "机遇偏爱有准备的头脑"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "经验论的错误在于",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -14051,15 +12529,10 @@
         "D",
         "否认感性认识有待于上升为理性认识"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“感觉到了的东西，我们不能立刻理解它，只有理解了的东西．才能更深刻地感觉它”，这一观点说明",
     "answer": "BCD",
     "subject": "马克思主义基本原理",
@@ -14082,16 +12555,10 @@
         "D",
         "感性认识和理性认识是相互依存和渗透的"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "理性认识向实践飞跃的意义在于",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -14114,16 +12581,10 @@
         "D",
         "理论在实践的发展中得到发展"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“按图索骥”的错误在于",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -14146,16 +12607,10 @@
         "D",
         "唯理论"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“跟着感觉走”，在本质上是",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -14178,16 +12633,10 @@
         "D",
         "反理性主义观点"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列属于中国传统哲学中唯心主义知行观的有",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -14210,16 +12659,10 @@
         "D",
         "不登高山，不知天之高也．不临探溪，不知地之厚也(荀子)"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“单凭观察所得的经验，是决不能充分证明必然性的。这是如此正确，以至于不能从太阳总是在早晨升起来判断它明天会再升起。”恩格斯这段话的含义是",
     "answer": "ABD",
     "subject": "马克思主义基本原理",
@@ -14242,16 +12685,10 @@
         "D",
         "归纳方法不是万能的"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思主义认为，认识的辩证过程是",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -14274,15 +12711,10 @@
         "D",
         "从相对真理到绝对真理的发展"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“没有抽象的真理，真理总是具体的”这一命题的含义是",
     "answer": "BC",
     "subject": "马克思主义基本原理",
@@ -14305,15 +12737,10 @@
         "D",
         "真理是具体生动的事实"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "实践是检验真理的唯一标准，在于",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -14336,17 +12763,10 @@
         "D",
         "实践是主观见之于客观的活动"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "十月革命胜利后列宁指出：“对俄国来说，根据书本争论社会主义纲领的时代已经过去了，我深信已经一去不复返了。今天只能根据经验来谈社会主义。”对这句话的正确理解是",
     "answer": "BC",
     "subject": "马克思主义基本原理",
@@ -14369,15 +12789,10 @@
         "D",
         "对社会主义的认识应该由经验代替理论"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "列宁说：“只要再多走一小步．仿佛是向同一方向迈的一小步，真理便会变成错误。”这说明",
     "answer": "BC",
     "subject": "马克思主义基本原理",
@@ -14400,15 +12815,10 @@
         "D",
         "沿着真理的方向继续前行会使真理变成谬误"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "孙中山先生指出，认识过程是“以行而求知，困知以进行”、“行其所不知以致其所知”、“因其已知而更进于行”。这表明",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -14431,17 +12841,10 @@
         "D",
         "知行合一"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "一个正确的思想，往往需要经历由实践到认识、认识到实践的多次反复才能形成，这是因为",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -14464,17 +12867,10 @@
         "D",
         "认识是一个过程"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "人类认识和实践活动的两个基本原则是",
     "answer": "AB",
     "subject": "马克思主义基本原理",
@@ -14497,15 +12893,10 @@
         "D",
         "公平原则"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "真理原则和价值原则的区别是",
     "answer": "BCD",
     "subject": "马克思主义基本原理",
@@ -14528,16 +12919,10 @@
         "D",
         "真理原则体现了人的活动中的统一性，价值原则体现了社会活动中的多样性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列观点体现真理和价值的辩证关系的有",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -14560,17 +12945,10 @@
         "D",
         "实现价值是人们追求真理的目的，价值追求引导人们去探索真理"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "价值的特性是",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -14593,17 +12971,10 @@
         "D",
         "多维性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "价值的客观性在于",
     "answer": "BCD",
     "subject": "马克思主义基本原理",
@@ -14626,16 +12997,10 @@
         "D",
         "满足人的需要的过程和结果具有客观性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列说法正确的有",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -14658,15 +13023,10 @@
         "D",
         "真理的具体性是说真理有其适用的具体范围和条件"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "真理和价值的对立统一关系表现在",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -14689,17 +13049,10 @@
         "D",
         "价值的形成和实现以坚持真理为前提．而真理又必然是具有价值的"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "对待马克思主义，必须",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -14722,16 +13075,10 @@
         "D",
         "把马克思主义作为永恒真理．只能坚持不能发展"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人类社会历史发展的决定力量是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -14754,12 +13101,10 @@
         "D",
         "人口因素"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会意识相对独立性的最突出表现是它",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -14782,12 +13127,10 @@
         "D",
         "同社会经济的发展具有不平衡性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在生产关系中起决定作用的是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -14810,12 +13153,10 @@
         "D",
         "管理者和生产者的不同地位"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "手推磨产生的是封建主的社会，蒸汽磨产生的是工业资本家的社会”，这句话揭示了",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -14838,12 +13179,10 @@
         "D",
         "物质生产的发展需要建立相应的生产关系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "十一届三中全会以来，我党制定的一系列正确的路线、方针、政策促进了我国经济的迅猛发展，这说明",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -14866,12 +13205,10 @@
         "D",
         "社会主义社会的发展不受经济基础决定上层建筑规律的制约"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "一定社会形态的经济基础是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -14894,12 +13231,10 @@
         "D",
         "与一定生产力发展阶段相适应的生产关系的总和"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "上层建筑是指",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -14922,12 +13257,10 @@
         "D",
         "建立在一定社会经济基础之上的意识形态及相应的制度和设施"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会形态是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -14950,12 +13283,10 @@
         "D",
         "物质世界和精神世界的统一"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人类社会发展的一般规律是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -14978,12 +13309,10 @@
         "D",
         "物质生产和精神生产的矛盾规律"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "阶级斗争对阶级社会发展的推动作用突出表现在",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -15006,12 +13335,10 @@
         "D",
         "科技的进步"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会革命根源于",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -15034,12 +13361,10 @@
         "D",
         "社会基本矛盾的尖锐化"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义改革的根本目的在于",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -15062,12 +13387,10 @@
         "D",
         "实现社会公平"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“蒸汽、电力和自动纺织机甚至是比巴尔贝斯、拉斯拜尔和布朗基诸位公民更危险万分的革命家。”这一论断的含义是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -15090,12 +13413,10 @@
         "D",
         "科技革命导致社会政治革命"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人民群众既是历史的“剧中人”，又是历史的“剧作者”，这是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -15118,12 +13439,10 @@
         "D",
         "历史循环论的观点"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "理解人类社会发展的钥匙是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -15146,12 +13465,10 @@
         "D",
         "文化发展史"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "阶级实质上是一个",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -15174,12 +13491,10 @@
         "D",
         "文化范畴"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "英雄史观的理论出发点是主张",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -15202,12 +13517,10 @@
         "D",
         "社会运动受偶然性支配"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人民群众是历史的创造者，其根本原因在于人民群众",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -15230,12 +13543,10 @@
         "D",
         "掌握历史发展规律"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "制约人民群众创造历史的决定性条件是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -15258,12 +13569,10 @@
         "D",
         "文化水平"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "历史上杰出人物的产生",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -15286,12 +13595,10 @@
         "D",
         "有的是偶然有的是必然"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会存在包括",
     "answer": "ADC",
     "subject": "马克思主义基本原理",
@@ -15314,16 +13621,10 @@
         "D",
         "全部社会关系"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会意识的相对独立性表现为",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -15346,17 +13647,10 @@
         "D",
         "各种社会意识形式之间的相互作用和影响"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "18世纪，经济上落后的国家法国在哲学上和政治思想领域方面取得的成就，超过了当时经济上先进的英国，这表明",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -15379,15 +13673,10 @@
         "D",
         "社会意识的发展和经济的发展并不是完全对应的"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思说：“无论哪一种社会形态，在它所能容纳的全部生产力发挥出来以前，是决不会灭亡的；而新的更高的生产关系，在它存在的物质条件在旧社会的胞胎里成熟以前，是决不会出现的。”这段话说明",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -15410,17 +13699,10 @@
         "D",
         "社会形态总是具体的、历史的"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "生产关系的客观性是指",
     "answer": "ADCD",
     "subject": "马克思主义基本原理",
@@ -15443,17 +13725,10 @@
         "D",
         "生产关系是社会上层建筑的物质基础"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "科学技术也是生产力，因为",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -15476,16 +13751,10 @@
         "D",
         "它可以提高管理效率"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "在生产力和生产关系的相互关系中",
     "answer": "AD",
     "subject": "马克思主义基本原理",
@@ -15508,15 +13777,10 @@
         "D",
         "适合生产力状况的生产关系推动生产力的发展"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "经济基础对上层建筑的决定作用，主要表现在",
     "answer": "AB",
     "subject": "马克思主义基本原理",
@@ -15539,15 +13803,10 @@
         "D",
         "经济基础决定上层建筑是否包括自然科学"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "上层建筑对经济基础的能动作用在于",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -15570,16 +13829,10 @@
         "D",
         "它决定自己所服务的经济基础的性质"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思主义的社会形态理论指出",
     "answer": "AB",
     "subject": "马克思主义基本原理",
@@ -15602,15 +13855,10 @@
         "D",
         "社会形态是超社会的、超历史的"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思对阶级斗争学说的新贡献是",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -15633,15 +13881,10 @@
         "D",
         "说明阶级斗争必然导致无产阶级专政"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“如果资本主义的灭亡是由科学保证了的，为什么还要费那么大的力气去为它安排葬礼呢?”这种观点的错误在于",
     "answer": "AB",
     "subject": "马克思主义基本原理",
@@ -15664,15 +13907,10 @@
         "D",
         "否定科学是推动历史前进的革命力量"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "科学技术在高度发展的同时，也带来了全球性问题，这一观点表明",
     "answer": "BC",
     "subject": "马克思主义基本原理",
@@ -15695,15 +13933,10 @@
         "D",
         "科学技术是当代人的“非人化”的根源"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“历史不过是追求着自己目的的人的活动而已”，这一观点表明",
     "answer": "AB",
     "subject": "马克思主义基本原理",
@@ -15726,15 +13959,10 @@
         "D",
         "历史是人的思想发展史"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“一言可以兴邦，一言可以丧邦”，英雄人物的意志可以改变历史发展的方向，这种观点是",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -15757,16 +13985,10 @@
         "D",
         "夸大个人作用的唯心史观"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“时势造英雄”和“英雄造时势”",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -15789,16 +14011,10 @@
         "D",
         "前者是科学历史观，后者是唯心史观"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "历史发展是“合力”作用的结果，这就是说",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -15821,15 +14037,10 @@
         "D",
         "社会中的每个人都是”合力”的一部分"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "正确评价历史人物的方法是",
     "answer": "BD",
     "subject": "马克思主义基本原理",
@@ -15852,15 +14063,10 @@
         "D",
         "阶级分析方法"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "商品的本质属性是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -15883,12 +14089,10 @@
         "D",
         "价格"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "具体劳动和抽象劳动是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -15911,12 +14115,10 @@
         "D",
         "先后两次劳动过程"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "商品经济产生和存在的一般基础和条件是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -15939,12 +14141,10 @@
         "D",
         "货币转化为资本"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "理解马克思主义政治经济学的枢纽是马克思主义的",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -15967,12 +14167,10 @@
         "D",
         "劳动二重性理论"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "个别企业生产商品的劳动时间缩短意味着",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -15995,12 +14193,10 @@
         "D",
         "该企业劳动生产率提高"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "商品的价值量决定于",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -16023,12 +14219,10 @@
         "D",
         "剩余劳动时间"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "私有制为基础的商品经济的基本矛盾是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -16051,12 +14245,10 @@
         "D",
         "简单劳动和复杂劳动的矛盾"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“一手交钱一手交货”中的“钱”所充当的货币职能是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -16079,12 +14271,10 @@
         "D",
         "贮藏手段"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "商品价格随着供求关系的变化围绕价值上下波动是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -16107,12 +14297,10 @@
         "D",
         "价值规律作用的表现形式"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "货币转化为资本的前提是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -16135,12 +14323,10 @@
         "D",
         "勤俭节约"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本的最初表现形式是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -16163,12 +14349,10 @@
         "D",
         "货币"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本主义生产过程的本质特征是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -16191,12 +14375,10 @@
         "D",
         "价值平均过程"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "劳动力商品使用价值的特殊性在于：",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -16219,12 +14401,10 @@
         "D",
         "保持资本价值"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "假设原来工作日为8小时，其中必要劳动时间为4小时，剩余劳动时间为4小时，若分别采用绝对剩余价值生产方法和相对剩余价值生产方法，使剩余劳动时间各延长2小时，则它们的剩余价值率应分别为",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -16247,12 +14427,10 @@
         "D",
         "100%，200%"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本积累是指",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -16275,12 +14453,10 @@
         "D",
         "大资本吞并小资本"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本有机构成是指",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -16303,12 +14479,10 @@
         "D",
         "由资本技术构成决定的不变资本与可变资本的比例关系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "某资本家经营的企业通过改进技术、提高劳动生产率，使其生产商品花费的劳动时间比社会必要劳动时间少IO％，由此形成商品个别价值低于社会价值的那部分是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -16331,12 +14505,10 @@
         "D",
         "平均利润"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本主义工资的本质是",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -16359,12 +14531,10 @@
         "D",
         "劳动力的价值"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以劳动力形式存在的那部分资本被称为可变资本是因为",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -16387,12 +14557,10 @@
         "D",
         "劳动力不仅能创造出自身价值，还能创造出剩余价值"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本有机构成的提高，是指在c:v中",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -16415,12 +14583,10 @@
         "D",
         "c、v按相同的比例下降"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "产业资本循环依次经过的三个阶段是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -16443,12 +14609,10 @@
         "D",
         "流动、生产、销售"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本周转时间包括",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -16471,12 +14635,10 @@
         "D",
         "生产时间和销售时间"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "平均利润的形成是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -16499,12 +14661,10 @@
         "D",
         "资本积累的结果"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "剩余价值和利润二者之间的关系是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -16527,12 +14687,10 @@
         "D",
         "剩余价值和利润在质上相同，在量上相等"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "平均利润和生产价格形成后，市场价格波动的中心是",
     "answer": "C",
     "subject": "马克思主义基本原理",
@@ -16555,12 +14713,10 @@
         "D",
         "垄断价格"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会总产品从实物形态上分为生产资料和消费资料的主要依据是其",
     "answer": "D",
     "subject": "马克思主义基本原理",
@@ -16583,12 +14739,10 @@
         "D",
         "最终用途"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在下列生产要素中既属于不变资本又属于固定资本的是",
     "answer": "A",
     "subject": "马克思主义基本原理",
@@ -16611,12 +14765,10 @@
         "D",
         "劳动力"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本主义地租是农业中的",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -16639,12 +14791,10 @@
         "D",
         "企业利润转化的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "绝对地租形成的原因是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -16667,12 +14817,10 @@
         "D",
         "土地价格垄断"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "土地的价格是",
     "answer": "B",
     "subject": "马克思主义基本原理",
@@ -16695,12 +14843,10 @@
         "D",
         "土地数额与平均利润的总和"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "价值是商品的本质属性，它是",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -16727,17 +14873,10 @@
         "E",
         "使用价值的基础"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "与一种商品的价格相关的因素有",
     "answer": "ACDE",
     "subject": "马克思主义基本原理",
@@ -16764,17 +14903,10 @@
         "E",
         "货币币值"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "货币的职能包括",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -16801,17 +14933,10 @@
         "E",
         "资本尺度"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "一定时期商品流通中的货币量取决于以下几个因素",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -16838,16 +14963,10 @@
         "E",
         "纸币的发行量"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "市场机制的要素有",
     "answer": "ABCD",
     "subject": "马克思主义基本原理",
@@ -16874,17 +14993,10 @@
         "E",
         "政策"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "劳动力成为商品的历史条件是",
     "answer": "CD",
     "subject": "马克思主义基本原理",
@@ -16911,15 +15023,10 @@
         "E",
         "劳动者自愿出卖自己的劳动力"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "资本",
     "answer": "BCDE",
     "subject": "马克思主义基本原理",
@@ -16946,17 +15053,10 @@
         "E",
         "是一个历史范畴"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "区分不变资本和可变资本的意义在于",
     "answer": "BDE",
     "subject": "马克思主义基本原理",
@@ -16983,16 +15083,10 @@
         "E",
         "为考察资本家对工人的剥削程度提供了依据"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "资本积累",
     "answer": "ABDE",
     "subject": "马克思主义基本原理",
@@ -17019,17 +15113,10 @@
         "E",
         "是由竞争规律决定的"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "纺织厂的资本家购买的用于生产的棉花属于",
     "answer": "ADE",
     "subject": "马克思主义基本原理",
@@ -17056,16 +15143,10 @@
         "E",
         "生产资本"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "提高资本周转速度给资本所有者带来的好处有",
     "answer": "BCE",
     "subject": "马克思主义基本原理",
@@ -17092,16 +15173,10 @@
         "E",
         "提高机器设备利用率"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "影响资本周转速度的因素有()。",
     "answer": "ABCDE",
     "subject": "马克思主义基本原理",
@@ -17128,18 +15203,10 @@
         "E",
         "劳动过程中断自然力独立作用于劳动对象时间的长短"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "生产成本是",
     "answer": "ACD",
     "subject": "马克思主义基本原理",
@@ -17166,16 +15233,10 @@
         "E",
         "商品销售价格的最高界限"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "生产价格与价值的关系是",
     "answer": "ABC",
     "subject": "马克思主义基本原理",
@@ -17202,16 +15263,10 @@
         "E",
         "生产价格与剩余价值在数量是相等的"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "资本主义条件下剩余价值的具体转化形式有（ ）。",
     "answer": "CDE",
     "subject": "马克思主义基本原理",
@@ -17238,16 +15293,10 @@
         "E",
         "地租"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "影响利润率的因素有",
     "answer": "ABCDE",
     "subject": "马克思主义基本原理",
@@ -17274,18 +15323,10 @@
         "E",
         "原材料价格的变动"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会资本再生产的实现要求",
     "answer": "ADCDE",
     "subject": "马克思主义基本原理",
@@ -17312,18 +15353,10 @@
         "E",
         "消费资料供给结构与需求结构吻合"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "土地价格",
     "answer": "BCDE",
     "subject": "马克思主义基本原理",
@@ -17350,17 +15383,10 @@
         "E",
         "受土地供求关系影响"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "研究社会资本再生产，",
     "answer": "ABCE",
     "subject": "马克思主义基本原理",
@@ -17387,17 +15413,10 @@
         "E",
         "把社会生产划分为Ⅰ和Ⅱ两大部类"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "平均利润形成后，等量资本获得等量利润，因此",
     "answer": "BDE",
     "subject": "马克思主义基本原理",
@@ -17424,12 +15443,6 @@
         "E",
         "资本有机构成具有平均水平的部门，得到的平均利润与本部门工人创造的剩余价值相一致"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "D",
-      "E"
     ]
   }
 ]

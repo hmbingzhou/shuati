@@ -528,7 +528,7 @@
     "flag_cross": false
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "大学生适应新的学习、生活环境，很重要的一点就是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -551,12 +551,10 @@
         "D",
         "培养自信心。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "创新学习是一种以（ ）为基础，采取创造性方法，积极追求创造性成果的学习。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -579,12 +577,10 @@
         "D",
         "求新求变"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“知之为知之，不知为不知，是知也。”这句话告诉我们，在学习上一定要培养（ ）的优良学风。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -607,12 +603,10 @@
         "D",
         "敢为人先"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“业精于勤荒于嬉；行成于思毁于随”，这句话说明了学习必须做到（ ）",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -635,12 +629,10 @@
         "D",
         "创新"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“思想道德修养与法律基础”课以（ ）为指导，帮助大学生全面提高思想道德素质和法律素质。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -663,12 +655,10 @@
         "D",
         "马克思主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“以服务人民为荣、以背离人民为耻”是社会主义荣辱观的重要内容之一。毛泽东的《为人民服务》这篇著名文章是为一个全心全意为人民服务的普通战士写的悼词，这个普通战士是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -691,12 +681,10 @@
         "D",
         "白求恩"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "《礼记•中庸》认为，道德修养应“莫见乎隐，莫显乎微，故君子慎其独也”。这种“慎独”的道德修养方法要求我们在学习“思想道德修养与法律基础”课时要注重（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -719,12 +707,10 @@
         "D",
         "多思考深理解"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是人才素质的灵魂。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -747,12 +733,10 @@
         "D",
         "美"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "衡量大学生全面发展的一个重要标准是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -775,12 +759,10 @@
         "D",
         "知行统一"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "尽快（ ），是大学新生面临的首要问题。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -803,12 +785,10 @@
         "D",
         "开始专业学习"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "培养优良的学风应该在严谨、求实、勤奋和（ ）上下功夫。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -831,12 +811,10 @@
         "D",
         "全面"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "引领学术风气，促进思想交流，（ ），建设精神文明，是大学的灵魂之所在。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -859,12 +837,10 @@
         "D",
         "培养竞争能力"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "学习和践行（ ）是大学生提高思想道德素质和法律素质的根本要求。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -887,12 +863,10 @@
         "D",
         "社会主义核心价值体系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "思想道德修养与法律基础课的主要内容是对大学生进行（ ）教育。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -915,12 +889,10 @@
         "D",
         "以上三点都是"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "当今时代，（ ）已成为世界各国综合国力竞争的焦点。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -943,12 +915,10 @@
         "D",
         "民主政治"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“思想道德修养与法律基础”课是一门融思想性、政治性、知识性、综合性与（ ）于一体的课程。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -971,12 +941,10 @@
         "D",
         "真理性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是人们在实践中形成的具有现实可能性的对未来的向往和追求，是人们的世界观、人生观和价值观在奋斗目标上的集中体现。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -999,12 +967,10 @@
         "D",
         "理想"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人们在一定的认识基础上确立的、对某种思想或事物坚信不疑并身体力行的态度是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -1027,12 +993,10 @@
         "D",
         "意志"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列属于科学信念的是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -1055,12 +1019,10 @@
         "D",
         "社会主义必然代替资本主义，全世界最终必然实现共产主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "从本质上讲，理想和信念都是人类在（ ）基础上产生的一种特殊的社会意识和精神现象。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -1083,12 +1045,10 @@
         "D",
         "哲学思维"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "信念的最集中、最高的表现形式是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -1111,12 +1071,10 @@
         "D",
         "意志"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）在我国的确立，开启了我国在社会主义道路上实现中华民族伟大复兴的历史征程。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -1139,12 +1097,10 @@
         "D",
         "人民民主专政"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是我们党和国家的根本指导思想，这是近代以来中国历史发展的必然结果，是中国人民长期探索的历史选择。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -1167,12 +1123,10 @@
         "D",
         "马克思主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“现实是此岸，理想是彼岸。中间隔着湍急的河流，行动则是架在川上的桥梁。”下列对这句话的说明中，正确的是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -1195,12 +1149,10 @@
         "D",
         "只有行动可以使理想化为现实"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在理想的内容体系中，（ ）是其中的核心。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -1223,12 +1175,10 @@
         "D",
         "道德理想"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "邓小平在总结中国历史经验时曾深刻地指出：“我们过去几十年艰苦奋斗，就是靠用坚定的信念把人民团结起来，为人民自己的利益而奋斗。没有这样的信念，就没有凝聚力。没有这样的信念，就没有一切。”这里强调说明的是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -1251,12 +1201,10 @@
         "D",
         "科学信念是人们追求理想目标的强大动力"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "现阶段我国各族人民的共同理想是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -1279,12 +1227,10 @@
         "D",
         "形成文明、健康、科学的生活方式"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对于理想和现实的关系，正确的理解是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -1307,12 +1253,10 @@
         "D",
         "现实总是美好的，而理想中既有美好的一面，也有丑恶的一面"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“樱桃好吃树难栽，不下功夫花不开。”理想是美好的，令人向往的，但理想不能自动实现。把理想变为现实的根本途径是（ ）",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -1335,12 +1279,10 @@
         "D",
         "大胆想象美好未来"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "当个人理想与社会理想发生矛盾时，我们应该（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -1363,12 +1305,10 @@
         "D",
         "使个人理想服从社会理想"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "加强和改进大学生思想政治教育工作，应以（ ）为核心，深入进行树立正确的世界观、人生观和价值观教育。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -1391,12 +1331,10 @@
         "D",
         "社会主义荣辱观教育"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "空想一般是（ ）",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -1419,12 +1357,10 @@
         "D",
         "在实践中形成和具有现实可能的对美好未来的想象"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "理想区别于幻想、空想的特点是（ ）",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -1447,12 +1383,10 @@
         "D",
         "理想源于实践，具有实现可能，是对未来的向往和追求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "理想与空想的区别在于（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -1475,12 +1409,10 @@
         "D",
         "是否是创新思维的结果"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "无产阶级革命家陶铸在《崇高的理想》一文中赞扬我国历史上的民族英雄、人民英雄、发明家和科学家的时候，指出：“所有这些人都是具有伟大理想并坚决为他们的伟大理想而斗争的人……他们为了自己的伟大理想，有些人家可以不要，有些人官可以不做，有些人生命可以抛弃，有些人真正做到了富贵不能淫，贫贱不能移，威武不能屈的地步。”可见，崇高理想是 （ ）",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -1503,12 +1435,10 @@
         "D",
         "激励人们战胜邪恶和腐朽，向着既定目标奋斗进取的力量源泉"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "信念作为人的意识的一部分，是人类特有的一种精神状态，信念对人生的重要作用体现在，信念是人们（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -1531,12 +1461,10 @@
         "D",
         "对客观事物的本质和发展规律的正确反映"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "理想，是人们在实践中形成的，具有（ ）的对美好未来的追求和向往，是人们的政治立场和世界观在人生奋斗目标上的体现。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -1559,12 +1487,10 @@
         "D",
         "实现可能性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人的理想确立的关键时期是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -1587,12 +1513,10 @@
         "D",
         "青年"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "追求崇高的理想需要（ ）信念。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -1615,12 +1539,10 @@
         "D",
         "一贯的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "追求崇高的理想，需要坚定的信念，信念是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -1643,12 +1565,10 @@
         "D",
         "认识、情感和意志的融合和统一"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "科学信念是以对事物发展规律的 （ ） 为基础，在实践中不断受到检验、完善，具有不可抗拒的力量的一种观念和态度。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -1671,12 +1591,10 @@
         "D",
         "系统了解"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "大学生中的共产党员和先进分子应树立的远大理想是（ ）",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -1699,12 +1617,10 @@
         "D",
         "提高中国的国际地位"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "一个人如果没有崇高理想或者缺乏理想，就会像一艘没有舵的船，随波逐流，难以顺利到达彼岸。这主要说明了理想是（ ）",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -1727,12 +1643,10 @@
         "D",
         "人们对未来缺乏客观根据的想象"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "理想和现实的统一性表现在（ ）",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -1755,12 +1669,10 @@
         "D",
         "有了坚定的信念，理想就能变为现实"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "当教师，要当一个模范教师；当科学家，要当一个对国家有突出贡献的科学家；当解放军战士，要当一个最英勇的解放军战士；当工人，要当一个新时代的劳动模范；当农民，要当一个对改变农村面貌有贡献的农民。这些都是人生理想中（ ）的表现",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -1783,12 +1695,10 @@
         "D",
         "职业理想"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列对信念的理解中，正确的是（ ）",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -1811,12 +1721,10 @@
         "D",
         "信念体现的是人们对人生目标的追求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“千里之行，始于足下。”理想的实现，需要每个人从我做起，从现在做起，从平凡的工作做起。这是因为（ ）",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -1839,12 +1747,10 @@
         "D",
         "有了坚定的信念，理想就会自动变为现实"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国传统儒家设计“使老有所终，壮有所用，幼有所长，鳏寡孤独废疾者皆有所养”的大同社会，近代资产阶级追求“民族、民权、民生”的资产阶级共和国，共产党人和广大劳动人民向往“各尽所能，按需分配”的共产主义社会。这些对未来的设计、追求、向往，都属于人生理想中的（ ）",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -1867,12 +1773,10 @@
         "D",
         "生活理想"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列有关人们对未来的向往和追求中，属于社会理想的是（ ）",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -1895,12 +1799,10 @@
         "D",
         "把我国建设成为富强、民主、文明的社会主义现代化国家"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "检验信念正确与否、科学与否的唯一标准是（ ）",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -1923,12 +1825,10 @@
         "D",
         "真诚信仰"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列著作不能说明作者身处逆境而有作为的有（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -1951,12 +1851,10 @@
         "D",
         "《论语》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "爱国主义的调节对象是（ ）之间的关系。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -1979,12 +1877,10 @@
         "D",
         "国家与国家"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "爱国主义所反映的个人与祖国的关系是（ ）．",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -2007,12 +1903,10 @@
         "D",
         "合作关系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是调节个人与祖国之间的道德关系的道德要求、政治原则和法律规范。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -2035,12 +1929,10 @@
         "D",
         "爱国主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“禾苗离土即死”、“一方水土养一方人”所体现的是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -2063,12 +1955,10 @@
         "D",
         "故土家园对人民的依赖关系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）作为一个民族群体意识的载体，常常被称为国家和民族的“胎记”，是一个民族得以延续的“精神基因”。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -2091,12 +1981,10 @@
         "D",
         "深厚的道德渊源。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "抛弃国外优越的生活与工作条件，历尽千难万险，回归祖国的怀抱，投身到祖国的建设中的，被评为“两弹一星”的功臣而受到国家的表彰的爱国科学家是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -2119,12 +2007,10 @@
         "D",
         "金先仲。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“苟利国家生死以，岂因祸福避趋之”是著名爱国人士（ ）的诗句。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -2147,12 +2033,10 @@
         "D",
         "戚继光。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“报国之心，死而后已”出自（ ）",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -2175,12 +2059,10 @@
         "D",
         "论语。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在新民主主义革命时期,爱国主义主要表现为（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -2203,12 +2085,10 @@
         "D",
         "献身于建设和保卫社会主义现代化事业和促进祖国统一大业"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在当代中国，爱国主义首先体现在（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -2231,12 +2111,10 @@
         "D",
         "对近代半殖民地中国的热爱上"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "新时期，爱国主义的主题是（ ）",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -2259,12 +2137,10 @@
         "D",
         "发扬中华民族的优良传统"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "爱国主义与爱社会主义、爱中国共产党、爱人民政府是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -2287,12 +2163,10 @@
         "D",
         "相互冲突的。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "爱国统一战线的范围包括（ ）",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -2315,12 +2189,10 @@
         "D",
         "全体社会主义的劳动者、社会主义事业的建设者、拥护社会主义的爱国者和拥护祖国统一的爱国者"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "经济全球化意味着（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -2343,12 +2215,10 @@
         "D",
         "价值观一体化"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "经济全球化条件下，（ ）是本民族整体利益的最具权威的代表者。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -2371,12 +2241,10 @@
         "D",
         "国家。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "当今的国际社会架构仍然是以（ ）为国际社会的互动主体。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -2399,12 +2267,10 @@
         "D",
         "民族国家"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家不是从来就有的，而是人类历史发展到（ ）的必然产物。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -2427,12 +2293,10 @@
         "D",
         "奴隶社会"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家的产生是民族和文明发展成熟的（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -2455,12 +2319,10 @@
         "D",
         "体现"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "经济全球化趋势对个人报效祖国（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -2483,12 +2345,10 @@
         "D",
         "没有影响。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是中华民族继往开来的精神支柱。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -2511,12 +2371,10 @@
         "D",
         "集体主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在“富贵不能淫、贫贱不能移、威武不能屈”的坚贞刚毅品质中体现的是（ ）的民族精神。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -2539,12 +2397,10 @@
         "D",
         "自强不息精神。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "革命烈士的诗句\"砍头不要紧,只要主义真．杀了夏明翰,自有后来人\",主要体现了中国革命道德传统中（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -2567,12 +2423,10 @@
         "D",
         "团结互助的精神"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以（ ）为核心的时代精神，是当代中国人民精神风貌的集中写照，是激发社会创造活力的强大力量。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -2595,12 +2449,10 @@
         "D",
         "敢为人先"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "时代精神是民族精神的（ ）体现。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -2623,12 +2475,10 @@
         "D",
         "经典性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国的国情决定了我国的发展模式必须是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -2651,12 +2501,10 @@
         "D",
         "劳动力型"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "建设创新型国家，我们要把（ ）作为调整经济结构、转变经济增长方式的中心环节。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -2679,12 +2527,10 @@
         "D",
         "制度创新"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是其他一切创新的重要保障。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -2707,12 +2553,10 @@
         "D",
         "文化创新"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）能力是国家竞争力的核心。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -2735,12 +2579,10 @@
         "D",
         "文化创新"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "今天我们发展社会主义先进文化，需要（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -2763,12 +2605,10 @@
         "D",
         "古为今用，洋为中用，以我为主，以我所用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "爱国主义包含着（ ）三个基本方面。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -2791,12 +2631,10 @@
         "D",
         "情感、思想和品德"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是爱国主义精神的落脚点和归宿。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -2819,12 +2657,10 @@
         "D",
         "爱国言论"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）体现了每一个中华儿女对祖国的责任，这种责任是社会发展的客观要求，也是每个人自身发展的客观需要。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -2847,12 +2683,10 @@
         "D",
         "奉献主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家的核心利益是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -2875,12 +2709,10 @@
         "D",
         "维护民族团结"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "爱国应当是（ ）的行为，要讲原则、守纪律，以合理合法的方式来进行。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -2903,12 +2735,10 @@
         "D",
         "理性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在中华民族的爱国主义发展史上，（ ）是中华儿女爱国情怀的重要体现。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -2931,12 +2761,10 @@
         "D",
         "促进社会公平正义。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在中华民族漫长的发展过程中，共同缔造（ ），始终是人心所向。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -2959,12 +2787,10 @@
         "D",
         "单一民族国家"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是我国社会主义国防观念的重要思想基础。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -2987,12 +2813,10 @@
         "D",
         "奉献主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列关于爱国的说法，错误的为（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -3015,12 +2839,10 @@
         "D",
         "一个人只要尽己所能，哪怕只为国家和人民作出很微小的贡献，也可以无愧于爱国者的称号"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "世界观是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -3043,12 +2865,10 @@
         "D",
         "科学的人生态度"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人生观是指（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -3071,12 +2891,10 @@
         "D",
         "科学的人生态度"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义认为，人生观的形成是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -3099,12 +2917,10 @@
         "D",
         "人们所处一定历史条件和社会关系的产物"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思对人的本质的科学论断确立于（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -3127,12 +2943,10 @@
         "D",
         "《论黑格尔哲学》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在马克思主义看来，人的本质在其现实性上是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -3155,12 +2969,10 @@
         "D",
         "单个人所应有的抽象物"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人生不仅仅是一个自然过程,还包含着极为丰富的（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -3183,12 +2995,10 @@
         "D",
         "社会关系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人生观的核心是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -3211,12 +3021,10 @@
         "D",
         "人生信仰"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人生目的主要回答（ ）的问题。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -3239,12 +3047,10 @@
         "D",
         "怎样的人生才有意义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思中学毕业时即表示要“为人类福利而劳动”；毛泽东青年时便立志“以天下为己任”；周恩来在南开中学时提出“为中华崛起而读书”，这些事例告诉我们（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -3267,12 +3073,10 @@
         "D",
         "人生目的决定保持什么样的人生精神状态"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在社会主义初级阶段，人们在选择和确立人生目的时，应当做到（ ）",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -3295,12 +3099,10 @@
         "D",
         "以国家、集体利益为重，并在此前提下谋取个人正当利益"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人生态度是指人们通过生活实践所形成的对人生问题的一种稳定的（ ）和基本意愿。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -3323,12 +3125,10 @@
         "D",
         "实际行动"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人们通过生活实践所形成的对人生问题的一种稳定的心理倾向和基本意愿是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -3351,12 +3151,10 @@
         "D",
         "人生目的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人生态度主要表明（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -3379,12 +3177,10 @@
         "D",
         "什么样的人生才有意义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "有的人身处逆境而百折不挠，有的人在顺境中却长吁短叹，有的人笑对人生，有的人看破红尘,，这些都是（ ） 的表现   。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -3407,12 +3203,10 @@
         "D",
         "人生信念"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "把金钱作为人生至高目的,认为金钱能主宰一切的人生观是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -3435,12 +3229,10 @@
         "D",
         "极端个人主义的人生观"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "科学的人生观是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -3463,12 +3255,10 @@
         "D",
         "合理利已主义的人生观"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人民群众是推动历史前进的真正动力，是历史的真正主人。这种群众史观反映到人生观上必然是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -3491,12 +3281,10 @@
         "D",
         "为个人和家庭服务"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "决定人的价值观的是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -3519,12 +3307,10 @@
         "D",
         "社会制度"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我们应确定的最根本的价值标准是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -3547,12 +3333,10 @@
         "D",
         "“三个有利于”标准"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人固有一死，或重于泰山，或轻于鸿毛，说的是 （ ）的问题。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -3575,12 +3359,10 @@
         "D",
         "人生态度"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "价值可分为物的价值和人的价值。下列选项中，体现了人的价值的是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -3603,12 +3385,10 @@
         "D",
         "人在社会中所处的阶层和地位"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在人的价值关系中，人（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -3631,12 +3411,10 @@
         "D",
         "既是主体,又是客体"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人生价值的根本内容是以（ ）的关系为实际内容的人与人之间的价值关系",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -3659,12 +3437,10 @@
         "D",
         "贡献与索取"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人生价值评价的根本尺度是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -3687,12 +3463,10 @@
         "D",
         "动机的善恶"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人生的自我价值主要表现为（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -3715,12 +3489,10 @@
         "D",
         "个人通过劳动,创造为社会和人民所做的贡献"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是个体的人生活动对社会,他人所具有价值．",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -3743,12 +3515,10 @@
         "D",
         "价值标准"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "爱因斯坦说过：“一个人对社会的价值，首先取决于他的感情,思想和行动对增进人类利益有多大作用，而不应看他取得什么。”这就是说，衡量一个人社会价值的标准应该是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -3771,12 +3541,10 @@
         "D",
         "社会对个人的尊重和满足"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "一般来说,一个人对社会的贡献越大，他的（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -3799,12 +3567,10 @@
         "D",
         "自我完善就越高"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列有关人生价值评价的说法中，正确的是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -3827,12 +3593,10 @@
         "D",
         "个人从社会中得到的满足越多，其人生价值也就越大"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列说法中，对社会价值与自我价值的关系理解错误的是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -3855,12 +3619,10 @@
         "D",
         "实现自我价值是因,创造社会价值是果"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“主观为自己，客观为他人”是合理利己主义的代表性观点，它是一种消极的人生价值观，其错误的理论依据是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -3883,12 +3645,10 @@
         "D",
         "人的本质是一切社会关系的总和"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是人生价值真正的源头活水，是实现人生价值的必由之路。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -3911,12 +3671,10 @@
         "D",
         "努力学习"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人际关系是社会生活中人与人之间的直接交际关系，是在人们物质交往和精神交往的过程中产生和发展起来的关系。人际关系的本质是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -3939,12 +3697,10 @@
         "D",
         "文化关系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在我们的社会生活中，与人交往时既不能自持清高，看不起别人，也不能自卑自怯，自暴自弃。这体现了人际交往中的（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -3967,12 +3723,10 @@
         "D",
         "宽容原则"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人与人之间的交往应该遵循正确的原则。下列行为倾向中，符合人际交往正确原则的是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -3995,12 +3749,10 @@
         "D",
         "互助互惠，  在别人需要时奉献自己的力量"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "竞争是互动的双方为了达到某种目的，在社会的同一领域里与对方展开的竞赛争胜。在现代社会中，对待竞争的正确态度是（ ）",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -4023,12 +3775,10 @@
         "D",
         "为求胜利，不择手段"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“个人的脆弱性和种种限制。使得他无法单独地达到自己的目标。只凭个人的力量来应付自己的问题。他必然无法保持自己的生命，也无法将人类的生命延续下去。”这说明，个人的生存、人类的发展都离不开人与人之间的（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -4051,12 +3801,10 @@
         "D",
         "信任尊重"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会生活中有竞争，更有合作。合作是指（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -4079,12 +3827,10 @@
         "D",
         "一个人按照一定社会或阶级的要求，经过学习、磨练、涵养和陶冶的功夫，在各方面进行自我教育和自我塑造的过程"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人与自然关系的实质是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -4107,12 +3853,10 @@
         "D",
         "人与自然实际上是一种人与物的占有与被占有的关系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "所谓人生环境，就是人们的社会实践活动所赖以展开的（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -4135,12 +3879,10 @@
         "D",
         "各种关系的总和"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "道德可以通过评价等方式指导和纠正人们的行为和实际活动，协调人们之间的关系。这说明道德具有（ ） 。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -4163,12 +3905,10 @@
         "D",
         "调节功能"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“国而忘家，公而忘私”，“先天下之忧而忧，后天下之乐而乐”，“天下兴亡，匹夫有责”等格言警句表达的中华民族的传统美德是（ ） 。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -4191,12 +3931,10 @@
         "D",
         "乐群贵和，强调人际和谐"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在我国古代思想文化中，有重视荣辱的思想观念。下列古语中，表达了这种重视荣辱观念的是（ ） 。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -4219,12 +3957,10 @@
         "D",
         "“亲仁善邻，国之宝也”"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "列宁说：“没有‘人的感情’，就从来没有也不可能有人对于真理的追求。”对于完善人的品质来说，这主要强调的是（ ） 。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -4247,12 +3983,10 @@
         "D",
         "学思明理的重要性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "个体在道德意识、道德行为方面，自觉按照一定社会或阶级的道德要求进行自我审度、自我教育、自我锻炼、自我革新、自我完善的活动，称为（ ） 。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -4275,12 +4009,10 @@
         "D",
         "道德发展"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义科学地揭示了道德的起源，认为道德（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -4303,12 +4035,10 @@
         "D",
         "起源于“天”的意志、“神”的启示或“上帝”的意志"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "道德能够帮助人们正确认识社会生活的规律和原则，认识人生的价值和意义，认识自己对家庭、他人、社会的义务和责任，使人们的道德实践建立在向善避恶的认识基础上，引导人们正确选择道德行为。这说明道德具有（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -4331,12 +4061,10 @@
         "D",
         "评价功能"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "古人说：“人无志，非人也。”“志不立，天下无可成之事。”“天行健，君予以自强不息。”这些话体现了中华民族传统美德中（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -4359,12 +4087,10 @@
         "D",
         "励志自强，崇尚精神境界的美德"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国社会主义道德建设要以为人民服务为核心，以集体主义为原则，以（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -4387,12 +4113,10 @@
         "D",
         "文明礼貌为重点"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "个人品德的形成和发展依赖于（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -4415,12 +4139,10 @@
         "D",
         "社会的道德原则规范"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "亚里士多德说：“我们由于从事建筑而变成建筑师，由于奏竖琴而变成竖琴演奏者。同样，由于实行公正而变为公正的人，由于实行节制和勇敢而变为节制的、勇敢的人。”这表达了在进行道德修养时，应该（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -4443,12 +4165,10 @@
         "D",
         "勤于实践，加强道德行为训练"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "道德作为一种特殊的社会意识形态，归根到底是（ ）的反映。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -4471,12 +4191,10 @@
         "D",
         "政治制度"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是人类道德起源的第一个历史前提。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -4499,12 +4217,10 @@
         "D",
         "个人利益的出现"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在道德的功能系统中，主要的功能是认识功能和（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -4527,12 +4243,10 @@
         "D",
         "激励功能"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "历代英雄豪杰、志士仁人，“重名节如泰山，轻生死如鸿毛”，为了民族生存、国家独立而抛头颅，洒热血，成就了一番可歌可泣的伟大事业。这体现了中华民族优良道德传统中（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -4555,12 +4269,10 @@
         "D",
         "重视节操，崇尚志向的精神境界"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在道德体系中居于主导和核心地位，对道德品质的形成具有定向和调节作用的是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -4583,12 +4295,10 @@
         "D",
         "道德原则规范"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在社会主义市场经济条件下，正确处理好个人利益同社会利益、集体利益、国家利益之间关系的基本原则是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -4611,12 +4321,10 @@
         "D",
         "小团体主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "近朱者赤，近墨者黑。如果与道德低劣、见利忘义、损公肥私、不重情义的人交友，难免会给自己的人生修养、人格发展和理想追求带来损失，使自己沾染恶习，害人害己；而与品行高洁、知书达理、思想健康的人交友，自己就会获益匪浅。这说明的是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -4639,12 +4347,10 @@
         "D",
         "交友一定要慎重，要选择好的朋友"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "毫不利己专门利人的精神属于（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -4667,12 +4373,10 @@
         "D",
         "现实社会不存在的道德要求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“一个人做点好事并不难，难的是一辈子做好事，不做坏事，一贯的有益于广大群众，一贯的有益于青年，一贯的有益于革命，艰苦奋斗几十年如一日……才是最难最难的呵！”这说明了（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -4695,12 +4399,10 @@
         "D",
         "修养的境界是一个人修养所达到的实践水平或程度"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "衡量一个社会精神文明发展水平的重要标志是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -4723,12 +4425,10 @@
         "D",
         "传统文化积淀"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "一种道德行为多次重复出现，就会成为一种习惯。这种习惯即为（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -4751,12 +4451,10 @@
         "D",
         "道德意识"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "道德是一种行为规范，它所包含和要解决的主要矛盾是 （ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -4779,12 +4477,10 @@
         "D",
         "社会进步和阻碍社会进步"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国社会主义道德的核心是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -4807,12 +4503,10 @@
         "D",
         "为先富起来的人服务"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "民族精神是一个民族赖以生存和发展的精神支撑。在五千多年的发展中，中华民族形成了伟大的民族精神。中华民族精神的核心是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -4835,12 +4529,10 @@
         "D",
         "人道主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人们在处理个人与他人、个人与社会关系的一系列行为中表现出来的比较稳定的道德倾向和特征，称为（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -4863,12 +4555,10 @@
         "D",
         "道德原则规范"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "即使在个人独处、无人监督时，也要坚守自己的道德信念，对自己的言行小心谨慎，不做任何不道德的事。这说的是个人在进行自我修养时，应该（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -4891,12 +4581,10 @@
         "D",
         "坚持“慎独”，纯洁品质"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "现代社会自我修养的内容包括多个方面。加强爱国主义、集体主义思想修养，坚持走中国特色的社会主义道路，努力实现祖国的繁荣富强。这属于自我修养中（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -4919,12 +4607,10 @@
         "D",
         "思想政治修养的内容"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "为保证和促进市场经济沿着社会主义方向健康发展，在社会主义道德建设中，必须弘扬（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -4947,12 +4633,10 @@
         "D",
         "合理利己主义精神"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义道德的原则是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -4975,12 +4659,10 @@
         "D",
         "个人主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "即使在个人单处、无人监督时，也坚守自己的道德信念，对自己的言行小心谨慎，不做任何不道德的事。这种道德修养方法是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -5003,12 +4685,10 @@
         "D",
         "顿悟"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "现代中国人人生修养的境界应该是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -5031,12 +4711,10 @@
         "D",
         "无己、无功、无名"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义认为，道德起源于（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -5059,12 +4737,10 @@
         "D",
         "人类的历史发展和人们的社会实践"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "道德通过评价等方式，指导和纠正人们的行为和实际活动，协调人们之间的关系。这指的是道德的（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -5087,12 +4763,10 @@
         "D",
         "教育功能"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在社会规范体系中，法律与道德是两种不同的行为规范。下列关于二者关系的说法中，正确的是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -5115,12 +4789,10 @@
         "D",
         "凡是法律所禁止和制裁的行为，通常也是道德所反对和谴责的行为"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "两千多年前的《诗经》提出“夙夜在公”，西汉的贾谊提出“国而忘家，公而忘私”，宋代的范仲淹提出“先天下之忧而忧，后天下之乐而乐”，明代的顾炎武提出“天下兴亡，匹夫有责”等，这些都体现了中华民族传统美德中（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -5143,12 +4815,10 @@
         "D",
         "求真务实，敬重诚实守信的内容"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在建设中国特色社会主义的新时期，我国社会主义道德建设的核心是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -5171,12 +4841,10 @@
         "D",
         "为人民服务"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "个人品德的形成过程包含多种心理成分的相应发展。其中，人们遵循道德原则规范所表现出的外在活动，称为（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -5199,12 +4867,10 @@
         "D",
         "道德认识"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "通过反复检查以发现和找出自己思想中的不良念头和行为上的不良习惯，并将其坚决克服和整治掉。这是完善个人道德品质中（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -5227,12 +4893,10 @@
         "D",
         "慎独自律的修养方法"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义道德区别和优越于其他社会形态道德的显著标志是，社会主义道德（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -5255,12 +4919,10 @@
         "D",
         "对其他社会意识形态的存在和发展有重大影响"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义道德建设中的集体主义原则有着多层次的要求，包括最高层次的要求、较高层次的要求、最基本的要求。其中，对我国公民最基本的道德要求是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -5283,12 +4945,10 @@
         "D",
         "公私兼顾、不损公肥私"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在我国现阶段，社会主义道德建设应该以（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -5311,12 +4971,10 @@
         "D",
         "享乐主义为原则"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“四有”是社会主义公民应具有的基本素质。下列关于“四有”的表述中，正确的是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -5339,12 +4997,10 @@
         "D",
         "有道德、有文化、有才能、有纪律"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思主义科学地揭示了道德的本质，认为道德是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -5367,12 +5023,10 @@
         "D",
         "决定社会生产力发展水平的根本力量"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "个人依据一定的道德原则规范行动时所表现出来的稳定的倾向和特征，称为（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -5395,12 +5049,10 @@
         "D",
         "家庭美德"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "个人基于一定的道德认识，自愿选择有利于他人或社会的行为是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -5423,12 +5075,10 @@
         "D",
         "道德概念"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "个人道德发展的形成归根到底取决于（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -5451,12 +5101,10 @@
         "D",
         "道德实践"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "衡量一个社会文明发展水平的主要标志是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -5479,12 +5127,10 @@
         "D",
         "国际交往扩大"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "道德修养的根本动力来源于（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -5507,12 +5153,10 @@
         "D",
         "个人内在的道德需要"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "黑格尔说：“一个人做了这样或那样一件合乎伦理的事，还不能就说他是有德的；只有当这种行为方式成为他性格中的固定要素时，他才可以说是有德的。”其中，“性格中的固定要素”指的是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -5535,12 +5179,10 @@
         "D",
         "道德规范"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "戚继光抗击倭寇,郑成功收复台湾,三元里人民抗英,轰轰烈烈的义和团运动,浴血八年的全民族抗日战争等,这些爱国壮举集中体现了中华民族爱国主义优良传统中 （ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -5563,12 +5205,10 @@
         "D",
         "开发祖国山河,创造中华文明的精神"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "精心地保持自己的善意，精心地保持自己的善行，使其不断积累而成为个人品德。这种道德修养的途径称为（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -5591,12 +5231,10 @@
         "D",
         "省察克治"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“人只能用人来建树”，体现了（ ）这一道德修养的途径。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -5619,12 +5257,10 @@
         "D",
         "与人为善"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“三人行，必有吾师焉”，体现了（ ）这一道德修养的途径。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -5647,12 +5283,10 @@
         "D",
         "谦虚谨慎"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列（ ）不属于公共生活领域。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -5675,12 +5309,10 @@
         "D",
         "客厅"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "公共生活属于“（ ）社会”。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -5703,12 +5335,10 @@
         "D",
         "无职业者"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "维护公共秩序的基本手段是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -5731,12 +5361,10 @@
         "D",
         "法律、道德、风俗、宗教教规、礼仪等"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列哪项不属于治安管理处罚（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -5759,12 +5387,10 @@
         "D",
         "逮捕"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "集会、游行、示威时，由（ ）维持交通程序和社会程序。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -5787,12 +5413,10 @@
         "D",
         "经过的单位"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "治安管理处罚是对实施了违反治安管理行为的当事人所采取的一种（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -5815,12 +5439,10 @@
         "D",
         "经济制裁．"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "乘车、登机、坐船时主动购票，自觉排队；出行时自觉遵守交通规则，不闯红灯；在图书馆、影剧院不抽烟，不喧哗吵闹。这是人们在社会生活中应当遵循的（ ） 。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -5843,12 +5465,10 @@
         "D",
         "公共法律"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "从业者在职业劳动中，有一分力出一分力，出满勤，干满点，不怠工，不推诿，不自欺，遵纪守法；对待他人严格履行合同契约，说到做到，不说谎，不欺人，不弄虚作假，不唯利是图，不做缺德事亏心事。这是职业道德中（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -5871,12 +5491,10 @@
         "D",
         "勤俭自强的要求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "每个社会成员都应该爱护公共财物，如对公园里的花木草地、街道两旁的电话邮筒、影剧院里的座位音响、马路上的井盖路标等加以保护，不损坏、不滥用、不浪费、不私占。这是属于（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -5899,12 +5517,10 @@
         "D",
         "环境保护的基本要求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人们在公共场所还不时看到有随地吐痰、乱扔垃圾、乱涂乱画等不文明、不道德的行为发生。这就需要不断提高人们（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -5927,12 +5543,10 @@
         "D",
         "遵守国家安全法的自觉性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关心人、爱护人、帮助人，喜人之所喜、忙人之所忙，设身处地为他人着想，推己及人，与人为善，助人为乐。这体现了良好道德品质基本范畴中（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -5955,12 +5569,10 @@
         "D",
         "仁爱互助的要求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在公共场所，人人都有可能遇到一些突发性灾祸，如车祸、火灾、溺水、急病等。这就需要人们见义勇为，临危不惧，积极为他人排忧解难，甚至不怕牺牲生命。这是社会生活中（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -5983,12 +5595,10 @@
         "D",
         "环境道德的要求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "乘车登机坐船应主动购票，自觉排队；出行应自觉遵守交通规则，不闯红灯；在图书馆、影剧院等公共场所，不喧哗吵闹；游览、购物、提款应按先后顺序，不插队。这是社会公德中（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -6011,12 +5621,10 @@
         "D",
         "爱护公物的要求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "公民在社会交往和社会公共生活中应该遵循的道德准则是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -6039,12 +5647,10 @@
         "D",
         "个人品德"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "个人的言行合乎社会的要求和礼节的规定，尊老爱幼，孝亲敬长，说话和气，以礼待人，服饰朴素大方，举止端庄文雅。这是良好个人品德中（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -6067,12 +5673,10 @@
         "D",
         "勇于进取的表现"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在“网络世界”，若有人故意制造计算机病毒传播扩散，将会破坏许多单位或个人网络的正常运行，甚至造成电脑系统的崩溃等。这说明的是当代社会公共生活中（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -6095,12 +5699,10 @@
         "D",
         "公共秩序难以形成的特点"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“一方有难，八方支援”主要体现的是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -6123,12 +5725,10 @@
         "D",
         "互助原则"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国自古就有“君子成人之美”、“为善最乐”、“博施济众”等广为流传的格言，把帮助别人视为自己应做之事，看作自己的快乐。这是社会公德中（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -6151,12 +5751,10 @@
         "D",
         "助人为乐的要求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在社会公共生活中，尊老爱幼，尊重妇女，对待老人、儿童、残疾人员，特别予以尊重、照顾、爱护和帮助；尊师敬贤，对待师长和贤者，示以尊重和钦佩亲敬。这是社会公德中 （ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -6179,12 +5777,10 @@
         "D",
         "文明礼貌的要求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在社会公共生活中，人与人之间应该团结友爱，互相关心，互相帮助，扶危济困，助人为乐。这是我国现代社会提倡的（ ）的要求之一。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -6207,12 +5803,10 @@
         "D",
         "环境道德"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "为了建设中国特色社会主义，应当在全社会认真提倡（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -6235,12 +5829,10 @@
         "D",
         "人类文明发展的一切道德"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“多少世纪以来人们就知道的，千百年来在一切行为守则上反复谈到的，起码的公共生活规则”属于（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -6263,12 +5855,10 @@
         "D",
         "职业道德"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "良好的社会公德是一个地区、一个国家精神面貌好、社会风气正、社会风尚淳的重要标志。社会公德的主要内容和要求有文明礼貌、助人为乐、爱护公物、保护环境和 （ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -6291,12 +5881,10 @@
         "D",
         "勤俭持家"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会公德最基本的要求是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -6319,12 +5907,10 @@
         "D",
         "爱护公物"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人们在公共的领域、公有的环境、公用的场所中，彼此开放透明，且相互关联的共同活动，被称为 （ ） 。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -6347,12 +5933,10 @@
         "D",
         "公共生活"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人们在公共生活中应该爱惜和保护全民和集体所有的公共财物。这是社会公德中（ ） 的要求。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -6375,12 +5959,10 @@
         "D",
         "保护环境"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "告诉人们可以做什么或有权做什么，这是法律对公共生活的（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -6403,12 +5985,10 @@
         "D",
         "教育作用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在露天公共场所或者公共道路上表达要求、抗议或者支持、声援等共同意愿的活动是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -6431,12 +6011,10 @@
         "D",
         "请愿"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "乘坐车船飞机的人应当做“文明乘客”，到影剧院看电影看演出的人应当做“文明观众”，在图书馆读书读报的人应当做“文明读者”。这是因为在现实生活中人们应当遵守（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -6459,12 +6037,10 @@
         "D",
         "社会公德"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列不适用《集会游行示威法》的活动是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -6487,12 +6063,10 @@
         "D",
         "为了支持在外企的华工获得基本权利保障而进行的游行活动"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "公民在行使集会、游行、示威的权利时，其行为不符合《中华人民共和国集会游行示威法》基本原则的是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -6515,12 +6089,10 @@
         "D",
         "不损害国家、社会、集体的利益和其他公民的合法的自由和权利"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "网络生活中要求人们形成道德自律是因为网络生活的（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -6543,12 +6115,10 @@
         "D",
         "覆盖面广"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "没有准确表达自觉遵守社会公德的意义的是（ ） 。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -6571,12 +6141,10 @@
         "D",
         "社会公德建设是精神文明建设的基础性工程，也是精神文明程度的“窗口”"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）作为社会公共生活中应当遵守的行为准则，成为整个社会道德体系的基础层次。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -6599,12 +6167,10 @@
         "D",
         "个人修养"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "一行人在过路口时迎面遇到红灯，看到近处没有车辆便径直通过。他这样做是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -6627,12 +6193,10 @@
         "D",
         "不遵守交通规则，违反了社会公德"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“爱国守法、明礼诚信、团结友善、勤俭自强、敬业奉献”的20字公民基本道德规范，体现着我国现代社会生活中的道德精华。其中，敬业奉献要求（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -6655,12 +6219,10 @@
         "D",
         "公民应该有高尚的爱国主义精神，自觉学法、懂法、守法、护法"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "要想成为一个有道德的人，最基本的要求是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -6683,12 +6245,10 @@
         "D",
         "事事为他人着想"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会生活基本可分为（ ）、职业生活和家庭生活三大领域。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -6711,12 +6271,10 @@
         "D",
         "现实生活"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“承诺就是承诺”，人应该信守承诺。主要体现了调节（ ）之间关系的层面上社会公德的要求。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -6739,12 +6297,10 @@
         "D",
         "人与自然"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“在影院观摩影片时，自觉关闭手机”，是社会公德中调节（ ）之间关系层面上的具体规范之一。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -6767,12 +6323,10 @@
         "D",
         "人与自然"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "某人平时注意节能，出门尽量选择公共交通的方式。这是符合在（ ）之间关系层面上的社会公德要求的行为。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -6795,12 +6349,10 @@
         "D",
         "人与自然"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下各项中（ ）符合公共生活的特点。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -6823,12 +6375,10 @@
         "D",
         "封闭性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "机动车行经没有交通信号灯的道路上，遇行人横过马路，应当避让。这条规则体现了《道路交通安全法》立法基本的原则——（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -6851,12 +6401,10 @@
         "D",
         "人车平等"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "职业道德的核心和基础是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -6879,12 +6427,10 @@
         "D",
         "服务群众"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "劳动者解除劳动合同，应当以书面形式通知用人单位而且得提前（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -6907,12 +6453,10 @@
         "D",
         "60天"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "从业人员在职业活动中应该树立为社会、为他人作奉献的职业精神。这是职业道德基本要求中（ ） 。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -6935,12 +6479,10 @@
         "D",
         "奉献社会的要求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "古希腊哲学家柏拉图早就认识到：“为着品德而去眷恋一个情人，总是一件很美的事。”近代法国启蒙思想家卢梭也曾强调：“我们之所以爱一个人，是由于我们认为那个人具有我们所尊重的品质。”他们的意思是说，在爱情中起主导作用的应该是（ ） 。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -6963,12 +6505,10 @@
         "D",
         "人的精神世界和道德面貌"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "家庭美德是调节人们在家庭生活方面的关系和行为的道德准则。下列选项中，属于家庭美德基本内容的是（ ） 。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -6991,12 +6531,10 @@
         "D",
         "男女有别"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "男女双方的恋爱行为，客观上是对社会负有相应的道德责任的行为。下列不属于男女恋爱中基本道德要求的是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -7019,12 +6557,10 @@
         "D",
         "主动追求，不惜强迫另一方接受自己的爱"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“真正的爱情就是要把疯狂的或是近于淫荡的东西赶得远远的。”这表明了爱情的（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -7047,12 +6583,10 @@
         "D",
         "强烈持久性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "爱岗敬业是职业道德的核心和基础。对从业人员来说，爱岗指的是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -7075,12 +6609,10 @@
         "D",
         "在职业活动中兼顾国家、集体、个人三者的利益，追求社会公正，维护社会公益"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列选项中，符合男女恋爱中基本道德要求的是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -7103,12 +6635,10 @@
         "D",
         "不顾对方的意愿，强迫或诱骗对方接受自己的爱"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "男女双方的恋爱行为，客观上是对社会负有相应的道德责任的行为。下列选项中，符合男女恋爱中基本道德要求的是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -7131,12 +6661,10 @@
         "D",
         "把爱情当作游戏，“不求天长地久，只求曾经拥有”"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家公务员履行公务应遵纪守法，照章办事，不论远近亲疏都一视同仁。这是（ ） 。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -7159,12 +6687,10 @@
         "D",
         "完善自我的人际吸引的要求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "有观点认为，那种只是出于异性吸引的感情冲动不是爱情，那种朝秦暮楚、见异思迁的行为和“只求曾经拥有，不求天长地久”的感情，不是真正的爱情。这强调了爱情的（ ）",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -7187,12 +6713,10 @@
         "D",
         "自然生物性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列选项中，属于家庭美德的基本要求的是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -7215,12 +6739,10 @@
         "D",
         "艰苦奋斗"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "从业人员对待职业服务对象的态度不能有亲疏、贵贱之分，不管是领导还是群众、是熟人还是生人、是强者还是弱者，都应自觉遵守规章制度，一视同仁、周到服务。这是职业道德建设中（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -7243,12 +6765,10 @@
         "D",
         "助人为乐的要求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "马克思指出：“真正的爱情是表现在恋人对他的偶像采取含蓄、谦恭甚至羞涩的态度，而绝不是表现在随意流露热情和过早的亲昵。”他的意思是说，在恋爱过程中双方应（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -7271,12 +6791,10 @@
         "D",
         "追求脱离现实生活的“纯精神”关系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "婚姻的基本要求是（ ） 。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -7299,12 +6817,10 @@
         "D",
         "共同生活"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "陶行知先生说：“爱之酒，甜而苦。两人喝是甘露，三人喝是酸醋，随便喝，要中毒。”这体现了爱情的（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -7327,12 +6843,10 @@
         "D",
         "强烈持久性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "公民道德建设的重点是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -7355,12 +6869,10 @@
         "D",
         "勤俭自强"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "根据男女恋爱中的基本道德要求，恋爱应以（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -7383,12 +6895,10 @@
         "D",
         "丰富与异性交往的经验为目的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "职业道德是人们在一定的职业活动中所应遵循的，具有自身职业特征的道德准则。每个从业人员都应该自觉遵守职业道德。从业者的下列行为中，不符合职业道德要求的是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -7411,12 +6921,10 @@
         "D",
         "在职业岗位上处处为职业对象的实际需要着想，尊重他们的利益"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "根据《中华人民共和国婚姻法》规定，男女结婚的法定年龄为（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -7439,12 +6947,10 @@
         "D",
         "男不得早于20周岁，女不得早于22周岁"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "遵守职业道德是对每个从业人员的要求。从业人员在职业工作中慎待诺言、表里如一、言行一致、遵守劳动纪律，这是职业道德中（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -7467,12 +6973,10 @@
         "D",
         "严谨求实的基本要求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在职业道德建设中，堪称从业者“立人之道”、“进德修业之本”的是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -7495,12 +6999,10 @@
         "D",
         "尊老爱幼"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "爱情是人类特有的现象，是人的高度文明的体现。最本质的属性是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -7523,12 +7025,10 @@
         "D",
         "人们进行社会生活的本质需要"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "教师平等地对待每个学生，不以貌取人，没有智力差别和家庭贫富贵贱之分。这是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -7551,12 +7051,10 @@
         "D",
         "完善自我的人际吸引的要求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "从当前我国的就业形势来看，（ ）的就业观是实现顺利就业较为实际的选择。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -7579,12 +7077,10 @@
         "D",
         "先就业，后择业，再创业"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义的职业道德体现了社会主义职业的基本特征，以下属于社会主义职业道德基本要求的有（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -7607,12 +7103,10 @@
         "D",
         "平等交换"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“近亲不能结婚”，在《婚姻法》中近亲指（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -7635,12 +7129,10 @@
         "D",
         "直系血亲"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "婚姻自由的内容包括（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -7663,12 +7155,10 @@
         "D",
         "结婚自由和离婚自由"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "当前社会主义道德建设的重点是加强（ ） 。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -7691,12 +7181,10 @@
         "D",
         "医德建设"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国职业道德的本质特征是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -7719,12 +7207,10 @@
         "D",
         "奉献社会"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下各项不能表达“爱岗敬业”最基本的道德要求的是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -7747,12 +7233,10 @@
         "D",
         "以辛勤劳动为荣"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "公民应该恪忠职守，兢兢业业，克己奉公，服务社会。这是公民基本道德规范中（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -7775,12 +7259,10 @@
         "D",
         "敬业奉献的要求"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）把爱情与人世间其他情感明显地区别开来，使爱情成为特殊的“情爱”。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -7803,12 +7285,10 @@
         "D",
         "理想"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）的契合，使得爱情表现着人们对生活的希望和对未来的憧憬，使热恋中的人们焕发出极大的热情来克服生活中的消极和颓废。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -7831,12 +7311,10 @@
         "D",
         "学历程度"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）使得爱情不是自私地占有对方的感情，而是自觉自愿地为所挚爱的人有所付出、有所担当。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -7859,12 +7337,10 @@
         "D",
         "法律约束"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "根据《公务员法》的规定处理人事争议的法律途径有四种，它们是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -7887,12 +7363,10 @@
         "D",
         "申辩、申诉、控告、诉讼"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "职业活动中最主要的法律有《劳动法》和（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -7915,12 +7389,10 @@
         "D",
         "《公务员法》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是解决劳动争议的必经程序。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -7943,12 +7415,10 @@
         "D",
         "诉讼"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "结婚必须符合法定条件外，还必须符合（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -7971,12 +7441,10 @@
         "D",
         "法定程序"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "子女对父母有（ ）的义务，即经济上的必要帮助和精神上的关心照顾，这种义务是无条件的。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -7999,12 +7467,10 @@
         "D",
         "赡养扶助"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "无效婚姻或被撤销的婚姻所生子女，（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -8027,12 +7493,10 @@
         "D",
         "其部分权利义务等同于婚生子女"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是婚姻家庭的本质属性。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -8055,12 +7519,10 @@
         "D",
         "社会属性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“强权统治绝不会成就爱”，这是因为恋爱中要（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -8083,12 +7545,10 @@
         "D",
         "含蓄谦恭"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "调节人们在家庭生活方面的关系和行为的道德准则称为（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -8111,12 +7571,10 @@
         "D",
         "居家道德"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "职业的基础是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -8139,12 +7597,10 @@
         "D",
         "社会地位"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "就业以后，接受技能培训以提高劳动技能，是劳动者的（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -8167,12 +7623,10 @@
         "D",
         "既是权利又是义务"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是劳动者应享有的权利。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -8195,12 +7649,10 @@
         "D",
         "遵守劳动安全规程"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是劳动者应履行的义务。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -8223,12 +7675,10 @@
         "D",
         "平等就业"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "法与其他社会规范的区别在于（ ）",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -8251,12 +7701,10 @@
         "D",
         "规定制裁措施"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "法律主要体现的是（ ）的意志。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -8279,12 +7727,10 @@
         "D",
         "整个社会"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "法存在于（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -8307,12 +7753,10 @@
         "D",
         "社会主义社会"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "当代中国的法律属于（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -8335,12 +7779,10 @@
         "D",
         "社会主义法律"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在一个国家里，由部门法所构成的有机联系的整体，称为（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -8363,12 +7805,10 @@
         "D",
         "法的历史类型"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于法律部门（即部门法）的含义，下列说法正确的是（ ）",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -8391,12 +7831,10 @@
         "D",
         "在形式上表现不一致法律规范的总和"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家的根本法是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -8419,12 +7857,10 @@
         "D",
         "民商法"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "具有最高效力的法律是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -8447,12 +7883,10 @@
         "D",
         "经济法"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列关于我国规范性法律文件效力从高至低排列正确的是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -8475,12 +7909,10 @@
         "D",
         "民法通则→刑事诉讼法→著作权法"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "《反不正当竞争法》和《消费者权益保护法》都属于（ ）的范畴。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -8503,12 +7935,10 @@
         "D",
         "社会法"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "调整民事和商务活动的法律规范总称是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -8531,12 +7961,10 @@
         "D",
         "保险法"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在我国现行法律体系中，不属于部门法的是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -8559,12 +7987,10 @@
         "D",
         "行政法"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "行使国家立法权的机关是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -8587,12 +8013,10 @@
         "D",
         "检察院"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）有权根据宪法和法律制定行政法规。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -8615,12 +8039,10 @@
         "D",
         "检察院"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国家创制法律规范的方式主要有两种：（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -8643,12 +8065,10 @@
         "D",
         "制定和解释法律"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在社会主义国家中，守法的主体是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -8671,12 +8091,10 @@
         "D",
         "各企事业单位"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国行政执法的主体是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -8699,12 +8117,10 @@
         "D",
         "税务局"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国的司法机关包括（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -8727,12 +8143,10 @@
         "D",
         "人民政府"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我过第一次提出依法治国，建设社会主义法治国家的治国基本方略是在（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -8755,12 +8169,10 @@
         "D",
         "党的十五大"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列选项中关于“法制”与“法治”的表述正确的是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -8783,12 +8195,10 @@
         "D",
         "“法制”与“法治”这两个概念没有区别"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国依法治国的主体是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -8811,12 +8221,10 @@
         "D",
         "全国人大"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国依法治国的标准是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -8839,12 +8247,10 @@
         "D",
         "风俗和礼仪"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义民主的本质是（ ）",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -8867,12 +8273,10 @@
         "D",
         "人民当家作主"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）是社会主义民主法治建设的根本保证",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -8895,12 +8299,10 @@
         "D",
         "人民代表大会制"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国宪法和法律的基本价值取向是保障公民的（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -8923,12 +8325,10 @@
         "D",
         "人格尊严"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "追求（ ）是法律的主要价值目标。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -8951,12 +8351,10 @@
         "D",
         "尊严权威"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "通过对“法”的语源与词义的考证，可知中、西方的“法”都包含着（ ）的内容。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -8979,12 +8377,10 @@
         "D",
         "仁义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面属于传统的国家安全的是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -9007,12 +8403,10 @@
         "D",
         "生态安全"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）规定，任何个人和组织都不得非法持有、使用窃听、窃照等专用间谍器材。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -9035,12 +8429,10 @@
         "D",
         "《国家安全法》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义法治国家建设的进程能否顺利推进，在一定程度上要看（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -9063,12 +8455,10 @@
         "D",
         "社会主义法律体系能否完善"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "现实生活中，如果法律思维与道德思维产生冲突，应当（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -9091,12 +8481,10 @@
         "D",
         "视具体情况而定"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对于一些不合情理的法律规定，错误的做法是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -9119,12 +8507,10 @@
         "D",
         "在一定程度上，可以忽略它们"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国的国体是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -9147,12 +8533,10 @@
         "D",
         "人民代表大会制度"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "2007年3月，十届人大五次会议通过了全国人大立法史上审议次数最多的法律草案，也是中国从法律上明确保护私人财产的重要法律——（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -9175,12 +8559,10 @@
         "D",
         "《物权法》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列有关代理行为的法律特征的叙述中，错误的是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -9203,12 +8585,10 @@
         "D",
         "代理人在被代理人授权范围内独立作出意思表示"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "不属于我国刑法基本原则的是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -9231,12 +8611,10 @@
         "D",
         "法律面前人人平等原则"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下属于无效的民事行为的是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -9259,12 +8637,10 @@
         "D",
         "12岁中学生购买课本"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国《民法通则》规定，债权人向人民法院请求保护债权的诉讼时效为（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -9287,12 +8663,10 @@
         "D",
         "二十年"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "如果立遗嘱人先后立了数份内容相抵触的遗嘱，应以（ ）为主。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -9315,12 +8689,10 @@
         "D",
         "最后一份遗嘱"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列选项中，属于公民基本权利中监督权利的是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -9343,12 +8715,10 @@
         "D",
         "宗教信仰自由"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "权利人对其文学、艺术和科学作品依法享有的人身权和财产权，称为（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -9371,12 +8741,10 @@
         "D",
         "商标权"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "作家甲于2001年2月创作完成一部小说，4月与出版社协商出版事宜，5月出版社同意出版，7月由出版社正式出版，甲取得该小说著作权的时间应是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -9399,12 +8767,10 @@
         "D",
         "2月"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "大学生某甲因期末考试作弊被学校勒令退学，某甲不服，以学校为被告向人民法院起诉，该争议之法律关系性质为（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -9427,12 +8793,10 @@
         "D",
         "管理法律关系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "某甲进行赌博活动，公安机关依法对其处以罚款。该行为属于（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -9455,12 +8819,10 @@
         "D",
         "非要式行政行为"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "限制人身自由的行政处罚权只能由下列哪个机关行使（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -9483,12 +8845,10 @@
         "D",
         "人民政府"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "王某在一家服装店挑选风衣，店主向王某推荐了一款，王某试穿后觉得不合适，便脱下来要走，店主却强迫王某买下了这件风衣。店主的这一行为侵犯了王某的（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -9511,12 +8871,10 @@
         "D",
         "选择商品自主权"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "经营者提供商品或服务有欺诈行为，应当按照消费者的要求增加赔偿其受到的损失，增加赔偿的金额为消费者购买商品的价款或接受服务的费用的（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -9539,12 +8897,10 @@
         "D",
         "四倍"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "杨某出差住宾馆，遗失手机一部，被打扫房间的服务员拾到，并据为己有。服务员的行为属于（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -9567,12 +8923,10 @@
         "D",
         "提存行为"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国继承法规定，继承人对于被继承人生前的合法债务（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -9595,12 +8949,10 @@
         "D",
         "应当在遗产的实际价值范围内负责清偿"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国刑法规定，醉酒的人犯罪，（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -9623,12 +8975,10 @@
         "D",
         "应当负刑事责任"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中学生某甲，1983年4月5日生。1998年3月28日，他故意把一同学打成重伤，某甲对于他的这一行为（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -9651,12 +9001,10 @@
         "D",
         "不负刑事责任"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "某男入室抢劫时，发现室内有一老人，于是欲将其杀死。老人苦苦哀求，该男不忍下手，空手夺窗逃走。该男的行为是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -9679,12 +9027,10 @@
         "D",
         "犯罪既遂"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "公民甲持刀抢劫公民乙的财物。乙在争夺甲手中所持刀具时，将甲撞倒在水泥地上，甲头部着地，当即昏迷。根据《中华人民共和国刑法》规定，乙的行为属于（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -9707,12 +9053,10 @@
         "D",
         "故意杀人"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列关于正当防卫的叙述中，错误的是（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -9735,12 +9079,10 @@
         "D",
         "正当防卫只能是为了保护本人的人身、财产和其他合法权利而实行防卫"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "甲欲枪杀乙，不料丙与乙同行，甲明知有可能射中丙，但甲不愿放过这次机会，遂抱着“打死乙最好，打死丙也罢”的念头开了枪，结果打死了丙。甲对杀死丙的心理态度是（ ）。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -9763,12 +9105,10 @@
         "D",
         "疏忽大意的过失"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "根据我国的刑罚制度，可以独立适用，又可以附加适用的刑种是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -9791,12 +9131,10 @@
         "D",
         "死刑"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列不属于附加刑的是 （ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -9819,12 +9157,10 @@
         "D",
         "监视居住"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于法律的溯及力问题，我国刑法采取（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -9847,12 +9183,10 @@
         "D",
         "从旧兼从轻的原则"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "根据《中华人民共和国劳动法》的规定，劳动合同可以约定试用期，但试用期最长不得超过（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -9875,12 +9209,10 @@
         "D",
         "2年"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "《行政诉讼法》规定，行政诉讼中（ ）对做出的具体行政行为负有举证责任。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -9903,12 +9235,10 @@
         "D",
         "原告或被告"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "某法院在审理某一刑事案件的过程中，没有采信公安机关通过刑讯逼供取得的一份证据。这体现了诉讼证据的（ ）。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -9931,12 +9261,10 @@
         "D",
         "合法性特征"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“法无明文规定不为罪，法无明文规定不处罚”是说明（ ）原则。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -9959,12 +9287,10 @@
         "D",
         "惩罚与教育相结合"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "组织领导犯罪集团进行犯罪活动或者在共同犯罪中起主要作用的犯罪分子是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -9987,12 +9313,10 @@
         "D",
         "教唆犯"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "诉讼法亦称（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -10015,12 +9339,10 @@
         "D",
         "特别法"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对审判活动进行监督的是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -10043,12 +9365,10 @@
         "D",
         "国家安全机关"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "犯罪是（ ）的行为。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -10071,12 +9391,10 @@
         "D",
         "应受刑罚惩罚"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国刑法贵帝国应该受刑事责任的最低年龄是（ ）。",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -10099,12 +9417,10 @@
         "D",
         "已满18周岁"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "自首成立的条件之一是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -10127,12 +9443,10 @@
         "D",
         "悔罪"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人生观的核心是（ ）",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -10155,12 +9469,10 @@
         "D",
         "人生理想"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "世界观是人们对（ ）的最根本看法和总和。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -10183,12 +9495,10 @@
         "D",
         "整个世界"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人生观是（ ）的反应。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -10211,12 +9521,10 @@
         "D",
         "自然条件"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人生的目的是对（ ）这一人生根本问题的认识和回答。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -10239,12 +9547,10 @@
         "D",
         "人为什么努力"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人生的社会价值是个人的人生对（ ）的意义。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -10267,12 +9573,10 @@
         "D",
         "社会与他人"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人生的价值趋向是对（ ）的意义。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -10295,12 +9599,10 @@
         "D",
         "价值目标"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "理想是人在实践中形成的具有（ ）的对美好未来的追求和想法。",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -10323,12 +9625,10 @@
         "D",
         "实现可能性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "理想人的确立于（ ）",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -10351,12 +9651,10 @@
         "D",
         "青年时期"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "处于核心地位的理想类型（ ）",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -10379,12 +9677,10 @@
         "D",
         "职业理想"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "信念突出的本质特征（ ）",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -10407,12 +9703,10 @@
         "D",
         "“疑”"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义的核心是（ ）",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -10427,12 +9721,10 @@
         "B",
         "尊老爱幼"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "道德是由一定的社会经济基础所决定的为其服务的（ ）",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -10455,12 +9747,10 @@
         "D",
         "上层建筑"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "道德核心问题是（ ）",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -10483,12 +9773,10 @@
         "D",
         "社会"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "为人民服务低层次的要求（ ）",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -10511,12 +9799,10 @@
         "D",
         "人人为自己，上帝为人家"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "反应阶级民族或社会利益的道德（ ）",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -10539,12 +9825,10 @@
         "D",
         "法律规定"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在一定职业生活中所遵循的具有自身职业准则的（ ）",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -10567,12 +9851,10 @@
         "D",
         "职业道德"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "伴随道德认识所表现出来一种内心体验是（ ）",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -10595,12 +9877,10 @@
         "D",
         "道德习惯"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "法律以（ ）为基础。",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -10623,12 +9903,10 @@
         "D",
         "政治"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列不属于我国的法律部门的是？（ ）",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -10651,12 +9929,10 @@
         "D",
         "劳动与社会保障法"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义民主与法制建设的根本保证是（ ）",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -10679,12 +9955,10 @@
         "D",
         "人民当家作主"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国社会主义法律的特征有：（ ）",
     "answer": "A",
     "subject": "思想道德与法治",
@@ -10707,12 +9981,10 @@
         "D",
         "各阶级各阶层人民群众意志简单组合"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "职业道德建设中堪称从业者“立人之道”、“进德修业之本”的是（ ）",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -10735,12 +10007,10 @@
         "D",
         "尊老爱幼"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "当事人对劳动仲裁裁决不服的，可以自收到仲裁裁决书之日起（ ）内向人民法院提起诉讼",
     "answer": "B",
     "subject": "思想道德与法治",
@@ -10763,12 +10033,10 @@
         "D",
         "60日"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "农村富余劳动力在向城镇转移过程中，往往会造成一部分人处于失业状态，这种失业我们称之为（ ）",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -10791,12 +10059,10 @@
         "D",
         "周期性失业"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "处理劳动争议的必经程序是（ ）",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -10819,12 +10085,10 @@
         "D",
         "诉讼"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "为调整和规范人类社会生活三大领域，相应分别形成了（ ）",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -10847,12 +10111,10 @@
         "D",
         "社会公德、职业道德、家庭美德"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对依法处理劳动争议的法定途径下列说法正确的是（ ）",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -10875,12 +10137,10 @@
         "D",
         "当事人也可以不申请仲裁，直接向人民法院提起诉讼"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "一个人进行思想、道德、科学文化、心理、审美等自我修养所达到的实践水平或程度称为（ ）",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -10903,12 +10163,10 @@
         "D",
         "理想人格"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "现实生活中的很多暴力机关例如监狱、法庭等体现了法的（ ）",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -10931,12 +10189,10 @@
         "D",
         "评价作用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对于违法犯罪行为进行应有的制裁和惩罚，体现了法律（ ）",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -10959,12 +10215,10 @@
         "D",
         "预测作用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "强调国家机关及其公务人员应该“依法行政”、“依法司法”体现了法的（ ）",
     "answer": "D",
     "subject": "思想道德与法治",
@@ -10987,12 +10241,10 @@
         "D",
         "评价作用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "与中学相比，大学生活最显著的变化体现在（ ）。",
     "answer": "ABD",
     "subject": "思想道德与法治",
@@ -11015,16 +10267,10 @@
         "D",
         "社会活动的变化"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "进入大学后，大学生需要树立新的学习理念，这些理念包括（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -11047,17 +10293,10 @@
         "D",
         "终身学习的理念"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "一般来说，优良的学风应包含（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -11084,17 +10323,10 @@
         "E",
         "灵活"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思说：“为确定人，现实的人，你就有规定，就有使命，就有任务，至于你是否意识到这一点，那都是无所谓的。这个任务是由于你的需要及其与现实世界的联系而产生的。”不同时代的青年有不同的历史使命，当代大学生需承担的历史使命是（ ）。",
     "answer": "BC",
     "subject": "思想道德与法治",
@@ -11117,15 +10349,10 @@
         "D",
         "建设世界一流强国"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "当今世界的时代潮流是（ ）。",
     "answer": "ABD",
     "subject": "思想道德与法治",
@@ -11152,16 +10379,10 @@
         "E",
         "互助"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会主义荣辱观的提出，明确了我国在发展社会主义市场经济条件下的基本（ ），是新形势下加强社会主义思想道德建设的重要指导方针。",
     "answer": "ABD",
     "subject": "思想道德与法治",
@@ -11184,16 +10405,10 @@
         "D",
         "行为准则"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "开展社会主义荣辱观学习实践活动，要以践行社会主义荣辱观、加强思想道德建设为主题，形成“（ ）”的文明风尚。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -11216,17 +10431,10 @@
         "D",
         "促和谐"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "学习“思想道德修养与法律基础”课有助于当代大学生（ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -11249,16 +10457,10 @@
         "D",
         "摆正德与才的位置，做到德才兼备、全面发展"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "思想道德修养与法律基础课的显著特点有（ ）",
     "answer": "ABCE",
     "subject": "思想道德与法治",
@@ -11285,17 +10487,10 @@
         "E",
         "思想性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "大学适应期会出现的矛盾主要有（ ）",
     "answer": "ACE",
     "subject": "思想道德与法治",
@@ -11322,16 +10517,10 @@
         "E",
         "自主意识与独立能力的矛盾"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会主义核心价值体系是建设和谐文化的根本，它的基本内容包括（ ）",
     "answer": "ACDE",
     "subject": "思想道德与法治",
@@ -11358,17 +10547,10 @@
         "E",
         "中国特色社会主义共同理想。"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "大学生适应新的学习、生活环境，要从下列哪些方面提高独立生活的能力（ ）",
     "answer": "ABD",
     "subject": "思想道德与法治",
@@ -11395,16 +10577,10 @@
         "E",
         "勤奋严谨，求实创新"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "当代大学生的崭新形象表现为（ ）",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -11431,18 +10607,10 @@
         "E",
         "知行统一、脚踏实地"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列属于社会主义的荣辱观内容的有（ ）",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -11469,18 +10637,10 @@
         "E",
         "以艰苦奋斗为荣、以骄奢淫逸为耻"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "邓小平说：“美好的前景如果没有切实的措施和工作去实现它，就有成为空话的危险。”这说明（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -11503,16 +10663,10 @@
         "D",
         "只要付诸行动，人们对于美好未来的向往和追求都能成为现实"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "司马迁说：“文王拘而演《周易》；仲尼厄而作《春秋》；屈原放逐，乃赋《离骚》；左丘失明，厥有《国语》；孙子膑脚，《兵法》修列；不韦迁蜀，世传《吕览》；韩非囚秦，《说难》、《孤愤》；《诗》三百篇，大抵贤圣发愤之所为作也。”司马迁的这句话告诉我们（ ）。",
     "answer": "BD",
     "subject": "思想道德与法治",
@@ -11535,15 +10689,10 @@
         "D",
         "要正确对待实现理想过程中的逆境"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "科学崇高的理想信念对人生价值的实现具有重要意义。在确立理想信念时，应该（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -11566,16 +10715,10 @@
         "D",
         "离开人的生活体验和实际行动，单纯地读书学习"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "原河北省政府办公厅秘书、河北省国税局局长李真因受贿、贪污罪于2003年10月9日被河北省高级人民法院终审判处死刑。当法官宣布了上述判决后，李真的双腿抖了一抖。他反思自己走向毁灭的根源时说：“人可以没有金钱，但不能没有信念，丧失信念，就要毁灭一生”。李真的经历，说明理想信念对人生具有以下重要作用：（ ）。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -11598,16 +10741,10 @@
         "D",
         "提升人生的精神境界"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "在人类历史进程中，当社会主义发展遇到暂时的困难和曲折时，也要坚定社会主义必胜的信念。这是因为（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -11630,17 +10767,10 @@
         "D",
         "任何事物的发展都不可能一帆风顺，社会主义的发展也会出现曲折和反复"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "从l848年《共产党宣言》问世到1917年建立第一个社会主义国家经历了70年。艰难的尝试，惨痛的失败，并没有将社会主义和共产主义的理想与实践扼杀，相反使其焕发出更强大的生命力。到20世纪80年代末90年代初，东欧巨变、苏联解体，世界社会主义运动遭受重大挫折，然而，社会主义并未如西方有些人预言的那样走进历史的博物馆。中国人民坚定不移地走自己的路，中国特色社会主义的成功实践使社会主义运动展现了光明的前景。由此可见（ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -11663,16 +10793,10 @@
         "D",
         "社会主义必然代替资本主义是不依人的主观意志为转移的客观规律"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "共产主义具有以下哪几层的含义?（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -11695,17 +10819,10 @@
         "D",
         "共产主义是一种社会理想"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "理想的特征有（ ）。",
     "answer": "ABDE",
     "subject": "思想道德与法治",
@@ -11732,17 +10849,10 @@
         "E",
         "时代性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "理想从对象上可划分为（ ）。",
     "answer": "AD",
     "subject": "思想道德与法治",
@@ -11769,15 +10879,10 @@
         "E",
         "长远理想"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "立志高远的正确含义是（ ）。",
     "answer": "ACE",
     "subject": "思想道德与法治",
@@ -11804,16 +10909,10 @@
         "E",
         "立志须躬行"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "对于理想的错误认识有（ ）。",
     "answer": "ACDE",
     "subject": "思想道德与法治",
@@ -11840,17 +10939,10 @@
         "E",
         "没有理想的人一样生活的很开心"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "大学生学习马克思主义理论，确立马克思主义的坚定信念，最重要的是学习和掌握马克思主义的（ ）",
     "answer": "BD",
     "subject": "思想道德与法治",
@@ -11873,15 +10965,10 @@
         "D",
         "方法论"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "理想、幻想、空想都是（ ）。",
     "answer": "AC",
     "subject": "思想道德与法治",
@@ -11908,15 +10995,10 @@
         "E",
         "符合客观规律性的"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "理想（ ）",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -11943,16 +11025,10 @@
         "E",
         "随着年龄逐渐丧失"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会主义信念包括社会主义（ ）。",
     "answer": "ABD",
     "subject": "思想道德与法治",
@@ -11979,16 +11055,10 @@
         "E",
         "情感信念"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "共同理想和最高理想的关系是（ ）",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -12011,17 +11081,10 @@
         "D",
         "最高理想指导着共同理想的发展方向"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "理想与现实的关系是（ ）",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -12048,17 +11111,10 @@
         "E",
         "理想总是带有不切实际的部分"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "作为我们党的最高理想的共产主义社会，它的基本特征是（ ）",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -12081,17 +11137,10 @@
         "D",
         "每个人自由而全面发展"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列名言警句说明“立志须躬行”的有（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -12114,16 +11163,10 @@
         "D",
         "生于忧患，死于安乐"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列名言警句属于励志警句的有（ ）。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -12146,16 +11189,10 @@
         "D",
         "志不强者志不达"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "理想是人们在实践中形成的具有现实可能性的对未来的向往和追求，是人们的（ ）在奋斗目标上的集中体现。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -12182,16 +11219,10 @@
         "E",
         "法制观"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "在理想与信念的关系上，（ ）",
     "answer": "ACDE",
     "subject": "思想道德与法治",
@@ -12218,17 +11249,10 @@
         "E",
         "当理想作为信念时，它是指人们确信的一种观点和主张"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "建设有中国特色社会主义，是现阶段我国各族人民的共同理想。这种共同理想包括的内容有（ ）。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -12255,18 +11279,10 @@
         "E",
         "爱好和平、反对分裂的政治理想"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "理想是否合理、进步与科学的判断标准是（ ）",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -12293,18 +11309,10 @@
         "E",
         "是否为社会的大多数人谋利益"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会理想是指一定社会的阶级或个人对未来（ ）的追求、向往和设想，包括对未来社会的政治、经济、文化结构的设想和规划。",
     "answer": "DE",
     "subject": "思想道德与法治",
@@ -12331,15 +11339,10 @@
         "E",
         "政治结构"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会理想具有（ ）方面的特征。",
     "answer": "CDE",
     "subject": "思想道德与法治",
@@ -12366,16 +11369,10 @@
         "E",
         "表明历史发展趋势"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "信念与信仰的关系是（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -12402,17 +11399,10 @@
         "E",
         "信念属于信仰"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "非科学信念是（ ）。",
     "answer": "CDE",
     "subject": "思想道德与法治",
@@ -12439,16 +11429,10 @@
         "E",
         "经不起实践检验"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "爱国主义是调节个人与祖国之间关系的（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -12471,16 +11455,10 @@
         "D",
         "指导思想"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "爱国主义是（ ）。",
     "answer": "ABD",
     "subject": "思想道德与法治",
@@ -12503,16 +11481,10 @@
         "D",
         "一种人生道德规范和价值导向"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "爱国主义包含着哪些基本方面（ ）",
     "answer": "ACE",
     "subject": "思想道德与法治",
@@ -12539,16 +11511,10 @@
         "E",
         "行为"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "爱国主义的基本要求是（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -12571,17 +11537,10 @@
         "D",
         "爱自己的国家"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下面关于爱国主义的论述正确的是（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -12604,17 +11563,10 @@
         "D",
         "在阶级社会,爱国主义具有阶级性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下面关于爱国主义优良传统的正确论述是（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -12641,17 +11593,10 @@
         "E",
         "追求真理，善于创新"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "爱国主义的时代价值表现在（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -12674,17 +11619,10 @@
         "D",
         "爱国主义是个人实现人生价值的力量源泉"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列体现为与时俱进的精神的有（ ）。",
     "answer": "BCDE",
     "subject": "思想道德与法治",
@@ -12711,17 +11649,10 @@
         "E",
         "与日俱新"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "在现阶段，爱国主义主要表现为（ ）",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -12748,18 +11679,10 @@
         "E",
         "献身于促进社会民主富强。"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会主义的爱国主义是（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -12782,16 +11705,10 @@
         "D",
         "爱祖国与爱科学的统一"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "立志献身于祖国社会主义现代化建设事业的大学生应该要有（ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -12814,16 +11731,10 @@
         "D",
         "健康的身心"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "民族利益是民族的（ ）。",
     "answer": "AB",
     "subject": "思想道德与法治",
@@ -12846,15 +11757,10 @@
         "D",
         "暂时利益"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "中华民族的民族精神的主要内容有：（ ）",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -12881,17 +11787,10 @@
         "E",
         "团结协作精神"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "能够体现中国民族精神的是：（ ）。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -12918,18 +11817,10 @@
         "E",
         "延安精神。"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列词句中体现中华民族自强不息精神的有：（ ）。",
     "answer": "ABE",
     "subject": "思想道德与法治",
@@ -12956,16 +11847,10 @@
         "E",
         "愚公移山"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "弘扬和培育民族精神的原则是（ ）。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -12988,16 +11873,10 @@
         "D",
         "要以创新的眼光看待弘扬和培育民族精神"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "时代精神（ ）。",
     "answer": "ABDE",
     "subject": "思想道德与法治",
@@ -13024,17 +11903,10 @@
         "E",
         "与民族精神紧密相连，是民族精神的时代性体现"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "时代精神包括（ ）．",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -13061,18 +11933,10 @@
         "E",
         "淡泊名利，无私奉献"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "改革创新是时代精神的内涵，是因为（ ）。",
     "answer": "ACE",
     "subject": "思想道德与法治",
@@ -13099,16 +11963,10 @@
         "E",
         "改革创新是落实科学发展观、构建社会主义和谐社会的重要条件"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "改革创新主要包括（ ）",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -13131,17 +11989,10 @@
         "D",
         "科技创新"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "自觉维护国家利益，就要（ ）。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -13168,16 +12019,10 @@
         "E",
         "积极进行创新活动"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "民族区域制度的实行（ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -13200,16 +12045,10 @@
         "D",
         "有利于促进各民族的共同奋斗和繁荣发展"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "国防观念主要包括（ ）和国防献身意识等。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -13236,18 +12075,10 @@
         "E",
         "国防法制意识"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "大学生增强国防观念，要体现在日常学习、生活和社会实践的方方面面，主要有：（ ）。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -13274,18 +12105,10 @@
         "E",
         "关注国家的安全与发展，强化忧患意识"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "大学生增强国防观念的意义是（ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -13308,16 +12131,10 @@
         "D",
         "增强国防观念，是大学生提高综合素质，促进自身全面发展的迫切需要"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "在以下关于世界观的说法中，正确的是（ ）。",
     "answer": "ABE",
     "subject": "思想道德与法治",
@@ -13344,16 +12161,10 @@
         "E",
         "世界观是人们在长期的社会实践活动中形成"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列选项中,属于人生观范畴的有（ ）。",
     "answer": "ABDE",
     "subject": "思想道德与法治",
@@ -13380,17 +12191,10 @@
         "E",
         "怎天实现人生的意义"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "人生观决定着人的（ ）。",
     "answer": "ABD",
     "subject": "思想道德与法治",
@@ -13413,16 +12217,10 @@
         "D",
         "对待生活的态度"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "人生观主要是通过（ ）体现出来。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -13445,16 +12243,10 @@
         "D",
         "人生信仰"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列属于正确的人生目的的是（ ）。",
     "answer": "CD",
     "subject": "思想道德与法治",
@@ -13477,15 +12269,10 @@
         "D",
         "要为祖国和人民的利益无私奉献"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "对人生态度的形成起主要作用的心理因素有（ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -13508,16 +12295,10 @@
         "D",
         "意志"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "大学生应有的人生态度是（ ）。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -13540,16 +12321,10 @@
         "D",
         "珍惜生命，乐观向上"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列属于错误的人生观的是 （ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -13572,16 +12347,10 @@
         "D",
         "个人主义人生观"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "人生价值具有（ ）的特点。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -13604,17 +12373,10 @@
         "D",
         "创造性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "人生的社会价值和自我价值的关系是（ ）。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -13641,16 +12403,10 @@
         "E",
         "人生的自我价值是实现人生社会价值的基础"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "爱因斯坦说：“我评定一个人的真正价值只有一个标准，即看他在多大程度上摆脱了自我。”对这句话正确的理解是（ ）。",
     "answer": "CD",
     "subject": "思想道德与法治",
@@ -13673,15 +12429,10 @@
         "D",
         "对社会贡献越大，摆脱“自我”的程度也就越大，个人的人生价值就越大"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“个人的抱负不可能孤立地实现，只有把它同时代和人民的要求紧密结合起来，用自己的知识和本领为祖国为人民服务，才能使自身价值得到充分实现。”这句话的含义包括 （ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -13704,16 +12455,10 @@
         "D",
         "人生的自我价值必须与社会价值相结合,并通过社会价值表现出来"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "客观、公正地评价社会成员人生价值的大小，需要掌握恰当的评价方法，做到以下四个坚持：（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -13740,17 +12485,10 @@
         "E",
         "坚持物质利益至上的原则。"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "实现人生价值的主观条件主要包括（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -13773,17 +12511,10 @@
         "D",
         "保持自强不息的精神状态"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "科学对待人生环境主要就是要协调好（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -13810,17 +12541,10 @@
         "E",
         "个人与金钱的关系"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "人生境遇受多方面的影响， 包括（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -13843,17 +12567,10 @@
         "D",
         "受制于人自身的客观条件"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "保持心理健康的方法和途径有（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -13876,17 +12593,10 @@
         "D",
         "积极参加集体活动，增进人际交往"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "个人心理修养的目的是要达到心理健康。心理健康的人，一般能（ ）。",
     "answer": "ABCE",
     "subject": "思想道德与法治",
@@ -13913,17 +12623,10 @@
         "E",
         "对自己及自己与周围环境的关系有着全面、客观的认识，了解自己悦纳自己"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "协调个人与他人的关系应坚持的原则包括（ ）。",
     "answer": "ACDE",
     "subject": "思想道德与法治",
@@ -13950,17 +12653,10 @@
         "E",
         "互助原则"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "现代生活中人与人之间需要真情，需要友谊。在人际交往中要获得和发展友谊，应该做的有 （ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -13983,16 +12679,10 @@
         "D",
         "苛求他人,毫发必争"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列选项中，能增强人际吸引的因素有（ ）。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -14019,18 +12709,10 @@
         "E",
         "积极实践，经受锻炼，增长才干"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列有关竞争与合作关系的说法中，正确的有（ ）。",
     "answer": "ABE",
     "subject": "思想道德与法治",
@@ -14057,16 +12739,10 @@
         "E",
         "竞争与合作是人生和社会生存、发展的两股力量"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "科学把握个人与社会的辩证关系，促进个人与社会的和谐，才能为人生价值的实现创造良好的社会环境。对个人与社会辩证关系正确说法包括（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -14089,17 +12765,10 @@
         "D",
         "享受个人权利、自由与承担社会责任、义务相统一"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "竞争的积极含义包括：（ ）。",
     "answer": "ABCE",
     "subject": "思想道德与法治",
@@ -14126,17 +12795,10 @@
         "E",
         "推动社会的发展"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列关于人际交往宽容原则的说法，正确的包括（ ）。",
     "answer": "ABD",
     "subject": "思想道德与法治",
@@ -14159,16 +12821,10 @@
         "D",
         "宽容意味着严以律己，宽以待人，求同存异，相互包容"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列选项中，对于道德的理解，正确的有（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -14191,17 +12847,10 @@
         "D",
         "道德是对人们的行为进行善恶评价的心理意识、原则规范和行为活动的总和"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会主义道德建设要以集体主义为原则。社会主义集体主义原则的基本内涵有（ ）。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -14224,16 +12873,10 @@
         "D",
         "重视、保障和发展个人的正当利益"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "在社会主义“四有”新人中，有理想、有道德、有文化、有纪律四个方面既相互区别，又相互联系，是一个有机整体。其中重在提高人们思想道德素质的有（ ）。",
     "answer": "AB",
     "subject": "思想道德与法治",
@@ -14256,15 +12899,10 @@
         "D",
         "有纪律"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "马克思主义认为，道德作为一种社会现象，其产生有多方面的条件（ ）。",
     "answer": "BD",
     "subject": "思想道德与法治",
@@ -14287,15 +12925,10 @@
         "D",
         "自我意识的形成"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "在社会主义初级阶段，我们反对“权力至上”、“金钱拜物教”、“享乐主义”等卑下的人生目的，不提倡“平生无大志，但求足温饱”等平庸的人生目的，提倡（ ）。",
     "answer": "AD",
     "subject": "思想道德与法治",
@@ -14322,15 +12955,10 @@
         "E",
         "大公无私、全心全意为人民服务的人生目的"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "党的十六大报告指出，要“认真贯彻公民道德建设实施纲要”，特别要“加强青少年的思想道德建设，引导人们在遵守基本行为准则的基础上，追求更高的思想道德目标。”为此，要在全社会大力倡导和自觉遵守的公民基本道德规范是（ ）。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -14357,18 +12985,10 @@
         "E",
         "敬业奉献"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "道德品质的培养既是个人修养的任务，也是社会教育的目的。一个人的道德品质是（ ）。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -14395,16 +13015,10 @@
         "E",
         "在一次或两次道德行为中所表现出来的偶尔的心理特征"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“只有在集体中，个人才能获得全面发展其才能的手段，也就是说，只有在集体中才可能有个人自由。”这说明（ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -14431,16 +13045,10 @@
         "E",
         "集体主义可以完全不顾个人的思想，要求个人无条件地服从集体"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列属于良好道德品质的有（ ）。",
     "answer": "ABCE",
     "subject": "思想道德与法治",
@@ -14467,17 +13075,10 @@
         "E",
         "见风使舵、明哲保身"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "中华民族优良道德传统主要是指 （ ）。",
     "answer": "BCDE",
     "subject": "思想道德与法治",
@@ -14504,17 +13105,10 @@
         "E",
         "崇尚志向、重视节操的精神境界"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "道德品质与道德原则规范的关系表现为 （ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -14541,16 +13135,10 @@
         "E",
         "道德原则具有巩固和强化道德品质的功能"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "中国革命道德传统是指中国共产党人、一切先进分子和人民群众，在中国革命和建设中所形成的优良道德传统。它是中华民族优良道德传统的继承和发展，是革命前辈留给我们的宝贵精神财富。中国革命道德传统的基本内容有（ ）。",
     "answer": "BDE",
     "subject": "思想道德与法治",
@@ -14577,16 +13165,10 @@
         "E",
         "全心全意为人民服务的精神"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "培养个人良好的道德品质（ ）。",
     "answer": "BCE",
     "subject": "思想道德与法治",
@@ -14613,16 +13195,10 @@
         "E",
         "能使道德原则规范由外在的要求变成人们日常生活的习惯"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "加强社会主义道德建设，是我国每个社会成员在共同构建社会主义和谐社会中应尽的责任和义务。我国社会主义道德建设要（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -14645,17 +13221,10 @@
         "D",
         "与中华民族传统道德相承接"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "荣辱观是人们对荣誉和耻辱的根本看法和基本观点，是（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -14678,17 +13247,10 @@
         "D",
         "一定社会思想道德原则和规范的重要体现"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "把诚实守信作为当前我国社会主义道德建设的重点，具有重要的现实意义，主要表现在（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -14711,16 +13273,10 @@
         "D",
         "诚实守信是集体主义道德原则的最高层次要求"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "现代社会进行道德修养、锤炼个人品德的途径和方法主要有（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -14743,16 +13299,10 @@
         "D",
         "坚持“慎独”，不与他人发生交往"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "道德建设的核心体现并决定着道德建设的根本性质和发展方向。在中国特色社会主义建设的新时期，我国社会主义道德建设以为人民服务为核心。这是因为，为人民服务 （ ）。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -14775,16 +13325,10 @@
         "D",
         "是社会主义经济基础和政治制度的客观要求"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会主义道德建设中，提出和倡导“爱国守法、明礼诚信、团结友善、勤俭自强、敬业奉献”的公民基本道德规范的重要意义在于，公民基本道德规范（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -14807,16 +13351,10 @@
         "D",
         "是每个公民都能高度认同并自觉做到的"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "任何道德品质都是个人的道德品质，即个人品德。个人品德的形成（ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -14839,16 +13377,10 @@
         "D",
         "包含多种心理成分的相应发展"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "中国古人的下列说法中，对我们今天进行道德修养、锤炼个人品德仍具有很好借鉴作用的有（ ）。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -14871,16 +13403,10 @@
         "D",
         "“吾日三省吾身：为人谋而不忠乎?与朋友交而不信乎?传不习乎?”"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "三德是（ ）的简称。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -14903,16 +13429,10 @@
         "D",
         "家庭美德"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "遵守社会公德是维护社会公共生活正常秩序的必要条件，是成为一个有道德的人的最基本要求。我国现代社会中，社会公德的主要内容有（ ）。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -14939,18 +13459,10 @@
         "E",
         "遵纪守法"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会公德的基本特征主要表现为（ ）。",
     "answer": "ABDE",
     "subject": "思想道德与法治",
@@ -14977,17 +13489,10 @@
         "E",
         "广泛性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会公德是全体公民在社会交往和公共生活中应该遵循的行为准则。在现代社会，遵守社会公德是（ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -15014,16 +13519,10 @@
         "E",
         "每个社会成员的自觉选择"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列行为符合社会公德要求的有（ ）。",
     "answer": "ABDE",
     "subject": "思想道德与法治",
@@ -15050,17 +13549,10 @@
         "E",
         "在公共汽车上为老幼病残孕让座"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会公德是人类社会生活中最起码、最简单的行动准则。下列行为中，遵守了社会公德的有（ ）。",
     "answer": "ACDE",
     "subject": "思想道德与法治",
@@ -15087,17 +13579,10 @@
         "E",
         "对在公共生活中某些人不守秩序的行为积极干预，予以制止"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "自觉遵守社会公德的意义有 （ ） 。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -15120,16 +13605,10 @@
         "D",
         "社会公德建设是精神文明建设的基础性工程，也是精神文明程度的“窗口”"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "当代社会公共生活的特征主要表现在（ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -15156,16 +13635,10 @@
         "E",
         "网络环境的虚拟性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会生活基本上可以分为（ ）几个领域。",
     "answer": "AD",
     "subject": "思想道德与法治",
@@ -15188,15 +13661,10 @@
         "D",
         "私人生活"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会公德涵盖了（ ）几个关系层面上的问题。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -15219,16 +13687,10 @@
         "D",
         "人与物之间"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "以下哪些情形申请集会、游行、示威，将不予许可（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -15251,16 +13713,10 @@
         "D",
         "佛教协会的诵经活动"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "《道路交通安全法》的基本原则主要有（ ）。",
     "answer": "CD",
     "subject": "思想道德与法治",
@@ -15283,15 +13739,10 @@
         "D",
         "以人为本，与民方便原则"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "《环境保护法》的基本原则有（ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -15314,16 +13765,10 @@
         "D",
         "预防为主、防治结合、综合整治原则"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列（ ）行为属于社会公德范畴。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -15346,16 +13791,10 @@
         "D",
         "将好友的生活照片私自发布到网络上"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列各项中，属于社会公德实践活动的有（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -15378,17 +13817,10 @@
         "D",
         "“百城万店无假货”"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列使用网络的行为中，构成犯罪的，依照刑法有关规定将受到刑事追究的有（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -15411,17 +13843,10 @@
         "D",
         "利用互联网销售伪劣产品或者对商品、服务作虚假宣传"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列使用网络的行为中，构成犯罪的，依照刑法有关规定将受到刑事追究的有（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -15444,17 +13869,10 @@
         "D",
         "利用互联网造谣、诽谤或者发表、传播其他有害信息，煽动颠覆国家政权、推翻社会主义制度，或者煽动分裂国家、破坏国家统一"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "根据《道路交通安全法》的规定，（ ）是符合道路通行规则的。",
     "answer": "AD",
     "subject": "思想道德与法治",
@@ -15477,15 +13895,10 @@
         "D",
         "在没有非机动车道的路口，非机动车应该在车行道的右侧行驶"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "以下（ ）是违反《道路交通安全法》的。",
     "answer": "CD",
     "subject": "思想道德与法治",
@@ -15508,15 +13921,10 @@
         "D",
         "行人坐在道路隔离设施上小憩"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "在道路上发生交通事故，以下（ ）是符合《道路交通安全法》的。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -15539,17 +13947,10 @@
         "D",
         "目击者拨打报警电话或者急救电话"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "爱岗敬业是职业道德的核心和基础。下列表现属于爱岗敬业的有（ ）。",
     "answer": "ABDE",
     "subject": "思想道德与法治",
@@ -15576,17 +13977,10 @@
         "E",
         "把自己看成现职工作单位的一分子，把自己从事的工作视为生命存在的表现方式，尽心尽力地去工作"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "遵守职业道德是对每个从业人员的要求。从业者在职业工作中的下列行为，符合职业道德要求的有（ ）。",
     "answer": "BCDE",
     "subject": "思想道德与法治",
@@ -15613,17 +14007,10 @@
         "E",
         "主动承担社会义务，为社会、为他人作出贡献"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "职业道德是人们在一定职业活动中所应遵循的、具有自身职业特征的道德原则和规范。加强职业道德建设是（ ）。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -15650,18 +14037,10 @@
         "E",
         "纠正行业不正之风，形成良好社会道德风尚的重要手段"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "爱岗敬业是职业道德的核心和基础。从业人员的下列表现中，体现了爱岗敬业要求的有（ ）。",
     "answer": "BC",
     "subject": "思想道德与法治",
@@ -15684,15 +14063,10 @@
         "D",
         "对于被动选择的职业岗位敷衍了事，消极应付，争取早日调换工作"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "爱情的产生和发展通常表现为恋爱。男女恋爱中的基本道德要求有（ ）。",
     "answer": "ABD",
     "subject": "思想道德与法治",
@@ -15715,16 +14089,10 @@
         "D",
         "文明相爱"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "家庭美德内容有（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -15751,17 +14119,10 @@
         "E",
         "文明礼貌"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "爱情是人类特有的现象，“是人类高度文明的体现。”下列有关爱情基本特征的说法中，正确的有（ ）。",
     "answer": "CDE",
     "subject": "思想道德与法治",
@@ -15788,16 +14149,10 @@
         "E",
         "爱情是一个男子和一个女子之间互相爱慕的关系，容不得第三者插足"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "男女双方的恋爱行为，客观上是对社会负有相应道德责任的行为。下列选项中，属于恋爱中男女应遵循的基本道德要求的有（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -15824,16 +14179,10 @@
         "E",
         "恋爱中的男女应拒绝同恋爱对象以外的其他任何人进行交往"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "职业道德，是人们在一定的职业活动中所应遵循的，具有自身职业特征的道德准则和规范。从业者在下列职业活动中，体现了职业道德要求的有（ ）。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -15860,18 +14209,10 @@
         "E",
         "恪尽职守，顾全大局，主动承担社会义务，为社会、为他人作出奉献"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "爱情是男女双方基于一定的客观现实基础和共同的生活理想，在各自内心形成的最真挚的彼此倾慕和互相爱悦，并渴望对方成为自己终身伴侣的最强烈持久、纯洁专一的感情。下列选项中，真正属于爱情的有（ ）。",
     "answer": "BE",
     "subject": "思想道德与法治",
@@ -15898,15 +14239,10 @@
         "E",
         "爱恋双方彼此尊重对方的情感和人格，平等履行道德义务"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列行为符合家庭美德要求的有（ ）。",
     "answer": "CDE",
     "subject": "思想道德与法治",
@@ -15933,16 +14269,10 @@
         "E",
         "某儿媳每逢周未都去看望不在一起生活的公婆，帮他们洗刷打扫做家务"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "职业道德的基本要求有（ ）。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -15969,18 +14299,10 @@
         "E",
         "奉献社会"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "劳动法是指调整关于劳动关系以及由劳动关系产生的其他关系的法律规范的总称。下列选项中，属于我国劳动法的基本原则的有（ ）。",
     "answer": "BCDE",
     "subject": "思想道德与法治",
@@ -16007,17 +14329,10 @@
         "E",
         "公民享有劳动权利、履行劳动义务的原则"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "爱情是一个古老而常新的人生话题，人们不惜用最美丽的语言来描绘它的永恒和不朽。但不管怎么说，就本质和特征而言，爱情是（ ）。",
     "answer": "ACDE",
     "subject": "思想道德与法治",
@@ -16044,17 +14359,10 @@
         "E",
         "男女双方彼此用自己的生活对对方的生活作出完全承诺的决定，终生对爱侣承担责任"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "爱岗敬业所表达的最基本的道德要求是（ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -16077,16 +14385,10 @@
         "D",
         "以辛勤劳动为荣"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "如果办理结婚登记的当事人属于下列（ ）情形的，婚姻登记机关不予登记。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -16109,16 +14411,10 @@
         "D",
         "结婚的男方年龄为21岁"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "职业道德具有（ ）。",
     "answer": "CD",
     "subject": "思想道德与法治",
@@ -16141,15 +14437,10 @@
         "D",
         "时代性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "结婚是指男女双方依照法律规定的条件和程序，确立夫妻关系的法律行为。结婚必须具备的条件是（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -16172,16 +14463,10 @@
         "D",
         "男女双方身体健康"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "就业是民生之本，为了缓解就业压力，提供更多的就业机会，近年来国家采取了积极的就业措施，即确立了（ ）就业方针。",
     "answer": "ABD",
     "subject": "思想道德与法治",
@@ -16204,16 +14489,10 @@
         "D",
         "政府促进就业"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "职业道德中，最基本的与最高层次的要求分别是（ ）。",
     "answer": "C",
     "subject": "思想道德与法治",
@@ -16236,12 +14515,10 @@
         "D",
         "服务群众"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列关于法律的说法正确的是（ ）。",
     "answer": "ABDE",
     "subject": "思想道德与法治",
@@ -16268,17 +14545,10 @@
         "E",
         "我国的法律与社会主义制度密切相关"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "在阶级社会中，法律是统治阶级意志的体现。下列选项中，对这个命题理解错误的是（ ）。",
     "answer": "ABD",
     "subject": "思想道德与法治",
@@ -16301,16 +14571,10 @@
         "D",
         "统治阶级及其成员可以不服从和遵守法律"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "法律的国家强制力表现为（ ）。",
     "answer": "AB",
     "subject": "思想道德与法治",
@@ -16333,15 +14597,10 @@
         "D",
         "国家是保证法律实施的唯一力量"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "我国的法律体系包括（ ）。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -16368,18 +14627,10 @@
         "E",
         "刑法"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "属于行政法范畴的法律有（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -16402,16 +14653,10 @@
         "D",
         "婚姻法"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "法律运行的主要环节包括（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -16434,17 +14679,10 @@
         "D",
         "司法"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列机关中有权制定地方性法规的有（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -16467,17 +14705,10 @@
         "D",
         "经国务院批准的较大的市的人民代表大会及其常委会"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "国家机关的立法活动必须遵循法定的程序，包括（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -16500,17 +14731,10 @@
         "D",
         "法律案的公布"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "行政执法的主体除中央和地方各级政府外，还包括各级政府中享有执法权的下属行政机构，比如（ ）等部门。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -16533,17 +14757,10 @@
         "D",
         "计划生育"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "“法治”与“法制”的关系是（ ）。",
     "answer": "BDE",
     "subject": "思想道德与法治",
@@ -16570,16 +14787,10 @@
         "E",
         "“法制”通常是指国家的法律和制度的简称，是一种社会制度"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "当前，我国全面落实依法治国基本方略，加快建设社会主义法治国家的主要任务，除了要完善中国特色社会主义法律体系外，还包括（ ）。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -16606,18 +14817,10 @@
         "E",
         "培植新型的社会主义法律文化"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "我国社会主义法律的基本要求是（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -16640,17 +14843,10 @@
         "D",
         "违法必究"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会主义法治观念包括（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -16673,17 +14869,10 @@
         "D",
         "公平正义观念"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "社会主义民主是社会主义法治的（ ）。",
     "answer": "BC",
     "subject": "思想道德与法治",
@@ -16706,15 +14895,10 @@
         "D",
         "保障"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "从法律公正的内涵来看，法律公正包括（ ）。",
     "answer": "BD",
     "subject": "思想道德与法治",
@@ -16737,15 +14921,10 @@
         "D",
         "程序公正"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "法律权利和法律义务的关系为（ ）。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -16768,16 +14947,10 @@
         "D",
         "功能上的互补关系"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "国家安全的支柱与核心是（ ）。",
     "answer": "AB",
     "subject": "思想道德与法治",
@@ -16800,15 +14973,10 @@
         "D",
         "科技安全"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "新的国家安全观包括（ ）",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -16835,18 +15003,10 @@
         "E",
         "生态安全和社会安全"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "加强社会主义法律修养，不仅要（ ），还要树立法律信仰，宣传法律知识，敢于同违法犯罪行为作斗争，自觉维护社会主义法律权威。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -16869,17 +15029,10 @@
         "D",
         "培养社会主义法律思维方式"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "法律思维方式的特征有（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -16902,17 +15055,10 @@
         "D",
         "讲法理"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "法律上的证据不同于一般的事实，证据通常具有的特征为（ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -16935,16 +15081,10 @@
         "D",
         "关联性"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "维护社会主义法律权威应从以下几方面做起（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -16967,16 +15107,10 @@
         "D",
         "维护社会秩序"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "宪法的基本原则包括（ ）。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -17003,18 +15137,10 @@
         "E",
         "民主集中原则"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "根据我国现行宪法规定，中华人民共和国公民享有下列自由（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -17037,16 +15163,10 @@
         "D",
         "罢工、迁徙"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列属于公民人格权的有（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -17073,16 +15193,10 @@
         "E",
         "监护权"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "我国民法的基本原则包括（ ）。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -17109,18 +15223,10 @@
         "E",
         "禁止权利滥用原则"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列行为属于民事法律行为的有（ ）。",
     "answer": "AD",
     "subject": "思想道德与法治",
@@ -17147,15 +15253,10 @@
         "E",
         "甲致乙人身伤害的行为"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "以下属于完全民事行为能力人的是（ ）。",
     "answer": "BD",
     "subject": "思想道德与法治",
@@ -17178,15 +15279,10 @@
         "D",
         "16周岁以上,以自己的劳动收入为主要生活来源的未成年人"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "无民事行为能力人包括（ ）。",
     "answer": "AD",
     "subject": "思想道德与法治",
@@ -17209,15 +15305,10 @@
         "D",
         "不能辨认自己行为的精神病人"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "我国民法所规定的民事权利，主要有（ ）等。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -17244,18 +15335,10 @@
         "E",
         "人身权"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "一般侵权民事责任的构成要件有（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -17278,17 +15361,10 @@
         "D",
         "行为人主管上有过错"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "杨某与刘某在日常生活中有矛盾.杨某为了泄私愤,造谣说刘某生活作风有问题,致使刘某的生活和工作受到很不利的影响.在这种情况下,刘某可以要求杨某承担的民事责任有（ ）。",
     "answer": "ACDE",
     "subject": "思想道德与法治",
@@ -17315,17 +15391,10 @@
         "E",
         "消除影响"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "行政处罚包括（ ）。",
     "answer": "ABCDE",
     "subject": "思想道德与法治",
@@ -17352,18 +15421,10 @@
         "E",
         "行政拘留"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列遗嘱形式中，须有见证人在场见证方为有效的遗嘱是（ ）。",
     "answer": "ACD",
     "subject": "思想道德与法治",
@@ -17386,16 +15447,10 @@
         "D",
         "代书遗嘱"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "甲在路边看到一头走失的牛，遂将其牵回喂养。一月后，牛主人乙找到甲要求还牛。甲认为谁捡到是谁的，要求乙付3000元赎牛，否则不予归还。乙拒绝。下列表述正确的是（ ）。",
     "answer": "ABD",
     "subject": "思想道德与法治",
@@ -17418,16 +15473,10 @@
         "D",
         "甲有权要求乙偿付喂养牛的费用"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "当消费者和经营者发生消费者权益争议时，根据《中华人民共和国消费者权益保护法》规定，消费者可以采用的解决途径有（ ）。",
     "answer": "ABCD",
     "subject": "思想道德与法治",
@@ -17450,17 +15499,10 @@
         "D",
         "根据与经营者达成的仲裁协议提请仲裁机构仲裁"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "根据法律规定的内容不同，可以将法律划分为实体法和程序法。下列选项中，属于实体法的有（ ）。",
     "answer": "ABCE",
     "subject": "思想道德与法治",
@@ -17487,17 +15529,10 @@
         "E",
         "《中华人民共和国消费者权益保护法》"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "我国《刑法》规定的刑罚有（ ）。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -17520,16 +15555,10 @@
         "D",
         "死刑"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "诉讼法是调整和规范国家司法机关和当事人以及其他诉讼参与人之间发生的诉讼活动关系的法律规范的总称，我国现行的诉讼法包括（ ）。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -17552,16 +15581,10 @@
         "D",
         "《中华人民共和国行政诉讼法》"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "刑法的基本原则是指贯穿于刑法制定和实施全过程的根本性准则，我国刑法规定的刑法的基本原则有   （ ）。",
     "answer": "BCD",
     "subject": "思想道德与法治",
@@ -17584,16 +15607,10 @@
         "D",
         "罪刑相适应原则"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "下列行政行为属于具体行政行为的有（ ）。",
     "answer": "ABCE",
     "subject": "思想道德与法治",
@@ -17620,17 +15637,10 @@
         "E",
         "某市人民政府决定给与今年的市级劳动模范颁发奖章的行为"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "刑事诉讼的当事人包括（ ）等。",
     "answer": "CDE",
     "subject": "思想道德与法治",
@@ -17657,16 +15667,10 @@
         "E",
         "犯罪嫌疑人"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "我国《刑法》规定的刑罚有（ ）。",
     "answer": "CDE",
     "subject": "思想道德与法治",
@@ -17693,16 +15697,10 @@
         "E",
         "死刑"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D",
-      "E"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "按照我国宪法规定，（ ）既是公民的权利又是公民的义务",
     "answer": "CD",
     "subject": "思想道德与法治",
@@ -17725,15 +15723,10 @@
         "D",
         "受教育权"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "C",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "《个人所得税法》规定，个人所得税的征税范围是（ ）。",
     "answer": "ABC",
     "subject": "思想道德与法治",
@@ -17756,16 +15749,10 @@
         "D",
         "救济款"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "B",
-      "C"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "李丽在商场购买了一台电冰箱，使用3个月后发生故障，在“三包”有效期内经两次修理，仍不能正常使用。该商场应如何解决此问题？（ ）",
     "answer": "BD",
     "subject": "思想道德与法治",
@@ -17788,15 +15775,10 @@
         "D",
         "李丽要求退货时，应无条件退货"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "B",
-      "D"
     ]
   },
   {
-    "type": "选择题",
+    "type": "多选题",
     "text": "正确分析与处理法律案件，要抓住两个关键问题：（ ）",
     "answer": "AC",
     "subject": "思想道德与法治",
@@ -17819,11 +15801,6 @@
         "D",
         "犯罪情节轻重"
       ]
-    ],
-    "choice_type": "multiple",
-    "multiple_answers": [
-      "A",
-      "C"
     ]
   },
   {

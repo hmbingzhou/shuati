@@ -5,6 +5,22 @@
 - 终端版：`python launcher.py`（或 `start.bat`）
 - 网页版：`python launcher.py web`（或 `start_webui.bat`），默认 http://127.0.0.1:8000
 
+## 题目存储格式（v2）
+
+六种题型：**单选题、多选题、判断题、填空题、简答题、计算题**，每题一个 JSON 对象：
+
+- 公共字段：`type / text / answer / images / subject / flag_star / flag_cross`
+- 单选/多选另有 `options`（`[["A","文本"],…]`）；判断题固定 正确/错误，无选项；
+- 图片以内嵌文件名显示（题干或选项文本里写 `1.png`），`images` 自动汇总；
+- 填空题题干用 `【1】【2】…` 标记空位，答案结构：
+  `answer.items[i].accept` = 第 i 空可接受答案列表（命中任一即对），
+  `accept` 相同的 `group` 编号的空位**可任意互换顺序**；
+  无法可靠拆分的旧题会标记 `whole: true`（整串比对，逐题录入编辑器可直接编辑）；
+- 简答题不自动判分（作答后展示参考答案、用户自评）；计算题严格判分（双方为数字时按容差）。
+
+迁移工具：`python migrate_questions.py --dry-run`（试运行）/ `python migrate_questions.py`（先备份再迁移）。
+自检：`python question_v2_selftest.py`。
+
 ## 目录结构
 
 ```

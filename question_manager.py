@@ -80,13 +80,13 @@ def save_wrong_records(records: List[WrongRecord]):
 
 
 def add_wrong_record(subject: str, question: Question, wrong_answer: str):
-    """添加一条错题记录"""
+    """添加一条错题记录（标准答案存人类可读形式）"""
     records = load_wrong_records()
     record = WrongRecord(
         subject=subject,
         question_text=question.text,
         question_type=question.get_type_name(),
-        correct_answer=question.answer,
+        correct_answer=question.answer_text(),
         wrong_answer=wrong_answer,
     )
     records.append(record)

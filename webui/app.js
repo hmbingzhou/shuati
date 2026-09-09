@@ -67,8 +67,9 @@ function badgeHtml(label) {
 function ansShow(q, answer) {
   /* 答案的人类可读形式 */
   const ans = String(answer == null ? "" : answer);
-  if (q && q.type === "判断题") return ans === "正确" ? "正确" : "错误";
-  if (q && q.type === "选择题") {
+  const t = q && q.type;
+  if (t === "判断题") return ans === "正确" ? "正确" : "错误";
+  if (t === "单选题" || t === "多选题") {
     const letters = ans.toUpperCase().replace(/\s/g, "").split("").filter(Boolean);
     return letters.join("、");
   }
@@ -683,7 +684,7 @@ function renderPracticeQuestion(view, p) {
         <span style="margin-left:auto"></span>
         ${flagHtml(q)}
       </div>
-      <div class="q-text">${renderRichText(q.text)}</div>
+      <div class="q-text">${questionBodyHtml(q)}</div>
       ${isReview ? '<div id="review-body"></div>' : '<div id="answer-area"></div><div id="feedback-area"></div><div id="action-area"></div>'}
     </div>
     <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
@@ -717,8 +718,26 @@ function renderPracticeQuestion(view, p) {
   buildAnswerArea(view, p, q);
 }
 
+/* 用户答案的可读拼接（填空多空 / 数组） */
+function fmtUserAnswer(val) {
+  if (Array.isArray(val)) return val.map((v) => (v === "" ? "（空）" : v)).join(" ｜ ");
+  return String(val == null ? "" : val);
+}
+
+function blankTagHtml(text) {
+  /* 题干静态展示：把空位标记 【N】 渲染成占位标签 */
+  return String(text == null ? "" : text).replace(/(【\s*\d+\s*】)/g, (m) => `<span class="blank-tag">${esc(m)}</span>`);
+}
+
+function questionBodyHtml(q) {
+  /* 题干渲染：填空题把空位标记显示为占位标签 */
+  const html = renderRichText(q.text);
+  return q.type === "填空题" ? blankTagHtml(html) : html;
+}
+
 function buildAnswerArea(view, p, q) {
   const area = $("#answer-area", view);
+  const submitAuto = (userAnswer) => submitAnswer(view, p, q, userAnswer);
 
   if (q.type === "判断题") {
     area.innerHTML = `
@@ -726,11 +745,14 @@ function buildAnswerArea(view, p, q) {
         <button class="tf-btn t" data-v="正确">✓ 正确</button>
         <button class="tf-btn f" data-v="错误">✗ 错误</button>
       </div>`;
-    $$(".tf-btn", area).forEach((b) => b.addEventListener("click", () => submitAnswer(view, p, q, b.dataset.v)));
-  } else if (q.type === "选择题" && Array.isArray(q.options) && q.options.length) {
-    const single = q.choice_type !== "multiple";
+    $$(".tf-btn", area).forEach((b) => b.addEventListener("click", () => submitAuto(b.dataset.v)));
+    return;
+  }
+
+  if (q.type === "单选题" || q.type === "多选题") {
+    const single = q.type === "单选题";
     const autoSubmitSingle = single && !!state.settings.choiceAutoSubmit;  // 设置：单选点击即提交
-    const opts = q.options.map(([letter, text]) => `
+    const opts = (q.options || []).map(([letter, text]) => `
       <label class="opt" data-letter="${letter}">
         <span class="opt-key">${letter}</span>
         <span class="opt-text">${renderRichText(text)}</span>
@@ -741,24 +763,21 @@ function buildAnswerArea(view, p, q) {
     area.innerHTML = `
       <div class="opt-list" id="opt-list">
         ${single && autoSubmitSingle ? '<div class="small muted" style="margin-bottom:4px">单选题：点击选项即直接提交</div>'
-          : single ? "" : '<div class="small muted" style="margin-bottom:4px">多选题：点击选择所有正确答案（至少选 2 个）后手动提交</div>'}
+          : single ? "" : '<div class="small muted" style="margin-bottom:4px">多选题：点击选择所有正确答案后手动提交</div>'}
         ${opts}
       </div>
       ${submitBtn}`;
     const list = $("#opt-list", area);
     const submit = $("#choice-submit", area);
     let sel = new Set();
-    const refreshSubmit = () => { if (submit) submit.disabled = single ? sel.size !== 1 : sel.size < 2; };
-    const tryAutoSubmit = (letter) => {
-      if (autoSubmitSingle && sel.size === 1 && !p.answered) submitAnswer(view, p, q, letter);
-    };
+    const refreshSubmit = () => { if (submit) submit.disabled = single ? sel.size !== 1 : sel.size < 1; };
     $$(".opt", list).forEach((o) => {
       o.addEventListener("click", () => {
         const letter = o.dataset.letter;
         if (single) {
           sel = new Set([letter]);
           $$(".opt", list).forEach((x) => x.classList.toggle("selected", x.dataset.letter === letter));
-          if (autoSubmitSingle) tryAutoSubmit(letter);
+          if (autoSubmitSingle) submitAuto(letter);
         } else {
           if (sel.has(letter)) { sel.delete(letter); o.classList.remove("selected"); }
           else { sel.add(letter); o.classList.add("selected"); }
@@ -768,77 +787,181 @@ function buildAnswerArea(view, p, q) {
     });
     if (submit) submit.addEventListener("click", () => {
       const ans = LETTERS.filter((l) => sel.has(l)).join("");
-      submitAnswer(view, p, q, ans);
+      if (!ans) { toast("请选择答案", "info"); return; }
+      submitAuto(ans);
     });
-  } else {
-    const isEssay = q.type === "简答题";
-    area.innerHTML = isEssay
-      ? `<textarea class="answer-input" id="fill-input" rows="4" placeholder="请输入你的答案…"></textarea>
-         <button class="btn btn-primary" id="text-submit">提交答案</button>`
-      : `<input class="answer-input" id="fill-input" placeholder="请输入答案后回车提交" autocomplete="off">
-         <button class="btn btn-primary" id="text-submit">提交答案</button>`;
+    return;
+  }
+
+  if (q.type === "填空题") {
+    if (q.wholeString) {
+      // 整串模式：一次输入完整答案（旧数据/代码输出题）
+      area.innerHTML = `<input class="answer-input" id="fill-input" placeholder="请输入完整答案后回车提交" autocomplete="off">
+        <button class="btn btn-primary" id="text-submit">提交答案</button>`;
+      const input = $("#fill-input", area);
+      const submit = $("#text-submit", area);
+      const doSubmit = () => {
+        const v = input.value.trim();
+        if (!v) { toast("请输入答案", "info"); return; }
+        submitAuto(v);
+      };
+      submit.addEventListener("click", doSubmit);
+      input.addEventListener("keydown", (e) => { if (e.key === "Enter") doSubmit(); });
+    } else {
+      const n = q.blankCount || 1;
+      let boxes = "";
+      for (let i = 1; i <= n; i++) boxes += `
+        <div class="fill-row"><span class="fill-idx">第${i}空</span>
+        <input class="answer-input" id="blank-${i}" data-blank="${i}" placeholder="填写答案" autocomplete="off" style="flex:1"></div>`;
+      area.innerHTML = `<div class="fill-list">${boxes}</div>
+        <button class="btn btn-primary" id="fill-submit" style="margin-top:8px">提交答案</button>`;
+      const submit = $("#fill-submit", area);
+      const doSubmit = () => {
+        const vals = [];
+        for (let i = 1; i <= n; i++) vals.push($(`#blank-${i}`, area).value.trim());
+        if (vals.every((v) => v === "")) { toast("请至少填写一个空", "info"); return; }
+        submitAuto(vals);
+      };
+      submit.addEventListener("click", doSubmit);
+      $$("input[data-blank]", area).forEach((el) =>
+        el.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); doSubmit(); } }));
+    }
+    return;
+  }
+
+  if (q.type === "计算题") {
+    area.innerHTML = `<input class="answer-input" id="fill-input" placeholder="请输入计算结果后回车提交" autocomplete="off">
+      <button class="btn btn-primary" id="text-submit">提交答案</button>`;
     const input = $("#fill-input", area);
     const submit = $("#text-submit", area);
     const doSubmit = () => {
       const v = input.value.trim();
       if (!v) { toast("请输入答案", "info"); return; }
-      submitAnswer(view, p, q, v);
+      submitAuto(v);
     };
     submit.addEventListener("click", doSubmit);
-    input.addEventListener("keydown", (e) => { if (!isEssay && e.key === "Enter") doSubmit(); });
+    input.addEventListener("keydown", (e) => { if (e.key === "Enter") doSubmit(); });
+    return;
   }
+
+  if (q.type === "简答题") {
+    // 简答：不自动判分，提交后展示参考答案并自评
+    area.innerHTML = `<textarea class="answer-input" id="essay-input" rows="4" placeholder="输入你的答案（支持多行）…"></textarea>
+      <button class="btn btn-primary" id="essay-submit">提交答案</button>`;
+    const submit = $("#essay-submit", area);
+    submit.addEventListener("click", async () => {
+      const v = $("#essay-input", area).value.trim();
+      if (!v) { toast("请输入答案", "info"); return; }
+      if (p.answered) return;
+      p.answered = true;
+      $$("button,input,textarea", area).forEach((el) => { el.disabled = true; });
+      let data;
+      try {
+        data = await api("POST", "/api/answer", {
+          subject: q.subject, index: q.index, answer: v, mode: p.wrong ? "wrong" : "all",
+        });
+      } catch (e) { return; }
+      const fb = $("#feedback-area", view);
+      fb.innerHTML = `
+        <div class="feedback neutral">
+          <div class="fb-title">📝 简答题（不自动判分）</div>
+          <div class="fb-line">参考答案：${esc(data.answer || "（无）")}</div>
+          <div class="fb-line">你的答案：${esc(v)}</div>
+          <div class="hint" style="margin-top:6px">请对照参考答案自行判定：</div>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button class="btn btn-primary" id="self-y">答对 ✓</button>
+            <button class="btn btn-ghost" id="self-n">答错 ✗</button>
+            <button class="btn btn-ghost" id="self-skip">跳过不计</button>
+          </div>
+        </div>`;
+      const decide = async (selfCorrect) => {
+        if (selfCorrect === null) {  // 跳过：不计统计
+          p.answered = true;
+          showNextButton(p, view);
+          return;
+        }
+        try {
+          await api("POST", "/api/answer/self", {
+            subject: q.subject, index: q.index, answer: v, selfCorrect,
+            mode: p.wrong ? "wrong" : "all",
+          });
+        } catch (e) { return; }
+        finishAnsweredResult(view, p, q, v, selfCorrect, data.answer, fb);
+      };
+      $("#self-y", view).addEventListener("click", () => decide(true));
+      $("#self-n", view).addEventListener("click", () => decide(false));
+      $("#self-skip", view).addEventListener("click", () => decide(null));
+    });
+    return;
+  }
+
+  // 兜底：文本输入（不应出现）
+  area.innerHTML = `<input class="answer-input" id="fill-input" placeholder="请输入答案" autocomplete="off">
+    <button class="btn btn-primary" id="text-submit">提交答案</button>`;
+  const input = $("#fill-input", area);
+  const submit = $("#text-submit", area);
+  const doSubmit = () => { const v = input.value.trim(); if (v) submitAuto(v); };
+  submit.addEventListener("click", doSubmit);
+  input.addEventListener("keydown", (e) => { if (e.key === "Enter") doSubmit(); });
 }
 
-async function submitAnswer(view, p, q, userAnswer) {
-  if (p.answered) return;
-  p.answered = true;
-
-  const data = await api("POST", "/api/answer", {
-    subject: q.subject, index: q.index, answer: userAnswer, mode: p.wrong ? "wrong" : "all",
-  });
-
+/* 判分结果收尾：更新统计/历史/锁定输入/显示反馈/出现“下一题” */
+function finishAnsweredResult(view, p, q, userAnswer, correct, correctText, fbEl) {
   p.stats.total += 1;
-  if (data.correct) p.stats.correct += 1; else p.stats.wrong += 1;
+  if (correct) p.stats.correct += 1; else p.stats.wrong += 1;
   const s = p.subjects[q.subject] || (p.subjects[q.subject] = { total: 0, correct: 0, wrong: 0 });
   s.total += 1;
-  if (data.correct) s.correct += 1; else s.wrong += 1;
+  if (correct) s.correct += 1; else s.wrong += 1;
+  p.history[p.pos] = { userAnswer, correct, correctAnswer: correctText };
 
-  // 记录本题作答结果，供「上一题」回看
-  p.history[p.pos] = { userAnswer, correct: data.correct, correctAnswer: data.answer };
-
-  // 锁定输入区
   const area = $("#answer-area", view);
   $$("button,input,textarea", area).forEach((el) => { el.disabled = true; });
-
   if (q.type === "判断题") {
-    const correctVal = data.answer === "正确" ? "正确" : "错误";
+    const correctVal = correctText === "正确" ? "正确" : "错误";
     $$(".tf-btn", area).forEach((b) => {
       const v = b.dataset.v;
       if (v === correctVal) b.classList.add("correct");
-      else if (v === userAnswer) b.classList.add("wrong");
+      else if (v === fmtUserAnswer(userAnswer)) b.classList.add("wrong");
     });
-  } else if (q.type === "选择题") {
-    const ansSet = new Set((data.answer || "").toUpperCase().replace(/\s/g, "").split("").filter(Boolean));
-    const userSet = new Set((userAnswer || "").toUpperCase().split("").filter(Boolean));
+  } else if (q.type === "单选题" || q.type === "多选题") {
+    const ansSet = new Set(String(correctText || "").toUpperCase().replace(/\s/g, "").split("").filter(Boolean));
+    const userSet = new Set(String(userAnswer || "").toUpperCase().split("").filter(Boolean));
     $$(".opt", area).forEach((o) => {
       const letter = o.dataset.letter;
       if (ansSet.has(letter)) o.classList.add("correct");
       if (userSet.has(letter) && !ansSet.has(letter)) o.classList.add("wrong");
     });
   }
+  if (fbEl) {
+    fbEl.innerHTML = `
+      <div class="feedback ${correct ? "correct" : "wrong"}">
+        <div class="fb-title">${correct ? "✅ 回答正确！" : "❌ 回答错误！"}</div>
+        ${correct ? "" : `<div class="fb-line">正确答案：<b>${esc(correctText)}</b></div>
+        <div class="fb-line">你的答案：${esc(fmtUserAnswer(userAnswer))}</div>`}
+      </div>`;
+  }
+  showNextButton(p, view);
+}
 
-  const fb = $("#feedback-area", view);
-  fb.innerHTML = `
-    <div class="feedback ${data.correct ? "correct" : "wrong"}">
-      <div class="fb-title">${data.correct ? "✅ 回答正确！" : "❌ 回答错误！"}</div>
-      ${data.correct ? "" : `<div class="fb-line">正确答案：<b>${esc(ansShow(q, data.answer))}</b></div>
-      <div class="fb-line">你的答案：${esc(userAnswer || "（未作答）")}</div>`}
-    </div>`;
-
+function showNextButton(p, view) {
   const act = $("#action-area", view);
   const last = p.pos >= p.pool.length - 1;
   act.innerHTML = `<button class="btn btn-primary" id="next-btn" style="min-width:150px">${last ? "查看结果 🏁" : "下一题 →"}</button>`;
   $("#next-btn", view).addEventListener("click", () => { p.pos += 1; p.answered = false; p.cursor = p.pos; render(); });
+}
+
+async function submitAnswer(view, p, q, userAnswer) {
+  if (p.answered) return;
+  p.answered = true;
+  const data = await api("POST", "/api/answer", {
+    subject: q.subject, index: q.index, answer: userAnswer, mode: p.wrong ? "wrong" : "all",
+  });
+  if (data.auto === false) {
+    // 简答不应走到这里（走 essay 流程）；兜底当跳过处理
+    showNextButton(p, view);
+    return;
+  }
+  finishAnsweredResult(view, p, q, userAnswer, data.correct, data.answer, $("#feedback-area", view));
 }
 
 async function finishPractice(p) {
@@ -1184,6 +1307,7 @@ async function renderLibrary(view) {
             <option value="多选题">多选题</option>
             <option value="填空题">填空题</option>
             <option value="简答题">简答题</option>
+            <option value="计算题">计算题</option>
           </select>
           <select class="answer-input" id="flag-sel" style="width:auto" title="按标记筛选">
             <option value="">全部标记</option>
@@ -1557,18 +1681,79 @@ function openQuestionDetail(item) {
   });
 }
 
-/* —— 录入 / 编辑弹窗 —— */
+/* —— 录入 / 编辑弹窗（v2：六题型 + 空位 + 图片库） —— */
+
+const Q_TYPE_NAMES = ["判断题", "单选题", "多选题", "填空题", "简答题", "计算题"];
+const BLANK_RE = /【\s*\d+\s*】/g;
+
+function countBlanks(text) {
+  const ms = String(text || "").match(BLANK_RE);
+  return ms ? ms.length : 0;
+}
+
+function insertAtCursor(ta, token) {
+  if (!ta) return;
+  const s = ta.selectionStart == null ? ta.value.length : ta.selectionStart;
+  const e = ta.selectionEnd == null ? ta.value.length : ta.selectionEnd;
+  ta.value = ta.value.slice(0, s) + token + ta.value.slice(e);
+  ta.focus();
+  const pos = s + token.length;
+  ta.setSelectionRange(pos, pos);
+}
+
+function openImagePicker(targetId, onPick) {
+  (async () => {
+    let data;
+    try { data = await api("GET", "/api/pictures"); } catch (e) { return; }
+    const imgs = (data.items || []).map((it) => `
+      <button type="button" class="pic-item" data-name="${esc(it.name)}" title="${esc(it.name)}">
+        <img src="pictures/${encodeURI(it.name)}" loading="lazy" alt="">
+        <span>${esc(it.name)}</span>
+      </button>`).join("");
+    const m = openModal(`
+      <div class="modal-head"><h3>🖼 图片库（点击插入）</h3><button class="modal-close">✕</button></div>
+      <div class="modal-body">
+        ${imgs ? `<div class="pic-grid">${imgs}</div>`
+          : '<div class="empty">pictures/ 目录还没有图片</div>'}
+      </div>
+      <div class="modal-foot"><button class="btn btn-ghost" data-act="close">关闭</button></div>`, "modal-lg");
+    $(".modal-close", m.mask).addEventListener("click", () => m.close());
+    m.mask.addEventListener("click", (e) => {
+      const el = e.target.closest("[data-name]");
+      if (el) { m.close(); onPick(el.dataset.name); }
+      else if (e.target.closest('[data-act="close"]')) m.close();
+    });
+    if (targetId) onPick = onPick; // 兼容旧调用
+  })();
+}
+
+/* 空白答案编辑行渲染 */
+function blanksEditorHtml(items, n) {
+  const arr = items || [];
+  let rows = "";
+  for (let i = 0; i < n; i++) {
+    const it = arr[i] || { accept: [], group: 0 };
+    const accept = (it.accept || []).join(" | ");
+    rows += `
+      <div class="fill-editor-row">
+        <span class="fill-idx">第${i + 1}空</span>
+        <input class="answer-input fe-accept" data-i="${i}" placeholder="可接受答案，多个用 | 分隔，如：4 | 四" value="${esc(accept)}" style="flex:1">
+        <input class="answer-input fe-group" data-i="${i}" type="number" min="0" value="${it.group ? it.group : 0}" title="可互换组号：给可互换的空填相同组号（0=按位）" style="width:110px">
+        <span class="small muted">组号(可互换)</span>
+      </div>`;
+  }
+  return rows;
+}
 
 async function openQuestionEditor(item, onSaved) {
   const ov = await getOverview();
   const allSubjects = ov.grades.flatMap((g) => g.subjects);
   const isEdit = !!item;
-  const initType = isEdit
-    ? (item.label === "单选题" || item.label === "多选题" ? item.label : item.type)
-    : "判断题";
+  const initType = isEdit ? item.type : "判断题";
+  const itemAnswer = item && item.answer;
 
   const subjectOptions = allSubjects.map((s) => `<option value="${esc(s.name)}" ${isEdit && s.name === item.subject ? "selected" : ""}>${esc(s.name)}</option>`).join("");
-  const typeOptions = ["判断题", "单选题", "多选题", "填空题", "简答题"].map((t) =>
+  const typeOptions = Q_TYPE_NAMES.map((t) =>
     `<option value="${t}" ${t === initType ? "selected" : ""}>${t}</option>`).join("");
 
   const m = openModal(`
@@ -1586,13 +1771,27 @@ async function openQuestionEditor(item, onSaved) {
       </div>
       <div class="form-group">
         <label>题干</label>
-        <textarea class="answer-input" id="q-text" rows="5" placeholder="支持多行；题干中直接写上图片文件名（如 1.png）会自动显示图片">${isEdit ? esc(item.text) : ""}</textarea>
+        <div style="margin-bottom:6px;display:flex;gap:6px;flex-wrap:wrap">
+          <button type="button" class="btn btn-ghost q-tool-btn" data-tool="blank">＋ 插入空位</button>
+          <button type="button" class="btn btn-ghost q-tool-btn" data-tool="img">🖼 插入图片</button>
+        </div>
+        <textarea class="answer-input" id="q-text" rows="5" placeholder="支持多行；填空请用【＋插入空位】插入编号空位；图片文件名写在文本中即可自动显示">${isEdit ? esc(item.text) : ""}</textarea>
+        <div class="hint" id="q-text-hint"></div>
       </div>
       <div class="form-group" id="q-options-group" style="display:none">
-        <label>选项（每行一个选项内容，自动编号 A/B/C…）</label>
+        <label>选项（每行一个选项，自动编号 A/B/C…；选项文本可含图片名）</label>
+        <div style="margin-bottom:6px"><button type="button" class="btn btn-ghost q-tool-btn" data-tool="optimg">🖼 在选项区插入图片行</button></div>
         <textarea class="answer-input" id="q-options" rows="4" placeholder="选项内容1&#10;选项内容2&#10;选项内容3"></textarea>
       </div>
-      <div class="form-group">
+      <div class="form-group" id="q-blanks-group" style="display:none">
+        <label>填空答案（每空：可接受答案用 | 分隔；组号相同的空可互换顺序）</label>
+        <div id="q-blanks"></div>
+      </div>
+      <div class="form-group" id="q-whole-group" style="display:none">
+        <label>参考答案（整串模式：按整串判定，用于代码/运行结果类题目）</label>
+        <textarea class="answer-input" id="q-whole" rows="3" placeholder="参考答案（原样输入）"></textarea>
+      </div>
+      <div class="form-group" id="q-answer-group">
         <label id="q-answer-label">答案</label>
         <div id="q-answer-input"></div>
         <div class="hint" id="q-tip"></div>
@@ -1609,106 +1808,173 @@ async function openQuestionEditor(item, onSaved) {
 
   const typeSel = $("#q-type", m.mask);
   const optGroup = $("#q-options-group", m.mask);
+  const blanksGroup = $("#q-blanks-group", m.mask);
+  const wholeGroup = $("#q-whole-group", m.mask);
   const ansWrap = $("#q-answer-input", m.mask);
   const ansLabel = $("#q-answer-label", m.mask);
   const tip = $("#q-tip", m.mask);
-
-  /* 初始填入选项（编辑时） */
+  const textTa = $("#q-text", m.mask);
   const optTa = $("#q-options", m.mask);
+  const textHint = $("#q-text-hint", m.mask);
+
+  /* 初始填入选项 */
   if (isEdit && Array.isArray(item.options)) {
     optTa.value = item.options.map(([, txt]) => txt).join("\n");
   }
 
   const currentOptionLines = () => optTa.value.split("\n").map((s) => s.trim()).filter(Boolean);
 
+  /* 填空编辑器（随题干空位数刷新） */
+  let blankItems = [];
+  function refreshBlankRows() {
+    const t = typeSel.value;
+    if (t !== "填空题") return;
+    const n = countBlanks(textTa.value);
+    textHint.textContent = n ? `已识别 ${n} 个空位。每个空的答案填写在下方。` : "还没有空位：请把光标放到要填空的位置，点「＋插入空位」。";
+    $("#q-blanks", m.mask).innerHTML = n ? blanksEditorHtml(blankItems, n) : "";
+    if (n === 0) $("#q-blanks-group", m.mask).style.display = "none";
+    else $("#q-blanks-group", m.mask).style.display = "";
+    if (blankItems.length !== n) blankItems = Array.from({ length: n }, (_, i) => blankItems[i] || { accept: [], group: 0 });
+  }
+
+  const insertBlank = () => {
+    const n = countBlanks(textTa.value);
+    insertAtCursor(textTa, `【${n + 1}】`);
+    refreshBlankRows();
+  };
+
+  $$(".q-tool-btn", m.mask).forEach((b) => b.addEventListener("click", () => {
+    const tool = b.dataset.tool;
+    if (tool === "blank") insertBlank();
+    else if (tool === "img") openImagePicker(null, (name) => insertAtCursor(textTa, name));
+    else if (tool === "optimg") openImagePicker(null, (name) => {
+      optTa.value = optTa.value ? optTa.value.replace(/\s*$/, "") + "\n" + name : name;
+      refreshAnswerUI();
+    });
+  }));
+
   function refreshAnswerUI() {
     const t = typeSel.value;
     const isChoice = t === "单选题" || t === "多选题";
     optGroup.style.display = isChoice ? "" : "none";
+    wholeGroup.style.display = t === "填空题" && isEdit && item.wholeString ? "" : "none";
+    blanksGroup.style.display = t === "填空题" ? "" : "none";
+    $("#q-answer-group", m.mask).style.display = (t === "判断题" || t === "单选题" || t === "多选题" || t === "简答题" || t === "计算题") ? "" : "none";
+    ansLabel.textContent = t === "简答题" ? "参考答案" : (t === "计算题" ? "参考答案（计算结果）" : "答案");
     const lines = isChoice ? currentOptionLines() : [];
     const letters = LETTERS.slice(0, lines.length);
 
     if (t === "判断题") {
-      ansLabel.textContent = "答案";
-      tip.textContent = "支持 正确/错误";
+      tip.textContent = "";
       ansWrap.innerHTML = `<select class="answer-input" id="q-ans" style="width:auto"><option value="正确">正确</option><option value="错误">错误</option></select>`;
     } else if (t === "单选题") {
-      ansLabel.textContent = "正确答案";
       tip.textContent = lines.length ? `有效选项：${letters.join(" / ")}` : "请先在上方输入选项";
       ansWrap.innerHTML = `<select class="answer-input" id="q-ans" style="width:auto">${letters.map((l) => `<option value="${l}">${l}</option>`).join("")}</select>`;
     } else if (t === "多选题") {
-      ansLabel.textContent = "正确答案";
       tip.textContent = "输入正确选项字母，如 ABD（至少 2 个）";
       ansWrap.innerHTML = `<input class="answer-input" id="q-ans" placeholder="如：ABD">`;
-    } else if (t === "简答题") {
-      ansLabel.textContent = "参考答案";
+    } else if (t === "简答题" || t === "计算题") {
       tip.textContent = "";
       ansWrap.innerHTML = `<textarea class="answer-input" id="q-ans" rows="3" placeholder="参考答案"></textarea>`;
-    } else {
-      ansLabel.textContent = "答案";
-      tip.textContent = "";
-      ansWrap.innerHTML = `<input class="answer-input" id="q-ans" placeholder="参考答案">`;
     }
 
-    /* 回填已存答案 */
-    if (isEdit) {
-      const ansEl = $("#q-ans", m.mask);
-      if (ansEl && item.answer) {
-        if (t === "判断题") ansEl.value = item.answer === "错误" ? "错误" : "正确";
-        else if (t === "单选题") ansEl.value = String(item.answer).trim().toUpperCase();
-        else ansEl.value = item.answer;
-      }
+    /* 回填已有答案 */
+    if (isEdit && itemAnswer !== undefined && itemAnswer !== null) {
+      if (t === "判断题") { const el = $("#q-ans", m.mask); if (el) el.value = itemAnswer === "错误" ? "错误" : "正确"; }
+      else if (t === "单选题") { const el = $("#q-ans", m.mask); if (el && typeof itemAnswer === "string") el.value = itemAnswer.trim().toUpperCase(); }
+      else if (t === "多选题") { const el = $("#q-ans", m.mask); if (el) el.value = typeof itemAnswer === "string" ? itemAnswer : (itemAnswer && itemAnswer.items ? "" : String(itemAnswer)); }
+      else if (t === "简答题" || t === "计算题") { const el = $("#q-ans", m.mask); if (el) el.value = typeof itemAnswer === "string" ? itemAnswer : ""; }
     }
+    if (t === "填空题") {
+      const wholeEl = $("#q-whole", m.mask);
+      if (wholeEl) wholeEl.value = (isEdit && item.wholeString && typeof itemAnswer === "string") ? itemAnswer : "";
+      // 载入每空答案
+      if (isEdit && !item.wholeString && itemAnswer && itemAnswer.items) {
+        blankItems = (itemAnswer.items || []).map((it) => ({
+          accept: (it.accept || []).slice(), group: it.group || 0,
+        }));
+      } else if (!isEdit) {
+        blankItems = [];
+      }
+      refreshBlankRows();
+    }
+    if (t !== "填空题") textHint.textContent = t === "填空题" ? textHint.textContent : "";
   }
   typeSel.addEventListener("change", refreshAnswerUI);
   optTa.addEventListener("input", refreshAnswerUI);
+  textTa.addEventListener("input", refreshBlankRows);
   refreshAnswerUI();
+
+  function collectBlanksFromDom() {
+    const rows = $$(".fill-editor-row", m.mask);
+    const items = [];
+    rows.forEach((row) => {
+      const i = Number($(".fe-accept", row).dataset.i);
+      const acceptRaw = $(".fe-accept", row).value;
+      const groupRaw = Number($(".fe-group", row).value) || 0;
+      const accept = acceptRaw.split("|").map((s) => s.trim()).filter(Boolean);
+      const it = { accept };
+      if (groupRaw > 0) it.group = groupRaw;
+      items[i] = it;
+    });
+    // 填满空白位置
+    const n = countBlanks(textTa.value);
+    while (items.length < n) items.push({ accept: [] });
+    return items.slice(0, n).map((it) => it || { accept: [] });
+  }
 
   function buildPayload() {
     const subject = $("#q-subject", m.mask).value;
-    const text = $("#q-text", m.mask).value.trim();
+    const text = textTa.value.trim();
     const t = typeSel.value;
     if (!subject) throw new Error("请选择科目");
     if (!text) throw new Error("题干不能为空");
+
+    if (t === "判断题") {
+      const v = ($("#q-ans", m.mask) || {}).value === "错误" ? "错误" : "正确";
+      return { subject, question: { type: "判断题", text, answer: v } };
+    }
+    if (t === "填空题") {
+      if (isEdit && item.wholeString) {
+        const whole = ($("#q-whole", m.mask) || {}).value;
+        if (!whole.trim()) throw new Error("参考答案不能为空");
+        return { subject, question: { type: "填空题", text, answer: { whole: true, items: [{ accept: [whole.trim()] }] } } };
+      }
+      const n = countBlanks(text);
+      if (n === 0) throw new Error("题干里没有空位：请用「＋插入空位」在题目中插入【N】");
+      const items = collectBlanksFromDom();
+      if (items.some((it) => !it.accept.length)) throw new Error("每个空都要填写可接受答案");
+      return { subject, question: { type: "填空题", text, answer: { items } } };
+    }
     const ansEl = $("#q-ans", m.mask);
     if (!ansEl || !String(ansEl.value).trim()) throw new Error("答案不能为空");
 
-    if (t === "判断题") {
-      const v = ansEl.value === "错误" ? "错误" : "正确";
-      return { subject, question: { type: "判断题", text, answer: v } };
+    if (t === "单选题" || t === "多选题") {
+      const lines = currentOptionLines();
+      if (lines.length === 0) throw new Error("请至少输入一个选项");
+      const options = lines.map((ln, i) => [LETTERS[i], ln.replace(/^[A-Za-z][.)、．．\s]+/, "").trim()]);
+      if (t === "多选题" && options.length < 2) throw new Error("多选题至少需要两个选项");
+      const valid = options.map(([l]) => l);
+      let answer = String(ansEl.value).trim().toUpperCase().replace(/\s/g, "");
+      if (t === "多选题") {
+        if (answer.length < 2) throw new Error("多选题至少需要两个正确答案");
+        for (const ch of answer) if (!valid.includes(ch)) throw new Error(`无效的答案选项: ${ch}`);
+        if (new Set(answer.split("")).size !== answer.length) throw new Error("答案选项不能重复");
+      } else {
+        if (!valid.includes(answer)) throw new Error(`答案必须是 ${valid.join(" / ")} 之一`);
+      }
+      return { subject, question: { type: t, text, options, answer } };
     }
-    if (t === "填空题") return { subject, question: { type: "填空题", text, answer: String(ansEl.value).trim() } };
-    if (t === "简答题") return { subject, question: { type: "简答题", text, answer: String(ansEl.value).trim() } };
-
-    /* 选择题 */
-    const lines = currentOptionLines();
-    if (lines.length === 0) throw new Error("请至少输入一个选项");
-    const options = lines.map((ln, i) => [LETTERS[i], ln.replace(/^[A-Za-z][.)、．\s]+/, "").trim()]);
-    if (t === "多选题" && options.length < 2) throw new Error("多选题至少需要两个选项");
-    const choiceType = t === "多选题" ? "multiple" : "single";
-    const valid = options.map(([l]) => l);
-    let answer = String(ansEl.value).trim().toUpperCase().replace(/\s/g, "");
-    if (choiceType === "multiple") {
-      if (answer.length < 2) throw new Error("多选题至少需要两个正确答案");
-      for (const ch of answer) if (!valid.includes(ch)) throw new Error(`无效的答案选项: ${ch}`);
-      if (new Set(answer.split("")).size !== answer.length) throw new Error("答案选项不能重复");
-    } else {
-      if (!valid.includes(answer)) throw new Error(`答案必须是 ${valid.join(" / ")} 之一`);
+    if (t === "简答题" || t === "计算题") {
+      return { subject, question: { type: t, text, answer: String(ansEl.value).trim() } };
     }
-    return {
-      subject,
-      question: {
-        type: "选择题", text, options, answer, choice_type: choiceType,
-        multiple_answers: choiceType === "multiple" ? answer.split("") : null,
-      },
-    };
+    throw new Error(`不支持的题型: ${t}`);
   }
 
   async function doSave() {
     let payload;
     try { payload = buildPayload(); } catch (e) { toast(e.message, "err"); return false; }
     if (isEdit) {
-      // 编辑时保留该题的网页标记
       payload.question.flag_star = !!item.flag_star;
       payload.question.flag_cross = !!item.flag_cross;
       await api("PUT", "/api/questions", { subject: payload.subject, index: item.index, question: payload.question });
@@ -1724,8 +1990,9 @@ async function openQuestionEditor(item, onSaved) {
     if (act === "save-continue") {
       if (await doSave()) {
         onSaved();
-        $("#q-text", m.mask).value = "";
+        textTa.value = "";
         optTa.value = "";
+        blankItems = [];
         refreshAnswerUI();
         toast("已保存，继续录入下一题", "ok");
       }
@@ -1938,7 +2205,7 @@ async function renderImport(view) {
           </select>
           <button class="btn btn-ghost" id="imp-refresh" ${flow.judgeLoading ? "disabled" : ""}>⟳ 刷新</button>
         </div>
-        <div class="hint">judge 文件名即显示名；判断题答案自动存为“正确/错误”，选择题字母数≥2 记为多选题。</div>
+        <div class="hint">judge 文件名即显示名；判断题答案自动存为“正确/错误”，选择题字母数≥2 自动记为多选题（v2 存储为 单选题/多选题）。</div>
       </div>
       <div class="form-group">
         <label>待导入的原始文本</label>
@@ -2431,7 +2698,7 @@ async function renderExamRoute(view) {
     </div>
     <div class="card q-card">
       <div class="q-head">${badgeHtml(q.label || q.type)}<span class="q-subject">${esc(q.subject)}</span><span class="q-count">题库第 ${q.index + 1} 题</span></div>
-      <div class="q-text">${renderRichText(q.text)}</div>
+      <div class="q-text">${questionBodyHtml(q)}</div>
       <div id="exam-answer-area"></div>
     </div>`;
   buildExamAnswerArea(view, ex, q);
@@ -2440,30 +2707,42 @@ async function renderExamRoute(view) {
 
 function buildExamAnswerArea(view, ex, q) {
   const area = $("#exam-answer-area", view);
-  const submitAns = async (ans) => {
-    const data = await api("POST", "/api/answer", { subject: q.subject, index: q.index, answer: ans, mode: "all", exam: true });
-    ex.answered += 1;
-    if (data.correct) ex.correct += 1;
+
+  const record = (correct, count = true) => {
+    if (count) ex.answered += 1;
+    if (correct) ex.correct += 1;
     const st = ex.perType[q.label] || (ex.perType[q.label] = { correct: 0 });
-    if (data.correct) st.correct += 1;
-    if (ex.pos + 1 >= ex.total) { ex.pos += 1; finishExam(ex); } else { ex.pos += 1; render(); }
+    if (correct) st.correct += 1;
+  };
+  const advance = async () => {
+    if (ex.pos + 1 >= ex.total) { ex.pos += 1; finishExam(ex); }
+    else { ex.pos += 1; render(); }
+  };
+  const submitAuto = async (ans) => {
+    const data = await api("POST", "/api/answer", { subject: q.subject, index: q.index, answer: ans, mode: "all", exam: true });
+    if (data.auto === false) return;
+    record(data.correct);
+    advance();
   };
 
   if (q.type === "判断题") {
     area.innerHTML = `<div class="tf-buttons">
       <button class="tf-btn t" data-v="正确">✓ 正确</button>
       <button class="tf-btn f" data-v="错误">✗ 错误</button></div>`;
-    $$(".tf-btn", area).forEach((b) => b.addEventListener("click", () => submitAns(b.dataset.v)));
-  } else if (q.type === "选择题" && Array.isArray(q.options) && q.options.length) {
-    const single = q.choice_type !== "multiple";
-    const opts = q.options.map(([letter, text]) => `
+    $$(".tf-btn", area).forEach((b) => b.addEventListener("click", () => submitAuto(b.dataset.v)));
+    return;
+  }
+
+  if (q.type === "单选题" || q.type === "多选题") {
+    const single = q.type === "单选题";
+    const opts = (q.options || []).map(([letter, text]) => `
       <label class="opt" data-letter="${letter}"><span class="opt-key">${letter}</span><span class="opt-text">${renderRichText(text)}</span></label>`).join("");
     area.innerHTML = `<div class="opt-list" id="opt-list">${opts}</div>
       <button class="btn btn-primary" id="exam-choice-submit" disabled>提交答案</button>`;
     const list = $("#opt-list", area);
     const submit = $("#exam-choice-submit", area);
     const sel = new Set();
-    const refresh = () => { submit.disabled = single ? sel.size !== 1 : sel.size < 2; };
+    const refresh = () => { submit.disabled = single ? sel.size !== 1 : sel.size < 1; };
     $$(".opt", list).forEach((o) => o.addEventListener("click", () => {
       const letter = o.dataset.letter;
       if (single) { sel.clear(); sel.add(letter); $$(".opt", list).forEach((x) => x.classList.toggle("selected", x.dataset.letter === letter)); }
@@ -2471,16 +2750,97 @@ function buildExamAnswerArea(view, ex, q) {
       else { sel.add(letter); o.classList.add("selected"); }
       refresh();
     }));
-    submit.addEventListener("click", () => submitAns(LETTERS.filter((l) => sel.has(l)).join("")));
-  } else {
-    area.innerHTML = `<input class="answer-input" id="exam-fill" placeholder="请输入答案" autocomplete="off">
+    submit.addEventListener("click", () => {
+      const ans = LETTERS.filter((l) => sel.has(l)).join("");
+      if (ans) submitAuto(ans);
+    });
+    return;
+  }
+
+  if (q.type === "填空题") {
+    if (q.wholeString) {
+      area.innerHTML = `<input class="answer-input" id="exam-fill" placeholder="请输入完整答案" autocomplete="off">
+        <button class="btn btn-primary" id="exam-text-submit">提交答案</button>`;
+      $("#exam-text-submit", area).addEventListener("click", () => {
+        const v = $("#exam-fill", area).value.trim();
+        if (v) submitAuto(v);
+      });
+      $("#exam-fill", area).addEventListener("keydown", (e) => { if (e.key === "Enter") { const v = e.target.value.trim(); if (v) submitAuto(v); } });
+    } else {
+      const n = q.blankCount || 1;
+      let boxes = "";
+      for (let i = 1; i <= n; i++) boxes += `
+        <div class="fill-row"><span class="fill-idx">第${i}空</span>
+        <input class="answer-input" id="exam-blank-${i}" placeholder="填写答案" autocomplete="off" style="flex:1"></div>`;
+      area.innerHTML = `<div class="fill-list">${boxes}</div>
+        <button class="btn btn-primary" id="exam-fill-submit" style="margin-top:8px">提交答案</button>`;
+      const doSubmit = () => {
+        const vals = [];
+        for (let i = 1; i <= n; i++) vals.push($(`#exam-blank-${i}`, area).value.trim());
+        if (vals.every((v) => v === "")) { toast("请至少填写一个空", "info"); return; }
+        submitAuto(vals);
+      };
+      $("#exam-fill-submit", area).addEventListener("click", doSubmit);
+      $$("input", area).forEach((el) => el.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); doSubmit(); } }));
+    }
+    return;
+  }
+
+  if (q.type === "计算题") {
+    area.innerHTML = `<input class="answer-input" id="exam-fill" placeholder="请输入计算结果" autocomplete="off">
       <button class="btn btn-primary" id="exam-text-submit">提交答案</button>`;
     $("#exam-text-submit", area).addEventListener("click", () => {
       const v = $("#exam-fill", area).value.trim();
-      if (v) submitAns(v);
+      if (v) submitAuto(v);
     });
-    $("#exam-fill", area).addEventListener("keydown", (e) => { if (e.key === "Enter") { const v = e.target.value.trim(); if (v) submitAns(v); } });
+    $("#exam-fill", area).addEventListener("keydown", (e) => { if (e.key === "Enter") { const v = e.target.value.trim(); if (v) submitAuto(v); } });
+    return;
   }
+
+  if (q.type === "简答题") {
+    area.innerHTML = `<textarea class="answer-input" id="exam-essay" rows="4" placeholder="输入你的答案（支持多行）…"></textarea>
+      <button class="btn btn-primary" id="exam-essay-submit">提交答案</button>`;
+    $("#exam-essay-submit", area).addEventListener("click", async () => {
+      const v = $("#exam-essay", area).value.trim();
+      if (!v) { toast("请输入答案", "info"); return; }
+      let data;
+      try {
+        data = await api("POST", "/api/answer", { subject: q.subject, index: q.index, answer: v, mode: "all", exam: true });
+      } catch (e) { return; }
+      $$("button,input,textarea", area).forEach((el) => { el.disabled = true; });
+      area.insertAdjacentHTML("beforeend", `
+        <div class="feedback neutral" style="margin-top:10px">
+          <div class="fb-line">参考答案：${esc(data.answer || "（无）")}</div>
+          <div class="hint" style="margin:6px 0">请自评：</div>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-primary" id="exam-self-y">答对 ✓</button>
+            <button class="btn btn-ghost" id="exam-self-n">答错 ✗</button>
+            <button class="btn btn-ghost" id="exam-self-skip">跳过不计</button>
+          </div>
+        </div>`);
+      const decide = async (selfCorrect) => {
+        if (selfCorrect !== null) {
+          try {
+            await api("POST", "/api/answer/self", { subject: q.subject, index: q.index, answer: v, selfCorrect, mode: "all", exam: true });
+          } catch (e) { return; }
+          record(selfCorrect);
+        }
+        advance();
+      };
+      $("#exam-self-y", view).addEventListener("click", () => decide(true));
+      $("#exam-self-n", view).addEventListener("click", () => decide(false));
+      $("#exam-self-skip", view).addEventListener("click", () => decide(null));
+    });
+    return;
+  }
+
+  // 兜底文本输入
+  area.innerHTML = `<input class="answer-input" id="exam-fill" placeholder="请输入答案" autocomplete="off">
+    <button class="btn btn-primary" id="exam-text-submit">提交答案</button>`;
+  $("#exam-text-submit", area).addEventListener("click", () => {
+    const v = $("#exam-fill", area).value.trim();
+    if (v) submitAuto(v);
+  });
 }
 
 function finishExam(ex) {
@@ -2506,7 +2866,7 @@ function renderHelp(view) {
         <h3>🎯 开始刷题</h3>
         <ul>
           <li>在<b>仪表盘</b>点击科目卡片的「开始刷题」，或点顶部「开始刷题」选择范围与模式。</li>
-          <li>支持：刷全部题目、按题型（判断/选择/填空）、仅错题复习、全部科目混合刷题。</li>
+          <li>支持：刷全部题目、按题型（判断/选择/填空）、仅错题复习、全部科目混合刷题；计算题自动判分、简答题作答后自评。</li>
           <li>每题即时判定对错；答错的自动记入错题本；错题复习中答对会自动移出错题本。</li>
           <li>中途点「退出并保存进度」，之后通过「继续答题」接着刷（终端版也能继续同一份进度）。</li>
         </ul>

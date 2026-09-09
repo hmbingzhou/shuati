@@ -1,6 +1,6 @@
 [
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国近代史的开端是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -23,12 +23,10 @@
         "D",
         "八国联军侵华战争"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国最早的一批产业工人产生在（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -51,12 +49,10 @@
         "D",
         "私人小作坊中"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "近代中国社会中最革命的阶级是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -79,12 +75,10 @@
         "D",
         "民族资产阶级"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在半殖民地半封建的中国，最主要的矛盾是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -107,12 +101,10 @@
         "D",
         "生产力和生产关系的矛盾"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "小农经济是中国封建社会的基本生产结构，其主要特征是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -135,12 +127,10 @@
         "D",
         "以个体家庭为单位并与家庭手工业相结合的官僚资本主义经济"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "帝国主义统治中国的支柱是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -163,12 +153,10 @@
         "D",
         "地方实力派"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国近代史上第一个不平等条约是（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -191,12 +179,10 @@
         "D",
         "《辛丑条约》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国封建社会的社会结构的特点是（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -219,12 +205,10 @@
         "D",
         "族权和政权相结合的宗法等级制"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本—帝国主义对中国的侵略，首先和主要的是（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -247,12 +231,10 @@
         "D",
         "政治侵略"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国近代史上割去台湾全岛的不平等条约是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -275,12 +257,10 @@
         "D",
         "《辛丑条约》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "外国在中国开设的第一家银行是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -303,12 +283,10 @@
         "D",
         "美国花旗银行"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国近代史上第一次大规模的反侵略战争是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -331,12 +309,10 @@
         "D",
         "辛亥革命"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "近代中国睁眼看世界的第一人是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -359,12 +335,10 @@
         "D",
         "马建忠"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "魏源提出“师夷长技以制夷”的思想著作是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -387,12 +361,10 @@
         "D",
         "《夷情备录》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "标志着中国近代完全沦为半殖民地半封建社会的条约是（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -415,12 +387,10 @@
         "D",
         "《辛丑条约》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "资本—帝国主义列强对中国进行经济侵略的方式，主要是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -443,12 +413,10 @@
         "D",
         "商品倾销与政治控制"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在近代中国，实现国家富强和人民富裕的前提是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -471,12 +439,10 @@
         "D",
         "进行西方式的工业革命"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "鸦片战争后，中国经济被卷入世界资本主义市场，其对中国的影响不包括（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -499,12 +465,10 @@
         "D",
         "封建地主土地所有制瓦解"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "太平天国定都天京后，进行了一系列制度建设，在政治、军事、经济、文化等方面采取了许多巩固政权的措施。其中最重要的是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -527,12 +491,10 @@
         "D",
         "北伐"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国封建社会农民战争的最高峰是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -555,12 +517,10 @@
         "D",
         "义和团运动"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "《资政新篇》是一个（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -583,12 +543,10 @@
         "D",
         "具有鲜明社会主义色彩的方案"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "洋务运动兴起于（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -611,12 +569,10 @@
         "D",
         "19世纪80年代初"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对洋务派兴办洋务事业的指导思想最先作出比较完整表述的是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -639,12 +595,10 @@
         "D",
         "左宗棠"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "洋务运动的指导思想是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -667,12 +621,10 @@
         "D",
         "“物竞天择”、“适者生存”"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "最能体现太平天国社会理想和这次农民起义特色的纲领性文件是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -695,12 +647,10 @@
         "D",
         "《原道醒世训》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国民族资产阶级登上政治舞台的第一次表演是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -723,12 +673,10 @@
         "D",
         "义和团运动"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "太平天国农民起义是一次（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -751,12 +699,10 @@
         "D",
         "反对英帝国主义统治和地主阶级压迫、剥削的正义战争"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "20世纪中国的第一次历史性巨变是（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -779,12 +725,10 @@
         "D",
         "辛亥革命"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "第一个资产阶级政党是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -807,12 +751,10 @@
         "D",
         "华兴会"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "孙中山三民主义思想的核心是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -835,12 +777,10 @@
         "D",
         "平均地权"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国历史上第一部资产阶级共和国宪法是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -863,12 +803,10 @@
         "D",
         "《中华民国宪法》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "辛亥革命的极大功绩是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -891,12 +829,10 @@
         "D",
         "使民主共和观念深入人心"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国资产阶级革命派初步形成的标志是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -919,12 +855,10 @@
         "D",
         "《革命军》发表"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "被誉为“革命军中马前卒”的（ ）写了《革命军》号召人民推翻清王朝，建立“中华共和国”",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -947,12 +881,10 @@
         "D",
         "陈天华"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "孙中山先生的三民主义是以下那些？①民主；②民生；③民族；④民权；（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -975,12 +907,10 @@
         "D",
         "①②③"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "革命派和改良派论战的内容有要不要（ ）\n①以革命手段推翻清王朝 ②推翻帝制 ③进行民主革命 ④进行社会革命",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -1003,12 +933,10 @@
         "D",
         "①②③"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "辛亥革命的失败是指（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -1031,12 +959,10 @@
         "D",
         "没有促进中国革命的向前发展"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国反帝反封建的民主革命成了世界无产阶级社会主义革命的一部分是在（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -1059,12 +985,10 @@
         "D",
         "辛亥革命后"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国新民主主义革命必须实现的首要任务是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -1087,12 +1011,10 @@
         "D",
         "反对国民党的统治"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "国民党蒋介石统治时期，在中国的社会经济生活中占优势地位的仍然是（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -1115,12 +1037,10 @@
         "D",
         "外国垄断资本"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "革命的根本问题是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -1143,12 +1063,10 @@
         "D",
         "无产阶级专政问题"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "官僚垄断资本建立的金融垄断中心是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -1171,12 +1089,10 @@
         "D",
         "中央银行"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "新文化运动兴起的标志是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -1199,12 +1115,10 @@
         "D",
         "鲁迅发表《狂人日记》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "新文化运动最重要的成果是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -1227,12 +1141,10 @@
         "D",
         "中国先进的知识分子接受了马克思主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "新旧民主主义革命的根本区别是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -1255,12 +1167,10 @@
         "D",
         "革命性质不同"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "五四运动取得初步胜利的根本原因是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -1283,12 +1193,10 @@
         "D",
         "十月革命的影响"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国共产党成立后，“中国革命的面貌焕然一新”，其“新”主要表现在：（ ）\n①以马克思主义为指导 ②以武装斗争为主要方法 ③提出彻底的反帝反封建的纲领 ④以社会主义、共产主义为远大目标",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -1311,12 +1219,10 @@
         "D",
         "①③"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中共在（ ）上提出了彻底反帝反封建的民主革命纲领。",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -1339,12 +1245,10 @@
         "D",
         "一大"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国第一个共产党早期组织成立的地点是（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -1367,12 +1271,10 @@
         "D",
         "广州"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "1924年初召开的中国国民党“一大”（ ）\n①主要讨论国民党改组问题 ②同意共产党员以个人身份加入国民党，实行党内合作 ③标志着革命统一战线的正式建立 ④国民大革命运动的开始",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -1395,12 +1297,10 @@
         "D",
         "②③"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "1924-1926年国民党的性质是（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -1423,12 +1323,10 @@
         "D",
         "官僚资产阶级政党"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "大革命给中国共产党最深刻的经验教训是必须（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -1451,12 +1349,10 @@
         "D",
         "独立自主地掌握革命的领导权"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "1927年，大革命失败后，在国民党的统治下，中国的社会性质是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -1479,12 +1375,10 @@
         "D",
         "新民主主义社会"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "1927年8月7日，中共中央在汉口秘密召开了紧急会议，确定的总方针是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -1507,12 +1401,10 @@
         "D",
         "建立农村革命根据地"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "彻底清算了大革命后期陈独秀的右倾机会主义错误是在（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -1535,12 +1427,10 @@
         "D",
         "中共七大"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于中国共产党历史上第一个土地法的说法，不正确的是（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -1563,12 +1453,10 @@
         "D",
         "存在着没收一切土地归苏维埃政府所有、禁止土地买卖等方面不适合中国农村实际的错误规定"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中华苏维埃共和国实行（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -1591,12 +1479,10 @@
         "D",
         "“三三制”"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "土地革命前中期的三次“左”倾错误不包括（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -1619,12 +1505,10 @@
         "D",
         "1935年长征途中张国焘分裂党中央的错误"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "遵义会议后，全权负责红军的军事行动新的三人团的是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -1647,12 +1531,10 @@
         "D",
         "毛泽东、周恩来、张闻天"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "毛泽东在1927年中共“八七会议”上提出了著名的论断是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -1675,12 +1557,10 @@
         "D",
         "加强调查研究是转变作风的基础一环"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "近代中国半殖民地半封建社会的性质决定了中国革命的主要形式是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -1703,12 +1583,10 @@
         "D",
         "工人运动"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "1929年，毛泽东在兴国发布第二个土地法，将“没收一切土地”改为“没收一切公共土地及地主阶级的土地”。这一原则性的改正保护了（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -1731,12 +1609,10 @@
         "D",
         "贫农的利益"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国共产党历史上第一个土地法是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -1759,12 +1635,10 @@
         "D",
         "中国土地法大纲"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "毛泽东最早深刻阐明坚持辩证唯物主义的思想路线、坚持理论联系实际的极端重要性的著作是（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -1787,12 +1661,10 @@
         "D",
         "《反对本本主义》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "遵义会议成为中共从幼稚走向成熟的标志主要是因为（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -1815,12 +1687,10 @@
         "D",
         "独立运用马克思主义原理妥善处理自身问题"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "1927年大革命失败后的中国国民党代表的是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -1843,12 +1713,10 @@
         "D",
         "民族资本家和实业家的利益"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "“九·一八”事变后，中国共产党及时发表宣言、通电，提出（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -1871,12 +1739,10 @@
         "D",
         "建立广泛的抗日民族统一战线"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国共产党发出“停止内战，一致抗日”的号召是在（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -1899,12 +1765,10 @@
         "D",
         "西安事变发生后"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "大革命时期的统一战线和抗日民族统一战线（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -1927,12 +1791,10 @@
         "D",
         "皆有各阶层广泛参加"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国共产党提出全面抗战路线，其主要内容是（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -1955,12 +1817,10 @@
         "D",
         "动员全民族一切力量，进行人民战争"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "抗战进入相持阶段后，八路军在华北给日本侵略者沉重打击的一次军事行动是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -1983,12 +1843,10 @@
         "D",
         "台儿庄战役"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于皖南事变的表述，正确的是（ ）\n①它是国民党顽固派破坏抗战的行为 ②英美支持蒋介石发动皖南事变 ③中国共产党坚决回击顽固派的进攻 ④抗日民族统一战线由此完全破裂",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -2011,12 +1869,10 @@
         "D",
         "①③④"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列关于延安整风运动的表述，不准确的是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -2039,12 +1895,10 @@
         "D",
         "为新民主主义革命在至西北胜利奠定了思想基础"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列文献明确规定毛泽东思想为中国共产党的指导思想的是（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -2067,12 +1921,10 @@
         "D",
         "中共遵义会议的决议"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "抗日战争时期，根据地政权民主建设主要体现为（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -2095,12 +1947,10 @@
         "D",
         "推行精兵简政政策"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列关于抗日战争胜利的意义评述不恰当的是（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -2123,12 +1973,10 @@
         "D",
         "结束了半殖民地的历史"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "解放战争时期，国民党统治区人民民主运动高涨的根本原因是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -2151,12 +1999,10 @@
         "D",
         "民主党派的联合斗争和人民起义遍及各地"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对第三次国内革命战争反蒋斗争第二条战线的准确表述是（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -2179,12 +2025,10 @@
         "D",
         "国统区的民主运动"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "1947年6月，中国人民解放军开始实行战略反攻的战略意图是（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -2207,12 +2051,10 @@
         "D",
         "由内线作战转向外线作战"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "人民解放战争走向胜利的历史转折点是（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -2235,12 +2077,10 @@
         "D",
         "渡江作战"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国共产党提出过渡时期的总路线，开始实施和执行第一个五年计划是在（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -2263,12 +2103,10 @@
         "D",
         "1954年"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国新民主主义革命基本胜利的标志是（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -2291,12 +2129,10 @@
         "D",
         "中华人民共和国成立"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国形成了全方位、多层次、宽领域的对外开放格局的标志是（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -2319,12 +2155,10 @@
         "D",
         "中共十五大召开"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "十年社会主义建设探索时期，我国经济建设的最大成就是（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -2347,12 +2181,10 @@
         "D",
         "外交工作最终打开新的局面，中美关系和中日关系得到改善"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "过渡时期总路线的主体是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -2375,12 +2207,10 @@
         "D",
         "对资本主义工商业的社会主义改造"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "标志着20世纪中国第二次历史性巨变的重大事件是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -2403,12 +2233,10 @@
         "D",
         "全面建设社会主义的开始"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国在社会主义改造中对资本主义工商业实行全行业公私合营后采取的赎买政策是（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -2431,12 +2259,10 @@
         "D",
         "国家资本主义"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国在对农业和手工业进行社会主义改造时采取的方针是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -2459,12 +2285,10 @@
         "D",
         "鼓励、支持、扶助"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "党的过渡时期总路线最显著的特点是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -2487,12 +2311,10 @@
         "D",
         "符合当时的基本国情，反映了新民主主义向社会主义转变的历史必然性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "我国对私人资本主义工商业进行社会主义改造的高级形式是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -2515,12 +2337,10 @@
         "D",
         "统购包销、经销代销"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "社会主义时期我国政治生活的主题是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -2543,12 +2363,10 @@
         "D",
         "解决社会主义与资本主义之间的矛盾"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以毛泽东为主要代表的中国共产党人开始探索中国自己的社会主义建设道路的标志是（ ）",
     "answer": "A",
     "subject": "中国近现代史纲要",
@@ -2571,12 +2389,10 @@
         "D",
         "《关于建国以来党的若干历史问题的决议》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "1961年1月中共八届九中全会提出的对国民经济实行调整的八字方针是（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -2599,12 +2415,10 @@
         "D",
         "调整、改革、充实、提高"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "毛泽东系统论述社会主义矛盾问题的著作是（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -2627,12 +2441,10 @@
         "D",
         "《关于正确处理人民内部矛盾的问题》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "毛泽东在探索中国社会主义建设道路过程中出现严重失误的根本原因是（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -2655,12 +2467,10 @@
         "D",
         "对“什么是社会主义，怎样建设社会主义”在思想认识上没有完全弄清楚"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "中国进入改革开放和社会主义现代化建设新时期的标志是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -2683,12 +2493,10 @@
         "D",
         "中共十二大"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "标志党和国家在指导思想上完成拨乱反正任务的是（ ）",
     "answer": "B",
     "subject": "中国近现代史纲要",
@@ -2711,12 +2519,10 @@
         "D",
         "十二届六中全会作出的《关于社会主义精神文明建设指导方针的决议》"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列会议中系统地阐述了社会主义初级阶段理论的是（ ）",
     "answer": "D",
     "subject": "中国近现代史纲要",
@@ -2739,12 +2545,10 @@
         "D",
         "中共十三大"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "把“三个代表”重要思想确立为中国共产党必须长期坚持的指导思想的会议是（ ）",
     "answer": "C",
     "subject": "中国近现代史纲要",
@@ -2767,9 +2571,7 @@
         "D",
         "中共十七大"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
     "type": "判断题",

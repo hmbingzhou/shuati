@@ -19,7 +19,7 @@ import os
 RECORDS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "records.json")
 DEFAULT_OWNER = "default"
 
-_TYPE_LABELS = ("判断题", "单选题", "多选题", "填空题", "简答题")
+_TYPE_LABELS = ("判断题", "单选题", "多选题", "填空题", "简答题", "计算题")
 
 
 def _load():

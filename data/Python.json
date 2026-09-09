@@ -1,6 +1,6 @@
 [
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下程序的运行结果是 （     ）。\n```\ni = 1\ns = 0\nwhile i < 10:\nif i % 2 == 0:\ncontinue\nelse:\ns = s + i\ni = i + 1\nprint(s)\n```",
     "answer": "D",
     "subject": "Python",
@@ -23,12 +23,10 @@
         "D",
         "程序是个死循环，无输出"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python 中，for 和 while 可以有 else 语句？",
     "answer": "C",
     "subject": "Python",
@@ -51,12 +49,10 @@
         "D",
         "for 和 while 都没有 else 语句。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在Python中运行后，b的值是    （    ）\n```\na=6\nIf a>=0:\nb=a+2\nElse:\nb=a-2\nprint (b)\n```",
     "answer": "B",
     "subject": "Python",
@@ -79,12 +75,10 @@
         "D",
         "12"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python语言语句块的标记是(      )",
     "answer": "C",
     "subject": "Python",
@@ -107,12 +101,10 @@
         "D",
         "/"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "当如下程序运行后，小新依次输入 9   2   *   程序输出结果应为（    ）\n```\na=int(input())\nb=int(input())\nc=input()\nif c=='+':\nprint(a+b)\nelif c=='-':\nprint(a-b)\nelif c=='*':\nprint(a*b)\nelif c=='/':\nprint(a/b)\nelse:\nprint(\"输入错误，请重试\")\n```",
     "answer": "A",
     "subject": "Python",
@@ -135,12 +127,10 @@
         "D",
         "4"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "if-else\n分支语句添加多个条件",
     "answer": "C",
     "subject": "Python",
@@ -163,12 +153,10 @@
         "D",
         "elseif"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面程序输入\n1\n时，输出是什么？。\n```\nnum=int(input())\na=num-1\nwhile a>1:\nif num % a == 0:\nprint(\"不是素数\")\nbreak\na=a-1\nelse:\nprint(\"是素数\")\n```",
     "answer": "B",
     "subject": "Python",
@@ -191,12 +179,10 @@
         "D",
         "出现异常"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面代码执行结束时，s的值是( )。\n```\nfor s in \"HelloWorld\":\nif s==\"W\":\nbreak\nprint(s,end=\"\")\n```",
     "answer": "C",
     "subject": "Python",
@@ -219,12 +205,10 @@
         "D",
         "o"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下哪个条件表达式用于判断`x`是否在`a`和`b`之间（包含`a`和`b`）？",
     "answer": "C",
     "subject": "Python",
@@ -247,12 +231,10 @@
         "D",
         "x > a or x < b"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下程序的运行结果是（）\n```\na='0123456789'\nb=list(a)\ns=[]\nfor x in b:\nif x:\ns=s+[x]\nprint(s)\n```",
     "answer": "A",
     "subject": "Python",
@@ -275,12 +257,10 @@
         "D",
         "以上都不对"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "执行如下代码后，下述各选项中表达式的值为False的是（）\n```\nn=3\na=[0]*n\nfor i in range(n):\na[i]=[0]*i\n```",
     "answer": "D",
     "subject": "Python",
@@ -303,12 +283,10 @@
         "D",
         "[0, 0, 0]  in a"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "若执行以下代码块，则列表b为：\n```\na=['Man','what can I say','Mamba','out','!']\nb=a[0::4]        #[start:stop:step]\nb.append('肘击')\n```",
     "answer": "B",
     "subject": "Python",
@@ -331,12 +309,10 @@
         "D",
         "b=['肘击','Mamba','out','!']"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "执行下列代码后，变量list2的值将改变为哪个选项？\n```\nlist1 = [1, 2, 3]\nlist2 = []\nfor element in list1:\nlist2.append(element)\nlist1 = [4, 5, 6]\n```",
     "answer": "A",
     "subject": "Python",
@@ -359,12 +335,10 @@
         "D",
         "没有；该代码无效"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下代码段的执行结果为(    )。\n```\nd={\"A\":[9,10],\"B\":[6,7,8],\"C\":[0,1,2,3,4,5],\"a\":[11]}\nprint(d[\"A\"])\n```",
     "answer": "C",
     "subject": "Python",
@@ -387,12 +361,10 @@
         "D",
         "语句出错"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "```\ndef Foo(x):\nif (x==1):\nreturn 1\nelse:\nreturn x+Foo(x-1)\nprint(Foo(4))\n```\n以上代码输出结果为？",
     "answer": "D",
     "subject": "Python",
@@ -415,12 +387,10 @@
         "D",
         "10"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列Python语句的输出结果是 （）。\n```\nd=lambda p:p*2\nt=lambda p:p*3\nx=2\nx=d(x)\nx=t(x)\nx=d(x)\nprint(x)\n```",
     "answer": "C",
     "subject": "Python",
@@ -443,12 +413,10 @@
         "D",
         "12"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列Python语句的输出结果是（   ） 。\n```\ni= map(lambda x: x**2, (1, 2, 3))\nfor t in i:\nprint(t,end=\" \")\n```",
     "answer": "A",
     "subject": "Python",
@@ -471,12 +439,10 @@
         "D",
         "9"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "```\nnumbers = [1, 3, 6]\nnewNumbers = tuple(map(lambda x: x , numbers))\nprint(newNumbers)\n```\n以上代码输出结果为？",
     "answer": "B",
     "subject": "Python",
@@ -499,12 +465,10 @@
         "D",
         "(2, 6, 12)"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "```\nls = [3,8,-3,-1,0,-2,-9]\nprint(sorted(ls, key=lambda x : abs(x)))\n```",
     "answer": "A",
     "subject": "Python",
@@ -527,12 +491,10 @@
         "D",
         "[8, 3, 0, -1, -2, -3, -9]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列程序运行输出结果为_______。\n```\nimport math\ndef factors(x):\ny=int(math.sqrt(x))\nfor i in range(2,y+1):\nif (x %i ==0):\nprint(i,end=' ');\nfactors(x//i)\nbreak\nelse:\nprint(x,end=' ')\nreturn\nfactors(18)\n```",
     "answer": "B",
     "subject": "Python",
@@ -555,12 +517,10 @@
         "D",
         "2 3 6"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "执行以下代码后输出（）。\n```\ndef pass_it(x, y):\nz = x + \", \" + y\nreturn(z)\nname2 = \"Tony\"\nname1 = \"Gaddis\"\nfullname = pass_it(name1, name2)\nprint(fullname)\n```",
     "answer": "D",
     "subject": "Python",
@@ -583,12 +543,10 @@
         "D",
         "Gaddis, Tony"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "执行以下代码后输出（）\n```\ndef pass_it(x, y):\nz = y**x\nreturn(z)\nnum1 = 3\nnum2 = 4\nanswer = pass_it(num1, num2)\nprint(answer)\n```",
     "answer": "B",
     "subject": "Python",
@@ -611,12 +569,10 @@
         "D",
         "None"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "阅读下面的代码，分析其执行结果（     ）。\n```\ndef demo(a, b, c=3, d=100):\nreturn sum([a, b, c, d])\nprint(demo(1, 2, 3, 4), end=' ')\nprint(demo(1, 2, d=3))\n```",
     "answer": "D",
     "subject": "Python",
@@ -639,12 +595,10 @@
         "D",
         "10,9"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下代码的输出是：\n```\ndef fun(a, *b):\nn = 0\nfor i in b:\nn += i\nreturn n\nres = fun(1, 3, 5, 7)\nprint(res)\n```",
     "answer": "A",
     "subject": "Python",
@@ -667,12 +621,10 @@
         "D",
         "语法错误"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "如下所示程序片段中：\n```\nclass MyClass:\ndef __init__(self):\nx = 30\n__x = 1\nself.x = 2\nself.__x = 3\n```\n其中私有属性是（）",
     "answer": "D",
     "subject": "Python",
@@ -695,12 +647,10 @@
         "D",
         "self.__x"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "```",
     "answer": "B",
     "subject": "Python",
@@ -723,12 +673,10 @@
         "D",
         "count = 101 times = 101"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "```",
     "answer": "B",
     "subject": "Python",
@@ -751,12 +699,10 @@
         "D",
         "3"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在Python中，若p是一个对象，print(p)将输出以下方法返回的字符串。",
     "answer": "B",
     "subject": "Python",
@@ -779,12 +725,10 @@
         "D",
         "__init__()"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "print(a.getY())\n```",
     "answer": "D",
     "subject": "Python",
@@ -807,12 +751,10 @@
         "D",
         "代码执行发生错误"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "```\nf=open('f.txt','w')\nf.writelines(['Python programming.'])\nf.close()\nf=open('f.txt','r')\nf.seek(10)\nprint(f.tell())\n```",
     "answer": "B",
     "subject": "Python",
@@ -835,12 +777,10 @@
         "D",
         "Python"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面语句解释器将抛出什么错误信息？\n```\ns=[1,2,3]\ny=s[3]\n```",
     "answer": "B",
     "subject": "Python",
@@ -863,12 +803,10 @@
         "D",
         "TypeError"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "异常基本结构如下：\n```\ntry:\n<语句块1>\nexcept <异常类型>:\n<语句块2>\nelse：\n<语句块3>\nfinally:  #总要被执行\n<语句块4>\n```\n其中关于“语句块4”描述正确的是（   ）：",
     "answer": "C",
     "subject": "Python",
@@ -891,12 +829,10 @@
         "D",
         "总不会被执行"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面程序的输出是什么？\n```\ntry:\nx=float(\"abc123\")\nprint(\"The conversion is completed\")\nexcept IOError:\nprint(\"This code caused an IOError\")\nexcept ValueError:\nprint(\"This code caused an ValueError\")\nexcept:\nprint(\"An error happened\")\n```",
     "answer": "D",
     "subject": "Python",
@@ -919,12 +855,10 @@
         "D",
         "This code caused an ValueError"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python语言中，以下选项返回值False的是：",
     "answer": "A",
     "subject": "Python",
@@ -947,12 +881,10 @@
         "D",
         "'words'>'Words'"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "计算表达式 1234%1000//100 的值为",
     "answer": "C",
     "subject": "Python",
@@ -975,12 +907,10 @@
         "D",
         "3"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "假设a=9,b=2,那么下列运算中，错误的是（   ）",
     "answer": "D",
     "subject": "Python",
@@ -1003,12 +933,10 @@
         "D",
         "a**b的值是18"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python中，不等号正确书写是（ ）。",
     "answer": "C",
     "subject": "Python",
@@ -1031,12 +959,10 @@
         "D",
         "?="
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "执行以下三条Python语句，x，y的值分别为（  ）。\nx=7\ny=8\nx,y=y,x",
     "answer": "D",
     "subject": "Python",
@@ -1059,12 +985,10 @@
         "D",
         "x=8,y=7"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "若x=-3,y=4, 则下列关系式结果为False的是（ ）",
     "answer": "B",
     "subject": "Python",
@@ -1087,12 +1011,10 @@
         "D",
         "x>0 or y>0"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在Python中，哪个数学运算符用于将5提升到第二次幂？",
     "answer": "B",
     "subject": "Python",
@@ -1115,12 +1037,10 @@
         "D",
         "~"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在执行语句 sold = 256.752 之后，变量sold将会是下列哪种数据类型。",
     "answer": "B",
     "subject": "Python",
@@ -1143,12 +1063,10 @@
         "D",
         "currency"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在value1=2.0 和 value2=12 的情况下，以下命令的输出是什么？\nprint(value1 * value2)",
     "answer": "C",
     "subject": "Python",
@@ -1171,12 +1089,10 @@
         "D",
         "2.0 * 12"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "已知闰年的判断条件为：能被4整除且不能被100整除；或者能被400整除。则：",
     "answer": "D",
     "subject": "Python",
@@ -1199,12 +1115,10 @@
         "D",
         "(year%4 == 0 and year%100 != 0) or year%400 == 0"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列 Python 表达式的值为偶数的是（   ）",
     "answer": "D",
     "subject": "Python",
@@ -1227,12 +1141,10 @@
         "D",
         "abs（-8）"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在python语言中表示“x属于区间[a，b）” 的正确表达式是（ ）",
     "answer": "B",
     "subject": "Python",
@@ -1255,12 +1167,10 @@
         "D",
         "a<=x or x<b"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "小平打算用python编写一个管理班上同学通讯录的程序，如果用一个变量A来对应处理同学们的电话号码，这个变量A定义成什么数据类型比较适合？（  ）。",
     "answer": "D",
     "subject": "Python",
@@ -1283,12 +1193,10 @@
         "D",
         "字符串"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "and、or和not都是（）运算符。",
     "answer": "B",
     "subject": "Python",
@@ -1311,12 +1219,10 @@
         "D",
         "三元"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面哪个逻辑运算符，使两个子表达式必须为 True 才能使复合表达式为True",
     "answer": "A",
     "subject": "Python",
@@ -1339,12 +1245,10 @@
         "D",
         "null"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在IDLE中，想要快速新建程序文件，应按什么键（）。",
     "answer": "B",
     "subject": "Python",
@@ -1367,12 +1271,10 @@
         "D",
         "Shift+N"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python程序在Windows上的扩展名是（  ）。",
     "answer": "A",
     "subject": "Python",
@@ -1395,12 +1297,10 @@
         "D",
         "jpg"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列关于Python的说法中，错误的是",
     "answer": "C",
     "subject": "Python",
@@ -1423,12 +1323,10 @@
         "D",
         "Python是一种代表简单主义思想的语言"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python 是谁设计的?",
     "answer": "A",
     "subject": "Python",
@@ -1451,12 +1349,10 @@
         "D",
         "Google"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于Python程序中与“缩进”有关的说法中，以下选项中正确的是‪‬‪‬‪‬‪‬‪‬‮‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪_____________",
     "answer": "B",
     "subject": "Python",
@@ -1479,12 +1375,10 @@
         "D",
         "缩进是非强制性的，仅为了提高代码可读性"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下选项中，不是Python语言保留字的是‪‬‪‬‪‬‪‬‪‬‮‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬_________",
     "answer": "D",
     "subject": "Python",
@@ -1507,12 +1401,10 @@
         "D",
         "int"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在IDLE中，写好程序后，想要快速执行程序，应按什么键（）。",
     "answer": "A",
     "subject": "Python",
@@ -1535,12 +1427,10 @@
         "D",
         "Shift+F5"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在命令行窗口或者终端中，退出python交互模式的命令是",
     "answer": "C",
     "subject": "Python",
@@ -1563,12 +1453,10 @@
         "D",
         "return"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面那个不是Python可以接受的变量名？",
     "answer": "D",
     "subject": "Python",
@@ -1591,12 +1479,10 @@
         "D",
         "good-name"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "print(\"120\"+\"56\")的输出结果是:(       )。",
     "answer": "C",
     "subject": "Python",
@@ -1619,12 +1505,10 @@
         "D",
         "120 56"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python语言的输出函数是(     )。",
     "answer": "B",
     "subject": "Python",
@@ -1647,12 +1531,10 @@
         "D",
         "format()"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列哪个内置函数用于读取键盘上键入的数字。",
     "answer": "A",
     "subject": "Python",
@@ -1675,12 +1557,10 @@
         "D",
         "keyboard()"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面的print语句的输出是什么？\nprint（ 'I\\'m ready to begin'）",
     "answer": "C",
     "subject": "Python",
@@ -1703,12 +1583,10 @@
         "D",
         "'I\\'m ready to begin'"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列哪一个函数读取键盘上输入的数据，并将该数据以字符串形式返回给程序。",
     "answer": "A",
     "subject": "Python",
@@ -1731,12 +1609,10 @@
         "D",
         "str_input()"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python指令a=eval(input())执行后，输入3+5。请问a的值是多少（）",
     "answer": "A",
     "subject": "Python",
@@ -1759,12 +1635,10 @@
         "D",
         "'3+5'"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "x=\"Car\",y=5,print(x+y)的输出结果是_____-。",
     "answer": "A",
     "subject": "Python",
@@ -1787,12 +1661,10 @@
         "D",
         "\"CarCarCarCarCar\""
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python 语句 a=121+1.21; print(type(a))的输出结果是_____________。",
     "answer": "B",
     "subject": "Python",
@@ -1815,12 +1687,10 @@
         "D",
         "<class ‘long’>"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下Python语句在一行内输出信息的是（）",
     "answer": "C",
     "subject": "Python",
@@ -1855,12 +1725,10 @@
         "G",
         "print(\"one\\ntwo\")"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "给出如下代码:\nx= 3.14\nprint(eval('x + 10'))\n上述代码的输出结果是______",
     "answer": "A",
     "subject": "Python",
@@ -1883,12 +1751,10 @@
         "D",
         "系统报错"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在Python中，输入2和3.5，输出5.5，以下正确的程序是：",
     "answer": "A",
     "subject": "Python",
@@ -1943,12 +1809,10 @@
         "L",
         "print(int(x+y))"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于基本输入输出函数的描述，错误的选项是：",
     "answer": "C",
     "subject": "Python",
@@ -1971,12 +1835,10 @@
         "D",
         "当print()函数输出多个变量的时候，可以用逗号分隔多个变量名"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "执行如下语句:\nx=input(  )\n若输入：\n123.5\n那么 x 的类型是（  ）。",
     "answer": "B",
     "subject": "Python",
@@ -1999,12 +1861,10 @@
         "D",
         "无正确答案"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "若有a=\"123\"，则把a转换为整数的语句正确的是(     )。",
     "answer": "C",
     "subject": "Python",
@@ -2027,12 +1887,10 @@
         "D",
         "a=(ord) a"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python语言中，以下能够正确创建整型变量a的是(    )。",
     "answer": "B",
     "subject": "Python",
@@ -2055,12 +1913,10 @@
         "D",
         "(int) a"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下对浮点数0.0和整数0描述正确的是：",
     "answer": "A",
     "subject": "Python",
@@ -2083,12 +1939,10 @@
         "D",
         "它们使用相同的硬件执行单元"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "当需要在字符串中使用特殊字符时，Python使用(     )作为转义字符。",
     "answer": "A",
     "subject": "Python",
@@ -2111,12 +1965,10 @@
         "D",
         "%"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "请问以下数据0、-99、‘1000’的数据类型分别为：（）",
     "answer": "B",
     "subject": "Python",
@@ -2139,12 +1991,10 @@
         "D",
         "整数、小数、整数"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在执行语句 price = int(68.549) 之后，变量price的值为",
     "answer": "A",
     "subject": "Python",
@@ -2167,12 +2017,10 @@
         "D",
         "68.6"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "一个布尔变量可以指哪两个值中的一个?",
     "answer": "B",
     "subject": "Python",
@@ -2195,12 +2043,10 @@
         "D",
         "Y or N"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下不合法的字符串常量有（ ）。",
     "answer": "B",
     "subject": "Python",
@@ -2223,12 +2069,10 @@
         "D",
         "'''I'm a student.'''"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python 语句 print(0xA + 0xB)的输出结果是______________。",
     "answer": "D",
     "subject": "Python",
@@ -2251,12 +2095,10 @@
         "D",
         "21"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下哪句打印出smith\\exam1\\test.txt？",
     "answer": "B",
     "subject": "Python",
@@ -2279,12 +2121,10 @@
         "D",
         "print(\"smith\"\\exam1\"\\test.txt\")"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下哪一项if语句能够判断y是否在10到50（含）范围内？",
     "answer": "C",
     "subject": "Python",
@@ -2307,12 +2147,10 @@
         "D",
         "if y >= 10 or y <= 50:"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "给定x = 5，y = 3，z = 8，以下布尔表达式的结果是什么？\nnot (x < y or z > x) and y < z",
     "answer": "B",
     "subject": "Python",
@@ -2335,12 +2173,10 @@
         "D",
         "5"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下哪种if语句可以判断choice变量是否为10以外的其他值？",
     "answer": "A",
     "subject": "Python",
@@ -2363,12 +2199,10 @@
         "D",
         "if not(choice < 10 and choice > 10):"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "如下程序的运行结果为：\nscore = 70\nif score < 70:\nif score > 60:\nprint(\"OK\")\nelse:\nprint(\"Effort\")\nelse:\nif score < 70:\nprint(\"Good\")\nelse:\nprint(\"Excellent\")",
     "answer": "D",
     "subject": "Python",
@@ -2391,12 +2225,10 @@
         "D",
         "Excellent"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面有关Python语言中if语句的描述，错误的是(     )。",
     "answer": "C",
     "subject": "Python",
@@ -2419,12 +2251,10 @@
         "D",
         "if的条件之后、else之后都需要带冒号"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "已知x=10,y=20,z=30；以下语句执行后，x,y,z的值是（    ）。\nif x<y:\nz=x\nx=y\ny=z",
     "answer": "C",
     "subject": "Python",
@@ -2447,12 +2277,10 @@
         "D",
         "20,10,30"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "sum=0\nfor i in range(100):\nif(i%10):\ncontinue\nsum=sum+i\nprint(sum)",
     "answer": "B",
     "subject": "Python",
@@ -2475,12 +2303,10 @@
         "D",
         "5050"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "count = 0\nwhile count<5:\ncount +=2",
     "answer": "A",
     "subject": "Python",
@@ -2503,12 +2329,10 @@
         "D",
         "0"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "求比10小且大于等于0的偶数，下列程序中空格处应填入（）\nx = 10\nwhile x:\nx = x-1\nif x%2!=0:\n________\nprint (x)",
     "answer": "B",
     "subject": "Python",
@@ -2531,12 +2355,10 @@
         "D",
         "False"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于下列代码段的说法，正确的是（     ）。\nk=10\nwhile k%3==0: k-=1",
     "answer": "A",
     "subject": "Python",
@@ -2559,12 +2381,10 @@
         "D",
         "以上答案都错"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "while 4 == 4:\nprint('4')\n以上代码输出的结果是？",
     "answer": "C",
     "subject": "Python",
@@ -2587,12 +2407,10 @@
         "D",
         "语法错误。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下哪一项不是无限循环语句？",
     "answer": "B",
     "subject": "Python",
@@ -2631,12 +2449,10 @@
         "H",
         "print(\"hello\")"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "如下语句执行后会输出（ ）行 \"I love python\"\ni=10\nwhile i>=0:\nprint (\"I love python\")\ni=i-1",
     "answer": "C",
     "subject": "Python",
@@ -2659,12 +2475,10 @@
         "D",
         "12"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "执行如下语句后k和s的值分别是（  ）\nk,s=5,0\nwhile k!=0:\nk=k-1\ns=s+k",
     "answer": "D",
     "subject": "Python",
@@ -2687,12 +2501,10 @@
         "D",
         "0、  10"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面哪个语句不能完成1到10的累加功能, total初值为0（  ）。",
     "answer": "A",
     "subject": "Python",
@@ -2715,12 +2527,10 @@
         "D",
         "for i in (10,9,8,7,6,5,4,3,2,1):total+=i"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "如下语句\nfor i in range(1,10,3):\nprint(i)\n输出几个数？",
     "answer": "C",
     "subject": "Python",
@@ -2743,12 +2553,10 @@
         "D",
         "4"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "执行以下程序，下面选项描述错误的是：\nx,y = 1,2\nwhile x < 20:\nx, y = y, x + y\nprint(x)",
     "answer": "A",
     "subject": "Python",
@@ -2771,12 +2579,10 @@
         "D",
         "输出结果包含5和2"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列Python保留字中，不用于表示分支结构的是（）。",
     "answer": "B",
     "subject": "Python",
@@ -2799,12 +2605,10 @@
         "D",
         "elif"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "实现多路分支的最佳控制结构是（）。",
     "answer": "D",
     "subject": "Python",
@@ -2827,12 +2631,10 @@
         "D",
         "if-elif-else"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下语句能正确输出“明天见！”的是：（）",
     "answer": "D",
     "subject": "Python",
@@ -2911,12 +2713,10 @@
         "R",
         "print(\"明天见！\")"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面语句中写法是正确的是：",
     "answer": "D",
     "subject": "Python",
@@ -2939,12 +2739,10 @@
         "D",
         "if a == 2:"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "若进行多条件判断，下列哪个关键字可以用于\nif-else\n分支语句添加多个条件",
     "answer": "C",
     "subject": "Python",
@@ -2967,12 +2765,10 @@
         "D",
         "elseif"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "已知 x=10,y=20;以下语句执行后,x,y的值是：\nif x < y:\nz = x\nx = y\ny = z",
     "answer": "D",
     "subject": "Python",
@@ -2995,12 +2791,10 @@
         "D",
         "20,10"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面程序段求x和y中的较大数，不正确的是（）。",
     "answer": "D",
     "subject": "Python",
@@ -3031,12 +2825,10 @@
         "F",
         "maxNum=x"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下for语句中，不能完成1～10的累加功能的是（）。",
     "answer": "A",
     "subject": "Python",
@@ -3059,12 +2851,10 @@
         "D",
         "for i in (10,9,8,7,6,5,4,3,2,1):sum+=i"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于Python中的判断条件，下面描述不正确的是（）",
     "answer": "D",
     "subject": "Python",
@@ -3087,12 +2877,10 @@
         "D",
         "while True:构成死循环，程序要禁止使用"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "程序的三种基本结构（  ）。",
     "answer": "A",
     "subject": "Python",
@@ -3115,12 +2903,10 @@
         "D",
         "过程结构，对象结构，函数结构"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于Python的分支结构，以下选项中描述错误的是（  ）。",
     "answer": "A",
     "subject": "Python",
@@ -3143,12 +2929,10 @@
         "D",
         "分支结构使用if保留字"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "顺序控制结构的程序执行过程是(  )依次执行的。",
     "answer": "A",
     "subject": "Python",
@@ -3171,12 +2955,10 @@
         "D",
         "自内而外"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在Python中，实现多分支选择结构的最佳方法是（）。",
     "answer": "C",
     "subject": "Python",
@@ -3199,12 +2981,10 @@
         "D",
         "if嵌套"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在\nif\n语句中，以下哪个符号用于表示“不等于”？",
     "answer": "A",
     "subject": "Python",
@@ -3227,12 +3007,10 @@
         "D",
         "><"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下哪个条件表达式用于判断\nx\n是否大于\ny\n且小于\nz\n？",
     "answer": "A",
     "subject": "Python",
@@ -3255,12 +3033,10 @@
         "D",
         "x > y || x < z"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下哪个条件表达式用于判断\nx\n是否是3的倍数？",
     "answer": "B",
     "subject": "Python",
@@ -3283,12 +3059,10 @@
         "D",
         "x // 3 == 0"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "判断闰年的条件是：年份能被4整除但不能被100整除，或者能被400整除。以下哪个条件表达式用于判断\nx\n是否是闰年？",
     "answer": "C",
     "subject": "Python",
@@ -3311,12 +3085,10 @@
         "D",
         "x % 4 == 0 or x % 100 == 0 and x % 400 == 0"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "可以使用逻辑运算符组合多个布尔表达式，以创建__________表达式。",
     "answer": "C",
     "subject": "Python",
@@ -3339,12 +3111,10 @@
         "D",
         "数学"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "已知x=[1,2,3,4]，执行语句x.append(5)之后，x的值是什么______。",
     "answer": "A",
     "subject": "Python",
@@ -3367,12 +3137,10 @@
         "D",
         "[5]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "表达式list(map(str, [1, 2, 3]))的值为______。",
     "answer": "D",
     "subject": "Python",
@@ -3395,12 +3163,10 @@
         "D",
         "['1', '2', '3']"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "已知有 lista = [1, 2, 3, 2]，则执行lista.reverse()之后，print(lista)的输出结果为（）。",
     "answer": "D",
     "subject": "Python",
@@ -3423,12 +3189,10 @@
         "D",
         "[2, 3, 2, 1]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "现有列表l=[1,2,3,4,5,6,7,8,9,0],那么python3解释器执行l[1::2] 的结果是",
     "answer": "B",
     "subject": "Python",
@@ -3451,12 +3215,10 @@
         "D",
         "[2, 3]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "要把5加到列表lst的末尾，应该用",
     "answer": "B",
     "subject": "Python",
@@ -3479,12 +3241,10 @@
         "D",
         "lst.addEnd(5)"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "现有 d = {},python3解释器执行d['a'] = 'b'后d 的结果是（）",
     "answer": "A",
     "subject": "Python",
@@ -3507,12 +3267,10 @@
         "D",
         "报错无法运行"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对于for i in s:......语句，以下说法不正确的是（）。",
     "answer": "C",
     "subject": "Python",
@@ -3535,12 +3293,10 @@
         "D",
         "如果s为集合，则该循环执行时，i取值会对集合中的每个元素进行遍历"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于 Python 的元组类型,以下选项中描述错误的是()。",
     "answer": "B",
     "subject": "Python",
@@ -3563,12 +3319,10 @@
         "D",
         "Python 中元组采用逗号和圆括号(可选)来表示"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "给定字典d, 以下选项中对d.items()的描述正确的是 (  )",
     "answer": "A",
     "subject": "Python",
@@ -3591,12 +3345,10 @@
         "D",
         "返回一个集合类型,每个元素是一个二元元组,包括字典d中所有键值对"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下不能创建一个字典的语句是：",
     "answer": "C",
     "subject": "Python",
@@ -3619,12 +3371,10 @@
         "D",
         "dict4 = {(1,2,3): “uestc”}"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "给定字典d,以下选项中对x in d的描述正确的是 (  )",
     "answer": "B",
     "subject": "Python",
@@ -3647,12 +3397,10 @@
         "D",
         "判断x是否是字典d中的值"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "使用元组而非列表的好处在于：",
     "answer": "C",
     "subject": "Python",
@@ -3675,12 +3423,10 @@
         "D",
         "使用元组没有任何优势。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "哪种方法或者运算符可用于连接列表？",
     "answer": "B",
     "subject": "Python",
@@ -3703,12 +3449,10 @@
         "D",
         "concat"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "哪种方法可用于列表转化为元组？",
     "answer": "B",
     "subject": "Python",
@@ -3731,12 +3475,10 @@
         "D",
         "list"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "哪种方法可用于元组转化为列表？",
     "answer": "D",
     "subject": "Python",
@@ -3759,12 +3501,10 @@
         "D",
         "list"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "执行下列代码后，变量list的值将改变为哪个选项？\nlist = [1, 2]\nlist = list * 3",
     "answer": "C",
     "subject": "Python",
@@ -3787,12 +3527,10 @@
         "D",
         "[1, 2], [1, 2], [1, 2]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "执行下列代码后，变量list的值将改变为哪个选项？\nlist = [1, 2, 3, 4]\nlist[3] = 10",
     "answer": "A",
     "subject": "Python",
@@ -3815,12 +3553,10 @@
         "D",
         "没有；该代码无效"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "已知d是个空字典，执行下列语句后，会产生错误的是（）",
     "answer": "B",
     "subject": "Python",
@@ -3843,12 +3579,10 @@
         "D",
         "1 in d"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "已知d={1  :   2,  '3'  :  4}，下列修改字典的方式中，错误的是（）",
     "answer": "D",
     "subject": "Python",
@@ -3871,12 +3605,10 @@
         "D",
         "d.get('3')=1"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "可以使用____运算符来确定一个键是否在字典中。",
     "answer": "B",
     "subject": "Python",
@@ -3899,12 +3631,10 @@
         "D",
         "?"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "你可以使用____从字典中删除元素。",
     "answer": "D",
     "subject": "Python",
@@ -3927,12 +3657,10 @@
         "D",
         "del"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "返回集合中元素个数的函数是______。",
     "answer": "B",
     "subject": "Python",
@@ -3955,12 +3683,10 @@
         "D",
         "count()"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下关于字典的说法，错误的是（     ）。",
     "answer": "C",
     "subject": "Python",
@@ -3983,12 +3709,10 @@
         "D",
         "字典中的键不能是可变类型的"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "已知x=[1, 2, 3]，y=[4, 5]，则x.append(y)后，x的值是（）。",
     "answer": "D",
     "subject": "Python",
@@ -4011,12 +3735,10 @@
         "D",
         "[1, 2, 3, [4, 5]]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "已知x=[1, 2, 3]，y=[4, 5]，则x.extend(y)后，x的值是（）。",
     "answer": "A",
     "subject": "Python",
@@ -4039,12 +3761,10 @@
         "D",
         "[1, 2, 3, [4, 5]]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "已知x=[7, 5, 8, 9, 3]，则x.reverse()后，x的值是（）。",
     "answer": "D",
     "subject": "Python",
@@ -4067,12 +3787,10 @@
         "D",
         "[3, 9, 8, 5, 7]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "已知x=[11, 20, 6, 7, 15]，则x.sort(reverse=True)后，x的值是（）。",
     "answer": "B",
     "subject": "Python",
@@ -4095,12 +3813,10 @@
         "D",
         "[15, 7, 6, 20, 11]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "已知x=[1,2,3,4]，则执行x[len(x)-1:]=[5]后，x的值是（）。",
     "answer": "B",
     "subject": "Python",
@@ -4123,12 +3839,10 @@
         "D",
         "[1, 2, 3, [5]]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "已知a=[1,2,3,4,5]，则a[-1:-3:-1]的值是（）。",
     "answer": "A",
     "subject": "Python",
@@ -4151,12 +3865,10 @@
         "D",
         "[3, 4, 5]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下选项中，a不是集合对象的是（）。",
     "answer": "A",
     "subject": "Python",
@@ -4179,12 +3891,10 @@
         "D",
         "a={10,'aaa',True}"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面程序的运行结果是什么？\nb=[1,2,3]\nb[2]=b\ns = 0\nfor row in b:\nif type(row)==list:\nfor elem in row:\ns += elem\nelse:\ns+=row\nprint(s)",
     "answer": "D",
     "subject": "Python",
@@ -4207,12 +3917,10 @@
         "D",
         "其他"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下选项中，运算结果为False的是（）。",
     "answer": "C",
     "subject": "Python",
@@ -4235,12 +3943,10 @@
         "D",
         "{1, 2, 3} < {1, 3, 2, 4}"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "已知列表x=list(range(1,6))，下列选项中可以取出最后一个元素的操作有_______",
     "answer": "C",
     "subject": "Python",
@@ -4263,12 +3969,10 @@
         "D",
         "x[len(x)]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列表达式的值不为True有（），",
     "answer": "D",
     "subject": "Python",
@@ -4291,12 +3995,10 @@
         "D",
         "[1, 2, 1] <= [ 1, 2, '3' ]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "若有一维列表a=[1,2,3,4,5,6,7,8,9,10]，则数值最小和最大的元素下标分别是( )。",
     "answer": "B",
     "subject": "Python",
@@ -4319,12 +4021,10 @@
         "D",
         "0,10"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "如果\nlist1 = [11, 12, 13, 14, 15, 4, 3, 2, 1]\n，那么以下那个是\nlist1[:-1]\n计算的结果？",
     "answer": "B",
     "subject": "Python",
@@ -4347,12 +4047,10 @@
         "D",
         "[0,11, 12, 13, 14, 15, 4, 3, 2,1,0]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下对列表a = ['a', 'b', 'c', 'd', 'e']操作不正确的是：",
     "answer": "D",
     "subject": "Python",
@@ -4375,12 +4073,10 @@
         "D",
         "a[5]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "一列表res = ['aa', 'bb']，对列表调用res.append(['cc', 'dd'])方法后，列表res的值为：",
     "answer": "B",
     "subject": "Python",
@@ -4403,12 +4099,10 @@
         "D",
         "None"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面哪个函数不能向列表中添加元素？",
     "answer": "C",
     "subject": "Python",
@@ -4431,12 +4125,10 @@
         "D",
         "extend()"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下关于列表和字符串的描述，错误的是。",
     "answer": "D",
     "subject": "Python",
@@ -4459,12 +4151,10 @@
         "D",
         "字符串是单一字符的无序组合"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "有一个\nlist1=[1,2,3,4,5,6,7,[1,2,3],2,32]\n，欲获得一个新列表，其元素为：去掉list1首尾元素，可以利用哪个表达式?",
     "answer": "C",
     "subject": "Python",
@@ -4487,12 +4177,10 @@
         "D",
         "list1[2:-2]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "列表\na=[10，20，30]\n,那么\na[::-1]\n是？",
     "answer": "D",
     "subject": "Python",
@@ -4515,12 +4203,10 @@
         "D",
         "[30,20,10]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下创建二维列表的各语句中，错误的是(    )。",
     "answer": "B",
     "subject": "Python",
@@ -4543,12 +4229,10 @@
         "D",
         "a=[[0]*4]*5"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python集合中的元素不可以是（）。",
     "answer": "D",
     "subject": "Python",
@@ -4571,12 +4255,10 @@
         "D",
         "列表"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "假设a=[1,2,11,7,4]，则a.sort()的结果为（），a.sort(reverse=True)的结果为（），a.reverse()的结果为（）。",
     "answer": "D",
     "subject": "Python",
@@ -4631,12 +4313,10 @@
         "L",
         "[4, 7, 11, 2, 1]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下选项不属于组合数据类型的是：",
     "answer": "A",
     "subject": "Python",
@@ -4659,12 +4339,10 @@
         "D",
         "集合类型"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python 不支持的数据类型有",
     "answer": "C",
     "subject": "Python",
@@ -4687,12 +4365,10 @@
         "D",
         "list"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列Python数据中,其元素可以改变的是( )",
     "answer": "A",
     "subject": "Python",
@@ -4711,12 +4387,10 @@
         "C",
         "字符串"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "集合set属于Python的（      ）。",
     "answer": "C",
     "subject": "Python",
@@ -4739,12 +4413,10 @@
         "D",
         "无序不可变序列"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python中使用（    ）符号可以对字符串类型的数据进行格式化。",
     "answer": "C",
     "subject": "Python",
@@ -4767,12 +4439,10 @@
         "D",
         "%f"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于组合数据类型的描述，正确的选项是：",
     "answer": "A",
     "subject": "Python",
@@ -4795,12 +4465,10 @@
         "D",
         "序列类型的元素可以用reverse()方法交换相邻元素的位置"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python 中使用什么符号可以对浮点类型的数据进行格式化？",
     "answer": "D",
     "subject": "Python",
@@ -4823,12 +4491,10 @@
         "D",
         "%f"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python中以下属于列表类型的是（）",
     "answer": "C",
     "subject": "Python",
@@ -4851,12 +4517,10 @@
         "D",
         "d = [1 2 3]"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于Python组合数据类型，以下选项中描述错误的是()",
     "answer": "C",
     "subject": "Python",
@@ -4879,12 +4543,10 @@
         "D",
         "Python的str、tuple和list类型都属于序列类型"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下哪个是 Python 中字典类型的正确定义？",
     "answer": "C",
     "subject": "Python",
@@ -4907,12 +4569,10 @@
         "D",
         "['key': 'value', 'key': 'value']"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下哪个函数定义正确",
     "answer": "D",
     "subject": "Python",
@@ -4959,12 +4619,10 @@
         "J",
         "pass"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面关于函数的说法，错误的是（）",
     "answer": "C",
     "subject": "Python",
@@ -4987,12 +4645,10 @@
         "D",
         "函数体中如果没有return语句，也会返回一个None值"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "num1, num2 = get_num()语句的含义是（）",
     "answer": "A",
     "subject": "Python",
@@ -5015,12 +4671,10 @@
         "D",
         "函数get_num（）将接收存储在num1和num2中的值。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "执行以下程序后将显示什么：\ndef main():\nprint(\"The answer is\", magic(5))\ndef magic(num):\nanswer = num + 2 * 10\nreturn answer\nmain()",
     "answer": "B",
     "subject": "Python",
@@ -5043,12 +4697,10 @@
         "D",
         "语句将引起语法错误"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "阅读下面的代码，分析其执行结果（     ）。",
     "answer": "D",
     "subject": "Python",
@@ -5071,12 +4723,10 @@
         "D",
         "10,9"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "导入模块的方式错误的是",
     "answer": "C",
     "subject": "Python",
@@ -5099,12 +4749,10 @@
         "D",
         "import mo as m"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下选项中，对于函数的定义错误的是 （ ）。",
     "answer": "A",
     "subject": "Python",
@@ -5127,12 +4775,10 @@
         "D",
         "def vfunc(a,b=2):"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在Python中，对于函数定义代码的理解，正确的是________.",
     "answer": "C",
     "subject": "Python",
@@ -5155,12 +4801,10 @@
         "D",
         "形参和return语句要么都存在，要么都不存在"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在一个函数中如局部变量与全局变量同名，则______.",
     "answer": "A",
     "subject": "Python",
@@ -5183,12 +4827,10 @@
         "D",
         "程序出错，不能运行"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下代码的输出是：\ndef fun(a=10, b=8, c):\nreturn a+b+c\nfun(5, 6)",
     "answer": "D",
     "subject": "Python",
@@ -5211,12 +4853,10 @@
         "D",
         "语法错误"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "假设函数头是 def f(p1,p2,p3)，以下调用函数错误的是：（）",
     "answer": "D",
     "subject": "Python",
@@ -5239,12 +4879,10 @@
         "D",
         "(30, p2 = 10,  20)"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python中，关于默认参数，正确的描述是：",
     "answer": "C",
     "subject": "Python",
@@ -5267,12 +4905,10 @@
         "D",
         "应该全部设置"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "如下程序段的输出结果是（ ）。\ndef fun(x, *y):\nprint(y)\nfun(10, 20, 30)",
     "answer": "C",
     "subject": "Python",
@@ -5295,12 +4931,10 @@
         "D",
         "语法错误"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "定义函数时，在形参前面加一个星号表示可以接收多个位置参数并存放于（     ）中。",
     "answer": "B",
     "subject": "Python",
@@ -5323,12 +4957,10 @@
         "D",
         "集合"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "定义函数时，在形参前面加两个星号表示可以接收多个关键参数并存放于（    ）中。",
     "answer": "C",
     "subject": "Python",
@@ -5351,12 +4983,10 @@
         "D",
         "集合"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "已知 f=lambda x,y:x+y, 则f([4],[1,2,3])的值是 ( ).",
     "answer": "B",
     "subject": "Python",
@@ -5379,12 +5009,10 @@
         "D",
         "10"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python语句\nf=lambda x,y:x*y\nf(12,34)\n的程序运行结果是（）。",
     "answer": "D",
     "subject": "Python",
@@ -5407,12 +5035,10 @@
         "D",
         "408"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python 语句\nf1=lambda x:x*2\nf2=lambda x:x**2\nprint(f1(f2(2)))\n的程序运行结果是（）。",
     "answer": "D",
     "subject": "Python",
@@ -5435,12 +5061,10 @@
         "D",
         "8"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于Python的lambda函数，以下选项中描述错误的是",
     "answer": "B",
     "subject": "Python",
@@ -5463,12 +5087,10 @@
         "D",
         "可以使用lambda函数定义列表的排序原则"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "使用（     ）关键字声明匿名函数。",
     "answer": "B",
     "subject": "Python",
@@ -5491,12 +5113,10 @@
         "D",
         "function"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "执行如下语句，执行结果为：(    )。\nadd=lambda x,y:x+y\nprint(add(1,2),add('1','2'))",
     "answer": "A",
     "subject": "Python",
@@ -5519,12 +5139,10 @@
         "D",
         "报错"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于lambda函数，以下选项中描述错误的是（）。",
     "answer": "D",
     "subject": "Python",
@@ -5547,12 +5165,10 @@
         "D",
         "lambda不是Python的保留字"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "print(type(lambda:3))的输出结果是",
     "answer": "A",
     "subject": "Python",
@@ -5575,12 +5191,10 @@
         "D",
         "<class 'float'>"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "（ ）函数是指直接或间接调用函数自身的函数。",
     "answer": "C",
     "subject": "Python",
@@ -5603,12 +5217,10 @@
         "D",
         "闭包"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "s2 = \"Good\"\nprint(id(s1) == id(s2))",
     "answer": "C",
     "subject": "Python",
@@ -5631,12 +5243,10 @@
         "D",
         "False False"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "class Rose(Flower):",
     "answer": "A",
     "subject": "Python",
@@ -5659,12 +5269,10 @@
         "D",
         "以上都不是"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在下面的代码行中，基类的名称是什么?\nclass Python(Course):",
     "answer": "B",
     "subject": "Python",
@@ -5687,12 +5295,10 @@
         "D",
         "以上都不是"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面哪个是定义继承了furniture类的table类的正确语法?",
     "answer": "D",
     "subject": "Python",
@@ -5715,12 +5321,10 @@
         "D",
         "class table(furniture):"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下代码段的执行结果是(    )。\nclass St:\ndef __init__(o,a,b):\no._a=a\no.__b=b\ndef setb(o,b):\no.__b=b\ndef getb(o):\nreturn o.__b\ns3=St(0,1)\nprint(s3._a)",
     "answer": "A",
     "subject": "Python",
@@ -5743,12 +5347,10 @@
         "D",
         "语句出错"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "a.__y = 45\nprint(a.getY())",
     "answer": "C",
     "subject": "Python",
@@ -5771,12 +5373,10 @@
         "D",
         "程序运行结果为45。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "根据以下的类定义和对象列表的创建，下列不能输出Iris的语句是(    )。\nclass St:\ndef __init__(obj,name,age):\nobj.name=name\nobj.age=age\ns=[St(\"John\",19),St(\"Iris\",18),St(\"Mary\",17),St(\"Jack\",16)]",
     "answer": "B",
     "subject": "Python",
@@ -5799,12 +5399,10 @@
         "D",
         "print(\"{}\".format(s[1].name))"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在类的方法定义中，可以通过表达式__访问实例变量x。",
     "answer": "B",
     "subject": "Python",
@@ -5827,12 +5425,10 @@
         "D",
         "this.x"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "定义一个类的“私有”方法，Python的惯例是使用__开始方法的名称。",
     "answer": "B",
     "subject": "Python",
@@ -5855,12 +5451,10 @@
         "D",
         "井号( # )"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "你可以使用哪种方法来确定一个对象是否是一个类的实例?",
     "answer": "A",
     "subject": "Python",
@@ -5883,12 +5477,10 @@
         "D",
         "issubclass"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "class A:\ndef __init__(self):\nself.x = 1\nself.y = 2\ndef getY(self):\nreturn self.y\na = A()\nprint(a.x, a.y)",
     "answer": "A",
     "subject": "Python",
@@ -5911,12 +5503,10 @@
         "D",
         "None None"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面代码执行后,输出内容是：\nclass A:\ndef __init__(self):\nself.x = 1\ndef getY(self):\nreturn self.y\na = A()\nprint(a.getY())",
     "answer": "D",
     "subject": "Python",
@@ -5939,12 +5529,10 @@
         "D",
         "代码执行发生错误"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面选项中，不属于面向对象要素的是______.",
     "answer": "C",
     "subject": "Python",
@@ -5967,12 +5555,10 @@
         "D",
         "继承"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在Python中，如何定义一个类的继承关系？",
     "answer": "A",
     "subject": "Python",
@@ -5995,12 +5581,10 @@
         "D",
         "class 子类名: inherits 父类名:"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "__________可以在子类中定义一个方法，然后在超类中定义一个具有相同名称的方法。",
     "answer": "C",
     "subject": "Python",
@@ -6023,12 +5607,10 @@
         "D",
         "“is a”关系"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "创建对象时会自动调用的方法是（）",
     "answer": "A",
     "subject": "Python",
@@ -6051,12 +5633,10 @@
         "D",
         "object"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于 open() 函数的文件名，以下选项中描述错误的是",
     "answer": "B",
     "subject": "Python",
@@ -6079,12 +5659,10 @@
         "D",
         "文件名可以是绝对路径"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于 Python  文件的 '+'  打开模式，以下选项中描述正确的是",
     "answer": "A",
     "subject": "Python",
@@ -6107,12 +5685,10 @@
         "D",
         "覆盖写模式"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "一般来说，Python把文件分为几种文件类型？",
     "answer": "B",
     "subject": "Python",
@@ -6135,12 +5711,10 @@
         "D",
         "3"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "哪种文件存取类型直接跳转到文件中的某段数据，而不必读取它前面的所有数据？",
     "answer": "B",
     "subject": "Python",
@@ -6163,12 +5737,10 @@
         "D",
         "文本"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "使用哪一种模式说明符，当文件已经存在时会擦除文件已有内容，当文件不存在时则会新建一个文件？",
     "answer": "A",
     "subject": "Python",
@@ -6191,12 +5763,10 @@
         "D",
         "e"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python内置函数________ 用来打开文件。",
     "answer": "A",
     "subject": "Python",
@@ -6219,12 +5789,10 @@
         "D",
         "openf()"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "文件对象的读取数据方法 read(size) 的含义是（    ）。",
     "answer": "D",
     "subject": "Python",
@@ -6247,12 +5815,10 @@
         "D",
         "从文件当前位置开始，读取指定 size 大小的数据。如果 size 为负数或者空，则读取到文件结束。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "假设文件不存在，如果使用open方法打开文件会报错，那么该文件的打开方式是下列哪种模式？",
     "answer": "A",
     "subject": "Python",
@@ -6275,12 +5841,10 @@
         "D",
         "'w+'"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "对于Python文件，以下描述正确的是：",
     "answer": "D",
     "subject": "Python",
@@ -6303,12 +5867,10 @@
         "D",
         "同一个文件可以既采用文本方式打开，也可以采用二进制方式打开"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下选项不是Python文件读操作的是：",
     "answer": "A",
     "subject": "Python",
@@ -6331,12 +5893,10 @@
         "D",
         "readline()"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python中，(  )语句是上下文管理语句，可以自动管理资源，还可以处理异常。",
     "answer": "C",
     "subject": "Python",
@@ -6359,12 +5919,10 @@
         "D",
         "assert"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python内置函数open 用_____打开文件表示写模式。",
     "answer": "A",
     "subject": "Python",
@@ -6387,12 +5945,10 @@
         "D",
         "a"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下面不属于Python文件操作方法的是（）。",
     "answer": "C",
     "subject": "Python",
@@ -6415,12 +5971,10 @@
         "D",
         "readline( )"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "属于Python读取文件中一行内容的操作是（    ）。",
     "answer": "B",
     "subject": "Python",
@@ -6443,12 +5997,10 @@
         "D",
         "read( )"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "在Python中，写文件操作时定位到某个位置所用到的方法是（    ）。",
     "answer": "C",
     "subject": "Python",
@@ -6471,12 +6023,10 @@
         "D",
         "writetext( )"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下对Python文件处理的描述中，错误的是（    ）。",
     "answer": "A",
     "subject": "Python",
@@ -6499,12 +6049,10 @@
         "D",
         "文件使用结束后可以用close()方法关闭，释放文件的使用授权。"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "表达式 writelines(lines) 能够将一个元素是字符串的列表    lines 写入文件，以下 选项中描述正确的是（错题，答案应该为A）",
     "answer": "C",
     "subject": "Python",
@@ -6527,12 +6075,10 @@
         "D",
         "列表 lines 中各元素之间默认采用空格分隔"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下哪一项是正确使用r模式打开users.txt文件？",
     "answer": "C",
     "subject": "Python",
@@ -6555,12 +6101,10 @@
         "D",
         "infile = readlines('users.txt', r)"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于seek方法描述错误的是（       ）。",
     "answer": "B",
     "subject": "Python",
@@ -6583,12 +6127,10 @@
         "D",
         "seek的第二个参数表示指定位置"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "s=[1,2,3]\ny=s[3]",
     "answer": "B",
     "subject": "Python",
@@ -6611,12 +6153,10 @@
         "D",
         "TypeError"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于try-except，哪个选项的描述是正确的？",
     "answer": "D",
     "subject": "Python",
@@ -6639,12 +6179,10 @@
         "D",
         "try-except通常用于检查用户输入的合法性、文件打开或网络获取的成功性等"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列哪个语句可以用来处理程序中的运行时错误？",
     "answer": "C",
     "subject": "Python",
@@ -6667,12 +6205,10 @@
         "D",
         "exception handler语句"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "当try语句中没有任何错误信息时，一定不会执行（     ）语句。",
     "answer": "D",
     "subject": "Python",
@@ -6695,12 +6231,10 @@
         "D",
         "except"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "以下不属于Python中异常处理结构的是（    ）。",
     "answer": "B",
     "subject": "Python",
@@ -6723,12 +6257,10 @@
         "D",
         "try-except-finally"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "Python异常处理中不会用到的关键字是（）。",
     "answer": "A",
     "subject": "Python",
@@ -6751,12 +6283,10 @@
         "D",
         "try"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "下列程序运行以后，会产生如下（    ）异常。\na",
     "answer": "B",
     "subject": "Python",
@@ -6779,12 +6309,10 @@
         "D",
         "KeyError"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
-    "type": "选择题",
+    "type": "单选题",
     "text": "关于异常，以下说法中正确的是（）",
     "answer": "A",
     "subject": "Python",
@@ -6807,9 +6335,7 @@
         "D",
         "try子句后必须有except子句"
       ]
-    ],
-    "choice_type": "single",
-    "multiple_answers": null
+    ]
   },
   {
     "type": "判断题",
@@ -8902,31 +8428,66 @@
   {
     "type": "填空题",
     "text": "（               ）字符是一个出现在字符串文本中，以反斜杠（\\）开始的特殊字符。\n【第1空(1分)】",
-    "answer": "转义",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "转义"
+          ]
+        }
+      ]
+    },
+    "subject": "Python",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "在Python中，56/5的结果为【1】",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "11.2"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "在Python中，56/5的结果为【第1空(1分)】",
-    "answer": "11.2",
+    "text": "比较字符串大小，其中‘Hello‘比‘world‘【1】。\n注：填一个字，大或小",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "小"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "比较字符串大小，其中‘Hello‘比‘world‘【第1空(1分)】。\n注：填一个字，大或小",
-    "answer": "小",
-    "subject": "Python",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "下面语句的输出结果是什么？\n【第1空(1分)】\n```\nprint(\"hello\"  'world')     #hello与world间隔两个空格\n```",
-    "answer": "helloworld",
+    "text": "下面语句的输出结果是什么？\n【1】\n```\nprint(\"hello\"  'world')     #hello与world间隔两个空格\n```",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "helloworld"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
@@ -8934,39 +8495,85 @@
   {
     "type": "填空题",
     "text": "逻辑运算符__________\n【第1空(1分)】\n可以对布尔表达式为真的值进行取反。",
-    "answer": "not",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "not"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "填空题",
     "text": "```",
-    "answer": "6",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "6"
+          ]
+        }
+      ]
+    },
+    "subject": "Python",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "执行循环：\n```\nfor i in range(1,5):\npass\n```\n后,变量 i 的值是：\n【1】",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "4"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "执行循环：\n```\nfor i in range(1,5):\npass\n```\n后,变量 i 的值是：\n【第1空(1分)】",
-    "answer": "4",
+    "text": "Python中的序列主要有三种：\n【1】\n、列表和元组。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "字符串"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "Python中的序列主要有三种：\n【第1空(1分)】\n、列表和元组。",
-    "answer": "字符串",
-    "subject": "Python",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "下面程序的输出是\n【第1空(1分)】\n。\n```\nt=1\nt,a=2,t+1\nprint(a)\n```",
-    "answer": "2",
+    "text": "下面程序的输出是\n【1】\n。\n```\nt=1\nt,a=2,t+1\nprint(a)\n```",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "2"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
@@ -8974,15 +8581,44 @@
   {
     "type": "填空题",
     "text": "以下程序的输出结果是\n【第1空(2分)】\n```\nIs = []\ndef func(a,b):\nIs.append(b)\nreturn a * b\ns = func(\"love\",2)\nprint(s,Is)\n```",
-    "answer": "lovelove [2]",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "lovelove [2]"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "填空题",
-    "text": "使用hex,oct,bin函数进行进制转换（高教社，《Python编程基础及应用》习题8-5）\n请写出下述程序的执行结果：\n```\nv =254\nprint(hex(v))\nprint(bin(v+1))\nprint(oct(v+1))\n```\n执行结果第1行：\n【第1空(0分)】\n执行结果第2行：\n【第2空(1分)】\n执行结果第3行：\n【第3空(1分)】",
-    "answer": "0xfe 0b11111111 0o377",
+    "text": "使用hex,oct,bin函数进行进制转换（高教社，《Python编程基础及应用》习题8-5）\n请写出下述程序的执行结果：\n```\nv =254\nprint(hex(v))\nprint(bin(v+1))\nprint(oct(v+1))\n```\n执行结果第1行：\n【1】\n执行结果第2行：\n【2】\n执行结果第3行：\n【3】",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "0xfe"
+          ]
+        },
+        {
+          "accept": [
+            "0b11111111"
+          ]
+        },
+        {
+          "accept": [
+            "0o377"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
@@ -8990,23 +8626,50 @@
   {
     "type": "填空题",
     "text": "下面程序输出结果是什么？\n【第1空(2分)】\n```\nclass account:\ndef __init__(self,id,balance):\nself.id=id\nself.balance=balance",
-    "answer": "def deposit(self,amount):",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "def deposit(self,amount):"
+          ]
+        }
+      ]
+    },
+    "subject": "Python",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "类的定义与使用（高教社，《Python编程基础及应用》习题9-2）\n请写出下述程序的执行结果：\n```\nfrom math import *\nclass\nCircle:\ndef __init__(self, radius =1):\nself.radius = radius\ndef getPerimeter(self):\nreturn 2 * self.radius * pi\ndef getArea(self):\nreturn self.radius *self.radius * pi\ndef setRadius(self, radius):\nself.radius = radius\na = Circle(10)\nprint\n(\"{:.1f},{:.2f}\".format(a.getPerimeter(),a.getArea()))\n```\n执行结果为：\n【1】",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "62.8,314.16"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "类的定义与使用（高教社，《Python编程基础及应用》习题9-2）\n请写出下述程序的执行结果：\n```\nfrom math import *\nclass\nCircle:\ndef __init__(self, radius =1):\nself.radius = radius\ndef getPerimeter(self):\nreturn 2 * self.radius * pi\ndef getArea(self):\nreturn self.radius *self.radius * pi\ndef setRadius(self, radius):\nself.radius = radius\na = Circle(10)\nprint\n(\"{:.1f},{:.2f}\".format(a.getPerimeter(),a.getArea()))\n```\n执行结果为：\n【第1空(2分)】",
-    "answer": "62.8,314.16",
-    "subject": "Python",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "在Python中，可以使用【第1空(2分)】关键字来声明一个类。",
-    "answer": "class",
+    "text": "在Python中，可以使用【1】关键字来声明一个类。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "class"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
@@ -9014,39 +8677,82 @@
   {
     "type": "填空题",
     "text": "有一个文本文件1.txt，内容如下：",
-    "answer": "```",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "```"
+          ]
+        }
+      ]
+    },
+    "subject": "Python",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "运行如下程序，输出结果是\n【1】\n。\n```\ntry:\nx, y = 1, 0\nz = x / y\nprint(0, end=\"\")\nexcept:\nprint(\"1\", end=\"\")\nelse:\nprint(\"2\", end=\"\")\nfinally:\nprint(\"3\", end=\"\")\n```",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "13"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "运行如下程序，输出结果是\n【第1空(2分)】\n。\n```\ntry:\nx, y = 1, 0\nz = x / y\nprint(0, end=\"\")\nexcept:\nprint(\"1\", end=\"\")\nelse:\nprint(\"2\", end=\"\")\nfinally:\nprint(\"3\", end=\"\")\n```",
-    "answer": "13",
+    "text": "若a=2,b=3,那么a**b的值为\n【1】\n。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "8"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "若a=2,b=3,那么a**b的值为\n【第1空(2分)】\n。",
-    "answer": "8",
+    "text": "Python 表达式 10 + 5//3 –True+False的值为\n【1】\n.",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "10"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "Python 表达式 10 + 5//3 –True+False的值为\n【第1空(2分)】\n.",
-    "answer": "10",
-    "subject": "Python",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "执行下列语句后的显示结果是什么?\n【第1空(2分)】\nsum = 0\nitem = 0\nwhile item < 5:\nitem += 1\nsum += item\nif sum > 4: break",
-    "answer": "print(sum)",
+    "text": "执行下列语句后的显示结果是什么?\n【1】\nsum = 0\nitem = 0\nwhile item < 5:\nitem += 1\nsum += item\nif sum > 4: break",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "print(sum)"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
@@ -9054,47 +8760,103 @@
   {
     "type": "填空题",
     "text": "有以下程序\nx = int(input('请输入第一个数：'))\ny = int(input('请输入第二个数：'))\nif x > y:\nx,y = y,x\nprint(x,y)\n程序运行时输入10〈回车〉，12〈回车〉，执行后输出结果是\n【第1空(2分)】",
-    "answer": "10 12",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "10 12"
+          ]
+        }
+      ]
+    },
+    "subject": "Python",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "根据分支的数量，分支结构可分为单分支、\n【1】\n和\n【2】\n结构。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "二分支"
+          ]
+        },
+        {
+          "accept": [
+            "多分支"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "根据分支的数量，分支结构可分为单分支、\n【第1空(1分)】\n和\n【第2空(1分)】\n结构。",
-    "answer": "二分支 多分支",
+    "text": "'abc'*2\n的结果是：\n【1】",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "abcabc"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "'abc'*2\n的结果是：\n【第1空(2分)】",
-    "answer": "abcabc",
+    "text": "sum((i**2 for i in range(10) if i%2))的值是\n【1】\n。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "165"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "sum((i**2 for i in range(10) if i%2))的值是\n【第1空(2分)】\n。",
-    "answer": "165",
+    "text": "'Zhejiang University'[:-9:-2]\n的结果是：\n【1】",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "yirv"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "'Zhejiang University'[:-9:-2]\n的结果是：\n【第1空(2分)】",
-    "answer": "yirv",
-    "subject": "Python",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "已知s=\"Python\"，那么s[2:-1]的值是\n【第1空(2分)】\n。",
-    "answer": "tho",
+    "text": "已知s=\"Python\"，那么s[2:-1]的值是\n【1】\n。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "tho"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
@@ -9102,47 +8864,98 @@
   {
     "type": "填空题",
     "text": "阅读下列Python语言程序，写出程序运行结果。\nsa = [str(i) for i in range(3)]\nprint(sa)。\n【第1空(2分)】\n。",
-    "answer": "['0', '1', '2']",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "['0', '1', '2']"
+          ]
+        }
+      ]
+    },
+    "subject": "Python",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "s = \"python\"，s.replace(\"n\",\"n程序\")执行结果为\n【1】",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "python程序"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "s = \"python\"，s.replace(\"n\",\"n程序\")执行结果为\n【第1空(2分)】",
-    "answer": "python程序",
+    "text": "6-12.下面程序的输出是\n【1】\n。\na=20\ndef func():\na=40\nprint(a,end=\" \")",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "func()"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "6-12.下面程序的输出是\n【第1空(2分)】\n。\na=20\ndef func():\na=40\nprint(a,end=\" \")",
-    "answer": "func()",
+    "text": "6-13.下面程序的运行结果是（如程序错误写\"error\"）\n【1】\n。\nb,c=3,4\ndef g_func():\na=b*c\nb=b+1\nd=a\nprint(a,b,end=\" \")\ng_func()\nprint(b,c)",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "error"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "6-13.下面程序的运行结果是（如程序错误写\"error\"）\n【第1空(2分)】\n。\nb,c=3,4\ndef g_func():\na=b*c\nb=b+1\nd=a\nprint(a,b,end=\" \")\ng_func()\nprint(b,c)",
-    "answer": "error",
+    "text": "6-14.下面程序的运行结果是（如程序错误写“error”）\n【1】\n。\nb,c=3,4\ndef g_func(d):\nglobal a\na=d*c\ng_func(b)\nprint(a)",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "12"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "6-14.下面程序的运行结果是（如程序错误写“error”）\n【第1空(2分)】\n。\nb,c=3,4\ndef g_func(d):\nglobal a\na=d*c\ng_func(b)\nprint(a)",
-    "answer": "12",
-    "subject": "Python",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "已知函数定义 def funct(x,y,z=20):return x+y+z, 那么表达式func(10,15)的值为\n【第1空(2分)】",
-    "answer": "45",
+    "text": "已知函数定义 def funct(x,y,z=20):return x+y+z, 那么表达式func(10,15)的值为\n【1】",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "45"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
@@ -9150,31 +8963,72 @@
   {
     "type": "填空题",
     "text": "已知函数定义 def func(x,y,z):return x+y-z, 那么表达式func(y=2,z=3,x=8)的值为_____\n【第1空(2分)】",
-    "answer": "7",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "7"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "填空题",
     "text": "执行下列语句后的显示结果是什么?\n【第1空(2分)】\ndef m(list):\nv = list[0]\nfor e in list:\nif v < e: v = e\nreturn v",
-    "answer": "values = [[3, 4, 5, 1], [33, 6, 1, 2]]",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "values = [[3, 4, 5, 1], [33, 6, 1, 2]]"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "填空题",
     "text": "for row in values:\nprint(m(row), end = \" \") #一个空格",
-    "answer": "5 33",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "5 33"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "填空题",
-    "text": "已知x=[1,11,111],那么执行语句x.sort(key=lambda x:len(str(x)),reverse=True)之后，x的值为。\n【第1空(2分)】",
-    "answer": "[111,11,1]",
+    "text": "已知x=[1,11,111],那么执行语句x.sort(key=lambda x:len(str(x)),reverse=True)之后，x的值为。\n【1】",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "[111,11,1]"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
@@ -9182,71 +9036,161 @@
   {
     "type": "填空题",
     "text": "表达式 map(lambda x:x+5,[1,2,3,4,5])的值为____。\n【第1空(2分)】",
-    "answer": "[6,7,8,9,10]",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "[6,7,8,9,10]"
+          ]
+        }
+      ]
+    },
+    "subject": "Python",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "表达式sum(list(range(1, 10, 3)))的值是（）\n【1】\n。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "12"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "表达式sum(list(range(1, 10, 3)))的值是（）\n【第1空(2分)】\n。",
-    "answer": "12",
+    "text": "已知s1=\"Windows10\"，s2=\"Python3.7\"，则执行result=''.join(filter(lambda x:x.isdigit(), s1+s2))之后，result的值为\n【1】\n。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "1037"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "已知s1=\"Windows10\"，s2=\"Python3.7\"，则执行result=''.join(filter(lambda x:x.isdigit(), s1+s2))之后，result的值为\n【第1空(2分)】\n。",
-    "answer": "1037",
+    "text": "已知lista=list(map(str,range(20)))，则max(lista)的值是\n【1】\n，max(lista,key=len)的值是\n【2】\n。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "9"
+          ]
+        },
+        {
+          "accept": [
+            "10"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "已知lista=list(map(str,range(20)))，则max(lista)的值是\n【第1空(1分)】\n，max(lista,key=len)的值是\n【第2空(1分)】\n。",
-    "answer": "9 10",
+    "text": "已知lista=[1,2,3,4]，则sum(map(lambda x,y:x+y,lista,reversed(lista)))的值是\n【1】\n。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "20"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "已知lista=[1,2,3,4]，则sum(map(lambda x,y:x+y,lista,reversed(lista)))的值是\n【第1空(2分)】\n。",
-    "answer": "20",
+    "text": "使用hex,oct,bin函数进行进制转换（高教社，《Python编程基础及应用》习题8-5）\n请写出下述程序的执行结果：\nv =\n254\nprint\n(\nhex\n(v))\nprint\n(\nbin\n(v+\n1\n))\nprint\n(\noct\n(v+\n1\n))\n执行结果第1行：\n【1】\n执行结果第2行：\n【2】\n执行结果第3行：\n【3】\n拼尽全力还是不会？参考B站习题讲解\n哔哩哔哩up主：\n海洋饼干叔叔\nPython课程\nPython习题\n简洁的C和C++\n作者每天分享一篇关于C/C++/Python的技术文章，学习编程不迷路。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "0xfe"
+          ]
+        },
+        {
+          "accept": [
+            "0b11111111"
+          ]
+        },
+        {
+          "accept": [
+            "0o377"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "使用hex,oct,bin函数进行进制转换（高教社，《Python编程基础及应用》习题8-5）\n请写出下述程序的执行结果：\nv =\n254\nprint\n(\nhex\n(v))\nprint\n(\nbin\n(v+\n1\n))\nprint\n(\noct\n(v+\n1\n))\n执行结果第1行：\n【第1空(0分)】\n执行结果第2行：\n【第2空(1分)】\n执行结果第3行：\n【第3空(1分)】\n拼尽全力还是不会？参考B站习题讲解\n哔哩哔哩up主：\n海洋饼干叔叔\nPython课程\nPython习题\n简洁的C和C++\n作者每天分享一篇关于C/C++/Python的技术文章，学习编程不迷路。",
-    "answer": "0xfe 0b11111111 0o377",
+    "text": "运行代码：“>>> ord(x) “ 当变量x的值为\n【1】\n时得到的运行结果为”65”。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "A"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "运行代码：“>>> ord(x) “ 当变量x的值为\n【第1空(2分)】\n时得到的运行结果为”65”。",
-    "answer": "A",
+    "text": "设有a=(1,2,3); print(len(a))运行结果是\n【1】",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "3"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "设有a=(1,2,3); print(len(a))运行结果是\n【第1空(2分)】",
-    "answer": "3",
-    "subject": "Python",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "Python提供了名称为\n【第1空(2分)】\n的构造方法，实现让类的对象完成初始化。",
-    "answer": "__init__",
+    "text": "Python提供了名称为\n【1】\n的构造方法，实现让类的对象完成初始化。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "__init__"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
@@ -9254,87 +9198,181 @@
   {
     "type": "填空题",
     "text": "要正常运行以下程序，请将代码补充完整。\nclass Person(object):\ndef __init__(\n【第1空(2分)】\n,name,gender,birth):",
-    "answer": "self.name = name",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "self.name = name"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
-    "flag_cross": false
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
   },
   {
     "type": "填空题",
     "text": "self.gender = gender",
-    "answer": "self.birth = birth",
+    "answer": {
+      "whole": true,
+      "items": [
+        {
+          "accept": [
+            "self.birth = birth"
+          ]
+        }
+      ]
+    },
+    "subject": "Python",
+    "flag_star": false,
+    "flag_cross": false,
+    "choice_type": null,
+    "multiple_answers": null
+  },
+  {
+    "type": "填空题",
+    "text": "Python语句序列：\nx='123'\nprint(isinstance(x,int))\n的运行结果为：\n【1】\n。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "False"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "Python语句序列：\nx='123'\nprint(isinstance(x,int))\n的运行结果为：\n【第1空(2分)】\n。",
-    "answer": "False",
+    "text": "打开文件对文件进行读写，操作完成后应该调用\n【1】\n方法关闭文件，以释放资源。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "close"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "打开文件对文件进行读写，操作完成后应该调用\n【第1空(2分)】\n方法关闭文件，以释放资源。",
-    "answer": "close",
+    "text": "用readlines方法把整个文件中的内容进行一次性读取，返回的是一个\n【1】\n。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "list"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "用readlines方法把整个文件中的内容进行一次性读取，返回的是一个\n【第1空(2分)】\n。",
-    "answer": "list",
+    "text": "在读写文件的过程中，\n【1】\n方法可以获取当前的读写位置。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "tell"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "在读写文件的过程中，\n【第1空(2分)】\n方法可以获取当前的读写位置。",
-    "answer": "tell",
+    "text": "在\n【1】\n模式下,解释器读取包含Python语句的文件内容并执行每条语句。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "脚本"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "在\n【第1空(2分)】\n模式下,解释器读取包含Python语句的文件内容并执行每条语句。",
-    "answer": "脚本",
+    "text": "每个Python文件都可以作为一个模块，模块的名字就是\n【1】\n的名字。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "文件"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "每个Python文件都可以作为一个模块，模块的名字就是\n【第1空(2分)】\n的名字。",
-    "answer": "文件",
+    "text": "有一个文本文件\n1.txt\n，内容如下：\n1\n22\n333\n4444\n55555\n运行如下代码：\nf = open('1.txt', 'rt')\nk = list(f)\nprint(len(k))\n输出结果是：\n【1】",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "5"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "有一个文本文件\n1.txt\n，内容如下：\n1\n22\n333\n4444\n55555\n运行如下代码：\nf = open('1.txt', 'rt')\nk = list(f)\nprint(len(k))\n输出结果是：\n【第1空(2分)】",
-    "answer": "5",
+    "text": "当使用序列中不存在的\n【1】\n时，会引发IndexError异常。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "index"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
   },
   {
     "type": "填空题",
-    "text": "当使用序列中不存在的\n【第1空(2分)】\n时，会引发IndexError异常。",
-    "answer": "index",
-    "subject": "Python",
-    "flag_star": false,
-    "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "一个try语句只能对应一个\n【第1空(2分)】\n子句。",
-    "answer": "finally",
+    "text": "一个try语句只能对应一个\n【1】\n子句。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "finally"
+          ]
+        }
+      ]
+    },
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
