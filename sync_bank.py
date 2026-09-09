@@ -100,12 +100,32 @@ def _sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
+# 需要“换行规范化”再算 hash 的文本类型。
+# 仓库按 .gitattributes 以 LF 存储/检出；若本机文件是 CRLF，必须先去 CR 再哈希，
+# 否则本机算出的 sha256 永远和远程（LF）对不上。
+CANONICAL_TEXT_EXTS = {".json", ".md", ".txt", ".py", ".js", ".css", ".html", ".csv"}
+
+
+def _canonical_bytes(data: bytes) -> bytes:
+    """把文本内容规范化为 LF（与 git eol=lf 一致）；非 UTF-8/二进制文件原样返回"""
+    ext = ""
+    try:
+        text = data.decode("utf-8")
+        if "\r\n" in text or text.startswith("\r"):
+            text = text.replace("\r\n", "\n").replace("\r", "\n")
+        return text.encode("utf-8")
+    except (UnicodeDecodeError, ValueError):
+        return data
+
+
 def _sha256_file(path: str):
-    h = hashlib.sha256()
+    """文件 sha256：扩展名在 CANONICAL_TEXT_EXTS 里的先规范化为 LF 再哈希"""
     with open(path, "rb") as f:
-        for chunk in iter(lambda: f.read(65536), b""):
-            h.update(chunk)
-    return h.hexdigest()
+        data = f.read()
+    ext = os.path.splitext(path)[1].lower()
+    if ext in CANONICAL_TEXT_EXTS:
+        data = _canonical_bytes(data)
+    return _sha256_bytes(data)
 
 
 def _ts() -> str:
@@ -587,13 +607,12 @@ def main(argv=None):
     if cmd in ("check", "--check"):
         _print_banner()
         r = check_update(verbose=True)
-        print("  " + r["summary"])
         if not r["ok"]:
             print(f"  ✗ {r.get('error')}")
             return 1
         if r["has_updates"]:
             print("  → 有可用更新，运行  python sync_bank.py update  下载。")
-        return 0 if r["ok"] else 1
+        return 0
 
     if cmd in ("update", "--update"):
         _print_banner()
@@ -601,7 +620,6 @@ def main(argv=None):
         if not r["ok"]:
             print(f"  ✗ {r.get('error')}")
             return 1
-        print("  " + r["summary"])
         return 0
 
     if cmd == "info":
