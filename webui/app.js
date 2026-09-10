@@ -103,6 +103,18 @@ function openModal(html, cls = "") {
   return { root, mask, close };
 }
 
+/* 独立叠加层弹窗：不占用 #modal-root，可在已有弹窗之上打开而不销毁它。
+   （图片选择器必须用它，否则会把正在编辑的题目弹窗顶掉） */
+function overlayDialog(html, cls = "") {
+  const mask = document.createElement("div");
+  mask.className = "modal-mask";
+  mask.innerHTML = `<div class="modal ${cls}">${html}</div>`;
+  document.body.appendChild(mask);
+  const close = () => { if (mask.parentNode) mask.remove(); };
+  mask.addEventListener("click", (e) => { if (e.target === mask) close(); });
+  return { mask, close };
+}
+
 function confirmModal({ title = "确认操作", message = "", okText = "确认", danger = false }) {
   return new Promise((resolve) => {
     const m = openModal(`
@@ -1743,7 +1755,7 @@ function openImagePicker(onPick, dir) {
         <img src="pictures/${encodeURI(it.name)}" loading="lazy" alt="">
         <span>${esc(it.name)}</span>
       </button>`).join("");
-    const m = openModal(`
+    const m = overlayDialog(`
       <div class="modal-head"><h3>${title}</h3><button class="modal-close">✕</button></div>
       <div class="modal-body">
         ${imgs ? `<div class="pic-grid" id="${gridId}">${imgs}</div>`
