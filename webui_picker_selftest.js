@@ -68,6 +68,13 @@ vm.runInContext(src, ctx, { filename: "app.js" });
 
 check("app.js 在桩环境中可加载", typeof ctx.openImagePicker === "function" && typeof ctx.overlayDialog === "function");
 
+/* 0) “添加题后配图”只能有一个按钮（题干工具栏里那个重复按钮已删除） */
+const stemBtnCount = (src.match(/data-tool="stemimg">＋ 添加题后配图<\/button>/g) || []).length;
+check("题后配图按钮只在配图区块渲染（两种状态分支各一处）", stemBtnCount === 2, { stemBtnCount });
+check("题干工具栏不再有重复的“添加到题后配图”按钮", !src.includes("＋ 添加到题后配图"));
+check("静态工具按钮绑定不再处理 stemimg", !src.includes('else if (tool === "stemimg")'));
+check("存在防重复触发锁", src.includes("stemPickLock"));
+
 /* 1) 先模拟“打开题目编辑弹窗” */
 ctx.openModal('<div id="q-text">题目编辑中</div>', "modal-lg");
 check("编辑弹窗已挂到 #modal-root", rootEl.innerHTML.includes("题目编辑中"));

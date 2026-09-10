@@ -1837,7 +1837,6 @@ async function openQuestionEditor(item, onSaved) {
         <div style="margin-bottom:6px;display:flex;gap:6px;flex-wrap:wrap">
           <button type="button" class="btn btn-ghost q-tool-btn" data-tool="blank">＋ 插入空位</button>
           <button type="button" class="btn btn-ghost q-tool-btn" data-tool="img">🖼 在光标处插入图片</button>
-          <button type="button" class="btn btn-ghost q-tool-btn" data-tool="stemimg">🖼 ＋ 添加到题后配图</button>
         </div>
         <textarea class="answer-input" id="q-text" rows="5" placeholder="支持多行；填空用【＋插入空位】；行内图以 [科目/图片名.png] 形式写在句中即可，也可放到下方题后配图">${isEdit ? esc(item.text) : ""}</textarea>
         <div class="hint" id="q-text-hint"></div>
@@ -1912,7 +1911,11 @@ async function openQuestionEditor(item, onSaved) {
          <div style="margin-top:6px"><button type="button" class="btn btn-ghost q-tool-btn" data-tool="stemimg">＋ 添加题后配图</button>
          <span class="small muted">${curSubject ? `当前科目 ${esc(curSubject)}` : "先选科目再添加"}</span></div>`;
   }
+  let stemPickLock = 0;
   const openStemPick = () => {
+    const now = Date.now();
+    if (now - stemPickLock < 400) return;  // 防止同一按钮被重复绑定/冒泡触发两次图库
+    stemPickLock = now;
     const cs = String((isEdit ? item.subject : "") || (($("#q-subject", m.mask) || {}).value || "")).trim();
     openImagePicker((name) => { if (!stemImgs.includes(name)) stemImgs.push(name); refreshStemImgs(); }, cs);
   };
@@ -1944,10 +1947,7 @@ async function openQuestionEditor(item, onSaved) {
       optTa.value = optTa.value ? optTa.value.replace(/\s*$/, "") + "\n" + `[${name}]` : `[${name}]`;
       refreshAnswerUI();
     }, curSubject);
-    else if (tool === "stemimg") openImagePicker((name) => {
-      if (!stemImgs.includes(name)) stemImgs.push(name);
-      refreshStemImgs();
-    }, curSubject);
+    /* 题后配图按钮在“题后配图”区块内动态生成，统一由下面的遮罩委托处理，避免重复绑定 */
   }));
   m.mask.addEventListener("click", (e) => {
     const rm = e.target && e.target.closest && e.target.closest("[data-rem-img]");
