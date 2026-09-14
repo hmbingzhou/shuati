@@ -13,7 +13,8 @@
 | JDK | **17 或 21**（[Temurin 17](https://adoptium.net/temurin/releases/?version=17)）；JDK 25 不被 Gradle/AGP 支持 |
 | Android SDK | `commandlinetools` + `platform-tools` + `platforms;android-35` + `build-tools;35.0.0`；**无需 NDK** |
 | Python | **3.14**（与 `app/build.gradle.kts` 的 `chaquopy.version` 一致；Chaquopy 用本机 Python 编译字节码） |
-| 网络 | 首次构建需访问 `dl.google.com`、`repo1.maven.org`、`services.gradle.org`（国内建议挂代理） |
+| 网络 | 首次构建需访问 `dl.google.com`、`repo1.maven.org`、`services.gradle.org`（国内见下方“代理与镜像”） |
+| Gradle | **8.9 及以上**（本工程不提交 wrapper 二进制，脚本会自动查找，见下方） |
 
 安装 Android SDK 的示例（Windows）：
 
@@ -26,28 +27,77 @@ setx ANDROID_HOME "D:\Android\Sdk"
 setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-17.0.12.7-hotspot"
 ```
 
-### 国内网络：sdkmanager 走代理
+### 国内网络：代理与镜像（重点）
 
-`sdkmanager` 不会自动使用 Windows“系统代理”，要显式给参数；先确认代理可用：
+Gradle 与 sdkmanager **都不会自动使用 Windows“系统代理”**，必须显式给参数。先确认代理真的能出海：
 
 ```powershell
-curl.exe -x http://127.0.0.1:7890 -s -o NUL -w "%{http_code}`n" https://dl.google.com/android/repository/repository2-3.xml
-# 返回 200 说明代理可用（端口换成你代理软件的混合端口）
+# 端口换成你代理软件的混合端口（Clash 常见 7890 / 7897）
+curl.exe -x http://127.0.0.1:7897 -s -o NUL -w "%{http_code}`n" https://dl.google.com/android/repository/repository2-3.xml
+# 200 = 可用；000 = 连不上；502 = 代理在跑但境外节点不通（要去代理软件里换节点）
 ```
+
+构建脚本内置了代理与镜像开关：
+
+```bat
+android\build_apk.bat -Proxy 127.0.0.1:7897             REM 依赖下载走代理
+android\build_apk.bat -CnMirrors                        REM 依赖走阿里云镜像（google / central / gradle-plugin）
+android\build_apk.bat -Proxy 127.0.0.1:7897 -CnMirrors  REM 两个一起用
+```
+
+不给 `-Proxy` 时脚本会尝试读取系统代理（`HKCU\...\Internet Settings`）作为默认值。
+
+sdkmanager 同样不吃系统代理，要单独传：
 
 ```powershell
 $sm = "$env:ANDROID_HOME\cmdline-tools\latest\bin\sdkmanager.bat"
-(1..50 | ForEach-Object { "y" }) | & $sm --proxy=http --proxy_host=127.0.0.1 --proxy_port=7890 --licenses
-& $sm --proxy=http --proxy_host=127.0.0.1 --proxy_port=7890 `
+(1..50 | ForEach-Object { "y" }) | & $sm --proxy=http --proxy_host=127.0.0.1 --proxy_port=7897 --licenses
+& $sm --proxy=http --proxy_host=127.0.0.1 --proxy_port=7897 `
     "platform-tools" "platforms;android-35" "build-tools;35.0.0"
 & $sm --list_installed
 ```
 
-Gradle 下载依赖若也需代理，取消 `android/gradle.properties` 里 `systemProp.*.proxy*` 四行的注释并填端口。
+### 手工下载 SDK 组件（sdkmanager 不通时的兜底）
 
-如果机器上没有 `gradlew`（本工程未提交 wrapper 二进制），二选一：
-- **Android Studio** 打开 `android/` 目录，IDE 会自动补齐 wrapper（推荐，最省事）；
-- 或安装 Gradle 8.9 后在 `android/` 下执行 `gradle wrapper --gradle-version 8.9`。
+官网直接下 zip 也行，但解压后**必须整理成 AGP 认识的固定目录名**（最容易踩的一步）：
+
+```
+<SDK>/                                   例如 D:\Work\AndroidTools
+  cmdline-tools/latest/bin/sdkmanager.bat
+  platform-tools/adb.exe                 <- platform-tools-latest-windows.zip 里内层 platform-tools/ 整个搬过来
+  platforms/android-35/android.jar       <- platform-35-ext14_r01.zip 里的 android-35/
+  platforms/android-35/source.properties
+  build-tools/35.0.0/aapt2.exe           <- build-tools_r35_windows.zip 里的 35.0.0/
+  build-tools/35.0.0/source.properties
+  licenses/android-sdk-license           <- 注意：没有 .txt 后缀！
+```
+
+- 目录名必须正好是 `platform-tools`、`platforms\android-35`、`build-tools\35.0.0`；
+  从 zip 解出来的外壳目录（`platform-tools-latest-windows\`、`platform-35-ext14_r01\`、
+  `build-tools_r35_windows\`）不能保留；
+- `licenses\android-sdk-license` 是**无扩展名**文件，内容为接受许可时写入的 SHA1 哈希（每行一个）；
+  文件名多一个 `.txt` AGP 就不认，会在自动补装组件时报“license not accepted”；
+- 自检三条：`platform-tools\adb.exe version` 能打印版本；
+  `platforms\android-35\source.properties` 里 `Platform.Version=15`；
+  `build-tools\35.0.0\source.properties` 里 `Pkg.Revision=35.0.0`。
+
+### Gradle 发行包（本工程不提交 wrapper 二进制）
+
+`build_apk.ps1` 按此顺序自动定位 Gradle：`-GradleHome` → `SHUATI_GRADLE_HOME` / `GRADLE_HOME`
+→ `D:\Work\AndroidTools\gradle-*`、`D:\Work\gradle-*`、`D:\gradle-*`、`C:\Gradle\gradle-*`
+→ PATH 上的 `gradle` → 最后才是 `android\gradlew.bat`；版本低于 8.9 会被跳过。
+
+三种补齐方式（任选其一）：
+
+1. **手工下载（推荐，和 SDK 一样）**：下载 `gradle-8.9-bin.zip` 解压到
+   `D:\Work\AndroidTools\gradle-8.9`（确保存在 `gradle-8.9\bin\gradle.bat`），脚本会自动识别；
+   若显式指定则用 `android\build_apk.bat -GradleHome D:\Work\AndroidTools\gradle-8.9`。
+   - 官方：https://services.gradle.org/distributions/gradle-8.9-bin.zip
+   - 国内：https://mirrors.cloud.tencent.com/gradle/gradle-8.9-bin.zip
+     、https://repo.huaweicloud.com/gradle/gradle-8.9-bin.zip
+2. **Android Studio** 打开 `android/` 目录后 Sync，IDE 会补齐 wrapper；
+3. 任意已有的 Gradle 8.9+ 在 `android/` 下执行
+   `gradle wrapper --gradle-version 8.9 --distribution-type bin`。
 
 ## 2. 构建 APK
 
@@ -59,13 +109,24 @@ REM 最简单：双击 android\build_apk.bat（内部已用 -ExecutionPolicy Byp
 # 命令行等价写法（本机 PowerShell 默认禁止运行脚本，必须带 Bypass）
 powershell -NoProfile -ExecutionPolicy Bypass -File android\build_apk.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File android\build_apk.ps1 -Task assembleRelease
+powershell -NoProfile -ExecutionPolicy Bypass -File android\build_apk.ps1 -Proxy 127.0.0.1:7897 -CnMirrors
 ```
+
+| 参数 | 作用 |
+|---|---|
+| `-Task assembleDebug\|assembleRelease` | 构建变体，默认 debug |
+| `-Proxy host:port` | 让 Gradle 依赖下载走代理；省略时自动读系统代理设置 |
+| `-CnMirrors` | 依赖走阿里云镜像（等价于 `-DcnMirrors=true` 或环境变量 `SHUATI_CN_MIRROR=1`） |
+| `-GradleHome <目录>` | 指定本地 Gradle 发行包目录 |
+| `-Clean` | 构建前先执行 `clean` |
+| `-SkipPrepare` | 跳过重新生成 `app/src/main/python`（调试脚本时用） |
 
 > ⚠️ 修改 `build_apk.ps1` 后请务必保存为 **UTF-8 with BOM**：
 > Windows PowerShell 5.1 对无 BOM 的 UTF-8 会按 ANSI 解码，中文注释可能被误解成引号导致语法错误。
 > `android_setup_selftest.py` 会检查脚本 BOM 与语法，提交前跑一次即可发现。
 
-脚本会：环境预检（JDK/SDK/Python/gradlew）→ 生成 `app/src/main/python`（运行时 + 种子）→
+脚本会：环境预检（JDK / SDK / Python / Gradle，其中 JDK 与 Gradle 都会自动探测，
+`JAVA_HOME` 失效或未设置也不影响）→ 生成 `app/src/main/python`（运行时 + 种子）→
 写版本号（最近 tag + 提交数）→ Gradle 构建 → 产物复制到 `dist/shuati-<版本>-<变体>.apk`。
 
 安装：
@@ -136,11 +197,12 @@ android\build_apk.bat -Task assembleRelease
   的 `abiFilters` 里加 `"x86_64"`；
 - 仅 Android；iOS 需要用 PWA（浏览器“添加到主屏幕”）连本机/局域网服务。
 
-## 5. 目录结构
+## 7. 目录结构
 
 ```
 android/
-  build_apk.ps1            一键构建脚本（含环境预检）
+  build_apk.ps1            一键构建脚本（环境预检 + 代理/镜像开关）
+  settings.gradle.kts      仓库配置（-PcnMirrors 时启用阿里云镜像）
   prepare_python_src.py    生成 app/src/main/python（运行时 + 题库种子）
   entry.py                 Python 入口：设置 SHUATI_HOME、种子复制、起服务、返回端口
   version.properties       构建时生成（已 gitignore）

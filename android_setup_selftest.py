@@ -83,6 +83,12 @@ print(json.dumps({
     "remote_ok": bool((app_info.get("remote") or {}).get("owner")),
     "seed_version": (app_info.get("seed") or {}).get("seed_version"),
 }, ensure_ascii=False))
+# 探针到此结束：WebUI 服务跑在 daemon 线程里，若让解释器正常 finalize，它会与仍在持有
+# stdout/stderr 缓冲锁的服务线程竞争，偶发 "Fatal Python error: _enter_buffered_busy"
+# 并以 0xC0000409 退出（自检因此间歇性误报）。先显式 flush，再用 os._exit 跳过 finalize。
+sys.stdout.flush()
+sys.stderr.flush()
+os._exit(0)
 """
 
 
