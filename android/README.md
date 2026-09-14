@@ -14,7 +14,7 @@
 | Android SDK | `commandlinetools` + `platform-tools` + `platforms;android-35` + `build-tools;35.0.0`；**无需 NDK** |
 | Python | **3.14**（与 `app/build.gradle.kts` 的 `chaquopy.version` 一致；Chaquopy 用本机 Python 编译字节码） |
 | 网络 | 首次构建需访问 `dl.google.com`、`repo1.maven.org`、`services.gradle.org`（国内见下方“代理与镜像”） |
-| Gradle | **8.9 及以上**（本工程不提交 wrapper 二进制，脚本会自动查找，见下方） |
+| Gradle | **8.9 及以上**；仓库已含 wrapper（`gradlew` / `gradlew.bat`），脚本仍会自动查找本地发行包 |
 
 安装 Android SDK 的示例（Windows）：
 
@@ -72,6 +72,14 @@ $sm = "$env:ANDROID_HOME\cmdline-tools\latest\bin\sdkmanager.bat"
   licenses/android-sdk-license           <- 注意：没有 .txt 后缀！
 ```
 
+- ⚠️ 平台包要下**基础包** `platform-35_r01.zip`（或更高 revision），**不要**下
+  `platform-35-ext14_r01.zip`：后者是扩展包（`AndroidVersion.IsBaseSdk=false`、
+  `AndroidVersion.ExtensionLevel=14`），会被注册成 `platforms;android-35-ext14`，
+  构建时报 `Failed to find Platform SDK with path: platforms;android-35`。
+  判断方法：`platforms\android-35\source.properties` 里应当没有 `ExtensionLevel` 且
+  `IsBaseSdk=true`；
+- build-tools 版本已在 `app/build.gradle.kts` 里显式写死为 `35.0.0`：AGP 8.7 默认要
+  34.0.0，不写死就会去 `dl.google.com` 自动下载（国内网络下会超时失败）；
 - 目录名必须正好是 `platform-tools`、`platforms\android-35`、`build-tools\35.0.0`；
   从 zip 解出来的外壳目录（`platform-tools-latest-windows\`、`platform-35-ext14_r01\`、
   `build-tools_r35_windows\`）不能保留；
@@ -81,23 +89,23 @@ $sm = "$env:ANDROID_HOME\cmdline-tools\latest\bin\sdkmanager.bat"
   `platforms\android-35\source.properties` 里 `Platform.Version=15`；
   `build-tools\35.0.0\source.properties` 里 `Pkg.Revision=35.0.0`。
 
-### Gradle 发行包（本工程不提交 wrapper 二进制）
+### Gradle 发行包
 
-`build_apk.ps1` 按此顺序自动定位 Gradle：`-GradleHome` → `SHUATI_GRADLE_HOME` / `GRADLE_HOME`
+仓库已提交 wrapper（`gradlew` / `gradlew.bat` / `gradle/wrapper/gradle-wrapper.jar`，
+指向 Gradle 8.9），Android Studio 直接打开即可；命令行下 `build_apk.ps1` 会**优先**用本地
+已解压的 Gradle 发行包（省掉 wrapper 的发行包下载），没有才退回 wrapper。
+
+定位顺序：`-GradleHome` → `SHUATI_GRADLE_HOME` / `GRADLE_HOME`
 → `D:\Work\AndroidTools\gradle-*`、`D:\Work\gradle-*`、`D:\gradle-*`、`C:\Gradle\gradle-*`
-→ PATH 上的 `gradle` → 最后才是 `android\gradlew.bat`；版本低于 8.9 会被跳过。
+→ PATH 上的 `gradle` → `android\gradlew.bat`；版本低于 8.9 会被跳过。
 
-三种补齐方式（任选其一）：
+想用本地发行包（推荐，离线也能配置阶段起步）：下载 `gradle-8.9-bin.zip` 解压到
+`D:\Work\AndroidTools\gradle-8.9`（确保存在 `gradle-8.9\bin\gradle.bat`），脚本会自动识别；
+也可显式指定 `android\build_apk.bat -GradleHome D:\Work\AndroidTools\gradle-8.9`。
 
-1. **手工下载（推荐，和 SDK 一样）**：下载 `gradle-8.9-bin.zip` 解压到
-   `D:\Work\AndroidTools\gradle-8.9`（确保存在 `gradle-8.9\bin\gradle.bat`），脚本会自动识别；
-   若显式指定则用 `android\build_apk.bat -GradleHome D:\Work\AndroidTools\gradle-8.9`。
-   - 官方：https://services.gradle.org/distributions/gradle-8.9-bin.zip
-   - 国内：https://mirrors.cloud.tencent.com/gradle/gradle-8.9-bin.zip
-     、https://repo.huaweicloud.com/gradle/gradle-8.9-bin.zip
-2. **Android Studio** 打开 `android/` 目录后 Sync，IDE 会补齐 wrapper；
-3. 任意已有的 Gradle 8.9+ 在 `android/` 下执行
-   `gradle wrapper --gradle-version 8.9 --distribution-type bin`。
+- 官方：https://services.gradle.org/distributions/gradle-8.9-bin.zip
+- 国内：https://mirrors.cloud.tencent.com/gradle/gradle-8.9-bin.zip
+  、https://repo.huaweicloud.com/gradle/gradle-8.9-bin.zip
 
 ## 2. 构建 APK
 

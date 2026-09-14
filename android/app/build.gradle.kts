@@ -20,6 +20,9 @@ val keystoreProps = Properties().apply {
 android {
     namespace = "com.hmbingzhou.shuati"
     compileSdk = 35
+    // 显式指定：AGP 8.7 的默认 build-tools 是 34.0.0，而本工程安装的是 35.0.0，
+    // 不写死会去 dl.google.com 自动下载 34.0.0（国内网络下会超时失败）
+    buildToolsVersion = "35.0.0"
 
     defaultConfig {
         applicationId = "com.hmbingzhou.shuati"

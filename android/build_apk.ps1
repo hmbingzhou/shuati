@@ -18,7 +18,8 @@
   首次构建需要联网下载 AGP / Chaquopy 等依赖。国内网络不通时：
     * 走代理：build_apk.bat -Proxy 127.0.0.1:7897
     * 走镜像：build_apk.bat -CnMirrors
-    两者可同时使用。
+    * 只走镜像、完全不使用代理（系统代理是坏的时）：build_apk.bat -CnMirrors -Proxy none
+    前两者可同时使用。
 
 .EXAMPLE
   build_apk.bat                                        # debug APK
@@ -229,15 +230,18 @@ if (-not $gradleExe) {
 }
 
 # ---------- 5) 代理 / 镜像参数 ----------
+# -Proxy none 表示明确不使用代理（例如系统里配了代理但它是坏的，只走国内镜像直连）
 $proxyAddr = $Proxy
-if (-not $proxyAddr) { $proxyAddr = $env:SHUATI_PROXY }
-if (-not $proxyAddr) { $proxyAddr = $env:HTTPS_PROXY }
-if (-not $proxyAddr) { $proxyAddr = $env:HTTP_PROXY }
-if (-not $proxyAddr) {
+$noProxy = ($proxyAddr -and $proxyAddr -match "^(none|no|off|direct|0)$")
+if ($noProxy) { $proxyAddr = "" }
+if (-not $proxyAddr -and -not $noProxy) { $proxyAddr = $env:SHUATI_PROXY }
+if (-not $proxyAddr -and -not $noProxy) { $proxyAddr = $env:HTTPS_PROXY }
+if (-not $proxyAddr -and -not $noProxy) { $proxyAddr = $env:HTTP_PROXY }
+if (-not $proxyAddr -and -not $noProxy) {
     $ie = Get-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings" -ErrorAction SilentlyContinue
     if ($ie -and $ie.ProxyEnable -eq 1 -and $ie.ProxyServer -and ("$($ie.ProxyServer)" -match "(\d+\.\d+\.\d+\.\d+:\d+)")) {
         $proxyAddr = $Matches[1]
-        Info "检测到系统代理：$proxyAddr（用 -Proxy 可覆盖）"
+        Info "检测到系统代理：$proxyAddr（用 -Proxy 可覆盖，-Proxy none 可禁用）"
     }
 }
 $gradleArgs = @()
@@ -261,10 +265,11 @@ if ($CnMirrors) {
 
 Push-Location $AndroidDir
 try {
-    # 有本地 Gradle 且缺 wrapper 时，顺手补一份 wrapper（离线操作，方便别人用 Android Studio 打开）
+    # 有本地 Gradle 且缺 wrapper 时，顺手补一份 wrapper（方便别人用 Android Studio 打开）
+    # 注意：wrapper 任务同样会走配置阶段解析插件，所以必须带上代理/镜像参数，否则会去直连官方源
     if ($localGradle -and -not (Test-Path $wrapperBat)) {
         Info "生成 gradle wrapper（gradlew.bat / gradle-wrapper.jar）…"
-        & $gradleExe wrapper --gradle-version 8.9 --distribution-type bin | Out-Null
+        & $gradleExe @gradleArgs wrapper --gradle-version 8.9 --distribution-type bin | Out-Null
         if (Test-Path $wrapperBat) { Ok "wrapper 已生成" } else { Warn "wrapper 生成失败（不影响本次构建）" }
     }
 
