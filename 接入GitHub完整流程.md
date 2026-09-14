@@ -144,13 +144,36 @@ git push
 ## 五、可选配置（遇到问题再看）
 
 ### 1. 下载源顺序
-默认先走 **jsDelivr CDN**（大陆一般可直连），失败自动切 **raw.githubusercontent.com**。
+默认先走 **jsDelivr CDN**，失败自动切 **raw.githubusercontent.com**。
+两者在国内都不稳定（raw 基本不可达、jsDelivr 时通时断），**推荐再加一个 Gitee 镜像**（见下一节）。
 在 `bank_remote.json` 里可调：
 
 ```json
 { "owner": "xx", "repo": "shuati", "branch": "main",
   "sources": ["github", "jsdelivr"] }
 ```
+
+### 1b. Gitee 镜像（国内直连，推荐）
+
+1. 在 Gitee 建一个 **public** 仓库，例如 `https://gitee.com/你的名字/shuati`；
+2. 把数据推过去（`data/` 题库 + `pictures/` 图片 + `data_manifest.json` 清单；代码是否一起镜像随你）：
+   ```bash
+   git remote add gitee https://gitee.com/你的名字/shuati.git
+   git push gitee main
+   ```
+3. 配置镜像地址（二选一）：
+   - 命令行：`python sync_bank.py setup <GitHub用户名> shuati --gitee-owner <Gitee用户名>`
+     （Gitee 仓库名/分支与 GitHub 不同时，再加 `--gitee-repo <仓库名>` / `--gitee-branch <分支>`）
+   - 或手写 `bank_remote.json`：
+     ```json
+     { "owner": "<GitHub用户名>", "repo": "shuati", "branch": "main",
+       "gitee": { "owner": "<Gitee用户名>", "repo": "shuati", "branch": "main" } }
+     ```
+4. 之后更新顺序变为 **gitee → jsDelivr → raw.githubusercontent**，任一可用即可；
+   `python sync_bank.py info` 会显示当前下载源；没配 `gitee` 时不会去请求它。
+
+> 维护者建议把这份 `bank_remote.json` 提交进仓库：桌面 zip 用户与 Android 随包种子
+> （`seed/bank_remote.json`）都会自动带上镜像配置，使用者无需任何设置。
 
 ### 2. private 仓库（需要 token）
 private 仓库的 raw/CDN 下载需要鉴权。两种做法：
@@ -177,8 +200,10 @@ private 仓库的 raw/CDN 下载需要鉴权。两种做法：
 并把生成的 `data_manifest.json` 提交推送。
 
 **Q3：一直“下载失败 / 超时”**
-大陆网络访问 GitHub 不稳。默认会先试 jsDelivr CDN；若两个源都失败，稍后重试，或用代理后把
-`sources` 调成 `["github"]`、或换网络再试。仓库必须是 **public**（private 无法走 jsDelivr）。
+大陆网络访问 GitHub 不稳（`raw.githubusercontent.com` 基本不可达、jsDelivr 时通时断）。
+**推荐按“五、1b”配一个 Gitee 镜像**，更新就会优先走国内直连、不需要代理；
+应急做法：挂代理后重试，或把 `sources` 调成 `["github"]`。仓库必须是 **public**
+（private 无法走 jsDelivr / Gitee raw）。
 
 **Q4：更新后某科题目数量不对？**
 题库文件是整体覆盖更新的：如果你之前用“导入题目/编辑题目”改过某个远程科目，
@@ -220,5 +245,7 @@ private 仓库的 raw/CDN 下载需要鉴权。两种做法：
 ```
 
 文件下载地址规则（以 `data/C语言.json` 为例，文件名已做 URL 编码）：
+- Gitee：`https://gitee.com/<gitee_owner>/<gitee_repo>/raw/<branch>/data/C语言.json`
+  （`_source_urls()` 支持源条目带 `owner/repo/branch` 覆盖，见 `bank_remote.json` 的 `gitee` 块）
 - jsDelivr：`https://cdn.jsdelivr.net/gh/<owner>/<repo>@<branch>/data/C语言.json`
 - GitHub：`https://raw.githubusercontent.com/<owner>/<repo>/<branch>/data/C语言.json`

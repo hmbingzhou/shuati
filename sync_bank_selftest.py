@@ -130,5 +130,36 @@ o, r, b, s, src = sync_bank._resolve_remote()
 assert (o, r, b) == ("octocat", "shuati", "dev") and src == "bank_remote.json" and s == ["github"]
 print("[ok] bank_remote.json 配置识别")
 
+# ---- 断言 7：Gitee 镜像源（国内直连，不需要代理） ----
+# 7a) 默认不启用 gitee（避免对不存在的镜像仓库发无谓 404）
+assert "gitee" not in sync_bank._default_sources(), sync_bank._default_sources()
+assert "gitee" not in sync_bank._source_urls("octocat", "shuati", "main", sync_bank._default_sources(),
+                                             "data_manifest.json")[0], "默认源里不该出现 gitee"
+
+# 7b) 配了 gitee 块 → gitee 排最前，且用的是镜像仓库的 owner/repo/branch
+sync_bank._write_json(cfg, {
+    "owner": "octocat", "repo": "shuati", "branch": "dev",
+    "gitee": {"owner": "octo", "repo": "shuati-mirror", "branch": "main"},
+})
+o, r, b, s, src = sync_bank._resolve_remote()
+assert s[0] == {"name": "gitee", "owner": "octo", "repo": "shuati-mirror", "branch": "main"}, s
+urls = sync_bank._source_urls(o, r, b, s, "data/数据结构.json")
+assert urls[0].startswith("https://gitee.com/octo/shuati-mirror/raw/main/"), urls
+assert "%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.json" in urls[0], urls[0]
+assert urls[1].startswith("https://cdn.jsdelivr.net/gh/octocat/shuati@dev/"), urls
+assert urls[-1].startswith("https://raw.githubusercontent.com/octocat/shuati/dev/"), urls
+assert sync_bank._sources_label(s) == "gitee(octo/shuati-mirror), jsdelivr, github", sync_bank._sources_label(s)
+
+# 7c) 没配 gitee 块却把 gitee 写进 sources → 自动剔除，不会去请求
+assert sync_bank._sources_with_gitee({"sources": ["gitee", "github"]}) == ["github"]
+
+# 7d) setup 命令能写出 gitee 配置
+sync_bank.REMOTE_CONFIG_FILE = os.path.join(T, "bank_remote_setup.json")
+assert sync_bank.cmd_setup(["octocat", "shuati", "--gitee-owner", "octo"]) == 0
+written = sync_bank._load_json(sync_bank.REMOTE_CONFIG_FILE)
+assert written["gitee"] == {"owner": "octo", "repo": "shuati", "branch": "main"}, written
+assert written["sources"] == sync_bank._default_sources(), written
+print("[ok] Gitee 镜像源：排序 / 覆盖 / URL / 剔除 / setup 写入")
+
 shutil.rmtree(T, ignore_errors=True)
 print("\n全部离线自检通过 ✔")

@@ -84,6 +84,35 @@ python reorganize_pictures.py --check     # 校验每题引用图片都能找到
 
 详细流程（维护者发布、使用者下载更新、常见问题）见 **《接入GitHub完整流程.md》**。
 
+### 国内网络：把题库镜像到 Gitee（不用代理也能更新）
+
+GitHub 在国内经常连不上（`raw.githubusercontent.com` 基本不可达，jsDelivr 时通时断）。
+推荐**再加一个 Gitee 镜像仓库**，让更新优先走国内直连：
+
+```bash
+# 1) 在 Gitee 新建一个仓库（public），例如 gitee.com/你的名字/shuati
+
+# 2) 把数据推过去（data/ 题库 + pictures/ 图片 + 清单，代码是否镜像随你）
+git remote add gitee https://gitee.com/你的名字/shuati.git
+git push gitee main
+
+# 3) 在项目根目录写 bank_remote.json，声明镜像地址
+python sync_bank.py setup <GitHub用户名> shuati --gitee-owner <Gitee用户名>
+```
+
+生成的 `bank_remote.json`：
+
+```json
+{
+  "owner": "GitHub用户名", "repo": "shuati", "branch": "main",
+  "gitee": {"owner": "Gitee用户名", "repo": "shuati", "branch": "main"}
+}
+```
+
+之后 `检查更新` 会按 **gitee → jsDelivr → raw.githubusercontent** 的顺序尝试，任意一个可用即可
+（`python sync_bank.py info` 会显示当前源）。没配 `gitee` 时不会去请求它，不会白白多 404。
+维护者把这个 `bank_remote.json` 提交到仓库，则桌面版 zip 用户和 Android 随包种子都会自动带上该镜像配置。
+
 ## 刷题数据说明（来自 README.txt，开发者备忘）
 
 - 刷题与错题本功能可用；暂无“清空错题本”的独立按钮（终端菜单/设置页可清空记录）。

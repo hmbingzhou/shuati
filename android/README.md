@@ -179,8 +179,11 @@ Python 3.14 + Android SDK 35 + Gradle 8.9，执行 `prepare_python_src.py` 与 `
 - **首启种子只补缺失文件**：随包题库/图片会复制进去，但绝不覆盖你已有的题目与个人数据
   （错题本 `wrong_book.json`、记录 `records.json`、回收站、考试记录、进度）；
 - APK 升级后若种子版本变化，只补充新增文件，个人数据保留；
-- 设置页的「题库更新」走 `sync_bank.py` 的 jsDelivr → raw.githubusercontent 双源 + sha256 校验 +
-  自动备份；远程仓库来自随包的 `seed/bank_remote.json`（默认指向本项目的公开仓库）；
+- 设置页的「题库更新」走 `sync_bank.py` 的多源下载 + sha256 校验 + 自动备份，
+  顺序为 **gitee → jsDelivr → raw.githubusercontent**（任一可用即可）；
+  远程仓库来自随包的 `seed/bank_remote.json` —— 它由仓库根目录的 `bank_remote.json` 生成，
+  维护者在那里配好 `gitee` 镜像块后，手机端更新题库就**完全不需要代理**（见根 README 的
+  「国内网络：把题库镜像到 Gitee」）；
 - 设置页「运行环境」卡片显示：运行形态（Android 应用/桌面）、APK 版本号、数据目录、
   题库来源、离线种子版本与 Python 版本（版本号由 `BuildConfig.VERSION_NAME` 经 `entry.start` 传入）；
 - 返回键：先关弹窗/图库叠加层 → 回首页 → 再按退出应用；

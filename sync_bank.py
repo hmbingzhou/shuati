@@ -19,16 +19,28 @@
 2. 从 git 的 remote origin 自动识别（使用者 `git clone` 来的就自动生效，无需配置）；
 3. 本文件顶部的 DEFAULT_OWNER / DEFAULT_REPO / DEFAULT_BRANCH 兜底。
 
-下载源（国内访问 GitHub 慢时自动切换）：
-- 首选 jsDelivr CDN（github 内容加速，大陆一般可直连）
-- 备用 raw.githubusercontent.com（GitHub 原始文件地址）
+下载源（国内访问 GitHub 慢/不通时自动切换）：
+- gitee：Gitee 码云镜像（国内直连稳定，**推荐国内用户配置**；需先把题库镜像到 Gitee）
+- jsdelivr：jsDelivr CDN（github 内容加速，大陆时通时断）
+- github：raw.githubusercontent.com（GitHub 原始地址，国内通常不可达）
 
 命令行用法（在项目根目录）:
     python sync_bank.py info                       # 查看当前远程配置
     python sync_bank.py check                      # 检查是否有题库更新
     python sync_bank.py update                     # 下载并应用更新（自动备份）
     python sync_bank.py setup <owner> <repo> [branch]   # 写 bank_remote.json
+    python sync_bank.py setup <owner> <repo> --gitee-owner <Gitee用户名> [--gitee-repo <仓库名>]
+                                                   # 同时配置 Gitee 镜像（国内直连，无需代理）
     python sync_bank.py build-manifest             # 【维护者】重新生成 data_manifest.json 并显示提交提示
+
+配置 Gitee 镜像（bank_remote.json）示例::
+
+    {
+      "owner": "hmbingzhou", "repo": "shuati", "branch": "main",
+      "gitee": {"owner": "你的Gitee用户名", "repo": "shuati", "branch": "main"}
+    }
+
+配置后 gitee 会排在最前面；没配 gitee 时不会去请求它，避免无谓的 404。
 
 依赖：仅 Python 标准库，无第三方包。
 """
@@ -74,14 +86,53 @@ DEFAULT_REPO = "shuati"
 DEFAULT_BRANCH = "main"
 
 # 下载源顺序：0 = 优先（国内快），可被 bank_remote.json 的 "sources" 覆盖
+# "default": False 的源不会进入默认列表，必须在配置里显式启用（或提供 gitee 镜像块）
 SOURCE_DEFS = [
+    {"name": "gitee",
+     "desc": "Gitee 码云镜像（国内直连稳定；需先把题库镜像到 Gitee）",
+     "fmt": "https://gitee.com/{owner}/{repo}/raw/{branch}/{path}",
+     "default": False},
     {"name": "jsdelivr",
-     "desc": "jsDelivr CDN（大陆一般可直连，需仓库为 public）",
+     "desc": "jsDelivr CDN（大陆时通时断，需仓库为 public）",
      "fmt": "https://cdn.jsdelivr.net/gh/{owner}/{repo}@{branch}/{path}"},
     {"name": "github",
      "desc": "GitHub 原始地址（需要能访问 github.com）",
      "fmt": "https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}"},
 ]
+
+
+def _source_name(s):
+    """源条目可以是名字符串，也可以是带 owner/repo/branch 覆盖的 dict"""
+    return s.get("name") if isinstance(s, dict) else s
+
+
+def _default_sources():
+    """默认下载源（不含需要显式启用的镜像源）"""
+    return [s["name"] for s in SOURCE_DEFS if s.get("default", True)]
+
+
+def _sources_with_gitee(cfg):
+    """
+    组装下载源列表：bank_remote.json 里配了 gitee 镜像块时把它排在最前（国内直连稳定），
+    没配则从列表里剔除 gitee，避免对不存在的镜像仓库发无谓请求。
+    """
+    raw = cfg.get("sources") or _default_sources()
+    items = []
+    for s in raw:
+        if isinstance(s, dict):
+            if s.get("name"):
+                items.append(dict(s))
+        elif isinstance(s, str) and s.strip():
+            items.append(s.strip())
+
+    g = cfg.get("gitee")
+    if isinstance(g, dict) and (g.get("owner") or g.get("repo")):
+        entry = {"name": "gitee"}
+        for k in ("owner", "repo", "branch"):
+            if g.get(k):
+                entry[k] = str(g[k]).strip()
+        return [entry] + [s for s in items if _source_name(s) != "gitee"]
+    return [s for s in items if _source_name(s) != "gitee"]
 
 CONNECT_TIMEOUT = 6      # 连接超时（秒）
 READ_TIMEOUT = 20        # 读取超时（秒）
@@ -201,7 +252,7 @@ def _resolve_remote():
         repo = (cfg.get("repo") or "").strip()
         if owner and repo and owner != DEFAULT_OWNER:
             branch = (cfg.get("branch") or DEFAULT_BRANCH).strip() or DEFAULT_BRANCH
-            sources = cfg.get("sources") or [s["name"] for s in SOURCE_DEFS]
+            sources = _sources_with_gitee(cfg)
             return owner, repo, branch, sources, "bank_remote.json"
         # 文件存在但没填好 → 继续尝试其它来源
     origin = _git_origin()
@@ -209,11 +260,11 @@ def _resolve_remote():
     if parsed:
         owner, repo = parsed
         if owner != DEFAULT_OWNER:
-            return owner, repo, DEFAULT_BRANCH, [s["name"] for s in SOURCE_DEFS], "git-origin"
+            return owner, repo, DEFAULT_BRANCH, _default_sources(), "git-origin"
 
     if DEFAULT_OWNER and DEFAULT_OWNER not in ("你的GitHub用户名", ""):
         return (DEFAULT_OWNER.strip(), DEFAULT_REPO.strip(), DEFAULT_BRANCH,
-                [s["name"] for s in SOURCE_DEFS], "default")
+                _default_sources(), "default")
 
     raise SyncError(
         "还没有配置题库的远程仓库。\n"
@@ -224,14 +275,37 @@ def _resolve_remote():
     )
 
 
+def _sources_label(sources):
+    """把源列表渲染成给人看的字符串（dict 条目显示为 名字(owner/repo)）"""
+    parts = []
+    for s in sources:
+        name = _source_name(s)
+        if isinstance(s, dict) and (s.get("owner") or s.get("repo")):
+            parts.append(f"{name}({s.get('owner', '')}/{s.get('repo', '')})")
+        else:
+            parts.append(str(name))
+    return ", ".join(parts)
+
+
 def _source_urls(owner, repo, branch, sources, relpath):
-    """按 sources 顺序生成同一文件的所有候选 URL"""
+    """
+    按 sources 顺序生成同一文件的所有候选 URL。
+    条目可以是源名（如 "jsdelivr"），也可以是带覆盖的 dict：
+        {"name": "gitee", "owner": "xxx", "repo": "shuati", "branch": "main"}
+    """
     quoted = _quote_relpath(relpath)
     urls = []
-    for s in SOURCE_DEFS:
-        if s["name"] not in sources:
+    for s in sources:
+        name = _source_name(s)
+        definition = next((d for d in SOURCE_DEFS if d["name"] == name), None)
+        if definition is None:            # 配置里写了未知源名 → 跳过
             continue
-        urls.append(s["fmt"].format(owner=owner, repo=repo, branch=branch, path=quoted))
+        o, r, b = owner, repo, branch
+        if isinstance(s, dict):
+            o = s.get("owner") or o
+            r = s.get("repo") or r
+            b = s.get("branch") or b
+        urls.append(definition["fmt"].format(owner=o, repo=r, branch=b, path=quoted))
     return urls
 
 
@@ -411,7 +485,7 @@ def check_update(verbose=False):
     try:
         if verbose:
             print(f"  远程仓库: {remote['url']}  (分支 {branch}, 来源: {src})")
-            print(f"  正在从 {', '.join(sources)} 下载清单 …")
+            print(f"  正在从 {_sources_label(sources)} 下载清单 …")
         manifest = fetch_manifest((owner, repo, branch, sources, src))
     except SyncError as e:
         return {"ok": False, "configured": True, "error": str(e), "remote": remote,
@@ -577,29 +651,57 @@ def cmd_info(argv):
         print(f"  远程仓库 : https://github.com/{owner}/{repo}")
         print(f"  分支     : {branch}")
         print(f"  配置来源 : {src}")
-        print(f"  下载源   : {', '.join(sources)}")
+        print(f"  下载源   : {_sources_label(sources)}")
     except SyncError as e:
         print(f"  ⚠️ {e}")
     return 0
 
 
 def cmd_setup(argv):
-    if len(argv) < 2:
+    # 可选参数：--gitee-owner / --gitee-repo / --gitee-branch（配置国内镜像源）
+    flags, pos, i = {}, [], 0
+    while i < len(argv):
+        a = argv[i]
+        if a in ("--gitee-owner", "--gitee-repo", "--gitee-branch"):
+            if i + 1 >= len(argv):
+                print(f"  ✗ {a} 后面缺少值")
+                return 1
+            flags[a[2:].replace("-", "_")] = argv[i + 1].strip()
+            i += 2
+        else:
+            pos.append(a)
+            i += 1
+
+    if len(pos) < 2:
         print("用法: python sync_bank.py setup <GitHub用户名> <仓库名> [分支名]")
+        print("      [--gitee-owner <Gitee用户名> [--gitee-repo <仓库名>] [--gitee-branch <分支>]]")
         print("示例: python sync_bank.py setup zhangsan shuati main")
+        print("示例: python sync_bank.py setup zhangsan shuati --gitee-owner zhangsan")
         return 1
-    owner = argv[0].strip().lstrip("@")
-    repo = argv[1].strip()
-    branch = argv[2].strip() if len(argv) > 2 else "main"
+    owner = pos[0].strip().lstrip("@")
+    repo = pos[1].strip()
+    branch = pos[2].strip() if len(pos) > 2 else "main"
     if not re.match(r"^[\w.-]+$", owner) or not re.match(r"^[\w.-]+$", repo):
         print("  ✗ 用户名/仓库名不合法（只能包含字母、数字、-、_、.）")
         return 1
-    _write_json(REMOTE_CONFIG_FILE, {
-        "owner": owner, "repo": repo, "branch": branch,
-        "sources": [s["name"] for s in SOURCE_DEFS],
-    })
+    cfg = {"owner": owner, "repo": repo, "branch": branch, "sources": _default_sources()}
+    g_owner = flags.get("gitee_owner")
+    if g_owner:
+        if not re.match(r"^[\w.-]+$", g_owner):
+            print("  ✗ Gitee 用户名不合法（只能包含字母、数字、-、_、.）")
+            return 1
+        cfg["gitee"] = {
+            "owner": g_owner,
+            "repo": flags.get("gitee_repo") or repo,
+            "branch": flags.get("gitee_branch") or branch,
+        }
+    _write_json(REMOTE_CONFIG_FILE, cfg)
     print(f"  ✓ 已写入 {os.path.basename(REMOTE_CONFIG_FILE)}")
     print(f"    远程仓库: https://github.com/{owner}/{repo}  (分支 {branch})")
+    if g_owner:
+        g = cfg["gitee"]
+        print(f"    Gitee 镜像: https://gitee.com/{g['owner']}/{g['repo']}  (分支 {g['branch']})")
+        print(f"    更新时优先走 Gitee（国内直连，无需代理），失败再回退 jsDelivr / GitHub。")
     print(f"    提示：仓库必须已经存在并且是 public（除非你设置了 GITHUB_TOKEN）。")
     return 0
 
@@ -619,6 +721,7 @@ def main(argv=None):
         print("  python sync_bank.py check")
         print("  python sync_bank.py update")
         print("  python sync_bank.py setup <owner> <repo> [branch]")
+        print("  python sync_bank.py setup <owner> <repo> --gitee-owner <Gitee用户名> [--gitee-repo <仓库名>]")
         print("  python sync_bank.py build-manifest")
         return 0
 
