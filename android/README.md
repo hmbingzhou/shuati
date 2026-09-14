@@ -18,13 +18,32 @@
 安装 Android SDK 的示例（Windows）：
 
 ```powershell
-# 1) 下载 commandlinetools 解压到 D:\Android\Sdk\cmdline-tools\latest
+# 1) 下载 commandlinetools 解压，并整理成 <SDK>\cmdline-tools\latest\bin\sdkmanager.bat
 # 2) 安装组件
 sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"
 # 3) 设置环境变量
 setx ANDROID_HOME "D:\Android\Sdk"
 setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-17.0.12.7-hotspot"
 ```
+
+### 国内网络：sdkmanager 走代理
+
+`sdkmanager` 不会自动使用 Windows“系统代理”，要显式给参数；先确认代理可用：
+
+```powershell
+curl.exe -x http://127.0.0.1:7890 -s -o NUL -w "%{http_code}`n" https://dl.google.com/android/repository/repository2-3.xml
+# 返回 200 说明代理可用（端口换成你代理软件的混合端口）
+```
+
+```powershell
+$sm = "$env:ANDROID_HOME\cmdline-tools\latest\bin\sdkmanager.bat"
+(1..50 | ForEach-Object { "y" }) | & $sm --proxy=http --proxy_host=127.0.0.1 --proxy_port=7890 --licenses
+& $sm --proxy=http --proxy_host=127.0.0.1 --proxy_port=7890 `
+    "platform-tools" "platforms;android-35" "build-tools;35.0.0"
+& $sm --list_installed
+```
+
+Gradle 下载依赖若也需代理，取消 `android/gradle.properties` 里 `systemProp.*.proxy*` 四行的注释并填端口。
 
 如果机器上没有 `gradlew`（本工程未提交 wrapper 二进制），二选一：
 - **Android Studio** 打开 `android/` 目录，IDE 会自动补齐 wrapper（推荐，最省事）；
