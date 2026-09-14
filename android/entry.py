@@ -125,14 +125,19 @@ def _serve(port: int):
     webui_server.start_server(host="127.0.0.1", port=port, open_browser=False)
 
 
-def start(home: str) -> int:
-    """启动本地服务并返回端口号（供 Java/WebView 使用）"""
+def start(home: str, app_version: str = "") -> int:
+    """启动本地服务并返回端口号（供 Java/WebView 使用）
+
+    app_version：由 MainActivity 传入的 APK 版本号（BuildConfig.VERSION_NAME），
+    写入环境变量供 /api/app/info 在设置页展示。
+    """
     global _started_port
     with _started_lock:
         if _started_port:
             return _started_port
 
         info = ensure_home(home)
+        os.environ["SHUATI_APP_VERSION"] = str(app_version or "")
         # 确保能 import 到打包进来的项目模块（APP_DIR 即本文件所在目录）
         if _HERE not in sys.path:
             sys.path.insert(0, _HERE)
@@ -156,6 +161,7 @@ def version() -> str:
     except (OSError, ValueError):
         pass
     return json.dumps({
+        "app_version": os.environ.get("SHUATI_APP_VERSION", ""),
         "seed_version": info.get("seed_version", ""),
         "generated_at": info.get("generated_at", ""),
         "home": os.environ.get("SHUATI_HOME", ""),

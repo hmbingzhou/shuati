@@ -58,7 +58,7 @@ second = entry.ensure_home(home)
 with open(bank_path, encoding="utf-8") as f:
     custom_kept = "自定义内容" in f.read()
 
-port = entry.start(home)
+port = entry.start(home, "test-1.0")
 
 def get(path):
     with urllib.request.urlopen("http://127.0.0.1:%d%s" % (port, path), timeout=15) as r:
@@ -67,6 +67,8 @@ def get(path):
 _, html = get("/")
 _, qj = get("/api/questions?subject=" + urllib.parse.quote("数据结构") + "&pageSize=1")
 _, mf = get("/manifest.webmanifest")
+_, ai = get("/api/app/info")
+app_info = json.loads(ai)
 print(json.dumps({
     "first_copied": first["copied"],
     "second_copied": second["copied"],
@@ -75,6 +77,11 @@ print(json.dumps({
     "index_nav": 'id="bottom-nav"' in html,
     "seed_questions": len((json.loads(qj).get("items") or [])),
     "manifest_ok": json.loads(mf).get("display") == "standalone",
+    "platform": app_info.get("platform"),
+    "app_version": app_info.get("app_version"),
+    "info_home": (app_info.get("paths") or {}).get("HOME"),
+    "remote_ok": bool((app_info.get("remote") or {}).get("owner")),
+    "seed_version": (app_info.get("seed") or {}).get("seed_version"),
 }, ensure_ascii=False))
 """
 
@@ -135,7 +142,7 @@ def main():
         check("Gradle：Chaquopy 17 + Python 3.14 + arm64-v8a",
               'id("com.chaquo.python")' in app_gradle and 'version = "3.14"' in app_gradle
               and 'abiFilters += listOf("arm64-v8a")' in app_gradle
-              and "minSdk = 24" in app_gradle)
+              and "minSdk = 24" in app_gradle and "buildConfig = true" in app_gradle)
         root_gradle = open(os.path.join(ANDROID, "build.gradle.kts"), encoding="utf-8").read()
         wrapper = open(os.path.join(ANDROID, "gradle", "wrapper",
                                     "gradle-wrapper.properties"), encoding="utf-8").read()
@@ -145,7 +152,8 @@ def main():
                                  "shuati", "MainActivity.java"), encoding="utf-8").read()
         check("MainActivity：WebView + 文件选择 + 返回键桥接",
               "loadUrl(\"http://127.0.0.1:" in java and "onShowFileChooser" in java
-              and "evaluateJavascript" in java and "__shuatiAndroidBack" in java)
+              and "evaluateJavascript" in java and "__shuatiAndroidBack" in java
+              and "BuildConfig.VERSION_NAME" in java)
         check("entry.py 可编译",
               subprocess.run([sys.executable, "-m", "py_compile",
                               os.path.join(ANDROID, "entry.py")]).returncode == 0)
@@ -190,6 +198,11 @@ def main():
             check("首页含移动端底部导航", res["index_nav"])
             check("种子题库可被服务读取（数据结构）", res["seed_questions"] == 1, res["seed_questions"])
             check("manifest 可访问且为 standalone", res["manifest_ok"])
+            check("/api/app/info 识别为 android 形态且 HOME 正确",
+                  res["platform"] == "android" and os.path.normcase(res["info_home"]) == os.path.normcase(TMP_HOME),
+                  (res["platform"], res["info_home"]))
+            check("APK 版本号透传到设置页接口", res["app_version"] == "test-1.0", res["app_version"])
+            check("远程题库配置随包可用", res["remote_ok"] and res["seed_version"], res)
 
         print("\n" + ("Android 工程自检全部通过 ✔" if not fails else f"失败 {len(fails)} 项: {fails}"))
         return 1 if fails else 0

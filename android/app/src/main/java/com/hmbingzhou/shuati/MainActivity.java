@@ -92,10 +92,11 @@ public class MainActivity extends Activity {
         }
 
         final String home = getFilesDir().getAbsolutePath();
+        final String appVersion = BuildConfig.VERSION_NAME;
         new Thread(() -> {
             try {
                 PyObject entry = Python.getInstance().getModule("entry");
-                final int port = entry.callAttr("start", home).toJava(int.class);
+                final int port = entry.callAttr("start", home, appVersion).toJava(int.class);
                 runOnUiThread(() -> webView.loadUrl("http://127.0.0.1:" + port + "/"));
             } catch (final Exception e) {
                 final String msg = String.valueOf(e.getMessage());

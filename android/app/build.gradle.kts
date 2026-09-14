@@ -39,6 +39,11 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
+    // MainActivity 需要读取 BuildConfig.VERSION_NAME（AGP 8 默认关闭该特性）
+    buildFeatures {
+        buildConfig = true
+    }
+
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false

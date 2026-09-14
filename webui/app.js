@@ -2676,7 +2676,34 @@ async function renderSettings(view) {
         </div>
         <div class="hint" id="bank-status">尚未检查。用 git clone 安装的会自动识别仓库；用 zip 安装的请先按《接入GitHub完整流程.md》配置远程仓库。</div>
       </div>
+    </div>
+    <div class="card" style="padding:20px 24px;max-width:680px;margin-top:14px">
+      <div class="form-group" style="margin-bottom:0">
+        <label>运行环境</label>
+        <div class="small muted" id="app-info">读取中…</div>
+      </div>
     </div>`;
+
+  /* ---------- 运行环境信息（默认模式 / Android 私有目录） ---------- */
+  (async () => {
+    const box = $("#app-info", view);
+    if (!box) return;
+    try {
+      const info = await api("GET", "/api/app/info");
+      const p = info.paths || {};
+      const remote = info.remote
+        ? `<a href="${esc(info.remote.url)}" target="_blank" rel="noopener">${esc(info.remote.url)}</a>（分支 ${esc(info.remote.branch)}）`
+        : "未配置（可在题库更新卡片中检查）";
+      const seed = (info.seed && info.seed.seed_version) || "—";
+      box.innerHTML = `
+        <div>运行形态：<b>${info.platform === "android" ? "Android 应用（数据存于应用私有目录）" : "桌面 / 浏览器"}</b>${info.app_version ? ` · 版本 ${esc(info.app_version)}` : ""}</div>
+        <div>数据目录：<code>${esc(p.HOME || "")}</code></div>
+        <div>题库来源：${remote}</div>
+        <div>离线种子：${esc(seed)} · Python ${esc(info.python || "")}</div>`;
+    } catch (e) {
+      box.textContent = "读取运行环境信息失败";
+    }
+  })();
 
   $$('input[name="choice-mode"]', view).forEach((r) => r.addEventListener("change", () => {
     state.settings.choiceAutoSubmit = (r.value === "auto");

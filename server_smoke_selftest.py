@@ -118,6 +118,11 @@ def main():
         info = http("GET", base + "/api/bank/info")
         check("默认模式题库同步配置接口可访问", "configured" in info, info.get("error"))
 
+        app_info = http("GET", base + "/api/app/info")
+        check("默认模式 /api/app/info：桌面形态、HOME=项目根",
+              app_info["platform"] == "desktop"
+              and os.path.normcase(app_info["paths"]["HOME"]) == os.path.normcase(ROOT), app_info)
+
         # PWA 资源：manifest 的 MIME 与图标静态访问
         with urllib.request.urlopen(f"{base}/manifest.webmanifest", timeout=10) as r:
             mf = json.loads(r.read().decode("utf-8"))
@@ -137,11 +142,22 @@ def main():
     # ---------- 2) 隔离模式：写入全部落 HOME ----------
     home = os.path.join(TMP, "home")
     os.makedirs(home)
+    # 预置一份“随包远程配置”，验证 Android 形态下远程题库来源可识别
+    with open(os.path.join(home, "bank_remote.json"), "w", encoding="utf-8") as f:
+        json.dump({"owner": "testowner", "repo": "shuati", "branch": "main"}, f, ensure_ascii=False)
     repo_java = os.path.join(ROOT, "data", "Java.json")
     before = sha(repo_java)
     port2 = free_port()
     proc2, base2, log2 = start_server(port2, home=home)
     try:
+        app_info2 = http("GET", base2 + "/api/app/info")
+        check("隔离模式 /api/app/info：android 形态、HOME=私有目录",
+              app_info2["platform"] == "android"
+              and os.path.normcase(app_info2["paths"]["HOME"]) == os.path.normcase(home), app_info2)
+        bank2 = http("GET", base2 + "/api/bank/info")
+        check("隔离模式远程题库配置来自 HOME/bank_remote.json",
+              bank2.get("configured") and (bank2.get("remote") or {}).get("owner") == "testowner", bank2)
+
         add = http("POST", base2 + "/api/questions", {
             "subject": "Java",
             "question": {"type": "判断题", "text": "隔离模式自检题", "answer": "正确"},

@@ -1065,6 +1065,40 @@ def handle_bank_update():
     return sync_bank.apply_update()
 
 
+def handle_app_info():
+    """
+    GET /api/app/info —— 运行环境信息（设置页展示）
+    含：运行形态（桌面/Android 私有目录）、应用版本、可写数据目录、种子版本、远程题库配置。
+    """
+    info = paths.describe()
+    seed = {}
+    seed_file = os.path.join(paths.APP_DIR, "seed", "seed_version.json")
+    try:
+        with open(seed_file, "r", encoding="utf-8") as f:
+            seed = json.load(f)
+    except (OSError, ValueError):
+        seed = {}
+
+    remote = None
+    try:
+        owner, repo, branch, sources, src = sync_bank._resolve_remote()
+        remote = {"owner": owner, "repo": repo, "branch": branch,
+                  "url": f"https://github.com/{owner}/{repo}", "source": src, "sources": sources}
+    except sync_bank.SyncError:
+        remote = None
+
+    return {
+        "ok": True,
+        "app_version": os.environ.get("SHUATI_APP_VERSION", ""),
+        "platform": "android" if os.environ.get("SHUATI_HOME") else "desktop",
+        "isolated_home": bool(os.environ.get("SHUATI_HOME")),
+        "python": sys.version.split()[0],
+        "paths": info,
+        "seed": seed,
+        "remote": remote,
+    }
+
+
 
 
 class ApiHandler(BaseHTTPRequestHandler):
@@ -1147,6 +1181,8 @@ class ApiHandler(BaseHTTPRequestHandler):
                     self._send_json(handle_bank_info())
                 elif path == "/api/bank/check":
                     self._send_json(handle_bank_check())
+                elif path == "/api/app/info":
+                    self._send_json(handle_app_info())
                 elif path == "/api/pictures":
                     self._send_json(handle_pictures_list(query))
                 elif path == "/api/questions":
