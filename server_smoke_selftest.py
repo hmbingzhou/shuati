@@ -117,6 +117,20 @@ def main():
 
         info = http("GET", base + "/api/bank/info")
         check("默认模式题库同步配置接口可访问", "configured" in info, info.get("error"))
+
+        # PWA 资源：manifest 的 MIME 与图标静态访问
+        with urllib.request.urlopen(f"{base}/manifest.webmanifest", timeout=10) as r:
+            mf = json.loads(r.read().decode("utf-8"))
+            check("manifest 以 application/manifest+json 返回",
+                  "manifest+json" in (r.headers.get("Content-Type") or ""), r.headers.get("Content-Type"))
+            check("manifest 含独立显示模式与图标", mf.get("display") == "standalone" and len(mf.get("icons", [])) >= 3)
+        with urllib.request.urlopen(f"{base}/icons/icon-192.png", timeout=10) as r:
+            check("PWA 图标可访问", r.status == 200 and (r.headers.get("Content-Type") or "").startswith("image/"),
+                  f"{r.status} {r.headers.get('Content-Type')}")
+        with urllib.request.urlopen(f"{base}/", timeout=10) as r:
+            html = r.read().decode("utf-8")
+            check("首页含底部导航容器与 manifest 链接",
+                  'id="bottom-nav"' in html and 'rel="manifest"' in html)
     finally:
         stop(proc, log)
 

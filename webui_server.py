@@ -1311,6 +1311,8 @@ class ApiHandler(BaseHTTPRequestHandler):
             ctype = "application/javascript; charset=utf-8"
         elif ext in (".html", ".css"):
             ctype = f"text/{ext[1:]}; charset=utf-8"
+        elif ext == ".webmanifest":
+            ctype = "application/manifest+json; charset=utf-8"
 
         try:
             with open(full, "rb") as f:

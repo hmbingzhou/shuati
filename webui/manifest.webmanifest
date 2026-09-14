@@ -1,0 +1,16 @@
+{
+  "name": "刷题软件",
+  "short_name": "刷题",
+  "description": "本地题库刷题 / 错题本 / 模拟考试（离线可用）",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f2f5fb",
+  "theme_color": "#4f6ef7",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

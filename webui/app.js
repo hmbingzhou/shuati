@@ -230,12 +230,63 @@ async function getOverview(force = false) {
 
 function invalidateOverview() { state.overview = null; state.overviewTs = 0; }
 
-/* ---------------- 路由 ---------------- */
+/* ---------------- 路由 / 导航表（顶部与底部导航同源，新增页面只改这里） ---------------- */
+
+const KNOWN_ROUTES = ["home", "practice", "wrong", "recycle", "library", "import", "exam", "reports", "settings", "help"];
+
+const NAV_ITEMS = [
+  { route: "home", label: "仪表盘", icon: "🏠", primary: true },
+  { route: "practice", label: "开始刷题", icon: "📝", primary: true },
+  { route: "wrong", label: "错题本", icon: "📕", primary: true },
+  { route: "recycle", label: "回收站", icon: "♻️" },
+  { route: "library", label: "题库管理", icon: "🗂", primary: true },
+  { route: "import", label: "批量导入", icon: "📥" },
+  { route: "reports", label: "刷题报告", icon: "📄" },
+  { route: "settings", label: "设置", icon: "⚙️" },
+  { route: "help", label: "使用说明", icon: "❓" },
+];
+
+function renderNav() {
+  const top = $("#nav");
+  if (top) {
+    top.innerHTML = NAV_ITEMS.map((it) =>
+      `<a href="#/${it.route}" data-nav="${it.route}">${esc(it.label)}</a>`).join("");
+  }
+  const bottom = $("#bottom-nav");
+  if (bottom) {
+    const primary = NAV_ITEMS.filter((it) => it.primary);
+    const more = NAV_ITEMS.filter((it) => !it.primary);
+    bottom.innerHTML = primary.map((it) =>
+      `<a href="#/${it.route}" data-nav="${it.route}"><span class="bn-icon">${it.icon}</span><span>${esc(it.label)}</span></a>`).join("")
+      + `<button type="button" id="bn-more"><span class="bn-icon">⋯</span><span>更多</span></button>`;
+    bottom.addEventListener("click", (e) => {
+      const btn = e.target.closest("#bn-more");
+      if (!btn) return;
+      openMoreMenu(more);
+    });
+  }
+}
+
+function openMoreMenu(items) {
+  const m = openModal(`
+    <div class="modal-head"><h3>更多功能</h3><button class="modal-close">✕</button></div>
+    <div class="modal-body">
+      <div class="bn-more-sheet">
+        ${items.map((it) => `<a href="#/${it.route}" data-nav="${it.route}">${it.icon} ${esc(it.label)}</a>`).join("")}
+      </div>
+    </div>
+    <div class="modal-foot"><button class="btn btn-ghost" data-act="close">关闭</button></div>`);
+  $(".modal-close", m.mask).addEventListener("click", () => m.close());
+  m.mask.addEventListener("click", (e) => {
+    if (e.target.closest('[data-act="close"]')) m.close();
+    const a = e.target.closest("a[data-nav]");
+    if (a) m.close();  // 交给 hashchange 触发路由
+  });
+}
 
 function currentRoute() {
   const h = location.hash.replace(/^#\/?/, "");
-  const known = ["home", "practice", "wrong", "recycle", "library", "import", "exam", "reports", "settings", "help"];
-  return known.includes(h) ? h : "home";
+  return KNOWN_ROUTES.includes(h) ? h : "home";
 }
 
 function navTo(route) {
@@ -247,7 +298,7 @@ async function render() {
   const route = currentRoute();
   state.route = route;
   state.routeChanged = route !== state._prevRoute;
-  $$("#nav a").forEach((a) => a.classList.toggle("active", a.dataset.nav === route));
+  $$("[data-nav]").forEach((a) => a.classList.toggle("active", a.dataset.nav === route));
   const view = $("#view");
   view.innerHTML = '<div class="loading">加载中…</div>';
   try {
@@ -264,8 +315,30 @@ async function render() {
   } catch (e) {
     view.innerHTML = `<div class="empty"><div class="big">⚠️</div>页面加载失败：${esc(e.message)}</div>`;
   }
+  if (state.routeChanged) window.scrollTo({ top: 0, behavior: "auto" });
   state._prevRoute = route;
 }
+
+/* Android WebView 返回键桥接：优先关弹窗/图库叠加层 → 回首页 → 返回 false 交给系统退出 */
+window.__shuatiAndroidBack = function () {
+  const overlays = document.querySelectorAll("body > .modal-mask");
+  if (overlays.length) {
+    overlays[overlays.length - 1].remove();
+    return true;
+  }
+  const root = $("#modal-root");
+  if (root && root.innerHTML.trim()) {
+    const closeBtn = $(".modal-close", root);
+    if (closeBtn) closeBtn.click();
+    else root.innerHTML = "";
+    return true;
+  }
+  if (currentRoute() !== "home") {
+    navTo("home");
+    return true;
+  }
+  return false;
+};
 
 /* ============================================================
    仪表盘
@@ -3030,7 +3103,11 @@ function renderHelp(view) {
    ============================================================ */
 
 window.addEventListener("hashchange", () => { render(); });
-window.addEventListener("DOMContentLoaded", () => { loadSettings(); render(); });
+window.addEventListener("DOMContentLoaded", () => {
+  loadSettings();
+  renderNav();          // 顶部导航 + 移动端底部导航（同一 NAV_ITEMS）
+  render();
+});
 
 /* ⭐/❌ 题目标记（全局点击委托，题库管理行与刷题页通用） */
 document.addEventListener("click", (e) => {
