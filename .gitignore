@@ -24,6 +24,19 @@ data/brush_progress.json
 .sync_test_*/
 .paths_test_tmp/
 .server_smoke_tmp/
+.seed_test_home/
+.android_test_tmp/
+
+# ---- Android 工程构建产物 / 生成物 ----
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/version.properties
+android/keystore.properties
+*.jks
+*.keystore
+android/app/src/main/python/
 
 # ---- 本地环境 / 临时 ----
 reports/

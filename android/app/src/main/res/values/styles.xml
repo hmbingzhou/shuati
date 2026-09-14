@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 纯 Activity + WebView，不需要 AppCompat/Material 依赖 -->
+    <style name="Theme.Shuati" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#4F6EF7</item>
+        <item name="android:windowBackground">#F2F5FB</item>
+    </style>
+</resources>

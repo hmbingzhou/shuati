@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">刷题软件</string>
+    <string name="server_error">本地服务启动失败：%1$s</string>
+</resources>
