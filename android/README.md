@@ -87,7 +87,28 @@ powershell -NoProfile -ExecutionPolicy Bypass -File android\build_apk.ps1 -Task 
 
 排查：`adb logcat -s python.stdout python.stderr` 可看 Python 侧日志（HOME 路径、种子版本、端口）。
 
-## 5. 已知限制 / 待办
+## 5. release 签名（可选，自用可直接用 debug 包）
+
+```powershell
+# 1) 生成密钥库（放到仓库外或 android/ 下；*.jks 已被 .gitignore 忽略）
+keytool -genkeypair -v -keystore shuati-release.jks -alias shuati `
+        -keyalg RSA -keysize 2048 -validity 3650
+
+# 2) 在 android/keystore.properties 写入（路径相对 android/ 目录）
+@"
+storeFile=../shuati-release.jks
+storePassword=你的库密码
+keyAlias=shuati
+keyPassword=你的密钥密码
+"@ | Set-Content android\keystore.properties -Encoding ASCII
+
+# 3) 构建 release
+android\build_apk.bat -Task assembleRelease
+```
+
+未提供 `keystore.properties` 时，release 变体也会构建，但使用系统默认签名（仅适合自用测试）。
+
+## 6. 已知限制 / 待办
 
 - WebView 内“存档 zip 下载”（`<a download>`）需要额外的 `DownloadListener` + MediaStore 支持，
   当前未实现（可在电脑端导出存档后手动拷入）；
