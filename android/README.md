@@ -42,10 +42,19 @@ curl.exe -x http://127.0.0.1:7897 -s -o NUL -w "%{http_code}`n" https://dl.googl
 ```bat
 android\build_apk.bat -Proxy 127.0.0.1:7897             REM 依赖下载走代理
 android\build_apk.bat -CnMirrors                        REM 依赖走阿里云镜像（google / central / gradle-plugin）
+android\build_apk.bat -CnMirrors -Proxy none            REM 完全不用代理，只走镜像（系统代理是坏的时）
 android\build_apk.bat -Proxy 127.0.0.1:7897 -CnMirrors  REM 两个一起用
 ```
 
-不给 `-Proxy` 时脚本会尝试读取系统代理（`HKCU\...\Internet Settings`）作为默认值。
+不带参数直接双击也有自动降级逻辑：
+
+- 自动读取系统代理（`HKCU\...\Internet Settings`），但**会先探测它能否访问外网**；
+  探测失败就忽略并提示，避免坏代理让构建白等几分钟；
+- 若 `dl.google.com` 不可达而阿里云镜像可用，**自动启用国内镜像**（等价于 `-CnMirrors`）。
+
+> 实现提醒：脚本**不会**给 Gradle 传 `-Dhttp.nonProxyHosts`——它的值里含 `|`，
+> 而 `.bat` 会被 cmd 重新解析，会把 `|` 当管道符报“`'127.0.0.1'` 不是内部或外部命令”。
+> JDK 默认本就绕过 `localhost`/`127.*`，无需再设。
 
 sdkmanager 同样不吃系统代理，要单独传：
 

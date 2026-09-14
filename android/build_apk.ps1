@@ -230,31 +230,76 @@ if (-not $gradleExe) {
 }
 
 # ---------- 5) 代理 / 镜像参数 ----------
+# 探测用的是明文的 WebRequest：不经过 schannel，且不跟随跳转（301 也算可达）
+function Test-Http([string]$url, [string]$viaProxy, [int]$timeoutMs = 7000) {
+    try {
+        $req = [System.Net.WebRequest]::Create($url)
+        if ($viaProxy) { $req.Proxy = New-Object System.Net.WebProxy("http://$viaProxy") }
+        else { $req.Proxy = $null }          # $null 表示不走系统代理，测的就是直连
+        $req.Timeout = $timeoutMs
+        $req.AllowAutoRedirect = $false
+        $resp = $req.GetResponse()
+        $code = [int]$resp.StatusCode
+        $resp.Close()
+        return $code
+    } catch { return 0 }
+}
+function Test-Reachable([string]$url, [string]$viaProxy, [int]$timeoutMs = 7000) {
+    $code = Test-Http $url $viaProxy $timeoutMs
+    return ($code -gt 0 -and $code -lt 500)   # 5xx（如坏代理回 502）算不可达
+}
+
 # -Proxy none 表示明确不使用代理（例如系统里配了代理但它是坏的，只走国内镜像直连）
 $proxyAddr = $Proxy
 $noProxy = ($proxyAddr -and $proxyAddr -match "^(none|no|off|direct|0)$")
+$proxyFromSystem = $false
 if ($noProxy) { $proxyAddr = "" }
-if (-not $proxyAddr -and -not $noProxy) { $proxyAddr = $env:SHUATI_PROXY }
-if (-not $proxyAddr -and -not $noProxy) { $proxyAddr = $env:HTTPS_PROXY }
-if (-not $proxyAddr -and -not $noProxy) { $proxyAddr = $env:HTTP_PROXY }
+if (-not $proxyAddr -and -not $noProxy) {
+    foreach ($e in @($env:SHUATI_PROXY, $env:HTTPS_PROXY, $env:HTTP_PROXY)) {
+        if ($e) { $proxyAddr = $e; break }
+    }
+}
 if (-not $proxyAddr -and -not $noProxy) {
     $ie = Get-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings" -ErrorAction SilentlyContinue
     if ($ie -and $ie.ProxyEnable -eq 1 -and $ie.ProxyServer -and ("$($ie.ProxyServer)" -match "(\d+\.\d+\.\d+\.\d+:\d+)")) {
         $proxyAddr = $Matches[1]
-        Info "检测到系统代理：$proxyAddr（用 -Proxy 可覆盖，-Proxy none 可禁用）"
+        $proxyFromSystem = $true
     }
 }
+if ($proxyAddr) { $proxyAddr = $proxyAddr -replace "^https?://", "" }
+
+# 自动探测到的系统代理必须先验证能用：坏代理会让 Gradle 白等几分钟才失败
+if ($proxyAddr -and $proxyFromSystem) {
+    if (Test-Reachable "http://www.gstatic.com/generate_204" $proxyAddr 6000) {
+        Ok "系统代理可用：$proxyAddr"
+    } else {
+        Warn "系统代理 $proxyAddr 探测失败（无法访问外网），已忽略；要强制使用请显式传 -Proxy $proxyAddr"
+        $proxyAddr = ""
+    }
+}
+
 $gradleArgs = @()
 if ($proxyAddr) {
-    $proxyAddr = $proxyAddr -replace "^https?://", ""
     $parts = $proxyAddr -split ":", 2
     if ($parts.Count -eq 2) {
+        # 注意：这里绝不能传 -Dhttp.nonProxyHosts（值里含 | ，而 .bat 会被 cmd 重新解析，
+        # 会被当成管道符报“'127.0.0.1' 不是内部或外部命令”）；JDK 默认本就绕过 localhost/127.*
         $gradleArgs += "-Dhttp.proxyHost=$($parts[0])", "-Dhttp.proxyPort=$($parts[1])"
         $gradleArgs += "-Dhttps.proxyHost=$($parts[0])", "-Dhttps.proxyPort=$($parts[1])"
-        $gradleArgs += "-Dhttp.nonProxyHosts=localhost|127.0.0.1|0.0.0.0"
         Ok "Gradle 走代理：$proxyAddr"
     } else {
         Warn "代理格式应为 host:port，已忽略：$proxyAddr"
+    }
+}
+
+# 官方仓库不可达而国内镜像可用时，自动切镜像（国内网络的常见情形，免去用户额外加参数）
+if (-not $CnMirrors) {
+    $via = if ($proxyAddr) { $proxyAddr } else { "" }
+    if (-not (Test-Reachable "http://dl.google.com/android/repository/repository2-3.xml" $via)) {
+        if (Test-Reachable "http://maven.aliyun.com/repository/public/" "") {
+            $CnMirrors = $true
+            Info "官方仓库（dl.google.com）不可达、阿里云镜像可用 → 自动启用国内镜像"
+        }
     }
 }
 if ($CnMirrors) {
