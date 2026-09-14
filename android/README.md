@@ -137,6 +137,24 @@ powershell -NoProfile -ExecutionPolicy Bypass -File android\build_apk.ps1 -Proxy
 # 或把 APK 传到手机，用文件管理器点击安装（首次允许“未知来源”）
 ```
 
+### 在 GitHub Actions 上构建（本机没有可用网络/代理时）
+
+仓库自带工作流 `.github/workflows/build-apk.yml`：在 GitHub 的 runner 上安装 JDK 17 +
+Python 3.14 + Android SDK 35 + Gradle 8.9，执行 `prepare_python_src.py` 与 `assembleDebug`，
+最后把 APK 作为 Artifacts 上传。
+
+1. 把代码推到 GitHub；
+2. 仓库 → **Actions** → 左侧 **Build APK** → **Run workflow**
+   （推送 main 且改动命中 `android/**`、`webui/**` 等路径时也会自动触发）；
+3. 运行结束后在该次运行的 **Artifacts** 区下载 `shuati-debug-apk`；
+4. 传到手机安装（首次需允许“未知来源”）。
+
+注意：
+
+- runner 自带外网，本机代理不通不影响 CI；
+- CI 产出的是 **debug** 签名包（自用足够）；release 签名需要把 keystore 放进 Secrets 再改工作流；
+- 工作流里的 Python 版本必须与 `app/build.gradle.kts` 的 `chaquopy.version` 保持一致。
+
 ## 3. 应用行为说明
 
 - 启动时在应用私有目录（`filesDir`，即 Python 的 `SHUATI_HOME`）准备可写数据：

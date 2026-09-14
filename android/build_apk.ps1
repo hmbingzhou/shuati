@@ -167,16 +167,32 @@ function Resolve-LocalGradle([string]$explicit) {
     $cmd = Get-Command gradle -ErrorAction SilentlyContinue
     if ($cmd) { $cands += (Split-Path -Parent (Split-Path -Parent $cmd.Source)) }
     foreach ($c in $cands) {
-        $bat = Join-Path $c "bin\gradle.bat"
-        if (Test-Path $bat) { return $bat }
+        $paths = @((Join-Path $c "bin\gradle.bat"))
+        # 兼容“zip 解压后多套一层”的常见布局：gradle-8.9-bin\gradle-8.9\bin\gradle.bat
+        Get-ChildItem $c -Directory -Filter "gradle-*" -ErrorAction SilentlyContinue |
+            ForEach-Object { $paths += (Join-Path $_.FullName "bin\gradle.bat") }
+        foreach ($p in $paths) { if (Test-Path $p) { return $p } }
     }
     return $null
 }
 
 function Get-GradleVersion([string]$bat) {
+    # 首选发行包里的 launcher jar 名：不启动 JVM，也不受 GRADLE_USER_HOME 是否可写影响
+    $distDir = Split-Path -Parent (Split-Path -Parent $bat)
+    $libDir = Join-Path $distDir "lib"
+    if (Test-Path $libDir) {
+        $jar = Get-ChildItem $libDir -Filter "gradle-launcher-*.jar" -ErrorAction SilentlyContinue |
+            Select-Object -First 1
+        if ($jar -and $jar.Name -match "gradle-launcher-(\d+)\.(\d+)") {
+            return @([int]$Matches[1], [int]$Matches[2])
+        }
+    }
+    # 回退：跑 --version。注意此时可能因沙箱/权限写不了 GRADLE_USER_HOME 而报
+    # "Could not initialize native services"，那种输出里没有版本号，返回 0,0 交给调用方兜底。
     $out = cmd /c "`"$bat`" --version 2>&1"
-    $line = $out | Select-String -Pattern "^Gradle " | Select-Object -First 1
-    if ("$line" -match "Gradle\s+(\d+)\.(\d+)") { return @([int]$Matches[1], [int]$Matches[2]) }
+    foreach ($line in $out) {
+        if ("$line" -match "^\s*Gradle\s+(\d+)\.(\d+)") { return @([int]$Matches[1], [int]$Matches[2]) }
+    }
     return @(0, 0)
 }
 
@@ -186,7 +202,11 @@ $gradleExe = $null
 
 if ($localGradle) {
     $gv = Get-GradleVersion $localGradle
-    if ($gv[0] -gt 8 -or ($gv[0] -eq 8 -and $gv[1] -ge 9)) {
+    if ($gv[0] -eq 0) {
+        # 版本探测失败不该阻断构建（例如 JAVA_HOME 异常、GRADLE_USER_HOME 不可写）
+        Warn "无法确定 $localGradle 的版本，仍将尝试用它构建"
+        $gradleExe = $localGradle
+    } elseif ($gv[0] -gt 8 -or ($gv[0] -eq 8 -and $gv[1] -ge 9)) {
         Ok "Gradle $($gv[0]).$($gv[1])（$localGradle）"
         $gradleExe = $localGradle
     } else {
