@@ -85,11 +85,31 @@ def ensure_home(home: str) -> dict:
         copied += _copy_tree_missing(os.path.join(SEED_DIR, "data"), os.path.join(home, "data"))
         copied += _copy_tree_missing(os.path.join(SEED_DIR, "pictures"), os.path.join(home, "pictures"))
         seed_cfg = os.path.join(SEED_DIR, "bank_remote.json")
-        if os.path.isfile(seed_cfg) and not os.path.exists(os.path.join(home, "bank_remote.json")):
+        home_cfg = os.path.join(home, "bank_remote.json")
+        if os.path.isfile(seed_cfg) and not os.path.exists(home_cfg):
             try:
-                shutil.copy2(seed_cfg, os.path.join(home, "bank_remote.json"))
+                shutil.copy2(seed_cfg, home_cfg)
                 copied += 1
             except OSError:
+                pass
+        elif os.path.isfile(seed_cfg) and os.path.isfile(home_cfg):
+            # 老安装升级时：种子里的 bank_remote.json 可能新增了 gitee 镜像块，
+            # 但本地配置是用户/上次安装留下的（不会被覆盖）。镜像地址属于“下载源偏好”
+            # 而非个人数据，因此这里只做增量合并：本地没有 gitee 时补上，其余字段一律不动。
+            try:
+                with open(seed_cfg, "r", encoding="utf-8") as f:
+                    seed = json.load(f)
+                with open(home_cfg, "r", encoding="utf-8") as f:
+                    cur = json.load(f)
+                if isinstance(seed, dict) and isinstance(cur, dict):
+                    changed = False
+                    if seed.get("gitee") and not cur.get("gitee"):
+                        cur["gitee"] = seed["gitee"]
+                        changed = True
+                    if changed:
+                        with open(home_cfg, "w", encoding="utf-8") as f:
+                            json.dump(cur, f, ensure_ascii=False, indent=2)
+            except (OSError, ValueError):
                 pass
         try:
             with open(stamp_file, "w", encoding="utf-8") as f:

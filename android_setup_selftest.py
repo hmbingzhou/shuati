@@ -69,6 +69,27 @@ _, qj = get("/api/questions?subject=" + urllib.parse.quote("数据结构") + "&p
 _, mf = get("/manifest.webmanifest")
 _, ai = get("/api/app/info")
 app_info = json.loads(ai)
+
+# ---- 升级场景：种子配置里新增的 gitee 镜像，应增量合并进已有的 bank_remote.json ----
+#（老安装的 bank_remote.json 不会被种子覆盖，所以镜像地址必须靠合并才能生效）
+fake_seed = os.path.join(home, "_fake_seed")
+os.makedirs(os.path.join(fake_seed, "data"), exist_ok=True)
+os.makedirs(os.path.join(fake_seed, "pictures"), exist_ok=True)
+with open(os.path.join(fake_seed, "seed_version.json"), "w", encoding="utf-8") as f:
+    json.dump({"seed_version": "merge-test"}, f)
+with open(os.path.join(fake_seed, "bank_remote.json"), "w", encoding="utf-8") as f:
+    json.dump({"owner": "seedowner", "repo": "shuati", "branch": "main",
+               "gitee": {"owner": "octo-mirror", "repo": "shuati", "branch": "main"}},
+              f, ensure_ascii=False)
+merge_home = os.path.join(home, "_merge_home")
+os.makedirs(merge_home, exist_ok=True)
+with open(os.path.join(merge_home, "bank_remote.json"), "w", encoding="utf-8") as f:
+    json.dump({"owner": "myown", "repo": "shuati", "branch": "dev"}, f, ensure_ascii=False)
+entry.SEED_DIR = fake_seed
+entry.SEED_VERSION_FILE = os.path.join(fake_seed, "seed_version.json")
+entry.ensure_home(merge_home)
+merged = json.load(open(os.path.join(merge_home, "bank_remote.json"), encoding="utf-8"))
+
 print(json.dumps({
     "first_copied": first["copied"],
     "second_copied": second["copied"],
@@ -82,6 +103,8 @@ print(json.dumps({
     "info_home": (app_info.get("paths") or {}).get("HOME"),
     "remote_ok": bool((app_info.get("remote") or {}).get("owner")),
     "seed_version": (app_info.get("seed") or {}).get("seed_version"),
+    "merge_gitee": (merged.get("gitee") or {}).get("owner"),
+    "merge_owner_kept": merged.get("owner"),
 }, ensure_ascii=False))
 # 探针到此结束：WebUI 服务跑在 daemon 线程里，若让解释器正常 finalize，它会与仍在持有
 # stdout/stderr 缓冲锁的服务线程竞争，偶发 "Fatal Python error: _enter_buffered_busy"
@@ -209,6 +232,8 @@ def main():
                   (res["platform"], res["info_home"]))
             check("APK 版本号透传到设置页接口", res["app_version"] == "test-1.0", res["app_version"])
             check("远程题库配置随包可用", res["remote_ok"] and res["seed_version"], res)
+            check("升级时把种子里的 gitee 镜像合并进已有 bank_remote.json（且不动用户字段）",
+                  res["merge_gitee"] == "octo-mirror" and res["merge_owner_kept"] == "myown", res)
 
         print("\n" + ("Android 工程自检全部通过 ✔" if not fails else f"失败 {len(fails)} 项: {fails}"))
         return 1 if fails else 0
