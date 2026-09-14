@@ -46,15 +46,18 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+from utils import paths
+
 # ---------------------------------------------------------------- 常量 ----------------------------------------------------------------
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(BASE_DIR, "data")
-PICTURES_DIR = os.path.join(BASE_DIR, "pictures")
-BACKUPS_DIR = os.path.join(BASE_DIR, "backups")
-REMOTE_CONFIG_FILE = os.path.join(BASE_DIR, "bank_remote.json")   # 可选：手动指定远程仓库
-MANIFEST_NAME = "data_manifest.json"                              # 仓库根目录的清单文件名
-STATE_FILE = os.path.join(BASE_DIR, ".bank_sync_state.json")      # 本地“上次同步结果”，勿提交
+# 统一路径层：APP_DIR = 代码/仓库位置（git remote、清单生成）；DATA/PICTURES/BACKUPS/STATE = 可写 HOME
+BASE_DIR = paths.APP_DIR
+DATA_DIR = paths.DATA_DIR
+PICTURES_DIR = paths.PICTURES_DIR
+BACKUPS_DIR = paths.BACKUPS_DIR
+REMOTE_CONFIG_FILE = paths.REMOTE_CONFIG_FILE       # 可选：手动指定远程仓库（APP_DIR 优先，HOME 兜底）
+MANIFEST_NAME = paths.MANIFEST_NAME                 # 仓库根目录的清单文件名
+STATE_FILE = paths.STATE_FILE                       # 本地“上次同步结果”，勿提交
 
 # 需要图片的科目在 pictures/ 目录，题库数据在 data/ 目录 —— 两者都属于“题库”，一起同步
 SYNC_DIRS = ("data", "pictures")
@@ -274,11 +277,21 @@ def fetch_manifest(remote=None):
 
 # ---------------------------------------------------------------- 本地清单/状态 ----------------------------------------------------------------
 
+def _abs_path(rel: str) -> str:
+    """把同步相对路径（data/… 或 pictures/…）映射到可写 HOME 下的绝对路径"""
+    rel_os = rel.replace("/", os.sep)
+    for root_dir, base in (("data", DATA_DIR), ("pictures", PICTURES_DIR)):
+        prefix = root_dir + os.sep
+        if rel_os.startswith(prefix):
+            return os.path.join(base, rel_os[len(prefix):])
+    # 兜底：未知前缀按 HOME/data 的兄弟目录处理
+    return os.path.join(os.path.dirname(DATA_DIR), rel_os)
+
+
 def _walk_sync_files():
     """遍历 data/ 与 pictures/ 下应纳入题库同步的文件，返回 {相对路径: 绝对路径}"""
     out = {}
-    for root_dir in SYNC_DIRS:
-        base = os.path.join(BASE_DIR, root_dir)
+    for root_dir, base in (("data", DATA_DIR), ("pictures", PICTURES_DIR)):
         if not os.path.isdir(base):
             continue
         for dirpath, _dirnames, filenames in os.walk(base):
@@ -286,7 +299,7 @@ def _walk_sync_files():
                 if name.startswith("."):
                     continue
                 abs_path = os.path.join(dirpath, name)
-                rel = os.path.relpath(abs_path, BASE_DIR).replace(os.sep, "/")
+                rel = f"{root_dir}/" + os.path.relpath(abs_path, base).replace(os.sep, "/")
                 if root_dir == "data" and name in USER_DATA_FILES:
                     continue  # 个人数据不进题库清单
                 out[rel] = abs_path
@@ -302,8 +315,14 @@ def build_manifest(target=None, verbose=False):
         "note": "题库同步清单。由「python sync_bank.py build-manifest」自动生成，请随题库一起提交到 GitHub。",
         "files": files,
     }
-    target = target or os.path.join(BASE_DIR, MANIFEST_NAME)
-    _write_json(target, manifest)
+    target = target or paths.manifest_path()
+    try:
+        _write_json(target, manifest)
+    except OSError as e:
+        raise SyncError(
+            f"无法写入清单 {target}：{e}\n"
+            f"（只读环境/Android 不需要生成清单：题库内容请用「更新题库」从远程获取）"
+        )
     if verbose:
         print(f"  ✓ 已生成 {os.path.relpath(target, BASE_DIR)}")
         print(f"    共收录 {len(files)} 个文件（data 题库 + pictures 图片）")
@@ -339,7 +358,7 @@ def _write_state(manifest: dict):
 
 def local_sha(rel: str):
     """读本地文件 sha256，不存在返回 None"""
-    path = os.path.join(BASE_DIR, rel.replace("/", os.sep))
+    path = _abs_path(rel)
     if not os.path.isfile(path):
         return None
     try:
@@ -426,12 +445,12 @@ def _backup_files(rel_list):
     folder = os.path.join(BACKUPS_DIR, f"sync_backup_{stamp}")
     os.makedirs(folder, exist_ok=True)
     for rel in rel_list:
-        src = os.path.join(BASE_DIR, rel.replace("/", os.sep))
+        src = _abs_path(rel)
         if os.path.isfile(src):
             dest = os.path.join(folder, rel.replace("/", os.sep))
             os.makedirs(os.path.dirname(dest), exist_ok=True)
             shutil.copy2(src, dest)
-    return os.path.relpath(folder, BASE_DIR)
+    return os.path.relpath(folder, os.path.dirname(BACKUPS_DIR))
 
 
 def _prune_backups(keep=MAX_BACKUPS):
@@ -507,7 +526,7 @@ def _apply_update_locked(verbose=False):
     # 3) 写盘（原子替换）
     applied = []
     for rel, raw in downloads.items():
-        dest = os.path.join(BASE_DIR, rel.replace("/", os.sep))
+        dest = _abs_path(rel)
         os.makedirs(os.path.dirname(dest), exist_ok=True)
         tmp = dest + ".sync_tmp"
         with open(tmp, "wb") as f:
@@ -518,7 +537,7 @@ def _apply_update_locked(verbose=False):
     # 4) 删除远程已下架、本地又没改过的文件
     removed_ok = []
     for item in to_remove:
-        dest = os.path.join(BASE_DIR, item["path"].replace("/", os.sep))
+        dest = _abs_path(item["path"])
         try:
             if os.path.isfile(dest):
                 os.remove(dest)

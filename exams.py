@@ -13,7 +13,9 @@ import json
 import os
 import re
 
-EXAMS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "exams.json")
+from utils.paths import DATA_DIR
+
+EXAMS_FILE = os.path.join(DATA_DIR, "exams.json")
 DEFAULT_OWNER = "default"
 MAX_SCORES = 50
 

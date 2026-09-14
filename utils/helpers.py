@@ -4,7 +4,7 @@
 
 import os
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+from utils.paths import DATA_DIR  # noqa: F401  （统一路径层：可写数据根，默认=项目根/data）
 
 
 def ensure_data_dir():

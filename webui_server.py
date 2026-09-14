@@ -29,11 +29,16 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 # ---------------------------------------------------------------- 路径 ----------------------------------------------------------------
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-WEBUI_DIR = os.path.join(BASE_DIR, "webui")
-PICTURES_DIR = os.path.join(BASE_DIR, "pictures")
-DATA_DIR = os.path.join(BASE_DIR, "data")
-REPORTS_DIR = os.path.join(BASE_DIR, "reports")
+# 统一路径层：代码/只读资源用 APP_DIR；可写数据（data/pictures/reports）用 HOME
+# 桌面默认 HOME=项目根（与历史一致）；Android 通过 SHUATI_HOME 指向应用私有目录。
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from utils import paths  # noqa: E402
+
+BASE_DIR = paths.APP_DIR
+WEBUI_DIR = paths.WEBUI_DIR
+PICTURES_DIR = paths.PICTURES_DIR
+DATA_DIR = paths.DATA_DIR
+REPORTS_DIR = paths.REPORTS_DIR
 
 # 允许在页面展示的图片扩展名
 _IMG_EXT = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".webp", ".svg"}
@@ -43,7 +48,7 @@ _IMG_EXT = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".webp", ".svg"}
 sys.path.insert(0, BASE_DIR)
 
 # judge 转换插件目录（convert_tools/），供批量导入接口使用
-CONVERT_TOOLS_DIR = os.path.join(BASE_DIR, "convert_tools")
+CONVERT_TOOLS_DIR = paths.CONVERT_TOOLS_DIR
 if CONVERT_TOOLS_DIR not in sys.path:
     sys.path.insert(0, CONVERT_TOOLS_DIR)
 

@@ -14,8 +14,9 @@ import os
 
 from models.question import Question
 from question_manager import load_questions, save_questions
+from utils.paths import DATA_DIR
 
-RECYCLE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "recycle_bin.json")
+RECYCLE_FILE = os.path.join(DATA_DIR, "recycle_bin.json")
 MAX_ITEMS = 500
 
 

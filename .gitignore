@@ -22,6 +22,8 @@ data/brush_progress.json
 
 # 离线自检临时目录
 .sync_test_*/
+.paths_test_tmp/
+.server_smoke_tmp/
 
 # ---- 本地环境 / 临时 ----
 reports/

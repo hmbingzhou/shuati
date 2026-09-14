@@ -6,6 +6,7 @@ import datetime
 import os
 from typing import Dict, List, Tuple
 from utils.helpers import ensure_data_dir
+from utils.paths import REPORTS_DIR
 
 # 会话数据存储（全局累计，程序运行期间持续）
 session_data: Dict[str, dict] = {}
@@ -53,7 +54,7 @@ def generate_report() -> str:
     end_time = datetime.datetime.now()
     end_time_str = end_time.strftime("%Y-%m-%d %H:%M:%S")
     report_filename = f"刷题报告_{end_time.strftime('%Y%m%d_%H%M%S')}.txt"
-    report_dir = os.path.join(os.path.dirname(__file__), "reports")
+    report_dir = REPORTS_DIR
     os.makedirs(report_dir, exist_ok=True)
     report_path = os.path.join(report_dir, report_filename)
 

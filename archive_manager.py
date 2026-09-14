@@ -15,9 +15,9 @@ import os
 import re
 import zipfile
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(ROOT, "data")
-BACKUP_DIR = os.path.join(ROOT, "backups")
+from utils.paths import DATA_DIR, BACKUPS_DIR
+
+BACKUP_DIR = BACKUPS_DIR
 
 MAX_ARCHIVE_BYTES = 200 * 1024 * 1024  # 200MB 上限
 SAFE_NAME_RE = re.compile(r"^[\u4e00-\u9fffA-Za-z0-9_\-]+\.json$")
