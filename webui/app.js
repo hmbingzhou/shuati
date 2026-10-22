@@ -621,6 +621,8 @@ async function buildPool(cfg) {
     choice_type: it.choice_type,
     flag_star: !!it.flag_star,
     flag_cross: !!it.flag_cross,
+    blankCount: it.blankCount,        // 填空题空位数：不带上就只渲染 1 个输入框
+    wholeString: !!it.wholeString,    // 整串比对模式：单输入 + 整串提交
   }));
 }
 
@@ -641,6 +643,8 @@ async function startPracticeSession(cfg, resumeInfo = null) {
       options: r.question ? r.question.options : null, choice_type: r.question ? r.question.choice_type : null,
       flag_star: r.question ? !!r.question.flag_star : false,
       flag_cross: r.question ? !!r.question.flag_cross : false,
+      blankCount: r.question ? r.question.blankCount : 0,
+      wholeString: r.question ? !!r.question.wholeString : false,
     }));
     totalBase = pr.total || pool.length;
     doneBefore = Math.max(0, totalBase - pool.length);
@@ -905,7 +909,8 @@ function buildAnswerArea(view, p, q) {
       submit.addEventListener("click", doSubmit);
       input.addEventListener("keydown", (e) => { if (e.key === "Enter") doSubmit(); });
     } else {
-      const n = q.blankCount || 1;
+      // blankCount 由接口给出；万一缺失（旧进度/旧数据）就按题干【N】标记数兜底，避免只出一个空
+      const n = q.blankCount || countBlanks(q.text) || 1;
       let boxes = "";
       for (let i = 1; i <= n; i++) boxes += `
         <div class="fill-row"><span class="fill-idx">第${i}空</span>
@@ -2996,7 +3001,7 @@ function buildExamAnswerArea(view, ex, q) {
       });
       $("#exam-fill", area).addEventListener("keydown", (e) => { if (e.key === "Enter") { const v = e.target.value.trim(); if (v) submitAuto(v); } });
     } else {
-      const n = q.blankCount || 1;
+      const n = q.blankCount || countBlanks(q.text) || 1;
       let boxes = "";
       for (let i = 1; i <= n; i++) boxes += `
         <div class="fill-row"><span class="fill-idx">第${i}空</span>
