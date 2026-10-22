@@ -7686,11 +7686,15 @@
     "type": "填空题",
     "text": "本题要求给出希尔排序对给定初始序列{9, 8, 7, 6, 5, 4, 3, 2, 1}利用增量序列{1, 3, 7}进行排序的分步结果。将每步结果填在下列空中。注意：相邻数字间必须有一个空格，开头结尾不得有多余空格。\n原始序列\t9 8 7 6 5 4 3 2 1\n增量7排序后\t(       )\n增量3排序后\t(       )\n增量1排序后\t1 2 3 4 5 6 7 8 9",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "2 1 7 6 5 4 3 9 8 2 1 4 3 5 7 6 9 8"
+            "2 1 7 6 5 4 3 9 8"
+          ]
+        },
+        {
+          "accept": [
+            "2 1 4 3 5 7 6 9 8"
           ]
         }
       ]
@@ -7706,12 +7710,15 @@
       "items": [
         {
           "accept": [
-            "(m>0)&&(flag==1)"
+            "(m>0)&&(flag==1)",
+            "(m>0) && (flag==1)",
+            "m>0&&flag==1"
           ]
         },
         {
           "accept": [
-            "L.r[j].key>L.r[j+1].key"
+            "L.r[j].key>L.r[j+1].key",
+            "L.r[j].key > L.r[j+1].key"
           ]
         }
       ]
@@ -7730,7 +7737,8 @@
         },
         {
           "accept": [
-            "ST.R[i].key!=key"
+            "ST.R[i].key!=key",
+            "ST.R[i].key != key"
           ]
         }
       ]
@@ -7744,22 +7752,26 @@
       "items": [
         {
           "accept": [
-            "m=(low+high)/2"
+            "m=(low+high)/2",
+            "m=(low + high)/2"
           ]
         },
         {
           "accept": [
-            "high=m-1"
+            "high=m-1",
+            "high = m - 1"
           ]
         },
         {
           "accept": [
-            "low=m+1"
+            "low=m+1",
+            "low = m + 1"
           ]
         },
         {
           "accept": [
-            "j>=high+1"
+            "j>=high+1",
+            "j >= high+1"
           ]
         }
       ]
@@ -7770,11 +7782,27 @@
     "type": "填空题",
     "text": "采用邻接矩阵表示法创建无向网。\n#include <iostream>\nusing namespace std;\n#define MaxInt 32767                        \n#define MVNum 100                           \n#define OK 1    \ntypedef char VerTexType;                  \ntypedef int ArcType;                          \ntypedef struct{ \n    VerTexType vexs[MVNum];                    \n    ArcType arcs[MVNum][MVNum];              \n    int vexnum,arcnum;              \n}AMGraph;\nint LocateVex(AMGraph G , VerTexType v){\n    for(int i = 0; i < G.vexnum; ++i)\n        if(G.vexs[i] == v)\n            return i;\n   return -1;\n}\nint CreateUDN(AMGraph &G){ \n    int i , j , k;\n    cin >> G.vexnum >> G.arcnum;\n    for(i = 0; i < G.vexnum; ++i){   \n        cin >> G.vexs[i];       \n    }\n    for(i = 0; i < G.vexnum; ++i)            \n        for(j = 0; j < G.vexnum; ++j)   \n            G.arcs[i][j] = MaxInt;  \n    for(k = 0; k < G.arcnum;++k){                            \n        VerTexType v1 , v2;\n        ArcType w;\n        cin >> v1 >> v2 >> w;                                \n        i = __________________________;  \n        j = __________________________;        \n        G.arcs[i][j] =__________________________;                                    \n        G.arcs[j][i] = __________________________;                         \n    }\n    return OK; \n}",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "LocateVex(G, v1) LocateVex(G, v2) w G.arcs[i][j]"
+            "LocateVex(G, v1)",
+            "LocateVex(G,v1)"
+          ]
+        },
+        {
+          "accept": [
+            "LocateVex(G, v2)",
+            "LocateVex(G,v2)"
+          ]
+        },
+        {
+          "accept": [
+            "w"
+          ]
+        },
+        {
+          "accept": [
+            "G.arcs[i][j]"
           ]
         }
       ]
@@ -7787,11 +7815,30 @@
     "type": "填空题",
     "text": "基于邻接矩阵表示的深度优先遍历。\n#include <stdio.h>\n#define MVNum 100                           \ntypedef struct{ \n    char vexs[MVNum];          \n    int arcs[MVNum][MVNum];   \n    int vexnum,arcnum;      \n}AMGraph;\nint visited[MVNum];\nvoid CreateUDN(AMGraph &G);//实现细节隐藏\nvoid DFS(AMGraph G, int v){  \n    printf(\"%c \",G.vexs[v]);  visited[v] =1;  \n    int w;\n    for(w = 0; w < G.vexnum; w++)\n        if((__________________________)&& (__________________________))  \n        DFS(G, w);\n}\nvoid DFSTraverse(AMGraph G){ \n    int v;\n    for(v = 0; v < G.vexnum; ++v)  \n        visited[v] = 0;\n    for(v = 0; v < G.vexnum; ++v) \n        if(__________________________) \n                 __________________________;\n}\nint main(){\n    AMGraph G;     \n    CreateUDN(G);\n    DFSTraverse(G);\n    return 0;\n}",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "G.arcs[v][w]!=0 !visited[w] !visited[v] DFS(G, v)"
+            "G.arcs[v][w]!=0",
+            "G.arcs[v][w] != 0",
+            "G.arcs[v][w]!= 0"
+          ]
+        },
+        {
+          "accept": [
+            "!visited[w]",
+            "! visited[w]"
+          ]
+        },
+        {
+          "accept": [
+            "!visited[v]",
+            "! visited[v]"
+          ]
+        },
+        {
+          "accept": [
+            "DFS(G, v)",
+            "DFS(G,v)"
           ]
         }
       ]
@@ -7807,17 +7854,20 @@
       "items": [
         {
           "accept": [
-            "j=i-2"
+            "j=i-2",
+            "j = i - 2"
           ]
         },
         {
           "accept": [
-            "L.r[0].key<L.r[j].key"
+            "L.r[0].key<L.r[j].key",
+            "L.r[0].key < L.r[j].key"
           ]
         },
         {
           "accept": [
-            "L.r[j+1]=L.r[j]"
+            "L.r[j+1]=L.r[j]",
+            "L.r[j+1] = L.r[j]"
           ]
         }
       ]
@@ -7828,11 +7878,23 @@
     "type": "填空题",
     "text": "本题要求实现折半查找的递归查找操作。 例如对于下图的有序表：\n\n输入样例：\n2\n21 70\n输出样例：\n21 is found\n70 is not found\n###程序如下：\n#include <stdio.h>\n#include <stdlib.h>\ntypedef int KeyType;\ntypedef struct {\n          KeyType   *data; /*表基址*/\n          int     length;      /*表长*/\n}SSTable;\nvoid  CreatSSTable(SSTable *ST);/*有序表创建，由裁判实现，细节不表*/\nint  BiSearch(SSTable ST,KeyType e,int low,int high);\nint main()\n{\n   SSTable  ST;\n   int n,result,i;\n   KeyType e;\n   CreatSSTable(&ST);\n   scanf(\"%d\",&n);\n   for( i=0;i<n;i++)\n   {\n    scanf(\"%d\",&e);\n    result = BiSearch(ST,e,1,ST.length);\n    if(result) printf(\"%d is found\\n\",e);\n    else printf(\"%d is not found\\n\",e);\n    }\n    return 0;\n}\nint  BiSearch(SSTable ST,KeyType e,int low,int high)\n{\n   int mid;\n   if(__________________________) return 0;\n   mid=(low+high)/2;\n   if(ST.data[mid]==e) return  mid;\n   if(e<ST.data[mid]) return __________________________;\n   else __________________________;\n}",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "low>high BiSearch(ST,e,low,mid-1) return BiSearch(ST,e,mid+1,high)"
+            "low>high",
+            "low > high"
+          ]
+        },
+        {
+          "accept": [
+            "BiSearch(ST,e,low,mid-1)",
+            "BiSearch(ST, e, low, mid-1)"
+          ]
+        },
+        {
+          "accept": [
+            "return BiSearch(ST,e,mid+1,high)",
+            "return BiSearch(ST, e, mid+1, high)"
           ]
         }
       ]
@@ -7851,17 +7913,20 @@
       "items": [
         {
           "accept": [
-            "i<L.length"
+            "i<L.length",
+            "i < L.length"
           ]
         },
         {
           "accept": [
-            "j<=L.length"
+            "j<=L.length",
+            "j <= L.length"
           ]
         },
         {
           "accept": [
-            "L.r[j].key<L.r[k].key"
+            "L.r[j].key<L.r[k].key",
+            "L.r[j].key < L.r[k].key"
           ]
         }
       ]
@@ -7872,11 +7937,24 @@
     "type": "填空题",
     "text": "创建二叉树。\n#include<iostream>\nusing namespace std;\ntypedef struct BiNode{\n    char data;\n    struct BiNode *lchild,*rchild;\n}BiTNode,*BiTree;\nvoid CreateBiTree(__________________________){    \n    char ch;\n    cin >> ch;\n    if(ch=='#')  T=NULL;\n    else{                            \n        T=new BiTNode;\n        T->data=ch;                    \n        __________________________;    \n        __________________________;    \n    }                                \n}    \nvoid InOrderTraverse(BiTree T){  \n    if(T){\n        InOrderTraverse(T->lchild);\n        cout << T->data;\n        InOrderTraverse(T->rchild);\n    }\n}\nint main(){\n    BiTree tree;\n    CreateBiTree(tree);\n    InOrderTraverse(tree);\n    return 0;\n}",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "BiTree &T CreateBiTree(T->lchild) CreateBiTree(T->rchild)"
+            "BiTree &T",
+            "BiTree& T",
+            "BiTree & T"
+          ]
+        },
+        {
+          "accept": [
+            "CreateBiTree(T->lchild)",
+            "CreateBiTree(T -> lchild)"
+          ]
+        },
+        {
+          "accept": [
+            "CreateBiTree(T->rchild)",
+            "CreateBiTree(T -> rchild)"
           ]
         }
       ]
@@ -7892,17 +7970,20 @@
       "items": [
         {
           "accept": [
-            "low<=high"
+            "low<=high",
+            "low <= high"
           ]
         },
         {
           "accept": [
-            "key==ST.R[mid].key"
+            "key==ST.R[mid].key",
+            "key == ST.R[mid].key"
           ]
         },
         {
           "accept": [
-            "key<ST.R[mid].key"
+            "key<ST.R[mid].key",
+            "key < ST.R[mid].key"
           ]
         }
       ]

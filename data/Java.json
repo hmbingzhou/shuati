@@ -7075,30 +7075,17 @@
   },
   {
     "type": "填空题",
-    "text": "阅读程序，在程序的两个空白处填写正确代码\n【1】JavaApplication {     public 【2】 void main(String[] args){      System.out.println(\"Hello Word!\");     }     }\npublic class static\n在Java中，命令行模式加载和运行Hello.class文件,需要键入(     )命令。\njava Hello\n在Java中，将Hello.java文件编译生成class文件，需要键入(      )命令。\njavac Hello.java\nJava把数据类型分为(     )数据类型和引用数据类型。\n基本\nJava中，语句byte b = (byte)128;执行后b=(      )。\n-128\nJava语言的八种基本数据类型有：字节型，占一个字节。short短整型，占两个字节。(      )整型，占4个字节。long长整型，占8个字节。float单精度浮点型，占4个字节。double双精度浮点型，占8个字节。char字符型，占两个字节。(       )型，表示逻辑值，有true和false两个值，分别占一个字节。\nint boolean\nJAVA中，int数据类型占(      )个字节。\n4\nJava中的注释有三类，分别是单行注释、多行注释和(     )。\n文档注释\n写出该语句的输出结果\nSystem.out.println(\"Hello\"+1+2);\nHello12\n在Java中的跳转语句有(       )语句和continue语句。\nbreak\n阅读以下程序：\nimport java.util.Scanner;\npublic class Test {\n  public static void main(String[] args) {\n        Scanner input = new Scanner(System.in);\n        int number, max;\n        number = input.nextInt();\n        max = number;\n        while (number != 0) {\n            number = input.nextInt();\n            if (number > max)\n                 max = number;\n        }\n        System.out.println(\"max is \" + max);\n        System.out.println(\"number \" + number);\n     }\n}\n假设输入是 2 3 4 5 0，程序输出是：\nmax is (        )\nnumber (        )\n5 0\nJava中，以下程序代码输出(       )次“计算机科学与技术”。\npublic class Main {\n    public static void main(String[] args) {\n        for(int x=1; x<=10; x++) {\n            if(x%3==0) {\n                System.out.println(\"计算机科学与技术\");\n                continue;\n            }else {\n                System.out.println(\"计算机科学与技术\");\n                break;\n        }\n    }\n}\n1\n请写出以下程序运行结果：\n▾\n▾\n▾\npublic class MyFor{\n    public static void main(String argv[]){\n        int i, j;\nouter:    for (i=1;i <3;i++)\ninner:    for (j=1; j<3; j++) {\n        if (j==2)continue outer;\n        System.out.println(\"Value for i=\" + i + \" Value for j=\" +j);\n        }\n    }\n}\n(       )\n(       )\nValue for i=1 Value for j=1 Value for i=2 Value for j=1\n当编译运行下列代码时，运行结果是什么？\npublic class Main{\n    public static void main(String args[]){\n        outer:\n        for(int i=0;i<3;i++){\n            innner:\n            for(int j=0;j<3;j++){\n                if(j>1) break outer;\n                System.out.println(j+\" and \"+i);\n            }\n        }\n    }\n}\n运行结果：\n(       )\n(       )\n0 and 0 1 and 0\n请说出A类中System.out.println的输出结果。\n class B{\n    int x=100,y=200;\n    public void setX(int x){ x=x; }\n    public void setY(int y){ this.y=y; } \n    public int getXYSum(){ return x+y; } \n } \n public class A { \n    public static void main(String args[]){\n        B b=newB(); \n        b.setX(-100); \n        b.setY(-200); \n        System.out.println(\"sum=\"+b.getXYSum()); \n    } \n } \n 程序输出结果为：sum=(      )\n-100\n请写出以下程序运行结果：\n▾\n▾\n▾\nclass A\n{\n    int    x;\n    String s;\n};\nclass HelloWorld\n{\n    public static void main(String[] args) \n    {\n        A a= new A();\n        System.out.println(a.s);\n        System.out.println(a.x);\n}}\n(       )\n(       )",
-    "answer": {
-      "whole": true,
-      "items": [
-        {
-          "accept": [
-            "null 0"
-          ]
-        }
-      ]
-    },
-    "subject": "Java",
-    "choice_type": null,
-    "multiple_answers": null
-  },
-  {
-    "type": "填空题",
     "text": "阅读程序，在程序的两个空白处填写正确代码\n【1】JavaApplication {     public 【2】 void main(String[] args){      System.out.println(\"Hello Word!\");     }     }",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "public class static"
+            "public class"
+          ]
+        },
+        {
+          "accept": [
+            "static"
           ]
         }
       ]
@@ -7111,11 +7098,11 @@
     "type": "填空题",
     "text": "在Java中，命令行模式加载和运行Hello.class文件,需要键入(     )命令。",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "java Hello"
+            "java Hello",
+            "java Hello.class"
           ]
         }
       ]
@@ -7128,11 +7115,11 @@
     "type": "填空题",
     "text": "在Java中，将Hello.java文件编译生成class文件，需要键入(      )命令。",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "javac Hello.java"
+            "javac Hello.java",
+            "javac Hello"
           ]
         }
       ]
@@ -7148,7 +7135,9 @@
       "items": [
         {
           "accept": [
-            "基本"
+            "基本",
+            "基本数据",
+            "基本数据类型"
           ]
         }
       ]
@@ -7162,7 +7151,8 @@
       "items": [
         {
           "accept": [
-            "-128"
+            "-128",
+            "－128"
           ]
         }
       ]
@@ -7181,7 +7171,8 @@
         },
         {
           "accept": [
-            "boolean"
+            "boolean",
+            "布尔"
           ]
         }
       ]
@@ -7195,7 +7186,9 @@
       "items": [
         {
           "accept": [
-            "4"
+            "4",
+            "4个",
+            "4个字节"
           ]
         }
       ]
@@ -7209,7 +7202,9 @@
       "items": [
         {
           "accept": [
-            "文档注释"
+            "文档注释",
+            "文档注释/**/",
+            "/**/"
           ]
         }
       ]
@@ -7220,7 +7215,6 @@
     "type": "填空题",
     "text": "写出该语句的输出结果\nSystem.out.println(\"Hello\"+1+2);",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
@@ -7273,7 +7267,8 @@
       "items": [
         {
           "accept": [
-            "1"
+            "1",
+            "1次"
           ]
         }
       ]
@@ -7284,11 +7279,15 @@
     "type": "填空题",
     "text": "请写出以下程序运行结果：\n▾\n▾\n▾\npublic class MyFor{\n    public static void main(String argv[]){\n        int i, j;\nouter:    for (i=1;i <3;i++)\ninner:    for (j=1; j<3; j++) {\n        if (j==2)continue outer;\n        System.out.println(\"Value for i=\" + i + \" Value for j=\" +j);\n        }\n    }\n}\n(       )\n(       )",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "Value for i=1 Value for j=1 Value for i=2 Value for j=1"
+            "Value for i=1 Value for j=1"
+          ]
+        },
+        {
+          "accept": [
+            "Value for i=2 Value for j=1"
           ]
         }
       ]
@@ -7301,11 +7300,15 @@
     "type": "填空题",
     "text": "当编译运行下列代码时，运行结果是什么？\npublic class Main{\n    public static void main(String args[]){\n        outer:\n        for(int i=0;i<3;i++){\n            innner:\n            for(int j=0;j<3;j++){\n                if(j>1) break outer;\n                System.out.println(j+\" and \"+i);\n            }\n        }\n    }\n}\n运行结果：\n(       )\n(       )",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "0 and 0 1 and 0"
+            "0 and 0"
+          ]
+        },
+        {
+          "accept": [
+            "1 and 0"
           ]
         }
       ]
@@ -7321,7 +7324,8 @@
       "items": [
         {
           "accept": [
-            "-100"
+            "-100",
+            "－100"
           ]
         }
       ]
@@ -7396,7 +7400,9 @@
       "items": [
         {
           "accept": [
-            "成员变量"
+            "成员变量",
+            "成员变量/属性",
+            "属性"
           ]
         },
         {
@@ -7434,7 +7440,9 @@
         },
         {
           "accept": [
-            "1"
+            "1",
+            "第一",
+            "1行"
           ]
         }
       ]
@@ -7448,7 +7456,8 @@
       "items": [
         {
           "accept": [
-            "s=270"
+            "s=270",
+            "s = 270"
           ]
         }
       ]
@@ -7504,7 +7513,8 @@
       "items": [
         {
           "accept": [
-            "lang"
+            "lang",
+            "lang包"
           ]
         }
       ]
@@ -7596,11 +7606,13 @@
     "type": "填空题",
     "text": "阅读下列程序：\npublic class Main{ \n    public static void main(String[]args){ \n        System.out.println(\"创建一个Faculty对象\"); \n        new Faculty(); \n    } \n} \nclass Faculty extends Employee { \n    public Faculty(){ \n        System.out.println(\"完成Faculty的任务\"); \n    } \n} \nclass Employee extends Person{ \n    public Employee(){ \n        this(\"调用Employee的重载构造方法\"); \n        System.out.println(\"完成Employee的任务\"); \n    } \n    public Employee(String s){ \n        System.out.println(s); \n    } \n} \nclass Person { \n    public Person() { \n        System.out.println(\"完成Person的任务\"); \n    } \n}\n从下面选项中进行选择，将相应序号（1、2、3、4、5中选其一）填入空格中：\n（1）完成Person的任务\n（2）完成Employee的任务\n（3）完成Faculty的任务\n（4）调用Employee的重载构造方法\n（5）创建一个Faculty对象\n按程序执行顺序输出结果：(       )",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "5 1 4 2 3"
+            "5 1 4 2 3",
+            "51423",
+            "5,1,4,2,3",
+            "5、1、4、2、3"
           ]
         }
       ]
@@ -7616,17 +7628,20 @@
       "items": [
         {
           "accept": [
-            "i=40"
+            "i=40",
+            "i = 40"
           ]
         },
         {
           "accept": [
-            "i=60"
+            "i=60",
+            "i = 60"
           ]
         },
         {
           "accept": [
-            "i=60"
+            "i=60",
+            "i = 60"
           ]
         }
       ]
@@ -7714,11 +7729,20 @@
     "type": "填空题",
     "text": "阅读以下程序： \npublic class Test extends TT{ \n    public static void main(String args[]){ \n        Test t=new Test(\"Tom\"); \n    } \n    public Test(String s){ \n        super(s); \n        System.out.println(\"How do you do?\"); \n    } \n    public Test(){ \n        this(\"I am Tom\"); \n    } \n} \nclass TT { \n    public TT(){ \n        System.out.println(\"What a pleasure!\"); \n    } \n    public TT(String s){ \n        this(); \n        System.out.println(\"I am \"+s); \n    } \n} \n程序运行结果为： \n(       )\n(       )\n(       )",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "What a pleasure! I am Tom How do you do?"
+            "What a pleasure!"
+          ]
+        },
+        {
+          "accept": [
+            "I am Tom"
+          ]
+        },
+        {
+          "accept": [
+            "How do you do?"
           ]
         }
       ]
@@ -7731,11 +7755,15 @@
     "type": "填空题",
     "text": "已知代码：\nclass MyDate{\n  int year;\n  int month;\n  int day;\n  MyDate(int year,int month,int day){\n     this.year=year;\n     this.month=month;\n     this.day=day;\n  }\n}\npublic class Main{\n  public static void main(String args[]){\n     MyDate md1=new MyDate(2009,2,10);\n     MyDate md2=new MyDate(2009,2,10);\n     if(md1==md2)\n       System.out.println(\"md1==md2\");\n     else\n       System.out.println(\"md1!=md2\");\n     if(md1.equals(md2))\n       System.out.println(\"md1 is equla to md2\");\n     else\n       System.out.println(\"md1 is not equal to md2\");\n  }\n}\n运行上述代码，写出其运行结果：\n(       )\n(       )",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "md1!=md2 md1 is not equal to md2"
+            "md1!=md2"
+          ]
+        },
+        {
+          "accept": [
+            "md1 is not equal to md2"
           ]
         }
       ]
@@ -7751,7 +7779,8 @@
       "items": [
         {
           "accept": [
-            "Number"
+            "Number",
+            "java.lang.Number"
           ]
         }
       ]
@@ -7818,7 +7847,6 @@
     "type": "填空题",
     "text": "下列代码的运行结果是什么？\npublic class Main{\n  static{\n     System.out.print(\"Hi here,\");\n  }\n  public void print(){\n     System.out.print(\"Hello\");\n  }\n  public static void main(String args[]){\n     Main m1=new Main();\n     m1.print();\n     Main m2=new Main();\n     m2.print();\n  }\n}\n上述代码的运行结果为：(     )",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
@@ -7930,11 +7958,30 @@
     "type": "填空题",
     "text": "运行下列代码，运行结果是什么？\npublic class Main{\n  int i=2;\n  static int is;\n  static{\n    System.out.println(\"in static block\");\n    is=5;\n    System.out.println(\"static variable is=\"+is);\n  }\n  {\n    System.out.println(\"in non-static block\");\n    i=8;\n  }\n  Main(){\n    i=10;\n  }\n  public static void main(String args[]){\n    System.out.println(\"in main()\");\n    Main m1=new Main();\n    System.out.println(m1.i);\n  }\n}\n运行上述代码，则运行结果为：\n(       )\n(       )\n(       )\n(       )\n(       )",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "in static block static variable is=5 in main() in non-static block 10"
+            "in static block"
+          ]
+        },
+        {
+          "accept": [
+            "static variable is=5"
+          ]
+        },
+        {
+          "accept": [
+            "in main()"
+          ]
+        },
+        {
+          "accept": [
+            "in non-static block"
+          ]
+        },
+        {
+          "accept": [
+            "10"
           ]
         }
       ]
@@ -8025,7 +8072,8 @@
       "items": [
         {
           "accept": [
-            "Throwable"
+            "Throwable",
+            "java.lang.Throwable"
           ]
         }
       ]
@@ -8039,7 +8087,8 @@
       "items": [
         {
           "accept": [
-            "Exception"
+            "Exception",
+            "Exception类"
           ]
         },
         {
@@ -8069,11 +8118,40 @@
     "type": "填空题",
     "text": "请写出以下程序运行结果：\n▾\n▾\n▾\n▾\n▾\n▾\n▾\n▾\n▾\nclass NoWater extends Exception {}\nclass NoDrinkableWater extends NoWater {}\npublic class FinallyWorks {\n    static int count = 0;\n    public static void main(String[] args) throws NoWater {\n        while ( true ) {\n           try {\n           count++;\n           if ( count == 1 ) { \n             System.out.println(\"OK\");\n           } else if ( count == 2 ) {\n             System.out.println(\"Exception raised: NoDrinkableWater\");\n             throw new NoDrinkableWater();\n           } else if ( count == 3 ) {\n             System.out.println(\"Exception raised: NoWater\");\n             throw new NoWater();\n           }\n            } catch (NoDrinkableWater e) {\n                System.out.println(e);\n            } finally {\n                System.out.println(\"finally\");\n                if ( count == 3 )\n                    break;\n            }\n        }\n    }\n}\n(       )\n(       )\n(       )\n(       )\n(       )\n(       )\n(       )",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "OK finally Exception raised: NoDrinkableWater NoDrinkableWater finally Exception raised: NoWater finally"
+            "OK"
+          ]
+        },
+        {
+          "accept": [
+            "finally"
+          ]
+        },
+        {
+          "accept": [
+            "Exception raised: NoDrinkableWater"
+          ]
+        },
+        {
+          "accept": [
+            "NoDrinkableWater"
+          ]
+        },
+        {
+          "accept": [
+            "finally"
+          ]
+        },
+        {
+          "accept": [
+            "Exception raised: NoWater"
+          ]
+        },
+        {
+          "accept": [
+            "finally"
           ]
         }
       ]
@@ -8100,11 +8178,20 @@
     "type": "填空题",
     "text": "请写出以下程序运行结果：\n▾\n▾\n▾\n▾\n▾\n▾\n▾\nclass Exception1  extends Exception {}\nclass Exception2  extends Exception1  {}\npublic class Test {\n   public static void main(String[] args) \n      throws Exception {\n      try {\n         try {\n             throw new Exception2();\n         } catch ( Exception1  a ) {\n             System.out.println(\"Caught Exception1\");\n             throw a;\n         }\n      } catch ( Exception2 s ) {\n         System.out.println(\"Caught Exception2\");\n         return ;\n      } finally {\n         System.out.println(\"Hello World!\");\n}}}\n(       )\n(       )\n(       )",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "Caught Exception1 Caught Exception2 Hello World!"
+            "Caught Exception1"
+          ]
+        },
+        {
+          "accept": [
+            "Caught Exception2"
+          ]
+        },
+        {
+          "accept": [
+            "Hello World!"
           ]
         }
       ]
@@ -8265,12 +8352,14 @@
       "items": [
         {
           "accept": [
-            "OutputStream"
+            "OutputStream",
+            "输出流"
           ]
         },
         {
           "accept": [
-            "Reader"
+            "Reader",
+            "字符流输入"
           ]
         }
       ]
@@ -8284,7 +8373,8 @@
       "items": [
         {
           "accept": [
-            "run()"
+            "run()",
+            "run"
           ]
         }
       ]
@@ -8326,7 +8416,8 @@
       "items": [
         {
           "accept": [
-            "start()"
+            "start()",
+            "start"
           ]
         }
       ]

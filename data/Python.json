@@ -8429,11 +8429,11 @@
     "type": "填空题",
     "text": "（               ）字符是一个出现在字符串文本中，以反斜杠（\\）开始的特殊字符。\n【第1空(1分)】",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "转义"
+            "转义",
+            "转义字符"
           ]
         }
       ]
@@ -8483,7 +8483,8 @@
       "items": [
         {
           "accept": [
-            "helloworld"
+            "helloworld",
+            "hello world"
           ]
         }
       ]
@@ -8496,30 +8497,11 @@
     "type": "填空题",
     "text": "逻辑运算符__________\n【第1空(1分)】\n可以对布尔表达式为真的值进行取反。",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "not"
-          ]
-        }
-      ]
-    },
-    "subject": "Python",
-    "flag_star": false,
-    "flag_cross": false,
-    "choice_type": null,
-    "multiple_answers": null
-  },
-  {
-    "type": "填空题",
-    "text": "```",
-    "answer": {
-      "whole": true,
-      "items": [
-        {
-          "accept": [
-            "6"
+            "not",
+            "NOT"
           ]
         }
       ]
@@ -8553,7 +8535,9 @@
       "items": [
         {
           "accept": [
-            "字符串"
+            "字符串",
+            "字符串类型",
+            "str"
           ]
         }
       ]
@@ -8582,11 +8566,11 @@
     "type": "填空题",
     "text": "以下程序的输出结果是\n【第1空(2分)】\n```\nIs = []\ndef func(a,b):\nIs.append(b)\nreturn a * b\ns = func(\"love\",2)\nprint(s,Is)\n```",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "lovelove [2]"
+            "lovelove [2]",
+            "lovelove[2]"
           ]
         }
       ]
@@ -8604,7 +8588,8 @@
       "items": [
         {
           "accept": [
-            "0xfe"
+            "0xfe",
+            "0xFE"
           ]
         },
         {
@@ -8625,31 +8610,13 @@
   },
   {
     "type": "填空题",
-    "text": "下面程序输出结果是什么？\n【第1空(2分)】\n```\nclass account:\ndef __init__(self,id,balance):\nself.id=id\nself.balance=balance",
-    "answer": {
-      "whole": true,
-      "items": [
-        {
-          "accept": [
-            "def deposit(self,amount):"
-          ]
-        }
-      ]
-    },
-    "subject": "Python",
-    "flag_star": false,
-    "flag_cross": false,
-    "choice_type": null,
-    "multiple_answers": null
-  },
-  {
-    "type": "填空题",
     "text": "类的定义与使用（高教社，《Python编程基础及应用》习题9-2）\n请写出下述程序的执行结果：\n```\nfrom math import *\nclass\nCircle:\ndef __init__(self, radius =1):\nself.radius = radius\ndef getPerimeter(self):\nreturn 2 * self.radius * pi\ndef getArea(self):\nreturn self.radius *self.radius * pi\ndef setRadius(self, radius):\nself.radius = radius\na = Circle(10)\nprint\n(\"{:.1f},{:.2f}\".format(a.getPerimeter(),a.getArea()))\n```\n执行结果为：\n【1】",
     "answer": {
       "items": [
         {
           "accept": [
-            "62.8,314.16"
+            "62.8,314.16",
+            "62.8, 314.16"
           ]
         }
       ]
@@ -8673,25 +8640,6 @@
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
-  },
-  {
-    "type": "填空题",
-    "text": "有一个文本文件1.txt，内容如下：",
-    "answer": {
-      "whole": true,
-      "items": [
-        {
-          "accept": [
-            "```"
-          ]
-        }
-      ]
-    },
-    "subject": "Python",
-    "flag_star": false,
-    "flag_cross": false,
-    "choice_type": null,
-    "multiple_answers": null
   },
   {
     "type": "填空题",
@@ -8748,7 +8696,8 @@
       "items": [
         {
           "accept": [
-            "print(sum)"
+            "print(sum)",
+            "6"
           ]
         }
       ]
@@ -8761,11 +8710,11 @@
     "type": "填空题",
     "text": "有以下程序\nx = int(input('请输入第一个数：'))\ny = int(input('请输入第二个数：'))\nif x > y:\nx,y = y,x\nprint(x,y)\n程序运行时输入10〈回车〉，12〈回车〉，执行后输出结果是\n【第1空(2分)】",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "10 12"
+            "10 12",
+            "10,12"
           ]
         }
       ]
@@ -8783,13 +8732,16 @@
       "items": [
         {
           "accept": [
-            "二分支"
-          ]
+            "二分支",
+            "双分支"
+          ],
+          "group": 1
         },
         {
           "accept": [
             "多分支"
-          ]
+          ],
+          "group": 1
         }
       ]
     },
@@ -8865,11 +8817,12 @@
     "type": "填空题",
     "text": "阅读下列Python语言程序，写出程序运行结果。\nsa = [str(i) for i in range(3)]\nprint(sa)。\n【第1空(2分)】\n。",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "['0', '1', '2']"
+            "['0', '1', '2']",
+            "['0','1','2']",
+            "[\"0\", \"1\", \"2\"]"
           ]
         }
       ]
@@ -8903,7 +8856,8 @@
       "items": [
         {
           "accept": [
-            "func()"
+            "func()",
+            "40"
           ]
         }
       ]
@@ -8919,7 +8873,9 @@
       "items": [
         {
           "accept": [
-            "error"
+            "error",
+            "Error",
+            "报错"
           ]
         }
       ]
@@ -8964,7 +8920,6 @@
     "type": "填空题",
     "text": "已知函数定义 def func(x,y,z):return x+y-z, 那么表达式func(y=2,z=3,x=8)的值为_____\n【第1空(2分)】",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
@@ -8981,32 +8936,13 @@
   },
   {
     "type": "填空题",
-    "text": "执行下列语句后的显示结果是什么?\n【第1空(2分)】\ndef m(list):\nv = list[0]\nfor e in list:\nif v < e: v = e\nreturn v",
-    "answer": {
-      "whole": true,
-      "items": [
-        {
-          "accept": [
-            "values = [[3, 4, 5, 1], [33, 6, 1, 2]]"
-          ]
-        }
-      ]
-    },
-    "subject": "Python",
-    "flag_star": false,
-    "flag_cross": false,
-    "choice_type": null,
-    "multiple_answers": null
-  },
-  {
-    "type": "填空题",
     "text": "for row in values:\nprint(m(row), end = \" \") #一个空格",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "5 33"
+            "5 33",
+            "5,33"
           ]
         }
       ]
@@ -9024,7 +8960,8 @@
       "items": [
         {
           "accept": [
-            "[111,11,1]"
+            "[111,11,1]",
+            "[111, 11, 1]"
           ]
         }
       ]
@@ -9037,11 +8974,11 @@
     "type": "填空题",
     "text": "表达式 map(lambda x:x+5,[1,2,3,4,5])的值为____。\n【第1空(2分)】",
     "answer": {
-      "whole": true,
       "items": [
         {
           "accept": [
-            "[6,7,8,9,10]"
+            "[6,7,8,9,10]",
+            "[6, 7, 8, 9, 10]"
           ]
         }
       ]
@@ -9128,7 +9065,8 @@
       "items": [
         {
           "accept": [
-            "0xfe"
+            "0xfe",
+            "0xFE"
           ]
         },
         {
@@ -9197,50 +9135,13 @@
   },
   {
     "type": "填空题",
-    "text": "要正常运行以下程序，请将代码补充完整。\nclass Person(object):\ndef __init__(\n【第1空(2分)】\n,name,gender,birth):",
-    "answer": {
-      "whole": true,
-      "items": [
-        {
-          "accept": [
-            "self.name = name"
-          ]
-        }
-      ]
-    },
-    "subject": "Python",
-    "flag_star": false,
-    "flag_cross": false,
-    "choice_type": null,
-    "multiple_answers": null
-  },
-  {
-    "type": "填空题",
-    "text": "self.gender = gender",
-    "answer": {
-      "whole": true,
-      "items": [
-        {
-          "accept": [
-            "self.birth = birth"
-          ]
-        }
-      ]
-    },
-    "subject": "Python",
-    "flag_star": false,
-    "flag_cross": false,
-    "choice_type": null,
-    "multiple_answers": null
-  },
-  {
-    "type": "填空题",
     "text": "Python语句序列：\nx='123'\nprint(isinstance(x,int))\n的运行结果为：\n【1】\n。",
     "answer": {
       "items": [
         {
           "accept": [
-            "False"
+            "False",
+            "false"
           ]
         }
       ]
@@ -9272,7 +9173,8 @@
       "items": [
         {
           "accept": [
-            "list"
+            "list",
+            "列表"
           ]
         }
       ]
@@ -9304,7 +9206,8 @@
       "items": [
         {
           "accept": [
-            "脚本"
+            "脚本",
+            "脚本模式"
           ]
         }
       ]
@@ -9320,7 +9223,8 @@
       "items": [
         {
           "accept": [
-            "文件"
+            "文件",
+            "文件名"
           ]
         }
       ]
@@ -9352,7 +9256,9 @@
       "items": [
         {
           "accept": [
-            "index"
+            "index",
+            "索引",
+            "下标"
           ]
         }
       ]
