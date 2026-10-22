@@ -171,20 +171,32 @@ def search_questions(keyword: str) -> List[Tuple[int, str, Question]]:
 # ==================== 刷题进度管理 ====================
 
 def save_brush_progress(data: Dict[str, Any]):
-    """保存刷题进度"""
+    """保存刷题进度
+
+    现在每答一题就会写一次，所以先写临时文件再原子替换：
+    即使进程在写入过程中被杀，也不会留下半截 JSON 把进度弄丢。
+    """
     ensure_data_dir()
     filename = get_progress_filename()
-    with open(filename, "w", encoding="utf-8") as f:
+    tmp = filename + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+        f.flush()
+        os.fsync(f.fileno())
+    os.replace(tmp, filename)
 
 
 def load_brush_progress() -> Optional[Dict[str, Any]]:
-    """读取刷题进度，无文件时返回 None"""
+    """读取刷题进度，无文件（或文件损坏）时返回 None"""
     filename = get_progress_filename()
     if not os.path.exists(filename):
         return None
-    with open(filename, "r", encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        with open(filename, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except (ValueError, OSError):
+        return None
+    return data if isinstance(data, dict) else None
 
 
 def clear_brush_progress():

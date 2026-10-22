@@ -640,14 +640,30 @@ const BOOT_HASH = (typeof location !== "undefined" && location.hash) || "";
 function practiceSnapshot(p) {
   if (!p || p.finished) return null;
   const answeredCurrent = p.answered ? 1 : 0;
-  const remaining = p.pool.slice(p.pos + answeredCurrent);
+  const doneCount = p.pos + answeredCurrent;
+  const remaining = p.pool.slice(doneCount);
   if (!remaining.length) return null;          // 没有剩余题就不用存（答完会自动清）
   const baseMode = p.modeKey || "all";
   const mode = baseMode + (p.wrong && !String(baseMode).endsWith("wrong") ? "_wrong" : "");
+  /* 已答题目连作答记录一起存：刷新/续做后还能「上一题」回看做过什么 */
+  const done = [];
+  for (let i = 0; i < doneCount; i++) {
+    const q = p.pool[i];
+    if (!q) continue;
+    const h = p.history[i] || {};
+    done.push({
+      subject: q.subject,
+      text: q.text,
+      userAnswer: h.userAnswer == null ? "" : h.userAnswer,
+      correct: !!h.correct,
+      correctAnswer: h.correctAnswer == null ? "" : h.correctAnswer,
+    });
+  }
   return {
     subject: p.cfg.scope.type === "all" ? "所有科目" : (p.cfg.scope.name || ""),
     mode,
     type_label: p.cfg.typeLabel || null,
+    done,
     remaining: remaining.map((r) => ({ subject: r.subject, text: r.text })),
     total: p.totalBase,
   };
@@ -688,21 +704,59 @@ async function startPracticeSession(cfg, resumeInfo = null) {
   let pcfg;
   let modeKey;
   let wrong;
+  let startPos = 0;
+  let restoredHistory = [];
+  let restoredStats = { total: 0, correct: 0, wrong: 0 };
+  let restoredSubjects = {};
+
+  const toCard = (r) => (r && r.found ? {
+    subject: r.subject, index: r.index, text: r.text,
+    label: r.question ? r.question.label : "", type: r.question ? r.question.type : "",
+    options: r.question ? r.question.options : null,
+    choice_type: r.question ? r.question.choice_type : null,
+    flag_star: r.question ? !!r.question.flag_star : false,
+    flag_cross: r.question ? !!r.question.flag_cross : false,
+    blankCount: r.question ? r.question.blankCount : 0,
+    wholeString: r.question ? !!r.question.wholeString : false,
+  } : null);
 
   if (resumeInfo) {
     const pr = resumeInfo.progress;
-    const resolved = await api("POST", "/api/resolve", { remaining: pr.remaining || [] });
-    pool = resolved.items.filter((r) => r.found).map((r) => ({
-      subject: r.subject, index: r.index, text: r.text,
-      label: r.question ? r.question.label : "", type: r.question ? r.question.type : "",
-      options: r.question ? r.question.options : null, choice_type: r.question ? r.question.choice_type : null,
-      flag_star: r.question ? !!r.question.flag_star : false,
-      flag_cross: r.question ? !!r.question.flag_cross : false,
-      blankCount: r.question ? r.question.blankCount : 0,
-      wholeString: r.question ? !!r.question.wholeString : false,
-    }));
+    const doneRaw = Array.isArray(pr.done) ? pr.done : [];
+    const restRaw = Array.isArray(pr.remaining) ? pr.remaining : [];
+    /* 已答的和剩余的题目一起解析：已答的也进 pool，续做后仍能「上一题」回看 */
+    const ask = doneRaw.map((d) => ({ subject: d.subject, text: d.text }))
+      .concat(restRaw.map((r) => ({ subject: r.subject, text: r.text })));
+    const resolved = await api("POST", "/api/resolve", { remaining: ask });
+    const cards = (resolved.items || []).map(toCard);
+
+    pool = [];
+    for (let i = 0; i < doneRaw.length; i++) {
+      const card = cards[i];
+      if (!card) continue;
+      const d = doneRaw[i] || {};
+      const correct = !!d.correct;
+      pool.push(card);
+      restoredHistory.push({
+        userAnswer: d.userAnswer == null ? "" : d.userAnswer,
+        correct,
+        correctAnswer: d.correctAnswer == null ? "" : d.correctAnswer,
+      });
+      restoredStats.total += 1;
+      if (correct) restoredStats.correct += 1; else restoredStats.wrong += 1;
+      const s = restoredSubjects[card.subject] ||
+        (restoredSubjects[card.subject] = { total: 0, correct: 0, wrong: 0 });
+      s.total += 1;
+      if (correct) s.correct += 1; else s.wrong += 1;
+    }
+    for (let i = doneRaw.length; i < cards.length; i++) {
+      if (cards[i]) pool.push(cards[i]);
+    }
+
     totalBase = pr.total || pool.length;
-    doneBefore = Math.max(0, totalBase - pool.length);
+    startPos = restoredHistory.length;
+    // 老格式（只有 remaining、没有 done）仍按「从第 N 题续做」显示
+    doneBefore = doneRaw.length ? 0 : Math.max(0, totalBase - pool.length);
     wrong = String(pr.mode || "").endsWith("wrong");
     const mixed = pr.subject === "所有科目" || String(pr.mode).startsWith("all");
     pcfg = {
@@ -733,14 +787,14 @@ async function startPracticeSession(cfg, resumeInfo = null) {
 
   state.practice = {
     cfg: pcfg, wrong, modeKey,
-    pool, pos: 0, doneBefore, totalBase,
+    pool, pos: startPos, doneBefore, totalBase,
     startTime: fmtNow(), endTime: null,
-    subjects: {},
-    stats: { total: 0, correct: 0, wrong: 0 },
+    subjects: restoredSubjects,
+    stats: restoredStats,
     finished: false,
     answered: false,   // 是否已提交当前题的答案
-    cursor: 0,         // 当前展示位置（可回看 < pos 的已答题）
-    history: [],       // history[题序号] = {userAnswer, correct, correctAnswer}
+    cursor: startPos,  // 当前展示位置（可回看 < pos 的已答题）
+    history: restoredHistory,   // history[题序号] = {userAnswer, correct, correctAnswer}
     reportSaved: false,
     reportSaveFailed: false,
     reportSaving: false,

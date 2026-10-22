@@ -596,17 +596,22 @@ def handle_progress_get():
 
 
 def handle_progress_save(body):
-    """保存刷题进度 body: {subject,mode,type_label,remaining,total}"""
+    """保存刷题进度 body: {subject,mode,type_label,done,remaining,total}"""
     subject = (body.get("subject") or "").strip()
     mode = body.get("mode") or "all"
     remaining = body.get("remaining") or []
     if not isinstance(remaining, list):
         raise ValueError("remaining 必须是列表")
+    # done：已作答题目 + 作答记录，用于刷新/续做后回看
+    done = body.get("done") or []
+    if not isinstance(done, list):
+        raise ValueError("done 必须是列表")
     total = body.get("total", 0)
     progress = {
         "subject": subject,
         "mode": mode,
         "type_label": body.get("type_label"),
+        "done": done,
         "remaining": remaining,
         "total": total,
     }

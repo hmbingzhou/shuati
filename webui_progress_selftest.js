@@ -82,11 +82,25 @@ ctx.fetch = async (url, opts) => {
       exists: true,
       progress: {
         subject: "数据结构", mode: "all", type_label: null, total: 3,
+        done: [{
+          subject: "数据结构", text: "题目一",
+          userAnswer: "A", correct: true, correctAnswer: "A",
+        }],
         remaining: [{ subject: "数据结构", text: "题目二" }, { subject: "数据结构", text: "题目三" }],
       },
     };
   } else if (url === "/api/resolve") {
-    data = { items: [QUESTION("题目二", 1), QUESTION("题目三", 2)] };
+    const list = (body && body.remaining) || [];
+    data = {
+      items: list.map((it, i) => ({
+        subject: it.subject, text: it.text, index: 100 + i, found: true,
+        question: {
+          label: "单选题", type: "单选题", options: [["A", "甲"], ["B", "乙"]],
+          choice_type: "single", blankCount: null, wholeString: false,
+          flag_star: false, flag_cross: false,
+        },
+      })),
+    };
   }
   return { ok: true, status: 200, json: async () => data };
 };
@@ -111,12 +125,16 @@ function mkPractice(over) {
 (async () => {
   /* ---------- 1) 快照：剩余题目按「当前题是否已答」计算 ---------- */
   const p1 = mkPractice();
+  p1.history[0] = { userAnswer: "A", correct: true, correctAnswer: "A" };
   const s1 = ctx.practiceSnapshot(p1);
   check("快照只含当前题及以后", s1 && s1.remaining.length === 2 && s1.remaining[0].text === "题目二", s1);
+  check("快照同时保存已答题目", s1 && s1.done.length === 1 && s1.done[0].text === "题目一", s1 && s1.done);
+  check("已答题目带作答记录", s1 && s1.done[0].userAnswer === "A" && s1.done[0].correct === true, s1 && s1.done[0]);
 
   const p2 = mkPractice({ answered: true });
   const s2 = ctx.practiceSnapshot(p2);
   check("已答本题后快照从下一题开始", s2 && s2.remaining.length === 1 && s2.remaining[0].text === "题目三", s2);
+  check("已答本题也计入 done", s2 && s2.done.length === 2, s2 && s2.done);
 
   check("已结束的练习不产生快照", ctx.practiceSnapshot(mkPractice({ finished: true })) === null);
   check("答到最后一题且已答，不产生空快照", ctx.practiceSnapshot(mkPractice({ pos: 2, answered: true })) === null);
@@ -145,6 +163,11 @@ function mkPractice(over) {
   check("刷新后自动解析剩余题目", calls.some((c) => c[1] === "/api/resolve"), calls.map((c) => c[1]));
   check("刷新后停在刷题界面（有退出按钮）", view.innerHTML.includes("退出练习"), view.innerHTML.slice(0, 120));
   check("刷新后没有落到「开始刷题」选择页", !view.innerHTML.includes("选择科目与模式开始"));
+  check("刷新后续做位置正确（第 2 / 3 题）", view.innerHTML.includes("第 2 / 3 题"), (view.innerHTML.match(/第 \d+ \/ \d+ 题/) || [])[0]);
+  check("刷新后已答题目可回看（出现「上一题」）", view.innerHTML.includes("◀ 上一题"));
+  check("刷新后答对答错统计已恢复", view.innerHTML.includes('答对 <span class="ok">1</span>'), (view.innerHTML.match(/答对[\s\S]{0,40}/) || [])[0]);
+  check("刷新后解析请求包含已答+剩余题", (calls.find((c) => c[1] === "/api/resolve") || [])[2].remaining.length === 3,
+    (calls.find((c) => c[1] === "/api/resolve") || [])[2]);
 
   /* ---------- 4) 关页面时 beacon 兜底 ---------- */
   check("注册了 pagehide 兜底", (winListeners.pagehide || []).length === 1);
