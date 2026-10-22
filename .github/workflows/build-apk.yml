@@ -51,8 +51,9 @@ jobs:
         with:
           python-version: "3.14"
 
+      # v3 在 GitHub runner 强制升级到 Node 24 后启动即失败（2026-10 首次运行验证），升到 v4
       - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
 
       - name: Install SDK components
         run: |
