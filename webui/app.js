@@ -626,6 +626,61 @@ async function buildPool(cfg) {
   }));
 }
 
+/* ============================================================
+   进度自动保存 / 刷新自动恢复
+   ------------------------------------------------------------
+   - 每答完一题、每切一题都异步保存一次进度（不必等「退出并保存进度」）
+   - 关标签页/刷新时用 sendBeacon 再兜底发一次
+   - 页面首次加载若停在 #/practice，直接用已保存进度原地恢复
+   ============================================================ */
+
+/* 首次加载时的路由：只有「在刷题页面刷新」才自动恢复进度 */
+const BOOT_HASH = (typeof location !== "undefined" && location.hash) || "";
+
+function practiceSnapshot(p) {
+  if (!p || p.finished) return null;
+  const answeredCurrent = p.answered ? 1 : 0;
+  const remaining = p.pool.slice(p.pos + answeredCurrent);
+  if (!remaining.length) return null;          // 没有剩余题就不用存（答完会自动清）
+  const baseMode = p.modeKey || "all";
+  const mode = baseMode + (p.wrong && !String(baseMode).endsWith("wrong") ? "_wrong" : "");
+  return {
+    subject: p.cfg.scope.type === "all" ? "所有科目" : (p.cfg.scope.name || ""),
+    mode,
+    type_label: p.cfg.typeLabel || null,
+    remaining: remaining.map((r) => ({ subject: r.subject, text: r.text })),
+    total: p.totalBase,
+  };
+}
+
+/* 串行化，避免并发 POST 互相覆盖 */
+let _progressSaveChain = Promise.resolve();
+function autosaveProgress(p) {
+  const snap = practiceSnapshot(p);
+  if (!snap) return _progressSaveChain;
+  _progressSaveChain = _progressSaveChain
+    .then(() => api("POST", "/api/progress", snap))
+    .catch(() => { /* 自动保存失败不打断做题 */ });
+  return _progressSaveChain;
+}
+
+/* 页面即将卸载时同步兜底（beacon 不受页面销毁影响） */
+function flushProgressOnUnload() {
+  const snap = practiceSnapshot(state.practice);
+  if (!snap) return;
+  try {
+    const body = JSON.stringify(snap);
+    if (typeof navigator !== "undefined" && navigator.sendBeacon) {
+      navigator.sendBeacon("/api/progress", new Blob([body], { type: "application/json" }));
+    } else if (typeof fetch === "function") {
+      fetch("/api/progress", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body, keepalive: true,
+      });
+    }
+  } catch (e) { /* ignore */ }
+}
+
 async function startPracticeSession(cfg, resumeInfo = null) {
   let pool;
   let totalBase;
@@ -692,6 +747,8 @@ async function startPracticeSession(cfg, resumeInfo = null) {
     reportName: "",
     reportShown: false,
   };
+  state.practiceRestoreTried = true;      // 本次已处理过「是否恢复进度」
+  autosaveProgress(state.practice);       // 开局就存一份：开局后立刻退出/刷新也能回来
   navTo("practice");
 }
 
@@ -701,6 +758,16 @@ async function renderPractice(view) {
   const ov = await getOverview();
 
   if (!state.practice) {
+    // 刷题中途刷新页面：用已保存的进度原地恢复，不退回「开始刷题」首页
+    if (!state.practiceRestoreTried && /^#?\/?practice$/.test(BOOT_HASH)) {
+      state.practiceRestoreTried = true;
+      let pr = null;
+      try { pr = await api("GET", "/api/progress"); } catch (e) { pr = null; }
+      if (pr && pr.exists && pr.progress && (pr.progress.remaining || []).length) {
+        await startPracticeSession(null, { progress: pr.progress });
+        return;
+      }
+    }
     view.innerHTML = `
       <div class="page-head"><h2>开始刷题</h2><div class="sub">选择范围与模式开始练习，随时可暂停并保存进度。</div></div>
       ${ov.hasProgress ? `
@@ -785,7 +852,7 @@ function renderPracticeQuestion(view, p) {
         ? `<button class="btn btn-ghost" id="prev-btn" ${isReview && !canPrev ? "disabled" : ""}>◀ 上一题</button>` : ""}
       ${isReview
         ? `<button class="btn btn-primary" id="resume-btn">▶ ${canNext ? "下一题" : "返回当前题"}</button>` : ""}
-      <button class="btn btn-ghost" id="quit-btn">⏸ 退出并保存进度</button>
+      <button class="btn btn-ghost" id="quit-btn">⏸ 退出练习（进度已实时保存）</button>
     </div>`;
 
   const quit = $("#quit-btn", view);
@@ -1043,13 +1110,18 @@ function finishAnsweredResult(view, p, q, userAnswer, correct, correctText, fbEl
       </div>`;
   }
   showNextButton(p, view);
+  autosaveProgress(p);          // 每答完一题就存一次进度
 }
 
 function showNextButton(p, view) {
   const act = $("#action-area", view);
   const last = p.pos >= p.pool.length - 1;
   act.innerHTML = `<button class="btn btn-primary" id="next-btn" style="min-width:150px">${last ? "查看结果 🏁" : "下一题 →"}</button>`;
-  $("#next-btn", view).addEventListener("click", () => { p.pos += 1; p.answered = false; p.cursor = p.pos; render(); });
+  $("#next-btn", view).addEventListener("click", () => {
+    p.pos += 1; p.answered = false; p.cursor = p.pos;
+    autosaveProgress(p);        // 切到下一题时也存一次（含本题已答、位置已推进）
+    render();
+  });
 }
 
 async function submitAnswer(view, p, q, userAnswer) {
@@ -1170,29 +1242,17 @@ function renderPracticeResult(view, p) {
 async function quitPractice(p) {
   if (!p || p.finished) { state.practice = null; navTo("home"); return; }
   const answeredCurrent = p.answered ? 1 : 0;
-  const remaining = p.pool.slice(p.pos + answeredCurrent);
   const done = p.doneBefore + p.pos + answeredCurrent;
-  const isMixed = p.cfg.scope.type === "all";
-  const modeKey = p.modeKey || "all";
+  const remainingCount = Math.max(0, p.pool.length - p.pos - answeredCurrent);
 
   const ok = await confirmModal({
-    title: "暂停练习",
-    message: `已完成 ${done} / ${p.totalBase} 题。<br>剩余 ${remaining.length} 题将保存为进度，之后可「继续答题」。`,
-    okText: "保存进度并退出",
+    title: "退出练习",
+    message: `已完成 ${done} / ${p.totalBase} 题。<br>进度已经边做边存，剩余 ${remainingCount} 题随时可以「继续答题」接着做。`,
+    okText: "退出到首页",
   });
   if (!ok) return;
 
-  if (remaining.length > 0) {
-    const mode = modeKey + (p.wrong && !String(modeKey).endsWith("wrong") ? "_wrong" : "");
-    await api("POST", "/api/progress", {
-      subject: isMixed ? "所有科目" : (p.cfg.scope.name || ""),
-      mode,
-      type_label: p.cfg.typeLabel || null,
-      remaining: remaining.map((r) => ({ subject: r.subject, text: r.text })),
-      total: p.totalBase,
-    });
-    toast("进度已保存，可在「开始刷题」或首页继续", "ok");
-  }
+  await autosaveProgress(p);   // 退出前再存一次，确保停在最新一题
   state.practice = null;
   invalidateOverview();
   navTo("home");
@@ -3102,7 +3162,7 @@ function renderHelp(view) {
           <li>在<b>仪表盘</b>点击科目卡片的「开始刷题」，或点顶部「开始刷题」选择范围与模式。</li>
           <li>支持：刷全部题目、按题型（判断/选择/填空）、仅错题复习、全部科目混合刷题；计算题自动判分、简答题作答后自评。</li>
           <li>每题即时判定对错；答错的自动记入错题本；错题复习中答对会自动移出错题本。</li>
-          <li>中途点「退出并保存进度」，之后通过「继续答题」接着刷（终端版也能继续同一份进度）。</li>
+          <li>中途随时点「退出练习」，之后通过「继续答题」接着刷（终端版也能继续同一份进度）；进度边做边存，直接关标签页、刷新页面也不会丢，刷新后还停在刷题界面。</li>
         </ul>
       </div>
       <div class="help-block">
@@ -3135,6 +3195,9 @@ function renderHelp(view) {
    ============================================================ */
 
 window.addEventListener("hashchange", () => { render(); });
+/* 关标签页/刷新/切走时最后兜底存一次进度（beacon 在页面销毁后仍会发出） */
+window.addEventListener("pagehide", flushProgressOnUnload);
+window.addEventListener("beforeunload", flushProgressOnUnload);
 window.addEventListener("DOMContentLoaded", () => {
   loadSettings();
   renderNav();          // 顶部导航 + 移动端底部导航（同一 NAV_ITEMS）
