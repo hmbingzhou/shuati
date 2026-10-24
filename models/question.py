@@ -25,7 +25,7 @@ from utils.helpers import yellow
 
 # ---------------------------------------------------------------- 常量 ----------------------------------------------------------------
 
-TYPE_ORDER = ("单选题", "多选题", "判断题", "填空题", "简答题", "计算题")
+TYPE_ORDER = ("单选题", "多选题", "判断题", "填空题", "简答题", "证明题", "计算题")
 AUTO_GRADED_TYPES = ("单选题", "多选题", "判断题", "填空题", "计算题")
 
 # 题干里图片文件名 token（png/jpg 等）。
@@ -476,6 +476,32 @@ class EssayQuestion(Question):
         )
 
 
+# ---------------------------------------------------------------- 证明题 ----------------------------------------------------------------
+
+class ProofQuestion(Question):
+    """证明题：与简答题一样不自动判分，界面只展示题目 +「查看答案」"""
+
+    def get_type_name(self) -> str:
+        return "证明题"
+
+    def is_auto_graded(self) -> bool:
+        return False
+
+    def display(self) -> str:
+        return f"{yellow('[证明题]')} {mask_image_tokens(self.text)}"
+
+    def check_answer(self, user_answer) -> bool:
+        return False  # 不自动判分；界面只提供「查看答案」
+
+    @staticmethod
+    def from_dict(data: dict) -> "ProofQuestion":
+        return ProofQuestion(
+            text=data.get("text", ""),
+            answer=data.get("answer", ""),
+            subject=data.get("subject", ""),
+        )
+
+
 # ---------------------------------------------------------------- 计算题 ----------------------------------------------------------------
 
 class CalculationQuestion(Question):
@@ -551,5 +577,6 @@ QuestionFactory.register("多选题", MultipleChoiceQuestion)
 QuestionFactory.register("判断题", TrueFalseQuestion)
 QuestionFactory.register("填空题", FillBlankQuestion)
 QuestionFactory.register("简答题", EssayQuestion)
+QuestionFactory.register("证明题", ProofQuestion)
 QuestionFactory.register("计算题", CalculationQuestion)
 QuestionFactory.register("选择题", ChoiceQuestion)  # v1 读取别名（from_dict 内分发）

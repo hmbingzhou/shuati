@@ -49,3 +49,6 @@ build/
 *.tmp
 .DS_Store
 Thumbs.db
+
+# ---- 外部题库导入的原始材料（MinerU 解析产物、PDF 抽出物等，不进仓库）----
+import/

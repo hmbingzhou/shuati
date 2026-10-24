@@ -21,7 +21,7 @@ from utils.paths import DATA_DIR
 RECORDS_FILE = os.path.join(DATA_DIR, "records.json")
 DEFAULT_OWNER = "default"
 
-_TYPE_LABELS = ("判断题", "单选题", "多选题", "填空题", "简答题", "计算题")
+_TYPE_LABELS = ("判断题", "单选题", "多选题", "填空题", "简答题", "证明题", "计算题")
 
 
 def _load():

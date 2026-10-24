@@ -537,6 +537,7 @@ async function openPracticeConfig({ scope = null, wrong = false } = {}) {
           <button type="button" class="mode-tab" data-mode="by_type_tf">判断题</button>
           <button type="button" class="mode-tab" data-mode="by_type_choice">选择题</button>
           <button type="button" class="mode-tab" data-mode="by_type_fill">填空题</button>
+          <button type="button" class="mode-tab" data-mode="by_type_essay">简答/证明</button>
         </div>
       </div>
       ${wrongLine}
@@ -569,7 +570,10 @@ async function openPracticeConfig({ scope = null, wrong = false } = {}) {
   });
 }
 
-const TYPE_OF_MODE = { all: null, by_type_tf: "判断题", by_type_choice: "选择题", by_type_fill: "填空题" };
+const TYPE_OF_MODE = {
+  all: null, by_type_tf: "判断题", by_type_choice: "选择题", by_type_fill: "填空题",
+  by_type_essay: "简答证明",   // 简答题 + 证明题（只看答案，不作答）
+};
 
 async function buildPool(cfg) {
   const typeLabel = TYPE_OF_MODE[cfg.mode] || null;
@@ -609,6 +613,7 @@ async function buildPool(cfg) {
   }
   if (typeLabel) {
     if (typeLabel === "选择题") items = items.filter((it) => it.label === "单选题" || it.label === "多选题");
+    else if (typeLabel === "简答证明") items = items.filter((it) => it.label === "简答题" || it.label === "证明题");
     else items = items.filter((it) => it.label === typeLabel);
   }
   return items.map((it) => ({
@@ -853,6 +858,14 @@ async function renderPractice(view) {
 }
 
 function reviewHtmlFor(q, h, cur) {
+  // 简答/证明题是「看答案」模式，没有对错，只回显参考答案
+  if (h && h.correct === null) {
+    return `
+      <div class="feedback neutral">
+        <div class="fb-title">📖 已查看答案</div>
+        <div class="fb-line" style="white-space:pre-wrap;line-height:1.7">${esc(h.correctAnswer || "（无参考答案）")}</div>
+      </div>`;
+  }
   const title = h.correct ? "✅ 回答正确！" : "❌ 回答错误！";
   return `
     <div class="feedback ${h.correct ? "correct" : "wrong"}">
@@ -1067,53 +1080,30 @@ function buildAnswerArea(view, p, q) {
     return;
   }
 
-  if (q.type === "简答题") {
-    // 简答：不自动判分，提交后展示参考答案并自评
-    area.innerHTML = `<textarea class="answer-input" id="essay-input" rows="4" placeholder="输入你的答案（支持多行）…"></textarea>
-      <button class="btn btn-primary" id="essay-submit">提交答案</button>`;
-    const submit = $("#essay-submit", area);
-    submit.addEventListener("click", async () => {
-      const v = $("#essay-input", area).value.trim();
-      if (!v) { toast("请输入答案", "info"); return; }
-      if (p.answered) return;
+  if (q.type === "简答题" || q.type === "证明题") {
+    // 背诵模式：只显示题目，点「查看答案」看参考答案；不作答、不计对错
+    const ansTxt = String(q.answer == null ? "" : q.answer);
+    area.innerHTML = `
+      <div class="study-bar" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <button class="btn btn-primary" id="reveal-answer">👀 查看答案</button>
+        <span class="small muted">看完直接下一题，不计入对错</span>
+      </div>
+      <div id="reveal-area"></div>`;
+    $("#reveal-answer", area).addEventListener("click", () => {
+      const btn = $("#reveal-answer", area);
+      if (btn) btn.remove();
+      const box = $("#reveal-area", area);
+      if (box) {
+        box.innerHTML = `
+          <div class="feedback neutral" style="margin-top:10px">
+            <div class="fb-title">📖 参考答案</div>
+            <div class="fb-line" style="white-space:pre-wrap;line-height:1.8">${esc(ansTxt || "（无参考答案）")}</div>
+          </div>`;
+      }
       p.answered = true;
-      $$("button,input,textarea", area).forEach((el) => { el.disabled = true; });
-      let data;
-      try {
-        data = await api("POST", "/api/answer", {
-          subject: q.subject, index: q.index, answer: v, mode: p.wrong ? "wrong" : "all",
-        });
-      } catch (e) { return; }
-      const fb = $("#feedback-area", view);
-      fb.innerHTML = `
-        <div class="feedback neutral">
-          <div class="fb-title">📝 简答题（不自动判分）</div>
-          <div class="fb-line">参考答案：${esc(data.answer || "（无）")}</div>
-          <div class="fb-line">你的答案：${esc(v)}</div>
-          <div class="hint" style="margin-top:6px">请对照参考答案自行判定：</div>
-          <div style="display:flex;gap:8px;margin-top:8px">
-            <button class="btn btn-primary" id="self-y">答对 ✓</button>
-            <button class="btn btn-ghost" id="self-n">答错 ✗</button>
-            <button class="btn btn-ghost" id="self-skip">跳过不计</button>
-          </div>
-        </div>`;
-      const decide = async (selfCorrect) => {
-        if (selfCorrect === null) {  // 跳过：不计统计
-          p.answered = true;
-          showNextButton(p, view);
-          return;
-        }
-        try {
-          await api("POST", "/api/answer/self", {
-            subject: q.subject, index: q.index, answer: v, selfCorrect,
-            mode: p.wrong ? "wrong" : "all",
-          });
-        } catch (e) { return; }
-        finishAnsweredResult(view, p, q, v, selfCorrect, data.answer, fb);
-      };
-      $("#self-y", view).addEventListener("click", () => decide(true));
-      $("#self-n", view).addEventListener("click", () => decide(false));
-      $("#self-skip", view).addEventListener("click", () => decide(null));
+      p.history[p.pos] = { userAnswer: "", correct: null, correctAnswer: ansTxt };
+      autosaveProgress(p);
+      showNextButton(p, view);
     });
     return;
   }
@@ -1523,6 +1513,7 @@ async function renderLibrary(view) {
             <option value="多选题">多选题</option>
             <option value="填空题">填空题</option>
             <option value="简答题">简答题</option>
+            <option value="证明题">证明题</option>
             <option value="计算题">计算题</option>
           </select>
           <select class="answer-input" id="flag-sel" style="width:auto" title="按标记筛选">
@@ -1899,7 +1890,7 @@ function openQuestionDetail(item) {
 
 /* —— 录入 / 编辑弹窗（v2：六题型 + 空位 + 图片库） —— */
 
-const Q_TYPE_NAMES = ["判断题", "单选题", "多选题", "填空题", "简答题", "计算题"];
+const Q_TYPE_NAMES = ["判断题", "单选题", "多选题", "填空题", "简答题", "证明题", "计算题"];
 const BLANK_RE = /【\s*\d+\s*】/g;
 
 function countBlanks(text) {
@@ -2158,8 +2149,8 @@ async function openQuestionEditor(item, onSaved) {
     optGroup.style.display = isChoice ? "" : "none";
     wholeGroup.style.display = t === "填空题" && isEdit && item.wholeString ? "" : "none";
     blanksGroup.style.display = t === "填空题" ? "" : "none";
-    $("#q-answer-group", m.mask).style.display = (t === "判断题" || t === "单选题" || t === "多选题" || t === "简答题" || t === "计算题") ? "" : "none";
-    ansLabel.textContent = t === "简答题" ? "参考答案" : (t === "计算题" ? "参考答案（计算结果）" : "答案");
+    $("#q-answer-group", m.mask).style.display = (t === "填空题") ? "none" : "";
+    ansLabel.textContent = (t === "简答题" || t === "证明题") ? "参考答案" : (t === "计算题" ? "参考答案（计算结果）" : "答案");
     const lines = isChoice ? currentOptionLines() : [];
     const letters = LETTERS.slice(0, lines.length);
 
@@ -2172,7 +2163,7 @@ async function openQuestionEditor(item, onSaved) {
     } else if (t === "多选题") {
       tip.textContent = "输入正确选项字母，如 ABD（至少 2 个）";
       ansWrap.innerHTML = `<input class="answer-input" id="q-ans" placeholder="如：ABD">`;
-    } else if (t === "简答题" || t === "计算题") {
+    } else if (t === "简答题" || t === "证明题" || t === "计算题") {
       tip.textContent = "";
       ansWrap.innerHTML = `<textarea class="answer-input" id="q-ans" rows="3" placeholder="参考答案"></textarea>`;
     }
@@ -2182,7 +2173,7 @@ async function openQuestionEditor(item, onSaved) {
       if (t === "判断题") { const el = $("#q-ans", m.mask); if (el) el.value = itemAnswer === "错误" ? "错误" : "正确"; }
       else if (t === "单选题") { const el = $("#q-ans", m.mask); if (el && typeof itemAnswer === "string") el.value = itemAnswer.trim().toUpperCase(); }
       else if (t === "多选题") { const el = $("#q-ans", m.mask); if (el) el.value = typeof itemAnswer === "string" ? itemAnswer : (itemAnswer && itemAnswer.items ? "" : String(itemAnswer)); }
-      else if (t === "简答题" || t === "计算题") { const el = $("#q-ans", m.mask); if (el) el.value = typeof itemAnswer === "string" ? itemAnswer : ""; }
+      else if (t === "简答题" || t === "证明题" || t === "计算题") { const el = $("#q-ans", m.mask); if (el) el.value = typeof itemAnswer === "string" ? itemAnswer : ""; }
     }
     if (t === "填空题") {
       const wholeEl = $("#q-whole", m.mask);
@@ -2277,7 +2268,7 @@ async function openQuestionEditor(item, onSaved) {
       }
       return { subject, question: { type: t, text, options, answer } };
     }
-    if (t === "简答题" || t === "计算题") {
+    if (t === "简答题" || t === "证明题" || t === "计算题") {
       return { subject, question: { type: t, text, answer: String(ansEl.value).trim() } };
     }
     throw new Error(`不支持的题型: ${t}`);
@@ -3145,39 +3136,27 @@ function buildExamAnswerArea(view, ex, q) {
     return;
   }
 
-  if (q.type === "简答题") {
-    area.innerHTML = `<textarea class="answer-input" id="exam-essay" rows="4" placeholder="输入你的答案（支持多行）…"></textarea>
-      <button class="btn btn-primary" id="exam-essay-submit">提交答案</button>`;
-    $("#exam-essay-submit", area).addEventListener("click", async () => {
-      const v = $("#exam-essay", area).value.trim();
-      if (!v) { toast("请输入答案", "info"); return; }
-      let data;
-      try {
-        data = await api("POST", "/api/answer", { subject: q.subject, index: q.index, answer: v, mode: "all", exam: true });
-      } catch (e) { return; }
-      $$("button,input,textarea", area).forEach((el) => { el.disabled = true; });
-      area.insertAdjacentHTML("beforeend", `
-        <div class="feedback neutral" style="margin-top:10px">
-          <div class="fb-line">参考答案：${esc(data.answer || "（无）")}</div>
-          <div class="hint" style="margin:6px 0">请自评：</div>
-          <div style="display:flex;gap:8px">
-            <button class="btn btn-primary" id="exam-self-y">答对 ✓</button>
-            <button class="btn btn-ghost" id="exam-self-n">答错 ✗</button>
-            <button class="btn btn-ghost" id="exam-self-skip">跳过不计</button>
+  if (q.type === "简答题" || q.type === "证明题") {
+    // 背诵模式：只看题 + 查看答案，不计分
+    area.innerHTML = `
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+        <button class="btn btn-primary" id="exam-reveal">👀 查看答案</button>
+        <span class="small muted">该题不计分，看完点「下一题」</span>
+      </div>
+      <div id="exam-reveal-area"></div>`;
+    $("#exam-reveal", area).addEventListener("click", () => {
+      const btn = $("#exam-reveal", area);
+      if (btn) btn.remove();
+      const box = $("#exam-reveal-area", area);
+      if (box) {
+        box.innerHTML = `
+          <div class="feedback neutral" style="margin-top:10px">
+            <div class="fb-title">📖 参考答案</div>
+            <div class="fb-line" style="white-space:pre-wrap;line-height:1.8">${esc(q.answer || "（无参考答案）")}</div>
           </div>
-        </div>`);
-      const decide = async (selfCorrect) => {
-        if (selfCorrect !== null) {
-          try {
-            await api("POST", "/api/answer/self", { subject: q.subject, index: q.index, answer: v, selfCorrect, mode: "all", exam: true });
-          } catch (e) { return; }
-          record(selfCorrect);
-        }
-        advance();
-      };
-      $("#exam-self-y", view).addEventListener("click", () => decide(true));
-      $("#exam-self-n", view).addEventListener("click", () => decide(false));
-      $("#exam-self-skip", view).addEventListener("click", () => decide(null));
+          <div style="margin-top:10px"><button class="btn btn-primary" id="exam-next">下一题 →</button></div>`;
+        $("#exam-next", area).addEventListener("click", () => advance());
+      }
     });
     return;
   }
@@ -3214,7 +3193,8 @@ function renderHelp(view) {
         <h3>🎯 开始刷题</h3>
         <ul>
           <li>在<b>仪表盘</b>点击科目卡片的「开始刷题」，或点顶部「开始刷题」选择范围与模式。</li>
-          <li>支持：刷全部题目、按题型（判断/选择/填空）、仅错题复习、全部科目混合刷题；计算题自动判分、简答题作答后自评。</li>
+          <li>支持：刷全部题目、按题型（判断/选择/填空/简答证明）、仅错题复习、全部科目混合刷题；计算题自动判分。</li>
+          <li><b>简答题 / 证明题</b>为「背诵模式」：只显示题目，点「查看答案」看参考答案，不作答、不计对错，看完直接下一题。</li>
           <li>每题即时判定对错；答错的自动记入错题本；错题复习中答对会自动移出错题本。</li>
           <li>中途随时点「退出练习」，之后通过「继续答题」接着刷（终端版也能继续同一份进度）；进度边做边存，直接关标签页、刷新页面也不会丢，刷新后还停在刷题界面。</li>
         </ul>

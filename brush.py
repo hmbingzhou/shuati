@@ -139,32 +139,15 @@ def _process_one(question: Question, wrong_mode: bool, book_subject: str = None)
     """
     book_subject = book_subject or question.subject
 
-    # ---- 简答题：不自动判分，走自评 ----
-    if isinstance(question, EssayQuestion):
-        user_answer, exited = _collect_answer(question)
-        if exited:
-            return True, False
-        print("\n  你的答案：")
-        print(f"  {_fmt_user_answer(user_answer)}")
-        correct, exited = _essay_self_grade(question)
-        if exited:
-            return True, True  # 已作答后退出，本题不再重答
-        if correct is None:  # 跳过：不计入统计与错题本
-            print(yellow("  （已跳过判分，本题不计入统计）"))
-            return False, True
-        if correct:
-            print(green("✅ 自评：答对"))
-            record_result(book_subject, True)
-            if wrong_mode:
-                remove_wrong_record(question.subject, question.text)
-        else:
-            print(red("❌ 自评：答错"))
-            record_result(book_subject, False)
-            if wrong_mode:
-                update_wrong_record_timestamp(question.subject, question.text)
-            else:
-                add_wrong_record(book_subject, question, _fmt_user_answer(user_answer))
-        return False, True
+    # ---- 简答题 / 证明题：不判分，直接看参考答案 ----
+    if not question.is_auto_graded():
+        print("\n  —— 参考答案 ——")
+        print(f"  {question.answer_text() or '（无参考答案）'}")
+        try:
+            s = input("\n  按回车继续（输入 exit 结束刷题）: ").strip().lower()
+        except (EOFError, KeyboardInterrupt):
+            return True, True
+        return s == "exit", True
 
     # ---- 其它题型：自动判分 ----
     user_answer, exited = _collect_answer(question)
