@@ -5,6 +5,7 @@
 
 import json
 import os
+import re
 from typing import List, Optional, Tuple, Dict, Any
 from models.question import Question, QuestionFactory
 from models.wrong_record import WrongRecord
@@ -151,9 +152,29 @@ def clear_all_wrong_records():
     print("  ✓ 错题本已清空")
 
 
+_SEARCH_WS = re.compile(r"[\s\u3000\u00a0\u200b]+")
+
+
+def norm_search_text(text) -> str:
+    """搜索归一化：去掉所有空白（空格/换行/制表/全角空格）并转小写。
+
+    这样「多行题干」也能用单行关键词搜到——搜索框里打一个空格，
+    就能跨过原文里的换行。
+    """
+    return _SEARCH_WS.sub("", str(text or "")).lower()
+
+
+def keyword_matches(text, keyword) -> bool:
+    """题干是否命中关键词；keyword 为空视为不筛选（全部命中）"""
+    kw = norm_search_text(keyword)
+    if not kw:
+        return True
+    return kw in norm_search_text(text)
+
+
 def search_questions(keyword: str) -> List[Tuple[int, str, Question]]:
     """
-    在所有科目中搜索题目文本包含关键词的题目
+    在所有科目中搜索题目文本包含关键词的题目（忽略空白与大小写，支持多行题干）
     返回 [(序号, 科目, Question对象)]
     """
     subjects = get_subject_list()
@@ -162,7 +183,7 @@ def search_questions(keyword: str) -> List[Tuple[int, str, Question]]:
     for subj in subjects:
         questions = load_questions(subj)
         for q in questions:
-            if keyword in q.text:
+            if keyword_matches(q.text, keyword):
                 results.append((idx, subj, q))
                 idx += 1
     return results

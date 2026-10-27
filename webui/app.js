@@ -1505,7 +1505,7 @@ async function renderLibrary(view) {
       </aside>
       <section class="library-main">
         <div class="search-bar">
-          <input class="search-input" id="kw" placeholder="搜索题干关键词…（全部科目时跨科目搜索）" value="${esc(f.keyword)}">
+          <input class="search-input" id="kw" placeholder="搜索题干关键词…（忽略空格与换行，多行题干可跨行搜）" value="${esc(f.keyword)}">
           <select class="answer-input" id="type-sel" style="width:auto">
             <option value="全部">全部题型</option>
             <option value="判断题">判断题</option>

@@ -69,6 +69,7 @@ from question_manager import (  # noqa: E402
     load_brush_progress,
     clear_brush_progress,
     has_brush_progress,
+    keyword_matches,
 )
 from utils.helpers import get_subject_list, GRADE_SUBJECTS, GRADE_ORDER  # noqa: E402
 from duplicate_finder import find_duplicates as _find_duplicates  # noqa: E402
@@ -205,7 +206,7 @@ def handle_questions(query):
     for s in scopes:
         questions = load_questions(s)
         for i, q in enumerate(questions):
-            if keyword and keyword not in q.text:
+            if not keyword_matches(q.text, keyword):
                 continue
             if type_filter and not _match_label(q, type_filter):
                 continue
