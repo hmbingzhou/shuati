@@ -88,6 +88,16 @@ check("证明题能显示参考答案", box2.innerHTML.includes("证明过程"),
 const reviewHtml = ctx.reviewHtmlFor(q1, { userAnswer: "", correct: null, correctAnswer: q1.answer }, 0);
 check("回看时简答题显示参考答案而不是对错", reviewHtml.includes("已查看答案") && !reviewHtml.includes("回答错误"), reviewHtml);
 
+/* ---------- 只有 answerText（接口返回形态）时也要能显示 ---------- */
+const q4 = { type: "简答题", text: "什么是特征值？\n[线性代数/1.jpg]",
+  answerText: "若存在非零向量 x 使 Ax=λx，则 λ 为特征值。", label: "简答题", index: 4, subject: "线性代数" };
+const r4 = run(q4);
+const btn4 = r4.area.querySelector("#reveal-answer");
+const box4 = r4.area.querySelector("#reveal-area");
+(btn4._h.click || []).forEach((f) => f());
+check("只有 answerText 时也能显示参考答案（不再显示「无参考答案」）",
+  box4.innerHTML.includes("Ax=λx") && !box4.innerHTML.includes("无参考答案"), box4.innerHTML);
+
 /* ---------- 自动判分题型不受影响 ---------- */
 const q3 = { type: "判断题", text: "1+1=2", answer: "正确", label: "判断题", index: 3, subject: "x" };
 const r3 = run(q3);

@@ -628,6 +628,7 @@ async function buildPool(cfg) {
     flag_cross: !!it.flag_cross,
     blankCount: it.blankCount,        // 填空题空位数：不带上就只渲染 1 个输入框
     wholeString: !!it.wholeString,    // 整串比对模式：单输入 + 整串提交
+    answerText: it.answerText,        // 参考答案：简答/证明的「查看答案」要用
   }));
 }
 
@@ -1082,7 +1083,8 @@ function buildAnswerArea(view, p, q) {
 
   if (q.type === "简答题" || q.type === "证明题") {
     // 背诵模式：只显示题目，点「查看答案」看参考答案；不作答、不计对错
-    const ansTxt = String(q.answer == null ? "" : q.answer);
+    const ansTxt = String(q.answerText != null && q.answerText !== "" ? q.answerText
+      : (q.answer == null ? "" : q.answer));
     area.innerHTML = `
       <div class="study-bar" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
         <button class="btn btn-primary" id="reveal-answer">👀 查看答案</button>
@@ -3152,7 +3154,7 @@ function buildExamAnswerArea(view, ex, q) {
         box.innerHTML = `
           <div class="feedback neutral" style="margin-top:10px">
             <div class="fb-title">📖 参考答案</div>
-            <div class="fb-line" style="white-space:pre-wrap;line-height:1.8">${esc(q.answer || "（无参考答案）")}</div>
+            <div class="fb-line" style="white-space:pre-wrap;line-height:1.8">${esc((q.answerText != null && q.answerText !== "" ? q.answerText : q.answer) || "（无参考答案）")}</div>
           </div>
           <div style="margin-top:10px"><button class="btn btn-primary" id="exam-next">下一题 →</button></div>`;
         $("#exam-next", area).addEventListener("click", () => advance());
