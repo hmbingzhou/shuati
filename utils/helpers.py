@@ -2,6 +2,7 @@
 辅助函数
 """
 
+import json
 import os
 
 from utils.paths import DATA_DIR  # noqa: F401  （统一路径层：可写数据根，默认=项目根/data）
@@ -47,9 +48,12 @@ GRADE_SUBJECTS = {
     "大二上": [
         "计算机组成原理",
         "计算机网络技术",
+        "操作系统",
+        "数据库原理",
+        "线性代数",
         "毛泽东思想和中国特色理论体系概论",
         "Python",
-        "数据库原理",
+        "AIGC",
     ],
     "大二下": [],
     "大三上": [],
@@ -59,14 +63,52 @@ GRADE_SUBJECTS = {
 }
 
 
+CUSTOM_SUBJECTS_FILE = os.path.join(DATA_DIR, "subjects_custom.json")
+
+
+def load_custom_subjects() -> dict:
+    """读取用户自建的科目（data/subjects_custom.json）：{年级: [科目, ...]}"""
+    try:
+        with open(CUSTOM_SUBJECTS_FILE, encoding="utf-8") as fh:
+            data = json.load(fh)
+    except (OSError, ValueError):
+        return {}
+    if not isinstance(data, dict):
+        return {}
+    out = {}
+    for grade, subjects in data.items():
+        if grade in GRADE_ORDER and isinstance(subjects, list):
+            out[grade] = [str(s).strip() for s in subjects if str(s).strip()]
+    return out
+
+
+def add_subject(grade: str, name: str) -> bool:
+    """在指定年级下新建科目；已存在返回 False"""
+    name = (name or "").strip()
+    if not name or grade not in GRADE_ORDER:
+        return False
+    if name in get_subjects_by_grade(grade):
+        return False
+    custom = load_custom_subjects()
+    custom.setdefault(grade, []).append(name)
+    ensure_data_dir()
+    with open(CUSTOM_SUBJECTS_FILE, "w", encoding="utf-8") as fh:
+        json.dump(custom, fh, ensure_ascii=False, indent=2)
+    return True
+
+
 def get_grade_list() -> list:
     """获取所有年级列表（按学期顺序）"""
     return list(GRADE_ORDER)
 
 
 def get_subjects_by_grade(grade: str) -> list:
-    """获取指定年级下的科目列表"""
-    return list(GRADE_SUBJECTS.get(grade, []))
+    """获取指定年级下的科目列表（内置 + 用户自建）"""
+    subjects = list(GRADE_SUBJECTS.get(grade, []))
+    for name in load_custom_subjects().get(grade, []):
+        if name not in subjects:
+            subjects.append(name)
+    return subjects
 
 
 def get_subject_list() -> list:
@@ -74,7 +116,7 @@ def get_subject_list() -> list:
     seen = set()
     subjects = []
     for grade in GRADE_ORDER:
-        for subj in GRADE_SUBJECTS.get(grade, []):
+        for subj in get_subjects_by_grade(grade):
             if subj not in seen:
                 seen.add(subj)
                 subjects.append(subj)

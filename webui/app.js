@@ -916,7 +916,7 @@ function renderPracticeQuestion(view, p) {
       ${isReview ? '<div id="review-body"></div>' : '<div id="answer-area"></div><div id="feedback-area"></div><div id="action-area"></div>'}
     </div>
     <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
-      ${isReview || (canPrev && !p.answered)
+      ${isReview || canPrev
         ? `<button class="btn btn-ghost" id="prev-btn" ${isReview && !canPrev ? "disabled" : ""}>◀ 上一题</button>` : ""}
       ${isReview
         ? `<button class="btn btn-primary" id="resume-btn">▶ ${canNext ? "下一题" : "返回当前题"}</button>` : ""}
@@ -1162,7 +1162,13 @@ function finishAnsweredResult(view, p, q, userAnswer, correct, correctText, fbEl
 function showNextButton(p, view) {
   const act = $("#action-area", view);
   const last = p.pos >= p.pool.length - 1;
-  act.innerHTML = `<button class="btn btn-primary" id="next-btn" style="min-width:150px">${last ? "查看结果 🏁" : "下一题 →"}</button>`;
+  const canPrev = p.pos > 0 && !!p.history[p.pos - 1];
+  act.innerHTML = `<div style="display:flex;gap:8px;flex-wrap:wrap">
+      ${canPrev ? '<button class="btn btn-ghost" id="prev-btn2">◀ 上一题</button>' : ""}
+      <button class="btn btn-primary" id="next-btn" style="min-width:150px">${last ? "查看结果 🏁" : "下一题 →"}</button>
+    </div>`;
+  const prev = $("#prev-btn2", view);
+  if (prev) prev.addEventListener("click", () => { p.cursor = p.pos - 1; render(); });
   $("#next-btn", view).addEventListener("click", () => {
     p.pos += 1; p.answered = false; p.cursor = p.pos;
     autosaveProgress(p);        // 切到下一题时也存一次（含本题已答、位置已推进）
@@ -1485,6 +1491,56 @@ async function renderLibrary(view) {
         </div>
       </div>`).join("");
 
+/* 新建科目：选择年级 + 输入科目名，创建后立刻出现在左侧列表 */
+function openNewSubjectModal(ov, current) {
+  const grades = ov.grades.map((g) => g.name);
+  const curGrade = (ov.grades.find((g) => (g.subjects || []).some((s) => s.name === current)) || {}).name || grades[0] || "大二上";
+  const m = openModal(`
+    <div class="modal-head"><h3>新建科目</h3><button class="modal-close">✕</button></div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label>所属年级</label>
+        <select class="answer-input" id="ns-grade">
+          ${grades.map((g) => `<option value="${esc(g)}" ${g === curGrade ? "selected" : ""}>${esc(g)}</option>`).join("")}
+        </select>
+      </div>
+      <div class="form-group">
+        <label>科目名称</label>
+        <input class="answer-input" id="ns-name" placeholder="例如：概率论与数理统计" maxlength="40" autocomplete="off">
+      </div>
+      <p class="small muted">创建后会在左侧科目列表里出现（0 题），可直接点「＋ 录入题目」往里加题。</p>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-ghost" data-act="cancel">取消</button>
+      <button class="btn btn-primary" data-act="ok">创建</button>
+    </div>`);
+  const nameEl = $("#ns-name", m.mask);
+  setTimeout(() => { if (nameEl) nameEl.focus(); }, 50);
+
+  const doCreate = async () => {
+    const name = (nameEl.value || "").trim();
+    const grade = $("#ns-grade", m.mask).value;
+    if (!name) { toast("请输入科目名称", "info"); return; }
+    try {
+      await api("POST", "/api/subjects", { grade, name });
+    } catch (e) { return; }
+    m.close();
+    toast(`已创建科目「${name}」`, "ok");
+    state.libFilter.subject = name;
+    state.libFilter.page = 1;
+    render();
+  };
+
+  $(".modal-close", m.mask).addEventListener("click", () => m.close());
+  m.mask.addEventListener("click", (e) => {
+    const act = e.target && e.target.dataset && e.target.dataset.act;
+    if (act === "cancel") m.close();
+    if (act === "ok") doCreate();
+  });
+  nameEl.addEventListener("keydown", (e) => { if (e.key === "Enter") doCreate(); });
+}
+
+/* 科目列表 / 搜索 / 分页 的渲染 */
   view.innerHTML = `
     <div class="page-head">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
@@ -1502,6 +1558,7 @@ async function renderLibrary(view) {
           <div class="subj-list">${sideList}</div>
           <div class="side-actions">
             <button class="btn btn-sm btn-primary" id="lib-dup" ${selSubj && selCnt >= 2 ? "" : "disabled"}>🔎 题目查重${selSubj ? `：${esc(selSubj)}` : ""}</button>
+            <button class="btn btn-sm btn-ghost" id="lib-new-subject">＋ 新建科目</button>
           </div>
         </div>
       </aside>
@@ -1661,6 +1718,9 @@ async function renderLibrary(view) {
   });
 
   $("#btn-add", view).addEventListener("click", () => openQuestionEditor(null, async () => { toast("题目已录入", "ok"); invalidateOverview(); render(); }));
+
+  const newSubjBtn = $("#lib-new-subject", view);
+  if (newSubjBtn) newSubjBtn.addEventListener("click", () => openNewSubjectModal(ov, selSubj));
 
   const batchBtn = $("#btn-import-batch", view);
   if (batchBtn) batchBtn.addEventListener("click", () => {

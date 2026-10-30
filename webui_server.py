@@ -71,7 +71,7 @@ from question_manager import (  # noqa: E402
     has_brush_progress,
     keyword_matches,
 )
-from utils.helpers import get_subject_list, GRADE_SUBJECTS, GRADE_ORDER  # noqa: E402
+from utils.helpers import get_subject_list, GRADE_SUBJECTS, GRADE_ORDER, get_subjects_by_grade, add_subject  # noqa: E402
 from duplicate_finder import find_duplicates as _find_duplicates  # noqa: E402
 import recycle_bin  # noqa: E402
 import records  # noqa: E402
@@ -143,7 +143,7 @@ def handle_overview(query=None):
     grades = []
     for grade in GRADE_ORDER:
         gsubs = []
-        for subj in GRADE_SUBJECTS.get(grade, []):
+        for subj in get_subjects_by_grade(grade):
             qs = questions_map.get(subj, [])
             total_q += len(qs)
             rec = rec_map.get(subj, _empty_subj_records())
@@ -230,6 +230,24 @@ def handle_questions(query):
         "pageSize": page_size,
         "items": items[start:start + page_size],
     }
+
+
+def handle_add_subject(body):
+    """新建科目 body: {grade, name}"""
+    grade = str(body.get("grade") or "").strip()
+    name = str(body.get("name") or "").strip()
+    if not grade or not name:
+        raise ValueError("年级和科目名都不能为空")
+    if grade not in GRADE_ORDER:
+        raise ValueError(f"未知年级：{grade}")
+    if len(name) > 40:
+        raise ValueError("科目名最多 40 个字符")
+    if name in get_subject_list():
+        raise ValueError(f"科目「{name}」已存在")
+    if not add_subject(grade, name):
+        raise ValueError("新建科目失败（可能已存在）")
+    save_questions(name, [])          # 建空题库文件，列表里立刻能看到
+    return {"ok": True, "subject": name, "grade": grade}
 
 
 def handle_add_question(body):
@@ -1238,6 +1256,8 @@ class ApiHandler(BaseHTTPRequestHandler):
                 body = self._read_body()
                 if path == "/api/questions":
                     self._send_json(handle_add_question(body))
+                elif path == "/api/subjects":
+                    self._send_json(handle_add_subject(body))
                 elif path == "/api/questions/flag":
                     self._send_json(handle_question_flag(body))
                 elif path == "/api/questions/batch-delete":
