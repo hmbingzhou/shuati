@@ -9282,5 +9282,4129 @@
     "subject": "Python",
     "flag_star": false,
     "flag_cross": false
+  },
+  {
+    "type": "单选题",
+    "text": "以下哪一项if语句能够判断y是否在10到50（含）范围内（  ）。",
+    "options": [
+      [
+        "A",
+        "if 10 < y and y > 50:"
+      ],
+      [
+        "B",
+        "if 10 < y or y > 50:"
+      ],
+      [
+        "C",
+        "if y >= 10 and y <= 50:"
+      ],
+      [
+        "D",
+        "if y >= 10 or y <= 50:"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下列哪个是行延续字符？",
+    "options": [
+      [
+        "A",
+        ""
+      ],
+      [
+        "B",
+        "%"
+      ],
+      [
+        "C",
+        "&"
+      ],
+      [
+        "D",
+        "\\"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下选项中，不是Python语言合法命名的是‪‬‪‬‪‬‪‬‪‬‮‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬_____",
+    "options": [
+      [
+        "A",
+        "_MyGod_"
+      ],
+      [
+        "B",
+        "MyGod"
+      ],
+      [
+        "C",
+        "5MyGod"
+      ],
+      [
+        "D",
+        "MyGod_5"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "Python语句print(chr(65))的运行结果是。",
+    "options": [
+      [
+        "A",
+        "65"
+      ],
+      [
+        "B",
+        "6"
+      ],
+      [
+        "C",
+        "5"
+      ],
+      [
+        "D",
+        "A"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面代码执行结束时，s的值是( )。\n[Python/u2_1.png]",
+    "options": [
+      [
+        "A",
+        "Hello"
+      ],
+      [
+        "B",
+        "H"
+      ],
+      [
+        "C",
+        "W"
+      ],
+      [
+        "D",
+        "o"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面代码中循环结束后，count的值是（）   \ncount = 0\nwhile count<5:\n    count +=2",
+    "options": [
+      [
+        "A",
+        "6"
+      ],
+      [
+        "B",
+        "5"
+      ],
+      [
+        "C",
+        "4"
+      ],
+      [
+        "D",
+        "0"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下程序的运行结果是 （     ）。\n[Python/u2_2.png]",
+    "options": [
+      [
+        "A",
+        "25"
+      ],
+      [
+        "B",
+        "1"
+      ],
+      [
+        "C",
+        "0"
+      ],
+      [
+        "D",
+        "程序是个死循环，无输出"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "有如下代码：\ni = sum = 0\nwhile i <= 4:\n    sum += i\n    i = i+1\n\nprint(sum)\n以上代码输出的结果是？",
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "10"
+      ],
+      [
+        "C",
+        "4"
+      ],
+      [
+        "D",
+        "以上都不对。"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "有如下代码：\nwhile 4 == 4:\n    print('4')\n以上代码输出的结果是？",
+    "options": [
+      [
+        "A",
+        "输出一次 4。"
+      ],
+      [
+        "B",
+        "输出四次 4。"
+      ],
+      [
+        "C",
+        "输出无数次4。"
+      ],
+      [
+        "D",
+        "语法错误。"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下列程序运行输出结果为（ ）。\n[Python/u2_3.jpg]",
+    "options": [
+      [
+        "A",
+        "22"
+      ],
+      [
+        "B",
+        "46"
+      ],
+      [
+        "C",
+        "47"
+      ],
+      [
+        "D",
+        "45"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面程序中语句print(i*j) 共执行了（   ）次。\n[Python/u2_4.jpg]",
+    "options": [
+      [
+        "A",
+        "15"
+      ],
+      [
+        "B",
+        "14"
+      ],
+      [
+        "C",
+        "20"
+      ],
+      [
+        "D",
+        "12"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "在Python中运行后，b的值是    （    ）\n[Python/u2_5.png]",
+    "options": [
+      [
+        "A",
+        "6"
+      ],
+      [
+        "B",
+        "8"
+      ],
+      [
+        "C",
+        "10"
+      ],
+      [
+        "D",
+        "12"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "当如下程序运行后，小新依次输入 9   2   *   程序输出结果应为（    ）\n[Python/u2_6.png]",
+    "options": [
+      [
+        "A",
+        "18"
+      ],
+      [
+        "B",
+        "11"
+      ],
+      [
+        "C",
+        "7"
+      ],
+      [
+        "D",
+        "4"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "numStr = input(\"输入一个整数：\")\nnum = int(numStr)\nif num < 0:\nnum = -num         \n\n\nprint(\"绝对值：\" + str(num))\n此程序可用于求绝对值，请问以下哪项描述正确。",
+    "options": [
+      [
+        "A",
+        "如果输入的是浮点数，如-11.5，则程序运行后，numStr被赋值为11.5"
+      ],
+      [
+        "B",
+        "如果输入-11，此程序可以算出绝对值，并重新赋值给numStr。"
+      ],
+      [
+        "C",
+        "如果输入数字11，则if判断为FALSE，但仍然需要执行num = -num"
+      ],
+      [
+        "D",
+        "如果输入数字11，则if判断为FALSE，不需要往下执行任何语句，程序结束"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "score = int(input(\"请输入分数\"))\nif score > 60:\nprint(\"你考试及格了\") \nprint(\"你的考试不及格\")\n\n希望通过此程序判断是否及格。以下描述错误的是：",
+    "options": [
+      [
+        "A",
+        "无论输入什么分数，输出结果都是”你考试及格了“”你的考试不及格“"
+      ],
+      [
+        "B",
+        "如果希望达到程序效果，需要在if语句后，第3行代码需要缩进4个空格"
+      ],
+      [
+        "C",
+        "此程序输入分数后，能正常判断并输出此人是否考试及格。"
+      ],
+      [
+        "D",
+        "if判断后，无论是TRUE或FALSE,都没有子语句块需要执行，程序直接执行下一行。这个属于逻辑错误。"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下列代码执行结果是？\n[i**i for i in range(3)]",
+    "options": [
+      [
+        "A",
+        "[1, 1, 4]"
+      ],
+      [
+        "B",
+        "[0, 1, 4]"
+      ],
+      [
+        "C",
+        "[1, 2, 3]"
+      ],
+      [
+        "D",
+        "(1, 1, 4)"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "若k为整形， 下述while循环执行的次数为\nk=1000\nwhile k>1:\nprint(k)\n\nk = k/2",
+    "options": [
+      [
+        "A",
+        "10"
+      ],
+      [
+        "B",
+        "1000"
+      ],
+      [
+        "C",
+        "9"
+      ],
+      [
+        "D",
+        "11"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "有一个函数关系表如下所示：\n\n\n\nx\ny\n\n\n\nx<0\nx-1\n\n\nx=0\nx\n\n\nx>0\nx+1\n\n\n下列程序段中，能正确表示上面关系的是（    ）。",
+    "options": [
+      [
+        "A",
+        "y = x + 1\nif x >= 0:\n    if x == 0:\n        y = x\n    else:\n        y = x - 1"
+      ],
+      [
+        "B",
+        "y = x - 1\nif x != 0:\n    if x > 0:\n        y = x+1\n    else:\n        y = x"
+      ],
+      [
+        "C",
+        "y = x\nif x <= 0:\n    if x < 0:\n        y = x-1\n    else:\n        y = x+1"
+      ],
+      [
+        "D",
+        "if x <= 0:\n    if x < 0:\n        y = x-1\n    else:\n        y = x \nelse:\n    y = x+1"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面程序的运行结果是什么？\ns=0\na,b=1,2\nif a>0:\n    s=s+1\nelif b>0:\n    s=s+1\nprint(s)",
+    "options": [
+      [
+        "A",
+        "错误"
+      ],
+      [
+        "B",
+        "0"
+      ],
+      [
+        "C",
+        "1"
+      ],
+      [
+        "D",
+        "2"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面程序输入1时，输出是什么？。\n\nnum=int(input())\na=num-1\nwhile a>1:\n   if num % a == 0:\n        print(\"不是素数\")\n        break\n   a=a-1\nelse:\n   print(\"是素数\")",
+    "options": [
+      [
+        "A",
+        "不是素数"
+      ],
+      [
+        "B",
+        "是素数"
+      ],
+      [
+        "C",
+        "没有输出"
+      ],
+      [
+        "D",
+        "出现异常"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面 if 语句统计满足“性别(gender)为女、年龄(age)在40岁以下、在公司任职(service_time)超过10年“条件的同事人数，正确的语句为：",
+    "options": [
+      [
+        "A",
+        "if (gender == \"女\" or age < 40 and service_time > 10):"
+      ],
+      [
+        "B",
+        "if (gender == \"女\" and age < 40 and service_time > 10):"
+      ],
+      [
+        "C",
+        "if (gender == \"女\" or age < 40 or service_time > 10):"
+      ],
+      [
+        "D",
+        "if (gender == \"女\" and age < 40 or service_time > 10):"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下列程序运行输出结果为_______。\nscore = 88\nif(score>=90):\n   print('Excellent')\nelif(score>=80):\n   print('Very Good')\nelif(score>=70):\n   print('Good')\nelif(score>=60):\n   print('Pass')\nelse:\n   print('Fail')",
+    "options": [
+      [
+        "A",
+        "Excellent"
+      ],
+      [
+        "B",
+        "Very Good"
+      ],
+      [
+        "C",
+        "Pass"
+      ],
+      [
+        "D",
+        "Fail"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下列选项中，能求出xxx和yyy中最小值，并赋值给minminmin的是_____。",
+    "options": [
+      [
+        "A",
+        "min = x if x < y else y"
+      ],
+      [
+        "B",
+        "min = x < y ? x : y"
+      ],
+      [
+        "C",
+        "if x < y: min=x"
+      ],
+      [
+        "D",
+        "if (x<y): x, y = y, x"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "python通过（ ）来判断操作是否在分支结构中",
+    "options": [
+      [
+        "A",
+        "括号"
+      ],
+      [
+        "B",
+        "缩进"
+      ],
+      [
+        "C",
+        "花括号"
+      ],
+      [
+        "D",
+        "冒号"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "有下面的程序段\nif k<=10 and k >0: \n    if k >5:\n        if k>8:\n            x=0\n        else: \n            X=1\n    else:\n        if k>2:\n            x=3\n        else:\n            x=4\n其中k取哪些值时 x=3",
+    "options": [
+      [
+        "A",
+        "3，4，5"
+      ],
+      [
+        "B",
+        "5，6，7"
+      ],
+      [
+        "C",
+        "3, 4"
+      ],
+      [
+        "D",
+        "4，5"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "选择下面程序的运行结果\nnumber = 25\nisPrime = True\nfor i in range(2, number):\n  if number % i == 0:\n    isPrime = False\n    break\nprint(\"i is\", i, \"isPrime is\", isPrime)",
+    "options": [
+      [
+        "A",
+        "i is 5 isPrime is True"
+      ],
+      [
+        "B",
+        "i is 5 isPrime is False"
+      ],
+      [
+        "C",
+        "i is 6 isPrime is True"
+      ],
+      [
+        "D",
+        "i is 6 isPrime is False"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下程序的输出结果是：\nsum = 1.0\nfor num in range(1,4):\n   sum+=num\nprint(sum)",
+    "options": [
+      [
+        "A",
+        "7.0"
+      ],
+      [
+        "B",
+        "6"
+      ],
+      [
+        "C",
+        "7"
+      ],
+      [
+        "D",
+        "1.0"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下列程序的结果是\nsum=0\nfor i in range(100):\n    if(i%10):\n        continue\n    sum=sum+i\nprint(sum)",
+    "options": [
+      [
+        "A",
+        "45"
+      ],
+      [
+        "B",
+        "450"
+      ],
+      [
+        "C",
+        "4950"
+      ],
+      [
+        "D",
+        "5050"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "执行下列代码后，变量list2的值将改变为哪个选项？\nlist1 = [1, 2, 3]\nlist2 = []\nfor element in list1:\n    list2.append(element)\nlist1 = [4, 5, 6]",
+    "options": [
+      [
+        "A",
+        "[1, 2, 3]"
+      ],
+      [
+        "B",
+        "[4, 5, 6]"
+      ],
+      [
+        "C",
+        "[1, 2, 3, 4, 5, 6]"
+      ],
+      [
+        "D",
+        "没有；该代码无效"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "print(type({})) 的输出结果是()",
+    "options": [
+      [
+        "A",
+        "<class 'dict'>"
+      ],
+      [
+        "B",
+        "<class 'list'>"
+      ],
+      [
+        "C",
+        "<class 'set'>"
+      ],
+      [
+        "D",
+        "<class 'str'>"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下代码段的执行结果为(    )。\nd={\"A\":[9,10],\"B\":[6,7,8],\"C\":[0,1,2,3,4,5],\"a\":[11]}\nprint(d[\"A\"])",
+    "options": [
+      [
+        "A",
+        "[9,10,11]"
+      ],
+      [
+        "B",
+        "[11]"
+      ],
+      [
+        "C",
+        "[9,10]"
+      ],
+      [
+        "D",
+        "语句出错"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "Python中用来计算集合的交集的运算符是（）。",
+    "options": [
+      [
+        "A",
+        "|"
+      ],
+      [
+        "B",
+        "&"
+      ],
+      [
+        "C",
+        "-"
+      ],
+      [
+        "D",
+        "^"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "max((3, 5, 1, 7, 4))的结果是____。",
+    "options": [
+      [
+        "A",
+        "1"
+      ],
+      [
+        "B",
+        "3"
+      ],
+      [
+        "C",
+        "5"
+      ],
+      [
+        "D",
+        "7"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "list(\"abcd\")的结果是?",
+    "options": [
+      [
+        "A",
+        "['a', 'b', 'c', 'd']"
+      ],
+      [
+        "B",
+        "['ab']"
+      ],
+      [
+        "C",
+        "['cd']"
+      ],
+      [
+        "D",
+        "['abcd']"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "如果list1 = [1, 2, 3, 4, 5, 4, 3, 2, 1]，那么以下那个是list1[:-1]？",
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "[1, 2, 3, 4, 5, 4, 3, 2, 1]"
+      ],
+      [
+        "C",
+        "[1, 2, 3, 4, 5, 4, 3, 2]"
+      ],
+      [
+        "D",
+        "[0, 1, 2, 3, 4, 3, 2, 1, 0]"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "要把5加到列表lst的末尾，用的是___ 。",
+    "options": [
+      [
+        "A",
+        "lst.add(5)"
+      ],
+      [
+        "B",
+        "lst.append(5)"
+      ],
+      [
+        "C",
+        "lst.addLast(5)"
+      ],
+      [
+        "D",
+        "lst.addEnd(5)"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下哪一句会得到{'1','2','3'}？",
+    "options": [
+      [
+        "A",
+        "list(\"123\")"
+      ],
+      [
+        "B",
+        "tuple(\"123\")"
+      ],
+      [
+        "C",
+        "set(\"123\")"
+      ],
+      [
+        "D",
+        "以上都不是"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下哪个方式可以创建一个空的集合？",
+    "options": [
+      [
+        "A",
+        "set()"
+      ],
+      [
+        "B",
+        "{}"
+      ],
+      [
+        "C",
+        "[]"
+      ],
+      [
+        "D",
+        "()"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "对于两个集合s1和s2，s1 < s2的意思是？",
+    "options": [
+      [
+        "A",
+        "s1的大小小于s2的大小"
+      ],
+      [
+        "B",
+        "s1的元素比s2的小"
+      ],
+      [
+        "C",
+        "s1是s2的真子集"
+      ],
+      [
+        "D",
+        "s2是s1的真子集"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "对于集合s，以下哪个操作是不存在的？",
+    "options": [
+      [
+        "A",
+        "len(s)"
+      ],
+      [
+        "B",
+        "s.append(1)"
+      ],
+      [
+        "C",
+        "max(s)"
+      ],
+      [
+        "D",
+        "s - {1}"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "对于正确的表达式a[2]，a不可能是以下哪个类型？",
+    "options": [
+      [
+        "A",
+        "集合"
+      ],
+      [
+        "B",
+        "列表"
+      ],
+      [
+        "C",
+        "元组"
+      ],
+      [
+        "D",
+        "字典"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "已知x=[1,3,5]、y=[2,4,6]，则x+y的结果是_____。",
+    "options": [
+      [
+        "A",
+        "[2, 4, 6, 1, 3, 5]"
+      ],
+      [
+        "B",
+        "[1, 2, 3, 4, 5, 6]"
+      ],
+      [
+        "C",
+        "[1, 3, 5, 2, 4, 6]"
+      ],
+      [
+        "D",
+        "[6, 5, 4, 3, 2, 1]"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下程序的运行结果是（）   \na='0123456789'\nb=list(a)\ns=[]\nfor x in b:\n    if x:\n        s=s+[x]\nprint(s)",
+    "options": [
+      [
+        "A",
+        "['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']"
+      ],
+      [
+        "B",
+        "['1', '2', '3', '4', '5', '6', '7', '8', '9']"
+      ],
+      [
+        "C",
+        "45"
+      ],
+      [
+        "D",
+        "以上都不对"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "执行如下代码后，下述各选项中表达式的值为False的是（）   \nn=3\na=[0]*n\nfor i in range(n):\n    a[i]=[0]*i",
+    "options": [
+      [
+        "A",
+        "[] in a"
+      ],
+      [
+        "B",
+        "[0] in a"
+      ],
+      [
+        "C",
+        "[0, 0]  in a"
+      ],
+      [
+        "D",
+        "[0, 0, 0]  in a"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面数据类型中，不是有序类型的是（ ）。",
+    "options": [
+      [
+        "A",
+        "元组"
+      ],
+      [
+        "B",
+        "列表"
+      ],
+      [
+        "C",
+        "集合"
+      ],
+      [
+        "D",
+        "字符串"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下哪个指令能建立一个集合( )。",
+    "options": [
+      [
+        "A",
+        "{}"
+      ],
+      [
+        "B",
+        "set(8)"
+      ],
+      [
+        "C",
+        "{8}"
+      ],
+      [
+        "D",
+        "set(2,3)"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "元组和列表之间的主要差别是：",
+    "options": [
+      [
+        "A",
+        "元组之间的元素不能用逗号进行分隔"
+      ],
+      [
+        "B",
+        "元组只能包含字符串元素"
+      ],
+      [
+        "C",
+        "元组不能把列表作为元素进行存储"
+      ],
+      [
+        "D",
+        "一旦元组被创建，就不能更改"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "执行以下代码后输出（）。\ndef pass_it(x, y):\n    z = x + \", \" + y\n    return(z)\nname2 = \"Tony\"\nname1 = \"Gaddis\"\nfullname = pass_it(name1, name2)\nprint(fullname)",
+    "options": [
+      [
+        "A",
+        "Tony Gaddis"
+      ],
+      [
+        "B",
+        "Gaddis Tony"
+      ],
+      [
+        "C",
+        "Tony, Gaddis"
+      ],
+      [
+        "D",
+        "Gaddis, Tony"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "执行以下代码后输出（）\ndef pass_it(x, y):\n    z = y**x\n    return(z)\nnum1 = 3\nnum2 = 4\nanswer = pass_it(num1, num2)\nprint(answer)",
+    "options": [
+      [
+        "A",
+        "81"
+      ],
+      [
+        "B",
+        "64"
+      ],
+      [
+        "C",
+        "12"
+      ],
+      [
+        "D",
+        "None"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下代码的输出是：\ndef fun(a, *b):\n     n = 0\n     for i in b:\n          n += i\n     return n    \nres = fun(1, 3, 5, 7)\nprint(res)",
+    "options": [
+      [
+        "A",
+        "15"
+      ],
+      [
+        "B",
+        "16"
+      ],
+      [
+        "C",
+        "7"
+      ],
+      [
+        "D",
+        "语法错误"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下代码的输出结果是：\ndef fun(n):\n    if n==1 or n==2:\n        res = 1\n    else:\n        res = fun(n-1)+fun(n-2)\n    return res\n\nprint(fun(5))",
+    "options": [
+      [
+        "A",
+        "2"
+      ],
+      [
+        "B",
+        "3"
+      ],
+      [
+        "C",
+        "5"
+      ],
+      [
+        "D",
+        "8"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "有如下程序代码：\ndef Foo(x):\n if (x==1):\n  return 1\n else:\n  return x+Foo(x-1)\nprint(Foo(4))\n以上代码输出结果为？",
+    "options": [
+      [
+        "A",
+        "1"
+      ],
+      [
+        "B",
+        "24"
+      ],
+      [
+        "C",
+        "7"
+      ],
+      [
+        "D",
+        "10"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "（样卷）下面程序运行的显示结果是什么？\nclass Count:\n    def __init__(self, count = 0):\n       self.__count = count\n\nc1 = Count(2)\nc2 = Count(2)\nprint(id(c1) == id(c2), end = \" \")\n\ns1 = \"Good\"\ns2 = \"Good\"\nprint(id(s1) == id(s2))",
+    "options": [
+      [
+        "A",
+        "True False"
+      ],
+      [
+        "B",
+        "True True"
+      ],
+      [
+        "C",
+        "False True"
+      ],
+      [
+        "D",
+        "False False"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面程序的输出是_____。\nclass Account:\n    def __init__(self,id):\n        self.id=id\n        id=1688\n\nacc=Account(100)\nprint(acc.id)",
+    "options": [
+      [
+        "A",
+        "100"
+      ],
+      [
+        "B",
+        "1688"
+      ],
+      [
+        "C",
+        "1588"
+      ],
+      [
+        "D",
+        "运行出错"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下代码段的执行结果是(    )。\nclass St:\n    def __init__(o,a,b):\n        o._a=a\n        o.__b=b\n    def setb(o,b):\n        o.__b=b\n    def getb(o):\n        return o.__b\n    \ns1=St(0,1)\nprint(s1.__b)",
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "1"
+      ],
+      [
+        "C",
+        "随机数"
+      ],
+      [
+        "D",
+        "语句出错"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下代码段的执行结果是(    )。\nclass St:\n    def __init__(o,a,b):\n        o._a=a\n        o.__b=b\n    def setb(o,b):\n        o.__b=b\n    def getb(o):\n        return o.__b\n    \ns=St(0,1)\ns.setb(3)\nprint(s.getb())",
+    "options": [
+      [
+        "A",
+        "0"
+      ],
+      [
+        "B",
+        "1"
+      ],
+      [
+        "C",
+        "3"
+      ],
+      [
+        "D",
+        "语句出错"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "当创建一个名为Worker的类时第一行应该为（）",
+    "options": [
+      [
+        "A",
+        "def__init__(self):"
+      ],
+      [
+        "B",
+        "class Worker:"
+      ],
+      [
+        "C",
+        "import random"
+      ],
+      [
+        "D",
+        "def worker_pay(self):"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "在下面的代码行中，子类的名称是什么?\nclass Rose(Flower):",
+    "options": [
+      [
+        "A",
+        "Rose"
+      ],
+      [
+        "B",
+        "Flower"
+      ],
+      [
+        "C",
+        "Rose(Flower)"
+      ],
+      [
+        "D",
+        "以上都不是"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下代码的执行结果是(    )。\nclass St:\n    def __init__(obj,name,age):\n        obj.name=name\n        obj.age=age\n\ns=[St(\"John\",19),St(\"Iris\",18),St(\"Mary\",17),St(\"Jack\",16)]\nt=0\nfor i in s:\n    t+=i.age\nt/=4\nprint(t)",
+    "options": [
+      [
+        "A",
+        "17"
+      ],
+      [
+        "B",
+        "16"
+      ],
+      [
+        "C",
+        "17.5"
+      ],
+      [
+        "D",
+        "18"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "分析下面代码:\nclass A:\n    def __init__(self):\n        self.x = 1\n        self.__y = 1\n\n    def getY(self):\n        return self.__y\n\na = A()\na.__y = 45\nprint(a.getY())",
+    "options": [
+      [
+        "A",
+        "程序有错误，因为y是私有的，不能在类之外访问。"
+      ],
+      [
+        "B",
+        "程序有错误，不能使用__y作为变量名。"
+      ],
+      [
+        "C",
+        "程序运行结果为1 。"
+      ],
+      [
+        "D",
+        "程序运行结果为45。"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "如下所示程序片段中：\nclass MyClass:\n    def __init__(self):\n        x = 30\n        __x = 1\n        self.x = 2\n        self.__x = 3\n\n其中私有属性是（）",
+    "options": [
+      [
+        "A",
+        "x"
+      ],
+      [
+        "B",
+        "__x"
+      ],
+      [
+        "C",
+        "self.x"
+      ],
+      [
+        "D",
+        "self.__x"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "分析下面的代码:\nclass A:\n    def __init__(self):\n        self.x = 1\n        self.__y = 1\n\n    def getY(self):\n        return self.__y\n\na = A()\nprint(a.x)",
+    "options": [
+      [
+        "A",
+        "程序有错误，因为x是私有的，不能在类之外访问。"
+      ],
+      [
+        "B",
+        "程序有错误，类中不能使用__y作为变量名。"
+      ],
+      [
+        "C",
+        "程序运行结果为1 。"
+      ],
+      [
+        "D",
+        "程序运行结果为0。"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面代码段运行的结果是什么？\ndef main():\n    myCount = Count()\n    times = 0\n\n    for i in range(0, 100):\n        increment(myCount, times)\n\n    print(\"count =\", myCount.count, \"times =\", times)\n\ndef increment(c, times):\n    c.count += 1\n    times += 1\n\nclass Count:\n    def __init__(self):\n        self.count = 0\n\nmain()",
+    "options": [
+      [
+        "A",
+        "count = 101 times = 0"
+      ],
+      [
+        "B",
+        "count = 100 times = 0"
+      ],
+      [
+        "C",
+        "count = 100 times = 100"
+      ],
+      [
+        "D",
+        "count = 101 times = 101"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面代码段运行的结果是什么？\nclass A:\n    def __init__(self, i = 1):\n        self.i = i\n\nclass B(A):\n    def __init__(self, j = 2):\n        super().__init__()\n        self.j = j\n\ndef main():\n    b = B()\n    print(b.i, b.j)\n\nmain()",
+    "options": [
+      [
+        "A",
+        "0 0"
+      ],
+      [
+        "B",
+        "0 1"
+      ],
+      [
+        "C",
+        "1 2"
+      ],
+      [
+        "D",
+        "2 1"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面代码段运行的结果是什么？\nclass A:\n    def __init__(self):\n        self.i = 1\n\n    def m(self):\n        self.i = 10\n\nclass B(A):\n    def m(self):\n        self.i += 1\n        return self.i\n\ndef main():\n    b = B()\n    print(b.m())\n\nmain()",
+    "options": [
+      [
+        "A",
+        "1"
+      ],
+      [
+        "B",
+        "2"
+      ],
+      [
+        "C",
+        "10"
+      ],
+      [
+        "D",
+        "3"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面代码执行后,输出内容是：class A:\n    def __init__(self):\n        self.x = 1\n        self.y = 2\n    def getY(self):\n        return self.y\na = A()\nprint(a.x, a.y)",
+    "options": [
+      [
+        "A",
+        "1 2"
+      ],
+      [
+        "B",
+        "2 1"
+      ],
+      [
+        "C",
+        "12"
+      ],
+      [
+        "D",
+        "None None"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "下面语句的输出结果是什么？(   )\nprint(\"hello\"  'world')     #hello与world间隔两个空格",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "helloworld"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "（               ）字符是一个出现在字符串文本中，以反斜杠（\\）开始的特殊字符。(   )",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "转义"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "在Python中，56/5的结果为(   )",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "11.2"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "比较字符串大小，其中‘Hello‘比‘world‘ (   ) 。注：填一个字，大或小",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "小"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "若a=2,b=3,那么a**b的值为(   )。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "8"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "逻辑运算符__________(   ) 可以对布尔表达式为真的值进行取反。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "not"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "执行下列语句后的显示结果是什么?(   )\nsum = 0\nitem = 0\nwhile item < 5:\n    item += 1\n    sum += item\n    if sum > 4: break\n\nprint(sum)",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "6"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "执行循环： \nfor i in range(1,5):\n    pass \n后,变量 i 的值是：\n(   )",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "4"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "若 while 循环的条件总是 True，循环将一直执行，这种情况被称为(   )",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "死循环"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "有以下程序\nx = int(input('请输入第一个数：'))\ny = int(input('请输入第二个数：'))\nif x > y:\n    x,y = y,x\nprint(x,y)\n程序运行时输入10〈回车〉，12〈回车〉，执行后输出结果是(   )",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "10 12"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "'abc'*2的结果是：(   )",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "abcabc"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "Python中的序列主要有三种：(   )、列表和元组。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "字符串"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "sum((i**2 for i in range(10) if i%2))的值是(   ) 。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "165"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "'Zhejiang University'[:-9:-2]的结果是：(   )",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "yirv"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "下面程序的输出是(   ) 。\nt=1\nt,a=2,t+1\nprint(a)",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "2"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "6-12.下面程序的输出是(   )。\na=20\ndef func():\n    a=40    \n    print(a,end=\" \")\n    \nfunc()\nprint(a)",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "40 20"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "6-13.下面程序的运行结果是（如程序错误写\"error\"）(   )。\nb,c=3,4\ndef g_func():\n    a=b*c    \n    b=b+1\n    d=a    \n    print(a,b,end=\" \")\ng_func()\nprint(b,c)",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "6-14.下面程序的运行结果是（如程序错误写“error”）(   )。\nb,c=3,4\ndef g_func(d):\n    global a\n    a=d*c\ng_func(b)\nprint(a)",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "12"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "已知函数定义 def funct(x,y,z=20):return x+y+z, 那么表达式func(10,15)的值为(   )",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "45"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "已知函数定义 def func(x,y,z):return x+y-z, 那么表达式func(y=2,z=3,x=8)的值为_____(   )",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "7"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "执行下列语句后的显示结果是什么?(   )\ndef m(list):\n    v = list[0]\n    for e in list:\n      if v < e: v = e\n    return v\n\nvalues = [[3, 4, 5, 1], [33, 6, 1, 2]]\nfor row in values: \n    print(m(row), end = \" \") #一个空格",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "5 33"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "以下程序的输出结果是(   )\nIs = []                            \ndef func(a,b):\n    Is.append(b)                    \n    return a * b\ns = func(\"love\",2)\nprint(s,Is)",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "lovelove [2]"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "已知x=[1,11,111],那么执行语句x.sort(key=lambda x:len(str(x)),reverse=True)之后，x的值为。(   )",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "111 11 1"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "表达式 map(lambda x:x+5,[1,2,3,4,5])的值为____。(   )",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "6 7 8 9 10"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "表达式sum(list(range(1, 10, 3)))的值是（）(   ) 。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "12"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "下面程序输出结果是什么？(   ) \nclass account:\n    def __init__(self,id,balance):\n        self.id=id\n        self.balance=balance\n    \n    def deposit(self,amount):\n        self.balance+=amount\n    \n    def withdraw(self,amount):\n        self.balance-=amount\n    \nacc1=account('1234',100)\nacc1.deposit(500)\nacc1.withdraw(200)\nprint(acc1.balance)",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "400"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "类的定义与使用（高教社，《Python编程基础及应用》习题9-2）\n请写出下述程序的执行结果：\nfrom math import *\nclass Circle:\n    def __init__(self, radius = 1):\n        self.radius = radius\n    def getPerimeter(self):\n        return 2 * self.radius * pi\n    def getArea(self):\n        return self.radius * self.radius * pi\n    def setRadius(self, radius):\n        self.radius = radius\n\na = Circle(10)\nprint(\"{:.1f},{:.2f}\".format(a.getPerimeter(),a.getArea()))\n执行结果为：(   )\n拼尽全力还是不会？参考B站习题讲解哔哩哔哩up主：海洋饼干叔叔 Python课程 Python习题简洁的C和C++作者每天分享一篇关于C/C++/Python的技术文章，学习编程不迷路。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "62.8,314.16"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "在Python中，可以使用(   ) 关键字来声明一个类。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "class"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "Python提供了名称为(   ) 的构造方法，实现让类的对象完成初始化。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "__init__"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "要正常运行以下程序，请将代码补充完整。\nclass Person(object):\ndef __init__((   ),name,gender,birth):\n\n   self.name = name\n\n   self.gender = gender\n\n   self.birth = birth\nxiaoming = Person('Xiao Ming', 'Male', '1990-1-1')\nprint(xiaoming.name)",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "self"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "当使用序列中不存在的(   ) 时，会引发IndexError异常。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "索引"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "一个try语句只能对应一个(   ) 子句。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "finally"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "打开文件对文件进行读写，操作完成后应该调用(   )方法关闭文件，以释放资源。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "close()"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "用readlines方法把整个文件中的内容进行一次性读取，返回的是一个(   )。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "list"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "在读写文件的过程中，(   )方法可以获取当前的读写位置。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "tell()"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "在(   )模式下,解释器读取包含Python语句的文件内容并执行每条语句。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "脚本"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "每个Python文件都可以作为一个模块，模块的名字就是(   ) 的名字。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "文件"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "表达式 pow(3,2) == 3**2的值为True。",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "math模块是python语言的数学模块。",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "语句print(\"输出结果是{:8d}\".format(1234))的输出是：输出结果是 1234□□□□。 □表示空格。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "下面程序的输出是5。  \nprint=3\nprint(5)",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "整数变量y=8,语句print('{}+8={}'.format(y, y+8))输出:y十8=16。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "ord('中')给出的是汉字“中”的ASCII值。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "循环结构可以向已经执行过的语句部分跳转。",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "elif可以单独使用。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python中没有switch-case语句。",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在 if...elif...else 的多分支语句中只会执行一个语句块。",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "if语句的判断后需要添加分号(:)，子语句块需要进行缩进，但对于缩进多少位没有具体要求。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "if语句可以同时进行多个条件判断，使用”and“作为连接。并且全部条件为真时，条件才成立。",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "布尔表达式，表示对和错的单词既可以大写，也可以使用小写，如：ture，TRUE。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python中，else子句一定跟前一个没有与else配对的if匹配",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "执行如下语句，程序陷入死循环状态。\nwhile True:\n    \n    print(\"我爱学python\")",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "以下代码运行结果为8。\n[Python/u4_1.jpg]",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "函数定义时，可以有多条return语句，但每调用一次该函数只会执行其中一条return。",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "下面程序的输出结果是1500。\nclass MulByTwo(object):\n    def __init__(self,number):\n        self.number=number\n        self.counter=0\n\n    def __next__(self):\n        self.counter+=1\n        return self.counter*self.number\n\nit=MulByTwo(500)\nit.__next__()\nit.__next__()\nit.__next__()\nprint(it.__next__())",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "对于Python类中的私有成员，可以通过对象名._类名__私有成员名的方式来访问。",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python中，try/except语句可以有一个可选的else子句，出现在所有except子句之后，若发生异常但没有匹配的except子句则执行else语句块。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python异常处理结构中，不论是否发生异常，finally子句中的代码总是会执行的。",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "文件处理后可以不用 .close() 方法关闭文件，程序退出时会默认关闭。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面代码实现的功能描述为。\n[Python/u4_2.jpg]",
+    "options": [
+      [
+        "A",
+        "接受用户输人的整数N，判断N是否是素数并输出结论"
+      ],
+      [
+        "B",
+        "接受用户输人的整数N，输出N绝对值的阶乘值"
+      ],
+      [
+        "C",
+        "接受用户输入的整数N，判断N是否是整数并输出结论"
+      ],
+      [
+        "D",
+        "接受用户输入的整数N，判断N是否是水仙花数"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下列程序的输出结果是（   ）。\n[Python/u6_1.png]",
+    "options": [
+      [
+        "A",
+        "1"
+      ],
+      [
+        "B",
+        "10"
+      ],
+      [
+        "C",
+        "gramming"
+      ],
+      [
+        "D",
+        "Python"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "表达式 $5\\% 2$ 的结果是2。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python中0xad是合法的十六进制数字表示形式",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "为了让代码更加紧凑，编写Python程序时应尽量避免加入空格和空行",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python中的变量并不直接存储值，而是存储了值的内存地址(引用)",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python中，input()函数返回的是整数类型的数据",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python中的成员运算符用于判断指定序列中是否包含某个值。（）",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "“==”和“=”都属于赋值运算符。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "已知 $x = 3$ ，那么执行语句 $x + = 6$ 之后， $x$ 的内存地址不变",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "下面程序的运行结果是4。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "已知 $x = 3$ ，则执行“ $x = 7$ ”后，id(x)的返回值与原来没有变化",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python指令print(\"Hello\",\"World\", \"!\")执行后，输出的内容是Hello World！",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "为了输出\",可以使用如下语句print(\"\")。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "整数变量 y=8，语句 print!’{}+8={}’.format(y, y+8)) 输出: y + 8 = 16。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "字符串'Hello\\nPython'中\"\\n\"表示换行",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "复数 $3 + 1\\mathrm{j}$ 可以简写为 $3 + \\mathrm{j}$",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python程序中的变量可以不用进行类型声明",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python中，转义字符以“\\”开头",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python中可以使用 for 作为变量名。\n的作用是使得变量记住35.0。int函数调用的参数是变量a，值为\"35\"。",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python变量名区分大小写，所以student和Student不是同一个变量。\n\n每题1分",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "如下两段代码功能一样，程序结构也一样\n```python\nif a 0:\nprint(\"a>0\")\nif a 0:\nprint(\"a>0\")\n```",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python语言里，循环结构必须有else子句",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在嵌套循环（多层循环）中，每一层循环都应该使用自己的循环变量，以免互相干扰",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python循环中，对于带有else子句的循环，如果因为执行了break语句而退出的话，会执行else子句的代码",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python可以比较字符串，但不区分大小写",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python语言里，循环体中必须要有if语句",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在嵌套循环中，外层循环每迭代一次，内层循环都要完成全部的迭代",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "计算嵌套循环中总的迭代总数，只要把内层循环中的迭代次数和外层循环中的迭代次数相加即可。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "无论while循环表达式判断结果是真是假，循环体至少执行一次。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "if语句仅在布尔表达式结果为true时才执行一个或多个语句",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "执行如下语句，程序陷入死循环状态。",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "for i in range(10): ...... 代码段中，i的循环终值是10。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "while...else组合语句，一旦执行else内部的语句时，则意味着该语句不属于while循环语句了",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "减少代码重复是使用循环结构的优势之一",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "已知：列表 $a = [1, 2, [3, 4]]$ ，则： $\\text{len}(a) = 4$ 。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "[4,5]*3的结果是[[4,5],[4,5],[4,5]]。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "列表 $\\mathrm{lst} = [12, -5, -22, -10, -26, 35, 0, 49, 3, -21]$ , $\\mathrm{lst}[0:100]$ 的结果是错误。\n```txt\n● F\n```",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "下述两段代码的输出结果一致。\n代码一：\n```python\nnames = ['张三', '李四', '王五', '赵六', '田七']\na = names[2]\nb = names[-1]\nprint(\"{}去{}家做客\".format(a,b))\n```\n代码二：\n```txt\nnames = ['张三', '李四', '王五', '赵六', '田七']\na = names[-3]\nb = names[-1]\nprint(a+\"去\"+b+\"家做客\")\n```",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "range(1,11)起点为1，能取到的最大数是11.",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "remove方法将一个列表中的所有出现的条目都会删除",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "列表的元素可以是任何类型的对象",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "列表是动态数据结构，因此可以添加元素或者删除已有的元素",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "字典直接打印出来的顺序与创建之初的顺序可能不同",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "已知 $x = (1, 2, 3, 4)$ ，那么执行 $x[0] = 5$ 之后， $x$ 的值为 $(5, 2, 3, 4)$",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "set(x): 可以用于生成集合，输入的参数可以是任何组合数据类型，返回结果是一个无重复且有序任意的集合",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "可以利用内置函数list()、tuple()、dict()、set()、frozenset()把其它类型的数据转换成为列表、元组、字典、可变集合和不可变集合，但不能创建空列表、空元组、空字典和空集合。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在创建字典时键具有唯一性并且字典中的键必须是不可变的类型，一般是字符串、数字或元组，字典的值可以是任何数据类型。分值为1分。\n●",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python中列表的元素个数可以是无限个",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python字典中的“键”不允许重复",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python列表中所有元素必须为相同类型的数据",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python列表、元组、字符串都属于有序序列",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "python中的字符串类型是一种组合数据类型",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "一个列表可以是另一个列表的元素",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "字典的键可以为数值、字符串、元组和列表",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "sorted()能将数组按大小升序排序",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "list是一个列表，list.append(x)会将元素x添加到列表头部",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "以下代码运行结果为8。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "调用函数时传递的实参个数必须与函数形参个数相等才行",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python函数名与变量命名规则一样",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "定义Python函数时必须指定函数返回值类型",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在一个函数中，某个变量用global修饰，则该变量为全局变量",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在函数内部出现的与全局变量同名的变量，若没有global修饰且对其进行了赋值，则该变量为局部变量",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "函数头标志函数定义的开始",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "函数定义说明了函数所要完成的功能并使函数运行",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "调用函数才会执行函数体内语句，定义函数不会执行函数体内语句",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "层次结构图显示了函数内部执行的所有步骤",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "执行函数体内语句的时候,流程走到 return 语句将终止函数的执行，返回调用方。\n●",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "要给函数中的全局变量赋值，必须首先在函数中声明全局变量",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "有返回值的函数在运行完成时会将值返回给调用它的程序",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "使用位置传递参数时，实参的个数需要与形参的个数相同",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python程序中，函数的实参的数量和顺序必须与形参一样",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python函数可以返回多个值",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python语言中，当函数同时存在位置参数和关键字参数时，位置参数必须要在关键字参数的前面",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "函数的返回值必须是一个单一的值，不能返回多个值或复杂的数据结构",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在函数内部定义的变量是局部变量，只能在函数内部使用，函数外部无法访问。\n\n1-4-27printList函数定义如下，调用printList函数的时候，传入printList函数的变量名必须是ls",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "使用foo(2,7)调用以下函数，函数内x2的值为7,x3的值为5",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python中，函数可以嵌套定义，即一个函数内部可以定义另一个函数",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "调用函数时，函数名后面的括号始终是必需的，即使该方法不带任何参数。\n●",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在函数中使用return语句可以返回值，所以函数中的return语句后一定要有值",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python中，函数内部可以访问全局变量，但不能修改全局变量的值",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "下面程序的输出结果是1500。\n```python\nclass MulByTwo(object):\ndef __init__(self, number):\nself.number = number\nself.counter = 0\ndef __next__(self):\nself.counter += 1\nreturn self.counter * self.number\nit = MulByTwo(500)\nit.__next__()\nit.__next__()\nit.__next__()\nprint(it.__next()))\n```",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "对于Python类中的私有成员，可以通过对象名.类名私有成员名的方式来访问",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python中，可以为自定义类的对象动态增加新成员",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python从类定义之外，直接访问实例变量（赋值或取得值）是不好的程序设计风格",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在 Python 中,对象的属性必须在构造方法内初始化。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在方法定义中，self参数可以放在任意位置，不一定要是第一个参数",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python中类的属性一般来说是通过类名来访问，通过对象名无法访问类的属性",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python不允许类的多继承，即不允许一个子类拥有多个父类",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "定义类时，所有实例方法的第一个参数用来表示对象本身，在类的外部通过对象名来调用实例方法时，不需要为该参数传值。\n●",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python中定义类时实例方法的第一个参数名称必须是self。T F\n\n每题1分",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "文件对象的tell()方法用来返回文件指针的当前位置",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "以读模式打开的文件无法进写操作；以写模式打开的文件无法进读操作",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "文件打开的默认方式是只读",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "read方法只能一次性读取文件中的所有数据",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "对文件进行读写操作之后必须显式关闭文件以确保所有内容都得到保存",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "以读模式打开文件时，文件指针指向文件开始处",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "以追加模式打开文件时，文件指针指向文件尾",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python中用“a+”模式打开文件时，文件若不存在，就新建一个文件；文件指针在文件末尾，新写入的文件内容是在原来内容的基础上追加写入",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "Python标准库os.path中isdir()方法用来判断指定路径是否为系统已存在的文件夹",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "文本文件是可以迭代的，可以使用for line in fp类似的语句遍历文件对象fp中的每一行",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python中，一个try语句块后必须要有except语句块",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python中，try/except语句中的finally语句块只有在try语句块中的语句没有引发异常时才会执行",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "如下try-except的基本语法格式中，当执行时，不管产生了何种异常，一定会执行。\ntry:\n\nexcept:",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python中，try/except语句可以有一个可选的else子句，出现在所有except子句之后，只有没有引发异常时才会执行。如果引发了异常，else语句块将会跳过。\n●",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "如果一段程序可能发生多种异常，想要对每种异常分别处理，可以使用finally关键字。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python异常处理中，只能有一个try，但可以有多个except",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python中，如果try语句块发生了一个异常，与该异常匹配的所有except子句均会执行",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python异常处理中，在try块发生异常后，会执行第一个该异常匹配的except子句，其他except子句则不再执行",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在异常处理结构中，不论是否发生异常，finally子句中的代码总是会执行的",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "异常处理结构中的finally块中代码仍然有可能出错从而再次引发异常。\n●",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "异常是在程序运行时发生的错误",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "程序中异常处理结构在大多数情况下是没必要的",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在Python中，语句：print(3/0) 会引发“ValueError”异常。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "在python语言中表示“x属于区间[a, b)”的正确表达式是（）",
+    "options": [
+      [
+        "A",
+        "整数"
+      ],
+      [
+        "B",
+        "字符串"
+      ],
+      [
+        "C",
+        "浮点数"
+      ],
+      [
+        "D",
+        "无正确答案"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "请问以下数据0、-99、'1000'的数据类型分别为：（）",
+    "options": [
+      [
+        "A",
+        "整数、小数、字符串"
+      ],
+      [
+        "B",
+        "整数、整数、字符串"
+      ],
+      [
+        "C",
+        "整数、浮点数、整数"
+      ],
+      [
+        "D",
+        "整数、小数、整数"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "若 $x = -3, y = 4$ ，则下列关系式结果为False的是（）",
+    "options": [
+      [
+        "A",
+        "not(x > 0)"
+      ],
+      [
+        "B",
+        "x > 0 and y > 0"
+      ],
+      [
+        "C",
+        "x <= 0 or y <= 0"
+      ],
+      [
+        "D",
+        "$x > 0$ or $y > 0$"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "实现多路分支的最佳控制结构是（）。\n↗ Tt []",
+    "options": [
+      [
+        "A",
+        "if"
+      ],
+      [
+        "B",
+        "if-else"
+      ],
+      [
+        "C",
+        "try"
+      ],
+      [
+        "D",
+        "if-elif-else"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "Python语言语句块的标记是( )",
+    "options": [
+      [
+        "A",
+        "10,20,30"
+      ],
+      [
+        "B",
+        "10,20,20"
+      ],
+      [
+        "C",
+        "20,10,10"
+      ],
+      [
+        "D",
+        "20,10,30"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "有一个函数关系表如下所示:\n\n下列程序段中，能正确表示上面关系的是（）。\n```python\nif x >= 0:\nif x == 0:\ny = x\nelse:\ny = x - 1\nif x != 0:\nif x > 0:\ny = x + 1\nelse:\ny = x\nif x 1:\n```",
+    "options": [
+      [
+        "A",
+        "y = x + 1"
+      ],
+      [
+        "B",
+        "y = x - 1"
+      ],
+      [
+        "C",
+        "y = x"
+      ],
+      [
+        "D",
+        "if x <= 0:"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面程序输入1时，输出是什么？。\n$^{2}$ Tt []\n```txt\n已知 x=10,y=20,以下语可执行后,x,y的值是:\nif x < y:\nz = x\nx = y\ny = z",
+    "options": [
+      [
+        "A",
+        "不是素数"
+      ],
+      [
+        "B",
+        "是素数"
+      ],
+      [
+        "C",
+        "没有输出"
+      ],
+      [
+        "D",
+        "出现异常"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下列程序的结果是\n```python\nsum=0\nfor i in range(100):\nif(i%10):\ncontinue\nsum=sum+i\n```\n```txt\nfor s in \"HelloWorld\":\nif s == \"W\":\nbreak\nprint(s, end=\"\")",
+    "options": [
+      [
+        "A",
+        "6"
+      ],
+      [
+        "B",
+        "5"
+      ],
+      [
+        "C",
+        "4"
+      ],
+      [
+        "D",
+        "0"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "在Python中，实现多分支选择结构的最佳方法是（）。\n\nTt []\n```txt\n```",
+    "options": [
+      [
+        "A",
+        "if"
+      ],
+      [
+        "B",
+        "if-else"
+      ],
+      [
+        "C",
+        "if-elif-else"
+      ],
+      [
+        "D",
+        "if嵌套"
+      ],
+      [
+        "C",
+        "循环体后可执行11次"
+      ],
+      [
+        "D",
+        "以上答案都错"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "已知x=[1,2,3,4]，执行语句x.append(5)之后，x的值是什么____。",
+    "options": [
+      [
+        "A",
+        "[1,2,3,4,5]"
+      ],
+      [
+        "B",
+        "5"
+      ],
+      [
+        "C",
+        "[5,4,3,2,1]"
+      ],
+      [
+        "D",
+        "[5]"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "若执行以下代码块，则列表b为：\n```txt\na=['Man', 'what can I say', 'Mamba', 'out', '!']\nb=a[0::4] #[start:stop:step]\nb.append('肘击')\n```\n```javascript\n```\n```txt\n```",
+    "options": [
+      [
+        "A",
+        "b=['Man', 'what can I say', 'Mamba', 'out', '!', '肘击']"
+      ],
+      [
+        "B",
+        "b=['Man', '!', '肘击']"
+      ],
+      [
+        "C",
+        "b=['Mamba', 'out', '!', '肘击']"
+      ],
+      [
+        "D",
+        "b=['肘击', 'Mamba', 'out', '!',"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "已知 $x = [1, 2, 3]$ , $y = [4, 5]$ , 则 $x.append(y)$ 后, $x$ 的值是（）。",
+    "options": [
+      [
+        "A",
+        "[1, 2, 3, 4, 5]"
+      ],
+      [
+        "B",
+        "[[1, 2, 3], [4, 5]]"
+      ],
+      [
+        "C",
+        "[[1, 2, 3], 4, 5]"
+      ],
+      [
+        "D",
+        "[1, 2, 3, [4, 5]]"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "已知 $x = [7, 5, 8, 9, 3]$ ，则 $x.$ reverse()后， $x$ 的值是（）。",
+    "options": [
+      [
+        "A",
+        "[3, 5, 7, 8, 9]"
+      ],
+      [
+        "B",
+        "[9, 8, 7, 5, 3]]"
+      ],
+      [
+        "C",
+        "[7, 5, 8, 9, 3]"
+      ],
+      [
+        "D",
+        "[3, 9, 8, 5, 7]"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "执行如下语句，执行结果为：（）。add=lambda x,y:x+y\nprint(add(1,2),add('1','2'))\n```\n```txt\nlst=m()\nprint(lst[0](3))",
+    "options": [
+      [
+        "A",
+        "3 12"
+      ],
+      [
+        "B",
+        "12 3"
+      ],
+      [
+        "C",
+        "3, 12"
+      ],
+      [
+        "D",
+        "报错"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "执行以下程序后将显示什么：\n```python\ndef main():\nprint(\"The answer is\", magic(5))\n```\n→ Tt []\n```txt\n```\n```txt\n```\n```python\ndef magic(num):\nanswer = num + 2 * 10\nreturn answer\nmain()\n```\n```txt\n```\n```txt\n```",
+    "options": [
+      [
+        "A",
+        "Tony Gaddis"
+      ],
+      [
+        "B",
+        "Gaddis Tony"
+      ],
+      [
+        "C",
+        "Tony, Gaddis"
+      ],
+      [
+        "D",
+        "Gaddis, Tony"
+      ],
+      [
+        "A",
+        "The answer is 70"
+      ],
+      [
+        "B",
+        "The answer is 25"
+      ],
+      [
+        "C",
+        "The answer is 100"
+      ],
+      [
+        "D",
+        "语句将引起语法错误"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "你可以使用哪种方法来确定一个对象是否是一个类的实例？",
+    "options": [
+      [
+        "A",
+        "isinstance"
+      ],
+      [
+        "B",
+        "isclass"
+      ],
+      [
+        "C",
+        "isobject"
+      ],
+      [
+        "D",
+        "issubclass"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "分析下面的代码:\n```python\nclass A:\ndef __init__(self):\nself.x = 1\nself_y = 1\n```\n$^{2}$ Tt []\n↗ Tt []\n$^{2}$ Tt [] ☐\n```python\nself.__y = 1\ndef getY(self):\nreturn self.__y\na = A()\nprint(a.x)\n```\n```txt\n```",
+    "options": [
+      [
+        "A",
+        "程序有错误，因为x是私有的，不能在类之外访问。"
+      ],
+      [
+        "B",
+        "程序有错误，类中不能使用_y作为变量名。"
+      ],
+      [
+        "C",
+        "程序运行结果为1。"
+      ],
+      [
+        "D",
+        "程序运行结果为0。"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "Python所有内置异常类的基类是（）。",
+    "options": [
+      [
+        "A",
+        "BaseException"
+      ],
+      [
+        "B",
+        "SystemError"
+      ],
+      [
+        "C",
+        "Warning"
+      ],
+      [
+        "D",
+        "Exception"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "Python内置函数____用来打开文件。",
+    "options": [
+      [
+        "A",
+        "open()"
+      ],
+      [
+        "B",
+        "fopen()"
+      ],
+      [
+        "C",
+        "openfile()"
+      ],
+      [
+        "D",
+        "openf()"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "Python内置函数open 用____打开文件表示写模式。",
+    "options": [
+      [
+        "A",
+        "w"
+      ],
+      [
+        "B",
+        "w+"
+      ],
+      [
+        "C",
+        "r+"
+      ],
+      [
+        "D",
+        "a"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "异常基本结构如下：\ntry:\n\nexcept :\n\nelse:\n\nfinally: #总要被执行\n\n其中关于“语句块4”描述正确的是（）：",
+    "options": [
+      [
+        "A",
+        "无异常时执行"
+      ],
+      [
+        "B",
+        "出现异常量执行"
+      ],
+      [
+        "C",
+        "总会被执行"
+      ],
+      [
+        "D",
+        "总不会被执行"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "关于异常，以下说法中正确的是（）\n\n```txt\n- “知末u y”可下台有return，那么mally可有可能不会被执行\n```",
+    "options": [
+      [
+        "A",
+        "finally子句中的代码始终要执行"
+      ],
+      [
+        "B",
+        "一个try子句后只能接一个except子句"
+      ],
+      [
+        "C",
+        "如果try子句中令有return。那么finally子句有可能不会被执行"
+      ],
+      [
+        "D",
+        "try子句后必须有except子句"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "已知 $x = 7$ 和 $y = 8$ ，执行语句 $x, y = y, x$ 后 $x$ 的值是7。",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "在程序中，若 $a = 5$ ，while $a < 3$ ，则该while循环不会执行。",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "if 语句可以同时进行多个条件判断,使用\"or\"作为连接。只要其中一个条件成立，该项结果为 True。\nT F\n每题1分",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "执行下述代码会出现语法错误。（）\n```python\nstudent = ['张三', 18, '男', 180, 130]\nprint(student[0] + \"的身高是\" + student[3])\n```",
+    "answer": "错误",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "有函数如下，如果 a = 1, b = 2，然后调用foo(a,b)，在函数外a,b的值依然为1,2\ndf foo(a,b):\n2 a, b = 3,4",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "引用库及调用库函数方式之一如下：\n引用库 import \n调用库函数  ()。",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "判断题",
+    "text": "定义类的时候，所有的实例方法第一个参数指代本类的实例（对象），一般情况下使用self，也可以另外起名称。\n每题1分",
+    "answer": "正确",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "在Python中，输入2和3.5，输出5.5，以下正确的程序是：\n```txt",
+    "options": [
+      [
+        "A",
+        "y = eval(input()) print(x+y)"
+      ],
+      [
+        "B",
+        "y = input() print(eval(x+y))"
+      ],
+      [
+        "C",
+        "y = input() print(float(x+y))"
+      ],
+      [
+        "D",
+        "y = input() print(int(x+y)) ```"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下哪个条件表达式用于判断 $x$ 是否是3的倍数？A. $\\overline{x} / 3 == 0$",
+    "options": [
+      [
+        "B",
+        ""
+      ],
+      [
+        "C",
+        ""
+      ],
+      [
+        "D",
+        "## | 参考答案"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面程序段求x和y中的较大数，不正确的是（）。\n```txt",
+    "options": [
+      [
+        "A",
+        ""
+      ],
+      [
+        "B",
+        ""
+      ],
+      [
+        "C",
+        "else:maxNum=y"
+      ],
+      [
+        "D",
+        "maxNum=x ``` ## | 参考答案"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "关于 Python 的元组类型,以下选项中描述错误的是()。\n○ A. 元组一旦创建就不能被修改\n→ T1 []",
+    "options": [
+      [
+        "B",
+        ""
+      ],
+      [
+        "C",
+        ""
+      ],
+      [
+        "D",
+        ""
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "若有一维列表 $a = [1,2,3,4,5,6,7,8,9,10]$ ，则数值最小和最大的元素下标分别是( )。",
+    "options": [
+      [
+        "A",
+        ""
+      ],
+      [
+        "B",
+        ""
+      ],
+      [
+        "C",
+        ""
+      ],
+      [
+        "D",
+        ""
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "执行下列代码后，变量list的值将改变为哪个选项？\n```python\nlist = [1, 2, 3, 4]\nlist[3] = 10",
+    "options": [
+      [
+        "A",
+        ""
+      ],
+      [
+        "B",
+        ""
+      ],
+      [
+        "C",
+        "```"
+      ],
+      [
+        "D",
+        ""
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下哪个函数定义正确\n```txt",
+    "options": [
+      [
+        "A",
+        ""
+      ],
+      [
+        "B",
+        ""
+      ],
+      [
+        "C",
+        ""
+      ],
+      [
+        "D",
+        "```"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "ls = [3,8,-3,-1,0,-2,-9]\nprint(sorted(ls, key=lambda x : abs(x)))",
+    "options": [
+      [
+        "A",
+        ""
+      ],
+      [
+        "B",
+        ""
+      ],
+      [
+        "C",
+        ""
+      ],
+      [
+        "D",
+        "Tr []"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下代码段的执行结果为( )。\n```python\ndef f(n):\nif n<3:\nreturn n\nelse:\nreturn f(n-1)+f(n-2)\nprint(f(8))\n```\n```txt",
+    "options": [
+      [
+        "A",
+        ""
+      ],
+      [
+        "B",
+        ""
+      ],
+      [
+        "C",
+        ""
+      ],
+      [
+        "D",
+        "```"
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "执行以下代码后输出（）\n```python\ndef pass_it(x, y):\nz = y**x\nreturn(z)\nnum1 = 3\nnum2 = 4\nanswer = pass_it(num1, num2)\nprint(answer)\n```\n```txt",
+    "options": [
+      [
+        "A",
+        ""
+      ],
+      [
+        "B",
+        ""
+      ],
+      [
+        "C",
+        ""
+      ],
+      [
+        "D",
+        "``` ```python def fun(a, *b): n = 0 for i in b: n += i retur"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下代码的输出是：",
+    "options": [
+      [
+        "A",
+        ""
+      ],
+      [
+        "B",
+        ""
+      ],
+      [
+        "C",
+        ""
+      ],
+      [
+        "D",
+        ""
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "在一个函数中如局部变量与全局变量同名，则____.",
+    "options": [
+      [
+        "A",
+        ""
+      ],
+      [
+        "B",
+        ""
+      ],
+      [
+        "C",
+        ""
+      ],
+      [
+        "D",
+        ""
+      ]
+    ],
+    "answer": "A",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "在下面的代码行中，基类的名称是什么？class Python(Course):",
+    "options": [
+      [
+        "A",
+        ""
+      ],
+      [
+        "B",
+        ""
+      ],
+      [
+        "C",
+        ""
+      ],
+      [
+        "D",
+        ""
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "在Python中，若p是一个对象，print(p)将输出以下方法返回的字符串。\n```txt",
+    "options": [
+      [
+        "A",
+        ""
+      ],
+      [
+        "B",
+        "``` ```txt class A: ``` ```txt"
+      ],
+      [
+        "C",
+        "``` ## | 参考答案"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下面代码执行后,输出内容是:\n```python\nclass A:\ndef __init__(self):\nself.x = 1\ndef getY(self):\nreturn self.y\na = A()\nprint(a.getY())",
+    "options": [
+      [
+        "A",
+        ""
+      ],
+      [
+        "B",
+        ""
+      ],
+      [
+        "C",
+        ""
+      ],
+      [
+        "D",
+        "```"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "下列程序的输出结果是（）。f=open('f.txt', 'w')\nf.writelines(['Python programming.'])\nf.close()\nf=open('f.txt', 'r')\nf.seek(10)\nprint(f.tell())",
+    "options": [
+      [
+        "A",
+        ""
+      ],
+      [
+        "B",
+        ""
+      ],
+      [
+        "C",
+        ""
+      ],
+      [
+        "D",
+        ""
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "【1】字符是一个出现在字符串文本中，以反斜杠（\\）开始的特殊字符。 转义 1分",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "转义"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "6-12.下面程序的输出是 40 20 2分。\n```python\na=20\ndef func【1】:\na=40\nprint(a, end=\" \")\nfunc()\nprint(a)\n```\n↗ Tt []\n填空详情\n```txt",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "40 20"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "已知s1=\"Windows10\", s2=\"Python3.7\", 则执行resultetyljoin(filter(lambda x:x.isdigit【1】, s1+s2))之后，result的值为\n1037 | '1037' | \"1037\" 2分。\n```\n```txt\n填空#1 1037 | '1037' | \"1037\"\n```\n填空详情\n```txt",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "1037"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "类的定义与使用（高教社，《Python编程基础及应用》习题9-2）\n请写出下述程序的执行结果：\n```python\nfrom math import *\nclass Circle:\ndef __init__(self, radius = 1):\nself.radius = radius\ndef getPerimeter(self):\nreturn 2 * self.radius * pi\ndef getArea(self):\nreturn self.radius * self.radius * pi\ndef setRadius(self, radius):\nself.radius = radius\na2 = Circle(10)\nint(\"{:.1f}, {:.2f}\".format(a.getPerimeter【1】, a.getArea()))\n```\n## 拼尽全力还是不会？参考B站习题讲解\n哔哩哔哩up主：海洋饼干叔叔 Python课程 Python习题简洁的C和C++作者每天分享一篇关于C/C++/Python的技术文章，学习编程不迷路。\n![image](https://cdn-mineru.openxlab.org.cn/result/2026-10-24/93f8f725-7043-4c27-9b4b-c7e96ab55f8d/8ff9f0adaa83d26f43e198a227c6ef6d9b7e5b627069094740d783d45a47028d.jpg)\n![image](https://cdn-mineru.openxlab.org.cn/result/2026-10-24/93f8f725-7043-4c27-9b4b-c7e96ab55f8d/f74c3dde55246bbb0993ae795c7a08413bad7ea31ec279b87c41414ca4bae03a.jpg)\n![image](https://cdn-mineru.openxlab.org.cn/result/2026-10-24/93f8f725-7043-4c27-9b4b-c7e96ab55f8d/2e1c622ee8ab28107791626d69b4b6f2ed0a5d7772b909451c145a21bf79cc46.jpg)\n微信搜一搜\n$\\mathbb{Q}$ 一起上编程课\n填空#1\n62.8,314.16\n填空详情\nclass\n2分\n关键字来声明一个类。\n填空#1\nclass\n填空详情",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "62.8,314.16"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "打开文件对文件进行读写，操作完成后应该调用 close | close【1】 2 分 方法关闭文件，以释放资源。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "close"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "填空题",
+    "text": "在读写文件的过程中， tell | tell【1】 2分 方法可以获取当前的读写位置。",
+    "answer": {
+      "items": [
+        {
+          "accept": [
+            "tell"
+          ]
+        }
+      ]
+    },
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "关于Python程序中与“缩进”有关的说法中，以下选项中正确的是____",
+    "options": [
+      [
+        "A",
+        "缩进统一为4个空格"
+      ],
+      [
+        "B",
+        "缩进在程序中长度统一且强制使用"
+      ],
+      [
+        "C",
+        "缩进可以用在任何语句之后，表示语句间的包含关系"
+      ],
+      [
+        "D",
+        "缩进是非强制性的，仅为了提高代码可读性"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "以下选项中，不是Python语言保留字的是____",
+    "options": [
+      [
+        "A",
+        "try"
+      ],
+      [
+        "B",
+        "del"
+      ],
+      [
+        "C",
+        "None"
+      ],
+      [
+        "D",
+        "int"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "Python 语句 print(0xA + 0xB)的输出结果是____。",
+    "options": [
+      [
+        "A",
+        "0xA + 0xB"
+      ],
+      [
+        "B",
+        "A + B"
+      ],
+      [
+        "C",
+        "0xA0xB"
+      ],
+      [
+        "D",
+        "21"
+      ]
+    ],
+    "answer": "D",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "可以使用逻辑运算符组合多个布尔表达式，以创建____表达式。",
+    "options": [
+      [
+        "A",
+        "顺序"
+      ],
+      [
+        "B",
+        "逻辑"
+      ],
+      [
+        "C",
+        "复合"
+      ],
+      [
+        "D",
+        "数学"
+      ]
+    ],
+    "answer": "B",
+    "subject": "Python"
+  },
+  {
+    "type": "单选题",
+    "text": "若进行多条件判断，下列哪个关键字可以用于 if-else 分支语句添加多个条件\n-",
+    "options": [
+      [
+        "A",
+        "else if -"
+      ],
+      [
+        "B",
+        "else -"
+      ],
+      [
+        "C",
+        "elif -"
+      ],
+      [
+        "D",
+        "elseif"
+      ]
+    ],
+    "answer": "C",
+    "subject": "Python"
   }
 ]
