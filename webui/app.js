@@ -864,7 +864,7 @@ function reviewHtmlFor(q, h, cur) {
     return `
       <div class="feedback neutral">
         <div class="fb-title">📖 已查看答案</div>
-        <div class="fb-line" style="white-space:pre-wrap;line-height:1.7">${esc(h.correctAnswer || "（无参考答案）")}</div>
+        <div class="fb-line" style="white-space:pre-wrap;line-height:1.7">${renderRichText(h.correctAnswer || "（无参考答案）")}</div>
       </div>`;
   }
   const title = h.correct ? "✅ 回答正确！" : "❌ 回答错误！";
@@ -1099,7 +1099,7 @@ function buildAnswerArea(view, p, q) {
         box.innerHTML = `
           <div class="feedback neutral" style="margin-top:10px">
             <div class="fb-title">📖 参考答案</div>
-            <div class="fb-line" style="white-space:pre-wrap;line-height:1.8">${esc(ansTxt || "（无参考答案）")}</div>
+            <div class="fb-line" style="white-space:pre-wrap;line-height:1.8">${renderRichText(ansTxt || "（无参考答案）")}</div>
           </div>`;
       }
       p.answered = true;
@@ -3214,7 +3214,7 @@ function buildExamAnswerArea(view, ex, q) {
         box.innerHTML = `
           <div class="feedback neutral" style="margin-top:10px">
             <div class="fb-title">📖 参考答案</div>
-            <div class="fb-line" style="white-space:pre-wrap;line-height:1.8">${esc((q.answerText != null && q.answerText !== "" ? q.answerText : q.answer) || "（无参考答案）")}</div>
+            <div class="fb-line" style="white-space:pre-wrap;line-height:1.8">${renderRichText((q.answerText != null && q.answerText !== "" ? q.answerText : q.answer) || "（无参考答案）")}</div>
           </div>
           <div style="margin-top:10px"><button class="btn btn-primary" id="exam-next">下一题 →</button></div>`;
         $("#exam-next", area).addEventListener("click", () => advance());
