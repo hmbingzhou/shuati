@@ -421,6 +421,96 @@ def parse_markdown(raw: bytes):
     return parse_text(plain), []
 
 
+# ---------------------------------------------------------------- 提取纯文本（给 AI 用）
+
+def extract(filename: str, raw: bytes, subject: str = ""):
+    """把文件提取成纯文本 + 表格行 + 内嵌图片。
+
+    返回 {text, rows, images, warnings}
+    - text：适合交给 AI 的连续文本（图片占位符已换成 [科目/文件名]）
+    - rows：Excel/CSV/Markdown 表格的行，规则解析可直接按表头映射
+    """
+    ext = os.path.splitext(filename or "")[1].lower()
+    if ext not in SUPPORTED_EXT:
+        raise ValueError(f"不支持的文件类型：{ext or '（无扩展名）'}；支持 {', '.join(SUPPORTED_EXT)}")
+    images, warnings, rows = [], [], None
+
+    if ext == ".docx":
+        paras, tables = _docx_doc_and_tables(raw)
+        z = zipfile.ZipFile(io.BytesIO(raw))
+        for name in z.namelist():
+            if name.startswith("word/media/"):
+                images.append({"name": os.path.basename(name), "bytes": z.read(name)})
+        lines = list(paras)
+        for tb in tables:
+            lines.append("")
+            for r in tb:
+                lines.append("  ".join(c for c in r if c))
+        text = "\n".join(lines)
+        if images:
+            warnings.append(f"文档内含 {len(images)} 张图片，已提取并嵌入题目")
+    elif ext == ".xlsx":
+        tmp_drafts, tmp_images, w = parse_xlsx(raw)   # 只为拿行数据，下面重新读
+        text, rows = _xlsx_text_and_rows(raw)
+        warnings.extend(w)
+    elif ext in (".csv", ".tsv"):
+        text = decode_bytes(raw)
+        rows = list(csv.reader(io.StringIO(text), delimiter="," if ext == ".csv" else "\t"))
+        rows = [r for r in rows if any((c or "").strip() for c in r)]
+        text = "\n".join("  ".join(c for c in r if c) for r in rows)
+    elif ext in (".md", ".markdown"):
+        text = decode_bytes(raw)
+        rows = _md_table_rows(text)
+    else:  # .txt
+        text = decode_bytes(raw)
+
+    text = re.sub(r"\[\[IMG:([^\]]+)\]\]",
+                  lambda m: f"[{subject}/{m.group(1)}]" if subject else f"[{m.group(1)}]", text)
+    return {"text": text, "rows": rows, "images": images, "warnings": warnings}
+
+
+def _xlsx_text_and_rows(raw: bytes):
+    """读第一个工作表：返回 (扁平文本, 行列表)"""
+    z = zipfile.ZipFile(io.BytesIO(raw))
+    shared = []
+    if "xl/sharedStrings.xml" in z.namelist():
+        root = ET.fromstring(z.read("xl/sharedStrings.xml"))
+        for si in root.findall(S + "si"):
+            shared.append("".join(t.text or "" for t in si.iter(S + "t")))
+    sheets = sorted(n for n in z.namelist() if re.match(r"xl/worksheets/sheet\d+\.xml$", n))
+    if not sheets:
+        return "", []
+    root = ET.fromstring(z.read(sheets[0]))
+    rows = []
+    for row in root.iter(S + "row"):
+        vals = []
+        for c in row.findall(S + "c"):
+            t = c.get("t")
+            v = c.find(S + "v")
+            if t == "s" and v is not None:
+                idx = int(v.text or "0")
+                vals.append(shared[idx] if 0 <= idx < len(shared) else "")
+            elif t == "inlineStr":
+                is_el = c.find(S + "is")
+                vals.append("".join(x.text or "" for x in is_el.iter(S + "t")) if is_el is not None else "")
+            else:
+                vals.append((v.text or "") if v is not None else "")
+        if any(x.strip() for x in vals):
+            rows.append(vals)
+    return "\n".join("  ".join(c for c in r if c) for r in rows), rows
+
+
+def _md_table_rows(text: str):
+    rows = []
+    for line in text.split("\n"):
+        s = line.strip()
+        if s.startswith("|") and s.endswith("|"):
+            cells = [c.strip() for c in s.strip("|").split("|")]
+            if not all(re.fullmatch(r":?-{2,}:?", c) for c in cells if c):
+                rows.append(cells)
+    return rows
+
+
 # ---------------------------------------------------------------- 主入口
 
 def parse_file(filename: str, raw: bytes, subject: str = ""):
@@ -443,12 +533,10 @@ def parse_file(filename: str, raw: bytes, subject: str = ""):
 
     # 图片占位符 [[IMG:x]] → 图片 token（由调用方决定最终路径）
     if images:
-        img_names = {img["name"] for img in images}
         for d in drafts:
-            for field in ("text",):
-                d[field] = re.sub(r"\[\[IMG:([^\]]+)\]\]",
-                                  lambda m: f"[{subject}/{m.group(1)}]" if subject else f"[{m.group(1)}]",
-                                  d[field])
+            d["text"] = re.sub(r"\[\[IMG:([^\]]+)\]\]",
+                               lambda m: f"[{subject}/{m.group(1)}]" if subject else f"[{m.group(1)}]",
+                               d["text"])
     by_type = {}
     for d in drafts:
         by_type[d["type"]] = by_type.get(d["type"], 0) + 1

@@ -1661,126 +1661,191 @@ function pickedDrafts(mask, drafts) {
   return out;
 }
 
-/* AI 解析：粘贴乱排版文本 → DeepSeek 整理成题目 → 勾选入库 */
-async function openAiParseModal(ov, currentSubject) {
+/* 导入题目：粘贴文本或上传文件 → AI / 规则解析 → 勾选入库 */
+async function openImportModal(ov, currentSubject) {
   const subjects = ov.grades.flatMap((g) => g.subjects).map((s) => s.name);
   let cfg = null;
   try { cfg = await api("GET", "/api/ai/config"); } catch (e) { cfg = null; }
-  const keyHint = cfg && cfg.configured
-    ? `已保存 ${esc(cfg.key)}（留空则沿用它）`
-    : "未配置 —— 用自己的 DeepSeek 密钥，只存在本机";
+  let hasKey = !!(cfg && cfg.configured);
+  const keyHint = () => (hasKey
+    ? `已保存 ${esc((cfg && cfg.key) || "")}（留空则沿用它）`
+    : "未配置 —— 用你自己的 DeepSeek 密钥，只存在本机");
 
   const m = openModal(`
-    <div class="modal-head"><h3>🤖 AI 解析</h3><button class="modal-close">✕</button></div>
+    <div class="modal-head"><h3>📥 导入题目</h3><button class="modal-close">✕</button></div>
     <div class="modal-body">
       <div class="form-group">
         <label>导入到科目</label>
-        <select class="answer-input" id="ai-subject">
+        <select class="answer-input" id="im-subject">
           ${subjects.map((s) => `<option value="${esc(s)}" ${s === currentSubject ? "selected" : ""}>${esc(s)}</option>`).join("")}
         </select>
       </div>
+
       <div class="form-group">
-        <label>DeepSeek API Key <span class="small muted" id="ai-key-state">${keyHint}</span></label>
-        <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <input class="answer-input" type="password" id="ai-key" style="flex:1;min-width:220px"
-                 placeholder="sk-...（你自己的密钥）" autocomplete="off">
-          <button class="btn btn-sm btn-ghost" id="ai-key-test">测试连接</button>
-          <button class="btn btn-sm btn-ghost" id="ai-key-clear">清除</button>
+        <label>题目来源</label>
+        <div class="tabs" style="display:flex;gap:8px;margin-bottom:8px">
+          <button class="btn btn-sm tab-btn active" data-src="text" id="im-src-text">粘贴文本</button>
+          <button class="btn btn-sm tab-btn" data-src="file" id="im-src-file">上传文件</button>
         </div>
-        <div class="small muted" style="margin-top:6px">
-          没有密钥？到 <a href="https://platform.deepseek.com/api_keys" target="_blank" rel="noopener">platform.deepseek.com</a> 申请，充值几块钱够用很久。
-          密钥只保存在<strong>本机</strong>的 <code>data/ai.json</code>，不会上传、不会进版本库。
+        <div id="im-pane-text">
+          <textarea class="answer-input" id="im-text" rows="9" style="width:100%;resize:vertical"
+            placeholder="把整段题目粘进来，例如：&#10;3 、域名服务DNS的主要功能为 (A)。A 、完成域名空间和IP地址的相互转换 B 、查询主机的MAC地址 …&#10;4、双绞线线对的绞合有利于减少电磁干扰。(T)"></textarea>
+        </div>
+        <div id="im-pane-file" style="display:none">
+          <input class="answer-input" type="file" id="im-file"
+                 accept=".docx,.xlsx,.csv,.tsv,.md,.markdown,.txt">
+          <div class="small muted" style="margin-top:6px">
+            支持 Word(.docx) / Excel(.xlsx) / CSV / TSV / Markdown / TXT，最大 20MB。
+            Word 里的表格按「题型/题干/选项/答案」列识别，内嵌图片会自动提取。
+          </div>
         </div>
       </div>
+
       <div class="form-group">
-        <label>粘贴原始文本（题号乱、选项挤在一起、答案在后面都没关系）</label>
-        <textarea class="answer-input" id="ai-text" rows="9" style="width:100%;resize:vertical"
-                  placeholder="把整段题目粘进来，例如：&#10;3 、域名服务DNS的主要功能为 (A)。A 、完成域名空间和IP地址的相互转换 B 、查询主机的MAC地址 …"></textarea>
+        <label>解析方式</label>
+        <label class="small" style="display:flex;gap:8px;align-items:center;margin-bottom:6px">
+          <input type="radio" name="im-engine" value="ai" ${hasKey ? "checked" : "disabled"}>
+          <b>AI 解析</b> —— 排版乱也能认（答案在括号里、选项挤成一行都行）；按 token 计费，一次几分钱
+          ${hasKey ? "" : '　<span class="muted">（需要先填密钥）</span>'}
+        </label>
+        <label class="small" style="display:flex;gap:8px;align-items:center">
+          <input type="radio" name="im-engine" value="rule" ${hasKey ? "" : "checked"}>
+          <b>规则解析</b> —— 本地免费、不联网；要求答案以「答案：X」形式出现，或表格里有答案列
+        </label>
+        <label class="small muted" style="display:flex;gap:6px;align-items:center;margin-top:8px">
+          <input type="checkbox" id="im-fill"> 允许 AI 补全原文缺失的答案（会标 ⚠，请自行核对）
+        </label>
       </div>
-      <label class="small muted" style="display:flex;gap:6px;align-items:center">
-        <input type="checkbox" id="ai-fill"> 允许 AI 补全原文缺失的答案（会标 ⚠，请自行核对）
-      </label>
-      <div class="small muted" id="ai-status" style="margin-top:8px">AI 解析会自动分块，几十页的文本也能处理。</div>
-      <div id="ai-preview" style="margin-top:10px"></div>
+
+      <details id="im-key-box" ${hasKey ? "" : "open"} style="margin-bottom:6px">
+        <summary class="small muted" style="cursor:pointer">DeepSeek 密钥设置</summary>
+        <div class="form-group" style="margin-top:8px">
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <input class="answer-input" type="password" id="im-key" style="flex:1;min-width:200px"
+                   placeholder="sk-...（你自己的密钥）" autocomplete="off">
+            <button class="btn btn-sm btn-ghost" id="im-key-test">测试连接</button>
+            <button class="btn btn-sm btn-ghost" id="im-key-clear">清除</button>
+          </div>
+          <div class="small muted" style="margin-top:6px" id="im-key-state">${keyHint()}</div>
+          <div class="small muted" style="margin-top:4px">
+            没有密钥？到 <a href="https://platform.deepseek.com/api_keys" target="_blank" rel="noopener">platform.deepseek.com</a> 申请。
+            密钥只保存在<strong>本机</strong>的 <code>data/ai.json</code>，不会上传、不会进版本库。
+          </div>
+        </div>
+      </details>
+
+      <div class="small muted" id="im-status" style="margin-top:8px">选好来源和解析方式后点「解析」。</div>
+      <div id="im-preview" style="margin-top:10px"></div>
     </div>
     <div class="modal-foot">
       <button class="btn btn-ghost" data-act="cancel">取消</button>
-      <button class="btn btn-ghost" id="ai-parse-btn">解析</button>
-      <button class="btn btn-primary" id="ai-import" disabled>导入选中</button>
+      <button class="btn btn-ghost" id="im-parse">解析</button>
+      <button class="btn btn-primary" id="im-import" disabled>导入选中</button>
     </div>`, "modal-lg");
 
   let drafts = [];
-  const statusEl = $("#ai-status", m.mask);
-  const previewEl = $("#ai-preview", m.mask);
-  const importBtn = $("#ai-import", m.mask);
-  const parseBtn = $("#ai-parse-btn", m.mask);
+  let source = "text";
+  const statusEl = $("#im-status", m.mask);
+  const previewEl = $("#im-preview", m.mask);
+  const importBtn = $("#im-import", m.mask);
+  const parseBtn = $("#im-parse", m.mask);
+  const keyStateEl = $("#im-key-state", m.mask);
 
-  const keyStateEl = $("#ai-key-state", m.mask);
+  const setSource = (s) => {
+    source = s;
+    $("#im-pane-text", m.mask).style.display = s === "text" ? "" : "none";
+    $("#im-pane-file", m.mask).style.display = s === "file" ? "" : "none";
+    $$(".tab-btn", m.mask).forEach((b) => b.classList.toggle("active", b.dataset.src === s));
+  };
+  $$(".tab-btn", m.mask).forEach((b) => b.addEventListener("click", () => setSource(b.dataset.src)));
 
-  const ensureKey = async () => {
-    const key = $("#ai-key", m.mask).value.trim();
-    if (key) {
-      const saved = await api("POST", "/api/ai/config", { apiKey: key });
-      keyStateEl.textContent = `已保存 ${saved.key || ""}`;
-      $("#ai-key", m.mask).value = "";
-      return true;
-    }
-    if (cfg && cfg.configured) return true;
-    toast("请先填写你自己的 DeepSeek API Key", "err");
-    $("#ai-key", m.mask).focus();
-    return false;
+  const engine = () => {
+    const el = $$('input[name="im-engine"]', m.mask).find((x) => x.checked);
+    return el ? el.value : "rule";
   };
 
-  $("#ai-key-test", m.mask).addEventListener("click", async () => {
+  const saveKeyIfAny = async () => {
+    const key = $("#im-key", m.mask).value.trim();
+    if (!key) return;
+    const saved = await api("POST", "/api/ai/config", { apiKey: key });
+    cfg = saved;
+    hasKey = !!(saved && saved.configured);
+    $("#im-key", m.mask).value = "";
+    keyStateEl.textContent = `已保存 ${(saved && saved.key) || ""}（留空则沿用它）`;
+    const aiRadio = $$('input[name="im-engine"]', m.mask).find((x) => x.value === "ai");
+    if (aiRadio) { aiRadio.disabled = false; aiRadio.checked = true; }
+  };
+
+  $("#im-key-test", m.mask).addEventListener("click", async () => {
     try {
-      if (!(await ensureKey())) return;
       keyStateEl.textContent = "正在测试…";
+      await saveKeyIfAny();
       const r = await api("GET", "/api/ai/test");
-      keyStateEl.textContent = `已保存 ${r.key || ""}`;
-      toast(`连接正常（${r.model}，${r.elapsed}s）`, "ok");
-      statusEl.textContent = `连接测试通过：模型 ${r.model}，耗时 ${r.elapsed}s`;
+      keyStateEl.textContent = `连接正常：${r.model}，耗时 ${r.elapsed}s（${r.key}）`;
+      toast("AI 连接正常", "ok");
     } catch (e) {
-      keyStateEl.textContent = "测试失败";
-      statusEl.textContent = "连接测试失败：" + (e && e.message ? e.message : "未知错误");
+      keyStateEl.textContent = "测试失败：" + (e && e.message ? e.message : "未知错误");
     }
   });
 
-  $("#ai-key-clear", m.mask).addEventListener("click", async () => {
+  $("#im-key-clear", m.mask).addEventListener("click", async () => {
     try {
       await api("POST", "/api/ai/config", { apiKey: "" });
       cfg = { configured: false };
-      $("#ai-key", m.mask).value = "";
-      keyStateEl.textContent = "未配置 —— 用自己的 DeepSeek 密钥，只存在本机";
+      hasKey = false;
+      keyStateEl.textContent = keyHint();
+      const aiRadio = $$('input[name="im-engine"]', m.mask).find((x) => x.value === "ai");
+      const ruleRadio = $$('input[name="im-engine"]', m.mask).find((x) => x.value === "rule");
+      if (aiRadio) { aiRadio.disabled = true; aiRadio.checked = false; }
+      if (ruleRadio) ruleRadio.checked = true;
       toast("已清除本机保存的密钥", "ok");
     } catch (e) { /* api 已提示 */ }
   });
 
+  const showPreview = (res) => {
+    drafts = res.drafts || [];
+    const byType = Object.entries((res.stats && res.stats.byType) || {}).map(([k, v]) => `${k} ${v}`).join(" · ");
+    const used = res.usage && res.usage.prompt_tokens
+      ? `　用量 ${res.usage.prompt_tokens}+${res.usage.completion_tokens} tokens` : "";
+    const engineTxt = res.engine === "ai" ? "AI 解析" : "规则解析";
+    statusEl.textContent = `${engineTxt}：${res.count} 道（${byType}）${used}`;
+    if (res.images && res.images.length) statusEl.textContent += `　提取图片 ${res.images.length} 张`;
+    if ((res.warnings || []).length) statusEl.textContent += "　" + res.warnings.join("；");
+    previewEl.innerHTML = drafts.length ? draftPreviewHtml(drafts) : "";
+    importBtn.disabled = !drafts.length;
+    importBtn.textContent = `导入选中（${drafts.length}）`;
+  };
+
   parseBtn.addEventListener("click", async () => {
-    const subject = $("#ai-subject", m.mask).value;
-    const text = $("#ai-text", m.mask).value.trim();
-    if (!text) { toast("请先粘贴要解析的文本", "info"); return; }
-    if (!(await ensureKey())) return;
+    const subject = $("#im-subject", m.mask).value;
+    const eng = engine();
+    if (!subject) { toast("请先选择科目", "info"); return; }
+    if (eng === "ai") {
+      try { await saveKeyIfAny(); } catch (e) { return; }
+      if (!hasKey) { toast("AI 解析需要先填写 DeepSeek 密钥", "err"); return; }
+    }
     parseBtn.disabled = true;
     importBtn.disabled = true;
     previewEl.innerHTML = "";
-    statusEl.textContent = "正在解析，请稍候（长文本要等几十秒）…";
     try {
-      const res = await api("POST", "/api/ai/parse", {
-        subject, text, fillMissing: $("#ai-fill", m.mask).checked,
-      });
-      drafts = res.drafts || [];
-      const byType = Object.entries((res.stats && res.stats.byType) || {}).map(([k, v]) => `${k} ${v}`).join(" · ");
-      const used = res.usage && res.usage.prompt_tokens
-        ? `　用量 ${res.usage.prompt_tokens}+${res.usage.completion_tokens} tokens` : "";
-      statusEl.textContent = `解析到 ${res.count} 道（${byType}）`
-        + (res.engine === "rule" ? "　⚠ 已回退到规则解析" : "")
-        + used;
-      if ((res.warnings || []).length) {
-        statusEl.textContent += "　" + res.warnings.join("；");
+      let res;
+      if (source === "text") {
+        const text = $("#im-text", m.mask).value.trim();
+        if (!text) { toast("请先粘贴要解析的文本", "info"); return; }
+        statusEl.textContent = eng === "ai" ? "AI 正在解析，请稍候…" : "正在解析…";
+        res = await api("POST", "/api/ai/parse", {
+          subject, text, engine: eng, fillMissing: $("#im-fill", m.mask).checked,
+        });
+      } else {
+        const file = ($("#im-file", m.mask).files || [])[0];
+        if (!file) { toast("请先选择文件", "info"); return; }
+        statusEl.textContent = eng === "ai" ? `AI 正在解析 ${file.name}，请稍候…` : `正在解析 ${file.name}…`;
+        const buf = await file.arrayBuffer();
+        res = await apiRaw(
+          `/api/import/file?name=${encodeURIComponent(file.name)}&subject=${encodeURIComponent(subject)}&engine=${eng}`,
+          buf);
       }
-      previewEl.innerHTML = drafts.length ? draftPreviewHtml(drafts) : "";
-      importBtn.disabled = !drafts.length;
-      importBtn.textContent = `导入选中（${drafts.length}）`;
+      showPreview(res);
     } catch (err) {
       statusEl.textContent = "解析失败：" + (err && err.message ? err.message : "未知错误");
     } finally {
@@ -1789,109 +1854,8 @@ async function openAiParseModal(ov, currentSubject) {
   });
 
   importBtn.addEventListener("click", async () => {
-    const subject = $("#ai-subject", m.mask).value;
+    const subject = $("#im-subject", m.mask).value;
     const picked = pickedDrafts(m.mask, drafts);
-    if (!picked.length) { toast("请至少勾选一道题", "info"); return; }
-    try {
-      const res = await api("POST", "/api/import/file/apply", { subject, drafts: picked });
-      m.close();
-      toast(`已导入 ${res.inserted} 道${res.skipped ? `，跳过重复 ${res.skipped} 道` : ""}`, "ok");
-      invalidateOverview();
-      state.libFilter.subject = subject;
-      state.libFilter.page = 1;
-      render();
-    } catch (e) { /* api 已提示 */ }
-  });
-
-  $(".modal-close", m.mask).addEventListener("click", () => m.close());
-  m.mask.addEventListener("click", (e) => {
-    const act = e.target && e.target.dataset && e.target.dataset.act;
-    if (act === "cancel") m.close();
-  });
-}
-
-/* 文件导入：Word / Excel / CSV / Markdown / TXT → 题目草稿 → 勾选入库 */
-function openFileImportModal(ov, currentSubject) {
-  const subjects = ov.grades.flatMap((g) => g.subjects).map((s) => s.name);
-  const m = openModal(`
-    <div class="modal-head"><h3>📁 文件导入</h3><button class="modal-close">✕</button></div>
-    <div class="modal-body">
-      <div class="form-group">
-        <label>导入到科目</label>
-        <select class="answer-input" id="fi-subject">
-          ${subjects.map((s) => `<option value="${esc(s)}" ${s === currentSubject ? "selected" : ""}>${esc(s)}</option>`).join("")}
-        </select>
-      </div>
-      <div class="form-group">
-        <label>选择文件（.docx / .xlsx / .csv / .tsv / .md / .txt，最大 20MB）</label>
-        <input class="answer-input" type="file" id="fi-file"
-               accept=".docx,.xlsx,.csv,.tsv,.md,.markdown,.txt">
-      </div>
-      <div class="small muted" id="fi-status">支持：题干 + A/B/C/D 选项 + 「答案：X」的常见排版；Word 表格按「题型/题干/选项/答案」列识别；文档内图片会自动提取。</div>
-      <div id="fi-preview" style="margin-top:10px"></div>
-    </div>
-    <div class="modal-foot">
-      <button class="btn btn-ghost" data-act="cancel">取消</button>
-      <button class="btn btn-primary" id="fi-import" disabled>导入选中</button>
-    </div>`, "modal-lg");
-
-  let drafts = [];
-  const statusEl = $("#fi-status", m.mask);
-  const previewEl = $("#fi-preview", m.mask);
-  const importBtn = $("#fi-import", m.mask);
-
-  const renderPreview = () => {
-    if (!drafts.length) { previewEl.innerHTML = ""; importBtn.disabled = true; return; }
-    const rows = drafts.map((d, i) => {
-      const ans = typeof d.answer === "string" ? d.answer : (d.answer && d.answer.items ? d.answer.items.map((x) => x.accept[0]).join(" / ") : "");
-      return `<tr>
-        <td><input type="checkbox" class="fi-check" data-i="${i}" checked></td>
-        <td>${esc(d.type)}</td>
-        <td>${esc(String(d.text || "").replace(/\[[^\]]+\]/g, "［图］").slice(0, 60))}</td>
-        <td>${esc(String(ans).slice(0, 40))}</td>
-      </tr>`;
-    }).join("");
-    previewEl.innerHTML = `
-      <table class="rec-table" style="width:100%">
-        <thead><tr><th style="width:34px"></th><th style="width:76px">题型</th><th>题干</th><th style="width:220px">答案</th></tr></thead>
-        <tbody>${rows}</tbody>
-      </table>`;
-    importBtn.disabled = false;
-    importBtn.textContent = `导入选中（${drafts.length}）`;
-  };
-
-  $("#fi-file", m.mask).addEventListener("change", async (e) => {
-    const file = (e.target.files || [])[0];
-    if (!file) return;
-    const subject = $("#fi-subject", m.mask).value;
-    statusEl.textContent = `正在解析 ${file.name} …`;
-    previewEl.innerHTML = "";
-    importBtn.disabled = true;
-    try {
-      const buf = await file.arrayBuffer();
-      const res = await apiRaw(
-        `/api/import/file?name=${encodeURIComponent(file.name)}&subject=${encodeURIComponent(subject)}`,
-        buf);
-      drafts = res.drafts || [];
-      const byType = Object.entries(res.stats && res.stats.byType || {}).map(([k, v]) => `${k} ${v}`).join(" · ");
-      statusEl.textContent = `解析到 ${res.count} 道题（${byType || "无"}）`
-        + (res.images && res.images.length ? `，提取图片 ${res.images.length} 张` : "")
-        + ((res.warnings || []).length ? `　⚠ ${res.warnings.join("；")}` : "");
-      if (!drafts.length) {
-        statusEl.textContent += "　—— 没识别出题目，可能是排版不在支持范围，或答案格式不是「答案：X」。";
-      }
-      renderPreview();
-    } catch (err) {
-      statusEl.textContent = "解析失败：" + (err && err.message ? err.message : "未知错误");
-    }
-  });
-
-  importBtn.addEventListener("click", async () => {
-    const subject = $("#fi-subject", m.mask).value;
-    const picked = [];
-    $$(".fi-check", m.mask).forEach((cb) => {
-      if (cb.checked) picked.push(drafts[Number(cb.dataset.i)]);
-    });
     if (!picked.length) { toast("请至少勾选一道题", "info"); return; }
     try {
       const res = await api("POST", "/api/import/file/apply", { subject, drafts: picked });
@@ -1918,8 +1882,7 @@ function openFileImportModal(ov, currentSubject) {
         <div><h2>题库管理</h2><div class="sub">浏览 / 搜索 / 录入 / 修改 / 删除题目（与终端版数据互通）</div></div>
         <div style="display:flex;gap:8px;flex-wrap:wrap">
           <button class="btn btn-ghost" id="btn-export-bank">⬇ 导出</button>
-          <button class="btn btn-ghost" id="btn-ai-parse">🤖 AI 解析</button>
-          <button class="btn btn-ghost" id="btn-file-import">📁 文件导入</button>
+          <button class="btn btn-ghost" id="btn-import-modal">📥 导入题目</button>
           <button class="btn btn-ghost" id="btn-import-batch">📥 批量导入（judge）</button>
           <button class="btn btn-primary" id="btn-add">＋ 录入题目</button>
         </div>
@@ -2096,11 +2059,8 @@ function openFileImportModal(ov, currentSubject) {
   const newSubjBtn = $("#lib-new-subject", view);
   if (newSubjBtn) newSubjBtn.addEventListener("click", () => openNewSubjectModal(ov, selSubj));
 
-  const fileImportBtn = $("#btn-file-import", view);
-  if (fileImportBtn) fileImportBtn.addEventListener("click", () => openFileImportModal(ov, selSubj || allSubjects[0] && allSubjects[0].name));
-
-  const aiParseBtn = $("#btn-ai-parse", view);
-  if (aiParseBtn) aiParseBtn.addEventListener("click", () => openAiParseModal(ov, selSubj || allSubjects[0] && allSubjects[0].name));
+  const importModalBtn = $("#btn-import-modal", view);
+  if (importModalBtn) importModalBtn.addEventListener("click", () => openImportModal(ov, selSubj || allSubjects[0] && allSubjects[0].name));
 
   const exportBankBtn = $("#btn-export-bank", view);
   if (exportBankBtn) exportBankBtn.addEventListener("click", () => {

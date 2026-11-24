@@ -872,9 +872,9 @@ def handle_ai_test():
 
 
 def handle_ai_parse(body):
-    """POST /api/ai/parse —— {subject, text, fillMissing} → 题目草稿（不入库）
+    """POST /api/ai/parse —— {subject, text, fillMissing, engine} → 题目草稿（不入库）
 
-    AI 不可用时自动回退到规则解析，并在 warnings 里说明。
+    engine: "ai"（默认，失败自动回退规则）/ "rule"（只用规则解析）
     """
     import ai_parse
     from file_import import parse_text as rule_parse
@@ -882,22 +882,28 @@ def handle_ai_parse(body):
     subject = (body.get("subject") or "").strip()
     text = body.get("text") or ""
     fill_missing = bool(body.get("fillMissing"))
+    engine_req = (body.get("engine") or "ai").lower()
     if not text.strip():
         raise ValueError("请粘贴要解析的原始文本")
 
     warnings, engine, usage, model = [], "ai", {}, ""
-    if not ai_parse.load_config().get("apiKey"):
-        raise ValueError("还没有配置 API Key —— 请先在「AI 解析」弹窗里填入你自己的 DeepSeek 密钥")
-    try:
-        res = ai_parse.parse_text_ai(text, subject, fill_missing=fill_missing)
-        drafts = res["drafts"]
-        warnings = res["warnings"]
-        usage = res.get("usage") or {}
-        model = res.get("model") or ""
-    except ai_parse.AIError as e:
+    if engine_req == "rule":
         drafts = rule_parse(text)
-        warnings = [f"AI 调用失败（{e}），已回退到规则解析"]
         engine = "rule"
+    else:
+        if not ai_parse.load_config().get("apiKey"):
+            raise ValueError("还没有配置 API Key —— 请先在「导入题目」里填入你自己的 DeepSeek 密钥，"
+                             "或把解析方式改成「规则解析」")
+        try:
+            res = ai_parse.parse_text_ai(text, subject, fill_missing=fill_missing)
+            drafts = res["drafts"]
+            warnings = res["warnings"]
+            usage = res.get("usage") or {}
+            model = res.get("model") or ""
+        except ai_parse.AIError as e:
+            drafts = rule_parse(text)
+            warnings = [f"AI 调用失败（{e}），已回退到规则解析"]
+            engine = "rule"
 
     if not drafts:
         msg = "没有解析出题目"
@@ -913,13 +919,15 @@ def handle_ai_parse(body):
             "usage": usage, "model": model, "subject": subject}
 
 
-def handle_import_file_raw(name: str, raw: bytes, subject: str):
-    """POST /api/import/file?name=文件.docx&subject=科目 —— 上传文件并解析成题目草稿。
+def handle_import_file_raw(name: str, raw: bytes, subject: str, engine: str = "ai"):
+    """POST /api/import/file?name=文件.docx&subject=科目&engine=ai|rule
 
-    只解析不入库；前端勾选后再调 /api/import/file/apply。
+    解析成题目草稿（不入库）；前端勾选后再调 /api/import/file/apply。
     文档内嵌图片会立刻存到 pictures/<科目>/ 并把草稿里的引用改成实际文件名。
+    engine=ai 时把提取出的文本交给 DeepSeek，失败自动回退规则解析。
     """
-    from file_import import parse_file
+    import ai_parse
+    import file_import
 
     subject = (subject or "").strip()
     if not subject:
@@ -928,10 +936,31 @@ def handle_import_file_raw(name: str, raw: bytes, subject: str):
         raise ValueError("文件内容为空")
     if len(raw) > _MAX_IMPORT_BYTES:
         raise ValueError(f"文件超过 {_MAX_IMPORT_BYTES // 1024 // 1024}MB 限制")
-    res = parse_file(name or "", raw, subject)
-    drafts = res["drafts"]
+
+    engine = (engine or "ai").lower()
+    warnings, usage, model, used = [], {}, "", "rule"
+    extracted = file_import.extract(name or "", raw, subject)
+    warnings.extend(extracted.get("warnings") or [])
+    images = extracted.get("images") or []
+
+    if engine == "rule":
+        drafts = file_import.parse_file(name or "", raw, subject)["drafts"]
+    else:
+        if not ai_parse.load_config().get("apiKey"):
+            raise ValueError("还没有配置 API Key —— 请先填入你自己的 DeepSeek 密钥，"
+                             "或把解析方式改成「规则解析」")
+        try:
+            res = ai_parse.parse_text_ai(extracted["text"], subject)
+            drafts = res["drafts"]
+            warnings.extend(res["warnings"])
+            usage = res.get("usage") or {}
+            model = res.get("model") or ""
+            used = "ai"
+        except ai_parse.AIError as e:
+            drafts = file_import.parse_file(name or "", raw, subject)["drafts"]
+            warnings.append(f"AI 调用失败（{e}），已回退到规则解析")
+
     saved_images = []
-    images = res.get("images") or []
     if images:
         target_dir = os.path.join(PICTURES_DIR, subject)
         os.makedirs(target_dir, exist_ok=True)
@@ -953,9 +982,13 @@ def handle_import_file_raw(name: str, raw: bytes, subject: str):
             d["text"] = t
 
     drafts = drafts[:_MAX_IMPORT_DRAFTS]
-    return {"ok": True, "count": len(drafts), "stats": res["stats"],
-            "drafts": drafts, "warnings": res.get("warnings") or [],
-            "images": saved_images, "subject": subject}
+    by_type = {}
+    for d in drafts:
+        by_type[d["type"]] = by_type.get(d["type"], 0) + 1
+    return {"ok": True, "count": len(drafts), "drafts": drafts,
+            "stats": {"total": len(drafts), "byType": by_type},
+            "warnings": warnings, "images": saved_images, "subject": subject,
+            "engine": used, "usage": usage, "model": model}
 
 
 def handle_import_file_apply(body):
@@ -1507,11 +1540,12 @@ class ApiHandler(BaseHTTPRequestHandler):
                 if path == "/api/import/file":
                     name = (query.get("name") or [""])[0]
                     subject = (query.get("subject") or [""])[0]
+                    engine = (query.get("engine") or ["ai"])[0]
                     length = int(self.headers.get("Content-Length") or 0)
                     if length <= 0 or length > _MAX_IMPORT_BYTES:
                         raise ValueError(f"文件为空或超过 {_MAX_IMPORT_BYTES // 1024 // 1024}MB")
                     raw = self.rfile.read(length)
-                    self._send_json(handle_import_file_raw(name, raw, subject))
+                    self._send_json(handle_import_file_raw(name, raw, subject, engine))
                     return
                 body = self._read_body()
                 if path == "/api/questions":

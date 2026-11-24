@@ -108,5 +108,32 @@ try:
 except ValueError as e:
     check("PDF：应当报错", "不支持" in str(e), str(e))
 
+# ---------- 9) extract()：给 AI 用的纯文本提取 ----------
+from file_import import extract  # noqa: E402
+
+ex = extract("a.txt", t1.encode("utf-8"), "测试")
+check("extract(txt) 返回文本", "以太网采用的发送策略" in ex["text"] and ex["rows"] is None, ex["text"][:60])
+
+csv_raw = csv_text.encode("utf-8")
+ex = extract("a.csv", csv_raw, "测试")
+check("extract(csv) 同时给出行", ex["rows"] and ex["rows"][0][0] == "题型" and "题型" in ex["text"], ex["rows"][:1])
+
+if os.path.exists(docx_path):
+    ex = extract("sample.docx", open(docx_path, "rb").read(), "测试")
+    check("extract(docx) 含段落文本", "总线宽度" in ex["text"], ex["text"][:80])
+    check("extract(docx) 含表格内容", "判断题" in ex["text"] and "中断方式" in ex["text"], ex["text"][:80])
+    check("extract(docx) 图片占位换成 token", "[测试/image1.png]" in ex["text"], ex["text"][:200])
+    check("extract(docx) 返回图片字节", len(ex["images"]) == 1 and ex["images"][0]["bytes"], ex["images"])
+
+if os.path.exists(xlsx_path):
+    ex = extract("sample.xlsx", open(xlsx_path, "rb").read(), "测试")
+    check("extract(xlsx) 给出行数据", ex["rows"] and len(ex["rows"]) == 3, ex["rows"])
+
+try:
+    extract("a.pdf", b"%PDF", "测试")
+    check("extract 对不支持类型报错", False)
+except ValueError:
+    check("extract 对不支持类型报错", True)
+
 print("\n" + ("文件导入自检全部通过 ✔" if not fails else f"失败 {len(fails)} 项: {fails}"))
 sys.exit(1 if fails else 0)
