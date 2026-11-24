@@ -1121,13 +1121,15 @@ function buildAnswerArea(view, p, q) {
 }
 
 /* 判分结果收尾：更新统计/历史/锁定输入/显示反馈/出现“下一题” */
-function finishAnsweredResult(view, p, q, userAnswer, correct, correctText, fbEl) {
+function finishAnsweredResult(view, p, q, userAnswer, correct, correctText, fbEl, score) {
+  const got = (score == null) ? (correct ? 1 : 0) : score;
+  const partial = !correct && got > 0;
   p.stats.total += 1;
   if (correct) p.stats.correct += 1; else p.stats.wrong += 1;
   const s = p.subjects[q.subject] || (p.subjects[q.subject] = { total: 0, correct: 0, wrong: 0 });
   s.total += 1;
   if (correct) s.correct += 1; else s.wrong += 1;
-  p.history[p.pos] = { userAnswer, correct, correctAnswer: correctText };
+  p.history[p.pos] = { userAnswer, correct, correctAnswer: correctText, score: got };
 
   const area = $("#answer-area", view);
   $$("button,input,textarea", area).forEach((el) => { el.disabled = true; });
@@ -1149,10 +1151,11 @@ function finishAnsweredResult(view, p, q, userAnswer, correct, correctText, fbEl
   }
   if (fbEl) {
     fbEl.innerHTML = `
-      <div class="feedback ${correct ? "correct" : "wrong"}">
-        <div class="fb-title">${correct ? "✅ 回答正确！" : "❌ 回答错误！"}</div>
+      <div class="feedback ${correct ? "correct" : (partial ? "neutral" : "wrong")}">
+        <div class="fb-title">${correct ? "✅ 回答正确！" : (partial ? `🟡 部分正确（本题得 ${Math.round(got * 100)}%）` : "❌ 回答错误！")}</div>
         ${correct ? "" : `<div class="fb-line">正确答案：<b>${esc(correctText)}</b></div>
         <div class="fb-line">你的答案：${esc(fmtUserAnswer(userAnswer))}</div>`}
+        ${partial ? `<div class="hint">漏选按比例给分，错选零容忍；本题仍计入错题本。</div>` : ""}
       </div>`;
   }
   showNextButton(p, view);
@@ -1187,7 +1190,7 @@ async function submitAnswer(view, p, q, userAnswer) {
     showNextButton(p, view);
     return;
   }
-  finishAnsweredResult(view, p, q, userAnswer, data.correct, data.answer, $("#feedback-area", view));
+  finishAnsweredResult(view, p, q, userAnswer, data.correct, data.answer, $("#feedback-area", view), data.score);
 }
 
 async function finishPractice(p) {
@@ -3062,15 +3065,17 @@ async function renderExamRoute(view) {
     const comp = examPerType(ex);
     const rows = Object.entries(comp).map(([label, c]) => {
       const st = ex.perType[label] || { correct: 0 };
-      const wrong = c.total - (st.correct || 0);
-      return `<tr><td>${esc(label)}</td><td>${c.total}</td><td style="color:var(--green)">${st.correct || 0}</td><td style="color:var(--red)">${wrong}</td></tr>`;
+      const got = st.correct || 0;
+      const wrong = c.total - got;
+      const fmt = (v) => (Number.isInteger(v) ? String(v) : v.toFixed(1));
+      return `<tr><td>${esc(label)}</td><td>${c.total}</td><td style="color:var(--green)">${fmt(got)}</td><td style="color:var(--red)">${fmt(wrong)}</td></tr>`;
     }).join("");
     view.innerHTML = `
       <div class="page-head"><h2>模拟考试结果 · ${esc(ex.subject)}</h2></div>
       <div class="card" style="padding:22px 26px;max-width:620px">
         <div style="text-align:center;padding:6px 0 14px">
           <div style="font-size:52px;font-weight:800;color:${ex.lastScore >= 60 ? "var(--green)" : "var(--orange)"}">${ex.lastScore} 分</div>
-          <div class="small muted">已答 ${ex.answered} / ${ex.total} 题 · 答对 ${ex.correct} 题</div>
+          <div class="small muted">已答 ${ex.answered} / ${ex.total} 题 · 答对 ${Number.isInteger(ex.correct) ? ex.correct : ex.correct.toFixed(1)} 题（部分分已折算）</div>
         </div>
         ${ex.saved ? '<div class="feedback correct">本次成绩已计入考试记录（最近10次均分参与通过率）。</div>' : ""}
         <table class="rec-table"><thead><tr><th>题型</th><th>题数</th><th>答对</th><th>答错</th></tr></thead><tbody>${rows}</tbody></table>
@@ -3109,11 +3114,13 @@ async function renderExamRoute(view) {
 function buildExamAnswerArea(view, ex, q) {
   const area = $("#exam-answer-area", view);
 
-  const record = (correct, count = true) => {
+  const record = (score, count = true) => {
     if (count) ex.answered += 1;
-    if (correct) ex.correct += 1;
-    const st = ex.perType[q.label] || (ex.perType[q.label] = { correct: 0 });
-    if (correct) st.correct += 1;
+    const got = (typeof score === "number") ? score : (score ? 1 : 0);
+    ex.correct += got;                       // 支持部分分（多选漏选/填空按空）
+    const st = ex.perType[q.label] || (ex.perType[q.label] = { correct: 0, answered: 0 });
+    st.correct += got;
+    st.answered = (st.answered || 0) + 1;
   };
   const advance = async () => {
     if (ex.pos + 1 >= ex.total) { ex.pos += 1; finishExam(ex); }
@@ -3122,7 +3129,7 @@ function buildExamAnswerArea(view, ex, q) {
   const submitAuto = async (ans) => {
     const data = await api("POST", "/api/answer", { subject: q.subject, index: q.index, answer: ans, mode: "all", exam: true });
     if (data.auto === false) return;
-    record(data.correct);
+    record(data.score != null ? data.score : data.correct);
     advance();
   };
 

@@ -145,5 +145,31 @@ check("judge0 选择题选项图片保真", len(qs_c) == 1 and isinstance(qs_c[0
       [q.text for q in qs_c])
 
 
+# ---- 部分分判分（多选漏选按比例、填空按空给分）----
+qmc = Question.from_dict({"type": "多选题", "text": "多选", "subject": "测",
+                          "options": [["A", "a"], ["B", "b"], ["C", "c"], ["D", "d"]], "answer": "ABD"})
+check("多选全对得 1 分", abs(qmc.score_answer("ABD") - 1.0) < 1e-9 and qmc.check_answer("ABD"))
+check("多选纯漏选按比例给分", abs(qmc.score_answer("AB") - 2 / 3) < 1e-9
+      and abs(qmc.score_answer("A") - 1 / 3) < 1e-9 and not qmc.check_answer("AB"))
+check("多选含错选零容忍", qmc.score_answer("ABC") == 0 and qmc.score_answer("ABCD") == 0)
+check("多选空答案 0 分", qmc.score_answer("") == 0)
+
+qfb = Question.from_dict({"type": "填空题", "text": "【1】、【2】、【3】", "subject": "测",
+                          "answer": {"items": [{"accept": ["甲"]}, {"accept": ["乙"]}, {"accept": ["丙"]}]}})
+check("填空全对得 1 分", abs(qfb.score_answer(["甲", "乙", "丙"]) - 1.0) < 1e-9)
+check("填空按答对空数给分", abs(qfb.score_answer(["甲", "乙", "x"]) - 2 / 3) < 1e-9
+      and abs(qfb.score_answer(["甲", "x", "x"]) - 1 / 3) < 1e-9)
+check("填空少填按空补齐", abs(qfb.score_answer(["甲", "乙"]) - 2 / 3) < 1e-9)
+check("填空全错 0 分且 check_answer 为假", qfb.score_answer(["x", "y", "z"]) == 0
+      and not qfb.check_answer(["x", "y", "z"]))
+
+qfg = Question.from_dict({"type": "填空题", "text": "【1】、【2】", "subject": "测",
+                          "answer": {"items": [{"accept": ["甲"], "group": 1},
+                                               {"accept": ["乙"], "group": 1}]}})
+check("填空同组可换序且全对", abs(qfg.score_answer(["乙", "甲"]) - 1.0) < 1e-9
+      and qfg.check_answer(["甲", "乙"]))
+check("填空同组部分匹配按比例", abs(qfg.score_answer(["甲", "x"]) - 0.5) < 1e-9)
+
+
 print("\n" + ("全部通过 ✔" if not fails else f"失败 {len(fails)} 项: {fails}"))
 sys.exit(1 if fails else 0)

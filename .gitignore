@@ -52,3 +52,9 @@ Thumbs.db
 
 # ---- 外部题库导入的原始材料（MinerU 解析产物、PDF 抽出物等，不进仓库）----
 import/
+
+# ---- 原始复习资料（1.3GB 压缩包，超 GitHub 100MB 单文件上限，不进仓库）----
+original/
+
+# ---- 参考用的第三方程序（lexue-pro 便携版等，含 89MB node.exe，不进仓库）----
+other_files/

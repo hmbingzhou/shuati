@@ -106,13 +106,18 @@ def _get_answer_prompt(question: Question) -> str:
     return "  请输入答案: "
 
 
-def _show_feedback(question: Question, user_answer, correct: bool):
+def _show_feedback(question: Question, user_answer, correct: bool, score: float = None):
     if correct:
         print(green("\n✅ 回答正确！"))
+        return
+    got = 1.0 if score is None else float(score)
+    if got > 0:
+        print(yellow(f"\n🟡 部分正确（本题得 {round(got * 100)}%）"))
+        print("  漏选按比例给分、错选零容忍；填空按答对空数给分。本题仍计入错题本。")
     else:
         print(red("\n❌ 回答错误！"))
-        print(f"  正确答案：{question.answer_text()}")
-        print(f"  你的答案：{_fmt_user_answer(user_answer)}")
+    print(f"  正确答案：{question.answer_text()}")
+    print(f"  你的答案：{_fmt_user_answer(user_answer)}")
 
 
 def _essay_self_grade(question: Question):
@@ -153,14 +158,15 @@ def _process_one(question: Question, wrong_mode: bool, book_subject: str = None)
     user_answer, exited = _collect_answer(question)
     if exited:
         return True, False
-    is_correct = question.check_answer(user_answer)
+    score = question.score_answer(user_answer)
+    is_correct = score >= 1.0 - 1e-9
     if is_correct:
         _show_feedback(question, user_answer, True)
         record_result(book_subject, True)
         if wrong_mode:
             remove_wrong_record(question.subject, question.text)
     else:
-        _show_feedback(question, user_answer, False)
+        _show_feedback(question, user_answer, False, score)
         record_result(book_subject, False)
         if wrong_mode:
             update_wrong_record_timestamp(question.subject, question.text)

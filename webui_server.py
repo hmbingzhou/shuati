@@ -516,10 +516,13 @@ def handle_answer(body):
         return {"correct": None, "auto": False, "answer": q.answer_text(),
                 "label": _question_label(q), "type": q.get_type_name()}
 
-    correct = q.check_answer(user_answer)
+    score = q.score_answer(user_answer)
+    correct = score >= 1.0 - 1e-9
     owner = body.get("owner") or records.DEFAULT_OWNER
     _bookkeeping(subject, q, correct, user_answer, mode, bool(body.get("exam")), owner)
-    return {"correct": correct, "answer": q.answer_text(),
+    return {"correct": correct, "score": round(float(score), 4),
+            "partial": (not correct) and score > 0,
+            "answer": q.answer_text(),
             "label": _question_label(q), "type": q.get_type_name()}
 
 

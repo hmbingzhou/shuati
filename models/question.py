@@ -121,6 +121,10 @@ class Question(ABC):
         """判分。填空接受 list[str]（每空一个）或 str（单空兼容）"""
         pass
 
+    def score_answer(self, user_answer) -> float:
+        """得分率 0.0~1.0。默认二值判分；多选题/填空题会覆盖成部分分。"""
+        return 1.0 if self.check_answer(user_answer) else 0.0
+
     # ---- 序列化 ----
     def to_dict(self) -> dict:
         d = {
@@ -258,6 +262,19 @@ class MultipleChoiceQuestion(ChoiceQuestion):
         if not user_set or not user_set.issubset(valid):
             return False
         return user_set == set(self.answer)
+
+    def score_answer(self, user_answer) -> float:
+        """多选部分分：全对 1；纯漏选按命中比例；含错选 0（错选零容忍）"""
+        valid = set(self.option_letters)
+        user_set = set(re.sub(r"[^A-Za-z]", "", str(user_answer or "")).upper())
+        answer_set = set(self.answer)
+        if not user_set or not answer_set or not user_set.issubset(valid):
+            return 0.0
+        if user_set == answer_set:
+            return 1.0
+        if user_set.issubset(answer_set):          # 只漏选，没选错
+            return len(user_set) / len(answer_set)
+        return 0.0                                  # 选了错误选项
 
     @staticmethod
     def from_dict(data: dict) -> "MultipleChoiceQuestion":
@@ -399,47 +416,65 @@ class FillBlankQuestion(Question):
                 parts.append(f"第{i}空: {accept_txt}{suffix}")
         return "；".join(parts) if parts else "（无标准答案）"
 
+    def _user_values(self, user_answer, n: int):
+        """把用户作答拆成每空一个值；返回 list[str] 或 None（类型不合法）"""
+        if isinstance(user_answer, str):
+            if n <= 1:
+                return [normalize_user_text(user_answer)]
+            return [x for x in (normalize_user_text(t) for t in user_answer.split(" ")) if x != ""]
+        if isinstance(user_answer, (list, tuple)):
+            return [normalize_user_text(x) for x in user_answer]
+        return None
+
     def check_answer(self, user_answer) -> bool:
+        return self.score_answer(user_answer) >= 1.0 - 1e-9
+
+    def score_answer(self, user_answer) -> float:
+        """填空部分分：按答对的空数计分；同组空位可换序（取最优配对）"""
         items = self._answer_items()
         n = len(items)
-        if isinstance(user_answer, str):
-            if n == 1:
-                vals = [normalize_user_text(user_answer)]
-            else:
-                vals = [x for x in (normalize_user_text(t) for t in user_answer.split(" ")) if x != ""]
-        elif isinstance(user_answer, (list, tuple)):
-            vals = [normalize_user_text(x) for x in user_answer]
-        else:
-            return False
-        if len(vals) != n:
-            return False
+        if n == 0:
+            return 0.0
+        vals = self._user_values(user_answer, n)
+        if vals is None:
+            return 0.0
+        # 多填：判错（整串比对模式也一样）；少填：除整串模式外按空补齐（缺的算错）
+        if len(vals) > n:
+            return 0.0
+        if len(vals) < n:
+            if self.whole_string:
+                return 0.0
+            vals = vals + [""] * (n - len(vals))
+
         by_group = {}
         for i, it in enumerate(items):
             by_group.setdefault(it.get("group"), []).append(i)
+
+        matched = 0
         done = [False] * n
         for g, positions in by_group.items():
             if g is None or len(positions) < 2:
                 continue
-            # 组内可换序：positions[i] 空位拿到 vals[positions[i]]；
-            # 遍历这些值到组内空位的所有落位排列，只要存在“每值 ∈ 落位 accept”即对
-            vals_in = [vals[i] for i in positions]
-            ok = False
+            vals_in = [vals[p] for p in positions]
+            best = 0
             for perm in itertools.permutations(positions):
-                if all(vals_in[k] in {str(a).strip() for a in items[p].get("accept") or []}
-                       for k, p in enumerate(perm)):
-                    ok = True
+                cnt = 0
+                for k, target in enumerate(perm):
+                    if vals_in[k] in {str(a).strip() for a in items[target].get("accept") or []}:
+                        cnt += 1
+                if cnt > best:
+                    best = cnt
+                if best == len(positions):
                     break
-            if not ok:
-                return False
+            matched += best
             for p in positions:
                 done[p] = True
         for i, it in enumerate(items):
             if done[i]:
                 continue
-            accept = {str(a).strip() for a in it.get("accept") or []}
-            if vals[i] not in accept:
-                return False
-        return True
+            if vals[i] in {str(a).strip() for a in it.get("accept") or []}:
+                matched += 1
+        return matched / n
 
     @staticmethod
     def from_dict(data: dict) -> "FillBlankQuestion":
