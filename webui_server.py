@@ -757,6 +757,74 @@ def handle_import_judges_list():
     }
 
 
+def handle_ai_config_get():
+    """GET /api/ai/config —— 返回是否已配置（密钥只回显掩码）"""
+    import ai_parse
+    cfg = ai_parse.load_config()
+    return {"ok": True, "configured": bool(cfg["apiKey"]), "model": cfg["model"],
+            "baseUrl": cfg["baseUrl"], "key": ai_parse.masked_key(cfg["apiKey"]),
+            "source": cfg["source"]}
+
+
+def handle_ai_config_save(body):
+    """POST /api/ai/config —— 保存密钥到 data/ai.json（不进版本库）"""
+    import ai_parse
+    key = (body.get("apiKey") or "").strip()
+    if not key:
+        raise ValueError("请填写 API Key")
+    ai_parse.save_config(key, body.get("baseUrl") or "", body.get("model") or "")
+    return handle_ai_config_get()
+
+
+def handle_ai_test():
+    """GET /api/ai/test —— 发一句最小请求，验证密钥/余额/网络"""
+    import ai_parse
+    try:
+        return ai_parse.test_key()
+    except ai_parse.AIError as e:
+        raise ValueError(str(e))
+
+
+def handle_ai_parse(body):
+    """POST /api/ai/parse —— {subject, text, fillMissing} → 题目草稿（不入库）
+
+    AI 不可用时自动回退到规则解析，并在 warnings 里说明。
+    """
+    import ai_parse
+    from file_import import parse_text as rule_parse
+
+    subject = (body.get("subject") or "").strip()
+    text = body.get("text") or ""
+    fill_missing = bool(body.get("fillMissing"))
+    if not text.strip():
+        raise ValueError("请粘贴要解析的原始文本")
+
+    warnings, engine, usage, model = [], "ai", {}, ""
+    try:
+        res = ai_parse.parse_text_ai(text, subject, fill_missing=fill_missing)
+        drafts = res["drafts"]
+        warnings = res["warnings"]
+        usage = res.get("usage") or {}
+        model = res.get("model") or ""
+    except ai_parse.AIError as e:
+        drafts = rule_parse(text)
+        warnings = [f"AI 调用失败（{e}），已回退到规则解析"]
+        engine = "rule"
+
+    if not drafts:
+        msg = "没有解析出题目"
+        if warnings:
+            msg += "：" + "；".join(warnings[:2])
+        raise ValueError(msg)
+
+    by_type = {}
+    for d in drafts:
+        by_type[d["type"]] = by_type.get(d["type"], 0) + 1
+    return {"ok": True, "engine": engine, "count": len(drafts), "drafts": drafts,
+            "warnings": warnings, "stats": {"total": len(drafts), "byType": by_type},
+            "usage": usage, "model": model, "subject": subject}
+
+
 def handle_import_file_raw(name: str, raw: bytes, subject: str):
     """POST /api/import/file?name=文件.docx&subject=科目 —— 上传文件并解析成题目草稿。
 
@@ -1292,6 +1360,10 @@ class ApiHandler(BaseHTTPRequestHandler):
                     self._send_json(handle_bank_check())
                 elif path == "/api/app/info":
                     self._send_json(handle_app_info())
+                elif path == "/api/ai/config":
+                    self._send_json(handle_ai_config_get())
+                elif path == "/api/ai/test":
+                    self._send_json(handle_ai_test())
                 elif path == "/api/pictures":
                     self._send_json(handle_pictures_list(query))
                 elif path == "/api/questions":
@@ -1372,6 +1444,10 @@ class ApiHandler(BaseHTTPRequestHandler):
                     self._send_json(handle_import_apply(body))
                 elif path == "/api/import/file/apply":
                     self._send_json(handle_import_file_apply(body))
+                elif path == "/api/ai/config":
+                    self._send_json(handle_ai_config_save(body))
+                elif path == "/api/ai/parse":
+                    self._send_json(handle_ai_parse(body))
                 elif path == "/api/recycle/restore":
                     self._send_json(handle_recycle_restore(body))
                 elif path == "/api/records/reset":

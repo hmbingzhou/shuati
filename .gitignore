@@ -58,3 +58,7 @@ original/
 
 # ---- 参考用的第三方程序（lexue-pro 便携版等，含 89MB node.exe，不进仓库）----
 other_files/
+
+# ---- AI 密钥（绝不进版本库）----
+data/ai.json
+data/ai.json.tmp
