@@ -573,6 +573,8 @@ def handle_pictures_list(query=None):
 
 
 _MAX_IMAGE_BYTES = 8 * 1024 * 1024
+_MAX_IMPORT_BYTES = 20 * 1024 * 1024
+_MAX_IMPORT_DRAFTS = 2000
 _IMG_NAME_RE = re.compile(
     r"^[\w\u4e00-\u9fff][\w\u4e00-\u9fff .\-]*\.(?:png|jpe?g|gif|bmp|webp|svg)$", re.IGNORECASE)
 _DIR_NAME_RE = re.compile(r"^[\w\u4e00-\u9fff .\-]{0,40}$")
@@ -753,6 +755,86 @@ def handle_import_judges_list():
         "total": len(js),
         "judges": [{"id": j["id"], "name": j["name"], "desc": j["desc"]} for j in js],
     }
+
+
+def handle_import_file_raw(name: str, raw: bytes, subject: str):
+    """POST /api/import/file?name=文件.docx&subject=科目 —— 上传文件并解析成题目草稿。
+
+    只解析不入库；前端勾选后再调 /api/import/file/apply。
+    文档内嵌图片会立刻存到 pictures/<科目>/ 并把草稿里的引用改成实际文件名。
+    """
+    from file_import import parse_file
+
+    subject = (subject or "").strip()
+    if not subject:
+        raise ValueError("请先选择要导入的科目")
+    if not raw:
+        raise ValueError("文件内容为空")
+    if len(raw) > _MAX_IMPORT_BYTES:
+        raise ValueError(f"文件超过 {_MAX_IMPORT_BYTES // 1024 // 1024}MB 限制")
+    res = parse_file(name or "", raw, subject)
+    drafts = res["drafts"]
+    saved_images = []
+    images = res.get("images") or []
+    if images:
+        target_dir = os.path.join(PICTURES_DIR, subject)
+        os.makedirs(target_dir, exist_ok=True)
+        mapping = {}
+        stamp = time.strftime("%Y%m%d%H%M%S")
+        for k, img in enumerate(images, 1):
+            ext = os.path.splitext(img["name"])[1].lower()
+            if ext not in (".png", ".jpg", ".jpeg", ".gif", ".bmp", ".webp"):
+                ext = ".png"
+            new_name = f"imp_{stamp}_{k}{ext}"
+            with open(os.path.join(target_dir, new_name), "wb") as fh:
+                fh.write(img["bytes"])
+            mapping[img["name"]] = new_name
+            saved_images.append(f"{subject}/{new_name}")
+        for d in drafts:
+            t = d.get("text") or ""
+            for old, new in mapping.items():
+                t = t.replace(f"[{subject}/{old}]", f"[{subject}/{new}]")
+            d["text"] = t
+
+    drafts = drafts[:_MAX_IMPORT_DRAFTS]
+    return {"ok": True, "count": len(drafts), "stats": res["stats"],
+            "drafts": drafts, "warnings": res.get("warnings") or [],
+            "images": saved_images, "subject": subject}
+
+
+def handle_import_file_apply(body):
+    """body: {subject, drafts:[{type,text,options,answer}]} —— 把勾选的草稿写入题库"""
+    subject = (body.get("subject") or "").strip()
+    drafts = body.get("drafts") or []
+    if not subject:
+        raise ValueError("缺少科目")
+    if not isinstance(drafts, list) or not drafts:
+        raise ValueError("没有要导入的题目")
+
+    bank = load_questions(subject)
+    seen = {re.sub(r"\s+", "", q.text)[:120] for q in bank}
+    inserted, skipped, errors = 0, 0, []
+    for idx, d in enumerate(drafts):
+        try:
+            data = {"type": d.get("type") or "简答题", "text": d.get("text") or "",
+                    "answer": d.get("answer"), "subject": subject}
+            if d.get("options"):
+                data["options"] = d["options"]
+            q = Question.from_dict(data)
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"第{idx + 1}条：{e}")
+            continue
+        key = re.sub(r"\s+", "", q.text)[:120]
+        if key in seen:
+            skipped += 1
+            continue
+        seen.add(key)
+        bank.append(q)
+        inserted += 1
+    if inserted:
+        save_questions(subject, bank)
+    return {"ok": True, "inserted": inserted, "skipped": skipped,
+            "errors": errors[:10], "total": len(drafts)}
 
 
 def handle_import_preview(body):
@@ -1256,6 +1338,15 @@ class ApiHandler(BaseHTTPRequestHandler):
                     raw = self.rfile.read(length)
                     self._send_json(handle_pictures_upload_raw(name, raw, dir_name))
                     return
+                if path == "/api/import/file":
+                    name = (query.get("name") or [""])[0]
+                    subject = (query.get("subject") or [""])[0]
+                    length = int(self.headers.get("Content-Length") or 0)
+                    if length <= 0 or length > _MAX_IMPORT_BYTES:
+                        raise ValueError(f"文件为空或超过 {_MAX_IMPORT_BYTES // 1024 // 1024}MB")
+                    raw = self.rfile.read(length)
+                    self._send_json(handle_import_file_raw(name, raw, subject))
+                    return
                 body = self._read_body()
                 if path == "/api/questions":
                     self._send_json(handle_add_question(body))
@@ -1279,6 +1370,8 @@ class ApiHandler(BaseHTTPRequestHandler):
                     self._send_json(handle_import_preview(body))
                 elif path == "/api/import/apply":
                     self._send_json(handle_import_apply(body))
+                elif path == "/api/import/file/apply":
+                    self._send_json(handle_import_file_apply(body))
                 elif path == "/api/recycle/restore":
                     self._send_json(handle_recycle_restore(body))
                 elif path == "/api/records/reset":

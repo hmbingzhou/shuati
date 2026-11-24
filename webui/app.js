@@ -1543,12 +1543,133 @@ function openNewSubjectModal(ov, current) {
   nameEl.addEventListener("keydown", (e) => { if (e.key === "Enter") doCreate(); });
 }
 
+/* 原始字节上传（文件导入用；api() 只支持 JSON） */
+async function apiRaw(path, buf, contentType = "application/octet-stream") {
+  let res;
+  try {
+    res = await fetch(path, { method: "POST", headers: { "Content-Type": contentType }, body: buf });
+  } catch (e) {
+    toast("网络错误：无法连接本地服务", "err");
+    throw e;
+  }
+  let data = null;
+  try { data = await res.json(); } catch (e) { /* 非 JSON */ }
+  if (!res.ok || (data && data.ok === false)) {
+    const msg = (data && data.error) ? data.error : `请求失败 (${res.status})`;
+    toast(msg, "err");
+    throw new Error(msg);
+  }
+  return data;
+}
+
+/* 文件导入：Word / Excel / CSV / Markdown / TXT → 题目草稿 → 勾选入库 */
+function openFileImportModal(ov, currentSubject) {
+  const subjects = ov.grades.flatMap((g) => g.subjects).map((s) => s.name);
+  const m = openModal(`
+    <div class="modal-head"><h3>📁 文件导入</h3><button class="modal-close">✕</button></div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label>导入到科目</label>
+        <select class="answer-input" id="fi-subject">
+          ${subjects.map((s) => `<option value="${esc(s)}" ${s === currentSubject ? "selected" : ""}>${esc(s)}</option>`).join("")}
+        </select>
+      </div>
+      <div class="form-group">
+        <label>选择文件（.docx / .xlsx / .csv / .tsv / .md / .txt，最大 20MB）</label>
+        <input class="answer-input" type="file" id="fi-file"
+               accept=".docx,.xlsx,.csv,.tsv,.md,.markdown,.txt">
+      </div>
+      <div class="small muted" id="fi-status">支持：题干 + A/B/C/D 选项 + 「答案：X」的常见排版；Word 表格按「题型/题干/选项/答案」列识别；文档内图片会自动提取。</div>
+      <div id="fi-preview" style="margin-top:10px"></div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-ghost" data-act="cancel">取消</button>
+      <button class="btn btn-primary" id="fi-import" disabled>导入选中</button>
+    </div>`, "modal-lg");
+
+  let drafts = [];
+  const statusEl = $("#fi-status", m.mask);
+  const previewEl = $("#fi-preview", m.mask);
+  const importBtn = $("#fi-import", m.mask);
+
+  const renderPreview = () => {
+    if (!drafts.length) { previewEl.innerHTML = ""; importBtn.disabled = true; return; }
+    const rows = drafts.map((d, i) => {
+      const ans = typeof d.answer === "string" ? d.answer : (d.answer && d.answer.items ? d.answer.items.map((x) => x.accept[0]).join(" / ") : "");
+      return `<tr>
+        <td><input type="checkbox" class="fi-check" data-i="${i}" checked></td>
+        <td>${esc(d.type)}</td>
+        <td>${esc(String(d.text || "").replace(/\[[^\]]+\]/g, "［图］").slice(0, 60))}</td>
+        <td>${esc(String(ans).slice(0, 40))}</td>
+      </tr>`;
+    }).join("");
+    previewEl.innerHTML = `
+      <table class="rec-table" style="width:100%">
+        <thead><tr><th style="width:34px"></th><th style="width:76px">题型</th><th>题干</th><th style="width:220px">答案</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>`;
+    importBtn.disabled = false;
+    importBtn.textContent = `导入选中（${drafts.length}）`;
+  };
+
+  $("#fi-file", m.mask).addEventListener("change", async (e) => {
+    const file = (e.target.files || [])[0];
+    if (!file) return;
+    const subject = $("#fi-subject", m.mask).value;
+    statusEl.textContent = `正在解析 ${file.name} …`;
+    previewEl.innerHTML = "";
+    importBtn.disabled = true;
+    try {
+      const buf = await file.arrayBuffer();
+      const res = await apiRaw(
+        `/api/import/file?name=${encodeURIComponent(file.name)}&subject=${encodeURIComponent(subject)}`,
+        buf);
+      drafts = res.drafts || [];
+      const byType = Object.entries(res.stats && res.stats.byType || {}).map(([k, v]) => `${k} ${v}`).join(" · ");
+      statusEl.textContent = `解析到 ${res.count} 道题（${byType || "无"}）`
+        + (res.images && res.images.length ? `，提取图片 ${res.images.length} 张` : "")
+        + ((res.warnings || []).length ? `　⚠ ${res.warnings.join("；")}` : "");
+      if (!drafts.length) {
+        statusEl.textContent += "　—— 没识别出题目，可能是排版不在支持范围，或答案格式不是「答案：X」。";
+      }
+      renderPreview();
+    } catch (err) {
+      statusEl.textContent = "解析失败：" + (err && err.message ? err.message : "未知错误");
+    }
+  });
+
+  importBtn.addEventListener("click", async () => {
+    const subject = $("#fi-subject", m.mask).value;
+    const picked = [];
+    $$(".fi-check", m.mask).forEach((cb) => {
+      if (cb.checked) picked.push(drafts[Number(cb.dataset.i)]);
+    });
+    if (!picked.length) { toast("请至少勾选一道题", "info"); return; }
+    try {
+      const res = await api("POST", "/api/import/file/apply", { subject, drafts: picked });
+      m.close();
+      toast(`已导入 ${res.inserted} 道${res.skipped ? `，跳过重复 ${res.skipped} 道` : ""}`, "ok");
+      invalidateOverview();
+      state.libFilter.subject = subject;
+      state.libFilter.page = 1;
+      render();
+    } catch (e) { /* api 已提示 */ }
+  });
+
+  $(".modal-close", m.mask).addEventListener("click", () => m.close());
+  m.mask.addEventListener("click", (e) => {
+    const act = e.target && e.target.dataset && e.target.dataset.act;
+    if (act === "cancel") m.close();
+  });
+}
+
 /* 科目列表 / 搜索 / 分页 的渲染 */
   view.innerHTML = `
     <div class="page-head">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
         <div><h2>题库管理</h2><div class="sub">浏览 / 搜索 / 录入 / 修改 / 删除题目（与终端版数据互通）</div></div>
         <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn btn-ghost" id="btn-file-import">📁 文件导入</button>
           <button class="btn btn-ghost" id="btn-import-batch">📥 批量导入（judge）</button>
           <button class="btn btn-primary" id="btn-add">＋ 录入题目</button>
         </div>
@@ -1724,6 +1845,9 @@ function openNewSubjectModal(ov, current) {
 
   const newSubjBtn = $("#lib-new-subject", view);
   if (newSubjBtn) newSubjBtn.addEventListener("click", () => openNewSubjectModal(ov, selSubj));
+
+  const fileImportBtn = $("#btn-file-import", view);
+  if (fileImportBtn) fileImportBtn.addEventListener("click", () => openFileImportModal(ov, selSubj || allSubjects[0] && allSubjects[0].name));
 
   const batchBtn = $("#btn-import-batch", view);
   if (batchBtn) batchBtn.addEventListener("click", () => {
