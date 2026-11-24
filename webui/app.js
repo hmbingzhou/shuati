@@ -1704,9 +1704,9 @@ async function openImportModal(ov, currentSubject) {
       <div class="form-group">
         <label>解析方式</label>
         <label class="small" style="display:flex;gap:8px;align-items:center;margin-bottom:6px">
-          <input type="radio" name="im-engine" value="ai" ${hasKey ? "checked" : "disabled"}>
+          <input type="radio" name="im-engine" value="ai" ${hasKey ? "checked" : ""}>
           <b>AI 解析</b> —— 排版乱也能认（答案在括号里、选项挤成一行都行）；按 token 计费，一次几分钱
-          ${hasKey ? "" : '　<span class="muted">（需要先填密钥）</span>'}
+          <span class="muted" id="im-ai-hint">${hasKey ? "" : "（需要先在下面填密钥）"}</span>
         </label>
         <label class="small" style="display:flex;gap:8px;align-items:center">
           <input type="radio" name="im-engine" value="rule" ${hasKey ? "" : "checked"}>
@@ -1772,9 +1772,27 @@ async function openImportModal(ov, currentSubject) {
     hasKey = !!(saved && saved.configured);
     $("#im-key", m.mask).value = "";
     keyStateEl.textContent = `已保存 ${(saved && saved.key) || ""}（留空则沿用它）`;
+    const hint = $("#im-ai-hint", m.mask);
+    if (hint) hint.textContent = "";
     const aiRadio = $$('input[name="im-engine"]', m.mask).find((x) => x.value === "ai");
-    if (aiRadio) { aiRadio.disabled = false; aiRadio.checked = true; }
+    if (aiRadio && !engineIsAi()) aiRadio.checked = true;
   };
+
+  const engineIsAi = () => {
+    const el = $$('input[name="im-engine"]', m.mask).find((x) => x.checked);
+    return !!el && el.value === "ai";
+  };
+
+  /* 用户在密钥框里打字：立刻放开 AI 选项（原来是 disabled，填了也选不了） */
+  $("#im-key", m.mask).addEventListener("input", (e) => {
+    const has = !!(e.target.value || "").trim();
+    const hint = $("#im-ai-hint", m.mask);
+    if (hint) hint.textContent = has ? "（点「解析」时会自动保存密钥）" : (hasKey ? "" : "（需要先在下面填密钥）");
+    if (has) {
+      const aiRadio = $$('input[name="im-engine"]', m.mask).find((x) => x.value === "ai");
+      if (aiRadio) aiRadio.checked = true;
+    }
+  });
 
   $("#im-key-test", m.mask).addEventListener("click", async () => {
     try {
@@ -1794,9 +1812,11 @@ async function openImportModal(ov, currentSubject) {
       cfg = { configured: false };
       hasKey = false;
       keyStateEl.textContent = keyHint();
+      const hint = $("#im-ai-hint", m.mask);
+      if (hint) hint.textContent = "（需要先在下面填密钥）";
       const aiRadio = $$('input[name="im-engine"]', m.mask).find((x) => x.value === "ai");
       const ruleRadio = $$('input[name="im-engine"]', m.mask).find((x) => x.value === "rule");
-      if (aiRadio) { aiRadio.disabled = true; aiRadio.checked = false; }
+      if (aiRadio) aiRadio.checked = false;
       if (ruleRadio) ruleRadio.checked = true;
       toast("已清除本机保存的密钥", "ok");
     } catch (e) { /* api 已提示 */ }
@@ -1822,7 +1842,14 @@ async function openImportModal(ov, currentSubject) {
     if (!subject) { toast("请先选择科目", "info"); return; }
     if (eng === "ai") {
       try { await saveKeyIfAny(); } catch (e) { return; }
-      if (!hasKey) { toast("AI 解析需要先填写 DeepSeek 密钥", "err"); return; }
+      if (!hasKey) {
+        const box = $("#im-key-box", m.mask);
+        if (box) box.open = true;
+        $("#im-key", m.mask).focus();
+        statusEl.textContent = "AI 解析需要 DeepSeek 密钥：在下面填入后点「解析」即可（或改用「规则解析」）。";
+        toast("请先填写 DeepSeek 密钥", "err");
+        return;
+      }
     }
     parseBtn.disabled = true;
     importBtn.disabled = true;
