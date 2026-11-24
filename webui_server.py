@@ -76,6 +76,9 @@ from duplicate_finder import find_duplicates as _find_duplicates  # noqa: E402
 import recycle_bin  # noqa: E402
 import records  # noqa: E402
 import exams  # noqa: E402
+import exporter  # noqa: E402
+
+exporter.set_pictures_dir(PICTURES_DIR)
 import exam_config  # noqa: E402
 import random as _random  # noqa: E402
 import archive_manager  # noqa: E402
@@ -757,6 +760,85 @@ def handle_import_judges_list():
     }
 
 
+def _as_binary(result):
+    """exporter 返回 (bytes, 文件名, content_type)；_send_binary 要 (bytes, ctype, 文件名)"""
+    data, filename, ctype = result
+    return data, ctype, filename
+
+
+def _export_fmt(query, default="html"):
+    fmt = (query.get("format", [default])[0] or default).lower()
+    if fmt not in ("html", "md"):
+        raise ValueError("导出格式只支持 html / md")
+    return fmt
+
+
+def _export_answers(query, default=True):
+    v = (query.get("answers", ["1"] if default else ["0"])[0] or "").lower()
+    return v not in ("0", "false", "no", "")
+
+
+def handle_export_bank(query):
+    """GET /api/export/bank?subject=&format=html|md&answers=1 → 文件下载"""
+    subject = (query.get("subject", [""])[0] or "").strip()
+    if not subject:
+        raise ValueError("缺少科目")
+    questions = load_questions(subject)
+    if not questions:
+        raise ValueError(f"「{subject}」还没有题目")
+    return exporter.export_bank(subject, questions, _export_fmt(query), _export_answers(query))
+
+
+def handle_export_wrong(query):
+    """GET /api/export/wrong?subject=&format=&answers= → 错题本下载。
+
+    错题本里可能残留已删除的题，解析不到就跳过，并在文件名/内容里如实反映条数。
+    """
+    subject = (query.get("subject", [""])[0] or "").strip()
+    records = load_wrong_records()
+    if subject and subject not in ("全部", "全部科目", "所有科目"):
+        records = [r for r in records if r.subject == subject]
+    cache, qs = {}, []
+    for r in sorted(records, key=lambda x: x.timestamp or "", reverse=True):
+        if r.subject not in cache:
+            cache[r.subject] = load_questions(r.subject)
+        q = next((x for x in cache[r.subject] if x.text == r.question_text), None)
+        if q is not None:
+            qs.append(q)
+    if not qs:
+        raise ValueError("错题本是空的（或题目都已删除）")
+    title = "错题本" if not subject else f"{subject} · 错题本"
+    return exporter.export_wrong(qs, _export_fmt(query), _export_answers(query), title)
+
+
+def handle_export_paper(query):
+    """GET /api/export/paper?subject=&indexes=1,2,3&format=&answers= → 试卷下载"""
+    subject = (query.get("subject", [""])[0] or "").strip()
+    if not subject:
+        raise ValueError("缺少科目")
+    raw = (query.get("indexes", [""])[0] or "").strip()
+    if not raw:
+        raise ValueError("缺少题目序号")
+    bank = load_questions(subject)
+    idxs = []
+    for part in raw.split(","):
+        part = part.strip()
+        if not part:
+            continue
+        try:
+            i = int(part)
+        except ValueError:
+            continue
+        if 0 <= i < len(bank):
+            idxs.append(i)
+    if not idxs:
+        raise ValueError("题目序号都无效")
+    qs = [bank[i] for i in idxs]
+    note = (query.get("note", [""])[0] or "").strip()
+    return exporter.export_paper(subject, qs, _export_fmt(query),
+                                 _export_answers(query, default=False), note=note)
+
+
 def handle_ai_config_get():
     """GET /api/ai/config —— 返回是否已配置（密钥只回显掩码）"""
     import ai_parse
@@ -1370,6 +1452,12 @@ class ApiHandler(BaseHTTPRequestHandler):
                     self._send_json(handle_ai_config_get())
                 elif path == "/api/ai/test":
                     self._send_json(handle_ai_test())
+                elif path == "/api/export/bank":
+                    self._send_binary(*_as_binary(handle_export_bank(query)))
+                elif path == "/api/export/wrong":
+                    self._send_binary(*_as_binary(handle_export_wrong(query)))
+                elif path == "/api/export/paper":
+                    self._send_binary(*_as_binary(handle_export_paper(query)))
                 elif path == "/api/pictures":
                     self._send_json(handle_pictures_list(query))
                 elif path == "/api/questions":

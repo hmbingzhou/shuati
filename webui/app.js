@@ -1380,6 +1380,7 @@ async function renderWrong(view) {
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
         <div><h2>错题本</h2><div class="sub">共 ${all.length} 条错题记录（复习中答对会自动移除）</div></div>
         <div style="display:flex;gap:8px">
+          <button class="btn btn-ghost" id="btn-export-wrong" ${all.length === 0 ? "disabled" : ""}>⬇ 导出</button>
           <button class="btn btn-primary" id="btn-review-all" ${all.length === 0 ? "disabled" : ""}>▶ 复习全部错题</button>
           <button class="btn btn-red-ghost" id="btn-clear-all" ${all.length === 0 ? "disabled" : ""}>清空错题本</button>
         </div>
@@ -1423,6 +1424,15 @@ async function renderWrong(view) {
 
   $("#btn-review-all", view).addEventListener("click", () => {
     openPracticeConfig({ scope: { type: "all" }, wrong: true });
+  });
+
+  const exportWrongBtn = $("#btn-export-wrong", view);
+  if (exportWrongBtn) exportWrongBtn.addEventListener("click", () => {
+    openExportModal({
+      kind: "wrong",
+      subject: f.subject && f.subject !== "全部科目" ? f.subject : "",
+      title: "错题本",
+    });
   });
   $("#btn-clear-all", view).addEventListener("click", async () => {
     const ok = await confirmModal({
@@ -1560,6 +1570,69 @@ async function apiRaw(path, buf, contentType = "application/octet-stream") {
     throw new Error(msg);
   }
   return data;
+}
+
+/* 导出弹窗（题库 / 错题本 / 试卷共用） */
+function openExportModal({ kind, subject, indexes, title }) {
+  const isPaper = kind === "paper";
+  const label = title || (kind === "wrong" ? "错题本" : kind === "paper" ? "本次试卷" : subject || "题库");
+  const buildUrl = (fmt, answers) => {
+    const p = new URLSearchParams();
+    p.set("format", fmt);
+    p.set("answers", answers ? "1" : "0");
+    if (subject) p.set("subject", subject);
+    if (kind === "bank") return `/api/export/bank?${p}`;
+    if (kind === "wrong") return `/api/export/wrong?${p}`;
+    p.set("indexes", (indexes || []).join(","));
+    return `/api/export/paper?${p}`;
+  };
+
+  const m = openModal(`
+    <div class="modal-head"><h3>⬇ 导出 · ${esc(label)}</h3><button class="modal-close">✕</button></div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label>文件格式</label>
+        <label class="small" style="display:flex;gap:8px;align-items:center;margin-bottom:6px">
+          <input type="radio" name="ex-fmt" value="html" checked>
+          <b>打印版 HTML</b> —— 排版好、图片内嵌，浏览器打开后 Ctrl+P 可直接另存 PDF
+        </label>
+        <label class="small" style="display:flex;gap:8px;align-items:center">
+          <input type="radio" name="ex-fmt" value="md">
+          <b>Markdown</b> —— 纯文本，方便贴进笔记软件或发给别人
+        </label>
+      </div>
+      <div class="form-group">
+        <label style="display:flex;gap:8px;align-items:center;font-weight:400">
+          <input type="checkbox" id="ex-answers" ${isPaper ? "" : "checked"}>
+          ${isPaper ? "含答案（教师版；不勾选是学生版）" : "包含答案"}
+        </label>
+      </div>
+      <div class="small muted">导出的文件会直接下载到浏览器的下载目录。</div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-ghost" data-act="cancel">取消</button>
+      <button class="btn btn-primary" id="ex-download">下载</button>
+    </div>`, "modal-sm");
+
+  $("#ex-download", m.mask).addEventListener("click", () => {
+    const fmtEl = $$('input[name="ex-fmt"]', m.mask).find((x) => x.checked);
+    const fmt = fmtEl ? fmtEl.value : "html";
+    const answers = $("#ex-answers", m.mask).checked;
+    const a = document.createElement("a");
+    a.href = buildUrl(fmt, answers);
+    a.download = "";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    m.close();
+    toast("正在生成文件，稍等片刻…", "ok");
+  });
+
+  $(".modal-close", m.mask).addEventListener("click", () => m.close());
+  m.mask.addEventListener("click", (e) => {
+    const act = e.target && e.target.dataset && e.target.dataset.act;
+    if (act === "cancel") m.close();
+  });
 }
 
 /* 草稿预览表格（文件导入 / AI 解析共用） */
@@ -1844,6 +1917,7 @@ function openFileImportModal(ov, currentSubject) {
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
         <div><h2>题库管理</h2><div class="sub">浏览 / 搜索 / 录入 / 修改 / 删除题目（与终端版数据互通）</div></div>
         <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn btn-ghost" id="btn-export-bank">⬇ 导出</button>
           <button class="btn btn-ghost" id="btn-ai-parse">🤖 AI 解析</button>
           <button class="btn btn-ghost" id="btn-file-import">📁 文件导入</button>
           <button class="btn btn-ghost" id="btn-import-batch">📥 批量导入（judge）</button>
@@ -2027,6 +2101,13 @@ function openFileImportModal(ov, currentSubject) {
 
   const aiParseBtn = $("#btn-ai-parse", view);
   if (aiParseBtn) aiParseBtn.addEventListener("click", () => openAiParseModal(ov, selSubj || allSubjects[0] && allSubjects[0].name));
+
+  const exportBankBtn = $("#btn-export-bank", view);
+  if (exportBankBtn) exportBankBtn.addEventListener("click", () => {
+    const subj = selSubj || (allSubjects[0] && allSubjects[0].name);
+    if (!subj) { toast("请先选择科目", "info"); return; }
+    openExportModal({ kind: "bank", subject: subj, title: subj });
+  });
 
   const batchBtn = $("#btn-import-batch", view);
   if (batchBtn) batchBtn.addEventListener("click", () => {
@@ -3384,10 +3465,20 @@ async function renderExamRoute(view) {
         <table class="rec-table"><thead><tr><th>题型</th><th>题数</th><th>答对</th><th>答错</th></tr></thead><tbody>${rows}</tbody></table>
         <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
           <button class="btn btn-primary" id="exam-again">再考一次</button>
+          <button class="btn btn-ghost" id="exam-export">⬇ 导出这份试卷</button>
           <button class="btn btn-ghost" id="exam-home">返回首页</button>
         </div>
       </div>`;
     $("#exam-again", view).addEventListener("click", () => { state.exam = null; openExam(ex.subject); });
+    $("#exam-export", view).addEventListener("click", () => {
+      const indexes = (ex.items || []).map((it) => it.index).filter((i) => typeof i === "number");
+      openExportModal({
+        kind: "paper",
+        subject: ex.subject,
+        indexes,
+        title: `${ex.subject} 试卷（${indexes.length} 题，得分 ${ex.lastScore}）`,
+      });
+    });
     $("#exam-home", view).addEventListener("click", () => { state.exam = null; invalidateOverview(); navTo("home"); });
     return;
   }
