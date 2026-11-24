@@ -767,11 +767,15 @@ def handle_ai_config_get():
 
 
 def handle_ai_config_save(body):
-    """POST /api/ai/config —— 保存密钥到 data/ai.json（不进版本库）"""
+    """POST /api/ai/config —— 保存密钥到 data/ai.json（不进版本库）
+
+    apiKey 传空字符串表示清除已保存的密钥。
+    """
     import ai_parse
     key = (body.get("apiKey") or "").strip()
     if not key:
-        raise ValueError("请填写 API Key")
+        ai_parse.clear_config()
+        return handle_ai_config_get()
     ai_parse.save_config(key, body.get("baseUrl") or "", body.get("model") or "")
     return handle_ai_config_get()
 
@@ -800,6 +804,8 @@ def handle_ai_parse(body):
         raise ValueError("请粘贴要解析的原始文本")
 
     warnings, engine, usage, model = [], "ai", {}, ""
+    if not ai_parse.load_config().get("apiKey"):
+        raise ValueError("还没有配置 API Key —— 请先在「AI 解析」弹窗里填入你自己的 DeepSeek 密钥")
     try:
         res = ai_parse.parse_text_ai(text, subject, fill_missing=fill_missing)
         drafts = res["drafts"]

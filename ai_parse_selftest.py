@@ -41,6 +41,11 @@ os.environ["AI_API_KEY"] = "sk-env-override"
 check("环境变量优先级高于文件", ai_parse.load_config()["apiKey"] == "sk-env-override", ai_parse.load_config()["source"])
 os.environ.pop("AI_API_KEY", None)
 
+ai_parse.clear_config()
+check("清除后配置文件被删除", not os.path.isfile(os.path.join(HOME, "data", "ai.json")))
+check("清除后读不到 key", ai_parse.load_config()["apiKey"] == "")
+ai_parse.save_config("sk-abcdef1234567890")
+
 # ---------- 2) 分块 ----------
 short = "1. 题目\n答案：A"
 check("短文本不分块", ai_parse.split_chunks(short) == [short])

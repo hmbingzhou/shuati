@@ -1594,8 +1594,8 @@ async function openAiParseModal(ov, currentSubject) {
   let cfg = null;
   try { cfg = await api("GET", "/api/ai/config"); } catch (e) { cfg = null; }
   const keyHint = cfg && cfg.configured
-    ? `已配置（${esc(cfg.key)}），留空则不修改`
-    : "还没有配置，填入 DeepSeek 的 sk-... 密钥（保存在本地 data/ai.json，不会提交）";
+    ? `已保存 ${esc(cfg.key)}（留空则沿用它）`
+    : "未配置 —— 用自己的 DeepSeek 密钥，只存在本机";
 
   const m = openModal(`
     <div class="modal-head"><h3>🤖 AI 解析</h3><button class="modal-close">✕</button></div>
@@ -1608,7 +1608,16 @@ async function openAiParseModal(ov, currentSubject) {
       </div>
       <div class="form-group">
         <label>DeepSeek API Key <span class="small muted" id="ai-key-state">${keyHint}</span></label>
-        <input class="answer-input" type="password" id="ai-key" placeholder="sk-...（留空则用已保存的）" autocomplete="off">
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <input class="answer-input" type="password" id="ai-key" style="flex:1;min-width:220px"
+                 placeholder="sk-...（你自己的密钥）" autocomplete="off">
+          <button class="btn btn-sm btn-ghost" id="ai-key-test">测试连接</button>
+          <button class="btn btn-sm btn-ghost" id="ai-key-clear">清除</button>
+        </div>
+        <div class="small muted" style="margin-top:6px">
+          没有密钥？到 <a href="https://platform.deepseek.com/api_keys" target="_blank" rel="noopener">platform.deepseek.com</a> 申请，充值几块钱够用很久。
+          密钥只保存在<strong>本机</strong>的 <code>data/ai.json</code>，不会上传、不会进版本库。
+        </div>
       </div>
       <div class="form-group">
         <label>粘贴原始文本（题号乱、选项挤在一起、答案在后面都没关系）</label>
@@ -1633,20 +1642,56 @@ async function openAiParseModal(ov, currentSubject) {
   const importBtn = $("#ai-import", m.mask);
   const parseBtn = $("#ai-parse-btn", m.mask);
 
+  const keyStateEl = $("#ai-key-state", m.mask);
+
+  const ensureKey = async () => {
+    const key = $("#ai-key", m.mask).value.trim();
+    if (key) {
+      const saved = await api("POST", "/api/ai/config", { apiKey: key });
+      keyStateEl.textContent = `已保存 ${saved.key || ""}`;
+      $("#ai-key", m.mask).value = "";
+      return true;
+    }
+    if (cfg && cfg.configured) return true;
+    toast("请先填写你自己的 DeepSeek API Key", "err");
+    $("#ai-key", m.mask).focus();
+    return false;
+  };
+
+  $("#ai-key-test", m.mask).addEventListener("click", async () => {
+    try {
+      if (!(await ensureKey())) return;
+      keyStateEl.textContent = "正在测试…";
+      const r = await api("GET", "/api/ai/test");
+      keyStateEl.textContent = `已保存 ${r.key || ""}`;
+      toast(`连接正常（${r.model}，${r.elapsed}s）`, "ok");
+      statusEl.textContent = `连接测试通过：模型 ${r.model}，耗时 ${r.elapsed}s`;
+    } catch (e) {
+      keyStateEl.textContent = "测试失败";
+      statusEl.textContent = "连接测试失败：" + (e && e.message ? e.message : "未知错误");
+    }
+  });
+
+  $("#ai-key-clear", m.mask).addEventListener("click", async () => {
+    try {
+      await api("POST", "/api/ai/config", { apiKey: "" });
+      cfg = { configured: false };
+      $("#ai-key", m.mask).value = "";
+      keyStateEl.textContent = "未配置 —— 用自己的 DeepSeek 密钥，只存在本机";
+      toast("已清除本机保存的密钥", "ok");
+    } catch (e) { /* api 已提示 */ }
+  });
+
   parseBtn.addEventListener("click", async () => {
     const subject = $("#ai-subject", m.mask).value;
     const text = $("#ai-text", m.mask).value.trim();
-    const key = $("#ai-key", m.mask).value.trim();
     if (!text) { toast("请先粘贴要解析的文本", "info"); return; }
+    if (!(await ensureKey())) return;
     parseBtn.disabled = true;
     importBtn.disabled = true;
     previewEl.innerHTML = "";
     statusEl.textContent = "正在解析，请稍候（长文本要等几十秒）…";
     try {
-      if (key) {
-        await api("POST", "/api/ai/config", { apiKey: key });
-        $("#ai-key-state", m.mask).textContent = "已保存";
-      }
       const res = await api("POST", "/api/ai/parse", {
         subject, text, fillMissing: $("#ai-fill", m.mask).checked,
       });

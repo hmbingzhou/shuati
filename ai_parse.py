@@ -99,6 +99,14 @@ def save_config(api_key: str, base_url: str = "", model: str = ""):
     return True
 
 
+def clear_config():
+    """删除本地保存的密钥（data/ai.json）"""
+    path = _config_path()
+    if os.path.isfile(path):
+        os.remove(path)
+    return True
+
+
 def masked_key(key: str) -> str:
     if not key:
         return ""
